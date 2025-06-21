@@ -280,7 +280,7 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>Your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 121</text>
-        <equipment_requirements armor_must_not_be="Heavy"/>
+        <equipment_requirements max_armor_type="medium"/>
         <effect type="SpeedIncrease" value="10"/>
         <effect type="Speed" speed_type="Climb" value_formula="your_Speed"/>
         <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>

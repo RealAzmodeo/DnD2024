@@ -51,7 +51,10 @@ Source:	Player's Handbook 2024 p. 101</text>
 	• Martial Melee weapons that have the Light property
 
 You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.
-<equipment_requirements weapon_category="MonkWeapon" allow_unarmed="true" wearing_no_armor="true" wielding_no_shield="true"/>
+<equipment_condition_sets logic="OR">
+  <condition_set armor_type="none" shield_handling="not_allowed" weapon_handling_unarmed_only="true"/>
+  <condition_set armor_type="none" shield_handling="not_allowed" weapon_category="SimpleMeleeOrMartialMeleeWithLightProperty"/>
+</equipment_condition_sets>
 
 Bonus Unarmed Strike. You can make an Unarmed Strike as a Bonus Action.
 
@@ -91,7 +94,7 @@ Source:	Player's Handbook 2024 p. 101</text>
 
 Source:	Player's Handbook 2024 p. 101</text>
         <special>Unarmored Defense: Wisdom</special>
-        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
+        <equipment_requirements armor="none" shield="false"/>
         <modifies_rule rule_name="ArmorClassCalculation">
           <new_formula>10 + DEX_modifier + WIS_modifier</new_formula>
         </modifies_rule>
@@ -151,7 +154,7 @@ Source:	Player's Handbook 2024 p. 101</text>
         <text>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.
 
 Source:	Player's Handbook 2024 p. 102</text>
-        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
+        <equipment_requirements armor="none" shield="false"/>
         <modifier category="bonus">speed +10</modifier> <!-- Base value -->
         <effect type="SpeedIncrease" value_scaling_table="MonkFeaturesTable_UnarmoredMovementColumn"/>
       </feature>
@@ -315,7 +318,7 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
+        <equipment_requirements armor="none" shield="false"/>
         <effect description="gain_the_ability_to_move_along_vertical_surfaces_and_across_liquids_on_your_turn_without_falling_during_the_movement"/>
       </feature>
       <counter>

@@ -115,7 +115,10 @@ Source:	Player's Handbook 2024 p. 129</text>
 
 Source:	Player's Handbook 2024 p. 129</text>
         <uses fixed="1" per_turn="true"/>
-        <equipment_requirements weapon_properties="Finesse || Ranged"/>
+        <equipment_condition_sets logic="OR">
+          <condition_set weapon_properties="Finesse"/>
+          <condition_set weapon_category="AnyRanged"/> <!-- Assuming AnyRanged covers all ranged weapons -->
+        </equipment_condition_sets>
         <trigger text="when_you_hit_with_an_attack_roll"/>
         <activation_conditions operator="OR">
           <condition type="self_has_advantage_on_attack_roll"/>

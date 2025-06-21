@@ -802,7 +802,8 @@ Source:	Player's Handbook 2024 p. 148</text>
         <subclass>Draconic Sorcery</subclass>
         <effect type="HitPointMaximumIncrease" value_initial="3" value_per_level_after_this="1"/>
         <modifier category="bonus">hp +3</modifier> <!-- Simple representation -->
-        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_armor">
+        <equipment_requirements armor_type="none"/>
+        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_armor"> <!-- Condition might be redundant if equipment_requirements is parsed first -->
           <new_formula>10+DEX_modifier+CHA_modifier</new_formula>
         </modifies_rule>
         <special>Unarmored Defense: Charisma</special>
