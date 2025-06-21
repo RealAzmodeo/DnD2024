@@ -115,9 +115,16 @@ Source:	Player's Handbook 2024 p. 129</text>
 
 Source:	Player's Handbook 2024 p. 129</text>
         <uses fixed="1" per_turn="true"/>
-        <trigger text="when_you_hit_with_an_attack_roll_using_Finesse_or_Ranged_weapon"/>
-        <condition text="you_have_Advantage_on_the_roll"/>
-        <alternative_condition text="at_least_one_ally_is_within_5ft_of_target_ally_not_incapacitated_and_you_dont_have_Disadvantage"/>
+        <equipment_requirements weapon_properties="Finesse || Ranged"/>
+        <trigger text="when_you_hit_with_an_attack_roll"/>
+        <activation_conditions operator="OR">
+          <condition type="self_has_advantage_on_attack_roll"/>
+          <condition type="ally_near_target_and_self_no_disadvantage">
+            <ally_within_feet>5</ally_within_feet>
+            <ally_must_not_be_condition>Incapacitated</ally_must_not_be_condition>
+            <self_must_not_have_disadvantage_on_attack_roll/>
+          </condition>
+        </activation_conditions>
         <effect description="deal_extra_1d6_damage_type_same_as_weapon"/>
         <!-- Extra damage scaling is in a table, typically handled by application logic -->
       </feature>
@@ -170,6 +177,10 @@ Source:	Player's Handbook 2024 p. 130</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="5">
@@ -197,7 +208,10 @@ Source:	Player's Handbook 2024 p. 130</text>
           <option name="Trip">
             <text_description>If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</text_description>
             <cost type="SneakAttackDice" value="1"/>
-            <effect type="Condition" name="Prone" condition="target_Large_or_smaller_fails_DEX_save" dc="8+DEX+PROF"/>
+            <target_conditions>
+              <condition type="size" max_size="Large"/>
+            </target_conditions>
+            <effect type="Condition" name="Prone" save_type="DEX" dc="8+DEX+PROF" save_negates="true"/>
           </option>
           <option name="Withdraw">
             <text_description>Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</text_description>
@@ -242,6 +256,10 @@ Source:	Player's Handbook 2024 p. 131</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="10" scoreImprovement="YES">
@@ -250,6 +268,10 @@ Source:	Player's Handbook 2024 p. 130</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -269,6 +291,10 @@ Source:	Player's Handbook 2024 p. 131</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -318,6 +344,10 @@ Source:	Player's Handbook 2024 p. 131</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="18">

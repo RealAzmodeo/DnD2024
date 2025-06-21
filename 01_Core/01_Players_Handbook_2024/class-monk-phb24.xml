@@ -51,6 +51,7 @@ Source:	Player's Handbook 2024 p. 101</text>
 	• Martial Melee weapons that have the Light property
 
 You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.
+<equipment_requirements weapon_category="MonkWeapon" allow_unarmed="true" wearing_no_armor="true" wielding_no_shield="true"/>
 
 Bonus Unarmed Strike. You can make an Unarmed Strike as a Bonus Action.
 
@@ -60,7 +61,6 @@ Dexterous Attacks. You can use your Dexterity modifier instead of your Strength 
 
 Source:	Player's Handbook 2024 p. 101</text>
         <defines_category name="MonkWeapon" description="Simple Melee weapons AND Martial Melee weapons that have the Light property"/>
-        <condition text="while_you_are_unarmed_or_wielding_only_Monk_weapons_and_you_arent_wearing_armor_or_wielding_a_Shield"/>
         <benefits>
           <benefit name="Bonus Unarmed Strike">
             <action type="BonusAction">
@@ -91,7 +91,8 @@ Source:	Player's Handbook 2024 p. 101</text>
 
 Source:	Player's Handbook 2024 p. 101</text>
         <special>Unarmored Defense: Wisdom</special>
-        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_armor_or_wielding_a_Shield">
+        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
+        <modifies_rule rule_name="ArmorClassCalculation">
           <new_formula>10 + DEX_modifier + WIS_modifier</new_formula>
         </modifies_rule>
       </feature>
@@ -150,8 +151,9 @@ Source:	Player's Handbook 2024 p. 101</text>
         <text>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.
 
 Source:	Player's Handbook 2024 p. 102</text>
+        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
         <modifier category="bonus">speed +10</modifier> <!-- Base value -->
-        <effect type="SpeedIncrease" value_scaling_table="MonkFeaturesTable_UnarmoredMovementColumn" condition="while_not_wearing_armor_or_wielding_a_Shield"/>
+        <effect type="SpeedIncrease" value_scaling_table="MonkFeaturesTable_UnarmoredMovementColumn"/>
       </feature>
       <feature>
         <name>Level 2: Uncanny Metabolism</name>
@@ -208,6 +210,10 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <feature>
         <name>Level 4: Slow Fall</name>
@@ -262,7 +268,6 @@ Source:	Player's Handbook 2024 p. 103</text>
 Source:	Player's Handbook 2024 p. 103</text>
         <trigger text="whenever_you_deal_damage_with_your_Unarmed_Strike"/>
         <effect description="it_can_deal_your_choice_of_Force_damage_or_its_normal_damage_type"/>
-        <modifier category="bonus">speed +5</modifier> <!-- This seems to be for Unarmored Movement progression -->
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -293,6 +298,10 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -306,7 +315,7 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <condition text="while_you_arent_wearing_armor_or_wielding_a_Shield"/>
+        <equipment_requirements wearing_no_armor="true" wielding_no_shield="true"/>
         <effect description="gain_the_ability_to_move_along_vertical_surfaces_and_across_liquids_on_your_turn_without_falling_during_the_movement"/>
       </feature>
       <counter>
@@ -371,6 +380,10 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -440,6 +453,10 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Focus Points</name>

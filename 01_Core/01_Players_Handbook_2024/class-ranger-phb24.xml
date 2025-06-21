@@ -120,21 +120,60 @@ Spellcasting Ability. Wisdom is your spellcasting ability for your Ranger spells
 
 Spellcasting Focus. You can use a Druidic Focus as a Spellcasting Focus for your Ranger spells.
 
-Spells Prepared:
-Level | Spells Prepared
-1 | 2
-2 | 3
-3 | 4
-4 | 5
-5 | 6
-7 | 7
-9 | 9
-11 | 10
-13 | 11
-15 | 12
-17 | 14
-19 | 15
-
+<inline_table name="Spells Prepared">
+  <header>
+    <col label="Level"/>
+    <col label="Spells Prepared"/>
+  </header>
+  <row>
+    <cell value="1"/>
+    <cell value="2"/>
+  </row>
+  <row>
+    <cell value="2"/>
+    <cell value="3"/>
+  </row>
+  <row>
+    <cell value="3"/>
+    <cell value="4"/>
+  </row>
+  <row>
+    <cell value="4"/>
+    <cell value="5"/>
+  </row>
+  <row>
+    <cell value="5"/>
+    <cell value="6"/>
+  </row>
+  <row>
+    <cell value="7"/>
+    <cell value="7"/>
+  </row>
+  <row>
+    <cell value="9"/>
+    <cell value="9"/>
+  </row>
+  <row>
+    <cell value="11"/>
+    <cell value="10"/>
+  </row>
+  <row>
+    <cell value="13"/>
+    <cell value="11"/>
+  </row>
+  <row>
+    <cell value="15"/>
+    <cell value="12"/>
+  </row>
+  <row>
+    <cell value="17"/>
+    <cell value="14"/>
+  </row>
+  <row>
+    <cell value="19"/>
+    <cell value="15"/>
+  </row>
+</inline_table>
 Source:	Player's Handbook 2024 p. 119</text>
       </feature>
       <feature>
@@ -215,6 +254,10 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="5">
@@ -237,7 +280,8 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>Your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 121</text>
-        <effect type="SpeedIncrease" value="10" condition="while_not_wearing_Heavy_armor"/>
+        <equipment_requirements armor_must_not_be="Heavy"/>
+        <effect type="SpeedIncrease" value="10"/>
         <effect type="Speed" speed_type="Climb" value_formula="your_Speed"/>
         <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>
         <modifier category="bonus">speed +10</modifier> <!-- This is a simple representation of the base speed increase -->
@@ -249,6 +293,10 @@ Source:	Player's Handbook 2024 p. 121</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -296,6 +344,10 @@ Source:	Player's Handbook 2024 p. 121</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -324,6 +376,10 @@ Source:	Player's Handbook 2024 p. 121</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -490,25 +546,64 @@ Source:	Player's Handbook 2024 p. 123</text>
         <name>Level 3: Fey Wanderer Spells (Fey Wanderer)</name>
         <text>When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.
 
-Fey Wanderer Spells:
-Ranger Level | Spell
-3 | Charm Person
-5 | Misty Step
-9 | Summon Fey
-13 | Dimension Door
-17 | Mislead
-
+<inline_table name="Fey Wanderer Spells">
+  <header>
+    <col label="Ranger Level"/>
+    <col label="Spell"/>
+  </header>
+  <row>
+    <cell value="3"/>
+    <cell value="Charm Person"/>
+  </row>
+  <row>
+    <cell value="5"/>
+    <cell value="Misty Step"/>
+  </row>
+  <row>
+    <cell value="9"/>
+    <cell value="Summon Fey"/>
+  </row>
+  <row>
+    <cell value="13"/>
+    <cell value="Dimension Door"/>
+  </row>
+  <row>
+    <cell value="17"/>
+    <cell value="Mislead"/>
+  </row>
+</inline_table>
 You also possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.
 
-Feywild Gifts:
-1d6 | Gift
-1 | Illusory butterflies flutter around you while you take a Short or Long Rest.
-2 | Flowers bloom from your hair each dawn.
-3 | You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.
-4 | Your shadow dances while no one is looking directly at it.
-5 | Horns or antlers sprout from your head.
-6 | Your skin and hair change color each dawn.
-
+<inline_table name="Feywild Gifts">
+  <header>
+    <col label="1d6"/>
+    <col label="Gift"/>
+  </header>
+  <row>
+    <cell value="1"/>
+    <cell value="Illusory butterflies flutter around you while you take a Short or Long Rest."/>
+  </row>
+  <row>
+    <cell value="2"/>
+    <cell value="Flowers bloom from your hair each dawn."/>
+  </row>
+  <row>
+    <cell value="3"/>
+    <cell value="You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice."/>
+  </row>
+  <row>
+    <cell value="4"/>
+    <cell value="Your shadow dances while no one is looking directly at it."/>
+  </row>
+  <row>
+    <cell value="5"/>
+    <cell value="Horns or antlers sprout from your head."/>
+  </row>
+  <row>
+    <cell value="6"/>
+    <cell value="Your skin and hair change color each dawn."/>
+  </row>
+</inline_table>
 Source:	Player's Handbook 2024 p. 123</text>
         <subclass>Fey Wanderer</subclass>
         <grants_always_prepared_spell name="Charm Person" level_gained_at="3"/>
@@ -516,7 +611,7 @@ Source:	Player's Handbook 2024 p. 123</text>
         <grants_always_prepared_spell name="Summon Fey" level_gained_at="9"/>
         <grants_always_prepared_spell name="Dimension Door" level_gained_at="13"/>
         <grants_always_prepared_spell name="Mislead" level_gained_at="17"/>
-        <choice name="Feywild Gift" from_table="FeywildGiftsTable" random_roll="1d6"/>
+        <choice name="Feywild Gift" from_table_ref="Feywild Gifts" random_roll="1d6"/>
         <roll description="Feywild Gift">1d6</roll>
       </feature>
       <feature optional="YES">
@@ -630,14 +725,32 @@ Source:	Player's Handbook 2024 p. 125</text>
         <name>Level 3: Gloom Stalker Spells (Gloom Stalker)</name>
         <text>When you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.
 
-Gloom Stalker Spells:
-Ranger Level | Spells
-3 | Disguise Self
-5 | Rope Trick
-9 | Fear
-13 | Greater Invisibility
-17 | Seeming
-
+<inline_table name="Gloom Stalker Spells">
+  <header>
+    <col label="Ranger Level"/>
+    <col label="Spells"/>
+  </header>
+  <row>
+    <cell value="3"/>
+    <cell value="Disguise Self"/>
+  </row>
+  <row>
+    <cell value="5"/>
+    <cell value="Rope Trick"/>
+  </row>
+  <row>
+    <cell value="9"/>
+    <cell value="Fear"/>
+  </row>
+  <row>
+    <cell value="13"/>
+    <cell value="Greater Invisibility"/>
+  </row>
+  <row>
+    <cell value="17"/>
+    <cell value="Seeming"/>
+  </row>
+</inline_table>
 Source:	Player's Handbook 2024 p. 126</text>
         <subclass>Gloom Stalker</subclass>
         <grants_always_prepared_spell name="Disguise Self" level_gained_at="3"/>

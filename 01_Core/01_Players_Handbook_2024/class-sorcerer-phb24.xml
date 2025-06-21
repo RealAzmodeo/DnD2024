@@ -204,9 +204,22 @@ Source:	Player's Handbook 2024 p. 140</text>
           </option>
           <option name="CreateSpellSlots">
             <action type="BonusAction"/>
-            <cost type="SorceryPoints" value_from_table="CreatingSpellSlotsTable"/>
+            <!-- The value_from_table attribute will now implicitly reference the inline_table below -->
+            <cost type="SorceryPoints" value_from_table="Creating Spell Slots Table"/>
             <effect description="transform_unexpended_Sorcery_Points_into_one_spell_slot_max_level_5"/>
             <note text="any_spell_slot_created_vanishes_on_Long_Rest"/>
+            <inline_table name="Creating Spell Slots Table">
+              <header>
+                <col label="Spell Slot Level"/>
+                <col label="Sorcery Point Cost"/>
+                <col label="Min. Sorcerer Level"/>
+              </header>
+              <row><cell value="1"/><cell value="2"/><cell value="2"/></row>
+              <row><cell value="2"/><cell value="3"/><cell value="3"/></row>
+              <row><cell value="3"/><cell value="5"/><cell value="5"/></row>
+              <row><cell value="4"/><cell value="6"/><cell value="7"/></row>
+              <row><cell value="5"/><cell value="7"/><cell value="9"/></row>
+            </inline_table>
           </option>
         </flexible_casting>
       </feature>
@@ -249,6 +262,10 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Sorcerer levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -315,6 +332,10 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Sorcerer levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -349,6 +370,10 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Sorcerer levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -383,6 +408,10 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Sorcerer levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -460,17 +489,28 @@ Sorcerer Level | Spells
 
 Source:	Player's Handbook 2024 p. 145</text>
         <subclass>Aberrant Sorcery</subclass>
-        <grants_always_prepared_spell name="Arms of Hadar" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Calm Emotions" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Detect Thoughts" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Dissonant Whispers" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Mind Sliver" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Hunger of Hadar" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Sending" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Evard's Black Tentacles" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Summon Aberration" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Rory's Telepathic Bond" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Telekinesis" level_gained_at="9"/>
+        <inline_table name="Psionic Spells">
+          <header>
+            <col label="Sorcerer Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Arms of Hadar, Calm Emotions, Detect Thoughts, Dissonant Whispers, Mind Sliver"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Hunger of Hadar, Sending"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Evard's Black Tentacles, Summon Aberration"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Rory's Telepathic Bond, Telekinesis"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Telepathic Speech (Aberrant Sorcery)</name>
@@ -608,17 +648,38 @@ Manifestations of Order:
 
 Source:	Player's Handbook 2024 p. 146</text>
         <subclass>Clockwork Sorcery</subclass>
-        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Alarm" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Protection from Evil and Good" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Dispel Magic" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Protection from Energy" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Summon Construct" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Wall of Force" level_gained_at="9"/>
+        <inline_table name="Clockwork Spells">
+          <header>
+            <col label="Sorcerer Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Aid, Alarm, Lesser Restoration, Protection from Evil and Good"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Dispel Magic, Protection from Energy"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Freedom of Movement, Summon Construct"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Greater Restoration, Wall of Force"/>
+          </row>
+        </inline_table>
         <choice name="ManifestationOfOrder" from_table="ManifestationsOfOrderTable" random_roll="1d6" description="manifests_while_casting_Sorcerer_spells"/>
+        <inline_table name="Manifestations of Order Table">
+          <header><col label="d6"/><col label="Manifestation"/></header>
+          <row><cell value="1"/><cell value="Spectral cogwheels hover behind you."/></row>
+          <row><cell value="2"/><cell value="The hands of a clock spin in your eyes."/></row>
+          <row><cell value="3"/><cell value="Your skin glows with a brassy sheen."/></row>
+          <row><cell value="4"/><cell value="Floating equations and geometric objects overlay your body."/></row>
+          <row><cell value="5"/><cell value="Your Spellcasting Focus temporarily takes the form of a Tiny clockwork mechanism."/></row>
+          <row><cell value="6"/><cell value="The ticking of gears or ringing of a clock can be heard by you and those affected by your magic."/></row>
+        </inline_table>
         <roll description="Manifestation">1d6</roll>
       </feature>
       <feature optional="YES">
@@ -715,7 +776,7 @@ Source:	Player's Handbook 2024 p. 147</text>
         <can_reuse_by_expending resource="SorceryPoints" value="7" action_type="NoAction"/>
       </feature>
       <counter>
-        <name>Warping Implosion</name> <!-- Incorrect counter name from previous file, should be Clockwork Cavalcade -->
+        <name>Clockwork Cavalcade</name>
         <value>1</value>
         <reset>L</reset>
         <subclass>Clockwork Sorcery</subclass>
@@ -759,16 +820,28 @@ Sorcerer Level | Spells
 
 Source:	Player's Handbook 2024 p. 148</text>
         <subclass>Draconic Sorcery</subclass>
-        <grants_always_prepared_spell name="Alter Self" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Chromatic Orb" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Command" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Dragon's Breath" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Fear" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Fly" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Arcane Eye" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Charm Monster" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Legend Lore" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Summon Dragon" level_gained_at="9"/>
+        <inline_table name="Draconic Spells">
+          <header>
+            <col label="Sorcerer Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Alter Self, Chromatic Orb, Command, Dragon's Breath"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Fear, Fly"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Arcane Eye, Charm Monster"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Legend Lore, Summon Dragon"/>
+          </row>
+        </inline_table>
       </feature>
     </autolevel>
     <autolevel level="6">
