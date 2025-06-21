@@ -2,24 +2,13 @@
 <compendium version="5" auto_indent="NO">
   <background>
     <name>Acolyte [2024]</name>
-    <source book="Player's Handbook 2024" page="178"/>
-    <description>
-      <text>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Insight"/>
-      <skill name="Religion"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Intelligence"/>
-        <ability name="Wisdom"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Magic Initiate (Cleric)">Magic Initiate (Cleric)</name>
+    <source page="178">Player's Handbook 2024</source>
+    <description_text>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Intelligence, Wisdom, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Intelligence,Wisdom,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Magic Initiate (Cleric)" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
@@ -29,47 +18,39 @@ Level 1 Spell. Choose a level 1 spell from the same list you selected for this f
 Spell Change. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
 
 Repeatable: You can take this feat more than once, but you must choose a different spell list each time.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Insight"/>
+      <skill name="Religion"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Calligrapher's Supplies" quantity="1"/>
         <item name="Book (prayers)" quantity="1"/>
         <item name="Holy Symbol" quantity="1"/>
         <item name="Parchment (10 sheets)" quantity="1"/>
         <item name="Robe" quantity="1"/>
-        <gold amount="8" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="8"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Artisan [2024]</name>
-    <source book="Player's Handbook 2024" page="178"/>
-    <description>
-      <text>You began mopping floors and scrubbing counters in an artisan's workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of your own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given you a keen eye for detail.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Investigation"/>
-      <skill name="Persuasion"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Dexterity"/>
-        <ability name="Intelligence"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Crafter">Crafter</name>
+    <source page="178">Player's Handbook 2024</source>
+    <description_text>You began mopping floors and scrubbing counters in an artisan's workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of your own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given you a keen eye for detail.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Dexterity, and Intelligence. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Dexterity,Intelligence"/>
+    </ability_score_increase_option>
+    <granted_feat name="Crafter" source_text="Player's Handbook 2024 p. 200">
       <text>You gain the following benefits.
 
 Tool Proficiency. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.
@@ -88,12 +69,13 @@ Smith's Tools | Ball Bearings, Bucket, Caltrops, Grappling Hook, Iron Pot
 Tinker's Tools | Bell, Shovel, Tinderbox
 Weaver's Tools | Basket, Rope, Net, Tent
 Woodcarver's Tools | Club, Greatclub, Quarterstaff</text>
-      <source book="Player's Handbook 2024" page="200"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Investigation"/>
+      <skill name="Persuasion"/>
+    </skill_proficiencies>
     <tool_proficiencies>
-      <tool_choice count="1">
-        <category name="Artisan's Tools"/>
-        <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
+      <choice_from_category category="ArtisansTools" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
 
 Artisan's tools:
 Tools | Cost | Weight
@@ -113,141 +95,114 @@ Potter's tools | 10 gp | 3 lb.
 Smith's tools | 20 gp | 8 lb.
 Tinker's tools | 50 gp | 10 lb.
 Weaver's tools | 1 gp | 5 lb.
-Woodcarver's tools | 1 gp | 5 lb.</text>
-      </tool_choice>
+Woodcarver's tools | 1 gp | 5 lb."/>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
-        <item name="Artisan's Tools (same as above)" quantity="1"/>
+      <option_A>
+        <item name="Artisan's Tools (chosen from category)" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="32" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="32"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Charlatan [2024]</name>
-    <source book="Player's Handbook 2024" page="179"/>
-    <description>
-      <text>Once you were old enough to order an ale. you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two-perhaps a sham potion or forged ancestry records.</text>
-    </description>
+    <source page="179">Player's Handbook 2024</source>
+    <description_text>Once you were old enough to order an ale. you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two-perhaps a sham potion or forged ancestry records.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Dexterity, Constitution, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Dexterity,Constitution,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Skilled" source_text="Player's Handbook 2024 p. 201">
+      <text>You gain proficiency in any combination of three skills or tools of your choice.
+
+Repeatable: You can take this feat more than once.</text>
+    </granted_feat>
     <skill_proficiencies>
       <skill name="Deception"/>
       <skill name="Sleight of Hand"/>
     </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Dexterity"/>
-        <ability name="Constitution"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Skilled">Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
-
-Repeatable: You can take this feat more than once.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
     <tool_proficiencies>
       <tool name="Forgery Kit"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Forgery Kit" quantity="1"/>
         <item name="Costume" quantity="1"/>
         <item name="Fine Clothes" quantity="1"/>
-        <gold amount="15" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/> <!-- Corrected from "50 C p" to "50 GP" assuming it's a typo -->
-      </option>
+        <gold amount="15"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/> <!-- Assuming "50 C p" was a typo for 50 GP -->
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Criminal [2024]</name>
-    <source book="Player's Handbook 2024" page="179"/>
-    <description>
-      <text>You eked out a living in dark alleyways. cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf. fending for yourself against the local thieves' guild and more fearsome lawbreakers.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Sleight of Hand"/>
-      <skill name="Stealth"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Dexterity"/>
-        <ability name="Constitution"/>
-        <ability name="Intelligence"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Alert">Alert</name>
+    <source page="179">Player's Handbook 2024</source>
+    <description_text>You eked out a living in dark alleyways. cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf. fending for yourself against the local thieves' guild and more fearsome lawbreakers.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Dexterity, Constitution, and Intelligence. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Dexterity,Constitution,Intelligence"/>
+    </ability_score_increase_option>
+    <granted_feat name="Alert" source_text="Player's Handbook 2024 p. 200">
       <text>You gain the following benefits.
 
 Initiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.
 
 Initiative Swap. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</text>
-      <source book="Player's Handbook 2024" page="200"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Sleight of Hand"/>
+      <skill name="Stealth"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Thieves' Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Dagger" quantity="2"/>
         <item name="Thieves' Tools" quantity="1"/>
         <item name="Crowbar" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="16" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="16"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Entertainer [2024]</name>
-    <source book="Player's Handbook 2024" page="180"/>
-    <description>
-      <text>You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Acrobatics"/>
-      <skill name="Performance"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Dexterity"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Musician">Musician</name>
+    <source page="180">Player's Handbook 2024</source>
+    <description_text>You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Dexterity, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Dexterity,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Musician" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Instrument Training: You gain proficiency with three Musical Instruments of your choice.
 
 Encouraging Song: As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Acrobatics"/>
+      <skill name="Performance"/>
+    </skill_proficiencies>
     <tool_proficiencies>
-      <tool_choice count="1">
-        <category name="Musical Instrument"/>
-        <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
+      <choice_from_category category="MusicalInstruments" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
 
 Musical instruments:
 Instrument | Cost | Weight
@@ -260,145 +215,114 @@ Lyre | 30 gp | 2 lb.
 Horn | 3 gp | 2 lb.
 Pan flute | 12 gp | 2 lb.
 Shawm | 2 gp | 1 lb.
-Viol | 30 gp | 1 lb.</text>
-      </tool_choice>
+Viol | 30 gp | 1 lb."/>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
-        <item name="Musical Instrument (same as above)" quantity="1"/>
+      <option_A>
+        <item name="Musical Instrument (chosen from category)" quantity="1"/>
         <item name="Costume" quantity="2"/>
         <item name="Mirror" quantity="1"/>
         <item name="Perfume" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="11" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="11"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Farmer [2024]</name>
-    <source book="Player's Handbook 2024" page="180"/>
-    <description>
-      <text>You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath.</text>
-    </description>
+    <source page="180">Player's Handbook 2024</source>
+    <description_text>You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Constitution, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Constitution,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Tough" source_text="Player's Handbook 2024 p. 202">
+      <text>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</text>
+    </granted_feat>
     <skill_proficiencies>
       <skill name="Animal Handling"/>
       <skill name="Nature"/>
     </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Constitution"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Tough">Tough</name>
-      <text>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</text>
-      <source book="Player's Handbook 2024" page="202"/>
-    </feat_granted>
     <tool_proficiencies>
       <tool name="Carpenter's Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Sickle" quantity="1"/>
         <item name="Carpenter's Tools" quantity="1"/>
         <item name="Healer's Kit" quantity="1"/>
         <item name="Iron Pot" quantity="1"/>
         <item name="Shovel" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="30" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="30"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Guard [2024]</name>
-    <source book="Player's Handbook 2024" page="181"/>
-    <description>
-      <text>Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall. watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall. searching for cutpurses and troublemakers.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Athletics"/>
-      <skill name="Perception"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Intelligence"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Alert">Alert</name>
+    <source page="181">Player's Handbook 2024</source>
+    <description_text>Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall. watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall. searching for cutpurses and troublemakers.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Intelligence, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Intelligence,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Alert" source_text="Player's Handbook 2024 p. 200">
       <text>You gain the following benefits.
 
 Initiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.
 
 Initiative Swap. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</text>
-      <source book="Player's Handbook 2024" page="200"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Athletics"/>
+      <skill name="Perception"/>
+    </skill_proficiencies>
     <tool_proficiencies>
-      <tool_choice count="1">
-        <category name="Gaming Set"/>
-        <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
+      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
 
 Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
 Playing card set | 5 sp | -
-Three-Dragon Ante set | 1 gp | -</text>
-      </tool_choice>
+Three-Dragon Ante set | 1 gp | -"/>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Spear" quantity="1"/>
         <item name="Light Crossbow" quantity="1"/>
-        <item name="Bolts" quantity="20"/>
-        <item name="Gaming Set (same as above)" quantity="1"/>
+        <item name="Bolt" quantity="20"/>
+        <item name="Gaming Set (chosen from category)" quantity="1"/>
         <item name="Hooded Lantern" quantity="1"/>
         <item name="Manacles" quantity="1"/>
         <item name="Quiver" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="12" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="12"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Guide [2024]</name>
-    <source book="Player's Handbook 2024" page="181"/>
-    <description>
-      <text>You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread you r bedroll. There are wonders in the wilderness strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Stealth"/>
-      <skill name="Survival"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Dexterity"/>
-        <ability name="Constitution"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Magic Initiate (Druid)">Magic Initiate (Druid)</name>
+    <source page="181">Player's Handbook 2024</source>
+    <description_text>You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread you r bedroll. There are wonders in the wilderness strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Dexterity, Constitution, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Dexterity,Constitution,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Magic Initiate (Druid)" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
@@ -408,63 +332,58 @@ Level 1 Spell. Choose a level 1 spell from the same list you selected for this f
 Spell Change. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
 
 Repeatable. You can take this feat more than once, but you must choose a different spell list each time.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Stealth"/>
+      <skill name="Survival"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Cartographer's Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Shortbow" quantity="1"/>
-        <item name="Arrows" quantity="20"/>
+        <item name="Arrow" quantity="20"/>
         <item name="Cartographer's Tools" quantity="1"/>
         <item name="Bedroll" quantity="1"/>
         <item name="Quiver" quantity="1"/>
         <item name="Tent" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="3" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="3"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Hermit [2024]</name>
-    <source book="Player's Handbook 2024" page="182"/>
-    <description>
-      <text>You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Medicine"/>
-      <skill name="Religion"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Constitution"/>
-        <ability name="Wisdom"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Healer">Healer</name>
+    <source page="182">Player's Handbook 2024</source>
+    <description_text>You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Constitution, Wisdom, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Constitution,Wisdom,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Healer" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Battle Medic. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.
 
 Healing Rerolls. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Medicine"/>
+      <skill name="Religion"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Herbalism Kit"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Quarterstaff" quantity="1"/>
         <item name="Herbalism Kit" quantity="1"/>
         <item name="Bedroll" quantity="1"/>
@@ -472,33 +391,22 @@ Healing Rerolls. Whenever you roll a die to determine the number of Hit Points y
         <item name="Lamp" quantity="1"/>
         <item name="Oil (3 flasks)" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="16" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="16"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Merchant [2024]</name>
-    <source book="Player's Handbook 2024" page="182"/>
-    <description>
-      <text>You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling t he raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Animal Handling"/>
-      <skill name="Persuasion"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Constitution"/>
-        <ability name="Intelligence"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Lucky">Lucky</name>
+    <source page="182">Player's Handbook 2024</source>
+    <description_text>You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling t he raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Constitution, Intelligence, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Constitution,Intelligence,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Lucky" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Luck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.
@@ -506,96 +414,77 @@ Luck Points. You have a number of Luck Points equal to your Proficiency Bonus an
 Advantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.
 
 Disadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Animal Handling"/>
+      <skill name="Persuasion"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Navigator's Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Navigator's Tools" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="22" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="22"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Noble [2024]</name>
-    <source book="Player's Handbook 2024" page="183"/>
-    <description>
-      <text>You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle. especially the many hours you spent observing your family at court, also taught you a great deal about leadership.</text>
-    </description>
+    <source page="183">Player's Handbook 2024</source>
+    <description_text>You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle. especially the many hours you spent observing your family at court, also taught you a great deal about leadership.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Intelligence, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Intelligence,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Skilled" source_text="Player's Handbook 2024 p. 201">
+      <text>You gain proficiency in any combination of three skills or tools of your choice.
+
+Repeatable: You can take this feat more than once.</text>
+    </granted_feat>
     <skill_proficiencies>
       <skill name="History"/>
       <skill name="Persuasion"/>
     </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Intelligence"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Skilled">Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
-
-Repeatable. You can take this feat more than once.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
     <tool_proficiencies>
-      <tool_choice count="1">
-        <category name="Gaming Set"/>
-        <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
+      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
 
 Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
 Playing card set | 5 sp | -
-Three-Dragon Ante set | 1 gp | -</text>
-      </tool_choice>
+Three-Dragon Ante set | 1 gp | -"/>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
-        <item name="Gaming Set (same as above)" quantity="1"/>
+      <option_A>
+        <item name="Gaming Set (chosen from category)" quantity="1"/>
         <item name="Fine Clothes" quantity="1"/>
         <item name="Perfume" quantity="1"/>
-        <gold amount="29" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="29"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Sage [2024]</name>
-    <source book="Player's Handbook 2024" page="183"/>
-    <description>
-      <text>You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse- even the rudiments of magic- and your mind yearns for more.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Arcana"/>
-      <skill name="History"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Constitution"/>
-        <ability name="Intelligence"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Magic Initiate (Wizard)">Magic Initiate (Wizard)</name>
+    <source page="183">Player's Handbook 2024</source>
+    <description_text>You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse- even the rudiments of magic- and your mind yearns for more.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Constitution, Intelligence, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Constitution,Intelligence,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Magic Initiate (Wizard)" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
@@ -605,47 +494,39 @@ Level 1 Spell. Choose a level 1 spell from the same list you selected for this f
 Spell Change. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
 
 Repeatable. You can take this feat more than once, but you must choose a different spell list each time.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Arcana"/>
+      <skill name="History"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Quarterstaff" quantity="1"/>
         <item name="Calligrapher's Supplies" quantity="1"/>
         <item name="Book (history)" quantity="1"/>
         <item name="Parchment (8 sheets)" quantity="1"/>
         <item name="Robe" quantity="1"/>
-        <gold amount="8" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="8"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Sailor [2024]</name>
-    <source book="Player's Handbook 2024" page="184"/>
-    <description>
-      <text>You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Acrobatics"/>
-      <skill name="Perception"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Dexterity"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Tavern Brawler">Tavern Brawler</name>
+    <source page="184">Player's Handbook 2024</source>
+    <description_text>You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Dexterity, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Dexterity,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Tavern Brawler" source_text="Player's Handbook 2024 p. 202">
       <text>You gain the following benefits.
 
 Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.
@@ -655,143 +536,116 @@ Damage Rerolls. Whenever you roll a damage die for your Unarmed Strike, you can 
 Improvised Weaponry. You have proficiency with improvised weapons.
 
 Push. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</text>
-      <source book="Player's Handbook 2024" page="202"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Acrobatics"/>
+      <skill name="Perception"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Navigator's Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Dagger" quantity="1"/>
         <item name="Navigator's Tools" quantity="1"/>
-        <item name="Rope" quantity="1"/> <!-- Assuming 50 feet of hempen rope -->
+        <item name="Rope" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="20" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="20"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Scribe [2024]</name>
-    <source book="Player's Handbook 2024" page="184"/>
-    <description>
-      <text>You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistake·s to the documents you copy and create.</text>
-    </description>
+    <source page="184">Player's Handbook 2024</source>
+    <description_text>You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistake·s to the documents you copy and create.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Dexterity, Intelligence, and Wisdom. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Dexterity,Intelligence,Wisdom"/>
+    </ability_score_increase_option>
+    <granted_feat name="Skilled" source_text="Player's Handbook 2024 p. 201">
+      <text>You gain proficiency in any combination of three skills or tools of your choice.
+
+Repeatable: You can take this feat more than once.</text>
+    </granted_feat>
     <skill_proficiencies>
       <skill name="Investigation"/>
       <skill name="Perception"/>
     </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Dexterity"/>
-        <ability name="Intelligence"/>
-        <ability name="Wisdom"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Skilled">Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
-
-Repeatable. You can take this feat more than once.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Calligrapher's Supplies" quantity="1"/>
         <item name="Fine Clothes" quantity="1"/>
         <item name="Lamp" quantity="1"/>
         <item name="Oil (3 flasks)" quantity="1"/>
         <item name="Parchment (12 sheets)" quantity="1"/>
-        <gold amount="23" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="23"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Soldier [2024]</name>
-    <source book="Player's Handbook 2024" page="185"/>
-    <description>
-      <text>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield. protecting the realm by waging war.</text>
-    </description>
+    <source page="185">Player's Handbook 2024</source>
+    <description_text>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield. protecting the realm by waging war.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Strength, Dexterity, and Constitution. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Strength,Dexterity,Constitution"/>
+    </ability_score_increase_option>
+    <granted_feat name="Savage Attacker" source_text="Player's Handbook 2024 p. 201">
+      <text>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</text>
+    </granted_feat>
     <skill_proficiencies>
       <skill name="Athletics"/>
       <skill name="Intimidation"/>
     </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Strength"/>
-        <ability name="Dexterity"/>
-        <ability name="Constitution"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Savage Attacker">Savage Attacker</name>
-      <text>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
     <tool_proficiencies>
-      <tool_choice count="1">
-        <category name="Gaming Set"/>
-        <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
+      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
 
 Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
 Playing card set | 5 sp | -
-Three-Dragon Ante set | 1 gp | -</text>
-      </tool_choice>
+Three-Dragon Ante set | 1 gp | -"/>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Spear" quantity="1"/>
         <item name="Shortbow" quantity="1"/>
-        <item name="Arrows" quantity="20"/>
-        <item name="Gaming Set (same as above)" quantity="1"/>
+        <item name="Arrow" quantity="20"/>
+        <item name="Gaming Set (chosen from category)" quantity="1"/>
         <item name="Healer's Kit" quantity="1"/>
         <item name="Quiver" quantity="1"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="14" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="14"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
   <background>
     <name>Wayfarer [2024]</name>
-    <source book="Player's Handbook 2024" page="185"/>
-    <description>
-      <text>You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you.</text>
-    </description>
-    <skill_proficiencies>
-      <skill name="Insight"/>
-      <skill name="Stealth"/>
-    </skill_proficiencies>
-    <ability_score_increase>
-      <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
-      <applies_to_abilities>
-        <ability name="Dexterity"/>
-        <ability name="Wisdom"/>
-        <ability name="Charisma"/>
-      </applies_to_abilities>
-    </ability_score_increase>
-    <feat_granted>
-      <name ref="Lucky">Lucky</name>
+    <source page="185">Player's Handbook 2024</source>
+    <description_text>You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you.</description_text>
+    <ability_score_increase_option>
+      <text>A background lists three of your character's ability scores: Dexterity, Wisdom, and Charisma. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
+      <abilities_list list="Dexterity,Wisdom,Charisma"/>
+    </ability_score_increase_option>
+    <granted_feat name="Lucky" source_text="Player's Handbook 2024 p. 201">
       <text>You gain the following benefits.
 
 Luck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.
@@ -799,26 +653,29 @@ Luck Points. You have a number of Luck Points equal to your Proficiency Bonus an
 Advantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.
 
 Disadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</text>
-      <source book="Player's Handbook 2024" page="201"/>
-    </feat_granted>
+    </granted_feat>
+    <skill_proficiencies>
+      <skill name="Insight"/>
+      <skill name="Stealth"/>
+    </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Thieves' Tools"/>
       <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
-      <option name="A">
+      <option_A>
         <item name="Dagger" quantity="2"/>
         <item name="Thieves' Tools" quantity="1"/>
         <item name="Gaming Set (any)" quantity="1"/>
         <item name="Bedroll" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="16" currency="GP"/>
-      </option>
-      <option name="B">
-        <gold amount="50" currency="GP"/>
-      </option>
+        <gold amount="16"/>
+      </option_A>
+      <option_B>
+        <gold amount="50"/>
+      </option_B>
     </starting_equipment>
   </background>
 </compendium>

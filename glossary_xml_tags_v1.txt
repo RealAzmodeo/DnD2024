@@ -1,190 +1,140 @@
-## Glosario de Etiquetas XML para Características de Clase D&D 5e (v1)
+## Glosario de Etiquetas XML para Características de Clase, Dotes y Razas D&D 5e (v1.1)
 
-Este documento detalla las etiquetas XML y atributos utilizados para estructurar las características de clase, basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml`.
+Este documento detalla las etiquetas XML y atributos utilizados para estructurar las características de clase, dotes (feats) y razas, basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml`, la revisión de dotes de PHB24, y la estructuración de razas de PHB24.
 
 ---
-### **Etiquetas Principales de Características y Sub-características**
+### **Etiquetas Principales (Contenedores Raíz)**
 ---
 
 **`<class>`**
 Contenedor raíz para una definición de clase.
 *   **`<name>`**: Nombre de la clase.
+*   **`<source page="[numero]">Player's Handbook 2024</source>`**: (Recomendado) Información de la fuente.
 *   **`<hd>`**: Dado de golpe (Hit Die) de la clase (ej: 8, 10, 12).
-*   **`<proficiency>`**: Lista textual de competencias en tiradas de salvación y habilidades iniciales. (Nota: Se busca reemplazar por etiquetas más estructuradas como `<saving_throw_proficiencies>` y `<skill_proficiencies_options>`).
-*   **`<numSkills>`**: Número de habilidades a elegir de la lista de competencias.
-*   **`<armor>`**: Lista textual de competencias en armaduras. (Nota: Se busca reemplazar por `<armor_proficiencies>`).
-*   **`<weapons>`**: Lista textual de competencias en armas. (Nota: Se busca reemplazar por `<weapon_proficiencies>`).
-*   **`<tools>`**: Lista textual de competencias en herramientas. (Nota: Se busca reemplazar por `<tool_proficiencies_options>`).
+*   **`<proficiency>`**: (Legado/Provisional) Lista textual de competencias en tiradas de salvación y habilidades iniciales. (Nota: Reemplazar por etiquetas más estructuradas como `<saving_throw_proficiencies>` y `<skill_proficiencies_options>`).
+*   **`<numSkills>`**: (Legado/Provisional) Número de habilidades a elegir de la lista de competencias.
+*   **`<armor>`**: (Legado/Provisional) Lista textual de competencias en armaduras. (Nota: Reemplazar por `<armor_proficiencies>`).
+*   **`<weapons>`**: (Legado/Provisional) Lista textual de competencias en armas. (Nota: Reemplazar por `<weapon_proficiencies>`).
+*   **`<tools>`**: (Legado/Provisional) Lista textual de competencias en herramientas. (Nota: Reemplazar por `<tool_proficiencies_options>`).
 *   **`<spellAbility>`**: Característica principal para el lanzamiento de conjuros (ej: Wisdom, Charisma, Intelligence).
 *   **`<slotsReset>`**: Cuándo se reinician los espacios de conjuro (ej: L para Long Rest, S para Short Rest). (Nota: Más relevante para Pact Magic de Warlock).
-*   **`<autolevel level="X">`**: Contenedor para características y cambios que ocurren en un nivel específico "X".
+*   **`<autolevel level="X">`**: Contenedor para características y cambios que ocurren en un nivel específico "X" de la clase.
     *   **`scoreImprovement="YES"`** (atributo opcional): Indica que en este nivel se ofrece una Mejora de Puntuación de Característica (ASI).
-    *   **`<slots>`** (opcional, especialmente para lanzadores de conjuros parciales como Eldritch Knight): Define los espacios de conjuros por nivel de conjuro para este nivel de clase (ej: `<slots>2,3</slots>` para 2 de nivel 1, 3 de nivel 2).
-    *   **`<feature optional="YES|NO">`**: Define una característica de clase.
-        *   **`<name>`**: Nombre de la característica.
-        *   **`<text>`**: Descripción textual completa de la característica.
+    *   **`<slots>`** (opcional): Define los espacios de conjuros por nivel de conjuro para este nivel de clase (ej: `<slots>2,3</slots>` para 2 de nivel 1, 3 de nivel 2).
+    *   **`<feature optional="YES|NO">`**: Define una característica de clase. (Ver sección `<feature>` / `<trait>` más abajo).
         *   **`<subclass>`** (opcional): Nombre de la subclase a la que pertenece esta característica.
-        *   _(Ver más abajo para etiquetas detalladas dentro de `<feature>`)_
-    *   **`<counter>`** (opcional): Para rastrear usos de características que no son recursos principales (ej: Indomitable, Second Wind).
+    *   **`<counter>`** (opcional): Para rastrear usos de características (ej: Indomitable).
         *   **`<name>`**: Nombre del contador.
-        *   **`<value>`**: Valor inicial o actual del contador.
+        *   **`<value>`**: Valor inicial.
         *   **`<reset>`**: Cuándo se resetea (S: Short Rest, L: Long Rest, Dawn: Amanecer).
-        *   **`<subclass>`** (opcional): Si el contador es específico de una subclase.
 
-**`<trait>`**
-Usado para la descripción general inicial de la clase. Similar a una característica, pero usualmente solo contiene `<name>` y `<text>`.
+**`<feat>`**
+Contenedor raíz para la definición de un dote.
+*   **`<name>`**: Nombre del dote.
+*   **`<source page="[numero]">Player's Handbook 2024</source>`**: Información de la fuente.
+*   **`repeatable="true|false"`** (opcional, default `false`): Si el dote puede ser tomado múltiples veces.
+    *   `<repeatable_note condition="[texto_condicion]">` (si `repeatable="true"`).
+*   **`origin_feat="true|false"`** (opcional, default `false`): Si es un dote de origen.
+*   **`<prerequisite>`**: Condiciones para tomar el dote. (Ver sección `<prerequisite>`).
+*   **`<benefit name="[BenefitName]">`**: Beneficio específico del dote. (Ver sección `<benefit>`).
+*   **`<text>`**: (Legado) Descripción textual completa. Reemplazar con etiquetas estructuradas.
+*   **`<modifier>`**: (Legado) Reemplazar con etiquetas semánticas dentro de `<benefit>`.
+
+**`<race>`**
+Contenedor raíz para la definición de una raza.
+*   **`<name>`**: Nombre de la raza (ej: "Aasimar [2024]", "Elf, Drow [2024]").
+*   **`<source page="[numero]">Player's Handbook 2024</source>`**: Información de la fuente.
+*   **`<size_summary code="[S|M|L|T|G|H]"/>`**: Código de tamaño resumido (ej: M, S). El detalle y opciones van en un `<trait name="Size">`.
+*   **`<speed base="[numero_pies]"/>`**: Velocidad base de movimiento terrestre. Otras velocidades (vuelo, nado) se definen en traits.
+*   **`<spellcasting_ability default="[AbilityName]"/>`** (opcional): Habilidad de lanzamiento por defecto para conjuros raciales si no se especifica otra cosa en un `<trait>` o `<grants_spell_learning>`.
+*   **`<trait name="[TraitName]" ...>`**: Define una característica racial. (Ver sección `<feature>` / `<trait>` más abajo).
 
 ---
-### **Etiquetas Detalladas Dentro de `<feature>`**
+### **Etiquetas de Características (Común a Clases, Dotes, Razas)**
+---
+
+**`<feature optional="YES|NO">`** (Usado dentro de `<class>`) / **`<benefit name="[BenefitName]">`** (Usado dentro de `<feat>`) / **`<trait name="[TraitName]" category="[category_type]" gained_at_character_level="[numero]">`** (Usado dentro de `<race>`)
+
+Estas etiquetas sirven como contenedores para las descripciones y mecánicas de una característica específica, un beneficio de dote, o un rasgo racial. Comparten muchas sub-etiquetas comunes.
+
+*   **Para `<trait>` (racial):**
+    *   **`name`**: Nombre del rasgo racial.
+    *   **`category`**: Ayuda a organizar y categorizar los rasgos raciales.
+        *   `description`: Lore general, edad, alineamiento, etc. (principalmente `<text>`).
+        *   `core`: Rasgos fundamentales como Tipo de Criatura, Tamaño detallado.
+        *   `species`: Rasgos comunes a la especie principal antes de cualquier elección de linaje/subraza.
+        *   `lineage`: Rasgos específicos de un linaje o subraza (ej. Drow Lineage, Fiendish Legacy).
+        *   `ancestry_choice`: Para rasgos que presentan una elección mayor basada en la ascendencia y que pueden afectar otros rasgos (ej. Draconic Ancestry del Dragonborn).
+    *   **`gained_at_character_level="[numero]"`** (opcional): Para rasgos que se activan o se obtienen en un nivel de personaje específico. (Nota: Para `<feature>` de clase, el nivel se define en `<autolevel>`. Para `<benefit>` de dote, se usa `<prerequisite>`).
+*   **Contenido común:** `<name>`, `<text>` (descripción textual), y luego etiquetas estructuradas como:
+    *   `<action>`, `<choice>`, `<cost>`, `<duration>`, `<effect>`, `<grants_ability_score_increase>`, `<grants_proficiency>`, `<grants_spell_learning>`, `<modifies_action>`, `<modifies_rule>`, `<modifies_spell>`, `<resource_pool>`, `<resource>`, `<uses>`, `<recharge>`, `<restriction>`, `<note>`, etc. (Detalladas más abajo).
+
+**`<prerequisite>`** (Usado dentro de `<feat>`, o potencialmente dentro de `<feature>`/`<trait>` si una característica tiene prerrequisitos específicos)
+*   **`<level min="[numero]"/>`**: Nivel mínimo de personaje (para dotes) o de clase (si dentro de una clase).
+*   **`<ability_score name="[AbilityName]" min="[numero]"/>`**.
+*   **`<proficiency type="[Armor|WeaponCategory|Feature|Tool|Skill]" name="[SpecificName]" present="true|false"/>`**.
+*   **`<spellcasting present="true|false"/>`**: Prerrequisito de tener la capacidad de lanzar conjuros.
+*   **`<or_conditions>` / `<and_conditions>`**: Para agrupar condiciones.
+*   **`text_override="[texto_complejo]"`**: Para prerrequisitos textuales complejos.
+
+---
+### **Etiquetas Detalladas (Sub-etiquetas comunes dentro de `<feature>`, `<benefit>`, `<trait>`)**
 ---
 
 **`<action type="[ActionType]" (otros atributos)>`**
-Define el tipo de acción requerida para usar una habilidad.
-*   **`type`**: Tipo de acción.
-    *   Valores comunes: `Action`, `BonusAction`, `Reaction`, `MagicAction` (para acciones que implican lanzar un conjuro o efecto mágico sin ser un conjuro nombrado), `Free` (si se especifica que no requiere acción pero tiene un trigger), `NoAction` (para beneficios pasivos o activaciones sin coste de acción explícito), `Special` (para acciones complejas o únicas no fácilmente categorizables), `Ritual`.
-*   **`to_assume_form="true"`** (opcional): Para habilidades como Wild Shape, indica que esta acción es para asumir la forma.
-*   **`to_leave_form="true"`** (opcional): Para habilidades como Wild Shape, indica que esta acción es para dejar la forma.
-*   **`to_manifest="true"`** (opcional): Para efectos como Wrath of the Sea, indica que la acción es para manifestar el efecto.
-*   **`to_move_area="true"`** (opcional): Para mover un área de efecto creada.
-*   **`duration="[texto]"`** (opcional): Si la acción en sí tiene una duración (ej: un ritual).
-*   **`timing="[texto]"`** (opcional): Información adicional sobre cuándo se puede realizar la acción (ej: "can_be_done_during_SR").
-*   **`trigger="[texto]"`** (opcional): Para acciones que no son de Reacción pero tienen un disparador específico (ej: "on_your_turn").
+*   **`type`**: `Action`, `BonusAction`, `Reaction`, `MagicAction`, `Free`, `NoAction`, `Special`, `Utilize` (para usar ítems como parte de la acción), `PartOfAttackAction`, `ImmediatelyFollowingAttack`, `Ritual`.
+*   **`name_override="[texto]"`**: Si la acción es una versión especial de una acción estándar (ej: `type="BonusAction" name_override="Dash"` para Adrenaline Rush del Orco).
+*   **`to_assume_form="true"`**, **`to_leave_form="true"`**, **`to_manifest="true"`**, **`to_move_area="true"`**.
+*   **`duration="[texto]"`** (para la acción en sí, ej. ritual).
+*   **`timing="[texto]"`**.
+*   **`trigger="[texto_disparador]"`** (especialmente para Reacciones o acciones con disparadores específicos).
 
-**`<asi_options>`**
-Contenedor para las opciones de una Mejora de Puntuación de Característica (ASI).
-*   **`<option description="[texto]">`**: Describe una opción de ASI (ej: "Ability Score Improvement feat (see chapter 5)", "Another feat of your choice for which you qualify").
+**`<asi_options>`** (Dentro de un `<feature scoreImprovement="YES">` o un dote ASI)
+*   **`<option description="[texto]">`**.
 
 **`<choice name="[ChoiceName]" count="[number]" (otros atributos)>`**
-Define una elección que el jugador debe hacer dentro de una característica.
-*   **`name`**: Nombre descriptivo de la elección.
-*   **`count`**: Cuántas opciones se pueden elegir (ej: 1, 2).
-*   **`from_list="[lista_separada_por_comas]"`** (opcional): Si la elección es de una lista predefinida de cadenas.
-*   **`from_table_ref="[TableName]"`** (opcional): Si la elección es de una tabla (usualmente cosmética o de conjuros menores).
-*   **`random_roll="[dado]"`** (opcional): Si la elección puede ser determinada aleatoriamente.
-*   **`trigger="[texto]"`** (opcional): Cuándo se hace la elección (ej: "whenever_you_assume_your_starry_form").
-*   **`<option name="[OptionName]" (otros atributos)>`**: Define una opción individual dentro de la elección.
-    *   **`name`**: Nombre de la opción.
-    *   **`description="[texto]"`** (opcional): Descripción de la opción si no tiene más sub-etiquetas.
-    *   **`type="Feat"`** (opcional): Si la opción es elegir un feat.
-    *   **`ref_feature_name="[FeatureName]"`** (opcional): Si la opción se refiere a otra característica completamente definida en otro lugar.
-    *   _(Puede contener `<effect>`, `<action>`, `<cost>`, etc., para detallar la mecánica de esta opción específica)._
-*   **`<recharge type="[SR|LR|Dawn|Other]" description="[texto]"`** (opcional, dentro de `<choice>`): Si la habilidad de cambiar la elección se recarga.
+*   **`from_list="[lista_separada_por_comas_o_pipa]"`**.
+*   **`from_table_ref="[TableName]"`**.
+*   **`trigger="[texto]"`** (ej: "each_time_you_transform" para Celestial Revelation).
+*   **`<option name="[OptionName]" description_text="[texto descriptivo de la opción]">`**:
+    *   `description_text`: Usado para describir la opción si no hay sub-etiquetas complejas.
+    *   Puede contener `<text>` para descripción más larga, y luego `<effect>`, `<action>`, `<cost>`, etc.
+    *   **`type="Feat"`**: Si la opción es elegir un dote.
+    *   **`grants_damage_type_option="[DamageType]"`**: Si la opción define un tipo de daño a elegir.
+    *   **`<effect type="DamageTypeAssociation" value="[DamageType]" for_trait="[TraitName1,TraitName2]"/>`**: (Específico para Razas/AncestryChoice) Asocia un tipo de daño con esta opción, que puede ser referenciado por otros traits.
+*   **`<recharge type="[SR|LR|Dawn|Other]" description="[texto]"`**: Si la habilidad de cambiar la elección se recarga.
+
+**`<grants_ability_score_increase>`**
+*   **`<fixed_ability name="[AbilityName]" value="[+N]" max="[20|22]"/>`**.
+*   **`<choice_from_abilities list="[STR|DEX|...|any]" count="[N]" value_per_choice="[+N]" total_increase="[+N]" max="[20|22]"/>`**.
 
 **`<cost (atributos)>`**
-Define el coste para activar una habilidad o parte de ella.
-*   **`resource="[ResourceName]"`**: Nombre del recurso a gastar (ej: FocusPoint, WildShapeUse, SpellSlot, SecondWindUse, SuperiorityDie, PsionicEnergyDie, LayOnHandsPool).
-*   **`value="[number|any|variable]"`**: Cantidad del recurso a gastar. "any" para cualquier nivel de spell slot.
-*   **`value_any="true"`** (alternativa a `value="any"` para spell slots).
-*   **`value_range="[min-max]"`**: Para costes variables como Bastion of Law (1-5 Sorcery Points).
-*   **`value_formula="[formula]"`**: Si el coste se calcula (ej: "spells_level").
-*   **`level="[number|X+]"`** (para `resource="SpellSlot"`): Nivel del espacio de conjuro requerido (ej: "2+").
-*   **`action_type="[NoAction|BonusAction|etc.]"`** (opcional): Si gastar el coste es en sí mismo un tipo de acción o no requiere acción.
-*   **`roll_die="true"`** (opcional, para recursos como SuperiorityDie): Indica que el dado del recurso se tira como parte del coste/efecto.
-*   **`expended_only_on_success="true"`** (opcional): Si el recurso solo se gasta si la acción tiene éxito.
-*   **`per_condition="true"`** (opcional): Si el coste es por cada condición eliminada (ej: Restoring Touch).
-*   **`note="[texto]"`** (opcional): Notas adicionales sobre el coste.
-*   **`<cost_options>`**: Contenedor si hay múltiples formas de pagar un coste.
-    *   **`<cost ... />`**: Múltiples etiquetas de coste dentro de `<cost_options>`.
+*   **`resource="[ResourceName|ItemName|HitDice]"`**.
+*   **`value="[number|any|variable|ProficiencyBonus]"`, `value_formula="[formula]"`**.
+*   ... (otros atributos como en la v1) ...
 
 **`<duration description="[texto|formula]" (otros atributos)>`**
-Define la duración de un efecto.
-*   **`description`**: Descripción textual (ej: "1_minute", "number_of_hours_equal_to_half_Druid_level").
-*   **`unit="[minute|hour|day|turn|round]"`** (opcional): Unidad de tiempo.
-*   **`value="[number]"`** (opcional): Valor numérico de la duración.
-*   **`formula="[formula]"`** (opcional): Si la duración se calcula (ej: "MonkLevel_days").
-*   **`ends_early_if condition="[texto_condiciones_separadas_por_coma_o_y]"`**: Condiciones que pueden terminar el efecto antes.
-    *   Ejemplos de condiciones: `use_Wild_Shape_again`, `Incapacitated_condition`, `die`, `dismissed_no_action`, `not_carrying_weapon`, `end_your_turn_in_Bright_Light`.
+*   **`ends_early_if="[condicion1,condicion2,dismissed_no_action,Incapacitated_condition]"`**: Lista de condiciones separadas por coma.
 
 **`<effect (atributos)>`**
-Etiqueta genérica para describir un efecto mecánico.
-*   **`description="[texto_del_efecto]"`**: Descripción textual del efecto si no se desglosa más.
-*   **`type="[TypeName]"`**: Tipo de efecto para una categorización más específica.
-    *   Valores comunes: `Damage`, `Heal`, `Bonus`, `Advantage`, `Disadvantage`, `Condition`, `Movement`, `Speed`, `SpeedIncrease`, `SpeedReduction`, `Resistance`, `Immunity`, `Cover`, `ACBonus`, `DamageReduction`, `DamageBonus`, `ExtraDamage`, `Teleport`, `Detection`, `CreateArea`, `CreateWard`, `Transformation`, `Buff`, `Debuff`, `GainTemporaryHitPoints`, `HitPointMaximumIncrease`, `AbilityScoreIncrease`, `ReachIncrease`, `DispelMagic`, `Revive`, `RollBonus`, `Sense`.
-*   **Atributos específicos del tipo de efecto:**
-    *   Para `type="Damage"` o `type="ExtraDamage"`:
-        *   **`damage_type="[Acid|Cold|Fire|etc.|Radiant|Necrotic|Psychic|Force|Bludgeoning|Piercing|Slashing|normal_weapon_damage|same_as_strike]"`**
-        *   **`damage_type_choice="[lista_de_tipos]"`**: Si el jugador elige el tipo de daño.
-        *   **`value="[dado_o_formula]"`** (ej: "1d8", "1d10+WIS_modifier", "half_of_10d12").
-        *   **`value_dice="[dado]"`**: Si solo es un tipo de dado.
-        *   **`value_formula="[formula]"`**: Para valores calculados.
-        *   **`save_type="[STR|DEX|CON|INT|WIS|CHA]"`** (opcional): Si una salvación afecta el daño.
-        *   **`save_dc="[spell_save_DC|focus_point_save_dc|valor_fijo|formula]"`** (opcional).
-        *   **`save_effect="[half_damage|no_damage|otro_efecto_textual]"`** (opcional).
-        *   **`target_description="[texto]"`** (opcional): A quién afecta el daño.
-        *   **`timing="[texto]"`** (opcional): Cuándo ocurre el daño.
-        *   **`ignores_resistance_immunity="true"`** (opcional).
-        *   **`<scaling level="X" dice="[nuevo_dado]" value="[nuevo_valor]"/>`**: Para daño que escala con el nivel.
-    *   Para `type="Heal"`:
-        *   **`value="[dado_o_formula]"`** (ej: "1d10+FighterLevel", "total_of_dice_rolled").
-        *   **`value_dice="[dado]"`**.
-        *   **`value_formula="[formula]"`**.
-        *   **`value_total="[numero]"`** (ej: para Clockwork Cavalcade).
-        *   **`target="[self|target_creature|criatura_tocada|etc.]"`**.
-        *   **`min_value="[numero]"`** (opcional).
-        *   **`<scaling level="X" dice="[nuevo_dado]"/>`**.
-    *   Para `type="Bonus"` o `type="RollBonus"`:
-        *   **`on="[ability_checks|saving_throws|attack_rolls|skill_checks|specific_skill_checks|etc.]"`** (ej: "Intelligence_Arcana_checks_or_Intelligence_Nature_checks", "Constitution_saving_throws").
-        *   **`value="[+N|dado|formula]"`** (ej: "+1", "1d10", "WIS_modifier").
-        *   **`min_value="[numero]"`** (opcional).
-    *   Para `type="Advantage"` o `type="Disadvantage"`:
-        *   **`on="[attack_rolls|saving_throws|ability_checks|specific_skill_checks|etc.]"`** (ej: "next_attack_roll_you_make_before_end_of_this_turn", "saving_throws_against_your_spells_and_Channel_Divinity_options").
-        *   **`target="[self|target_creature|attacker|etc.]"`** (opcional).
-        *   **`condition="[texto]"`** (opcional): Bajo qué condición se aplica.
-        *   **`duration="[texto]"`** (opcional).
-    *   Para `type="Condition"`:
-        *   **`name="[ConditionName]"`** (ej: Stunned, Frightened, Poisoned, Invisible, Restrained, Prone).
-        *   **`name_choice="[lista_condiciones]"`**: Si el jugador elige la condición a aplicar.
-        *   **`target="[target_creature|self|that_creature|etc.]"`**.
-        *   **`duration="[texto_o_formula]"`**.
-        *   **`save_type="[STR|DEX|CON|INT|WIS|CHA]"`** (opcional): Si una salvación puede evitar o terminar la condición.
-        *   **`save_dc="[spell_save_DC|etc.]"`** (opcional).
-        *   **`save_timing="[end_of_creatures_turn|etc.]"`** (opcional): Cuándo se repite la salvación.
-        *   **`save_ends_effect="true"`** (opcional).
-        *   **`to_creatures="[texto]"`** (opcional): Para condiciones que afectan a ciertos observadores (ej: invisibilidad para quienes dependen de darkvision).
-    *   Para `type="Movement"`:
-        *   **`target="[self|target_creature]"`**.
-        *   **`value="[distancia_texto_o_formula]"`** (ej: "up_to_half_your_Speed", "up_to_10_feet_horizontally").
-        *   **`direction="[pushed_up_to_X_feet_away_from_you|pulled_straight_toward_X|etc.]"`**.
-        *   **`does_not_provoke_opportunity_attacks="true"`** (opcional).
-        *   **`as_part_of_same_reaction="true"`** (opcional).
-        *   **`condition="[texto]"`** (opcional).
-    *   Para `type="Speed"`, `type="SpeedIncrease"`, `type="SpeedReduction"`:
-        *   **`speed_type="[Walk|Fly|Swim|Climb|Burrow]"`** (para `type="Speed"`).
-        *   **`value="[numero_pies|formula|halved]"`** (ej: "10", "your_Speed", "to_0").
-        *   **`value_halved="true"`** (para `type="SpeedReduction"`).
-        *   **`value_scaling_table="[TableName]"`**: Si el aumento de velocidad escala con una tabla (ej: Unarmored Movement del Monje).
-        *   **`duration="[texto]"`** (opcional).
-        *   **`target="[self|ally|etc.]"`** (opcional).
-    *   Para `type="Resistance"` o `type="Immunity"`:
-        *   **`damage_types="[lista_tipos_daño_separados_por_coma|all_except_Force|chosen_elemental_affinity_type|etc.]"`**.
-        *   **`damage_type_choice="[lista_tipos_daño]"`**: Si el jugador elige el tipo.
-        *   **`condition_names="[lista_condiciones_separadas_por_coma]"`** (para inmunidad a condiciones).
-        *   **`to="[magical_aging|etc.]"`** (para inmunidades especiales).
-        *   **`to_damage_from="[spells]"`**: Si la resistencia es a daño de conjuros.
-        *   **`duration="[texto]"`** (opcional).
-    *   Para `type="Teleport"`:
-        *   **`target="[self|one_willing_creature|etc.]"`**.
-        *   **`range="[distancia_texto]"`** (ej: "up_to_30_feet").
-        *   **`destination="[unoccupied_space_you_can_see|etc.]"`**.
-        *   **`timing="[before_or_after_the_additional_action|etc.]"`** (opcional).
-    *   Para `type="Detection"`:
-        *   **`detects type="[LocationAndCreatureType|Presence]"`**.
-        *   **`targets="[Celestials_Fiends_Undead|place_or_object_consecrated_etc.]"`**.
-        *   **`range="[distancia_texto]"`**.
-        *   **`duration="[texto]"`**.
-    *   Para `type="CreateArea"`:
-        *   **`name="[NombreDelArea]"`** (ej: SpectralTreesAndVines).
-        *   **`shape="[Sphere|Cube|Emanation|etc.]"`**.
-        *   **`radius="[distancia_texto]"`** (para esferas/emanaciones).
-        *   **`size="[distancia_texto]"`** (para cubos).
-        *   **`location="[texto_descripcion_ubicacion]"`**.
-        *   **`duration="[texto]"`**.
-        *   **`ends_early_if="[condiciones]"`**.
-        *   **`<benefit description="[texto_beneficio_en_area]"/>`**.
-    *   Para `type="AbilityScoreIncrease"`:
-        *   **`ability="[STR|DEX|CON|INT|WIS|CHA]"`**.
-        *   **`value="[numero]"`**.
-        *   **`maximum="[numero]"`**.
+*   **`type`**: `Damage`, `Heal`, `Bonus`, `Advantage`, `Disadvantage`, `Condition`, `Movement`, `Speed`, `SpeedIncrease` (puede incluir `new_total_speed`), `SpeedReduction`, `Resistance`, `Immunity`, `Cover`, `ACBonus`, `DamageReduction`, `DamageBonus`, `ExtraDamage`, `Teleport`, `Detection`, `Sense` (para Darkvision, Blindsight, Tremorsense), `CreateArea`, `CreateWard`, `Transformation` (puede incluir `new_size`), `Buff`, `Debuff`, `GainTemporaryHitPoints`, `HitPointMaximumIncrease`, `HitPointIncrease` (fijo o por nivel), `AbilityScoreIncrease`, `ReachIncrease`, `DispelMagic`, `Revive`, `RollBonus`, `SizeCategory` (para el trait de Tamaño), `GainResource`, `SetHitPoints`.
+*   **Para `type="Sense"`**:
+    *   **`name="[Darkvision|Blindsight|Tremorsense]"`**.
+    *   **`range="[numero_pies]"`**.
+    *   **`upgrades_existing="true"`** (opcional, si mejora un sentido existente, ej: Drow Darkvision).
+    *   **`<condition text="[texto_condicion_para_el_sentido]"/>`** (opcional, ej: para Tremorsense del Enano).
+*   **Para `type="HitPointMaximumIncrease"`**:
+    *   **`value_formula="[formula]"`** (ej: `max(1,character_level)` para Enano, o `2*character_level` para Dote Tough).
+    *   **`description="[texto_explicativo]"`** (opcional).
+*   **Para `type="Resistance"` / `type="Immunity"`**:
+    *   **`damage_types="[type1,type2,...]"`**.
+    *   **`damage_types_ref="[TraitNameReferencia]"`**: (Específico para Razas/AncestryChoice) El tipo de daño se determina por una elección hecha en otro trait (ej: Draconic Resistance).
+*   **Para `type="Damage"` / `type="ExtraDamage"`**:
+    *   **`damage_type_ref="[TraitNameReferencia]"`**: Similar a `damage_types_ref` para Resistencia.
+    *   **`area_shape="[texto_forma_area]"`** (ej: "15-foot_Cone", "30-foot_Line_5_feet_wide").
+    *   **`<scaling level="X" dice="[nuevo_dado]" value="[nuevo_valor]"/>`**: (Nota: Para razas, `level` se refiere a nivel de personaje).
+*   **`<condition text="[texto_condicion_para_el_efecto]"/>`** (anidada, si el efecto solo aplica bajo cierta condición).
+*   ... (otros atributos y sub-etiquetas como en la v1, incluyendo `save_type`, `save_dc`, `save_effect`, `target_description`, etc.) ...
 *   **`<on_failed_save (atributos_de_effect)>`**: Efecto si se falla una tirada de salvación.
 *   **`<on_successful_save (atributos_de_effect)>`**: Efecto si se tiene éxito en una tirada de salvación.
 *   **`<on_hit (atributos_de_effect)>`**: Efecto si un ataque impacta.
@@ -206,130 +156,290 @@ Define cómo una característica mejora otra característica o habilidad existen
 *   **`<alternative_activation_cost>`**: Ofrece una forma alternativa de activar la característica mejorada.
 
 **`<grants_proficiency type="[Skill|Weapon|Armor|Tool|SavingThrow|Language]" (otros atributos)>`**
-Otorga una competencia.
-*   **`type`**: Tipo de competencia.
-*   **`name="[NombreEspecifico]"`** (ej: "Insight", "Martial weapons", "Light armor", "Herbalism Kit", "Wisdom", "Druidic").
-*   **`choice_from_list="[lista_opciones_separadas_por_coma|any]"`**: Si se elige de una lista (ej: "Deception,Performance,Persuasion", "Fighter_level_1_skills"). "any" para cualquier herramienta de artesano.
+*   **`type`**: Tipo de competencia (`Skill`, `Tool`, `Weapon`, `Armor`, `SavingThrow`, `Language`, `WeaponProperty`).
+*   **`name="[NombreEspecifico]"`** (ej: "Insight", "Cook's Utensils", "Martial Weapons", "Light Armor", "Strength", "Druidic", "Loading").
+*   **`choice_from_list="[lista_opciones_separadas_por_coma_o_pipa|any|any_artisans_tool|any_musical_instrument|any_skill_or_tool|specific_table_name]"`**: Si se elige de una lista.
+    *   `any`: Para una elección de cualquier habilidad, herramienta, idioma, etc., según el `type`.
+    *   `any_skill_or_tool`: Permite elegir entre cualquier habilidad o cualquier herramienta.
+    *   `specific_table_name`: Referencia a una `<inline_table>` definida en otra parte del dote/característica que lista las opciones.
 *   **`count="[numero]"`**: Cuántas competencias se otorgan/eligen.
+*   **`expertise="true|false"`** (opcional, default `false`).
+*   **`ignore_property="true|false"`** (opcional, para `type="WeaponProperty"`).
+*   **`proficiency_or_expertise="true|false"`** (opcional).
 
-**`<grants_spell_learning type="[Cantrip|Spell]" (otros atributos)>`**
-Otorga el conocimiento o preparación de conjuros.
-*   **`type`**: "Cantrip" o "Spell".
-*   **`spell_name="[SpellName]"`** (opcional): Si se otorga un conjuro específico.
-*   **`spell_list="[Druid|Cleric|Wizard|etc.]"`**: De qué lista de conjuros se elige.
-*   **`count="[numero]"`**: Cuántos conjuros se aprenden/eligen.
-*   **`ability="[WIS|CHA|INT]"`** (opcional): Si la habilidad de lanzamiento para este conjuro es específica.
-*   **`spellcasting_ability_override="[WIS|CHA|INT]"`**: Si anula la habilidad de lanzamiento normal de la clase para estos conjuros.
-*   **`counts_against_known="false"`** (opcional): Si el conjuro no cuenta para el límite de conjuros conocidos.
-*   **`<alternative_grant condition="[texto]" description="[texto_alternativa]"/>`**: Si hay una alternativa (ej: si ya se conoce Minor Illusion).
+**`<grants_spell_learning>`**
+*   **`type="[Cantrip|Spell]"`**.
+*   **`spell_known="[SpellName]"`**.
+*   **`count="[numero|ProficiencyBonus]"`**.
+*   **`spell_list_choice="[Cleric|Druid|Wizard|...|AnyRitualLevel1]"`**.
+*   **`spell_level="[numero]"`** (opcional, nivel del conjuro).
+*   **`gained_at_character_level="[numero]"`** (especialmente para conjuros raciales).
+*   **`spellcasting_ability_choice="[Intelligence|Wisdom|Charisma]" count="1"`**.
+*   **`spellcasting_ability_fixed="[Intelligence|Wisdom|Charisma]"`**.
+*   **`spellcasting_ability_choice_ref="[TraitNameDeLaEleccion]"`**: Si la habilidad de lanzamiento se eligió en otro trait (ej: linajes de Elfos/Tieflings).
+*   **`always_prepared="true|false"`**.
+*   **`counts_against_known="true|false"`**.
+*   **`can_use_spell_slots="true|false"`**.
+*   **`free_casts_per_rest type="[LongRest|ShortRest|Dawn]" count="[numero|formula]"`**.
+    *   `count_formula="[ProficiencyBonus]"`
+*   **`can_replace_on_long_rest="true|false"`** (ej: High Elf cantrip).
+*   **`replacement_spell_list="[Wizard|etc.]"`** (si `can_replace_on_long_rest="true"`).
+*   **`no_components_list="[Verbal|Somatic|Material|...]"`.**
+*   **`ritual_casting_only="true|false"`**.
+*   **`<spell_modifications>`**:
+    *   **`<range_increase value="[+X_feet|double]"/>`**
+    *   **`<make_invisible="true"/>`**
+    *   **`<duration_override description="[nueva_duracion_texto]"/>`**
+*   **`<alternative_grant condition="[texto]" description="[texto_alternativa]"/>`**.
 
 **`<grants_always_prepared_spell name="[SpellName]" (otros atributos)>`**
-Otorga un conjuro que siempre está preparado.
 *   **`name`**: Nombre del conjuro.
-*   **`level_gained_at="[numero]"`** (opcional): Nivel de clase en el que se obtiene este conjuro preparado (para tablas de subclase).
+*   **`level_gained_at="[numero]"`** (nivel de clase).
 
-**`<grants_feat type="[FightingStyle|EpicBoon|AbilityScoreImprovement|Any]" count="[number]">`**
-Otorga un dote (feat).
-*   **`type`**: Categoría del dote.
-*   **`count`**: Número de dotes a elegir/ganar.
+**`<grants_feat type="[FightingStyle|EpicBoon|AbilityScoreImprovement|Any|OriginFeat]" count="[number]" recommendation="[FeatName]">`**
+*   **`recommendation`** (opcional): Si se recomienda un dote específico.
 
 **`<inline_table name="[TableName]">`**
-Define una tabla directamente dentro de la característica (ej: listas de conjuros de subclase, tablas de escalado).
-*   **`name`**: Nombre de la tabla.
-*   **`<header><col label="[HeaderText]"/></header>`**: Define las cabeceras de las columnas.
-*   **`<row><cell value="[CellText]"/></row>`**: Define las filas y celdas.
-    *   `value` puede ser texto simple, números, o listas de conjuros.
+*   **`<header><col label="[HeaderText1]"/><col label="[HeaderText2]"/></header>`**.
+*   **`<row><cell value="[CellText1]"/><cell value="[CellText2]"/></row>`**.
 
-**`<modifies_action action_name="[Attack|etc.]" (otros atributos)>`**
-Modifica una acción estándar.
-*   **`action_name`**: Nombre de la acción a modificar (ej: Attack).
-*   **`new_attacks_allowed="[numero]"`**: Para Extra Attack.
-*   **`<option_to_replace_attack count="[numero_ataques_a_reemplazar]">`**: Si se puede reemplazar un ataque con otra cosa (ej: War Magic del Eldritch Knight).
+**`<modifies_action action_name="[Attack|Dash|Hide|Study|Search|StandUp|etc.]" (otros atributos)>`**
+*   **`new_attacks_allowed="[numero]"`**.
+*   **`new_condition_text="[texto]"`**: Para modificar cuándo o cómo se puede usar una acción (ej: Halfling Naturally Stealthy).
+*   **`<option_to_replace_attack count="[numero_ataques_a_reemplazar]">`**.
     *   **`<effect description="[texto_efecto_reemplazo]"/>`**.
 
 **`<modifies_spell spell_name="[SpellName]" (otros atributos)>` / `<modifies_spell_casting (atributos)>`**
-Modifica un conjuro específico o las reglas generales de lanzamiento de conjuros.
-*   **`spell_name`**: Nombre del conjuro a modificar.
-*   **`spell_names="[lista_conjuros]"`**: Si modifica múltiples conjuros.
-*   **`spell_type="[Druid_cantrip|etc.]"`**: Si modifica un tipo de conjuro.
-*   **`condition="[texto_condicion]"`**: Bajo qué condición se aplica la modificación.
-*   **`<can_cast_without_slot="true"/>`**: Si el conjuro se puede lanzar sin gastar un espacio.
-*   **`<can_cast_without_material_component="true"/>`**: Si no requiere componentes materiales.
-*   **`<can_cast_without_slot_or_components="true"/>`**.
-*   **`<no_verbal="true"/>`**, **`<no_somatic="true"/>`**, **`<no_material_unless_consumed_or_costly="true"/>`**: Para eliminar componentes.
-*   **`<spellcasting_ability_override="[AbilityName]"/>`**.
-*   **`<duration_override description="[texto_nueva_duracion]"/>`**.
-*   **`<modifies_property property="[damage_die|range|etc.]" new_value="[valor]" new_range_increase="[+X_feet]"/>`**.
-*   **`<option_to_modify_casting>`**: Si hay una opción para modificar el lanzamiento (ej: Summon Fey sin concentración).
-*   **`<can_cast_as_reaction="true" trigger="[texto_trigger_reaccion]"/>`**.
-*   **`<effect description="[texto_efecto_adicional_al_lanzar]"/>`**.
+*   ... (atributos como en la v1) ...
 
 **`<modifies_rule rule_name="[RuleName]" (otros atributos)>`**
-Modifica una regla general del juego.
-*   **`rule_name`**: Nombre de la regla (ej: CriticalHitRange, ArmorClassCalculation, UnarmedStrikeAndMonkWeaponAttackAndDamageRolls, DeathSavingThrowResult, ExhaustionFromFoodAndDrink).
-*   **`new_range="[19-20|18-20]"`**: Para rango de crítico.
-*   **`new_formula="[formula_calculo]"`**: Para AC, etc.
-*   **`new_basis="[Dexterity_modifier_instead_of_Strength]"`**: Para ataques/daño.
-*   **`status="[immune]"`**: Para reglas como la de exhaustión.
-*   **`<effect description="[texto_efecto_modificador]"/>`** (anidado).
+*   **`rule_name`**: `CriticalHitRange`, `ArmorClassCalculation`, `UnarmedStrikeDamage`, `DeathSavingThrowResult`, `SleepRequirement`, `MagicalSleep`, `LongRestDuration`, `MovementThroughHostileSpace`, `CarryingCapacity`, etc.
+*   **`effect_description="[texto_del_cambio_a_la_regla]"`**: Descripción textual de la modificación.
+*   ... (otros atributos como en la v1) ...
+
+**`<resource_pool name="[ResourceName]" (otros atributos)>`**
+*   **`value_formula="[ProficiencyBonus|AbilityModifier|FixedNumber|CharacterLevel|ClassLevel]"`**: (Clarificar si es nivel de personaje o clase).
+*   ... (atributos como en la v1) ...
 
 **`<resource name="[ResourceName]" (otros atributos)>`**
-Define un recurso principal de la clase (ej: Focus Points, Superiority Dice, Lay On Hands Pool, Psionic Energy Dice, Martial Arts Die, Sorcery Points, Healing Light Dice Pool, Portent Rolls, Arcane Ward HP).
-*   **`name`**: Nombre del recurso.
-*   **`die_type="[d6|d8|d10|d12]"`** (opcional): Si el recurso es un tipo de dado.
-*   **`die_scaling_table="[TableName]"`** (opcional): Si el tipo de dado escala con una tabla.
-*   **`initial_die="[dado]"`** (opcional): Dado inicial si escala.
-*   **`value_formula="[formula]"`** (opcional): Si el total del recurso se calcula (ej: "5*PaladinLevel").
-*   **`scaling_table="[TableName]"`** (opcional): Si la cantidad del recurso escala con una tabla (ej: Focus Points).
-*   **`initial_points="[numero]"`** (opcional): Puntos iniciales si escala.
-*   **`count_formula="[formula]"`** (opcional): Para Healing Light (1+WarlockLevel).
-*   **`<count initial="[numero]"> <scaling level="X" count="[nuevo_numero]"/> </count>`**: Para recursos con conteo que escala.
-*   **`<recharge type="[SR|LR|SR_or_LR|1_per_SR_all_per_LR|Special]" description="[texto_recarga]"/>`**: Cómo se recarga el recurso.
-*   **`<scaling_table name="[TableName]"> <level val="X" die_size="[dY]" number="[Z]"/> </scaling_table>`**: Para recursos complejos como Psionic Energy Dice.
+*   **`value_formula="[formula]"`** (ej: "5*PaladinLevel", "CharacterLevel").
+*   **`count_formula="[formula]"`** (ej: "1+WarlockLevel", "ProficiencyBonus").
+*   **`<count initial="[numero]"> <scaling level="X" count="[nuevo_numero]"/> </count>`**: `level` es nivel de clase aquí.
+*   **`<scaling_table name="[TableName]"> <level val="X" die_size="[dY]" number="[Z]"/> </scaling_table>`**: `val` es nivel de clase.
+*   ... (otros atributos como en la v1) ...
 
 **`<trigger text="[texto_disparador]">`**
-Define cuándo se activa un efecto o habilidad (especialmente para Reacciones o efectos automáticos).
-*   **`text`**: Descripción del disparador (ej: "when_you_hit_a_creature_with_an_attack_roll", "whenever_you_finish_a_Long_Rest", "at_the_start_of_each_of_your_turns").
+*   **`text`**: (ej: "when_you_hit_a_creature_with_an_attack_roll", "when_reduced_to_0_HP_but_not_killed_outright").
 
 **`<uses (atributos)>`**
-Define el número de usos de una habilidad.
-*   **`fixed="[numero]"`**: Número fijo de usos.
-*   **`attribute="[STR|DEX|CON|INT|WIS|CHA]"`**: Usos basados en un modificador de característica.
-*   **`min="[numero]"`**: Mínimo de usos si se basa en un atributo.
-*   **`type="scaling_table"`** (opcional): Si los usos escalan con una tabla.
-*   **`table_ref="[TableName]"`** (opcional): Referencia a la tabla de escalado de usos.
-*   **`initial_uses="[numero]"`** (opcional): Usos iniciales si escala.
-*   **`per_turn="true"`** (opcional): Si el límite de usos es por turno.
-*   **`for_spell="[SpellName]"`** (opcional): Si los usos son para un conjuro específico.
-*   **`without_slot="true"`** (opcional): Si los usos son para lanzar un conjuro sin espacio.
-*   **`for_reaction="true"`** (opcional): Si los usos son para una reacción específica.
-*   **`for_arcanum_spell="true"`** (opcional): Para Mystic Arcanum.
-*   **`per_spell="true"`** (opcional): Para Phantasmal Creatures (un uso por cada conjuro).
-*   **`condition="[texto]"`** (opcional): Condición para tener estos usos (ej: "if_you_have_no_uses_of_Wild_Shape_left").
-*   **`<scaling level="X" uses="[nuevo_numero]"/>`**: Para usos que escalan con el nivel.
-*   **`<recharge type="[SR|LR|Dawn|SR_or_LR|Special]" description="[texto_recarga_opcional]"/>`**: Cómo se recargan los usos.
-*   **`<additional_recharge_method>`**: Si hay formas alternativas de recargar usos.
-    *   **`<cost ... />`**: Coste para la recarga alternativa.
-    *   **`<effect description="[texto_efecto_recarga]"/>`**.
+*   **`fixed="[numero]"`**, **`attribute="[AbilityName|ProficiencyBonus]"`**.
+*   **`min="[numero]"`**.
+*   **`<recharge type="[SR|LR|SR_or_LR|Dawn|Special]" description="[texto]"/>`**.
+*   **`<scaling level="X" uses="[nuevo_numero]"/>`**: `level` es nivel de clase o personaje según contexto (feature vs trait).
+*   ... (otros atributos como en la v1) ...
+*   **Nota:** Para `<scaling level="X">` dentro de un `<trait>` racial, `level` se refiere al nivel total del personaje.
 
 **`<restriction text="[texto_restriccion]">`**
-Describe una limitación o regla especial para la característica.
-
 **`<note text="[texto_nota]">`**
-Notas adicionales o aclaraciones.
 
-**`<equipment_requirements (atributos)>`** (Usada en V1, se busca reemplazar/formalizar en V3)
-Define requisitos de equipamiento.
-*   **`weapon_category="[MonkWeapon|etc.]"`**
-*   **`allow_unarmed="true"`**
-*   **`wearing_no_armor="true"`**
-*   **`wielding_no_shield="true"`**
-*   **`armor_must_not_be="[Heavy]"`**
+**`<equipment_requirements (atributos)>`** (Legado, se busca reemplazar)
+*   ... (atributos como en la v1) ...
 
 ---
-### **Etiquetas Específicas de Subclase/Mecánicas Únicas**
+### **Etiquetas Específicas de Dotes (Feats) y Mecánicas Detalladas**
 ---
 
+**`<action_option name="[ActionName]"`** (Dentro de `<benefit>` o `<trait>` que otorga una acción específica)
+Define un beneficio que es una acción específica o modifica una acción existente.
+*   **`name`**: Nombre descriptivo de la acción/beneficio (ej: "Battle Medic", "Telekinetic Shove", "AdrenalineRushDash").
+*   **`type`**: (Ver etiqueta `<action>` para valores comunes).
+*   **`name_override="[Dash|etc.]"`**: Si la acción es una versión especial de una acción estándar.
+*   **`trigger="[texto_disparador]"`**.
+*   **`uses_per_turn="[numero]"`** (opcional).
+*   **`uses_per_rest type="[SR|LR|Dawn]" count="[numero|formula]"`** (opcional).
+*   **`<cost resource="[ResourceName|ItemName]" .../>`** (opcional).
+*   **`<range value="[numero_pies|self|touch|weapon_reach]"/>`** (opcional).
+*   **`<target description="[texto_descripcion_objetivo]"/>`** (opcional).
+*   **`<duration description="[texto_duracion]"/>`** (opcional).
+*   Puede contener etiquetas `<effect>`, `<choice>`, etc.
+
+**`<passive_effect>`** (Dentro de `<benefit>` o `<trait>`)
+Define un beneficio que está siempre activo o se aplica automáticamente bajo ciertas condiciones.
+*   **`description="[Texto descriptivo breve si es necesario]"`**.
+*   Puede contener `<effect>`, `<modifies_rule>`, `<grants_proficiency>`, etc.
+
+**`<reroll_option>`** (Dentro de `<benefit>` o `<trait>`)
+*   **`dice_condition="[rolls_a_1|rolls_below_X|any]"`**.
+*   **`on_roll_for="[any_D20_Test|healing_spell_or_ability|...|any_damage_roll_for_spell]"`**.
+*   ... (otros atributos como en la v1) ...
+
+**`<crafting_option name="[CraftingBenefitName]">`**
+*   ... (atributos como en la v1) ...
+
+**`<discount_benefit item_type="[nonmagical|any]" value_percentage="[numero]">`**
+*   ... (atributos como en la v1) ...
+
+**`<special_movement name="[MovementName]">`**
+*   ... (atributos como en la v1) ...
+
+**`<special_jump name="[JumpingBenefitName]">`**
+*   ... (atributos como en la v1) ...
+
+**`<weapon_property_interaction>`**
+*   ... (atributos como en la v1) ...
+
+**`<damage_reduction>`**
+*   ... (atributos como en la v1) ...
+
+**`<saving_throw_modification>`**
+*   ... (atributos como en la v1) ...
+
+**`<concentration_effect>`**
+*   ... (atributos como en la v1) ...
+
+**`<reactive_spell_cast>`**
+*   ... (atributos como en la v1) ...
+
+**`<somatic_component_allowance description="[texto]">`**
+*   ... (atributos como en la v1) ...
+
+**`<weapon_mastery_option name="[MasteryName]">`**
+*   ... (atributos como en la v1) ...
+
+**`<blindsight_grant range="[numero_pies]">`**
+*   ... (atributos como en la v1) ...
+
+**`<stealth_enhancement>`**
+*   ... (atributos como en la v1) ...
+
+**`<hidden_attack_rule description="[texto]">`**
+*   ... (atributos como en la v1) ...
+
+**`<speed_increase_static value="[numero_pies]">`**
+*   ... (atributos como en la v1) ...
+
+**`<difficult_terrain_interaction condition="[texto_condicion]" effect_description="[texto_efecto]">`**
+*   ... (atributos como en la v1) ...
+
+**`<opportunity_attack_modification>`**
+*   ... (atributos como en la v1) ...
+
+**`<cover_interaction type="[ranged_weapon_attacks|spell_attack_rolls]" ignores_cover="[HalfCover|ThreeQuartersCover|TotalCover]"/>`**
+*   ... (atributos como en la v1) ...
+
+**`<long_range_interaction type="[ranged_weapon_attacks]" no_disadvantage_at_long_range="true"/>`**
+*   ... (atributos como en la v1) ...
+
+**`<spell_range_increase condition="[texto_condicion_conjuro]" increase_by="[+X_feet|double]"/>`**
+*   ... (atributos como en la v1) ...
+
+**`<shield_bash_option>`**
+*   ... (atributos como en la v1) ...
+
+**`<shield_interpose_option>`**
+*   ... (atributos como en la v1) ...
+
+**`<telepathic_communication range="[numero_pies]">`**
+*   ... (atributos como en la v1) ...
+
+**`<repeatable_note condition="[texto_condicion_para_repetir]">`**
+*   ... (atributos como en la v1) ...
+
+---
+### **Sección Específica para Razas (Adiciones/Clarificaciones)**
+---
+
+**`<race>` (Contenedor Raíz)**
+*   Como se describió en "Etiquetas Principales".
+*   Debe contener una serie de etiquetas `<trait>`.
+
+**`<size_summary code="[S|M|L]"/>`**
+*   **Uso:** Hijo directo de `<race>`.
+*   **Descripción:** Proporciona un código de tamaño resumido para la raza (ej: 'M' para Mediano, 'S' para Pequeño).
+*   **Atributos:**
+    *   `code`: El código de tamaño (S, M, L, T, G, H).
+*   **Nota:** El tamaño detallado, incluyendo opciones si las hay (ej: Aasimar puede ser Mediano o Pequeño), se define dentro de un `<trait category="core" name="Size">` utilizando `<choice>` y `<effect type="SizeCategory">`.
+
+**`<speed base="[numero_pies]"/>`**
+*   **Uso:** Hijo directo de `<race>`.
+*   **Descripción:** Define la velocidad base de movimiento terrestre de la raza.
+*   **Atributos:**
+    *   `base`: La velocidad en pies (ej: "30").
+*   **Nota:** Otras velocidades (vuelo, nado, escalada, excavación) o modificaciones a la velocidad base se definen a través de `<effect type="Speed">` o `<effect type="SpeedIncrease">` dentro de los `<trait>` correspondientes.
+
+**`<trait name="[TraitName]" category="[description|core|species|lineage|ancestry_choice]" gained_at_character_level="[numero]">`**
+*   **Uso:** Hijo directo de `<race>`. Es la etiqueta fundamental para cada característica racial.
+*   **Atributos:**
+    *   `name`: Nombre del rasgo (ej: "Darkvision", "Fey Ancestry", "Drow Lineage").
+    *   `category`:
+        *   `description`: Para el lore general, edad, alineamiento, apariencia física, etc. Usualmente contendrá principalmente la etiqueta `<text>`.
+        *   `core`: Para rasgos fundamentales de la raza que no son opcionales y definen su naturaleza básica, como "Creature Type" o el "Size" detallado (que puede incluir una elección).
+        *   `species`: Para rasgos comunes a la especie principal antes de cualquier elección de linaje o subraza (ej: Darkvision base de un Elfo, antes de la mejora Drow).
+        *   `lineage`: Para rasgos que son específicos de un linaje, subraza o variante particular de la raza (ej: "Drow Lineage", "Forest Lineage" para Gnomos, "Fiendish Legacy" para Tieflings). Las razas con linajes se definen como entradas `<race>` separadas (ej: `<name>Elf, Drow [2024]</name>`).
+        *   `ancestry_choice`: Para rasgos que presentan una elección principal basada en la ascendencia y que pueden tener efectos que influyen en otros rasgos (ej: "Draconic Ancestry" del Dragonborn, "Giant Ancestry" del Goliath). Estas elecciones se definen usando la etiqueta `<choice>`.
+    *   `gained_at_character_level="[numero]"` (opcional): Si el rasgo, o una parte significativa de él, solo se obtiene cuando el personaje alcanza un cierto nivel total.
+*   **Contenido:** Puede contener `<text>` para la descripción completa, y luego una combinación de etiquetas estructuradas del glosario como `<effect>`, `<action>`, `<choice>`, `<grants_spell_learning>`, `<grants_proficiency>`, `<uses>`, `<recharge>`, `<modifies_rule>`, etc., para definir la mecánica del rasgo.
+*   **Nota sobre `<scaling>`:** Cuando la etiqueta `<scaling level="X" .../>` se usa dentro de un `<trait>` racial, el atributo `level="X"` se refiere al nivel total del personaje, no a un nivel de clase.
+
+**`<effect type="DamageTypeAssociation" value="[DamageType]" for_trait="[TraitName1,TraitName2]"/>`**
+*   **Uso:** Dentro de una `<option>` de un `<choice>` en un `<trait category="ancestry_choice">`.
+*   **Descripción:** Asocia un tipo de daño específico con la opción elegida. Este tipo de daño puede ser referenciado por otros rasgos de la misma raza.
+*   **Atributos:**
+    *   `value`: El tipo de daño (ej: "Acid", "Fire", "Cold").
+    *   `for_trait`: Lista separada por comas de los nombres de otros traits que utilizarán este tipo de daño (ej: "Breath Weapon,Damage Resistance" para Dragonborn).
+*   **Referencia en otros traits:** Otros traits pueden referenciar este tipo de daño usando atributos como `damage_type_ref="[NombreDelTraitDeEleccionDeAscendencia]"` en sus etiquetas `<effect type="Damage">` o `<effect type="Resistance">`. (Ej: `<effect type="Resistance" damage_types_ref="Draconic Ancestry"/>`).
+
+**`<effect type="SizeCategory" value="[Small|Medium|Large|...]" description_text="[texto descriptivo opcional]"/>`**
+*   **Uso:** Generalmente dentro de una `<option>` de un `<choice>` en un `<trait name="Size">`.
+*   **Descripción:** Define la categoría de tamaño del personaje.
+*   **Atributos:**
+    *   `value`: La categoría de tamaño (ej: "Medium", "Small").
+    *   `description_text` (opcional): Texto breve que describe las dimensiones típicas para ese tamaño (ej: "about 4-7 feet tall").
+
+**Clarificación para `<grants_spell_learning>` en Razas:**
+*   `gained_at_character_level="[numero]"`: Usar este atributo para indicar cuándo se obtiene el conjuro.
+*   `spellcasting_ability_choice_ref="[NombreDelTraitDeLinaje]"`: Si la habilidad de lanzamiento para un conjuro se determina por una elección hecha en el trait de linaje (ej: "Fiendish Legacy (Abyssal)"), este atributo puede referenciar el nombre de ese trait donde se hizo la elección de habilidad. El parser necesitaría conectar esta referencia.
+
+---
+### **Etiquetas Específicas para Trasfondos (Backgrounds)**
+---
+
+**`<background>`**
+Contenedor raíz para la definición de un trasfondo.
+*   **`<name>`**: Nombre del trasfondo (ej: "Acolyte [2024]").
+*   **`<source page="[numero]">[LibroDeFuente]</source>`**: Información de la fuente.
+*   **`<description_text>`**: Descripción general del trasfondo, incluyendo la narrativa y la página de origen si no está en la etiqueta `<source>`.
+*   **`<ability_score_increase_option>`**: Describe las opciones de incremento de puntuación de característica.
+    *   **`<text>`**: Texto que describe las opciones estándar de ASI (ej: "+2 a una, +1 a otra, o +1 a tres de una lista"). Este texto también puede indicar las tres habilidades relevantes para el trasfondo si no se usa `<abilities_list>`.
+    *   **`<abilities_list list="[AbilityName1,AbilityName2,AbilityName3]"/>`**: (Opcional, más estructurado) Enumera las tres habilidades relevantes para este trasfondo de las cuales se pueden elegir los incrementos.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir las habilidades.
+*   **`<granted_feat name="[FeatName]" source_text="[LibroDeFuente p.NumeroPagina]">`**: Especifica el dote otorgado por el trasfondo.
+    *   `name`: El nombre del dote.
+    *   `source_text`: Texto que indica la fuente y página del dote.
+    *   **`<text>`**: Descripción completa del dote. (Nota: Podría ser reemplazado por una referencia si los dotes están completamente estructurados y son referenciables por nombre/ID).
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir un dote de origen.
+*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades.
+    *   **`<skill name="[SkillName1]"/>`**: Otorga competencia en una habilidad específica.
+    *   **`<skill name="[SkillName2]"/>`**: Otorga competencia en otra habilidad específica.
+    *   **`<custom_choice_text count="[numero]">`**: (Para trasfondos personalizados) Texto que describe cómo elegir un número específico de competencias en habilidades.
+*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas.
+    *   **`<tool name="[SpecificToolName]"/>`**: Otorga competencia en una herramienta específica.
+    *   **`<choice_from_category category="[ArtisansTools|MusicalInstruments|GamingSets]" description_text_override="[texto_opcional_con_lista_de_herramientas]">`**: Permite elegir una herramienta de una categoría específica.
+        *   `category`: El tipo de categoría de herramienta (ej: "ArtisansTools", "MusicalInstruments", "GamingSets").
+        *   `description_text_override` (opcional): Si se proporciona, este texto (que puede incluir la lista de herramientas de esa categoría) se usará en lugar de una descripción genérica. Es útil si la lista de herramientas se incluye directamente en el XML del trasfondo.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir una competencia en herramienta.
+*   **`<starting_equipment>`**: Contenedor para el equipo inicial.
+    *   **`<text>`**: Texto introductorio general (ej: "Elige A o B:").
+    *   **`<option_A>`**: Contenedor para la opción A de equipo.
+        *   **`<item name="[ItemName]" quantity="[numero]"/>`**: Un objeto específico y su cantidad.
+        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+    *   **`<option_B>`**: Contenedor para la opción B de equipo.
+        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo ensamblar un paquete de equipo (ej: "Ensambla un paquete de equipo por valor de 50 PO...").
+
+---
+### **Etiquetas Específicas de Subclase/Mecánicas Únicas (Clase)**
+---
 **`<mystic_arcanum level="[6|7|8|9]" spell_choice_from_list="Warlock">`** (Warlock)
 Define la elección de un conjuro para Mystic Arcanum.
 
@@ -377,70 +487,6 @@ Contenedor para las penalizaciones por uso repetido.
 
 ---
 
-Este glosario debería cubrir la gran mayoría de las estructuras que hemos implementado. Es un sistema bastante detallado y espero que sea de gran ayuda.
-Avísame si tienes alguna pregunta o si quieres que me enfoque en alguna parte específica.
-
----
-### **Etiquetas Específicas para Trasfondos (Backgrounds)**
----
-
-**`<background>`**
-Contenedor raíz para la definición de un trasfondo.
-*   **`<name>`**: Nombre del trasfondo.
-*   **`<source book="[BookName]" page="[PageNumber]" (otros_atributos_opcionales)/>`**: Especifica el libro y la página de origen del trasfondo.
-    *   `book`: Nombre del libro fuente (ej: "Player's Handbook 2024").
-    *   `page`: Número de página.
-*   **`<description>`**: Párrafo o párrafos con la descripción general y narrativa del trasfondo.
-    *   **`<text>`**: Texto de la descripción. Puede haber múltiples etiquetas `<text>` si la descripción original está dividida en párrafos.
-    *   **`<source book="[BookName]" page="[PageNumber]"/>`**: (Opcional, si la descripción tiene una fuente específica diferente al trasfondo general, aunque usualmente será la misma).
-*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades otorgadas por el trasfondo.
-    *   **`<skill name="[SkillName]"/>`**: Define una competencia en una habilidad específica (ej: `<skill name="Insight"/>`, `<skill name="Religion"/>`).
-*   **`<ability_score_increase>`**: Describe las reglas para el incremento de puntuaciones de característica otorgado por el trasfondo.
-    *   **`<text>`**: El texto explicativo de cómo se aplican los incrementos (ej: "Increase one by 2 and another one by 1, or increase all three by 1...").
-    *   **`<applies_to_abilities>`**: Contenedor para las habilidades específicas que pueden ser incrementadas por este trasfondo.
-        *   **`<ability name="[AbilityName]"/>`**: Lista cada una de las tres habilidades relevantes (ej: `<ability name="Intelligence"/>`, `<ability name="Wisdom"/>`, `<ability name="Charisma"/>`).
-*   **`<feat_granted>`**: Detalla el dote (feat) que el trasfondo otorga.
-    *   **`<name ref="[FeatName]">[FeatName]</name>`**: Nombre del dote. El atributo `ref` puede usarse si el dote está definido en una base de datos global de dotes.
-    *   **`<text>`**: Descripción completa del dote, incluyendo todos sus beneficios y reglas.
-    *   **`<source book="[BookName]" page="[PageNumber]"/>`**: Especifica el libro y la página de origen del dote.
-*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas.
-    *   **`<tool name="[ToolName]"/>`**: Si el trasfondo otorga competencia con una herramienta específica (ej: `<tool name="Calligrapher's Supplies"/>`).
-    *   **`<tool_choice count="[number]">`**: Si el trasfondo permite elegir una o más herramientas.
-        *   `count`: Número de herramientas a elegir.
-        *   **`<category name="[CategoryName]"/>`**: Especifica la categoría de herramientas de la cual elegir (ej: "Artisan's Tools", "Gaming Set", "Musical Instrument").
-        *   **`<text>`**: Texto descriptivo de la elección, incluyendo la lista de herramientas disponibles si se detalla en la fuente (ej: la lista de Artisan's Tools con costo y peso).
-*   **`<starting_equipment>`**: Contenedor para las opciones de equipo inicial.
-    *   **`<text>`** (opcional): Texto introductorio como "Choose A or B:".
-    *   **`<option name="[OptionLabel]">`**: Define una opción de equipo (ej: `<option name="A">`).
-        *   **`<item name="[ItemName]" quantity="[number|text]"/>`**: Especifica un ítem y su cantidad. La cantidad puede ser un número o texto si es descriptivo (ej: "Book (prayers)").
-        *   **`<gold amount="[GPValue]" currency="[GP|SP|CP]"/>`**: Especifica una cantidad de monedas y su tipo (GP por defecto).
-*   **`<language_proficiencies>`** (Opcional, si el trasfondo otorga idiomas).
-    *   **`<language name="[LanguageName]"/>`**: Para un idioma específico.
-    *   **`<language_choice count="[number]">`**: Para elegir uno o más idiomas.
-        *   **`<from_list="[lista_idiomas_separados_por_coma|any_standard|any_exotic]"/>`**
-
-**Etiquetas para Trasfondos Personalizables (ej: Custom Background del DMG)**
-
-Las siguientes etiquetas pueden usarse dentro de un `<background>` para indicar que el jugador debe tomar decisiones, siguiendo las directrices del DMG.
-
-*   **`<ability_score_choice>`**
-    *   **`<text>`**: Descripción de cómo elegir las puntuaciones de habilidad (ej: "Choose three abilities that seem appropriate...").
-*   **`<feat_choice>`**
-    *   **`<text>`**: Descripción de cómo elegir el dote (ej: "Choose one feat from the Origin category...").
-    *   **`<category name="Origin"/>`** (opcional, para especificar la categoría del dote).
-*   **`<skill_proficiency_choice count="[number]">`**
-    *   `count`: Número de habilidades a elegir.
-    *   **`<text>`**: Descripción de cómo elegir las competencias en habilidades.
-*   **`<tool_proficiency_choice count="[number]">`**
-    *   `count`: Número de herramientas a elegir.
-    *   **`<text>`**: Descripción de cómo elegir la competencia en herramientas.
-*   **`<starting_equipment_custom>`**
-    *   **`<text>`**: Descripción de cómo ensamblar el paquete de equipo (ej: "Assemble a package of equipment worth 50 GP...").
-    *   **`<value_limit amount="[GPValue]" currency="GP"/>`**: Límite de valor del equipo.
-    *   **`<restrictions>`**: (Opcional) Para listar restricciones como "Don't include Martial weapons or armor...".
-        *   **`<text>`**: Texto de la restricción.
-
----
-
-Este glosario debería cubrir la gran mayoría de las estructuras que hemos implementado. Es un sistema bastante detallado y espero que sea de gran ayuda.
-Avísame si tienes alguna pregunta o si quieres que me enfoque en alguna parte específica.
+Este glosario debería cubrir la gran mayoría de las estructuras para clases, dotes y razas. Es un sistema detallado y se espera que sea de gran ayuda para el parseo y la utilización de estos datos.
+Cualquier nueva mecánica encontrada que no encaje claramente en estas etiquetas deberá ser analizada para determinar si se requiere una nueva etiqueta o una extensión de una existente.
+La consistencia en la aplicación de estas etiquetas es clave para la mantenibilidad y utilidad del compendio XML.
