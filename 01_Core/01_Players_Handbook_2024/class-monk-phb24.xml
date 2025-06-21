@@ -8,7 +8,7 @@
     <armor>none</armor>
     <weapons>Simple weapons and Martial weapons that have the Light property</weapons>
     <tools>any one type of artisan's tools or any one musical instrument of your choice</tools>
-    <slotsReset>L</slotsReset>
+    <slotsReset>L</slotsReset> <!-- This seems to be a remnant, Monks don't use spell slots in the traditional sense -->
     <trait>
       <name>Monk</name>
       <text>Monks use rigorous combat training and mental discipline to align themselves with the multiverse and focus their internal reservoirs of power. Different Monks conceptualize this power in various ways: as breath, energy, life force, essence, or self, for example. Whether channeled as a striking display of martial prowess or as a subtler manifestation of defense and speed, this power infuses all that a Monk does.
@@ -59,6 +59,27 @@ Martial Arts Die. You can roll 1d6 in place of the normal damage of your Unarmed
 Dexterous Attacks. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.
 
 Source:	Player's Handbook 2024 p. 101</text>
+        <defines_category name="MonkWeapon" description="Simple Melee weapons AND Martial Melee weapons that have the Light property"/>
+        <condition text="while_you_are_unarmed_or_wielding_only_Monk_weapons_and_you_arent_wearing_armor_or_wielding_a_Shield"/>
+        <benefits>
+          <benefit name="Bonus Unarmed Strike">
+            <action type="BonusAction">
+              <effect description="make_an_Unarmed_Strike"/>
+            </action>
+          </benefit>
+          <benefit name="Martial Arts Die">
+            <resource name="MartialArtsDie" die_scaling_table="MonkFeaturesTable_MartialArtsColumn" initial_die="1d6">
+              <scaling level="5" die="1d8"/>
+              <scaling level="11" die="1d10"/>
+              <scaling level="17" die="1d12"/>
+            </resource>
+            <effect description="can_roll_MartialArtsDie_in_place_of_normal_damage_of_your_Unarmed_Strike_or_Monk_weapons"/>
+          </benefit>
+          <benefit name="Dexterous Attacks">
+            <modifies_rule rule_name="UnarmedStrikeAndMonkWeaponAttackAndDamageRolls" new_basis="Dexterity_modifier_instead_of_Strength"/>
+            <modifies_rule rule_name="UnarmedStrikeGrappleOrShoveSaveDC" new_basis="Dexterity_modifier_instead_of_Strength"/>
+          </benefit>
+        </benefits>
         <roll description="Unarmed Strike" level="1">1d6</roll>
         <roll description="Unarmed Strike" level="5">1d8</roll>
         <roll description="Unarmed Strike" level="11">1d10</roll>
@@ -70,11 +91,14 @@ Source:	Player's Handbook 2024 p. 101</text>
 
 Source:	Player's Handbook 2024 p. 101</text>
         <special>Unarmored Defense: Wisdom</special>
+        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_armor_or_wielding_a_Shield">
+          <new_formula>10 + DEX_modifier + WIS_modifier</new_formula>
+        </modifies_rule>
       </feature>
     </autolevel>
     <autolevel level="2">
       <feature>
-        <name>Level 2: Monk's Focus</name>
+        <name>Level 2: Monk's Focus</name> <!-- Changed from "Focus Points" to "Monk's Focus" to match text header, resource is Focus Points -->
         <text>Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.
 	You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.
 	When you expend a Focus Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.
@@ -87,13 +111,47 @@ Patient Defense. You can take the Disengage action as a Bonus Action. Alternativ
 Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
 
 Source:	Player's Handbook 2024 p. 101</text>
+        <resource name="FocusPoints" scaling_table="MonkFeaturesTable_FocusPointsColumn">
+          <recharge type="SR_or_LR" description="regain_all_expended_points"/>
+        </resource>
+        <focus_point_save_dc formula="8+WIS+PROF"/>
+        <abilities_using_focus_points>
+          <ability name="Flurry of Blows">
+            <action type="BonusAction"/>
+            <cost resource="FocusPoint" value="1"/>
+            <effect description="make_two_Unarmed_Strikes"/>
+          </ability>
+          <ability name="Patient Defense">
+            <action type="BonusAction">
+              <option name="Disengage_NoCost">
+                <effect description="take_the_Disengage_action"/>
+              </option>
+              <option name="DisengageAndDodge_WithCost">
+                <cost resource="FocusPoint" value="1"/>
+                <effect description="take_both_the_Disengage_and_the_Dodge_actions"/>
+              </option>
+            </action>
+          </ability>
+          <ability name="Step of the Wind">
+            <action type="BonusAction">
+              <option name="Dash_NoCost">
+                <effect description="take_the_Dash_action"/>
+              </option>
+              <option name="DisengageAndDash_WithCost">
+                <cost resource="FocusPoint" value="1"/>
+                <effect description="take_both_the_Disengage_and_Dash_actions_AND_your_jump_distance_is_doubled_for_the_turn"/>
+              </option>
+            </action>
+          </ability>
+        </abilities_using_focus_points>
       </feature>
       <feature>
         <name>Level 2: Unarmored Movement</name>
         <text>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.
 
 Source:	Player's Handbook 2024 p. 102</text>
-        <modifier category="bonus">speed +10</modifier>
+        <modifier category="bonus">speed +10</modifier> <!-- Base value -->
+        <effect type="SpeedIncrease" value_scaling_table="MonkFeaturesTable_UnarmoredMovementColumn" condition="while_not_wearing_armor_or_wielding_a_Shield"/>
       </feature>
       <feature>
         <name>Level 2: Uncanny Metabolism</name>
@@ -101,6 +159,10 @@ Source:	Player's Handbook 2024 p. 102</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 102</text>
+        <trigger text="when_you_roll_Initiative"/>
+        <effect description="regain_all_expended_Focus_Points_AND_roll_your_Martial_Arts_die_regain_HP_equal_to_Monk_level_plus_number_rolled"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -115,11 +177,18 @@ Source:	Player's Handbook 2024 p. 102</text>
     </autolevel>
     <autolevel level="3">
       <feature>
-        <name>Level 3: Deflect Attacks</name>
+        <name>Level 3: Deflect Attacks</name> <!-- Renamed from Deflect Missiles to match text -->
         <text>When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack's total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk level.
 	If you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attack's force. If you do so, choose a creature you can see within 5 feet of yourself if the attack was a melee attack or a creature you can see within 60 feet of yourself that isn't behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack.
 
 Source:	Player's Handbook 2024 p. 102</text>
+        <action type="Reaction"/>
+        <trigger text="when_an_attack_roll_hits_you_and_its_damage_includes_Bludgeoning_Piercing_or_Slashing_damage"/>
+        <effect type="DamageReduction" value_formula="1d10+DEX_modifier+MonkLevel"/>
+        <on_condition condition="if_you_reduce_the_damage_to_0">
+          <cost resource="FocusPoint" value="1"/>
+          <effect description="redirect_some_of_the_attacks_force_choose_creature_you_can_see_within_5ft_melee_or_60ft_ranged_not_total_cover_target_must_succeed_DEX_save_or_take_damage_equal_to_2_MartialArtsDieRolls+DEX_modifier_damage_type_same_as_attack" save_dc="focus_point_save_dc"/>
+        </on_condition>
       </feature>
       <feature>
         <name>Level 3: Monk Subclass</name>
@@ -145,6 +214,9 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You can take a Reaction when you fall to reduce any damage you take from the fall by an amount equal to five times your Monk level.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <action type="Reaction"/>
+        <trigger text="when_you_fall"/>
+        <effect type="DamageReduction" source="fall_damage" value_formula="5*MonkLevel"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -158,12 +230,23 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You can attack twice instead of once whenever you take the Attack action on your turn.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <modifies_action action_name="Attack" new_attacks_allowed="2"/>
       </feature>
       <feature>
         <name>Level 5: Stunning Strike</name>
         <text>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_a_creature_with_a_Monk_weapon_or_an_Unarmed_Strike"/>
+        <cost resource="FocusPoint" value="1"/>
+        <effect description="target_must_make_a_Constitution_saving_throw" save_dc="focus_point_save_dc">
+          <on_failed_save type="Condition" name="Stunned" duration="until_start_of_your_next_turn"/>
+          <on_successful_save>
+            <effect type="SpeedReduction" value_halved="true" duration="until_start_of_your_next_turn"/>
+            <effect type="Advantage" on="next_attack_roll_made_against_the_target_before_then"/>
+          </on_successful_save>
+        </effect>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -177,7 +260,9 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>Whenever you deal damage with your Unarmed Strike, it can deal your choice of Force damage or its normal damage type.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <modifier category="bonus">speed +5</modifier>
+        <trigger text="whenever_you_deal_damage_with_your_Unarmed_Strike"/>
+        <effect description="it_can_deal_your_choice_of_Force_damage_or_its_normal_damage_type"/>
+        <modifier category="bonus">speed +5</modifier> <!-- This seems to be for Unarmored Movement progression -->
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -192,6 +277,9 @@ Source:	Player's Handbook 2024 p. 103</text>
 	You don't benefit from this feature if you have the Incapacitated condition.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <trigger text="when_youre_subjected_to_an_effect_that_allows_you_to_make_a_Dexterity_saving_throw_to_take_only_half_damage"/>
+        <modifies_effect original_success="half_damage" original_fail="half_damage" new_success="no_damage" new_fail="half_damage"/>
+        <restriction text="dont_benefit_if_Incapacitated"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -218,6 +306,8 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <condition text="while_you_arent_wearing_armor_or_wielding_a_Shield"/>
+        <effect description="gain_the_ability_to_move_along_vertical_surfaces_and_across_liquids_on_your_turn_without_falling_during_the_movement"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -237,7 +327,20 @@ Patient Defense. When you expend a Focus Point to use Patient Defense, you gain 
 Step of the Wind. When you expend a Focus Point to use Step of the Wind, you can choose a willing creature within 5 feet of yourself that is Large or smaller. You move the creature with you until the end of your turn. The creature's movement doesn't provoke Opportunity Attacks.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <modifier category="bonus">speed +5</modifier>
+        <enhancements>
+          <enhances_ability ability_name="Flurry of Blows">
+            <effect description="can_expend_1_Focus_Point_to_make_three_Unarmed_Strikes_instead_of_two"/>
+          </enhances_ability>
+          <enhances_ability ability_name="Patient Defense">
+            <trigger text="when_you_expend_a_Focus_Point_to_use_Patient_Defense"/>
+            <effect type="GainTemporaryHitPoints" value_formula="2*MartialArtsDieRoll"/>
+          </enhances_ability>
+          <enhances_ability ability_name="Step of the Wind">
+            <trigger text="when_you_expend_a_Focus_Point_to_use_Step_of_the_Wind"/>
+            <effect description="can_choose_a_willing_creature_within_5_feet_Large_or_smaller_You_move_the_creature_with_you_until_end_of_your_turn_Creatures_movement_doesnt_provoke_Opportunity_Attacks"/>
+          </enhances_ability>
+        </enhancements>
+        <modifier category="bonus">speed +5</modifier> <!-- Unarmored Movement -->
       </feature>
       <feature>
         <name>Level 10: Self-Restoration</name>
@@ -245,6 +348,9 @@ Source:	Player's Handbook 2024 p. 103</text>
 	In addition, forgoing food and drink doesn't give you levels of Exhaustion.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <trigger text="at_the_end_of_each_of_your_turns"/>
+        <effect description="can_remove_one_of_the_following_conditions_from_yourself_Charmed_Frightened_or_Poisoned"/>
+        <modifies_rule rule_name="ExhaustionFromFoodAndDrink" status="immune"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -278,6 +384,9 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>You can now use your Deflect Attacks feature against attacks that deal any damage type, not just Bludgeoning, Piercing, or Slashing.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <enhances_feature feature_name="Level 3: Deflect Attacks">
+          <modifies_trigger new_damage_types_affected="any_damage_type"/>
+        </enhances_feature>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -292,8 +401,16 @@ Source:	Player's Handbook 2024 p. 103</text>
 	Additionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it. and you must use the new roll.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <proficiency>constitution, intelligence, wisdom, charisma</proficiency>
-        <modifier category="bonus">speed +5</modifier>
+        <grants_proficiency type="SavingThrow" name="Strength"/> <!-- Already has Str, Dex. Adding others. -->
+        <grants_proficiency type="SavingThrow" name="Constitution"/>
+        <grants_proficiency type="SavingThrow" name="Intelligence"/>
+        <grants_proficiency type="SavingThrow" name="Wisdom"/>
+        <grants_proficiency type="SavingThrow" name="Charisma"/>
+        <proficiency>constitution, intelligence, wisdom, charisma</proficiency> <!-- Original, for compatibility -->
+        <trigger text="whenever_you_make_a_saving_throw_and_fail"/>
+        <cost resource="FocusPoint" value="1"/>
+        <effect description="reroll_it_and_you_must_use_the_new_roll"/>
+        <modifier category="bonus">speed +5</modifier> <!-- Unarmored Movement -->
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -307,6 +424,9 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>When you roll Initiative and don't use Uncanny Metabolism, you regain expended Focus Points until you have 4 if you have 3 or fewer.
 
 Source:	Player's Handbook 2024 p. 103</text>
+        <trigger text="when_you_roll_Initiative_and_dont_use_Uncanny_Metabolism"/>
+        <condition text="if_you_have_3_or_fewer_Focus_Points"/>
+        <effect description="regain_expended_Focus_Points_until_you_have_4"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -340,7 +460,10 @@ Source:	Player's Handbook 2024 p. 103</text>
         <text>At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.
 
 Source:	Player's Handbook 2024 p. 103</text>
-        <modifier category="bonus">speed +5</modifier>
+        <trigger text="at_the_start_of_your_turn"/>
+        <cost resource="FocusPoint" value="3"/>
+        <effect type="Resistance" damage_types="all_except_Force" duration="1_minute_or_until_Incapacitated"/>
+        <modifier category="bonus">speed +5</modifier> <!-- Unarmored Movement -->
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -369,6 +492,8 @@ Source:	Player's Handbook 2024 p. 103</text>
 Source:	Player's Handbook 2024 p. 103</text>
         <modifier category="ability score">dexterity +4</modifier>
         <modifier category="ability score">wisdom +4</modifier>
+        <effect type="AbilityScoreIncrease" ability="Dexterity" value="4" maximum="25"/>
+        <effect type="AbilityScoreIncrease" ability="Wisdom" value="4" maximum="25"/>
       </feature>
       <counter>
         <name>Focus Points</name>
@@ -385,12 +510,18 @@ Source:	Player's Handbook 2024 p. 103</text>
 Warriors of Mercy manipulate the life force of others. These Monks are wandering physicians, but they bring a swift end to their enemies. They often wear masks, presenting themselves as faceless bringers of life and death.
 
 Source:	Player's Handbook 2024 p. 104</text>
+        <subclass>Warrior of Mercy</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Hand of Harm (Warrior of Mercy)</name>
         <text>Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
 
 Source:	Player's Handbook 2024 p. 104</text>
+        <subclass>Warrior of Mercy</subclass>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_a_creature_with_an_Unarmed_Strike_and_deal_damage"/>
+        <cost resource="FocusPoint" value="1"/>
+        <effect type="ExtraDamage" damage_type="Necrotic" value_formula="MartialArtsDieRoll+WIS_modifier"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Hand of Healing (Warrior of Mercy)</name>
@@ -398,13 +529,26 @@ Source:	Player's Handbook 2024 p. 104</text>
 	When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.
 
 Source:	Player's Handbook 2024 p. 104</text>
+        <subclass>Warrior of Mercy</subclass>
+        <action type="MagicAction">
+          <cost resource="FocusPoint" value="1"/>
+          <target description="a_creature_you_touch"/>
+          <effect type="Heal" value_formula="MartialArtsDieRoll+WIS_modifier"/>
+        </action>
+        <enhances_ability ability_name="Flurry of Blows">
+          <effect description="can_replace_one_of_the_Unarmed_Strikes_with_a_use_of_Hand_of_Healing_Magic_Action_without_expending_a_Focus_Point_for_the_healing"/>
+        </enhances_ability>
       </feature>
       <feature optional="YES">
         <name>Level 3: Implements of Mercy (Warrior of Mercy)</name>
         <text>You gain proficiency in the Insight and Medicine skills and proficiency with the Herbalism Kit.
 
 Source:	Player's Handbook 2024 p. 104</text>
-        <proficiency>Insight, Medicine</proficiency>
+        <subclass>Warrior of Mercy</subclass>
+        <grants_proficiency type="Skill" name="Insight"/>
+        <grants_proficiency type="Skill" name="Medicine"/>
+        <grants_proficiency type="Tool" name="Herbalism Kit"/>
+        <proficiency>Insight, Medicine</proficiency> <!-- Original -->
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -417,6 +561,17 @@ Hand of Harm. When you use Hand of Harm on a creature, you can also give that cr
 Hand of Healing. When you use Hand of Healing. you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.
 
 Source:	Player's Handbook 2024 p. 104</text>
+        <subclass>Warrior of Mercy</subclass>
+        <enhancements>
+          <enhances_feature feature_name="Level 3: Hand of Harm (Warrior of Mercy)">
+            <trigger text="when_you_use_Hand_of_Harm_on_a_creature"/>
+            <effect type="Condition" name="Poisoned" target="that_creature" duration="until_end_of_your_next_turn"/>
+          </enhances_feature>
+          <enhances_feature feature_name="Level 3: Hand of Healing (Warrior of Mercy)">
+            <trigger text="when_you_use_Hand_of_Healing"/>
+            <effect description="can_also_end_one_of_the_following_conditions_on_the_creature_you_heal_Blinded_Deafened_Paralyzed_Poisoned_or_Stunned"/>
+          </enhances_feature>
+        </enhancements>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -427,6 +582,16 @@ Source:	Player's Handbook 2024 p. 104</text>
 	You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 104</text>
+        <subclass>Warrior of Mercy</subclass>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/>
+        <enhancements>
+          <enhances_ability ability_name="Flurry of Blows">
+            <effect description="can_replace_each_of_the_Unarmed_Strikes_with_a_use_of_Hand_of_Healing_without_expending_Focus_Points_for_the_healing"/>
+            <trigger text="when_you_make_an_Unarmed_Strike_with_Flurry_of_Blows_and_deal_damage"/>
+            <effect description="can_use_Hand_of_Harm_with_that_strike_without_expending_a_Focus_Point_for_Hand_of_Harm_still_only_once_per_turn"/>
+          </enhances_ability>
+        </enhancements>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -436,6 +601,14 @@ Source:	Player's Handbook 2024 p. 104</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Mercy</subclass>
+        <action type="MagicAction"/>
+        <target description="corpse_of_a_creature_that_died_within_the_past_24_hours"/>
+        <cost resource="FocusPoint" value="5"/>
+        <effect type="Revive" hp_formula="4d10+WIS_modifier"/>
+        <effect description="if_creature_died_with_Blinded_Deafened_Paralyzed_Poisoned_or_Stunned_it_revives_with_conditions_removed"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Hand of Ultimate Mercy</name>
@@ -453,6 +626,7 @@ Source:	Player's Handbook 2024 p. 105</text>
 Warriors of Shadow practice stealth and subterfuge, harnessing the power of the Shadowfell. They are at home in darkness, able to draw gloom around themselves to hide, leap from shadow to shadow, and take on a wraithlike form.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Shadow</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Shadow Arts (Warrior of Shadow)</name>
@@ -465,6 +639,25 @@ Darkvision. You gain Darkvision with a range of 60 fee t. If you already have Da
 Shadowy Figments. You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Shadow</subclass>
+        <benefits>
+          <benefit name="Darkness">
+            <cost resource="FocusPoint" value="1"/>
+            <effect description="cast_Darkness_spell_without_spell_components"/>
+            <modifies_spell spell_name="Darkness" condition="when_cast_with_this_feature">
+              <effect description="you_can_see_within_the_spells_area"/>
+              <trigger text="while_the_spell_persists_at_the_start_of_each_of_your_turns"/>
+              <effect description="can_move_its_area_of_Darkness_to_a_space_within_60_feet_of_yourself"/>
+            </modifies_spell>
+          </benefit>
+          <benefit name="Darkvision">
+            <effect type="Darkvision" range="60_feet"/>
+            <enhancement condition="if_already_have_Darkvision" effect="its_range_increases_by_60_feet"/>
+          </benefit>
+          <benefit name="Shadowy Figments">
+            <grants_spell_learning spell_name="Minor Illusion" ability="WIS"/>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -473,6 +666,11 @@ Source:	Player's Handbook 2024 p. 105</text>
         <text>While entirely within Dim Light or Darkness, you can use a Bonus Action to teleport up to 60 feet to an unoccupied space you can see that is also in Dim Light or Darkness. You then have Advantage on the next me lee attack you make before the end of the current turn.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Shadow</subclass>
+        <condition text="while_entirely_within_Dim_Light_or_Darkness"/>
+        <action type="BonusAction"/>
+        <effect type="Teleport" target="self" range="up_to_60_feet" destination="unoccupied_space_you_can_see_that_is_also_in_Dim_Light_or_Darkness"/>
+        <effect type="Advantage" on="next_melee_attack_you_make_before_end_of_current_turn"/>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -481,6 +679,13 @@ Source:	Player's Handbook 2024 p. 105</text>
         <text>You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Shadow</subclass>
+        <enhances_feature feature_name="Level 6 : Shadow Step (Warrior of Shadow)">
+          <trigger text="when_you_use_your_Shadow_Step"/>
+          <cost resource="FocusPoint" value="1"/>
+          <effect description="remove_the_requirement_that_you_must_start_and_end_in_Dim_Light_or_Darkness_for_that_use"/>
+          <effect description="as_part_of_this_Bonus_Action_can_make_an_Unarmed_Strike_immediately_after_you_teleport"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -495,6 +700,25 @@ Partially Incorporeal. You can move through occupied spaces as if they were Diff
 Shadow Flurry. You can use your Flurry of Blows without expending any Focus Points.
 
 Source:	Player's Handbook 2024 p. 105</text>
+        <subclass>Warrior of Shadow</subclass>
+        <action type="MagicAction"/>
+        <condition text="while_entirely_within_Dim_Light_or_Darkness"/>
+        <cost resource="FocusPoint" value="3"/>
+        <effect type="Transformation" name="ShroudOfShadows" duration="1_minute" ends_early_if="Incapacitated_condition_or_end_your_turn_in_Bright_Light">
+          <benefits>
+            <benefit name="Invisibility">
+              <effect type="Condition" name="Invisible"/>
+            </benefit>
+            <benefit name="Partially Incorporeal">
+              <effect description="can_move_through_occupied_spaces_as_if_they_were_Difficult_Terrain_If_you_end_your_turn_in_such_a_space_you_are_shunted_to_the_last_unoccupied_space_you_were_in"/>
+            </benefit>
+            <benefit name="Shadow Flurry">
+              <modifies_ability ability_name="Flurry of Blows">
+                <cost resource="FocusPoint" new_value="0"/>
+              </modifies_ability>
+            </benefit>
+          </benefits>
+        </effect>
       </feature>
     </autolevel>
     <!-- Monk Subclass: Warrior of the Elements -->
@@ -506,6 +730,7 @@ Source:	Player's Handbook 2024 p. 105</text>
 Warriors of the Elements tap into the power of the Elemental Planes. Harnessing their supernatural focus, these Monks momentarily tame the energy of the Elemental Chaos to empower themselves in and out of battle.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Elemental Attunement (Warrior of the Elements)</name>
@@ -516,12 +741,35 @@ Reach. When you make an Unarmed Strike, your reach is 10 feet greater than norma
 Elemental Strikes. Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type. When you deal one of these types with it, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
+        <trigger text="at_the_start_of_your_turn"/>
+        <cost resource="FocusPoint" value="1"/>
+        <effect type="Buff" name="ElementalEnergyImbuement" duration="10_minutes" ends_early_if="Incapacitated_condition">
+          <benefits_while_active>
+            <benefit name="Reach">
+              <trigger text="when_you_make_an_Unarmed_Strike"/>
+              <effect type="ReachIncrease" value="10_feet_greater_than_normal"/>
+            </benefit>
+            <benefit name="Elemental Strikes">
+              <trigger text="whenever_you_hit_with_your_Unarmed_Strike"/>
+              <effect description="can_cause_it_to_deal_your_choice_of_Acid_Cold_Fire_Lightning_or_Thunder_damage_rather_than_its_normal_damage_type"/>
+              <trigger text="when_you_deal_one_of_these_types_with_it"/>
+              <effect description="can_also_force_the_target_to_make_a_Strength_saving_throw" save_dc="focus_point_save_dc">
+                <on_failed_save>
+                  <effect type="Movement" target="target" value="up_to_10_feet_toward_or_away_from_you"/>
+                </on_failed_save>
+              </effect>
+            </benefit>
+          </benefits_while_active>
+        </effect>
       </feature>
       <feature optional="YES">
         <name>Level 3: Manipulate Elements (Warrior of the Elements)</name>
         <text>You know the Elementalism spell. Wisdom is your spellcasting ability for it.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
+        <grants_spell_learning spell_name="Elementalism" ability="WIS"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -531,6 +779,12 @@ Source:	Player's Handbook 2024 p. 106</text>
 	Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
+        <action type="MagicAction"/>
+        <cost resource="FocusPoint" value="2"/>
+        <target_area type="Sphere" radius="20_feet" centered_on_point_within_range="120_feet"/>
+        <damage_type_choice>Acid,Cold,Fire,Lightning,Thunder</damage_type_choice>
+        <effect type="Damage" value_formula="3*MartialArtsDieRoll" save_type="DEX" save_dc="focus_point_save_dc" save_effect="half_damage" target_description="each_creature_in_the_Sphere"/>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -539,6 +793,13 @@ Source:	Player's Handbook 2024 p. 106</text>
         <text>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
+        <enhances_feature feature_name="Level 3: Elemental Attunement (Warrior of the Elements)">
+          <benefit_while_active>
+            <effect type="Speed" speed_type="Fly" value_formula="your_Speed"/>
+            <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>
+          </benefit_while_active>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -553,6 +814,30 @@ Destructive Stride. When you use your Step of the Wind, your Speed increases by 
 Empowered Strikes. Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.
 
 Source:	Player's Handbook 2024 p. 106</text>
+        <subclass>Warrior of the Elements</subclass>
+        <enhances_feature feature_name="Level 3: Elemental Attunement (Warrior of the Elements)">
+          <benefits_while_active>
+            <benefit name="Damage Resistance">
+              <effect type="Resistance" damage_type_choice="Acid_Cold_Fire_Lightning_or_Thunder"/>
+              <trigger text="at_the_start_of_each_of_your_turns">
+                <effect description="can_change_this_choice"/>
+              </trigger>
+            </benefit>
+            <benefit name="Destructive Stride">
+              <enhances_ability ability_name="Step of the Wind">
+                <effect type="SpeedIncrease" value="20_feet" duration="until_end_of_the_turn"/>
+                <trigger text="for_that_duration_when_you_enter_a_space_within_5_feet_of_any_creature_of_your_choice"/>
+                <effect type="Damage" value_formula="MartialArtsDieRoll" damage_type_choice="Acid_Cold_Fire_Lightning_or_Thunder" target="creature_entered_near"/>
+                <restriction text="a_creature_can_take_this_damage_only_once_per_turn"/>
+              </enhances_ability>
+            </benefit>
+            <benefit name="Empowered Strikes">
+              <uses fixed="1" per_turn="true"/>
+              <trigger text="when_you_hit_a_target_with_an_Unarmed_Strike"/>
+              <effect type="ExtraDamage" value_formula="MartialArtsDieRoll" damage_type="same_as_strike"/>
+            </benefit>
+          </benefits_while_active>
+        </enhances_feature>
       </feature>
     </autolevel>
     <!-- Monk Subclass: Warrior of the Open Hand -->
@@ -564,6 +849,7 @@ Source:	Player's Handbook 2024 p. 106</text>
 Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.
 
 Source:	Player's Handbook 2024 p. 107</text>
+        <subclass>Warrior of the Open Hand</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Open Hand Technique (Warrior of the Open Hand)</name>
@@ -576,6 +862,21 @@ Push. The target must succeed on a Strength saving throw or be pushed up to 15 f
 Topple. The target must succeed on a Dexterity saving throw or have the Prone condition.
 
 Source:	Player's Handbook 2024 p. 107</text>
+        <subclass>Warrior of the Open Hand</subclass>
+        <enhances_ability ability_name="Flurry of Blows">
+          <trigger text="whenever_you_hit_a_creature_with_an_attack_granted_by_your_Flurry_of_Blows"/>
+          <choice name="OpenHandTechniqueEffect" count="1">
+            <option name="Addle">
+              <effect description="target_cant_make_Opportunity_Attacks_until_start_of_its_next_turn"/>
+            </option>
+            <option name="Push">
+              <effect description="target_must_succeed_on_a_Strength_saving_throw_or_be_pushed_up_to_15_feet_away_from_you" save_dc="focus_point_save_dc"/>
+            </option>
+            <option name="Topple">
+              <effect description="target_must_succeed_on_a_Dexterity_saving_throw_or_have_the_Prone_condition" save_dc="focus_point_save_dc"/>
+            </option>
+          </choice>
+        </enhances_ability>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -585,6 +886,11 @@ Source:	Player's Handbook 2024 p. 107</text>
 	You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 107</text>
+        <subclass>Warrior of the Open Hand</subclass>
+        <action type="BonusAction"/>
+        <effect type="Heal" target="self" value_formula="MartialArtsDieRoll+WIS_modifier" min_value="1"/>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -593,6 +899,9 @@ Source:	Player's Handbook 2024 p. 107</text>
         <text>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.
 
 Source:	Player's Handbook 2024 p. 107</text>
+        <subclass>Warrior of the Open Hand</subclass>
+        <trigger text="when_you_take_a_Bonus_Action_other_than_Step_of_the_Wind"/>
+        <effect description="can_also_use_Step_of_the_Wind_immediately_after_that_Bonus_Action"/>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -602,6 +911,27 @@ Source:	Player's Handbook 2024 p. 107</text>
 	You can have only one creature under the effect of this feature at a time. You can end the vibrations harmlessly (no action required).
 
 Source:	Player's Handbook 2024 p. 107</text>
+        <subclass>Warrior of the Open Hand</subclass>
+        <trigger text="when_you_hit_a_creature_with_an_Unarmed_Strike"/>
+        <cost resource="FocusPoint" value="4"/>
+        <effect type="ApplyDebuff" name="QuiveringPalmVibrations" duration_formula="MonkLevel_days" target="creature_hit">
+          <description>vibrations_are_harmless_unless_you_take_an_action_to_end_them</description>
+        </effect>
+        <action_to_end_vibrations>
+          <option name="DedicatedAction">
+            <action type="Action"/>
+          </option>
+          <option name="ForgoAttack">
+            <trigger text="when_you_take_the_Attack_action_on_your_turn"/>
+            <cost description="forgo_one_of_the_attacks"/>
+          </option>
+        </action_to_end_vibrations>
+        <condition_to_end_vibrations text="you_and_the_target_must_be_on_the_same_plane_of_existence"/>
+        <effect_on_ending_vibrations description="target_must_make_a_Constitution_saving_throw" save_dc="focus_point_save_dc">
+          <on_failed_save type="Damage" damage_type="Force" value="10d12"/>
+          <on_successful_save type="Damage" damage_type="Force" value="half_of_10d12"/>
+        </effect_on_ending_vibrations>
+        <restriction text="can_have_only_one_creature_under_the_effect_of_this_feature_at_a_time_You_can_end_the_vibrations_harmlessly_no_action_required"/>
       </feature>
     </autolevel>
   </class>

@@ -155,24 +155,35 @@ Source:	Player's Handbook 2024 p. 79</text>
 	You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.
 
 Source:	Player's Handbook 2024 p. 80</text>
+        <grants_language name="Druidic"/>
+        <grants_always_prepared_spell name="Speak with Animals"/>
+        <effect description="can_use_Druidic_to_leave_hidden_messages_those_who_know_Druidic_spot_automatically_others_DC15_INT_Investigation_check_to_spot_cant_decipher_without_magic"/>
       </feature>
       <feature>
         <name>Level 1: Primal Order</name>
         <text>You have dedicated yourself to one of the following sacred roles of your choice.
 
 Source:	Player's Handbook 2024 p. 80</text>
+        <choice name="Primal Order" count="1">
+          <option ref_feature_name="Level 1: Primal Order: Magician"/>
+          <option ref_feature_name="Level 1: Primal Order: Warden"/>
+        </choice>
       </feature>
       <feature optional="YES">
         <name>Level 1: Primal Order: Magician</name>
         <text>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).
 
 Source:	Player's Handbook 2024 p. 80</text>
+        <grants_spell_learning type="Cantrip" spell_list="Druid" count="1"/>
+        <effect type="Bonus" on="Intelligence_Arcana_checks_or_Intelligence_Nature_checks" value_formula="WIS_modifier" min_value="1"/>
       </feature>
       <feature optional="YES">
         <name>Level 1: Primal Order: Warden</name>
         <text>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.
 
 Source:	Player's Handbook 2024 p. 80</text>
+        <grants_proficiency type="Weapon" name="Martial weapons"/>
+        <grants_proficiency type="Armor" name="Medium armor"/>
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -204,6 +215,33 @@ No Spellcasting. You can't cast spells, but shapeshifting doesn't break your Con
 Objects. Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.
 
 Source:	Player's Handbook 2024 p. 80</text>
+        <action type="BonusAction" to_assume_form="true"/>
+        <action type="BonusAction" to_leave_form="true"/>
+        <duration description="number_of_hours_equal_to_half_Druid_level"/>
+        <ends_early_if condition="use_Wild_Shape_again_Incapacitated_condition_or_die"/>
+        <uses type="scaling_table" table_ref="DruidFeaturesTable_WildShapeColumn" initial_uses="2"/>
+        <recharge type="1_per_SR_all_per_LR"/>
+        <known_forms_scaling_table name="Beast Shapes">
+          <level val="2" known_forms="4" max_cr="1/4" fly_speed="No"/>
+          <level val="4" known_forms="6" max_cr="1/2" fly_speed="No"/>
+          <level val="8" known_forms="8" max_cr="1" fly_speed="Yes"/>
+        </known_forms_scaling_table>
+        <recharge type="LR" description="can_replace_one_known_form_with_another_eligible_form"/>
+        <rules_while_shape_shifted>
+          <rule name="Temporary Hit Points">
+            <effect type="GainTemporaryHitPoints" value_formula="DruidLevel" trigger="when_you_assume_a_Wild_Shape_form"/>
+          </rule>
+          <rule name="Game Statistics">
+            <effect description="Your_game_statistics_are_replaced_by_the_Beasts_stat_block_but_you_retain_your_creature_type_Hit_Points_Hit_Point_Dice_Intelligence_Wisdom_and_Charisma_scores_class_features_languages_and_feats_You_also_retain_your_skill_and_saving_throw_proficiencies_and_use_your_Proficiency_Bonus_for_them_in_addition_to_gaining_the_proficiencies_of_the_creature_If_a_skill_or_saving_throw_modifier_in_the_Beasts_stat_block_is_higher_than_yours_use_the_one_in_the_stat_block"/>
+          </rule>
+          <rule name="No Spellcasting">
+            <effect type="Restriction" rule="Spellcasting" status="cannot_cast_spells"/>
+            <note text="shapeshifting_doesnt_break_your_Concentration_or_otherwise_interfere_with_a_spell_youve_already_cast"/>
+          </rule>
+          <rule name="Objects">
+            <effect description="Your_ability_to_handle_objects_is_determined_by_the_forms_limbs_rather_than_your_own_In_addition_you_choose_whether_your_equipment_falls_in_your_space_merges_into_your_new_form_or_is_worn_by_it_Worn_equipment_functions_as_normal_but_the_DM_decides_whether_its_practical_for_the_new_form_to_wear_a_piece_of_equipment_based_on_the_creatures_size_and_shape_Your_equipment_doesnt_change_size_or_shape_to_match_the_new_form_and_any_equipment_that_the_new_form_cant_wear_must_either_fall_to_the_ground_or_merge_with_the_form_Equipment_that_merges_with_the_form_has_no_effect_while_youre_in_that_form"/>
+          </rule>
+        </rules_while_shape_shifted>
       </feature>
       <feature>
         <name>Level 2: Wild Companion</name>
@@ -211,6 +249,16 @@ Source:	Player's Handbook 2024 p. 80</text>
 	When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <action type="MagicAction"/>
+        <cost_options>
+          <cost type="SpellSlot" value_any="true"/>
+          <cost resource="WildShapeUse" value="1"/>
+        </cost_options>
+        <effect description="cast_the_Find_Familiar_spell_without_Material_components"/>
+        <modifies_spell spell_name="Find Familiar" condition="when_cast_in_this_way">
+          <property name="CreatureType" new_value="Fey"/>
+          <duration_override description="disappears_when_you_finish_a_Long_Rest"/>
+        </modifies_spell>
       </feature>
     </autolevel>
     <autolevel level="3">
@@ -236,6 +284,15 @@ Source:	Player's Handbook 2024 p. 81</text>
 	In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can't do so again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <uses fixed="1" per_turn="true" condition="if_you_have_no_uses_of_Wild_Shape_left">
+          <cost type="SpellSlot" value_any="true" action_type="NoAction"/>
+          <effect description="give_yourself_one_use_of_Wild_Shape"/>
+        </uses>
+        <uses fixed="1">
+          <recharge type="LR"/>
+          <cost resource="WildShapeUse" value="1" action_type="NoAction"/>
+          <effect description="give_yourself_a_level_1_spell_slot"/>
+        </uses>
       </feature>
       <counter>
         <name>Wild Resurgence</name>
@@ -249,20 +306,28 @@ Source:	Player's Handbook 2024 p. 81</text>
         <text>The might of the elements flows through you. You gain one of the following options of your choice.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <choice name="Elemental Fury Option" count="1">
+          <option ref_feature_name="Level 7: Elemental Fury: Potent Spellcasting"/>
+          <option ref_feature_name="Level 7: Elemental Fury: Primal Strike"/>
+        </choice>
       </feature>
       <feature optional="YES">
         <name>Level 7: Elemental Fury: Potent Spellcasting</name>
         <text>Add your Wisdom modifier to the damage you deal with any Druid cantrip.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <effect type="DamageBonus" value_formula="WIS_modifier" condition="to_damage_you_deal_with_any_Druid_cantrip"/>
       </feature>
       <feature optional="YES">
         <name>Level 7: Elemental Fury: Primal Strike</name>
         <text>Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_a_creature_with_an_attack_roll_using_a_weapon_or_a_Beast_forms_attack_in_Wild_Shape"/>
+        <effect type="ExtraDamage" value="1d8" damage_type_choice="Cold_Fire_Lightning_or_Thunder"/>
         <roll description="Extra Damage" level="7">1d8</roll>
-        <roll description="Extra Damage" level="15">2d8</roll>
+        <roll description="Extra Damage" level="15">2d8</roll> <!-- Part of Improved Elemental Fury -->
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -291,6 +356,14 @@ Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or gr
 Primal Strike. The extra damage of your Primal Strike increases to 2d8.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <enhances_feature feature_name="Level 7: Elemental Fury">
+          <enhancement_option for_choice="Potent Spellcasting">
+            <modifies_spell_property spell_type="Druid_cantrip" property="range" condition="range_of_10_feet_or_greater" new_range_increase="+300_feet"/>
+          </enhancement_option>
+          <enhancement_option for_choice="Primal Strike">
+            <modifies_effect type="ExtraDamage" new_value="2d8"/>
+          </enhancement_option>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -307,6 +380,12 @@ Source:	Player's Handbook 2024 p. 81</text>
         <text>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.
 
 Source:	Player's Handbook 2024 p. 81</text>
+        <modifies_feature feature_name="Level 2: Wild Shape">
+          <rule_while_shape_shifted name="Spellcasting">
+            <effect description="can_cast_spells_in_Beast_form"/>
+            <restriction text="except_for_any_spell_that_has_a_Material_component_with_a_cost_specified_or_that_consumes_its_Material_component"/>
+          </rule_while_shape_shifted>
+        </modifies_feature>
       </feature>
     </autolevel>
     <autolevel level="19">
@@ -329,6 +408,21 @@ Nature Magician. You can convert uses of Wild Shape into a spell slot (no action
 Longevity. The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.
 
 Source:	Player's Handbook 2024 p. 82</text>
+        <benefits>
+          <benefit name="Evergreen Wild Shape">
+            <trigger text="whenever_you_roll_Initiative_and_have_no_uses_of_Wild_Shape_left"/>
+            <effect description="regain_one_expended_use_of_Wild_Shape"/>
+          </benefit>
+          <benefit name="Nature Magician">
+            <action type="NoAction"/>
+            <effect description="convert_uses_of_Wild_Shape_into_a_spell_slot_Choose_a_number_of_your_unexpended_uses_of_Wild_Shape_and_convert_them_into_a_single_spell_slot_with_each_use_contributing_2_spell_levels"/>
+            <uses fixed="1"/>
+            <recharge type="LR"/>
+          </benefit>
+          <benefit name="Longevity">
+            <effect description="the_primal_magic_that_you_wield_causes_you_to_age_more_slowly_For_every_ten_years_that_pass_your_body_ages_only_one_year"/>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <!-- Druid Subclass: Circle of the Land -->
@@ -340,6 +434,7 @@ Source:	Player's Handbook 2024 p. 82</text>
 The Circle of the Land comprises mystics and sages who safeguard ancient knowledge and rites. These Druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of their communities.
 
 Source:	Player's Handbook 2024 p. 84</text>
+        <subclass>Circle of the Land</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Circle of the Land Spells (Circle of the Land)</name>
@@ -374,6 +469,11 @@ Druid Level | Circle Spells
 9 | Insect Plague
 
 Source:	Player's Handbook 2024 p. 84</text>
+        <subclass>Circle of the Land</subclass>
+        <trigger text="whenever_you_finish_a_Long_Rest"/>
+        <choice name="LandType" from_list="Arid,Polar,Temperate,Tropical"/>
+        <effect description="you_have_the_spells_listed_for_your_Druid_level_and_lower_prepared_from_the_chosen_lands_table"/>
+        <!-- Specific spells per land type and level would be detailed here or in a separate data structure referenced by the application -->
       </feature>
       <feature optional="YES">
         <name>Level 3: Land's Aid (Circle of the Land)</name>
@@ -381,6 +481,18 @@ Source:	Player's Handbook 2024 p. 84</text>
 	The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).
 
 Source:	Player's Handbook 2024 p. 84</text>
+        <subclass>Circle of the Land</subclass>
+        <action type="MagicAction"/>
+        <cost resource="WildShapeUse" value="1"/>
+        <target_area type="Sphere" radius="10_feet" centered_on_point_within_range="60_feet"/>
+        <effect type="Damage" damage_type="Necrotic" value_dice="2d6" save_type="CON" save_dc="spell_save_DC" save_effect="half_damage" target_description="each_creature_of_your_choice_in_the_Sphere">
+          <scaling level="10" dice="3d6"/>
+          <scaling level="14" dice="4d6"/>
+        </effect>
+        <effect type="Heal" value_dice="2d6" target_description="one_creature_of_your_choice_in_that_area">
+          <scaling level="10" dice="3d6"/>
+          <scaling level="14" dice="4d6"/>
+        </effect>
         <roll description="Necrotic Damage" level="3">2d6</roll>
         <roll description="Heal" level="3">2d6</roll>
         <roll description="Necrotic Damage" level="10">3d6</roll>
@@ -396,6 +508,16 @@ Source:	Player's Handbook 2024 p. 84</text>
 	In addition, when you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Druid level (round up), and none of them can be level 6+. For example, if you're a level 6 Druid, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 85</text>
+        <subclass>Circle of the Land</subclass>
+        <uses fixed="1">
+          <recharge type="LR"/>
+          <effect description="cast_one_of_the_level_1+_spells_that_you_have_prepared_from_your_Circle_Spells_feature_without_expending_a_spell_slot"/>
+        </uses>
+        <uses fixed="1">
+          <recharge type="LR"/>
+          <trigger text="when_you_finish_a_Short_Rest"/>
+          <effect description="choose_expended_spell_slots_to_recover_The_spell_slots_can_have_a_combined_level_that_is_equal_to_or_less_than_half_your_Druid_level_round_up_and_none_of_them_can_be_level_6+"/>
+        </uses>
       </feature>
       <counter>
         <name>Natural Recovery</name>
@@ -417,6 +539,9 @@ Temperate | Lightning
 Tropical | Poison
 
 Source:	Player's Handbook 2024 p. 85</text>
+        <subclass>Circle of the Land</subclass>
+        <effect type="Immunity" condition_names="Poisoned"/>
+        <effect type="Resistance" damage_type_from_table="Nature's Ward_table_based_on_current_land_choice"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -426,6 +551,16 @@ Source:	Player's Handbook 2024 p. 85</text>
 	As a Bonus Action, you can move the Cube up to 60 feet to ground within 120 feet of yourself.
 
 Source:	Player's Handbook 2024 p. 86</text>
+        <subclass>Circle of the Land</subclass>
+        <action type="MagicAction"/>
+        <cost resource="WildShapeUse" value="1"/>
+        <effect type="CreateArea" name="SpectralTreesAndVines" shape="Cube" size="15_feet" location="on_the_ground_within_120_feet" duration="1_minute" ends_early_if="Incapacitated_condition_or_die">
+          <benefit description="you_and_your_allies_have_Half_Cover_while_in_that_area"/>
+          <benefit description="your_allies_gain_the_current_Resistance_of_your_Natures_Ward_while_there"/>
+        </effect>
+        <action type="BonusAction" to_move_area="true">
+          <effect description="move_the_Cube_up_to_60_feet_to_ground_within_120_feet_of_yourself"/>
+        </action>
       </feature>
     </autolevel>
     <!-- Druid Subclass: Circle of the Moon -->
@@ -438,6 +573,7 @@ Druids of the Circle of the Moon draw on lunar magic to transform themselves. Th
 	Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood.
 
 Source:	Player's Handbook 2024 p. 86</text>
+        <subclass>Circle of the Moon</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Circle Forms (Circle of the Moon)</name>
@@ -450,6 +586,20 @@ Armor Class. Until you leave the form, your AC equals 13 plus your Wisdom modifi
 Temporary Hit Points. You gain a number of Temporary Hit Points equal to three times your Druid level.
 
 Source:	Player's Handbook 2024 p. 86</text>
+        <subclass>Circle of the Moon</subclass>
+        <modifies_feature feature_name="Level 2: Wild Shape">
+          <benefit name="Challenge Rating">
+            <modifies_rule rule_name="WildShapeMaxCR" new_formula="DruidLevel/3_round_down"/>
+          </benefit>
+          <benefit name="Armor Class">
+            <modifies_rule rule_name="WildShapeAC" condition="if_13+WIS_modifier_is_higher_than_Beasts_AC">
+              <new_formula>13+WIS_modifier</new_formula>
+            </modifies_rule>
+          </benefit>
+          <benefit name="Temporary Hit Points">
+            <modifies_effect type="GainTemporaryHitPoints" new_value_formula="3*DruidLevel"/>
+          </benefit>
+        </modifies_feature>
       </feature>
       <feature optional="YES">
         <name>Level 3: Circle of the Moon Spells (Circle of the Moon)</name>
@@ -464,6 +614,16 @@ Druid Level | Prepared Spells
 9 | Mass Cure Wounds
 
 Source:	Player's Handbook 2024 p. 86</text>
+        <subclass>Circle of the Moon</subclass>
+        <grants_always_prepared_spell name="Cure Wounds" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Moonbeam" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Starry Wisp" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Conjure Animals" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fount of Moonlight" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Mass Cure Wounds" level_gained_at="9"/>
+        <modifies_spellcasting condition="while_in_Wild_Shape_form">
+          <effect description="can_cast_the_spells_from_this_feature"/>
+        </modifies_spellcasting>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -476,6 +636,17 @@ Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal da
 Increased Toughness. You can add your Wisdom modifier to your Constitution saving throws.
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Moon</subclass>
+        <modifies_feature feature_name="Level 2: Wild Shape">
+          <benefits_while_in_form>
+            <benefit name="Lunar Radiance">
+              <effect description="each_of_your_attacks_in_a_Wild_Shape_form_can_deal_its_normal_damage_type_or_Radiant_damage_You_make_this_choice_each_time_you_hit"/>
+            </benefit>
+            <benefit name="Increased Toughness">
+              <effect type="Bonus" on="Constitution_saving_throws" value_formula="WIS_modifier"/>
+            </benefit>
+          </benefits_while_in_form>
+        </modifies_feature>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -485,6 +656,16 @@ Source:	Player's Handbook 2024 p. 87</text>
 	You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required).
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Moon</subclass>
+        <action type="BonusAction"/>
+        <effect type="Teleport" target="self" range="up_to_30_feet" destination="unoccupied_space_you_can_see"/>
+        <effect type="Advantage" on="next_attack_roll_you_make_before_end_of_this_turn"/>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/>
+        <additional_recharge_method>
+          <cost type="SpellSlot" level="2+" value="1" action_type="NoAction"/>
+          <effect description="restore_one_expended_use"/>
+        </additional_recharge_method>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -497,6 +678,22 @@ Improved Lunar Radiance. Once per turn, you can deal an extra 2d10 Radiant damag
 Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Moon</subclass>
+        <benefits>
+          <benefit name="Improved Lunar Radiance">
+            <enhances_feature feature_name="Level 6: Improved Circle Forms (Circle of the Moon)" benefit_name="Lunar Radiance">
+              <uses fixed="1" per_turn="true"/>
+              <trigger text="when_you_hit_a_target_with_a_Wild_Shape_forms_attack"/>
+              <effect type="ExtraDamage" value="2d10" damage_type="Radiant"/>
+            </enhances_feature>
+          </benefit>
+          <benefit name="Shared Moonlight">
+            <enhances_feature feature_name="Level 10: Moonlight Step (Circle of the Moon)">
+              <trigger text="whenever_you_use_Moonlight_Step"/>
+              <effect type="Teleport" target="one_willing_creature_within_10_feet_of_you" destination="unoccupied_space_you_can_see_within_10_feet_of_your_destination_space"/>
+            </enhances_feature>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <!-- Druid Subclass: Circle of the Sea -->
@@ -508,6 +705,7 @@ Source:	Player's Handbook 2024 p. 87</text>
 Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds.
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Sea</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Circle of the Sea Spells (Circle of the Sea)</name>
@@ -521,6 +719,18 @@ Druid Level | Prepared Spells
 9 | Conjure Elemental, Hold Monster
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Sea</subclass>
+        <grants_always_prepared_spell name="Fog Cloud" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Gust of Wind" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Ray of Frost" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Shatter" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Thunderwave" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Lightning Bolt" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Water Breathing" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Control Water" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Ice Storm" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Conjure Elemental" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Hold Monster" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Wrath of the Sea (Circle of the Sea)</name>
@@ -528,6 +738,20 @@ Source:	Player's Handbook 2024 p. 87</text>
 	When you manifest the Emanation and as a Bonus Action on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and. if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage. roll a number of d6s equal to your Wisdom modifier (minimum of one die).
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Sea</subclass>
+        <action type="BonusAction" to_manifest="true"/>
+        <cost resource="WildShapeUse" value="1"/>
+        <effect type="CreateArea" name="OceanSprayEmanation" shape="Emanation" radius="5_feet" duration="10_minutes" ends_early_if="dismissed_no_action_manifest_it_again_or_Incapacitated_condition"/>
+        <action type="BonusAction" condition="on_subsequent_turns_while_Emanation_active">
+          <trigger text="when_you_manifest_the_Emanation_OR_as_Bonus_Action_on_subsequent_turns"/>
+          <target description="another_creature_you_can_see_in_the_Emanation"/>
+          <effect description="target_must_succeed_on_a_Constitution_saving_throw_against_your_spell_save_DC">
+            <on_failed_save>
+              <effect type="Damage" damage_type="Cold" value_formula="WIS_modifier_d6s_min_1d6"/>
+              <effect type="Movement" target="target_creature" direction="pushed_up_to_15_feet_away_from_you" condition="if_creature_is_Large_or_smaller"/>
+            </on_failed_save>
+          </effect>
+        </action>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -537,6 +761,11 @@ Source:	Player's Handbook 2024 p. 87</text>
 	In addition, you gain a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Sea</subclass>
+        <modifies_feature feature_name="Level 3: Wrath of the Sea (Circle of the Sea)">
+          <modifies_area_property name="OceanSprayEmanation" property="radius" new_value="10_feet"/>
+        </modifies_feature>
+        <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -549,6 +778,17 @@ Flight. You gain a Fly Speed equal to your Speed.
 Resistance. You have Resistance to Cold, Lightning, and Thunder damage.
 
 Source:	Player's Handbook 2024 p. 87</text>
+        <subclass>Circle of the Sea</subclass>
+        <modifies_feature feature_name="Level 3: Wrath of the Sea (Circle of the Sea)">
+          <benefits_while_active>
+            <benefit name="Flight">
+              <effect type="Speed" speed_type="Fly" value_formula="your_Speed"/>
+            </benefit>
+            <benefit name="Resistance">
+              <effect type="Resistance" damage_types="Cold,Lightning,Thunder"/>
+            </benefit>
+          </benefits_while_active>
+        </modifies_feature>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -558,6 +798,14 @@ Source:	Player's Handbook 2024 p. 87</text>
 	In addition, you can manifest the Emanation around both the other creature and yourself if you expend two uses of your Wild Shape instead of one when manifesting it.
 
 Source:	Player's Handbook 2024 p. 88</text>
+        <subclass>Circle of the Sea</subclass>
+        <modifies_feature feature_name="Level 3: Wrath of the Sea (Circle of the Sea)">
+          <effect description="instead_of_manifesting_around_yourself_can_manifest_around_one_willing_creature_within_60_feet_that_creature_gains_all_benefits_uses_your_spell_save_DC_and_WIS_mod"/>
+          <additional_option>
+            <cost resource="WildShapeUse" value="2_instead_of_1"/>
+            <effect description="can_manifest_Emanation_around_both_the_other_creature_and_yourself"/>
+          </additional_option>
+        </modifies_feature>
       </feature>
     </autolevel>
     <!-- Druid Subclass: Circle of the Stars -->
@@ -569,6 +817,7 @@ Source:	Player's Handbook 2024 p. 88</text>
 The Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos.
 
 Source:	Player's Handbook 2024 p. 88</text>
+        <subclass>Circle of the Stars</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Star Map (Circle of the Stars)</name>
@@ -586,6 +835,15 @@ l | A scroll bearing depictions of constellations
 6 | A glass disk etched with constellations
 
 Source:	Player's Handbook 2024 p. 88</text>
+        <subclass>Circle of the Stars</subclass>
+        <item name="Star Map" type="Tiny Object" description="can_use_as_Spellcasting_Focus_form_determined_by_table_or_choice"/>
+        <benefit_while_holding_map>
+          <grants_always_prepared_spell name="Guidance"/>
+          <grants_always_prepared_spell name="Guiding Bolt"/>
+          <uses attribute="WIS" min="1" for_spell="Guiding Bolt" cast_without_slot="true"/>
+          <recharge type="LR" for_spell="Guiding Bolt_casts_without_slot"/>
+        </benefit_while_holding_map>
+        <effect description="if_you_lose_the_map_you_can_perform_a_1_hour_ceremony_to_magically_create_a_replacement_ceremony_can_be_performed_during_SR_or_LR_destroys_previous_map"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Starry Form (Circle of the Stars)</name>
@@ -600,6 +858,31 @@ Chalice. A constellation of a life-giving goblet appears on you. Whenever you ca
 Dragon. A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.
 
 Source:	Player's Handbook 2024 p. 88</text>
+        <subclass>Circle of the Stars</subclass>
+        <action type="BonusAction"/>
+        <cost resource="WildShapeUse" value="1"/>
+        <effect type="Transformation" name="StarryForm" duration="10_minutes" ends_early_if="dismissed_no_action_Incapacitated_condition_or_use_this_feature_again">
+          <description>retain_game_statistics_body_becomes_luminous_joints_glimmer_like_stars_glowing_lines_connect_them_as_on_a_star_chart_sheds_Bright_Light_10ft_Dim_Light_additional_10ft</description>
+          <choice name="StarryFormConstellation" count="1" trigger="whenever_you_assume_your_starry_form">
+            <option name="Archer">
+              <description>A_constellation_of_an_archer_appears_on_you</description>
+              <action type="BonusAction" trigger="when_you_activate_this_form_and_on_subsequent_turns_while_it_lasts"/>
+              <effect type="RangedSpellAttack" range="60_feet" target_description="one_creature">
+                <on_hit type="Damage" damage_type="Radiant" value_formula="1d8+WIS_modifier"/>
+              </effect>
+            </option>
+            <option name="Chalice">
+              <description>A_constellation_of_a_life_giving_goblet_appears_on_you</description>
+              <trigger text="whenever_you_cast_a_spell_using_a_spell_slot_that_restores_Hit_Points_to_a_creature"/>
+              <effect type="Heal" target_choice="you_or_another_creature_within_30_feet_of_you" value_formula="1d8+WIS_modifier"/>
+            </option>
+            <option name="Dragon">
+              <description>A_constellation_of_a_wise_dragon_appears_on_you</description>
+              <trigger text="when_you_make_an_Intelligence_or_a_Wisdom_check_or_a_Constitution_saving_throw_to_maintain_Concentration"/>
+              <effect description="can_treat_a_roll_of_9_or_lower_on_the_d20_as_a_10"/>
+            </option>
+          </choice>
+        </effect>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -614,6 +897,22 @@ Woe (Odd). Whenever a creature you can see within 30 feet of you is about to mak
 You can use this Reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 89</text>
+        <subclass>Circle of the Stars</subclass>
+        <trigger text="whenever_you_finish_a_Long_Rest"/>
+        <effect description="consult_your_Star_Map_for_omens_and_roll_a_die_Until_you_finish_your_next_Long_Rest_you_gain_access_to_a_special_Reaction_based_on_whether_you_rolled_an_even_or_an_odd_number_on_the_die">
+          <reaction_option name="Weal" condition="rolled_even_number">
+            <action type="Reaction"/>
+            <trigger text="whenever_a_creature_you_can_see_within_30_feet_of_you_is_about_to_make_a_D20_Test"/>
+            <effect description="roll_1d6_and_add_the_number_rolled_to_the_total"/>
+          </reaction_option>
+          <reaction_option name="Woe" condition="rolled_odd_number">
+            <action type="Reaction"/>
+            <trigger text="whenever_a_creature_you_can_see_within_30_feet_of_you_is_about_to_make_a_D20_Test"/>
+            <effect description="roll_1d6_and_subtract_the_number_rolled_from_the_total"/>
+          </reaction_option>
+        </effect>
+        <uses attribute="WIS" min="1" for_reaction="true"/>
+        <recharge type="LR" for_reaction_uses="true"/>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -623,6 +922,25 @@ Source:	Player's Handbook 2024 p. 89</text>
 	Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.
 
 Source:	Player's Handbook 2024 p. 89</text>
+        <subclass>Circle of the Stars</subclass>
+        <enhances_feature feature_name="Level 3: Starry Form (Circle of the Stars)">
+          <enhancement_option for_choice="Archer">
+            <modifies_effect type="RangedSpellAttack">
+              <on_hit type="Damage" new_value_formula="2d8+WIS_modifier"/>
+            </modifies_effect>
+          </enhancement_option>
+          <enhancement_option for_choice="Chalice">
+            <modifies_effect type="Heal" new_value_formula="2d8+WIS_modifier"/>
+          </enhancement_option>
+          <enhancement_option for_choice="Dragon">
+            <effect type="Speed" speed_type="Fly" value="20_feet" condition="while_Dragon_is_active"/>
+            <effect description="can_hover" condition="while_Dragon_is_active"/>
+          </enhancement_option>
+          <additional_benefit>
+            <trigger text="at_the_start_of_each_of_your_turns_while_in_your_Starry_Form"/>
+            <effect description="can_change_which_constellation_glimmers_on_your_body"/>
+          </additional_benefit>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -631,6 +949,13 @@ Source:	Player's Handbook 2024 p. 89</text>
         <text>While in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.
 
 Source:	Player's Handbook 2024 p. 89</text>
+        <subclass>Circle of the Stars</subclass>
+        <enhances_feature feature_name="Level 3: Starry Form (Circle of the Stars)">
+          <benefit_while_in_form>
+            <effect description="become_partially_incorporeal"/>
+            <effect type="Resistance" damage_types="Bludgeoning,Piercing,Slashing"/>
+          </benefit_while_in_form>
+        </enhances_feature>
       </feature>
     </autolevel>
   </class>

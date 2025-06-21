@@ -11,13 +11,13 @@
     <spellAbility>Charisma</spellAbility>
     <slotsReset>S</slotsReset>
     <autolevel level="1">
-      <slots>2,1</slots>
+      <slots>2,1</slots> <!-- Cantrips, Pact Magic Slots -->
     </autolevel>
     <autolevel level="2">
       <slots>2,2</slots>
     </autolevel>
     <autolevel level="3">
-      <slots>2,0,2</slots>
+      <slots>2,0,2</slots> <!-- Slot level increases, but # of slots is small -->
     </autolevel>
     <autolevel level="4">
       <slots>3,0,2</slots>
@@ -125,6 +125,11 @@ Level | Invocations
 18 | 10
 
 Source:	Player's Handbook 2024 p. 153</text>
+        <learns_invocations scaling_table="WarlockFeaturesTable_InvocationsKnownColumn" initial_count="1">
+          <note text="if_invocation_has_prerequisite_must_meet_it_to_learn"/>
+          <note text="whenever_gain_Warlock_level_can_replace_one_invocation_with_another_qualified_for_cant_replace_if_prerequisite_for_another_you_have"/>
+          <note text="cant_pick_same_invocation_more_than_once_unless_description_says_otherwise"/>
+        </learns_invocations>
       </feature>
       <feature>
         <name>Level 1: Pact Magic</name>
@@ -164,6 +169,10 @@ Level | Prepared Spells
 19 | 15
 
 Source:	Player's Handbook 2024 p. 153</text>
+        <!-- Pact Magic specific slot progression and SR refresh are key.
+             Spellcasting ability CHA is at class root.
+             Cantrips Known and Spells Prepared scale by table.
+        -->
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -172,6 +181,10 @@ Source:	Player's Handbook 2024 p. 153</text>
         <text>You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 154</text>
+        <action type="Special" duration="1_minute_rite"/>
+        <effect description="regain_expended_Pact_Magic_spell_slots_no_more_than_half_your_maximum_round_up"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Magical Cunning</name>
@@ -197,7 +210,7 @@ Source:	Player's Handbook 2024 p. 155</text>
     </autolevel>
     <autolevel level="6">
       <counter>
-        <name>Clairvoyant Combatant</name>
+        <name>Clairvoyant Combatant</name> <!-- This seems to be a leftover from another class file, Warlocks don't have this. -->
         <value>1</value>
         <reset>S</reset>
       </counter>
@@ -217,6 +230,14 @@ Source:	Player's Handbook 2024 p. 155</text>
 	Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <grants_always_prepared_spell name="Contact Other Plane"/>
+        <modifies_spell spell_name="Contact Other Plane">
+          <can_cast_without_slot="true" condition="to_contact_your_patron"/>
+          <effect description="automatically_succeed_on_the_spells_saving_throw"/>
+        </modifies_spell>
+        <uses fixed="1" for_casting_spell_this_way="true">
+          <recharge type="LR"/>
+        </uses>
       </feature>
       <counter>
         <name>Contact Patron</name>
@@ -233,9 +254,15 @@ Source:	Player's Handbook 2024 p. 155</text>
 	Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <mystic_arcanum level="6" spell_choice_from_list="Warlock"/>
+        <uses fixed="1" for_arcanum_spell="true"> <!-- Per arcanum spell level -->
+          <recharge type="LR"/>
+        </uses>
+        <note text="gain_additional_arcanum_at_L13_L7spell_L15_L8spell_L17_L9spell"/>
+        <note text="whenever_gain_Warlock_level_can_replace_one_arcanum_spell_with_another_Warlock_spell_of_same_level"/>
       </feature>
       <counter>
-        <name>Mystic Arcanum</name>
+        <name>Mystic Arcanum</name> <!-- This counter is general; specific arcanums track individually -->
         <value>1</value>
         <reset>L</reset>
       </counter>
@@ -256,6 +283,7 @@ Source:	Player's Handbook 2024 p. 155</text>
 	Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <mystic_arcanum level="7" spell_choice_from_list="Warlock"/>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -266,6 +294,7 @@ Source:	Player's Handbook 2024 p. 155</text>
 	Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <mystic_arcanum level="8" spell_choice_from_list="Warlock"/>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -284,6 +313,7 @@ Source:	Player's Handbook 2024 p. 155</text>
 	Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <mystic_arcanum level="9" spell_choice_from_list="Warlock"/>
       </feature>
     </autolevel>
     <autolevel level="19">
@@ -300,6 +330,9 @@ Source:	Player's Handbook 2024 p. 155</text>
         <text>When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <enhances_feature feature_name="Level 2: Magical Cunning">
+          <modifies_effect new_description="regain_all_your_expended_Pact_Magic_spell_slots"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <!-- Warlock Subclass: Archfey Patron -->
@@ -311,6 +344,7 @@ Source:	Player's Handbook 2024 p. 155</text>
 Your pact draws on the power of the Feywild. When you choose this subclass, you might make a deal with an archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; or an ancient hag. Or you might call on a spectrum of Fey, weaving a web of favors and debts. Whoever they are, your patron is often inscrutable and whimsical.
 
 Source:	Player's Handbook 2024 p. 159</text>
+        <subclass>Archfey Patron</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Archfey Spells (Archfey Patron)</name>
@@ -324,6 +358,18 @@ Warlock Level | Spells
 9 | Dominate Person, Seeming
 
 Source:	Player's Handbook 2024 p. 159</text>
+        <subclass>Archfey Patron</subclass>
+        <grants_always_prepared_spell name="Calm Emotions" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Faerie Fire" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Misty Step" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Phantasmal Force" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Sleep" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Blink" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Plant Growth" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Dominate Beast" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Greater Invisibility" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Dominate Person" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Seeming" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Steps of the Fey (Archfey Patron)</name>
@@ -335,6 +381,24 @@ Refreshing Step. Immediately after you teleport, you or one creature you can see
 Taunting Step. Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.
 
 Source:	Player's Handbook 2024 p. 159</text>
+        <subclass>Archfey Patron</subclass>
+        <uses attribute="CHA" min="1" for_casting_spell="Misty Step" without_slot="true">
+          <recharge type="LR"/>
+        </uses>
+        <modifies_spell spell_name="Misty Step">
+          <trigger text="whenever_you_cast_that_spell"/>
+          <choice name="StepsOfTheFeyAdditionalEffect" count="1">
+            <option name="Refreshing Step">
+              <effect type="GainTemporaryHitPoints" value="1d10" target_choice="you_or_one_creature_you_can_see_within_10_feet" timing="immediately_after_you_teleport"/>
+            </option>
+            <option name="Taunting Step">
+              <target description="creatures_within_5_feet_of_the_space_you_left"/>
+              <effect description="must_succeed_on_WIS_save" save_dc="spell_save_DC">
+                <on_failed_save type="Disadvantage" on="attack_rolls_against_creatures_other_than_you" duration="until_start_of_your_next_turn"/>
+              </effect>
+            </option>
+          </choice>
+        </modifies_spell>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -348,6 +412,19 @@ Disappearing Step. You have the Invisible condition until the start of your next
 Dreadful Step. Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.
 
 Source:	Player's Handbook 2024 p. 159</text>
+        <subclass>Archfey Patron</subclass>
+        <modifies_spell spell_name="Misty Step">
+          <can_cast_as_reaction="true" trigger="in_response_to_taking_damage"/>
+        </modifies_spell>
+        <adds_options_to feature_name="Level 3: Steps of the Fey (Archfey Patron)" option_set_name="StepsOfTheFeyAdditionalEffect">
+          <option name="Disappearing Step">
+            <effect type="Condition" name="Invisible" duration="until_start_of_your_next_turn_or_until_immediately_after_you_make_an_attack_roll_deal_damage_or_cast_a_spell"/>
+          </option>
+          <option name="Dreadful Step">
+            <target description="creatures_within_5_feet_of_the_space_you_left_or_the_space_you_appear_in_your_choice"/>
+            <effect type="Damage" damage_type="Psychic" value="2d10" save_type="WIS" save_dc="spell_save_DC" save_effect="no_damage_if_successful_save_not_specified_assume_full_on_fail"/>
+          </option>
+        </adds_options_to>
         <roll description="Psychic Damage">2d10</roll>
       </feature>
     </autolevel>
@@ -358,6 +435,18 @@ Source:	Player's Handbook 2024 p. 159</text>
 	In addition, immediately after a creature you can see hits you with an attack roll, you can take a Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this Reaction, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 159</text>
+        <subclass>Archfey Patron</subclass>
+        <effect type="Immunity" condition_names="Charmed"/>
+        <action type="Reaction">
+          <trigger text="immediately_after_a_creature_you_can_see_hits_you_with_an_attack_roll"/>
+          <effect type="DamageReduction" value_halved="true" round_down="true"/>
+          <effect description="force_the_attacker_to_make_a_Wisdom_saving_throw" save_dc="spell_save_DC">
+            <on_failed_save type="Damage" damage_type="Psychic" value_formula="damage_you_take"/>
+          </on_failed_save>
+        </action>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="PactMagicSpellSlot" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Beguiling Defenses</name>
@@ -371,7 +460,10 @@ Source:	Player's Handbook 2024 p. 159</text>
         <name>Level 14: Bewitching Magic (Archfey Patron)</name>
         <text>Your patron grants you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast Misty Step as part of the same action and without expending a spell slot.
 
-Source:	Player's Handbook 2024 p. 158</text>
+Source:	Player's Handbook 2024 p. 158</text> <!-- Page number seems off, likely p.159 or p.160 -->
+        <subclass>Archfey Patron</subclass>
+        <trigger text="immediately_after_you_cast_an_Enchantment_or_Illusion_spell_using_an_action_and_a_spell_slot"/>
+        <effect description="can_cast_Misty_Step_as_part_of_the_same_action_and_without_expending_a_spell_slot"/>
       </feature>
     </autolevel>
     <!-- Warlock Subclass: Celestial Patron -->
@@ -383,6 +475,7 @@ Source:	Player's Handbook 2024 p. 158</text>
 Your pact draws on the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or another heavenly entity. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience a hint of the holy light that illuminates the multiverse.
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Celestial Spells (Celestial Patron)</name>
@@ -396,6 +489,19 @@ Warlock Level | Spells
 9 | Greater Restoration, Summon Celestial
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
+        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Cure Wounds" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Guiding Bolt" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Light" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Sacred Flame" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Daylight" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Revivify" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Guardian of Faith" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Summon Celestial" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Healing Light (Celestial Patron)</name>
@@ -403,6 +509,18 @@ Source:	Player's Handbook 2024 p. 160</text>
 	As a Bonus Action, you can heal yourself or one creature you can see within 60 feet of yourself, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend, and restore a number of Hit Points equal to the roll's total. Your pool regains all expended dice when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
+        <resource name="HealingLightDicePool" die_type="d6" count_formula="1+WarlockLevel">
+          <recharge type="LR"/>
+        </resource>
+        <action type="BonusAction">
+          <target_choice>
+            <option_target>self</option_target>
+            <option_target description="one_creature_you_can_see_within_60_feet"/>
+          </target_choice>
+          <cost resource="HealingLightDicePool" value_variable="expend_dice_from_pool_max_CHA_mod_min_1"/>
+          <effect type="Heal" value_formula="total_of_dice_rolled"/>
+        </action>
       </feature>
       <counter>
         <name>Healing Light</name>
@@ -433,6 +551,11 @@ Source:	Player's Handbook 2024 p. 160</text>
         <text>Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of the spell's targets.
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
+        <effect type="Resistance" damage_types="Radiant"/>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_a_spell_you_cast_deals_Radiant_or_Fire_damage"/>
+        <effect type="DamageBonus" value_formula="CHA_modifier" target="one_of_the_spells_targets"/>
       </feature>
       <counter>
         <name>Healing Light</name>
@@ -471,6 +594,10 @@ Source:	Player's Handbook 2024 p. 160</text>
         <text>You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see when you gain the points. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
+        <trigger text="whenever_you_use_your_Magical_Cunning_feature_or_finish_a_Short_or_Long_Rest"/>
+        <effect type="GainTemporaryHitPoints" target="self" value_formula="WarlockLevel+CHA_modifier"/>
+        <effect type="GainTemporaryHitPoints" target_description="up_to_five_creatures_you_can_see" value_formula="half_WarlockLevel+CHA_modifier"/>
       </feature>
       <counter>
         <name>Healing Light</name>
@@ -510,6 +637,14 @@ Source:	Player's Handbook 2024 p. 160</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 160</text>
+        <subclass>Celestial Patron</subclass>
+        <trigger text="when_you_or_an_ally_within_60_feet_of_you_is_about_to_make_a_Death_Saving_Throw"/>
+        <effect type="Heal" target="creature_making_Death_Save" value_formula="half_MaxHP"/>
+        <effect description="creature_can_end_Prone_condition_on_itself"/>
+        <effect type="Damage" damage_type="Radiant" value_formula="2d8+CHA_modifier" target_description="each_creature_of_your_choice_within_30_feet_of_the_creature_saved"/>
+        <effect type="Condition" name="Blinded" target_description="each_creature_of_your_choice_within_30_feet_of_the_creature_saved" duration="until_end_of_current_turn"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Healing Light</name>
@@ -581,12 +716,16 @@ Source:	Player's Handbook 2024 p. 160</text>
 Your pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord such as Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor, yugoloth, or night hag that is especially mighty. That patron's aims are evil-the corruption or destruction of all things, ultimately including you- and your path is defined by the extent to which you strive against those aims.
 
 Source:	Player's Handbook 2024 p. 161</text>
+        <subclass>Fiend Patron</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Dark One's Blessing (Fiend Patron)</name>
         <text>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.
 
 Source:	Player's Handbook 2024 p. 161</text>
+        <subclass>Fiend Patron</subclass>
+        <trigger text="when_you_reduce_an_enemy_to_0_HP_OR_if_someone_else_reduces_an_enemy_within_10_feet_of_you_to_0_HP"/>
+        <effect type="GainTemporaryHitPoints" value_formula="CHA_modifier+WarlockLevel" min_value="1"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Fiend Spells (Fiend Patron)</name>
@@ -600,6 +739,17 @@ Warlock Level | Spells
 9 | Geas, Insect Plague
 
 Source:	Player's Handbook 2024 p. 161</text>
+        <subclass>Fiend Patron</subclass>
+        <grants_always_prepared_spell name="Burning Hands" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Command" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Scorching Ray" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Suggestion" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Fireball" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Stinking Cloud" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fire Shield" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Geas" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Insect Plague" level_gained_at="9"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -609,6 +759,12 @@ Source:	Player's Handbook 2024 p. 161</text>
 	You can use this feature a number of times equal to your Charisma modifier (minimum of once), but you can use it no more than once per roll. You regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 162</text>
+        <subclass>Fiend Patron</subclass>
+        <trigger text="when_you_make_an_ability_check_or_a_saving_throw_after_seeing_roll_but_before_effects"/>
+        <effect type="Bonus" value_dice="1d10" on="the_roll"/>
+        <uses attribute="CHA" min="1"/>
+        <recharge type="LR"/>
+        <restriction text="can_use_no_more_than_once_per_roll"/>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -617,6 +773,10 @@ Source:	Player's Handbook 2024 p. 162</text>
         <text>Choose one damage type, other than Force, whenever you finish a Short or Long Rest. You have Resistance to that damage type until you choose a different one with this feature.
 
 Source:	Player's Handbook 2024 p. 162</text>
+        <subclass>Fiend Patron</subclass>
+        <trigger text="whenever_you_finish_a_Short_or_Long_Rest"/>
+        <choice name="FiendishResilienceDamageType" from_list="all_except_Force" count="1"/>
+        <effect type="Resistance" damage_types="chosen_damage_type" duration="until_you_choose_a_different_one_with_this_feature"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -626,6 +786,20 @@ Source:	Player's Handbook 2024 p. 162</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 162</text>
+        <subclass>Fiend Patron</subclass>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_a_creature_with_an_attack_roll"/>
+        <effect description="target_must_succeed_on_CHA_save" save_dc="spell_save_DC">
+          <on_failed_save>
+            <effect description="target_disappears_and_hurtles_through_nightmare_landscape"/>
+            <effect type="Damage" damage_type="Psychic" value="8d10" condition="if_target_isnt_a_Fiend"/>
+            <effect type="Condition" name="Incapacitated" duration="until_end_of_your_next_turn"/>
+            <effect description="target_returns_to_space_it_previously_occupied_or_nearest_unoccupied_space_at_end_of_your_next_turn"/>
+          </on_failed_save>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="PactMagicSpellSlot" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Hurl Through Hell</name>
@@ -643,6 +817,7 @@ Source:	Player's Handbook 2024 p. 162</text>
 When you choose this subclass, you might bind yourself to an unspeakable being from the Far Realm or an elder god- a being such as Tharizdun, the Chained God; Zargon, the Returner; Hadar, the Dark Hunger; or Great Cthulhu. Or you might invoke several entities without yoking yourself to one. The motives of these beings are incomprehensible, and the Great Old One might be indifferent to your existence. But the secrets you've learned nevertheless allow you to draw strange magic from it.
 
 Source:	Player's Handbook 2024 p. 162</text>
+        <subclass>Great Old One Patron</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Awakened Mind (Great Old One Patron)</name>
@@ -650,6 +825,13 @@ Source:	Player's Handbook 2024 p. 162</text>
 	The telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you use this feature to connect with a different creature.
 
 Source:	Player's Handbook 2024 p. 162</text>
+        <subclass>Great Old One Patron</subclass>
+        <action type="BonusAction"/>
+        <target description="one_creature_you_can_see_within_30_feet"/>
+        <effect type="TelepathicCommunication" range_miles_formula="CHA_modifier_min_1" duration_minutes_formula="WarlockLevel">
+          <restriction text="to_understand_each_other_you_each_must_mentally_use_a_language_the_other_knows"/>
+          <ends_early_if condition="you_use_this_feature_to_connect_with_a_different_creature"/>
+        </effect>
       </feature>
       <feature optional="YES">
         <name>Level 3: Great Old One Spells (Great Old One Patron)</name>
@@ -663,12 +845,34 @@ Warlock Level | Spells
 9 | Modify Memory, Telekinesis
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <grants_always_prepared_spell name="Detect Thoughts" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Dissonant Whispers" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Phantasmal Force" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Tasha's Hideous Laughter" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Clairvoyance" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Hunger of Hadar" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Confusion" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Summon Aberration" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Modify Memory" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Telekinesis" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Psychic Spells (Great Old One Patron)</name>
         <text>When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <modifies_spell_casting>
+          <option_for_damage_spells>
+            <trigger text="when_you_cast_a_Warlock_spell_that_deals_damage"/>
+            <effect description="can_change_its_damage_type_to_Psychic"/>
+          </option_for_damage_spells>
+          <option_for_enchantment_illusion>
+            <trigger text="when_you_cast_a_Warlock_spell_that_is_an_Enchantment_or_Illusion"/>
+            <modifies_spell_components no_verbal="true" no_somatic="true"/>
+          </option_for_enchantment_illusion>
+        </modifies_spell_casting>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -678,6 +882,19 @@ Source:	Player's Handbook 2024 p. 163</text>
 	Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell s lot (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <enhances_feature feature_name="Level 3: Awakened Mind (Great Old One Patron)">
+          <trigger text="when_you_form_a_telepathic_bond_with_a_creature"/>
+          <effect description="can_force_that_creature_to_make_a_Wisdom_saving_throw" save_dc="spell_save_DC">
+            <on_failed_save>
+              <effect type="Disadvantage" target="creature" on="attack_rolls_against_you" duration="duration_of_the_bond"/>
+              <effect type="Advantage" target="self" on="attack_rolls_against_that_creature" duration="duration_of_the_bond"/>
+            </on_failed_save>
+          </effect>
+        </enhances_feature>
+        <uses fixed="1"/>
+        <recharge type="SR_or_LR"/>
+        <can_reuse_by_expending resource="PactMagicSpellSlot" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Clairvoyant Combatant</name>
@@ -692,12 +909,23 @@ Source:	Player's Handbook 2024 p. 163</text>
         <text>Your alien patron grants you a powerful curse. You always have the Hex spell prepared. When you cast Hex and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <grants_always_prepared_spell name="Hex"/>
+        <modifies_spell spell_name="Hex">
+          <trigger text="when_you_cast_Hex_and_choose_an_ability"/>
+          <effect type="Disadvantage" target="target" on="saving_throws_of_the_chosen_ability" duration="duration_of_the_spell"/>
+        </modifies_spell>
       </feature>
       <feature optional="YES">
         <name>Level 10: Thought Shield (Great Old One Patron)</name>
         <text>Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you take.
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <effect description="your_thoughts_cant_be_read_by_telepathy_or_other_means_unless_you_allow_it"/>
+        <effect type="Resistance" damage_types="Psychic"/>
+        <trigger text="whenever_a_creature_deals_Psychic_damage_to_you"/>
+        <effect type="Damage" damage_type="Psychic" value_formula="same_amount_you_take" target="that_creature"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -707,6 +935,15 @@ Source:	Player's Handbook 2024 p. 163</text>
 	In addition, the first time each turn the Aberration hits a creature under the effect of your Hex, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.
 
 Source:	Player's Handbook 2024 p. 163</text>
+        <subclass>Great Old One Patron</subclass>
+        <modifies_spell spell_name="Summon Aberration">
+          <option_to_modify_casting>
+            <effect description="doesnt_require_Concentration_duration_becomes_1_minute"/>
+            <effect type="GainTemporaryHitPoints" target="summoned_Aberration" value_formula="WarlockLevel+CHA_modifier"/>
+          </option_to_modify_casting>
+        </modifies_spell>
+        <trigger text="first_time_each_turn_the_Aberration_hits_a_creature_under_the_effect_of_your_Hex"/>
+        <effect type="ExtraDamage" damage_type="Psychic" value_formula="bonus_damage_of_Hex_spell" target="target_hit_by_Aberration"/>
       </feature>
     </autolevel>
   </class>

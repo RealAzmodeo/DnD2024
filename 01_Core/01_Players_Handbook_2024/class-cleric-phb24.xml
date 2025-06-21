@@ -147,24 +147,33 @@ Level | Prepared Spells
 20 | 22
 
 Source:	Player's Handbook 2024 p. 69</text>
+        <!-- Core spellcasting mechanics are defined at class level -->
       </feature>
       <feature>
         <name>Level 1: Divine Order</name>
         <text>You have dedicated yourself to one of the following sacred roles of your choice.
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <choice name="Divine Order" count="1">
+          <option ref_feature_name="Level 1: Divine Order: Protector"/>
+          <option ref_feature_name="Level 1: Divine Order: Thaumaturge"/>
+        </choice>
       </feature>
       <feature optional="YES">
         <name>Level 1: Divine Order: Protector</name>
         <text>Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <grants_proficiency type="Weapon" name="Martial weapons"/>
+        <grants_proficiency type="Armor" name="Heavy armor"/>
       </feature>
       <feature optional="YES">
         <name>Level 1: Divine Order: Thaumaturge</name>
         <text>You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <grants_spell_learning type="Cantrip" spell_list="Cleric" count="1"/>
+        <effect type="Bonus" on="Intelligence_Arcana_checks_or_Intelligence_Religion_checks" value_formula="WIS_modifier" min_value="1"/>
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -175,6 +184,14 @@ Source:	Player's Handbook 2024 p. 70</text>
 	If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <uses type="scaling_table" table_ref="ClericFeaturesTable_ChannelDivinityColumn"/>
+        <recharge type="1_per_SR_all_per_LR"/>
+        <options_include>
+          <option ref_feature_name="Level 2: Channel Divinity: Divine Spark"/>
+          <option ref_feature_name="Level 2: Channel Divinity: Turn Undead"/>
+          <!-- Subclass Channel Divinity options will also be listed here or referenced by subclass features -->
+        </options_include>
+        <note text="If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this classs Spellcasting feature."/>
       </feature>
       <feature>
         <name>Level 2: Channel Divinity: Divine Spark</name>
@@ -182,6 +199,22 @@ Source:	Player's Handbook 2024 p. 70</text>
 	You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <channel_divinity_option/>
+        <action type="MagicAction"/>
+        <target description="another_creature_you_can_see_within_30_feet"/>
+        <dice_roll base="1d8" wis_mod="true">
+          <scaling level="7" dice="2d8"/>
+          <scaling level="13" dice="3d8"/>
+          <scaling level="18" dice="4d8"/>
+        </dice_roll>
+        <choice name="Divine Spark Effect" count="1">
+          <option name="Heal">
+            <effect type="Heal" value_formula="dice_roll_total"/>
+          </option>
+          <option name="Damage">
+            <effect type="Damage" damage_type_choice="Necrotic_or_Radiant" value_formula="dice_roll_total" save_type="CON" save_dc="spell_save_DC" save_effect="half_damage_round_down"/>
+          </option>
+        </choice>
         <roll description="Heal" level="2">1d8+%5</roll>
         <roll description="Heal" level="7">2d8+%5</roll>
         <roll description="Heal" level="13">3d8+%5</roll>
@@ -192,6 +225,17 @@ Source:	Player's Handbook 2024 p. 70</text>
         <text>As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. Th is effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.
 
 Source:	Player's Handbook 2024 p. 70</text>
+        <channel_divinity_option/>
+        <action type="MagicAction"/>
+        <target description="each_Undead_of_your_choice_within_30_feet"/>
+        <effect description="must_make_a_Wisdom_saving_throw" save_dc="spell_save_DC">
+          <on_failed_save>
+            <effect type="Condition" name="Frightened" duration="1_minute"/>
+            <effect type="Condition" name="Incapacitated" duration="1_minute"/>
+            <effect description="for_that_duration_it_tries_to_move_as_far_from_you_as_it_can_on_its_turns"/>
+          </on_failed_save>
+        </effect>
+        <condition_ends_early text="if_creature_takes_any_damage_if_you_have_Incapacitated_condition_or_if_you_die"/>
       </feature>
       <counter>
         <name>Channel Divinity</name>
@@ -221,6 +265,11 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <enhances_feature feature_name="Level 2: Channel Divinity: Turn Undead">
+          <trigger text="whenever_you_use_Turn_Undead"/>
+          <effect description="roll_a_number_of_d8s_equal_to_your_Wisdom_modifier_minimum_1d8_add_rolls_together_Each_Undead_that_fails_its_saving_throw_against_that_use_of_Turn_Undead_takes_Radiant_damage_equal_to_rolls_total"/>
+          <note text="this_damage_doesnt_end_the_turn_effect"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -236,20 +285,29 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>Divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <choice name="Blessed Strikes Option" count="1">
+          <option ref_feature_name="Level 7: Blessed Strikes: Divine Strike"/>
+          <option ref_feature_name="Level 7: Blessed Strikes: Potent Spellcasting"/>
+        </choice>
+        <note text="if_you_get_either_option_from_a_Cleric_subclass_in_an_older_book_use_only_the_option_you_choose_for_this_feature"/>
       </feature>
       <feature optional="YES">
         <name>Level 7: Blessed Strikes: Divine Strike</name>
         <text>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_a_creature_with_an_attack_roll_using_a_weapon"/>
+        <effect type="ExtraDamage" value="1d8" damage_type_choice="Necrotic_or_Radiant"/>
         <roll description="Necrotic or Radiant Damage" level="7">1d8</roll>
-        <roll description="Necrotic or Radiant Damage" level="14">2d8</roll>
+        <roll description="Necrotic or Radiant Damage" level="14">2d8</roll> <!-- Note: This is part of Improved Blessed Strikes -->
       </feature>
       <feature optional="YES">
         <name>Level 7: Blessed Strikes: Potent Spellcasting</name>
         <text>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <effect type="DamageBonus" value_formula="WIS_modifier" condition="to_damage_you_deal_with_any_Cleric_cantrip"/>
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -266,6 +324,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <action type="MagicAction"/>
+        <effect description="choose_any_Cleric_spell_of_level_5_or_lower_that_doesnt_require_a_Reaction_to_cast_As_part_of_the_same_action_you_cast_that_spell_without_expending_a_spell_slot_or_needing_Material_components"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Divine Intervention</name>
@@ -287,18 +349,27 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>The option you chose for Blessed Strikes grows more powerful.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <enhances_feature feature_name="Level 7: Blessed Strikes"/>
+        <!-- Specific improvements are in the sub-features below -->
       </feature>
       <feature optional="YES">
         <name>Level 14: Improved Blessed Strikes: Divine Strike</name>
         <text>The extra damage of your Divine Strike increases to 2d8.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <enhances_feature feature_name="Level 7: Blessed Strikes: Divine Strike">
+          <modifies_effect type="ExtraDamage" new_value="2d8"/>
+        </enhances_feature>
       </feature>
       <feature optional="YES">
         <name>Level 14: Improved Blessed Strikes: Potent Spellcasting</name>
         <text>When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <enhances_feature feature_name="Level 7: Blessed Strikes: Potent Spellcasting">
+          <trigger text="when_you_cast_a_Cleric_cantrip_and_deal_damage_to_a_creature_with_it"/>
+          <effect type="GainTemporaryHitPoints" target_choice="self_or_another_creature_within_60_feet" value_formula="2*WIS_modifier"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -330,6 +401,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <enhances_feature feature_name="Level 10: Divine Intervention">
+          <effect description="can_choose_Wish_when_you_select_a_spell"/>
+          <recharge type="Special" description="cant_use_Divine_Intervention_again_until_you_finish_2d4_Long_Rests_if_Wish_is_chosen"/>
+        </enhances_feature>
         <roll description="Long Rests">2d4</roll>
       </feature>
     </autolevel>
@@ -343,12 +418,16 @@ The Life Domain focuses on the positive energy that helps sustain all life in th
 	Existence itself relies on the positive energy associated with this domain, so a Cleric of almost any religious tradition might choose it. This domain is particularly associated with agricultural deities. gods of healing or endurance. and gods of home and community. Religious orders of healing also seek the magic of this domain.
 
 Source:	Player's Handbook 2024 p. 73</text>
+        <subclass>Life Domain</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Disciple of Life (Life Domain)</name>
         <text>When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot's level.
 
 Source:	Player's Handbook 2024 p. 73</text>
+        <subclass>Life Domain</subclass>
+        <trigger text="when_a_spell_you_cast_with_a_spell_slot_restores_Hit_Points_to_a_creature"/>
+        <effect type="BonusHealing" value_formula="2+spell_slot_level" target="creature_healed" timing="on_the_turn_you_cast_the_spell"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Life Domain Spells (Life Domain)</name>
@@ -362,12 +441,29 @@ Cleric Level | Prepared Spells
 9 | Greater Restoration, Mass Cure Wounds
 
 Source:	Player's Handbook 2024 p. 73</text>
+        <subclass>Life Domain</subclass>
+        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Bless" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Cure Wounds" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Mass Healing Word" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Revivify" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Aura of Life" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Death Ward" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Mass Cure Wounds" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Preserve Life (Life Domain)</name>
         <text>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to evoke healing energy that can restore a number of Hit Points equal to five times your Cleric level. Choose Bloodied creatures within 30 feet of yourself (which can include you), and divide those Hit Points among them. This feature can restore a creature to no more than half its Hit Point maximum.
 
 Source:	Player's Handbook 2024 p. 73</text>
+        <subclass>Life Domain</subclass>
+        <channel_divinity_option/>
+        <action type="MagicAction"/>
+        <cost resource="ChannelDivinityUse" value="1"/>
+        <effect type="Heal" value_formula="5*ClericLevel" target_description="Bloodied_creatures_within_30_feet_of_yourself_which_can_include_you_divide_HP_among_them"/>
+        <restriction text="this_feature_can_restore_a_creature_to_no_more_than_half_its_Hit_Point_maximum"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -376,6 +472,9 @@ Source:	Player's Handbook 2024 p. 73</text>
         <text>The healing spells you cast on others heal you as well. Immediately after you cast a spell with a spell slot that restores Hit Points to one or more creatures other than yourself, you regain Hit Points equal to 2 plus the spell slot's level.
 
 Source:	Player's Handbook 2024 p. 72</text>
+        <subclass>Life Domain</subclass>
+        <trigger text="immediately_after_you_cast_a_spell_with_a_spell_slot_that_restores_Hit_Points_to_one_or_more_creatures_other_than_yourself"/>
+        <effect type="Heal" target="self" value_formula="2+spell_slot_level"/>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -384,6 +483,10 @@ Source:	Player's Handbook 2024 p. 72</text>
         <text>When you would normally roll one or more dice to restore Hit Points to a creature with a spell or Channel Divinity, don't roll those dice for the healing; instead use the highest number possible for each die. For example, instead of restoring 2d6 Hit Points to a creature with a spell, you restore 12.
 
 Source:	Player's Handbook 2024 p. 72</text>
+        <subclass>Life Domain</subclass>
+        <modifies_rule rule_name="HealingRolls" condition="when_you_would_normally_roll_one_or_more_dice_to_restore_Hit_Points_to_a_creature_with_a_spell_or_Channel_Divinity">
+          <effect description="dont_roll_those_dice_for_the_healing_instead_use_the_highest_number_possible_for_each_die"/>
+        </modifies_rule>
       </feature>
     </autolevel>
     <!-- Cleric Subclass: Light Domain -->
@@ -396,6 +499,7 @@ The Light Domain emphasizes the divine power to bring about blazing fire and rev
 	The Light Domain is associated with gods of truth, vigilance, beauty, insight, and renewal. Some of these gods are identified with the sun or as charioteers who guide the sun across the sky. Others are sentinels who pierce deception. Some are deities of beauty and artistry who teach that art is a vehicle for the soul's improvement.
 
 Source:	Player's Handbook 2024 p. 74</text>
+        <subclass>Light Domain</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Light Domain Spells (Light Domain)</name>
@@ -409,12 +513,30 @@ Cleric Level | Prepared Spells
 9 | Flame Strike, Scrying
 
 Source:	Player's Handbook 2024 p. 74</text>
+        <subclass>Light Domain</subclass>
+        <grants_always_prepared_spell name="Burning Hands" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Faerie Fire" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Scorching Ray" level_gained_at="3"/>
+        <grants_always_prepared_spell name="See Invisibility" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Daylight" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fireball" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Arcane Eye" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Flame Strike" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Scrying" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Radiance of the Dawn (Light Domain)</name>
         <text>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to emit a flash of light in a 30-foot Emanation originating from yourself. Any magical Darkness-such as that created by the Darkness spell-in that area is dispelled. Additionally, each creature of your choice in that area must make a Constitution saving throw, taking Radiant damage equal to 2d10 plus your Cleric level on a failed save or half as much damage on a successful one.
 
 Source:	Player's Handbook 2024 p. 74</text>
+        <subclass>Light Domain</subclass>
+        <channel_divinity_option/>
+        <action type="MagicAction"/>
+        <cost resource="ChannelDivinityUse" value="1"/>
+        <effect description="emit_a_flash_of_light_in_a_30_foot_Emanation_originating_from_yourself_Any_magical_Darkness_such_as_that_created_by_the_Darkness_spell_in_that_area_is_dispelled"/>
+        <target description="each_creature_of_your_choice_in_that_area"/>
+        <effect type="Damage" damage_type="Radiant" value_formula="2d10+ClericLevel" save_type="CON" save_dc="spell_save_DC" save_effect="half_damage"/>
         <roll description="Radiant Damage">2d10+%7</roll>
       </feature>
       <feature optional="YES">
@@ -423,6 +545,12 @@ Source:	Player's Handbook 2024 p. 74</text>
 	You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 74</text>
+        <subclass>Light Domain</subclass>
+        <action type="Reaction"/>
+        <trigger text="when_a_creature_that_you_can_see_within_30_feet_of_yourself_makes_an_attack_roll"/>
+        <effect type="Disadvantage" on="the_attack_roll"/>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/> <!-- Modified by Improved Warding Flare -->
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -432,6 +560,14 @@ Source:	Player's Handbook 2024 p. 74</text>
 	In addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to 2d6 plus your Wisdom modifier.
 
 Source:	Player's Handbook 2024 p. 74</text>
+        <subclass>Light Domain</subclass>
+        <modifies_feature feature_name="Level 3: Warding Flare (Light Domain)">
+          <recharge type="SR_or_LR"/>
+          <additional_effect>
+            <trigger text="whenever_you_use_Warding_Flare"/>
+            <effect type="GainTemporaryHitPoints" target="target_of_the_triggering_attack" value_formula="2d6+WIS_modifier"/>
+          </additional_effect>
+        </modifies_feature>
         <roll description="Temporary Hit Points">2d6+%5</roll>
       </feature>
     </autolevel>
@@ -442,6 +578,15 @@ Source:	Player's Handbook 2024 p. 74</text>
 	You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 75</text>
+        <subclass>Light Domain</subclass>
+        <action type="MagicAction"/>
+        <effect type="Aura" name="SunlightAura" duration="1_minute_or_until_dismissed_no_action">
+          <light_emitted type="Bright" radius="60_feet"/>
+          <light_emitted type="Dim" radius_additional="30_feet"/>
+          <effect type="Disadvantage" target="your_enemies_in_the_Bright_Light" on="saving_throws_against_your_Radiance_of_the_Dawn_and_any_spell_that_deals_Fire_or_Radiant_damage"/>
+        </effect>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/>
       </feature>
     </autolevel>
     <!-- Cleric Subclass: Trickery Domain -->
@@ -454,12 +599,21 @@ The Trickery Domain offers magic of deception, illusion, and stealth. Clerics wh
 	Gods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They embody the forces of change and social upheaval, and they're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Religious orders that operate in secret, especially those that seek to undermine oppressive governments or hierarchies, also draw on the power of the Trickery Domain.
 
 Source:	Player's Handbook 2024 p. 75</text>
+        <subclass>Trickery Domain</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Blessing of the Trickster (Trickery Domain)</name>
         <text>As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.
 
 Source:	Player's Handbook 2024 p. 75</text>
+        <subclass>Trickery Domain</subclass>
+        <action type="MagicAction"/>
+        <target_choice>
+          <option_target>self</option_target>
+          <option_target description="a_willing_creature_within_30_feet_of_yourself"/>
+        </target_choice>
+        <effect type="Advantage" on="Dexterity_Stealth_checks"/>
+        <duration description="until_you_finish_a_Long_Rest_or_you_use_this_feature_again"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Invoke Duplicity (Trickery Domain)</name>
@@ -472,6 +626,26 @@ Distract. When both you and your illusion are within 5 feet of a creature that c
 Move. As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself.
 
 Source:	Player's Handbook 2024 p. 75</text>
+        <subclass>Trickery Domain</subclass>
+        <channel_divinity_option/>
+        <action type="BonusAction"/>
+        <cost resource="ChannelDivinityUse" value="1"/>
+        <effect type="SummonIllusion" name="PerfectVisualIllusionOfYourself" location="unoccupied_space_you_can_see_within_30_feet" duration="1_minute" ends_early_if="dismissed_no_action_or_Incapacitated_condition">
+          <properties text="intangible_doesnt_occupy_its_space_animated_mimics_your_expressions_and_gestures"/>
+          <benefits_while_persists>
+            <benefit name="Cast Spells">
+              <effect description="you_can_cast_spells_as_though_you_were_in_the_illusions_space_but_you_must_use_your_own_senses"/>
+            </benefit>
+            <benefit name="Distract">
+              <condition text="when_both_you_and_your_illusion_are_within_5_feet_of_a_creature_that_can_see_the_illusion"/>
+              <effect type="Advantage" on="attack_rolls_against_that_creature"/>
+            </benefit>
+            <benefit name="Move">
+              <action type="BonusAction"/>
+              <effect description="move_the_illusion_up_to_30_feet_to_an_unoccupied_space_you_can_see_that_is_within_120_feet_of_yourself"/>
+            </benefit>
+          </benefits_while_persists>
+        </effect>
       </feature>
       <feature optional="YES">
         <name>Level 3: Trickery Domain Spells (Trickery Domain)</name>
@@ -485,6 +659,17 @@ Cleric Level | Prepared Spells
 9 | Dominate Person, Modify Memory
 
 Source:	Player's Handbook 2024 p. 76</text>
+        <subclass>Trickery Domain</subclass>
+        <grants_always_prepared_spell name="Charm Person" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Disguise Self" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Invisibility" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Pass without Trace" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Hypnotic Pattern" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Nondetection" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Confusion" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Dimension Door" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Dominate Person" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Modify Memory" level_gained_at="9"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -493,6 +678,11 @@ Source:	Player's Handbook 2024 p. 76</text>
         <text>Whenever you take the Bonus Action to create or move the illusion of your Invoke Duplicity, you can teleport, swapping places with the illusion.
 
 Source:	Player's Handbook 2024 p. 76</text>
+        <subclass>Trickery Domain</subclass>
+        <enhances_feature feature_name="Level 3: Invoke Duplicity (Trickery Domain)">
+          <trigger text="whenever_you_take_the_Bonus_Action_to_create_or_move_the_illusion"/>
+          <effect description="you_can_teleport_swapping_places_with_the_illusion"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -505,6 +695,19 @@ Shared Distraction. When you and your allies make attack rolls against a creatur
 Healing Illusion. When the illusion ends, you or a creature of your choice within 5 feet of it regains a number of Hit Points equal to your Cleric level.
 
 Source:	Player's Handbook 2024 p. 76</text>
+        <subclass>Trickery Domain</subclass>
+        <enhances_feature feature_name="Level 3: Invoke Duplicity (Trickery Domain)">
+          <benefits>
+            <benefit name="Shared Distraction">
+              <condition text="when_you_and_your_allies_make_attack_rolls_against_a_creature_within_5_feet_of_the_illusion"/>
+              <effect type="Advantage" on="the_attack_rolls"/>
+            </benefit>
+            <benefit name="Healing Illusion">
+              <trigger text="when_the_illusion_ends"/>
+              <effect type="Heal" target_choice="you_or_a_creature_of_your_choice_within_5_feet_of_it" value_formula="ClericLevel"/>
+            </benefit>
+          </benefits>
+        </enhances_feature>
       </feature>
     </autolevel>
     <!-- Cleric Subclass: War Domain -->
@@ -517,12 +720,19 @@ War has many manifestations. It can make heroes of ordinary people. It can be de
 	Gods of the War Domain watch over warriors and reward them for their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.
 
 Source:	Player's Handbook 2024 p. 76</text>
+        <subclass>War Domain</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Guided Strike (War Domain)</name>
         <text>When you or a creature within 30 feet of you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit. When you use this feature to benefit another creature's attack roll, you must take a Reaction to do so.
 
 Source:	Player's Handbook 2024 p. 77</text>
+        <subclass>War Domain</subclass>
+        <channel_divinity_option/>
+        <trigger text="when_you_or_a_creature_within_30_feet_of_you_misses_with_an_attack_roll"/>
+        <cost resource="ChannelDivinityUse" value="1"/>
+        <action type="Reaction" condition="if_benefiting_another_creatures_attack_roll"/>
+        <effect description="give_that_roll_a_+10_bonus_potentially_causing_it_to_hit"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: War Domain Spells (War Domain)</name>
@@ -536,12 +746,29 @@ Cleric Level | Prepared Spells
 9 | Hold Monster, Steel Wind Strike
 
 Source:	Player's Handbook 2024 p. 77</text>
+        <subclass>War Domain</subclass>
+        <grants_always_prepared_spell name="Guiding Bolt" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Magic Weapon" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Shield of Faith" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Spiritual Weapon" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Crusader's Mantle" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Spirit Guardians" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fire Shield" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Hold Monster" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Steel Wind Strike" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: War Priest (War Domain)</name>
         <text>As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest.
 
 Source:	Player's Handbook 2024 p. 77</text>
+        <subclass>War Domain</subclass>
+        <action type="BonusAction">
+          <effect description="make_one_attack_with_a_weapon_or_an_Unarmed_Strike"/>
+        </action>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="SR_or_LR"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -550,6 +777,15 @@ Source:	Player's Handbook 2024 p. 77</text>
         <text>You can expend a use of your Channel Divinity to cast Shield of Faith or Spiritual Weapon rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. Instead the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.
 
 Source:	Player's Handbook 2024 p. 77</text>
+        <subclass>War Domain</subclass>
+        <channel_divinity_option/>
+        <cost resource="ChannelDivinityUse" value="1"/>
+        <effect description="cast_Shield_of_Faith_or_Spiritual_Weapon_rather_than_expending_a_spell_slot"/>
+        <modifies_spell spell_names="Shield of Faith,Spiritual Weapon" condition="when_cast_in_this_way">
+          <ignores rule="ConcentrationRequirement"/>
+          <duration unit="minute" value="1"/>
+          <ends_early_if condition="you_cast_that_spell_again_have_the_Incapacitated_condition_or_die"/>
+        </modifies_spell>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -558,6 +794,8 @@ Source:	Player's Handbook 2024 p. 77</text>
         <text>You gain Resistance to Bludgeoning, Piercing, and Slashing damage.
 
 Source:	Player's Handbook 2024 p. 77</text>
+        <subclass>War Domain</subclass>
+        <effect type="Resistance" damage_types="Bludgeoning,Piercing,Slashing"/>
       </feature>
     </autolevel>
   </class>
