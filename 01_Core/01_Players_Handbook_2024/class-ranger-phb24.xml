@@ -143,6 +143,10 @@ Source:	Player's Handbook 2024 p. 119</text>
 	The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.
 
 Source:	Player's Handbook 2024 p. 119</text>
+        <grants_always_prepared_spell name="Hunter's Mark"/>
+        <uses type="scaling_table" table_ref="RangerFeaturesTable_FavoredEnemyColumn" for_spell="Hunter's Mark" without_slot="true" initial_uses="2">
+          <recharge type="LR"/>
+        </uses>
       </feature>
       <feature>
         <name>Level 1: Weapon Mastery</name>
@@ -150,6 +154,8 @@ Source:	Player's Handbook 2024 p. 119</text>
 	Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <uses fixed="2" description="kinds_of_weapons_for_mastery_properties"/>
+        <recharge type="LR" description="can_change_the_kinds_of_weapons_you_chose"/>
       </feature>
       <counter>
         <name>Favored Enemy</name>
@@ -167,6 +173,14 @@ Expertise. Choose one of your skill proficiencies with which you lack Expertise.
 Languages. You know two languages of your choice from the language tables in chapter 2.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <benefits>
+          <benefit name="Expertise">
+            <grants_expertise count="1" type="SkillProficiency" condition="with_which_you_lack_Expertise"/>
+          </benefit>
+          <benefit name="Languages">
+            <grants_language choice_from_table="chapter_2_language_tables" count="2"/>
+          </benefit>
+        </benefits>
       </feature>
       <feature>
         <name>Level 2: Fighting Style</name>
@@ -175,6 +189,16 @@ Source:	Player's Handbook 2024 p. 120</text>
 Druidic Warrior. You learn two Druid cantrips of your choice (see the Druid class's section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <choice name="Fighting Style Option" count="1">
+          <option type="Feat" description="Fighting_Style_feat_of_your_choice"/>
+          <option name="Druidic Warrior">
+            <grants_spell_learning type="Cantrip" spell_list="Druid" count="2" spellcasting_ability_override="WIS"/>
+            <effect description="chosen_cantrips_count_as_Ranger_spells_for_you"/>
+            <modifies_spell_choice trigger="whenever_you_gain_a_Ranger_level">
+              <effect description="can_replace_one_of_these_cantrips_with_another_Druid_cantrip"/>
+            </modifies_spell_choice>
+          </option>
+        </choice>
       </feature>
     </autolevel>
     <autolevel level="3">
@@ -199,6 +223,7 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>You can attack twice instead of once whenever you take the Attack action on your turn.
 
 Source:	Player's Handbook 2024 p. 120</text>
+        <modifies_action action_name="Attack" new_attacks_allowed="2"/>
       </feature>
       <counter>
         <name>Favored Enemy</name>
@@ -212,7 +237,10 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>Your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 121</text>
-        <modifier category="bonus">speed +10</modifier>
+        <effect type="SpeedIncrease" value="10" condition="while_not_wearing_Heavy_armor"/>
+        <effect type="Speed" speed_type="Climb" value_formula="your_Speed"/>
+        <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>
+        <modifier category="bonus">speed +10</modifier> <!-- This is a simple representation of the base speed increase -->
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -229,6 +257,7 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills.
 
 Source:	Player's Handbook 2024 p. 121</text>
+        <grants_expertise count="2" type="SkillProficiency" condition="with_which_you_lack_Expertise"/>
       </feature>
       <counter>
         <name>Favored Enemy</name>
@@ -246,6 +275,18 @@ Temporary Hit Points. As a Magic action, you can give yourself a number of Tempo
 Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
 
 Source:	Player's Handbook 2024 p. 121</text>
+        <benefits>
+          <benefit name="Temporary Hit Points">
+            <action type="MagicAction"/>
+            <effect type="GainTemporaryHitPoints" target="self" value_formula="1d8+WIS_modifier" min_value="1"/>
+            <uses attribute="WIS" min="1"/>
+            <recharge type="LR"/>
+          </benefit>
+          <benefit name="Decrease Exhaustion">
+            <trigger text="whenever_you_finish_a_Short_Rest"/>
+            <effect description="your_Exhaustion_level_if_any_decreases_by_1"/>
+          </benefit>
+        </benefits>
         <roll description="Temporary Hit Points">1d8+%5</roll>
       </feature>
     </autolevel>
@@ -271,6 +312,10 @@ Source:	Player's Handbook 2024 p. 120</text>
 	You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain a ll expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 121</text>
+        <action type="BonusAction"/>
+        <effect type="Condition" name="Invisible" target="self" duration="until_end_of_your_next_turn"/>
+        <uses attribute="WIS" min="1"/>
+        <recharge type="LR"/>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -294,6 +339,7 @@ Source:	Player's Handbook 2024 p. 120</text>
         <text>Your connection to the forces of nature grants you Blindsight with a range of 30 feet.
 
 Source:	Player's Handbook 2024 p. 121</text>
+        <effect type="Sense" name="Blindsight" range="30_feet"/>
       </feature>
     </autolevel>
     <autolevel level="19">
@@ -310,6 +356,9 @@ Source:	Player's Handbook 2024 p. 121</text>
         <text>The damage die of your Hunter's Mark is a d10 rather than a d6.
 
 Source:	Player's Handbook 2024 p. 121</text>
+        <modifies_spell spell_name="Hunter's Mark">
+          <modifies_property property="damage_die" new_value="1d10"/>
+        </modifies_spell>
       </feature>
     </autolevel>
     <!-- Ranger Subclass: Beast Master -->
@@ -321,6 +370,7 @@ Source:	Player's Handbook 2024 p. 121</text>
 A Beast Master forms a mystical bond with a special animal, drawing on primal magic and a deep connection to the natural world.
 
 Source:	Player's Handbook 2024 p. 122</text>
+        <subclass>Beast Master</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Primal Companion (Beast Master)</name>
@@ -333,6 +383,31 @@ Restoring or Replacing the Beast. If the beast has died within the last hour, yo
 	Whenever you finish a Long Rest, you can summon a different primal beast, which appears in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.
 
 Source:	Player's Handbook 2024 p. 122</text>
+        <subclass>Beast Master</subclass>
+        <effect description="magically_summon_a_primal_beast_choose_stat_block_BeastOfTheLand_BeastOfTheSea_or_BeastOfTheSky_determine_animal_kind_bears_primal_markings"/>
+        <companion_rules name="Primal Companion">
+          <property name="AlignmentAndBehavior" value="Friendly_to_you_and_allies_obeys_commands_vanishes_if_you_die"/>
+          <combat_behavior>
+            <turn_timing description="acts_during_your_turn"/>
+            <movement_and_reaction description="can_move_and_use_its_Reaction_on_its_own"/>
+            <action_default type="Dodge"/>
+            <command_options>
+              <option type="BonusAction" effect="command_it_to_take_an_action_in_its_stat_block_or_some_other_action"/>
+              <option type="SacrificeAttack" condition="when_you_take_Attack_action" effect="command_beast_to_take_Beasts_Strike_action"/>
+            </command_options>
+            <behavior_if_incapacitated description="if_you_have_Incapacitated_condition_beast_acts_on_its_own_isnt_limited_to_Dodge_action"/>
+          </combat_behavior>
+          <restoring_or_replacing>
+            <restore_option condition="if_beast_died_within_last_hour">
+              <action type="MagicAction" to_touch_beast="true"/>
+              <cost type="SpellSlot" value_any="true"/>
+              <effect description="beast_returns_to_life_after_1_minute_with_all_HP_restored"/>
+            </restore_option>
+            <replace_option trigger="whenever_you_finish_a_Long_Rest">
+              <effect description="can_summon_a_different_primal_beast_appears_in_unoccupied_space_within_5_feet_choose_stat_block_and_appearance_old_one_vanishes"/>
+            </replace_option>
+          </restoring_or_replacing>
+        </companion_rules>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -342,6 +417,17 @@ Source:	Player's Handbook 2024 p. 122</text>
 	In addition, whenever it hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Beast Master</subclass>
+        <enhances_feature feature_name="Level 3: Primal Companion (Beast Master)">
+          <command_enhancement>
+            <trigger text="when_you_take_a_Bonus_Action_to_command_your_Primal_Companion_beast_to_take_an_action"/>
+            <effect description="can_also_command_it_to_take_the_Dash_Disengage_Dodge_or_Help_action_using_its_Bonus_Action"/>
+          </command_enhancement>
+          <damage_modification>
+            <trigger text="whenever_Primal_Companion_hits_with_an_attack_roll_and_deals_damage"/>
+            <effect description="it_can_deal_your_choice_of_Force_damage_or_its_normal_damage_type"/>
+          </damage_modification>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -351,6 +437,16 @@ Source:	Player's Handbook 2024 p. 123</text>
 	In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Beast Master</subclass>
+        <enhances_feature feature_name="Level 3: Primal Companion (Beast Master)">
+          <command_enhancement for_action="BeastsStrike">
+            <effect description="the_beast_can_use_it_twice"/>
+          </command_enhancement>
+          <damage_enhancement>
+            <trigger text="first_time_each_turn_Primal_Companion_hits_a_creature_under_effect_of_your_Hunters_Mark_spell"/>
+            <effect type="ExtraDamage" damage_type="Force" value_formula="bonus_damage_of_Hunters_Mark_spell"/>
+          </damage_enhancement>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -359,6 +455,10 @@ Source:	Player's Handbook 2024 p. 123</text>
         <text>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Beast Master</subclass>
+        <trigger text="when_you_cast_a_spell_targeting_yourself"/>
+        <condition text="if_Primal_Companion_beast_is_within_30_feet_of_you"/>
+        <effect description="can_also_affect_your_Primal_Companion_beast_with_the_spell"/>
       </feature>
     </autolevel>
     <!-- Ranger Subclass: Fey Wanderer -->
@@ -370,12 +470,19 @@ Source:	Player's Handbook 2024 p. 123</text>
 A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Fey Wanderer</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Dreadful Strikes (Fey Wanderer)</name>
         <text>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Fey Wanderer</subclass>
+        <trigger text="when_you_hit_a_creature_with_a_weapon"/>
+        <effect type="ExtraDamage" damage_type="Psychic" value_dice="1d4">
+          <scaling level="11" dice="1d6"/>
+        </effect>
+        <restriction text="target_can_take_this_extra_damage_only_once_per_turn"/>
         <roll description="Psychic Damage" level="3">1d4</roll>
         <roll description="Psychic Damage" level="11">1d6</roll>
       </feature>
@@ -403,6 +510,13 @@ Feywild Gifts:
 6 | Your skin and hair change color each dawn.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Fey Wanderer</subclass>
+        <grants_always_prepared_spell name="Charm Person" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Misty Step" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Summon Fey" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Dimension Door" level_gained_at="13"/>
+        <grants_always_prepared_spell name="Mislead" level_gained_at="17"/>
+        <choice name="Feywild Gift" from_table="FeywildGiftsTable" random_roll="1d6"/>
         <roll description="Feywild Gift">1d6</roll>
       </feature>
       <feature optional="YES">
@@ -411,6 +525,10 @@ Source:	Player's Handbook 2024 p. 123</text>
 	You also gain proficiency in one of these skills of your choice: Deception, Performance, or Persuasion.
 
 Source:	Player's Handbook 2024 p. 123</text>
+        <subclass>Fey Wanderer</subclass>
+        <trigger text="whenever_you_make_a_Charisma_check"/>
+        <effect type="Bonus" value_formula="WIS_modifier" min_value="1"/>
+        <grants_proficiency type="Skill" choice_from_list="Deception,Performance,Persuasion" count="1"/>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -420,6 +538,15 @@ Source:	Player's Handbook 2024 p. 123</text>
 	In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.
 
 Source:	Player's Handbook 2024 p. 125</text>
+        <subclass>Fey Wanderer</subclass>
+        <effect type="Advantage" on="saving_throws_to_avoid_or_end_Charmed_or_Frightened_condition"/>
+        <action type="Reaction">
+          <trigger text="whenever_you_or_a_creature_you_can_see_within_120_feet_of_you_succeeds_on_a_saving_throw_to_avoid_or_end_the_Charmed_or_Frightened_condition"/>
+          <target description="a_different_creature_you_can_see_within_120_feet"/>
+          <effect description="force_target_to_make_a_Wisdom_save_against_your_spell_save_DC">
+            <on_failed_save type="Condition" name_choice="Charmed_or_Frightened" duration="1_minute" save_type="WIS" save_timing="end_of_targets_turn" save_ends_effect="true"/>
+          </effect>
+        </action>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -429,6 +556,16 @@ Source:	Player's Handbook 2024 p. 125</text>
 	Whenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.
 
 Source:	Player's Handbook 2024 p. 125</text>
+        <subclass>Fey Wanderer</subclass>
+        <modifies_spell spell_name="Summon Fey">
+          <can_cast_without_material_component="true"/>
+          <option_to_modify_casting>
+            <effect description="doesnt_require_Concentration_duration_becomes_1_minute"/>
+          </option_to_modify_casting>
+        </modifies_spell>
+        <uses fixed="1" for_casting_spell="Summon Fey" without_slot="true">
+          <recharge type="LR"/>
+        </uses>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -438,6 +575,14 @@ Source:	Player's Handbook 2024 p. 125</text>
 	In addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.
 
 Source:	Player's Handbook 2024 p. 125</text>
+        <subclass>Fey Wanderer</subclass>
+        <uses attribute="WIS" min="1" for_casting_spell="Misty Step" without_slot="true">
+          <recharge type="LR"/>
+        </uses>
+        <modifies_spell spell_name="Misty Step">
+          <trigger text="whenever_you_cast_Misty_Step"/>
+          <effect description="can_bring_along_one_willing_creature_you_can_see_within_5_feet_That_creature_teleports_to_an_unoccupied_space_of_your_choice_within_5_feet_of_your_destination_space"/>
+        </modifies_spell>
       </feature>
     </autolevel>
     <!-- Ranger Subclass: Gloom Stalker -->
@@ -449,6 +594,7 @@ Source:	Player's Handbook 2024 p. 125</text>
 Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness.
 
 Source:	Player's Handbook 2024 p. 125</text>
+        <subclass>Gloom Stalker</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Dread Ambusher (Gloom Stalker)</name>
@@ -461,6 +607,24 @@ Dreadful Strike. When you attack a creature and hit it with a weapon, you can de
 Initiative Bonus. When you roll Initiative, you can add your Wisdom modifier to the roll.
 
 Source:	Player's Handbook 2024 p. 125</text>
+        <subclass>Gloom Stalker</subclass>
+        <benefits>
+          <benefit name="Ambusher's Leap">
+            <trigger text="at_the_start_of_your_first_turn_of_each_combat"/>
+            <effect type="SpeedIncrease" value="10" duration="until_end_of_that_turn"/>
+          </benefit>
+          <benefit name="Dreadful Strike">
+            <uses fixed="1" per_turn="true"/>
+            <trigger text="when_you_attack_a_creature_and_hit_it_with_a_weapon"/>
+            <effect type="ExtraDamage" damage_type="Psychic" value_dice="2d6"/> <!-- Scales with Stalker's Flurry -->
+            <uses attribute="WIS" min="1"/>
+            <recharge type="LR"/>
+          </benefit>
+          <benefit name="Initiative Bonus">
+            <trigger text="when_you_roll_Initiative"/>
+            <effect type="Bonus" value_formula="WIS_modifier" on="the_roll"/>
+          </benefit>
+        </benefits>
       </feature>
       <feature optional="YES">
         <name>Level 3: Gloom Stalker Spells (Gloom Stalker)</name>
@@ -475,6 +639,12 @@ Ranger Level | Spells
 17 | Seeming
 
 Source:	Player's Handbook 2024 p. 126</text>
+        <subclass>Gloom Stalker</subclass>
+        <grants_always_prepared_spell name="Disguise Self" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Rope Trick" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fear" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Greater Invisibility" level_gained_at="13"/>
+        <grants_always_prepared_spell name="Seeming" level_gained_at="17"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Umbral Sight (Gloom Stalker)</name>
@@ -482,6 +652,11 @@ Source:	Player's Handbook 2024 p. 126</text>
 	You are also adept at evading creatures that rely on Darkvision. While entirely in Darkness. you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.
 
 Source:	Player's Handbook 2024 p. 126</text>
+        <subclass>Gloom Stalker</subclass>
+        <effect type="Sense" name="Darkvision" range="60_feet"/>
+        <enhancement condition="if_already_have_Darkvision" effect="its_range_increases_by_60_feet"/>
+        <condition text="while_entirely_in_Darkness"/>
+        <effect type="Condition" name="Invisible" to_creatures="any_creature_that_relies_on_Darkvision_to_see_you_in_that_Darkness"/>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -490,7 +665,12 @@ Source:	Player's Handbook 2024 p. 126</text>
         <text>You have honed your ability to resist mind-altering powers. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).
 
 Source:	Player's Handbook 2024 p. 126</text>
-        <proficiency>wisdom</proficiency>
+        <subclass>Gloom Stalker</subclass>
+        <grants_proficiency type="SavingThrow" name="Wisdom"/>
+        <alternative_grant condition="if_already_proficient_in_Wisdom_saves">
+          <grants_proficiency type="SavingThrow" choice_from_list="Intelligence,Charisma" count="1"/>
+        </alternative_grant>
+        <proficiency>wisdom</proficiency> <!-- Original tag -->
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -503,6 +683,22 @@ Sudden Strike. You can make another attack with the same weapon against a differ
 Mass Fear. The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.
 
 Source:	Player's Handbook 2024 p. 126</text>
+        <subclass>Gloom Stalker</subclass>
+        <enhances_feature feature_name="Level 3: Dread Ambusher (Gloom Stalker)" benefit_name="Dreadful Strike">
+          <modifies_effect type="ExtraDamage" new_value_dice="2d8"/>
+          <trigger text="when_you_use_the_Dreadful_Strike_effect"/>
+          <choice name="StalkersFlurryAdditionalEffect" count="1">
+            <option name="Sudden Strike">
+              <effect description="make_another_attack_with_the_same_weapon_against_a_different_creature_that_is_within_5_feet_of_the_original_target_and_that_is_within_the_weapons_range"/>
+            </option>
+            <option name="Mass Fear">
+              <target description="the_target_and_each_creature_within_10_feet_of_it"/>
+              <effect description="must_make_a_Wisdom_saving_throw_against_your_spell_save_DC">
+                <on_failed_save type="Condition" name="Frightened" duration="until_start_of_your_next_turn"/>
+              </effect>
+            </option>
+          </choice>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -511,6 +707,11 @@ Source:	Player's Handbook 2024 p. 126</text>
         <text>When a creature makes an attack roll against you, you can take a Reaction to impose Disadvantage on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see.
 
 Source:	Player's Handbook 2024 p. 126</text>
+        <subclass>Gloom Stalker</subclass>
+        <action type="Reaction"/>
+        <trigger text="when_a_creature_makes_an_attack_roll_against_you"/>
+        <effect type="Disadvantage" on="that_roll"/>
+        <effect type="Teleport" target="self" range="up_to_30_feet" destination="unoccupied_space_you_can_see" timing="whether_attack_hits_or_misses"/>
       </feature>
     </autolevel>
     <!-- Ranger Subclass: Hunter -->
@@ -522,12 +723,16 @@ Source:	Player's Handbook 2024 p. 126</text>
 You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Hunter's Lore (Hunter)</name>
         <text>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
+        <trigger text="while_a_creature_is_marked_by_your_Hunters_Mark"/>
+        <effect description="you_know_whether_that_creature_has_any_Immunities_Resistances_or_Vulnerabilities_and_if_it_has_any_you_know_what_they_are"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Hunter's Prey (Hunter)</name>
@@ -538,6 +743,21 @@ Colossus Slayer. Your tenacity can wear down even the most resilient foes. When 
 Horde Breaker. Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
+        <choice name="HuntersPreyOption" count="1">
+          <recharge type="SR_or_LR" description="can_replace_chosen_option_with_the_other_one"/>
+          <option name="Colossus Slayer">
+            <uses fixed="1" per_turn="true"/>
+            <trigger text="when_you_hit_a_creature_with_a_weapon"/>
+            <condition text="if_target_is_missing_any_of_its_Hit_Points"/>
+            <effect type="ExtraDamage" value="1d8" damage_type_same_as_weapon="true"/>
+          </option>
+          <option name="Horde Breaker">
+            <uses fixed="1" per_turn="true"/>
+            <trigger text="when_you_make_an_attack_with_a_weapon"/>
+            <effect description="can_make_another_attack_with_the_same_weapon_against_a_different_creature_that_is_within_5_feet_of_original_target_within_weapons_range_and_not_attacked_this_turn"/>
+          </option>
+        </choice>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -550,6 +770,17 @@ Escape the Horde. Opportunity Attacks have Disadvantage against you.
 Multiattack Defense. When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
+        <choice name="DefensiveTacticsOption" count="1">
+          <recharge type="SR_or_LR" description="can_replace_chosen_option_with_the_other_one"/>
+          <option name="Escape the Horde">
+            <effect type="Disadvantage" on="Opportunity_Attacks_against_you"/>
+          </option>
+          <option name="Multiattack Defense">
+            <trigger text="when_a_creature_hits_you_with_an_attack_roll"/>
+            <effect type="Disadvantage" target="that_creature" on="all_other_attack_rolls_against_you_this_turn"/>
+          </option>
+        </choice>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -558,6 +789,10 @@ Source:	Player's Handbook 2024 p. 127</text>
         <text>Once per turn when you deal damage to a creature marked by your Hunter's Mark, you can also deal that spell's extra damage to a different creature that you can see within 30 feet of the first creature.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_deal_damage_to_a_creature_marked_by_your_Hunters_Mark"/>
+        <effect description="can_also_deal_that_spells_extra_damage_to_a_different_creature_that_you_can_see_within_30_feet_of_the_first_creature"/>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -566,6 +801,10 @@ Source:	Player's Handbook 2024 p. 127</text>
         <text>When you take damage, you can take a Reaction to give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.
 
 Source:	Player's Handbook 2024 p. 127</text>
+        <subclass>Hunter</subclass>
+        <action type="Reaction"/>
+        <trigger text="when_you_take_damage"/>
+        <effect type="Resistance" damage_types="that_damage_and_any_other_damage_of_the_same_type" duration="until_end_of_current_turn"/>
       </feature>
     </autolevel>
   </class>

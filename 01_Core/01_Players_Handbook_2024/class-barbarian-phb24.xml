@@ -65,13 +65,35 @@ Duration. The Rage lasts until the end of your next turn, and it ends early if y
 Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.
 
 Source:	Player's Handbook 2024 p. 51</text>
+        <action type="BonusAction" to_enter="true"/>
+        <restriction text="if_not_wearing_Heavy_armor"/>
+        <uses type="scaling_table" table_ref="BarbarianFeaturesTable_RagesColumn"/> <!-- App needs to know table -->
+        <recharge type="1_per_SR_all_per_LR"/>
+        <duration unit="round" value="1" extended_by_actions="true" max_duration_minutes="10"/>
+        <ends_early_if condition="don_Heavy_armor_or_Incapacitated"/>
+        <extension_conditions>
+          <condition text="make_an_attack_roll_against_an_enemy"/>
+          <condition text="force_an_enemy_to_make_a_saving_throw"/>
+          <condition text="take_a_Bonus_Action_to_extend_your_Rage"/>
+        </extension_conditions>
+        <effects_while_active>
+          <effect type="Resistance" damage_types="Bludgeoning,Piercing,Slashing"/>
+          <effect type="DamageBonus" name="Rage Damage" trigger="on_Strength_based_weapon_or_Unarmed_Strike_hit" value_scaling_table="BarbarianFeaturesTable_RageDamageColumn"/>
+          <effect type="Advantage" on="Strength_checks_and_Strength_saving_throws"/>
+          <effect type="Restriction" rule="Concentration" status="cannot_maintain"/>
+          <effect type="Restriction" rule="Spellcasting" status="cannot_cast_spells"/>
+        </effects_while_active>
       </feature>
       <feature>
         <name>Level 1: Unarmored Defense</name>
         <text>While you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.
 
 Source:	Player's Handbook 2024 p. 51</text>
-        <special>Unarmored Defense: Constitution</special>
+        <special>Unarmored Defense: Constitution</special> <!-- This tag is specific, might be used by some systems -->
+        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_any_armor">
+          <new_formula>10 + DEX_modifier + CON_modifier</new_formula>
+          <note text="can_use_a_Shield_and_still_gain_this_benefit"/>
+        </modifies_rule>
       </feature>
       <feature>
         <name>Level 1: Weapon Mastery</name>
@@ -79,6 +101,8 @@ Source:	Player's Handbook 2024 p. 51</text>
 	When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table. (2 at level 2, 3 at level 4, 4 at level 10)
 
 Source:	Player's Handbook 2024 p. 52</text>
+        <uses type="scaling_table" table_ref="BarbarianFeaturesTable_WeaponMasteryColumn" description="number_of_weapon_kinds_for_mastery"/>
+        <recharge type="LR" description="can_change_one_weapon_choice"/>
       </feature>
       <counter>
         <name>Rage</name>
@@ -92,12 +116,18 @@ Source:	Player's Handbook 2024 p. 52</text>
         <text>You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.
 
 Source:	Player's Handbook 2024 p. 52</text>
+        <effect type="Advantage" on="Dexterity_saving_throws"/>
+        <restriction text="unless_you_have_the_Incapacitated_condition"/>
       </feature>
       <feature>
         <name>Level 2: Reckless Attack</name>
         <text>You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
 
 Source:	Player's Handbook 2024 p. 52</text>
+        <trigger text="when_you_make_your_first_attack_roll_on_your_turn"/>
+        <action type="Decision" name="attack_recklessly"/>
+        <effect type="Advantage" target="self" on="attack_rolls_using_Strength" duration="until_start_of_your_next_turn"/>
+        <effect type="Advantage" target="attacker" on="attack_rolls_against_you" duration="until_start_of_your_next_turn"/>
       </feature>
     </autolevel>
     <autolevel level="3">
@@ -113,6 +143,12 @@ Source:	Player's Handbook 2024 p. 52</text>
 	In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.
 
 Source:	Player's Handbook 2024 p. 52</text>
+        <grants_proficiency type="Skill" choice_from_list="Barbarian_level_1_skills" count="1"/>
+        <modifies_rule rule_name="AbilityCheckSkillBasis" condition="while_Rage_is_active">
+          <skills_affected>Acrobatics,Intimidation,Perception,Stealth,Survival</skills_affected>
+          <new_basis ability="Strength"/>
+          <description>your_Strength_represents_primal_power_coursing_through_you_honing_your_agility_bearing_and_senses</description>
+        </modifies_rule>
       </feature>
       <counter>
         <name>Rage</name>
@@ -134,13 +170,15 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>You can attack twice instead of once whenever you take the Attack action on your turn.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <modifies_action action_name="Attack" new_attacks_allowed="2"/>
       </feature>
       <feature>
         <name>Level 5: Fast Movement</name>
         <text>Your speed increases by 10 feet while you aren't wearing Heavy armor.
 
 Source:	Player's Handbook 2024 p. 53</text>
-        <modifier category="bonus">speed +10</modifier>
+        <modifier category="bonus">speed +10</modifier> <!-- Existing tag seems fine -->
+        <effect type="SpeedIncrease" value="10" condition="while_not_wearing_Heavy_armor"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -156,12 +194,15 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>Your instincts are so honed that you have Advantage on Initiative rolls.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <effect type="Advantage" on="Initiative_rolls"/>
       </feature>
       <feature>
         <name>Level 7: Instinctive Pounce</name>
         <text>As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <trigger text="as_part_of_the_Bonus_Action_you_take_to_enter_your_Rage"/>
+        <effect type="Movement" value="half_your_Speed"/>
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -182,6 +223,22 @@ Forceful Blow. The target is pushed 15 feet straight away from you. You can then
 Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time-the most recent one.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <trigger text="if_you_use_Reckless_Attack"/>
+        <cost description="forgo_any_Advantage_on_one_Strength_based_attack_roll_of_your_choice_on_your_turn_chosen_attack_roll_mustnt_have_Disadvantage"/>
+        <on_hit>
+          <effect type="ExtraDamage" value="1d10" damage_type="same_as_weapon_or_Unarmed_Strike"/>
+          <effect type="ChooseOption" from_list="BrutalStrikeEffects" count="1"/>
+        </on_hit>
+        <options name="BrutalStrikeEffects">
+          <option name="Forceful Blow">
+            <effect type="Movement" target="target_hit" direction="pushed_15_feet_straight_away_from_you"/>
+            <effect type="Movement" target="self" value="up_to_half_your_Speed_straight_toward_the_target" does_not_provoke_opportunity_attacks="true"/>
+          </option>
+          <option name="Hamstring Blow">
+            <effect type="SpeedReduction" target="target_hit" value="15_feet" duration="until_start_of_your_next_turn"/>
+            <restriction text="target_can_be_affected_by_only_one_Hamstring_Blow_at_a_time_the_most_recent_one"/>
+          </option>
+        </options>
       </feature>
     </autolevel>
     <autolevel level="11">
@@ -191,6 +248,12 @@ Source:	Player's Handbook 2024 p. 53</text>
 	Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <trigger text="if_you_drop_to_0_Hit_Points_while_your_Rage_is_active_and_dont_die_outright"/>
+        <action type="SavingThrow" ability="CON" dc_initial="10" dc_increase_on_use="5"/>
+        <on_success>
+          <effect type="SetHitPoints" value_formula="2*BarbarianLevel"/>
+        </on_success>
+        <recharge type="SR_or_LR" description="resets_DC_to_10"/>
       </feature>
     </autolevel>
     <autolevel level="12" scoreImprovement="YES">
@@ -216,6 +279,16 @@ Staggering Blow. The target has Disadvantage on the next saving throw it makes, 
 Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <adds_options_to feature_name="Brutal Strike">
+          <option name="Staggering Blow">
+            <effect type="Disadvantage" target="target_hit" on="next_saving_throw_it_makes"/>
+            <effect type="Restriction" target="target_hit" rule="OpportunityAttacks" status="cannot_make" duration="until_start_of_your_next_turn"/>
+          </option>
+          <option name="Sundering Blow">
+            <effect description="before_start_of_your_next_turn_next_attack_roll_made_by_another_creature_against_target_gains_a_+5_bonus_to_roll"/>
+            <restriction text="an_attack_roll_can_gain_only_one_Sundering_Blow_bonus"/>
+          </option>
+        </adds_options_to>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -225,6 +298,14 @@ Source:	Player's Handbook 2024 p. 53</text>
 	In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <trigger text="when_you_roll_Initiative"/>
+        <effect description="can_regain_all_expended_uses_of_Rage"/>
+        <uses fixed="1"/>
+        <recharge type="LR" description="for_regaining_Rage_uses_on_Initiative"/>
+        <modifies_feature feature_name="Rage">
+          <duration unit="minutes" value="10" extended_by_actions="false"/>
+          <ends_early_if condition="Unconscious_condition_or_don_Heavy_armor"/>
+        </modifies_feature>
       </feature>
       <counter>
         <name>Persistent Rage</name>
@@ -242,10 +323,14 @@ Source:	Player's Handbook 2024 p. 53</text>
     </autolevel>
     <autolevel level="17">
       <feature>
-        <name>Level 17: Improved Brutal Strike</name>
+        <name>Level 17: Improved Brutal Strike</name> <!-- Note: Same name as L13 feature, this enhances it -->
         <text>The extra damage of your Brutal Strike increases to 2d10. In addition. you can use two different Brutal Strike effects whenever you use your Brutal Strike feature.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <enhances_feature feature_name="Brutal Strike">
+          <modifies_effect type="ExtraDamage" new_value="2d10"/>
+          <modifies_effect type="ChooseOption" new_count="2" restriction="must_be_different_Brutal_Strike_effects"/>
+        </enhances_feature>
       </feature>
       <counter>
         <name>Rage</name>
@@ -259,6 +344,10 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <modifies_rule rule_name="StrengthCheckOrSavingThrowResult">
+          <condition text="if_total_for_Strength_check_or_Strength_saving_throw_is_less_than_Strength_score"/>
+          <effect description="can_use_Strength_score_in_place_of_the_total"/>
+        </modifies_rule>
       </feature>
     </autolevel>
     <autolevel level="19">
@@ -275,8 +364,10 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>You embody primal power. Your Strength and Constitution scores increase by 4, to a maximum of 25.
 
 Source:	Player's Handbook 2024 p. 53</text>
-        <modifier category="ability score">strength +4</modifier>
+        <modifier category="ability score">strength +4</modifier> <!-- Existing tags are good -->
         <modifier category="ability score">constitution +4</modifier>
+        <effect type="AbilityScoreIncrease" ability="Strength" value="4" maximum="25"/>
+        <effect type="AbilityScoreIncrease" ability="Constitution" value="4" maximum="25"/>
       </feature>
     </autolevel>
     <!-- Barbarian Subclass: Path of the Berserker -->
@@ -288,12 +379,17 @@ Source:	Player's Handbook 2024 p. 53</text>
 Barbarians who walk the Path of the Berserker direct their Rage primarily toward violence. Their path is one of untrammeled fury, and they thrill in the chaos of battle as they allow their Rage to seize and empower them.
 
 Source:	Player's Handbook 2024 p. 54</text>
+        <subclass>Path of the Berserker</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Frenzy (Path of the Berserker)</name>
         <text>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
 
 Source:	Player's Handbook 2024 p. 54</text>
+        <subclass>Path of the Berserker</subclass>
+        <trigger text="if_you_use_Reckless_Attack_while_your_Rage_is_active"/>
+        <condition text="on_the_first_target_you_hit_on_your_turn_with_a_Strength_based_attack"/>
+        <effect type="ExtraDamage" value_formula="RageDamageBonus_d6s" damage_type="same_as_weapon_or_Unarmed_Strike"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -302,6 +398,11 @@ Source:	Player's Handbook 2024 p. 54</text>
         <text>You have Immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, the condition ends on you.
 
 Source:	Player's Handbook 2024 p. 54</text>
+        <subclass>Path of the Berserker</subclass>
+        <effect type="Immunity" condition_names="Charmed,Frightened" condition_active="while_Rage_is_active"/>
+        <trigger text="if_Charmed_or_Frightened_when_you_enter_your_Rage">
+          <effect description="the_condition_ends_on_you"/>
+        </trigger>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -310,6 +411,10 @@ Source:	Player's Handbook 2024 p. 54</text>
         <text>When you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.
 
 Source:	Player's Handbook 2024 p. 54</text>
+        <subclass>Path of the Berserker</subclass>
+        <action type="Reaction"/>
+        <trigger text="when_you_take_damage_from_a_creature_that_is_within_5_feet_of_you"/>
+        <effect description="make_one_melee_attack_against_that_creature_using_a_weapon_or_an_Unarmed_Strike"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -319,6 +424,14 @@ Source:	Player's Handbook 2024 p. 54</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 54</text>
+        <subclass>Path of the Berserker</subclass>
+        <action type="BonusAction"/>
+        <effect description="each_creature_of_your_choice_in_a_30_foot_Emanation_originating_from_you_must_make_a_Wisdom_saving_throw" save_dc="8+STR+PROF">
+          <on_failed_save type="Condition" name="Frightened" duration="1_minute" save_type="WIS" save_timing="end_of_Frightened_creatures_turn" save_ends_effect="true"/>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="RageUse" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Intimidating Presence</name>
@@ -336,12 +449,16 @@ Source:	Player's Handbook 2024 p. 54</text>
 Barbarians who follow the Path of the Wild Heart view themselves as kin to animals. These Barbarians learn magical means to communicate with animals, and their Rage heightens their connection to animals as it fills them with supernatural might.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Animal Speaker (Path of the Wild Heart)</name>
         <text>You can cast the Beast Sense and Speak with Animals spells but only as Rituals. Wisdom is your spellcasting ability for them.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
+        <grants_spell_casting spell_name="Beast Sense" type="RitualOnly" ability="WIS"/>
+        <grants_spell_casting spell_name="Speak with Animals" type="RitualOnly" ability="WIS"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Rage of the Wilds (Path of the Wild Heart)</name>
@@ -354,6 +471,25 @@ Eagle. When you activate your Rage, you can take the Disengage and Dash actions 
 Wolf. While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
+        <trigger text="whenever_you_activate_your_Rage"/>
+        <effect type="ChooseOption" from_list="RageOfTheWildsOptions" count="1"/>
+        <options name="RageOfTheWildsOptions">
+          <option name="Bear">
+            <effect type="Resistance" damage_types="all_except_Force_Necrotic_Psychic_Radiant" condition="while_Rage_is_active"/>
+          </option>
+          <option name="Eagle">
+            <trigger text="when_you_activate_your_Rage">
+              <effect description="can_take_Disengage_and_Dash_actions_as_part_of_that_Bonus_Action"/>
+            </trigger>
+            <action type="BonusAction" condition="while_Rage_is_active">
+              <effect description="take_both_Disengage_and_Dash_actions"/>
+            </action>
+          </option>
+          <option name="Wolf">
+            <effect type="Advantage" target="your_allies" on="attack_rolls_against_any_enemy_of_yours_within_5_feet_of_you" condition="while_Rage_is_active"/>
+          </option>
+        </options>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -368,6 +504,21 @@ Panther. You have a Climb Speed equal to your Speed.
 Salmon. You have a Swim Speed equal to your Speed.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
+        <effect type="ChooseOption" from_list="AspectOfTheWildsOptions" count="1"/>
+        <recharge type="LR" description="can_change_your_choice"/>
+        <options name="AspectOfTheWildsOptions">
+          <option name="Owl">
+            <effect type="Darkvision" range="60_feet"/>
+            <enhancement condition="if_already_have_Darkvision" effect="its_range_increases_by_60_feet"/>
+          </option>
+          <option name="Panther">
+            <effect type="Speed" speed_type="Climb" value_formula="your_Speed"/>
+          </option>
+          <option name="Salmon">
+            <effect type="Speed" speed_type="Swim" value_formula="your_Speed"/>
+          </option>
+        </options>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -376,6 +527,8 @@ Source:	Player's Handbook 2024 p. 55</text>
         <text>You can cast the Commune with Nature spell but only as a Ritual. Wisdom is your spellcasting ability for it.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
+        <grants_spell_casting spell_name="Commune with Nature" type="RitualOnly" ability="WIS"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -390,6 +543,21 @@ Lion. While your Rage is active, any of your enemies within 5 feet of you have D
 Ram. While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.
 
 Source:	Player's Handbook 2024 p. 55</text>
+        <subclass>Path of the Wild Heart</subclass>
+        <trigger text="whenever_you_activate_your_Rage"/>
+        <effect type="ChooseOption" from_list="PowerOfTheWildsOptions" count="1"/>
+        <options name="PowerOfTheWildsOptions">
+          <option name="Falcon">
+            <effect type="Speed" speed_type="Fly" value_formula="your_Speed" condition="while_Rage_is_active_and_not_wearing_any_armor"/>
+          </option>
+          <option name="Lion">
+            <effect type="Disadvantage" target="any_of_your_enemies_within_5_feet_of_you" on="attack_rolls_against_targets_other_than_you_or_another_Barbarian_who_has_this_option_active" condition="while_Rage_is_active"/>
+          </option>
+          <option name="Ram">
+            <trigger text="when_you_hit_a_Large_or_smaller_creature_with_a_melee_attack" condition="while_Rage_is_active"/>
+            <effect type="Condition" name="Prone" target="creature_hit"/>
+          </option>
+        </options>
       </feature>
     </autolevel>
     <!-- Barbarian Subclass: Path of the World Tree -->
@@ -401,6 +569,7 @@ Source:	Player's Handbook 2024 p. 55</text>
 Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage. This tree grows among the Outer Planes, connecting them to each other and the Material Plane. These Barbarians draw on the tree's magic for vitality and as a means of dimensional travel.
 
 Source:	Player's Handbook 2024 p. 56</text>
+        <subclass>Path of the World Tree</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Vitality of the Tree (Path of the World Tree)</name>
@@ -411,6 +580,19 @@ Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit 
 Life-Giving Force. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish.
 
 Source:	Player's Handbook 2024 p. 56</text>
+        <subclass>Path of the World Tree</subclass>
+        <benefits>
+          <benefit name="Vitality Surge">
+            <trigger text="when_you_activate_your_Rage"/>
+            <effect type="GainTemporaryHitPoints" value_formula="BarbarianLevel"/>
+          </benefit>
+          <benefit name="Life-Giving Force">
+            <trigger text="at_the_start_of_each_of_your_turns_while_your_Rage_is_active"/>
+            <action type="Free" description="choose_another_creature_within_10_feet_of_yourself"/>
+            <effect type="GainTemporaryHitPoints" target="chosen_creature" value_formula="RageDamageBonus_d6s"/>
+            <restriction text="if_any_of_these_Temporary_Hit_Points_remain_when_your_Rage_ends_they_vanish"/>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -419,6 +601,15 @@ Source:	Player's Handbook 2024 p. 56</text>
         <text>Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its Speed to 0 until the end of the current turn.
 
 Source:	Player's Handbook 2024 p. 56</text>
+        <subclass>Path of the World Tree</subclass>
+        <action type="Reaction"/>
+        <trigger text="whenever_a_creature_you_can_see_starts_its_turn_within_30_feet_of_you_while_your_Rage_is_active"/>
+        <effect description="summon_spectral_branches_of_the_World_Tree_around_it_The_target_must_succeed_on_a_Strength_saving_throw" save_dc="8+STR+PROF">
+          <on_failed_save>
+            <effect type="Teleport" target="target_creature" destination="unoccupied_space_you_can_see_within_5_feet_of_yourself_or_in_the_nearest_unoccupied_space_you_can_see"/>
+            <effect type="SpeedReduction" target="target_creature" value="to_0" duration="until_end_of_the_current_turn" condition="after_target_teleports"/>
+          </on_failed_save>
+        </effect>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -427,6 +618,10 @@ Source:	Player's Handbook 2024 p. 56</text>
         <text>During your turn, your reach is 10 feet greater with any Melee weapon that has the Heavy or Versatile property, as tendrils of the World Tree extend from you. When you hit with such a weapon on your turn, you can activate the Push or Topple mastery property in addition to a different mastery property you're using with that weapon.
 
 Source:	Player's Handbook 2024 p. 56</text>
+        <subclass>Path of the World Tree</subclass>
+        <effect type="ReachIncrease" value="10_feet" condition="during_your_turn_with_any_Melee_weapon_that_has_the_Heavy_or_Versatile_property"/>
+        <trigger text="when_you_hit_with_such_a_weapon_on_your_turn"/>
+        <effect description="can_activate_the_Push_or_Topple_mastery_property_in_addition_to_a_different_mastery_property_youre_using_with_that_weapon"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -436,6 +631,13 @@ Source:	Player's Handbook 2024 p. 56</text>
 	In addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space.
 
 Source:	Player's Handbook 2024 p. 56</text>
+        <subclass>Path of the World Tree</subclass>
+        <action type="Free" trigger="when_you_activate_your_Rage" description="teleport_60ft"/>
+        <action type="BonusAction" condition="while_your_Rage_is_active" description="teleport_60ft"/>
+        <effect type="Teleport" target="self" range="up_to_60_feet" destination="unoccupied_space_you_can_see"/>
+        <enhancement uses_per_rage="1">
+          <effect type="Teleport" target="self_and_up_to_6_willing_creatures_within_10_feet_of_you" range="up_to_150_feet" destination="unoccupied_space_you_can_see_creatures_to_unoccupied_spaces_of_your_choice_within_10_feet_of_your_destination"/>
+        </enhancement>
       </feature>
     </autolevel>
     <!-- Barbarian Subclass: Path of the Zealot -->
@@ -447,12 +649,16 @@ Source:	Player's Handbook 2024 p. 56</text>
 Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Divine Fury (Path of the Zealot)</name>
         <text>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
+        <trigger text="on_each_of_your_turns_while_your_Rage_is_active_the_first_creature_you_hit_with_a_weapon_or_an_Unarmed_Strike"/>
+        <effect type="ExtraDamage" value_formula="1d6+half_BarbarianLevel_round_down" damage_type_choice="Necrotic_or_Radiant"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Warrior of the Gods (Path of the Zealot)</name>
@@ -461,6 +667,20 @@ Source:	Player's Handbook 2024 p. 57</text>
 	The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
+        <resource name="WarriorOfTheGodsDicePool" die_type="d12">
+          <scaling_table>
+            <level val="3" number="4"/>
+            <level val="6" number="5"/>
+            <level val="12" number="6"/>
+            <level val="17" number="7"/>
+          </scaling_table>
+          <recharge type="LR" description="regains_all_expended_dice"/>
+        </resource>
+        <action type="BonusAction">
+          <cost type="WarriorOfTheGodsDicePool" value_variable="expend_dice_from_pool"/>
+          <effect type="Heal" target="self" value_formula="total_of_dice_rolled"/>
+        </action>
       </feature>
       <counter>
         <name>Warrior of the Gods</name>
@@ -475,6 +695,10 @@ Source:	Player's Handbook 2024 p. 57</text>
         <text>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
+        <uses fixed="1" per_instance_of="active_Rage"/>
+        <trigger text="if_you_fail_a_saving_throw"/>
+        <effect description="can_reroll_it_with_a_bonus_equal_to_your_Rage_Damage_bonus_and_you_must_use_the_new_roll"/>
       </feature>
       <counter>
         <name>Warrior of the Gods</name>
@@ -490,6 +714,12 @@ Source:	Player's Handbook 2024 p. 57</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
+        <action type="BonusAction"/>
+        <effect description="up_to_ten_other_creatures_of_your_choice_within_60_feet_of_you_gain_Advantage_on_attack_rolls_and_saving_throws" duration="until_start_of_your_next_turn"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="RageUse" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Zealous Presence</name>
@@ -519,6 +749,27 @@ Resistance. You have Resistance to Necrotic, Psychic, and Radiant damage.
 Revivification. When a creature within 30 feet of you would drop to 0 Hit Points. you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.
 
 Source:	Player's Handbook 2024 p. 57</text>
+        <subclass>Path of the Zealot</subclass>
+        <trigger text="when_you_activate_your_Rage"/>
+        <effect type="Transformation" name="DivineWarriorForm" duration="1_minute_or_until_0_HP">
+          <benefits>
+            <benefit name="Flight">
+              <effect type="Speed" speed_type="Fly" value_formula="your_Speed"/>
+              <effect description="can_hover"/>
+            </benefit>
+            <benefit name="Resistance">
+              <effect type="Resistance" damage_types="Necrotic,Psychic,Radiant"/>
+            </benefit>
+            <benefit name="Revivification">
+              <action type="Reaction"/>
+              <trigger text="when_a_creature_within_30_feet_of_you_would_drop_to_0_Hit_Points"/>
+              <cost resource="RageUse" value="1"/>
+              <effect description="change_the_targets_Hit_Points_to_a_number_equal_to_your_Barbarian_level"/>
+            </benefit>
+          </benefits>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
     </autolevel>
     <autolevel level="17">

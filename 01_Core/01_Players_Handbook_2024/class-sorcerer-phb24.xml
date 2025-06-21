@@ -11,7 +11,7 @@
     <spellAbility>Charisma</spellAbility>
     <slotsReset>L</slotsReset>
     <autolevel level="1">
-      <slots>4,2</slots>
+      <slots>4,2</slots> <!-- Cantrips, Level 1 slots -->
     </autolevel>
     <autolevel level="2">
       <slots>4,3</slots>
@@ -156,6 +156,15 @@ Source:	Player's Handbook 2024 p. 139</text>
 You can use this feature twice, and you regain all expended uses of it when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 140</text>
+        <action type="BonusAction"/>
+        <effect type="Buff" name="InnateSorceryBuff" duration="1_minute">
+          <benefits>
+            <benefit description="spell_save_DC_of_your_Sorcerer_spells_increases_by_1"/>
+            <benefit type="Advantage" on="attack_rolls_of_Sorcerer_spells_you_cast"/>
+          </benefits>
+        </effect>
+        <uses fixed="2"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Innate Sorcery</name>
@@ -184,6 +193,22 @@ Spell Slot Level | Sorcery Point Cost | Min. Sorcerer Level
 5 | 7 | 9
 
 Source:	Player's Handbook 2024 p. 140</text>
+        <resource name="SorceryPoints" scaling_table="SorcererFeaturesTable_SorceryPointsColumn" initial_points="2">
+          <recharge type="LR"/>
+        </resource>
+        <flexible_casting>
+          <option name="ConvertToSorceryPoints">
+            <action type="NoAction"/>
+            <cost type="SpellSlot" value_variable="spell_slot_level"/>
+            <effect description="gain_Sorcery_Points_equal_to_slots_level"/>
+          </option>
+          <option name="CreateSpellSlots">
+            <action type="BonusAction"/>
+            <cost type="SorceryPoints" value_from_table="CreatingSpellSlotsTable"/>
+            <effect description="transform_unexpended_Sorcery_Points_into_one_spell_slot_max_level_5"/>
+            <note text="any_spell_slot_created_vanishes_on_Long_Rest"/>
+          </option>
+        </flexible_casting>
       </feature>
       <feature>
         <name>Level 2: Metamagic</name>
@@ -192,6 +217,12 @@ Source:	Player's Handbook 2024 p. 140</text>
 	Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <learns_metamagic_options count_initial="2">
+          <scaling level="10" additional_count="2"/>
+          <scaling level="17" additional_count="2"/>
+          <note text="whenever_you_gain_a_Sorcerer_level_you_can_replace_one_of_your_Metamagic_options_with_one_you_dont_know"/>
+        </learns_metamagic_options>
+        <restriction text="can_use_only_one_Metamagic_option_on_a_spell_when_you_cast_it_unless_otherwise_noted"/>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -231,6 +262,10 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can't do so again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <trigger text="when_you_finish_a_Short_Rest"/>
+        <effect description="regain_expended_Sorcery_Points_up_to_half_Sorcerer_level_round_down"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Sorcerous Restoration</name>
@@ -258,6 +293,15 @@ Source:	Player's Handbook 2024 p. 141</text>
 In addition, while your Innate Sorcery feature is active, you can use up to two of your Metamagic options on each spell you cast.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <enhances_feature feature_name="Level 1: Innate Sorcery">
+          <alternative_activation_cost>
+            <condition text="if_you_have_no_uses_of_Innate_Sorcery_left"/>
+            <cost resource="SorceryPoints" value="2" on_bonus_action_activation="true"/>
+          </alternative_activation_cost>
+          <benefit_while_active>
+            <effect description="can_use_up_to_two_of_your_Metamagic_options_on_each_spell_you_cast"/>
+          </benefit_while_active>
+        </enhances_feature>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -379,6 +423,11 @@ Source:	Player's Handbook 2024 p. 141</text>
         <text>While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it.
 
 Source:	Player's Handbook 2024 p. 141</text>
+        <enhances_feature feature_name="Level 1: Innate Sorcery">
+          <benefit_while_active>
+            <effect description="can_use_one_Metamagic_option_on_each_of_your_turns_without_spending_Sorcery_Points_on_it"/>
+          </benefit_while_active>
+        </enhances_feature>
       </feature>
       <counter>
         <name>Sorcery Points</name>
@@ -396,6 +445,7 @@ An alien influence has wrapped its tendrils around your mind, giving you psionic
 	Perhaps a psychic wind from the Astral Plane carried psionic energy to you, or you were exposed to the Far Realm's warping influence. Alternatively, you were implanted with a mind flayer tadpole, but your transformation into a mind flayer never occurred; now the tadpole's psionic power is yours. However you acquired this power, your mind is aflame with it.
 
 Source:	Player's Handbook 2024 p. 145</text>
+        <subclass>Aberrant Sorcery</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Psionic Spells (Aberrant Sorcery)</name>
@@ -409,6 +459,18 @@ Sorcerer Level | Spells
 9 | Rory's Telepathic Bond, Telekinesis
 
 Source:	Player's Handbook 2024 p. 145</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <grants_always_prepared_spell name="Arms of Hadar" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Calm Emotions" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Detect Thoughts" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Dissonant Whispers" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Mind Sliver" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Hunger of Hadar" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Sending" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Evard's Black Tentacles" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Summon Aberration" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Rory's Telepathic Bond" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Telekinesis" level_gained_at="9"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Telepathic Speech (Aberrant Sorcery)</name>
@@ -416,6 +478,13 @@ Source:	Player's Handbook 2024 p. 145</text>
 	The telepathic connection lasts for a number of minutes equal to your Sorcerer level. It ends early if you use this ability to form a connection with a different creature.
 
 Source:	Player's Handbook 2024 p. 145</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <action type="BonusAction"/>
+        <target description="one_creature_you_can_see_within_30_feet"/>
+        <effect type="TelepathicCommunication" range_miles_formula="CHA_modifier_min_1" duration_minutes_formula="SorcererLevel">
+          <restriction text="to_understand_each_other_you_each_must_mentally_use_a_language_the_other_knows"/>
+          <ends_early_if condition="you_use_this_ability_to_form_a_connection_with_a_different_creature"/>
+        </effect>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -424,12 +493,21 @@ Source:	Player's Handbook 2024 p. 145</text>
         <text>When you cast any level 1+ spell from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, it requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost specified in it.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <trigger text="when_you_cast_any_level_1+_spell_from_your_Psionic_Spells_feature"/>
+        <alternative_casting_method>
+          <cost type="SorceryPoints" value_formula="spells_level"/>
+          <modifies_spell_components no_verbal="true" no_somatic="true" no_material_unless_consumed_or_costly="true"/>
+        </alternative_casting_method>
       </feature>
       <feature optional="YES">
         <name>Level 6: Psychic Defenses (Aberrant Sorcery)</name>
         <text>You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <effect type="Resistance" damage_types="Psychic"/>
+        <effect type="Advantage" on="saving_throws_to_avoid_or_end_Charmed_or_Frightened_condition"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -446,6 +524,29 @@ See the Invisible. You can see any Invisible creature within 60 feet of yourself
 Wormlike Movement. Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <action type="BonusAction"/>
+        <cost type="SorceryPoints" value_variable="1_or_more"/>
+        <effect type="Transformation" name="AberrantAlteration" duration="10_minutes">
+          <choice_of_benefits count_formula="SorceryPointsSpent">
+            <option name="Aquatic Adaptation">
+              <effect type="Speed" speed_type="Swim" value_formula="2*Speed"/>
+              <effect description="can_breathe_underwater_gills_grow_fingers_webbed_or_cilia_grow"/>
+            </option>
+            <option name="Glistening Flight">
+              <effect type="Speed" speed_type="Fly" value_formula="Speed"/>
+              <effect description="can_hover_skin_glistens_with_mucus_or_otherworldly_light"/>
+            </option>
+            <option name="See the Invisible">
+              <effect type="Sense" name="SeeInvisible" range="60_feet" condition="not_behind_Total_Cover"/>
+              <effect description="eyes_turn_black_or_become_writhing_sensory_tendrils"/>
+            </option>
+            <option name="Wormlike Movement">
+              <effect description="body_and_equipment_become_slimy_and_pliable_can_move_through_any_space_as_narrow_as_1_inch"/>
+              <effect description="can_spend_5_feet_of_movement_to_escape_from_nonmagical_restraints_or_Grappled_condition"/>
+            </option>
+          </choice_of_benefits>
+        </effect>
       </feature>
     </autolevel>
     <autolevel level="18">
@@ -456,6 +557,20 @@ Source:	Player's Handbook 2024 p. 146</text>
 Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Aberrant Sorcery</subclass>
+        <action type="MagicAction">
+          <effect type="Teleport" target="self" range="up_to_120_feet" destination="unoccupied_space_you_can_see"/>
+          <effect description="immediately_after_you_disappear_each_creature_within_30_feet_of_space_you_left_must_make_STR_save" save_dc="spell_save_DC">
+            <on_failed_save>
+              <effect type="Damage" damage_type="Force" value="3d10"/>
+              <effect type="Movement" target="creature" direction="pulled_straight_toward_space_you_left_ending_in_unoccupied_space_as_close_as_possible"/>
+            </on_failed_save>
+            <on_successful_save type="Damage" damage_type="Force" value="half_of_3d10"/>
+          </effect>
+        </action>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="SorceryPoints" value="5" action_type="NoAction"/>
       </feature>
     </autolevel>
     <!-- Sorcerer Subclass: Clockwork Sorcery -->
@@ -467,6 +582,7 @@ Source:	Player's Handbook 2024 p. 146</text>
 The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it- a plane of existence shaped entirely by clockwork efficiency. You or someone from your lineage might have become entangled in the machinations of modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it's part of a vast and glorious system.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Clockwork Sorcery</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Clockwork Spells (Clockwork Sorcery)</name>
@@ -491,6 +607,18 @@ Manifestations of Order:
 6 | The ticking of gears or ringing of a clock can be heard by you and those affected by your magic.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Clockwork Sorcery</subclass>
+        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Alarm" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Protection from Evil and Good" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Dispel Magic" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Protection from Energy" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Summon Construct" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Wall of Force" level_gained_at="9"/>
+        <choice name="ManifestationOfOrder" from_table="ManifestationsOfOrderTable" random_roll="1d6" description="manifests_while_casting_Sorcerer_spells"/>
         <roll description="Manifestation">1d6</roll>
       </feature>
       <feature optional="YES">
@@ -499,6 +627,12 @@ Source:	Player's Handbook 2024 p. 146</text>
 	You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 146</text>
+        <subclass>Clockwork Sorcery</subclass>
+        <action type="Reaction"/>
+        <trigger text="when_a_creature_you_can_see_within_60_feet_is_about_to_roll_a_d20_with_Advantage_or_Disadvantage"/>
+        <effect description="prevent_the_roll_from_being_affected_by_Advantage_and_Disadvantage"/>
+        <uses attribute="CHA" min="1"/>
+        <recharge type="LR"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -508,6 +642,19 @@ Source:	Player's Handbook 2024 p. 146</text>
 	The ward lasts until you finish a Long Rest or until you use this feature again.
 
 Source:	Player's Handbook 2024 p. 147</text>
+        <subclass>Clockwork Sorcery</subclass>
+        <action type="MagicAction"/>
+        <cost type="SorceryPoints" value_range="1-5"/>
+        <target_choice>
+          <option_target>self</option_target>
+          <option_target description="another_creature_you_can_see_within_30_feet"/>
+        </target_choice>
+        <effect type="CreateWard" name="MagicalWard" dice_count_formula="SorceryPointsSpent" die_type="d8" duration="until_LR_or_use_this_feature_again">
+          <ward_mechanic>
+            <trigger text="when_warded_creature_takes_damage"/>
+            <effect description="can_expend_a_number_of_those_dice_roll_them_and_reduce_damage_taken_by_total_rolled"/>
+          </ward_mechanic>
+        </effect>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -517,6 +664,17 @@ Source:	Player's Handbook 2024 p. 147</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 147</text>
+        <subclass>Clockwork Sorcery</subclass>
+        <action type="BonusAction"/>
+        <effect type="Buff" name="TranceOfOrderState" duration="1_minute">
+          <benefits>
+            <benefit description="attack_rolls_against_you_cant_benefit_from_Advantage"/>
+            <benefit description="whenever_you_make_a_D20_Test_you_can_treat_a_roll_of_9_or_lower_on_the_d20_as_a_10"/>
+          </benefits>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="SorceryPoints" value="5" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Trance of Order</name>
@@ -537,9 +695,27 @@ Repair. Any damaged objects entirely in the Cube are repaired instantly.
 Dispel. Every spell of level 6 and lower ends on creatures and objects of your choice in the Cube.
 
 Source:	Player's Handbook 2024 p. 147</text>
+        <subclass>Clockwork Sorcery</subclass>
+        <action type="MagicAction"/>
+        <effect type="SummonSpirits" name="SpiritsOfOrder" appearance="modrons_or_other_Constructs_of_your_choice" area="30_foot_Cube_originating_from_you" properties="intangible_invulnerable">
+          <effects_in_cube>
+            <effect_option name="Heal">
+              <effect type="Heal" value_total="100" target_description="divided_as_you_choose_among_any_number_of_creatures_of_your_choice_in_the_Cube"/>
+            </effect_option>
+            <effect_option name="Repair">
+              <effect description="any_damaged_objects_entirely_in_the_Cube_are_repaired_instantly"/>
+            </effect_option>
+            <effect_option name="Dispel">
+              <effect type="DispelMagic" max_spell_level="6" target_description="creatures_and_objects_of_your_choice_in_the_Cube"/>
+            </effect_option>
+          </effects_in_cube>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="SorceryPoints" value="7" action_type="NoAction"/>
       </feature>
       <counter>
-        <name>Warping Implosion</name>
+        <name>Warping Implosion</name> <!-- Incorrect counter name from previous file, should be Clockwork Cavalcade -->
         <value>1</value>
         <reset>L</reset>
         <subclass>Clockwork Sorcery</subclass>
@@ -554,6 +730,7 @@ Source:	Player's Handbook 2024 p. 147</text>
 Your innate magic comes from the gift of a dragon. Perhaps an ancient dragon facing death bequeathed some of its magical power to you or your ancestor. You might have absorbed magic from a site infused with dragons' power. Or perhaps you handled a treasure taken from a dragon's hoard that was steeped in draconic power. Or you might have a dragon for an ancestor.
 
 Source:	Player's Handbook 2024 p. 148</text>
+        <subclass>Draconic Sorcery</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Draconic Resilience (Draconic Sorcery)</name>
@@ -561,8 +738,13 @@ Source:	Player's Handbook 2024 p. 148</text>
 	Parts of you are also covered by dragon-like scales. While you aren't wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.
 
 Source:	Player's Handbook 2024 p. 148</text>
+        <subclass>Draconic Sorcery</subclass>
+        <effect type="HitPointMaximumIncrease" value_initial="3" value_per_level_after_this="1"/>
+        <modifier category="bonus">hp +3</modifier> <!-- Simple representation -->
+        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_armor">
+          <new_formula>10+DEX_modifier+CHA_modifier</new_formula>
+        </modifies_rule>
         <special>Unarmored Defense: Charisma</special>
-        <modifier category="bonus">hp +3</modifier>
       </feature>
       <feature optional="YES">
         <name>Level 3: Draconic Spells (Draconic Sorcery)</name>
@@ -576,6 +758,17 @@ Sorcerer Level | Spells
 9 | Legend Lore, Summon Dragon
 
 Source:	Player's Handbook 2024 p. 148</text>
+        <subclass>Draconic Sorcery</subclass>
+        <grants_always_prepared_spell name="Alter Self" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Chromatic Orb" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Command" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Dragon's Breath" level_gained_at="3"/>
+        <grants_always_prepared_spell name="Fear" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Fly" level_gained_at="5"/>
+        <grants_always_prepared_spell name="Arcane Eye" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Charm Monster" level_gained_at="7"/>
+        <grants_always_prepared_spell name="Legend Lore" level_gained_at="9"/>
+        <grants_always_prepared_spell name="Summon Dragon" level_gained_at="9"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -585,6 +778,11 @@ Source:	Player's Handbook 2024 p. 148</text>
 	You have Resistance to that damage type, and when you cast a spell that deals damage of that type, you can add your Charisma modifier to one damage roll of that spell.
 
 Source:	Player's Handbook 2024 p. 148</text>
+        <subclass>Draconic Sorcery</subclass>
+        <choice name="ElementalAffinityDamageType" from_list="Acid,Cold,Fire,Lightning,Poison" count="1"/>
+        <effect type="Resistance" damage_types="chosen_elemental_affinity_type"/>
+        <trigger text="when_you_cast_a_spell_that_deals_damage_of_chosen_type"/>
+        <effect type="DamageBonus" value_formula="CHA_modifier" on_roll_count="one"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -594,6 +792,14 @@ Source:	Player's Handbook 2024 p. 148</text>
 	Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 3 Sorcery Points (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 148</text>
+        <subclass>Draconic Sorcery</subclass>
+        <action type="BonusAction"/>
+        <effect description="cause_draconic_wings_to_appear_on_your_back" duration="1_hour_or_until_dismissed_no_action">
+          <benefit type="Speed" speed_type="Fly" value="60_feet"/>
+        </effect>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="SorceryPoints" value="3" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Dragon Wings</name>
@@ -609,6 +815,16 @@ Source:	Player's Handbook 2024 p. 148</text>
 	Whenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Draconic Sorcery</subclass>
+        <modifies_spell spell_name="Summon Dragon">
+          <can_cast_without_material_component="true"/>
+          <option_to_modify_casting>
+            <effect description="doesnt_require_Concentration_duration_becomes_1_minute"/>
+          </option_to_modify_casting>
+        </modifies_spell>
+        <uses fixed="1" for_casting_spell="Summon Dragon" without_slot="true">
+          <recharge type="LR"/>
+        </uses>
       </feature>
     </autolevel>
     <!-- Sorcerer Subclass: Wild Magic Sorcery -->
@@ -620,6 +836,7 @@ Source:	Player's Handbook 2024 p. 149</text>
 Your innate magic stems from the forces of chaos that underlie the order of creation. You or an ancestor might have endured exposure to raw magic, perhaps through a planar portal leading to Limbo or the Elemental Planes. Perhaps you were blessed by a fey being or marked by a demon. Or your magic could be a fluke with no apparent cause. Whatever its source, this magic churns within you, waiting for any outlet.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Wild Magic Sorcery</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Wild Magic Surge (Wild Magic Sorcery)</name>
@@ -627,6 +844,11 @@ Source:	Player's Handbook 2024 p. 149</text>
 	If the magical effect is a spell, it is too wild to be affected by your Metamagic.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Wild Magic Sorcery</subclass>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="immediately_after_you_cast_a_Sorcerer_spell_with_a_spell_slot"/>
+        <effect description="can_roll_1d20_If_you_roll_a_20_roll_on_Wild_Magic_Surge_table_to_create_magical_effect"/>
+        <restriction text="if_magical_effect_is_a_spell_it_is_too_wild_to_be_affected_by_your_Metamagic"/>
       </feature>
       <feature optional="YES">
         <name>Level 3: Tides of Chaos (Wild Magic Sorcery)</name>
@@ -634,6 +856,13 @@ Source:	Player's Handbook 2024 p. 149</text>
 	If you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the Wild Magic Surge table.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Wild Magic Sorcery</subclass>
+        <effect type="Advantage" on="one_D20_Test_before_you_roll_d20"/>
+        <uses fixed="1"/>
+        <recharge type="Special" description="must_cast_a_Sorcerer_spell_with_a_spell_slot_or_finish_a_Long_Rest"/>
+        <trigger text="if_you_cast_a_Sorcerer_spell_with_a_spell_slot_before_you_finish_a_Long_Rest_after_using_Tides_of_Chaos">
+          <effect description="automatically_roll_on_the_Wild_Magic_Surge_table"/>
+        </trigger>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -642,6 +871,11 @@ Source:	Player's Handbook 2024 p. 149</text>
         <text>You have the ability to twist fate using your wild magic. Immediately after another creature you can see rolls the d20 for a D20 Test, you can take a Reaction and spend 1 Sorcery Point to roll 1d4 and apply t he number rolled as a bonus or penalty (your choice) to the d20 roll.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Wild Magic Sorcery</subclass>
+        <action type="Reaction"/>
+        <trigger text="immediately_after_another_creature_you_can_see_rolls_the_d20_for_a_D20_Test"/>
+        <cost resource="SorceryPoints" value="1"/>
+        <effect description="roll_1d4_and_apply_the_number_rolled_as_a_bonus_or_penalty_your_choice_to_the_d20_roll"/>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -650,6 +884,11 @@ Source:	Player's Handbook 2024 p. 149</text>
         <text>You gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.
 
 Source:	Player's Handbook 2024 p. 149</text>
+        <subclass>Wild Magic Sorcery</subclass>
+        <enhances_feature feature_name="Level 3: Wild Magic Surge (Wild Magic Sorcery)">
+          <trigger text="whenever_you_roll_on_the_Wild_Magic_Surge_table"/>
+          <effect description="can_roll_twice_and_use_either_number"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="18">
@@ -659,6 +898,11 @@ Source:	Player's Handbook 2024 p. 149</text>
 	Once you use this feature, you can't do so again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 150</text>
+        <subclass>Wild Magic Sorcery</subclass>
+        <trigger text="immediately_after_you_cast_a_Sorcerer_spell_with_a_spell_slot"/>
+        <effect description="can_create_an_effect_of_your_choice_from_the_Wild_Magic_Surge_table_instead_of_rolling_cannot_choose_final_row_if_chosen_effect_involves_roll_must_make_it"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Tamed Surge</name>

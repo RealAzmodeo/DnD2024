@@ -114,6 +114,12 @@ Source:	Player's Handbook 2024 p. 129</text>
 	The extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table.
 
 Source:	Player's Handbook 2024 p. 129</text>
+        <uses fixed="1" per_turn="true"/>
+        <trigger text="when_you_hit_with_an_attack_roll_using_Finesse_or_Ranged_weapon"/>
+        <condition text="you_have_Advantage_on_the_roll"/>
+        <alternative_condition text="at_least_one_ally_is_within_5ft_of_target_ally_not_incapacitated_and_you_dont_have_Disadvantage"/>
+        <effect description="deal_extra_1d6_damage_type_same_as_weapon"/>
+        <!-- Extra damage scaling is in a table, typically handled by application logic -->
       </feature>
       <feature>
         <name>Level 1: Thieves' Cant</name>
@@ -127,6 +133,7 @@ Source:	Player's Handbook 2024 p. 129</text>
 	Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.
 
 Source:	Player's Handbook 2024 p. 129</text>
+        <recharge type="LR"/> <!-- For changing weapon choices -->
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -135,6 +142,8 @@ Source:	Player's Handbook 2024 p. 129</text>
         <text>Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <action type="BonusAction"/>
+        <!-- Options (Dash, Disengage, Hide) are listed in text -->
       </feature>
     </autolevel>
     <autolevel level="3">
@@ -149,6 +158,10 @@ Source:	Player's Handbook 2024 p. 130</text>
         <text>As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <action type="BonusAction"/>
+        <grants_advantage condition="next_attack_roll_current_turn"/>
+        <restriction text="only_if_not_moved_this_turn"/>
+        <effect description="speed_is_0_until_end_of_current_turn_after_use"/>
       </feature>
     </autolevel>
     <autolevel level="4" scoreImprovement="YES">
@@ -173,12 +186,35 @@ Trip (Cost: 1d6). If the target is Large or smaller, it must succeed on a Dexter
 Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.
 
 Source:	Player's Handbook 2024 p. 130</text>
+        <trigger text="when_you_deal_Sneak_Attack_damage"/>
+        <options>
+          <option name="Poison">
+            <text_description>You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.</text_description>
+            <cost type="SneakAttackDice" value="1"/>
+            <requires item="Poisoner's Kit"/>
+            <effect type="Condition" name="Poisoned" duration="1_minute" save_type="CON" save_timing="end_of_target_turn" save_ends_effect="true" dc="8+DEX+PROF"/>
+          </option>
+          <option name="Trip">
+            <text_description>If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</text_description>
+            <cost type="SneakAttackDice" value="1"/>
+            <effect type="Condition" name="Prone" condition="target_Large_or_smaller_fails_DEX_save" dc="8+DEX+PROF"/>
+          </option>
+          <option name="Withdraw">
+            <text_description>Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</text_description>
+            <cost type="SneakAttackDice" value="1"/>
+            <effect type="Movement" value="half_speed" does_not_provoke_opportunity_attacks="true"/>
+            <ignores rule="OpportunityAttacks_for_this_movement"/>
+          </option>
+        </options>
       </feature>
       <feature>
         <name>Level 5: Uncanny Dodge</name>
         <text>When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down).
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <action type="Reaction"/>
+        <trigger text="when_attacker_you_can_see_hits_you_with_attack_roll"/>
+        <effect description="halve_attack_damage_against_you"/>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -187,12 +223,17 @@ Source:	Player's Handbook 2024 p. 131</text>
         <text>You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <trigger text="when_subjected_to_an_effect_that_allows_DEX_save_for_half_damage"/>
+        <modifies_effect original_success="half_damage" original_fail="half_damage" new_success="no_damage" new_fail="half_damage"/>
+        <restriction text="cant_use_if_incapacitated"/>
       </feature>
       <feature>
         <name>Level 7: Reliable Talent</name>
         <text>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <trigger text="whenever_you_make_an_ability_check_that_uses_one_of_your_skill_or_tool_proficiencies"/>
+        <effect description="treat_a_d20_roll_of_9_or_lower_as_a_10"/>
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -217,6 +258,9 @@ Source:	Player's Handbook 2024 p. 130</text>
         <text>You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <enhances_feature feature_name="Cunning Strike">
+          <effect description="can_use_up_to_two_Cunning_Strike_effects_when_you_deal_Sneak_Attack_damage_paying_cost_for_each"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="12" scoreImprovement="YES">
@@ -239,6 +283,23 @@ Knock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, o
 Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <adds_options_to feature_name="Cunning Strike">
+          <option name="Daze">
+            <text_description>The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</text_description>
+            <cost type="SneakAttackDice" value="2"/>
+            <effect description="on_failed_CON_save_target_can_only_move_OR_action_OR_bonus_action_next_turn" dc="8+DEX+PROF"/>
+          </option>
+          <option name="Knock Out">
+            <text_description>The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</text_description>
+            <cost type="SneakAttackDice" value="6"/>
+            <effect type="Condition" name="Unconscious" duration="1_minute_or_until_damage_taken" save_type="CON" save_timing="end_of_target_turn" save_ends_effect="true" dc="8+DEX+PROF"/>
+          </option>
+          <option name="Obscure">
+            <text_description>The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</text_description>
+            <cost type="SneakAttackDice" value="3"/>
+            <effect type="Condition" name="Blinded" duration="end_of_targets_next_turn" save_type="DEX" dc="8+DEX+PROF"/>
+          </option>
+        </adds_options_to>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -248,6 +309,7 @@ Source:	Player's Handbook 2024 p. 131</text>
 
 Source:	Player's Handbook 2024 p. 131</text>
         <proficiency>wisdom, charisma</proficiency>
+        <!-- This is already machine readable, but could be <grants_proficiency type="SavingThrow" name="Wisdom"/> etc. -->
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -264,6 +326,8 @@ Source:	Player's Handbook 2024 p. 130</text>
         <text>You're so evasive that attackers rarely gain the upper hand against you. No attack roll can have Advantage against you unless you have the Incapacitated condition.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <effect description="no_attack_roll_can_have_Advantage_against_you"/>
+        <restriction text="unless_you_have_Incapacitated_condition"/>
       </feature>
     </autolevel>
     <autolevel level="19">
@@ -281,11 +345,15 @@ Source:	Player's Handbook 2024 p. 131</text>
 	Once you use this feature, you can't use it again until you finish a Short or Long Rest.
 
 Source:	Player's Handbook 2024 p. 131</text>
+        <trigger text="if_you_fail_a_D20_Test"/>
+        <effect description="turn_the_roll_into_a_20"/>
+        <uses fixed="1"/>
+        <recharge type="SR_or_LR"/>
       </feature>
       <counter>
         <name>Stroke of Luck</name>
         <value>1</value>
-        <reset>S</reset>
+        <reset>S</reset> <!-- Text says SR or LR; recharge tag is more accurate -->
       </counter>
     </autolevel>
     <!-- Rogue Subclass: Arcane Trickster -->
@@ -297,6 +365,7 @@ Source:	Player's Handbook 2024 p. 131</text>
 Some Rogues enhance their fine-honed skills of stealth and agility with spells, learning magical tricks to aid them in their trade. Some Arcane Tricksters use their talents as pickpockets and burglars, while others are pranksters.
 
 Source:	Player's Handbook 2024 p. 132</text>
+        <subclass>Arcane Trickster</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Spellcasting (Arcane Trickster)</name>
@@ -332,12 +401,24 @@ Level | Prepared Spells
 20 | 13
 
 Source:	Player's Handbook 2024 p. 132</text>
+        <subclass>Arcane Trickster</subclass>
+        <!-- Spellcasting details are complex and often application-specific.
+             Key elements like spell ability (Intelligence) and slotsReset (L - from class top) are present.
+             The prepared spells table is in text.
+        -->
       </feature>
       <feature optional="YES">
         <name>Level 3: Mage Hand Legerdemain (Arcane Trickster)</name>
         <text>When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.
 
 Source:	Player's Handbook 2024 p. 133</text>
+        <subclass>Arcane Trickster</subclass>
+        <modifies_spell spell_name="Mage Hand">
+          <benefit description="can_cast_as_Bonus_Action"/>
+          <benefit description="can_make_spectral_hand_Invisible"/>
+          <benefit description="can_control_hand_as_Bonus_Action"/>
+          <benefit description="can_make_Dexterity_Sleight_of_Hand_checks_through_it"/>
+        </modifies_spell>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -346,6 +427,9 @@ Source:	Player's Handbook 2024 p. 133</text>
         <text>If you have the Invisible condition when you cast a spell on a creature, it has Disadvantage on any saving throw it makes against the spell on the same turn.
 
 Source:	Player's Handbook 2024 p. 133</text>
+        <subclass>Arcane Trickster</subclass>
+        <condition text="if_you_have_the_Invisible_condition_when_you_cast_a_spell_on_a_creature"/>
+        <imposes_disadvantage condition="on_any_saving_throw_it_makes_against_the_spell_on_the_same_turn"/>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -354,6 +438,11 @@ Source:	Player's Handbook 2024 p. 133</text>
         <text>You gain the ability to distract targets with your Mage Hand. When you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.
 
 Source:	Player's Handbook 2024 p. 133</text>
+        <subclass>Arcane Trickster</subclass>
+        <enhances_feature feature_name="Cunning Strike" option_name="Trip">
+          <trigger text="when_you_use_Trip_option_of_Cunning_Strike_on_a_creature"/>
+          <effect description="can_also_use_that_option_on_another_creature_within_5_feet_of_the_spectral_hand"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -364,6 +453,13 @@ Source:	Player's Handbook 2024 p. 133</text>
 	Once you steal a spell with this feature. you can't use this feature again until you finish a Long Rest.
 
 Source:	Player's Handbook 2024 p. 133</text>
+        <subclass>Arcane Trickster</subclass>
+        <action type="Reaction"/>
+        <trigger text="immediately_after_a_creature_casts_a_spell_that_targets_you_or_includes_you_in_its_area_of_effect"/>
+        <effect description="force_the_creature_to_make_an_Intelligence_saving_throw_DC_equals_your_spell_save_DC"/>
+        <on_failed_save description="negate_the_spells_effect_against_you_AND_steal_the_knowledge_of_the_spell_if_it_is_at_least_level_1_and_of_a_level_you_can_cast_it_doesnt_need_to_be_Wizard_spell_For_the_next_8_hours_you_have_the_spell_prepared_The_creature_cant_cast_it_until_the_8_hours_have_passed"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
       </feature>
       <counter>
         <name>Spell Thief</name>
@@ -381,6 +477,7 @@ Source:	Player's Handbook 2024 p. 133</text>
 An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Assassinate (Assassin)</name>
@@ -391,12 +488,28 @@ Initiative. You have Advantage on Initiative rolls.
 Surprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
+        <benefits>
+          <benefit name="Initiative">
+            <grants_advantage condition="on_Initiative_rolls"/>
+          </benefit>
+          <benefit name="Surprising Strikes">
+            <trigger text="during_the_first_round_of_each_combat"/>
+            <grants_advantage condition="on_attack_rolls_against_any_creature_that_hasnt_taken_a_turn"/>
+            <effect description="if_Sneak_Attack_hits_any_target_during_that_round_target_takes_extra_damage_of_weapon_type_equal_to_Rogue_level"/>
+          </benefit>
+        </benefits>
       </feature>
       <feature optional="YES">
         <name>Level 3: Assassin's Tools (Assassin)</name>
         <text>You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
+        <grants_item name="Disguise Kit"/>
+        <grants_item name="Poisoner's Kit"/>
+        <grants_proficiency type="Tool" name="Disguise Kit"/>
+        <grants_proficiency type="Tool" name="Poisoner's Kit"/>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -409,6 +522,19 @@ Masterful Mimicry. You can unerringly mimic another person's speech, handwriting
 Roving Aim. Your Speed isn't reduced to 0 by using Steady Aim.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
+        <benefits>
+          <benefit name="Masterful Mimicry">
+            <condition text="after_spending_at_least_1_hour_studying_another_persons_speech_handwriting_or_both"/>
+            <effect description="can_unerringly_mimic_that_persons_speech_handwriting_or_both"/>
+          </benefit>
+          <benefit name="Roving Aim">
+            <modifies_feature feature_name="Steady Aim">
+              <effect description="your_Speed_isnt_reduced_to_0_by_using_Steady_Aim"/>
+              <ignores rule="SteadyAim_speed_reduction_to_0"/>
+            </modifies_feature>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -417,6 +543,12 @@ Source:	Player's Handbook 2024 p. 134</text>
         <text>When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
+        <enhances_feature feature_name="Cunning Strike" option_name="Poison">
+          <trigger text="when_you_use_the_Poison_option_of_Cunning_Strike_and_the_target_fails_the_saving_throw"/>
+          <effect description="target_also_takes_2d6_Poison_damage"/>
+          <ignores rule="Resistance_to_Poison_damage_for_this_2d6_damage"/>
+        </enhances_feature>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -425,6 +557,9 @@ Source:	Player's Handbook 2024 p. 134</text>
         <text>When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.
 
 Source:	Player's Handbook 2024 p. 134</text>
+        <subclass>Assassin</subclass>
+        <trigger text="when_you_hit_with_your_Sneak_Attack_on_the_first_round_of_a_combat"/>
+        <effect description="target_must_succeed_on_a_Constitution_saving_throw_DC_8+DEX+PROF_or_the_attacks_damage_is_doubled_against_the_target"/>
       </feature>
     </autolevel>
     <!-- Rogue Subclass: Soulknife -->
@@ -436,6 +571,7 @@ Source:	Player's Handbook 2024 p. 134</text>
 A Soulknife strikes with t he mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, revealing their full potential only as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power.
 
 Source:	Player's Handbook 2024 p. 135</text>
+        <subclass>Soulknife</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Psionic Power (Soulknife)</name>
@@ -459,6 +595,31 @@ Psychic Whispers. You can establish telepathic communication between yourself an
 	The first time you use this power after each Long Rest, you don't expend the Psionic Energy Die. All other times you use the power, you expend the die.
 
 Source:	Player's Handbook 2024 p. 135</text>
+        <subclass>Soulknife</subclass>
+        <resource name="Psionic Energy Dice">
+          <scaling_table>
+            <level val="3" die_size="d6" number="4"/>
+            <level val="5" die_size="d8" number="6"/>
+            <level val="9" die_size="d8" number="8"/>
+            <level val="11" die_size="d10" number="8"/>
+            <level val="13" die_size="d10" number="10"/>
+            <level val="17" die_size="d12" number="12"/>
+          </scaling_table>
+          <recharge type="1_per_SR_all_per_LR"/>
+        </resource>
+        <abilities>
+          <ability name="Psi-Bolstered Knack">
+            <trigger text="if_you_fail_an_ability_check_using_a_skill_or_tool_with_which_you_have_proficiency"/>
+            <action type="NoAction"/> <!-- Part of the failed check -->
+            <effect description="roll_one_Psionic_Energy_Die_and_add_number_rolled_to_the_check_potentially_turning_failure_into_success"/>
+            <cost type="PsionicEnergyDie" value="1" expended_only_if_roll_then_succeeds="true"/>
+          </ability>
+          <ability name="Psychic Whispers">
+            <action type="MagicAction"/>
+            <effect description="choose_one_or_more_creatures_you_can_see_up_to_a_number_of_creatures_equal_to_your_Proficiency_Bonus_and_then_roll_one_Psionic_Energy_Die_For_a_number_of_hours_equal_to_the_number_rolled_the_chosen_creatures_can_speak_telepathically_with_you_and_you_can_speak_telepathically_with_them_To_send_or_receive_a_message_no_action_required_you_and_the_other_creature_must_be_within_1_mile_of_each_other_A_creature_can_end_the_telepathic_connection_at_any_time_no_action_required"/>
+            <uses type="Special" description="first_time_you_use_this_power_after_each_Long_Rest_you_dont_expend_the_Psionic_Energy_Die_All_other_times_you_use_the_power_you_expend_the_die"/>
+          </ability>
+        </abilities>
       </feature>
       <feature optional="YES">
         <name>Level 3: Psychic Blades (Soulknife)</name>
@@ -473,21 +634,38 @@ The blade vanishes immediately after it hits or misses its target, and it leaves
 	After you attack with the blade on your turn, you can make a melee or ranged attack with a second psychic blade as a Bonus Action on the same turn if your other hand is free to create it. The damage die of this bonus attack is 1d4 instead of 1d6.
 
 Source:	Player's Handbook 2024 p. 136</text>
+        <subclass>Soulknife</subclass>
+        <trigger text="whenever_you_take_the_Attack_action_or_make_an_Opportunity_Attack"/>
+        <effect description="can_manifest_a_Psychic_Blade_in_your_free_hand_and_make_the_attack_with_that_blade"/>
+        <weapon_properties name="Psychic Blade">
+          <category>Simple Melee</category>
+          <damage type="Psychic">1d6 + ability_modifier_used_for_attack_roll</damage>
+          <properties>Finesse, Thrown (range 60/120 feet)</properties>
+          <mastery name="Vex" note="you_can_use_this_property_and_it_doesnt_count_against_the_number_of_properties_you_can_use_with_Weapon_Mastery"/>
+        </weapon_properties>
+        <effect description="blade_vanishes_immediately_after_it_hits_or_misses_its_target_and_it_leaves_no_mark_if_it_deals_damage"/>
+        <related_ability>
+          <name>Bonus Action Psychic Blade Attack</name>
+          <action type="BonusAction"/>
+          <condition text="after_you_attack_with_the_blade_on_your_turn_if_your_other_hand_is_free_to_create_it"/>
+          <effect description="make_a_melee_or_ranged_attack_with_a_second_psychic_blade"/>
+          <damage type="Psychic" dice="1d4"/>
+        </related_ability>
         <roll description="Psychic Damage">1d6</roll>
         <roll description="Psychic Damage">1d4</roll>
       </feature>
       <counter>
         <name>Psionic Energy Dice</name>
-        <value>4</value>
-        <reset>L</reset>
+        <value>4</value> <!-- Value should reflect Psionic Power table and current level -->
+        <reset>L</reset> <!-- Recharge is 1/SR, all/LR per Psionic Power text -->
         <subclass>Soulknife</subclass>
       </counter>
     </autolevel>
     <autolevel level="5">
       <counter>
         <name>Psionic Energy Dice</name>
-        <value>6</value>
-        <reset>L</reset>
+        <value>6</value> <!-- Value should reflect Psionic Power table and current level -->
+        <reset>L</reset> <!-- Recharge is 1/SR, all/LR per Psionic Power text -->
         <subclass>Soulknife</subclass>
       </counter>
     </autolevel>
@@ -501,11 +679,27 @@ Homing Strikes. If you make an attack roll with your Psychic Blade and miss the 
 Psychic Teleportation. As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.
 
 Source:	Player's Handbook 2024 p. 136</text>
+        <subclass>Soulknife</subclass>
+        <enhances_feature feature_name="Psychic Blades">
+          <abilities>
+            <ability name="Homing Strikes">
+              <trigger text="if_you_make_an_attack_roll_with_your_Psychic_Blade_and_miss_the_target"/>
+              <action type="NoAction"/> <!-- Part of the miss -->
+              <effect description="roll_one_Psionic_Energy_Die_and_add_the_number_rolled_to_the_attack_roll"/>
+              <cost type="PsionicEnergyDie" value="1" expended_only_if_this_causes_the_attack_to_hit="true"/>
+            </ability>
+            <ability name="Psychic Teleportation">
+              <action type="BonusAction"/>
+              <effect description="manifest_a_Psychic_Blade_expend_one_Psionic_Energy_Die_and_roll_it_and_throw_the_blade_at_an_unoccupied_space_you_can_see_up_to_a_number_of_feet_away_equal_to_10_times_the_number_rolled_You_then_teleport_to_that_space_and_the_blade_vanishes"/>
+              <cost type="PsionicEnergyDie" value="1"/>
+            </ability>
+          </abilities>
+        </enhances_feature>
       </feature>
       <counter>
         <name>Psionic Energy Dice</name>
-        <value>8</value>
-        <reset>L</reset>
+        <value>8</value> <!-- Value should reflect Psionic Power table and current level -->
+        <reset>L</reset> <!-- Recharge is 1/SR, all/LR per Psionic Power text -->
         <subclass>Soulknife</subclass>
       </counter>
     </autolevel>
@@ -516,11 +710,18 @@ Source:	Player's Handbook 2024 p. 136</text>
 	Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 136</text>
+        <subclass>Soulknife</subclass>
+        <action type="MagicAction"/>
+        <effect type="Condition" name="Invisible" duration="1_hour_or_until_dismissed_no_action_required"/>
+        <condition_ends_early text="immediately_after_you_deal_damage_to_a_creature_or_you_force_a_creature_to_make_a_saving_throw"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="PsionicEnergyDie" value="1" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Psionic Energy Dice</name>
-        <value>10</value>
-        <reset>L</reset>
+        <value>10</value> <!-- Value should reflect Psionic Power table and current level -->
+        <reset>L</reset> <!-- Recharge is 1/SR, all/LR per Psionic Power text -->
         <subclass>Soulknife</subclass>
       </counter>
       <counter>
@@ -537,6 +738,13 @@ Source:	Player's Handbook 2024 p. 136</text>
 	Once you use this feature, you can't do so again until you finish a Long Rest unless you expend three Psionic Energy Dice (no action required) to restore your use of it.
 
 Source:	Player's Handbook 2024 p. 136</text>
+        <subclass>Soulknife</subclass>
+        <trigger text="when_you_use_your_Psychic_Blades_to_deal_Sneak_Attack_damage_to_a_creature"/>
+        <effect description="force_that_target_to_make_a_Wisdom_saving_throw_DC_8+DEX+PROF"/>
+        <on_failed_save type="Condition" name="Stunned" duration="1_minute" save_type="WIS" save_timing="end_of_target_turn" save_ends_effect="true"/>
+        <uses fixed="1"/>
+        <recharge type="LR"/>
+        <can_reuse_by_expending resource="PsionicEnergyDie" value="3" action_type="NoAction"/>
       </feature>
       <counter>
         <name>Rend Mind</name>
@@ -546,8 +754,8 @@ Source:	Player's Handbook 2024 p. 136</text>
       </counter>
       <counter>
         <name>Psionic Energy Dice</name>
-        <value>12</value>
-        <reset>L</reset>
+        <value>12</value> <!-- Value should reflect Psionic Power table and current level -->
+        <reset>L</reset> <!-- Recharge is 1/SR, all/LR per Psionic Power text -->
         <subclass>Soulknife</subclass>
       </counter>
     </autolevel>
@@ -560,6 +768,7 @@ Source:	Player's Handbook 2024 p. 136</text>
 A mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. In addition to improving your agility and stealth, you gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there.
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
       </feature>
       <feature optional="YES">
         <name>Level 3: Fast Hands (Thief)</name>
@@ -570,6 +779,17 @@ Sleight of Hand. Make a Dexterity (Sleight of Hand) check to pick a lock or disa
 Use an Object. Take the Utilize action, or take the Magic action to use a magic item that requires that action..
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
+        <action type="BonusAction">
+          <options>
+            <option name="Sleight of Hand">
+              <effect description="Make_a_Dexterity_Sleight_of_Hand_check_to_pick_a_lock_or_disarm_a_trap_with_Thieves_Tools_or_to_pick_a_pocket"/>
+            </option>
+            <option name="Use an Object">
+              <effect description="Take_the_Utilize_action_or_take_the_Magic_action_to_use_a_magic_item_that_requires_that_action"/>
+            </option>
+          </options>
+        </action>
       </feature>
       <feature optional="YES">
         <name>Level 3: Second- Story Work (Thief)</name>
@@ -580,6 +800,15 @@ Climber. You gain a Climb Speed equal to your Speed.
 Jumper. You can determine your jump distance using your Dexterity rather than your Strength.
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
+        <benefits>
+          <benefit name="Climber">
+            <effect description="gain_a_Climb_Speed_equal_to_your_Speed"/>
+          </benefit>
+          <benefit name="Jumper">
+            <modifies_rule rule="jump_distance_calculation" new_basis="Dexterity_rather_than_Strength"/>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -590,6 +819,15 @@ Source:	Player's Handbook 2024 p. 137</text>
 Stealth Attack (Cost: 1d6). If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
+        <adds_options_to feature_name="Cunning Strike">
+          <option name="Stealth Attack">
+            <text_description>If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.</text_description>
+            <cost type="SneakAttackDice" value="1"/>
+            <condition text="if_you_have_the_Hide_actions_Invisible_condition_AND_you_end_the_turn_behind_Three_Quarters_Cover_or_Total_Cover"/>
+            <effect description="this_attack_doesnt_end_that_Invisible_condition_on_you"/>
+          </option>
+        </adds_options_to>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -604,6 +842,22 @@ Charges. Whenever you use a magic item property that expends charges, roll 1d6. 
 Scrolls. You can use any Spell Scroll, using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence (Arcana) check (DC 10 plus the spell's level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates.
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
+        <benefits>
+          <benefit name="Attunement">
+            <modifies_rule rule="magic_item_attunement_limit" new_value="4_magic_items"/>
+          </benefit>
+          <benefit name="Charges">
+            <trigger text="whenever_you_use_a_magic_item_property_that_expends_charges"/>
+            <effect description="roll_1d6_On_a_roll_of_6_you_use_the_property_without_expending_the_charges"/>
+          </benefit>
+          <benefit name="Scrolls">
+            <effect description="can_use_any_Spell_Scroll_using_Intelligence_as_spellcasting_ability"/>
+            <condition text="if_spell_on_scroll_is_cantrip_or_level_1_you_cast_it_reliably"/>
+            <condition text="if_scroll_contains_higher_level_spell_must_succeed_on_INT_Arcana_check_DC_10+spell_level_to_cast"/>
+            <on_failed_check description="if_INT_Arcana_check_for_higher_level_spell_fails_scroll_disintegrates"/>
+          </benefit>
+        </benefits>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -612,6 +866,9 @@ Source:	Player's Handbook 2024 p. 137</text>
         <text>You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.
 
 Source:	Player's Handbook 2024 p. 137</text>
+        <subclass>Thief</subclass>
+        <trigger text="during_the_first_round_of_any_combat"/>
+        <effect description="can_take_two_turns_first_turn_at_normal_Initiative_second_turn_at_Initiative_minus_10"/>
       </feature>
     </autolevel>
   </class>
