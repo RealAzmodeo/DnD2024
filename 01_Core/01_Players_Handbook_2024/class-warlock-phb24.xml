@@ -206,14 +206,14 @@ Source:	Player's Handbook 2024 p. 154</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="6">
-      <counter>
-        <name>Clairvoyant Combatant</name> <!-- This seems to be a leftover from another class file, Warlocks don't have this. -->
-        <value>1</value>
-        <reset>S</reset>
-      </counter>
+      <!-- Removed errant Clairvoyant Combatant counter -->
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
       <feature>
@@ -221,6 +221,10 @@ Source:	Player's Handbook 2024 p. 155</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -273,6 +277,10 @@ Source:	Player's Handbook 2024 p. 155</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -303,6 +311,10 @@ Source:	Player's Handbook 2024 p. 155</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 155</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -359,17 +371,28 @@ Warlock Level | Spells
 
 Source:	Player's Handbook 2024 p. 159</text>
         <subclass>Archfey Patron</subclass>
-        <grants_always_prepared_spell name="Calm Emotions" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Faerie Fire" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Misty Step" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Phantasmal Force" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Sleep" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Blink" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Plant Growth" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Dominate Beast" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Greater Invisibility" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Dominate Person" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Seeming" level_gained_at="9"/>
+        <inline_table name="Archfey Spells">
+          <header>
+            <col label="Warlock Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Calm Emotions, Faerie Fire, Misty Step, Phantasmal Force, Sleep"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Blink, Plant Growth"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Dominate Beast, Greater Invisibility"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Dominate Person, Seeming"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Steps of the Fey (Archfey Patron)</name>
@@ -490,18 +513,28 @@ Warlock Level | Spells
 
 Source:	Player's Handbook 2024 p. 160</text>
         <subclass>Celestial Patron</subclass>
-        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Cure Wounds" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Guiding Bolt" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Light" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Sacred Flame" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Daylight" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Revivify" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Guardian of Faith" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Summon Celestial" level_gained_at="9"/>
+        <inline_table name="Celestial Spells">
+          <header>
+            <col label="Warlock Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Daylight, Revivify"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Guardian of Faith, Wall of Fire"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Greater Restoration, Summon Celestial"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Healing Light (Celestial Patron)</name>
@@ -740,16 +773,28 @@ Warlock Level | Spells
 
 Source:	Player's Handbook 2024 p. 161</text>
         <subclass>Fiend Patron</subclass>
-        <grants_always_prepared_spell name="Burning Hands" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Command" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Scorching Ray" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Suggestion" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Fireball" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Stinking Cloud" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Fire Shield" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Geas" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Insect Plague" level_gained_at="9"/>
+        <inline_table name="Fiend Spells">
+          <header>
+            <col label="Warlock Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Burning Hands, Command, Scorching Ray, Suggestion"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Fireball, Stinking Cloud"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Fire Shield, Wall of Fire"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Geas, Insect Plague"/>
+          </row>
+        </inline_table>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -846,16 +891,28 @@ Warlock Level | Spells
 
 Source:	Player's Handbook 2024 p. 163</text>
         <subclass>Great Old One Patron</subclass>
-        <grants_always_prepared_spell name="Detect Thoughts" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Dissonant Whispers" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Phantasmal Force" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Tasha's Hideous Laughter" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Clairvoyance" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Hunger of Hadar" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Confusion" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Summon Aberration" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Modify Memory" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Telekinesis" level_gained_at="9"/>
+        <inline_table name="Great Old One Spells">
+          <header>
+            <col label="Warlock Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Detect Thoughts, Dissonant Whispers, Phantasmal Force, Tasha's Hideous Laughter"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Clairvoyance, Hunger of Hadar"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Confusion, Summon Aberration"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Modify Memory, Telekinesis"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Psychic Spells (Great Old One Patron)</name>

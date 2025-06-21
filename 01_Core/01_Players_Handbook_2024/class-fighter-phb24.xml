@@ -186,6 +186,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Second Wind</name>
@@ -218,6 +222,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
@@ -226,6 +234,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -279,6 +291,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="13">
@@ -302,6 +318,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -310,6 +330,10 @@ Source:	Player's Handbook 2024 p. 92</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 Source:	Player's Handbook 2024 p. 92</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -804,9 +828,9 @@ Source:	Player's Handbook 2024 p. 99</text>
       </feature>
     </autolevel>
     <autolevel level="9">
-      <counter> <!-- Note: This counter seems to be for Psionic Energy Dice. The value should be 8 based on the table. -->
+      <counter>
         <name>Psionic Energy Dice</name>
-        <value>6</value> <!-- Should be 8 based on Psi Warrior Energy Dice table in Psionic Power feature -->
+        <value>8</value>
         <reset>L</reset>
         <subclass>Psi Warrior</subclass>
       </counter>

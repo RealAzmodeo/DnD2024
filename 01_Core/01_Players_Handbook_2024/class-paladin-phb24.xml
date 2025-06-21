@@ -250,7 +250,7 @@ Source:	Player's Handbook 2024 p. 111</text>
       <counter>
         <name>Channel Divinity</name>
         <value>2</value>
-        <reset>L</reset> <!-- Should be SR/LR based on text -->
+        <reset>S</reset> <!-- Changed from L to S, full rule is 1/SR, all/LR -->
       </counter>
       <counter>
         <name>Lay on Hands</name>
@@ -264,6 +264,10 @@ Source:	Player's Handbook 2024 p. 111</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 111</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -335,6 +339,10 @@ Source:	Player's Handbook 2024 p. 111</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 111</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -396,7 +404,7 @@ Source:	Player's Handbook 2024 p. 111</text>
       <counter>
         <name>Channel Divinity</name>
         <value>3</value>
-        <reset>L</reset> <!-- Should be SR/LR -->
+        <reset>S</reset> <!-- Changed from L to S, full rule is 1/SR, all/LR -->
       </counter>
       <counter>
         <name>Lay on Hands</name>
@@ -410,6 +418,10 @@ Source:	Player's Handbook 2024 p. 111</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 111</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -455,6 +467,10 @@ Source:	Player's Handbook 2024 p. 111</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 111</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -536,16 +552,32 @@ Paladin Level | Spells
 
 Source:	Player's Handbook 2024 p. 113</text>
         <subclass>Oath of Devotion</subclass>
-        <grants_always_prepared_spell name="Protection from Evil and Good" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Shield of Faith" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Aid" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Zone of Truth" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Beacon of Hope" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Dispel Magic" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Guardian of Faith" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Commune" level_gained_at="17"/>
-        <grants_always_prepared_spell name="Flame Strike" level_gained_at="17"/>
+        <inline_table name="Oath of Devotion Spells">
+          <header>
+            <col label="Paladin Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Protection from Evil and Good, Shield of Faith"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Aid, Zone of Truth"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Beacon of Hope, Dispel Magic"/>
+          </row>
+          <row>
+            <cell value="13"/>
+            <cell value="Freedom of Movement, Guardian of Faith"/>
+          </row>
+          <row>
+            <cell value="17"/>
+            <cell value="Commune, Flame Strike"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Sacred Weapon (Oath of Devotion)</name>
@@ -668,16 +700,32 @@ Paladin Level | Spells
 
 Source:	Player's Handbook 2024 p. 115</text>
         <subclass>Oath of Glory</subclass>
-        <grants_always_prepared_spell name="Guiding Bolt" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Heroism" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Enhance Ability" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Magic Weapon" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Haste" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Protection from Energy" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Compulsion" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Legend Lore" level_gained_at="17"/>
-        <grants_always_prepared_spell name="Yolande's Regal Presence" level_gained_at="17"/>
+        <inline_table name="Oath of Glory Spells">
+          <header>
+            <col label="Paladin Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Guiding Bolt, Heroism"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Enhance Ability, Magic Weapon"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Haste, Protection from Energy"/>
+          </row>
+          <row>
+            <cell value="13"/>
+            <cell value="Compulsion, Freedom of Movement"/>
+          </row>
+          <row>
+            <cell value="17"/>
+            <cell value="Legend Lore, Yolande's Regal Presence"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Peerless Athlete (Oath of Glory)</name>
@@ -809,16 +857,32 @@ Paladin Level | Spells
 
 Source:	Player's Handbook 2024 p. 115</text>
         <subclass>Oath of the Ancients</subclass>
-        <grants_always_prepared_spell name="Ensnaring Strike" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Speak with Animals" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Misty Step" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Moonbeam" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Plant Growth" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Protection from Energy" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Ice Storm" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Stoneskin" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Commune with Nature" level_gained_at="17"/>
-        <grants_always_prepared_spell name="Tree Stride" level_gained_at="17"/>
+        <inline_table name="Oath of the Ancients Spells">
+          <header>
+            <col label="Paladin Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Ensnaring Strike, Speak with Animals"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Misty Step, Moonbeam"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Plant Growth, Protection from Energy"/>
+          </row>
+          <row>
+            <cell value="13"/>
+            <cell value="Ice Storm, Stoneskin"/>
+          </row>
+          <row>
+            <cell value="17"/>
+            <cell value="Commune with Nature, Tree Stride"/>
+          </row>
+        </inline_table>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -916,16 +980,32 @@ Paladin Level | Spells
 
 Source:	Player's Handbook 2024 p. 116</text>
         <subclass>Oath of Vengeance</subclass>
-        <grants_always_prepared_spell name="Bane" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Hunter's Mark" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Hold Person" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Misty Step" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Haste" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Protection from Energy" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Banishment" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Dimension Door" level_gained_at="13"/>
-        <grants_always_prepared_spell name="Hold Monster" level_gained_at="17"/>
-        <grants_always_prepared_spell name="Scrying" level_gained_at="17"/>
+        <inline_table name="Oath of Vengeance Spells">
+          <header>
+            <col label="Paladin Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Bane, Hunter's Mark"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Hold Person, Misty Step"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Haste, Protection from Energy"/>
+          </row>
+          <row>
+            <cell value="13"/>
+            <cell value="Banishment, Dimension Door"/>
+          </row>
+          <row>
+            <cell value="17"/>
+            <cell value="Hold Monster, Scrying"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Vow of Enmity (Oath of Vengeance)</name>

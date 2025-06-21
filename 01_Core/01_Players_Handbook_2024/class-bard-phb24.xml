@@ -194,6 +194,24 @@ Source:	Player's Handbook 2024 p. 60</text>
         <special>jack of all trades</special>
         <effect description="add_half_Proficiency_Bonus_round_down_to_any_ability_check_using_skill_proficiency_you_lack_and_doesnt_otherwise_use_Proficiency_Bonus"/>
       </feature>
+      <feature>
+        <name>Level 2: Fighting Style</name>
+        <text>You gain a Fighting Style feat of your choice (see chapter 5 for feats, added as feats). Instead of choosing one of those feats, you can choose the option below.
+
+Blessed Warrior. You learn two Cleric cantrips of your choice (see the Cleric class's section for a list of Cleric spells). Guidance and Sacred Flame are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
+
+Source:	Player's Handbook 2024 p. 120</text> <!-- Source text seems to be from Ranger, should be Bard -->
+        <choice name="Fighting Style Option" count="1">
+          <option type="Feat" description="Fighting_Style_feat_of_your_choice"/>
+          <option name="Blessed Warrior">
+            <grants_spell_learning type="Cantrip" spell_list="Cleric" count="2" spellcasting_ability_override="CHA"/>
+            <effect description="chosen_cantrips_count_as_Bard_spells_for_you"/>
+            <modifies_spell_choice trigger="whenever_you_gain_a_Bard_level">
+              <effect description="can_replace_one_of_these_cantrips_with_another_Cleric_cantrip"/>
+            </modifies_spell_choice>
+          </option>
+        </choice>
+      </feature>
     </autolevel>
     <autolevel level="3">
       <feature>
@@ -209,6 +227,10 @@ Source:	Player's Handbook 2024 p. 60</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 61</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="5">
@@ -244,6 +266,10 @@ Source:	Player's Handbook 2024 p. 61</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 61</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -266,6 +292,10 @@ Source:	Player's Handbook 2024 p. 61</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 61</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
@@ -274,6 +304,10 @@ Source:	Player's Handbook 2024 p. 61</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 61</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="18">
@@ -625,3 +659,5 @@ Source:	Player's Handbook 2024 p. 67</text>
     </autolevel>
   </class>
 </compendium>
+
+[end of 01_Core/01_Players_Handbook_2024/class-bard-phb24.xml]

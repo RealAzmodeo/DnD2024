@@ -65,8 +65,9 @@ Duration. The Rage lasts until the end of your next turn, and it ends early if y
 Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.
 
 Source:	Player's Handbook 2024 p. 51</text>
-        <action type="BonusAction" to_enter="true"/>
-        <restriction text="if_not_wearing_Heavy_armor"/>
+        <action type="BonusAction" to_enter="true">
+          <equipment_requirements armor_must_not_be="Heavy"/>
+        </action>
         <uses type="scaling_table" table_ref="BarbarianFeaturesTable_RagesColumn"/> <!-- App needs to know table -->
         <recharge type="1_per_SR_all_per_LR"/>
         <duration unit="round" value="1" extended_by_actions="true" max_duration_minutes="10"/>
@@ -90,9 +91,9 @@ Source:	Player's Handbook 2024 p. 51</text>
 
 Source:	Player's Handbook 2024 p. 51</text>
         <special>Unarmored Defense: Constitution</special> <!-- This tag is specific, might be used by some systems -->
-        <modifies_rule rule_name="ArmorClassCalculation" condition="while_not_wearing_any_armor">
+        <equipment_requirements wearing_no_armor="true" shield="allowed"/>
+        <modifies_rule rule_name="ArmorClassCalculation">
           <new_formula>10 + DEX_modifier + CON_modifier</new_formula>
-          <note text="can_use_a_Shield_and_still_gain_this_benefit"/>
         </modifies_rule>
       </feature>
       <feature>
@@ -162,6 +163,10 @@ Source:	Player's Handbook 2024 p. 52</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="5">
@@ -177,8 +182,9 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>Your speed increases by 10 feet while you aren't wearing Heavy armor.
 
 Source:	Player's Handbook 2024 p. 53</text>
-        <modifier category="bonus">speed +10</modifier> <!-- Existing tag seems fine -->
-        <effect type="SpeedIncrease" value="10" condition="while_not_wearing_Heavy_armor"/>
+        <equipment_requirements armor_must_not_be="Heavy"/>
+        <modifier category="bonus">speed +10</modifier>
+        <effect type="SpeedIncrease" value="10"/>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -211,6 +217,10 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="9">
@@ -248,7 +258,11 @@ Source:	Player's Handbook 2024 p. 53</text>
 	Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.
 
 Source:	Player's Handbook 2024 p. 53</text>
-        <trigger text="if_you_drop_to_0_Hit_Points_while_your_Rage_is_active_and_dont_die_outright"/>
+        <trigger_conditions>
+          <condition type="hp_drops_to_0"/>
+          <condition type="self_is_raging"/>
+          <condition type="not_killed_outright"/>
+        </trigger_conditions>
         <action type="SavingThrow" ability="CON" dc_initial="10" dc_increase_on_use="5"/>
         <on_success>
           <effect type="SetHitPoints" value_formula="2*BarbarianLevel"/>
@@ -262,6 +276,10 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
       <counter>
         <name>Rage</name>
@@ -319,6 +337,10 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 53</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -548,7 +570,8 @@ Source:	Player's Handbook 2024 p. 55</text>
         <effect type="ChooseOption" from_list="PowerOfTheWildsOptions" count="1"/>
         <options name="PowerOfTheWildsOptions">
           <option name="Falcon">
-            <effect type="Speed" speed_type="Fly" value_formula="your_Speed" condition="while_Rage_is_active_and_not_wearing_any_armor"/>
+            <equipment_requirements wearing_no_armor="true"/>
+            <effect type="Speed" speed_type="Fly" value_formula="your_Speed" condition="while_Rage_is_active"/>
           </option>
           <option name="Lion">
             <effect type="Disadvantage" target="any_of_your_enemies_within_5_feet_of_you" on="attack_rolls_against_targets_other_than_you_or_another_Barbarian_who_has_this_option_active" condition="while_Rage_is_active"/>

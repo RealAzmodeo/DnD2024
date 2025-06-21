@@ -257,6 +257,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="5">
@@ -316,6 +320,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="10">
@@ -341,6 +349,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="14">
@@ -378,6 +390,10 @@ Source:	Player's Handbook 2024 p. 71</text>
         <text>You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.
 
 Source:	Player's Handbook 2024 p. 71</text>
+        <asi_options>
+          <option description="Ability Score Improvement feat (see chapter 5)"/>
+          <option description="Another feat of your choice for which you qualify"/>
+        </asi_options>
       </feature>
     </autolevel>
     <autolevel level="18">
@@ -442,16 +458,28 @@ Cleric Level | Prepared Spells
 
 Source:	Player's Handbook 2024 p. 73</text>
         <subclass>Life Domain</subclass>
-        <grants_always_prepared_spell name="Aid" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Bless" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Cure Wounds" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Lesser Restoration" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Mass Healing Word" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Revivify" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Aura of Life" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Death Ward" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Greater Restoration" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Mass Cure Wounds" level_gained_at="9"/>
+        <inline_table name="Life Domain Spells">
+          <header>
+            <col label="Cleric Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Aid, Bless, Cure Wounds, Lesser Restoration"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Mass Healing Word, Revivify"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Aura of Life, Death Ward"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Greater Restoration, Mass Cure Wounds"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Preserve Life (Life Domain)</name>
@@ -514,16 +542,28 @@ Cleric Level | Prepared Spells
 
 Source:	Player's Handbook 2024 p. 74</text>
         <subclass>Light Domain</subclass>
-        <grants_always_prepared_spell name="Burning Hands" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Faerie Fire" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Scorching Ray" level_gained_at="3"/>
-        <grants_always_prepared_spell name="See Invisibility" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Daylight" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Fireball" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Arcane Eye" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Wall of Fire" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Flame Strike" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Scrying" level_gained_at="9"/>
+        <inline_table name="Light Domain Spells">
+          <header>
+            <col label="Cleric Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Burning Hands, Faerie Fire, Scorching Ray, See Invisibility"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Daylight, Fireball"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Arcane Eye, Wall of Fire"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Flame Strike, Scrying"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: Radiance of the Dawn (Light Domain)</name>
@@ -660,16 +700,28 @@ Cleric Level | Prepared Spells
 
 Source:	Player's Handbook 2024 p. 76</text>
         <subclass>Trickery Domain</subclass>
-        <grants_always_prepared_spell name="Charm Person" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Disguise Self" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Invisibility" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Pass without Trace" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Hypnotic Pattern" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Nondetection" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Confusion" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Dimension Door" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Dominate Person" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Modify Memory" level_gained_at="9"/>
+        <inline_table name="Trickery Domain Spells">
+          <header>
+            <col label="Cleric Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Charm Person, Disguise Self, Invisibility, Pass without Trace"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Hypnotic Pattern, Nondetection"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Confusion, Dimension Door"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Dominate Person, Modify Memory"/>
+          </row>
+        </inline_table>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -747,16 +799,28 @@ Cleric Level | Prepared Spells
 
 Source:	Player's Handbook 2024 p. 77</text>
         <subclass>War Domain</subclass>
-        <grants_always_prepared_spell name="Guiding Bolt" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Magic Weapon" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Shield of Faith" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Spiritual Weapon" level_gained_at="3"/>
-        <grants_always_prepared_spell name="Crusader's Mantle" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Spirit Guardians" level_gained_at="5"/>
-        <grants_always_prepared_spell name="Fire Shield" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Freedom of Movement" level_gained_at="7"/>
-        <grants_always_prepared_spell name="Hold Monster" level_gained_at="9"/>
-        <grants_always_prepared_spell name="Steel Wind Strike" level_gained_at="9"/>
+        <inline_table name="War Domain Spells">
+          <header>
+            <col label="Cleric Level"/>
+            <col label="Spells"/>
+          </header>
+          <row>
+            <cell value="3"/>
+            <cell value="Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon"/>
+          </row>
+          <row>
+            <cell value="5"/>
+            <cell value="Crusader's Mantle, Spirit Guardians"/>
+          </row>
+          <row>
+            <cell value="7"/>
+            <cell value="Fire Shield, Freedom of Movement"/>
+          </row>
+          <row>
+            <cell value="9"/>
+            <cell value="Hold Monster, Steel Wind Strike"/>
+          </row>
+        </inline_table>
       </feature>
       <feature optional="YES">
         <name>Level 3: War Priest (War Domain)</name>
