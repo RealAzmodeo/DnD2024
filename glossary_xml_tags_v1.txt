@@ -401,6 +401,43 @@ Define un beneficio que está siempre activo o se aplica automáticamente bajo c
 *   `spellcasting_ability_choice_ref="[NombreDelTraitDeLinaje]"`: Si la habilidad de lanzamiento para un conjuro se determina por una elección hecha en el trait de linaje (ej: "Fiendish Legacy (Abyssal)"), este atributo puede referenciar el nombre de ese trait donde se hizo la elección de habilidad. El parser necesitaría conectar esta referencia.
 
 ---
+### **Etiquetas Específicas para Trasfondos (Backgrounds)**
+---
+
+**`<background>`**
+Contenedor raíz para la definición de un trasfondo.
+*   **`<name>`**: Nombre del trasfondo (ej: "Acolyte [2024]").
+*   **`<source page="[numero]">[LibroDeFuente]</source>`**: Información de la fuente.
+*   **`<description_text>`**: Descripción general del trasfondo, incluyendo la narrativa y la página de origen si no está en la etiqueta `<source>`.
+*   **`<ability_score_increase_option>`**: Describe las opciones de incremento de puntuación de característica.
+    *   **`<text>`**: Texto que describe las opciones estándar de ASI (ej: "+2 a una, +1 a otra, o +1 a tres de una lista"). Este texto también puede indicar las tres habilidades relevantes para el trasfondo si no se usa `<abilities_list>`.
+    *   **`<abilities_list list="[AbilityName1,AbilityName2,AbilityName3]"/>`**: (Opcional, más estructurado) Enumera las tres habilidades relevantes para este trasfondo de las cuales se pueden elegir los incrementos.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir las habilidades.
+*   **`<granted_feat name="[FeatName]" source_text="[LibroDeFuente p.NumeroPagina]">`**: Especifica el dote otorgado por el trasfondo.
+    *   `name`: El nombre del dote.
+    *   `source_text`: Texto que indica la fuente y página del dote.
+    *   **`<text>`**: Descripción completa del dote. (Nota: Podría ser reemplazado por una referencia si los dotes están completamente estructurados y son referenciables por nombre/ID).
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir un dote de origen.
+*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades.
+    *   **`<skill name="[SkillName1]"/>`**: Otorga competencia en una habilidad específica.
+    *   **`<skill name="[SkillName2]"/>`**: Otorga competencia en otra habilidad específica.
+    *   **`<custom_choice_text count="[numero]">`**: (Para trasfondos personalizados) Texto que describe cómo elegir un número específico de competencias en habilidades.
+*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas.
+    *   **`<tool name="[SpecificToolName]"/>`**: Otorga competencia en una herramienta específica.
+    *   **`<choice_from_category category="[ArtisansTools|MusicalInstruments|GamingSets]" description_text_override="[texto_opcional_con_lista_de_herramientas]">`**: Permite elegir una herramienta de una categoría específica.
+        *   `category`: El tipo de categoría de herramienta (ej: "ArtisansTools", "MusicalInstruments", "GamingSets").
+        *   `description_text_override` (opcional): Si se proporciona, este texto (que puede incluir la lista de herramientas de esa categoría) se usará en lugar de una descripción genérica. Es útil si la lista de herramientas se incluye directamente en el XML del trasfondo.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir una competencia en herramienta.
+*   **`<starting_equipment>`**: Contenedor para el equipo inicial.
+    *   **`<text>`**: Texto introductorio general (ej: "Elige A o B:").
+    *   **`<option_A>`**: Contenedor para la opción A de equipo.
+        *   **`<item name="[ItemName]" quantity="[numero]"/>`**: Un objeto específico y su cantidad.
+        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+    *   **`<option_B>`**: Contenedor para la opción B de equipo.
+        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo ensamblar un paquete de equipo (ej: "Ensambla un paquete de equipo por valor de 50 PO...").
+
+---
 ### **Etiquetas Específicas de Subclase/Mecánicas Únicas (Clase)**
 ---
 **`<mystic_arcanum level="[6|7|8|9]" spell_choice_from_list="Warlock">`** (Warlock)
