@@ -1,6 +1,6 @@
 ## Glosario de Etiquetas XML para Características de Clase D&D 5e (v1)
 
-Este documento detalla las etiquetas XML y atributos utilizados para estructurar las características de clase, basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml`.
+Este documento detalla las etiquetas XML y atributos utilizados para estructurar las características de clase y dotes (feats), basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml` y la revisión de dotes de PHB24.
 
 ---
 ### **Etiquetas Principales de Características y Sub-características**
@@ -35,7 +35,41 @@ Contenedor raíz para una definición de clase.
 Usado para la descripción general inicial de la clase. Similar a una característica, pero usualmente solo contiene `<name>` y `<text>`.
 
 ---
-### **Etiquetas Detalladas Dentro de `<feature>`**
+### **Etiquetas para Dotes (Feats)**
+---
+
+**`<feat>`**
+Contenedor raíz para la definición de un dote.
+*   **`<name>`**: Nombre del dote. Puede incluir la variante entre paréntesis (ej: "Athlete (Strength) [2024]").
+*   **`repeatable="true|false"`** (opcional, default `false`): Indica si el dote puede ser tomado múltiples veces.
+    *   Si es `true`, puede contener `<repeatable_note condition="[texto_condicion_para_repetir]">` para especificar condiciones (ej: "must choose a different spell list each time").
+*   **`origin_feat="true|false"`** (opcional, default `false`): Indica si es un dote de origen (nivel 1).
+*   **`<source page="[numero]">Player's Handbook 2024</source>`**: Información de la fuente del dote.
+*   **`<prerequisite>`**: Contenedor para las condiciones que deben cumplirse para tomar el dote. (Ver sección `<prerequisite>` para detalles).
+*   **`<benefit name="[BenefitName]">`**: Contenedor para un beneficio específico del dote. Un dote puede tener múltiples etiquetas `<benefit>`.
+    *   Dentro de `<benefit>`, se usan etiquetas como `<grants_ability_score_increase>`, `<grants_proficiency>`, `<action_option>`, `<passive_effect>`, etc., para detallar la mecánica.
+*   **`<text>`**: (Legado/Provisional) Descripción textual completa si aún no está completamente parseado. El objetivo es reemplazar esto con etiquetas estructuradas.
+*   **`<modifier>`**: (Legado) A ser reemplazado por etiquetas semánticas más específicas dentro de los `<benefit>`.
+
+**`<prerequisite>`** (Usado dentro de `<feat>` o donde se requieran condiciones)
+Define las condiciones para adquirir un dote, característica, etc.
+*   **`<level min="[numero]"/>`**: Prerrequisito de nivel mínimo de personaje.
+*   **`<ability_score name="[AbilityName]" min="[numero]"/>`**: Prerrequisito de puntuación de característica (ej: `<ability_score name="Charisma" min="13"/>`).
+*   **`<proficiency type="[Armor|WeaponCategory|Feature|Tool|Skill]" name="[SpecificName]" present="true|false"/>`**: Prerrequisito de tener (o no tener, si `present="false"`) una competencia específica.
+    *   Ejemplos: `<proficiency type="Armor" name="Medium Armor Training"/>`, `<proficiency type="Feature" name="Spellcasting"/>`.
+*   **`<or_conditions>`**: Contenedor para agrupar múltiples condiciones donde al menos una debe cumplirse.
+    *   Puede anidar `<ability_score>`, `<proficiency>`, etc.
+*   **`<and_conditions>`**: Contenedor para agrupar múltiples condiciones donde todas deben cumplirse (implícito si las condiciones están directamente bajo `<prerequisite>` o en una misma línea lógica de texto).
+*   **`text_override="[texto_complejo]"`**: Para prerrequisitos muy complejos o textuales que no se ajustan fácilmente a las etiquetas estructuradas. Usar con moderación.
+
+**`<benefit name="[BenefitName]">`** (Usado dentro de `<feat>`)
+Describe un beneficio específico otorgado por el dote.
+*   **`name`**: Nombre descriptivo del beneficio (ej: "Initiative Proficiency", "Battle Medic", "Luck Points").
+*   Puede contener una mezcla de las siguientes sub-etiquetas para definir la mecánica del beneficio:
+    *   `<grants_ability_score_increase>`, `<grants_proficiency>`, `<grants_spell_learning>`, `<resource_pool>`, `<action_option>`, `<passive_effect>`, `<modifies_rule>`, `<modifies_action>`, `<reroll_option>`, `<special_movement>`, `<weapon_property_interaction>`, `<damage_reduction>`, `<cover_interaction>`, `<concentration_effect>`, etc.
+
+---
+### **Etiquetas Detalladas Dentro de `<feature>` o `<benefit>` (Comunes a Clases y Dotes)**
 ---
 
 **`<action type="[ActionType]" (otros atributos)>`**
@@ -67,8 +101,20 @@ Define una elección que el jugador debe hacer dentro de una característica.
     *   **`description="[texto]"`** (opcional): Descripción de la opción si no tiene más sub-etiquetas.
     *   **`type="Feat"`** (opcional): Si la opción es elegir un feat.
     *   **`ref_feature_name="[FeatureName]"`** (opcional): Si la opción se refiere a otra característica completamente definida en otro lugar.
+    *   **`grants_spell_name="[SpellName]"`** (opcional): Si la opción otorga un conjuro específico.
+    *   **`grants_damage_type_option="[DamageType]"`** (opcional): Si la opción define un tipo de daño a elegir (ej. Elemental Adept).
     *   _(Puede contener `<effect>`, `<action>`, `<cost>`, etc., para detallar la mecánica de esta opción específica)._
 *   **`<recharge type="[SR|LR|Dawn|Other]" description="[texto]"`** (opcional, dentro de `<choice>`): Si la habilidad de cambiar la elección se recarga.
+
+**`<grants_ability_score_increase>`** (Usado dentro de `<benefit>` o `<feature>`)
+Otorga un incremento a una o más puntuaciones de característica.
+*   **`<fixed_ability name="[STR|DEX|CON|INT|WIS|CHA]" value="[+1|+2]" max="[20|22]"/>`**: Incrementa una habilidad específica. `max` es opcional, por defecto 20.
+*   **`<choice_from_abilities list="[STR|DEX|CON|INT|WIS|CHA|any]" count="[1|2|3]" value_per_choice="[+1|+2]" total_increase="[+1|+2|+3]" max="[20|22]"/>`**: Permite elegir una o más habilidades de una lista para incrementar.
+    *   `list`: Lista de habilidades separadas por pipa (|). `any` permite cualquier habilidad.
+    *   `count`: Cuántas habilidades diferentes se pueden elegir para incrementar.
+    *   `value_per_choice`: Cuánto aumenta cada habilidad elegida.
+    *   `total_increase`: El aumento total distribuido entre las elecciones (ej. +2 total, pudiendo ser +2 a una o +1 a dos).
+    *   Si `count="1"` y `value_per_choice` se omite, se asume que `value_per_choice` es igual a `total_increase`.
 
 **`<cost (atributos)>`**
 Define el coste para activar una habilidad o parte de ella.
@@ -207,23 +253,39 @@ Define cómo una característica mejora otra característica o habilidad existen
 
 **`<grants_proficiency type="[Skill|Weapon|Armor|Tool|SavingThrow|Language]" (otros atributos)>`**
 Otorga una competencia.
-*   **`type`**: Tipo de competencia.
-*   **`name="[NombreEspecifico]"`** (ej: "Insight", "Martial weapons", "Light armor", "Herbalism Kit", "Wisdom", "Druidic").
-*   **`choice_from_list="[lista_opciones_separadas_por_coma|any]"`**: Si se elige de una lista (ej: "Deception,Performance,Persuasion", "Fighter_level_1_skills"). "any" para cualquier herramienta de artesano.
+*   **`type`**: Tipo de competencia (`Skill`, `Tool`, `Weapon`, `Armor`, `SavingThrow`, `Language`, `WeaponProperty`).
+*   **`name="[NombreEspecifico]"`** (ej: "Insight", "Cook's Utensils", "Martial Weapons", "Light Armor", "Strength", "Druidic", "Loading").
+*   **`choice_from_list="[lista_opciones_separadas_por_coma_o_pipa|any_artisans_tool|any_musical_instrument|any_skill_or_tool|specific_table_name]"`**: Si se elige de una lista.
+    *   `any_skill_or_tool`: Permite elegir entre cualquier habilidad o cualquier herramienta.
+    *   `specific_table_name`: Referencia a una `<inline_table>` definida en otra parte del dote/característica que lista las opciones.
 *   **`count="[numero]"`**: Cuántas competencias se otorgan/eligen.
+*   **`expertise="true|false"`** (opcional, default `false`): Si otorga Expertise en lugar de/además de competencia.
+*   **`ignore_property="true|false"`** (opcional, default `false`, para `type="WeaponProperty"`): Indica si la propiedad de arma se ignora.
+*   **`proficiency_or_expertise="true|false"`** (opcional, default `false`): Si se otorga competencia si no se tiene, o expertise si ya se tiene.
 
-**`<grants_spell_learning type="[Cantrip|Spell]" (otros atributos)>`**
-Otorga el conocimiento o preparación de conjuros.
-*   **`type`**: "Cantrip" o "Spell".
-*   **`spell_name="[SpellName]"`** (opcional): Si se otorga un conjuro específico.
-*   **`spell_list="[Druid|Cleric|Wizard|etc.]"`**: De qué lista de conjuros se elige.
-*   **`count="[numero]"`**: Cuántos conjuros se aprenden/eligen.
-*   **`ability="[WIS|CHA|INT]"`** (opcional): Si la habilidad de lanzamiento para este conjuro es específica.
-*   **`spellcasting_ability_override="[WIS|CHA|INT]"`**: Si anula la habilidad de lanzamiento normal de la clase para estos conjuros.
-*   **`counts_against_known="false"`** (opcional): Si el conjuro no cuenta para el límite de conjuros conocidos.
-*   **`<alternative_grant condition="[texto]" description="[texto_alternativa]"/>`**: Si hay una alternativa (ej: si ya se conoce Minor Illusion).
+**`<grants_spell_learning>`** (Usado dentro de `<benefit>` o `<feature>`)
+Otorga el conocimiento, preparación o capacidad de lanzar conjuros.
+*   **`type="[Cantrip|Spell]"`**: Tipo de conjuro.
+*   **`count="[numero|ProficiencyBonus]"`**: Cuántos conjuros se aprenden/eligen.
+*   **`spell_known="[SpellName]"`** (opcional): Si se otorga un conjuro específico (ej: "Misty Step").
+*   **`spell_list_choice="[Cleric|Druid|Wizard|Sorcerer|Bard|Paladin|Ranger|Warlock|DivinationOrEnchantmentSchool|IllusionOrNecromancySchool|AnyRitualLevel1]"`**: De qué lista o categoría de conjuros se elige.
+*   **`spell_level="[numero]"`** (opcional): Nivel del conjuro a elegir/otorgar (ej: "1" para conjuros de nivel 1).
+*   **`spellcasting_ability_choice="[Intelligence|Wisdom|Charisma]"`** (opcional): Si el jugador elige la habilidad de lanzamiento para los conjuros del dote/característica.
+*   **`spellcasting_ability_fixed="[Intelligence|Wisdom|Charisma]"`** (opcional): Si la habilidad de lanzamiento es fija para estos conjuros.
+*   **`always_prepared="true|false"`** (opcional, default `false`): Si los conjuros otorgados siempre están preparados.
+*   **`counts_against_known="true|false"`** (opcional, default `true` si aplica): Si el conjuro cuenta para el límite de conjuros conocidos de la clase.
+*   **`can_use_spell_slots="true|false"`** (opcional, default `true` si se conocen/preparan): Si los conjuros pueden ser lanzados usando espacios de conjuro normales.
+*   **`free_casts_per_rest type="[LongRest|ShortRest|Dawn]" count="[numero]"`** (opcional): Número de lanzamientos gratuitos antes de necesitar un descanso.
+*   **`can_replace_on_level_up="true|false"`** (opcional, default `false`): Si los conjuros elegidos pueden ser reemplazados al subir de nivel.
+*   **`no_components_list="[Verbal|Somatic|Material|MaterialWithValue|MaterialConsumed]"`** (opcional, lista separada por comas): Componentes que el conjuro ya no requiere cuando se lanza a través de este beneficio.
+*   **`ritual_casting_only="true|false"`** (opcional, default `false`): Si solo se pueden lanzar como rituales.
+*   **`<spell_modifications>`** (opcional): Contenedor para modificaciones específicas al conjuro cuando se otorga/lanza mediante esta característica.
+    *   **`<range_increase value="[+X_feet|double]"/>`**
+    *   **`<make_invisible="true"/>`** (ej: para Mage Hand de Telekinetic).
+    *   **`<duration_override description="[nueva_duracion_texto]"/>`**
+*   **`<alternative_grant condition="[texto]" description="[texto_alternativa]"/>`**: Si hay una alternativa (ej: si ya se conoce el conjuro).
 
-**`<grants_always_prepared_spell name="[SpellName]" (otros atributos)>`**
+**`<grants_always_prepared_spell name="[SpellName]" (otros atributos)>`** (Más específico para listas de subclase)
 Otorga un conjuro que siempre está preparado.
 *   **`name`**: Nombre del conjuro.
 *   **`level_gained_at="[numero]"`** (opcional): Nivel de clase en el que se obtiene este conjuro preparado (para tablas de subclase).
@@ -234,14 +296,14 @@ Otorga un dote (feat).
 *   **`count`**: Número de dotes a elegir/ganar.
 
 **`<inline_table name="[TableName]">`**
-Define una tabla directamente dentro de la característica (ej: listas de conjuros de subclase, tablas de escalado).
-*   **`name`**: Nombre de la tabla.
-*   **`<header><col label="[HeaderText]"/></header>`**: Define las cabeceras de las columnas.
-*   **`<row><cell value="[CellText]"/></row>`**: Define las filas y celdas.
-    *   `value` puede ser texto simple, números, o listas de conjuros.
+Define una tabla directamente dentro de la característica (ej: listas de conjuros de subclase, tablas de escalado, tabla de crafteo de Crafter feat).
+*   **`name`**: Nombre de la tabla (para referencia interna, ej: `FastCraftingTable`).
+*   **`<header><col label="[HeaderText1]"/><col label="[HeaderText2]"/></header>`**: Define las cabeceras de las columnas.
+*   **`<row><cell value="[CellText1]"/><cell value="[CellText2]"/></row>`**: Define las filas y celdas.
+    *   `value` puede ser texto simple, números, listas de conjuros, o nombres de ítems.
 
-**`<modifies_action action_name="[Attack|etc.]" (otros atributos)>`**
-Modifica una acción estándar.
+**`<modifies_action action_name="[Attack|Dash|Study|Search|StandUp|etc.]" (otros atributos)>`**
+Modifica una acción estándar o una acción especial definida.
 *   **`action_name`**: Nombre de la acción a modificar (ej: Attack).
 *   **`new_attacks_allowed="[numero]"`**: Para Extra Attack.
 *   **`<option_to_replace_attack count="[numero_ataques_a_reemplazar]">`**: Si se puede reemplazar un ataque con otra cosa (ej: War Magic del Eldritch Knight).
@@ -270,11 +332,29 @@ Modifica una regla general del juego.
 *   **`new_range="[19-20|18-20]"`**: Para rango de crítico.
 *   **`new_formula="[formula_calculo]"`**: Para AC, etc.
 *   **`new_basis="[Dexterity_modifier_instead_of_Strength]"`**: Para ataques/daño.
-*   **`status="[immune]"`**: Para reglas como la de exhaustión.
+*   **`status="[immune|ignore|does_not_apply|modified]"`**: Estado general de la regla modificada.
+    *   `ignore`: Ej: Ignorar Cover.
+    *   `does_not_reveal`: Ej: Para Skulker, un ataque fallido no revela la posición.
+    *   `can_perform`: Ej: Para War Caster, puede realizar componentes somáticos.
+*   **`condition="[texto_condicion]"`**: Condición bajo la cual se aplica la modificación de la regla.
+*   **`new_value="[texto_o_numero]"`**: Nuevo valor para una regla (ej: `new_value="5_feet"` para el movimiento requerido en un salto).
 *   **`<effect description="[texto_efecto_modificador]"/>`** (anidado).
 
-**`<resource name="[ResourceName]" (otros atributos)>`**
-Define un recurso principal de la clase (ej: Focus Points, Superiority Dice, Lay On Hands Pool, Psionic Energy Dice, Martial Arts Die, Sorcery Points, Healing Light Dice Pool, Portent Rolls, Arcane Ward HP).
+**`<resource_pool name="[ResourceName]" (otros atributos)>`** (Para dotes y características que otorgan pools de recursos)
+Define un conjunto de puntos o dados de recurso.
+*   **`name`**: Nombre del recurso (ej: "Luck Points", "Superiority Dice").
+*   **`value_formula="[ProficiencyBonus|AbilityModifier|FixedNumber|CharacterLevel]"`**: Cómo se determina la cantidad total del recurso.
+*   **`ability_for_formula="[STR|DEX|CON|INT|WIS|CHA]"`** (si `value_formula="AbilityModifier"`).
+*   **`initial_value="[numero]"`** (si la fórmula necesita un base o es fija).
+*   **`die_type="[d4|d6|d8|d10|d12]"`** (opcional): Si el recurso es un tipo de dado (ej: Superiority Dice).
+*   **`recharge_on="[LongRest|ShortRest|Dawn|SR_or_LR]"`**: Cuándo se recuperan los puntos/usos del recurso.
+*   **`<uses_for>`** (opcional): Contenedor si el recurso tiene usos específicos definidos dentro del mismo pool.
+    *   **`<benefit_option name="[NombreOpcionBeneficio]">`**: Describe una forma de gastar el recurso.
+        *   **`<cost resource="[ResourceNameReferenciaAlPool]" value="[numero]"/>`**
+        *   Contiene etiquetas de `<effect>`, `<action>`, etc., que describen lo que sucede al gastar el recurso.
+
+**`<resource name="[ResourceName]" (otros atributos)>`** (Más orientado a recursos de clase con escalado complejo)
+Define un recurso principal de la clase (ej: Focus Points, Sorcery Points, Arcane Ward HP).
 *   **`name`**: Nombre del recurso.
 *   **`die_type="[d6|d8|d10|d12]"`** (opcional): Si el recurso es un tipo de dado.
 *   **`die_scaling_table="[TableName]"`** (opcional): Si el tipo de dado escala con una tabla.
@@ -325,9 +405,184 @@ Define requisitos de equipamiento.
 *   **`wearing_no_armor="true"`**
 *   **`wielding_no_shield="true"`**
 *   **`armor_must_not_be="[Heavy]"`**
+*   **`shield_equipped="true|false"`**
+*   **`weapon_property_required="[Finesse|Heavy|Reach|Light]"`** (lista separada por comas si múltiples)
+*   **`unarmed="true"`**
 
 ---
-### **Etiquetas Específicas de Subclase/Mecánicas Únicas**
+### **Etiquetas Específicas de Dotes (Feats) y Mecánicas Detalladas**
+---
+
+**`<action_option name="[ActionName]"`** (Dentro de `<benefit>`)
+Define un beneficio que es una acción específica o modifica una acción existente.
+*   **`name`**: Nombre descriptivo de la acción/beneficio (ej: "Battle Medic", "Telekinetic Shove", "Charge Attack").
+*   **`type="[Utilize|BonusAction|Reaction|Action|Special|Free|NoAction|PartOfAttackAction|ImmediatelyFollowingAttack]"`**: Tipo de acción.
+    *   `Utilize`: Para acciones como usar un Healer's Kit.
+    *   `PartOfAttackAction`: Para efectos que se aplican como parte de un ataque (ej. Shield Bash).
+    *   `ImmediatelyFollowingAttack`: Similar a PartOfAttackAction pero puede ser un BA o un efecto sin coste de acción explícito.
+*   **`trigger="[texto_disparador]"`**: Cuándo se puede usar la acción (ej: "on_melee_weapon_hit", "when_creature_enters_reach").
+*   **`uses_per_turn="[numero]"`** (opcional).
+*   **`uses_per_rest type="[SR|LR|Dawn]" count="[numero]"`** (opcional).
+*   **`<cost resource="[ResourceName|ItemName]" value="[numero]" gp_value="[numero_gp_para_crafteo]"/>`** (opcional): Coste para usar la acción. `gp_value` para crafteo.
+*   **`<range value="[numero_pies|self|touch|weapon_reach]"/>`** (opcional).
+*   **`<target description="[texto_descripcion_objetivo]"/>`** (opcional).
+*   **`<duration description="[texto_duracion]"/>`** (opcional, si la acción crea un efecto con duración).
+*   Puede contener etiquetas `<effect>`, `<choice>`, `<save_dc_calculation>` etc., para describir la mecánica.
+
+**`<passive_effect>`** (Dentro de `<benefit>`)
+Define un beneficio que está siempre activo o se aplica automáticamente bajo ciertas condiciones, sin requerir una acción explícita del jugador.
+*   **`description="[Texto descriptivo breve si es necesario]"`**: Para efectos simples o como resumen.
+*   Puede contener una o más etiquetas `<effect>`, `<modifies_rule>`, `<grants_proficiency>`, `<speed_increase_static>`, etc. para detallar la mecánica.
+    *   Ejemplo (Savage Attacker): `<effect type="DamageRoll" on="weapon_hit" timing="once_per_turn" rule="roll_damage_dice_twice_use_either"/>`
+    *   Ejemplo (Tough): `<effect type="HitPointMaximumIncrease" value_formula="2*character_level_on_gain_then_+2_per_level_after"/>`
+
+**`<reroll_option>`** (Dentro de `<benefit>`)
+Permite volver a tirar un dado bajo ciertas condiciones.
+*   **`dice_condition="[rolls_a_1|rolls_below_X|any]"`**: Qué resultado del dado activa la reroll.
+*   **`on_roll_for="[healing_spell_or_ability|unarmed_strike_damage|piercing_damage_attack|weapon_damage|spell_damage_of_type_X|any_damage_roll_for_spell]"`**: Qué tipo de tirada se puede rerollear.
+*   **`damage_type_specific="[ChosenElementalAdeptType]"`** (opcional): Si la reroll aplica a un tipo de daño específico elegido.
+*   **`must_use_new_roll="true|false"`** (default `true`).
+*   **`timing="[once_per_turn|once_per_roll|always]"`** (opcional).
+*   **`count="[1|X]"`** (opcional): Cuántos dados de la tirada se pueden rerollear.
+
+**`<crafting_option name="[CraftingBenefitName]">`** (Dentro de `<benefit>`, ej. Crafter Feat)
+Define una habilidad de crafteo.
+*   **`name`**: Nombre del beneficio de crafteo (ej: "Fast Crafting").
+*   **`trigger="[on_long_rest_finish|X_hours_of_work]"`**: Cuándo se puede craftear.
+*   **`requires_tool_proficiency_from_table="[TableName]"`**: Referencia a una `<inline_table>` que lista herramientas y objetos crafteables.
+*   **`item_duration="[until_next_long_rest|X_hours|permanent]"`**: Cuánto dura el objeto crafteado.
+*   **`item_count_formula="[ProficiencyBonus|FixedNumber]"`**: Cuántos objetos se pueden craftear.
+*   **`gp_cost_per_item="[numero]"`** (opcional).
+
+**`<discount_benefit item_type="[nonmagical|any]" value_percentage="[numero]">`** (Dentro de `<benefit>`, ej. Crafter Feat)
+Otorga un descuento en compras.
+
+**`<special_movement name="[MovementName]">`** (Dentro de `<benefit>`, ej. Athlete "Hop Up")
+Describe una forma especial de movimiento o modificación a las reglas de movimiento.
+*   **`name`**: Nombre (ej: "Hop Up").
+*   **`condition="[prone|etc.]"`**: Condición para usar este movimiento.
+*   **`effect_description="[texto]"`** O `<modifies_action action_name="StandUp" movement_cost="5_feet"/>`.
+
+**`<special_jump name="[JumpingBenefitName]">`** (Dentro de `<benefit>`, ej. Athlete "Jumping")
+*   **`name`**: Nombre (ej: "Jumping").
+*   **`<modifies_rule rule_name="RunningJumpRequirement" new_value="5_feet"/>`**.
+
+**`<weapon_property_interaction>`** (Dentro de `<benefit>`)
+Modifica cómo interactúa el personaje con propiedades de armas o tipos de armas.
+*   **`weapon_type_affected="[lista_de_armas_o_categorias_separadas_por_coma_o_pipa]"`**: Ej: "HandCrossbow|HeavyCrossbow|LightCrossbow", "HeavyPropertyWeapon", "Quarterstaff|Spear|HeavyAndReachWeapon".
+*   **`<ignores_property name="[Loading|etc.]"/>`**
+*   **`<allows_loading_without_free_hand="true"/>`**
+*   **`<no_disadvantage_in_melee_for_ranged_attacks="true"/>`**
+*   **`<modifies_light_property_extra_attack add_ability_modifier_to_damage="true" condition="[texto_condicion]"/>`**
+*   **`<on_hit_with_weapon_type type="[WeaponType]" timing="[timing_info]"> <effect type="ExtraDamage" value_formula="[formula]"/> </on_hit_with_weapon_type>`**
+*   **`<on_event trigger="[CriticalHitWithMelee|ReduceTo0HPWithMelee]" weapon_scope="[same_weapon|any_melee]"> <action type="BonusAction" name="[MakeOneAttack|HewAttack]"/> </on_event>`**
+*   **`<on_attack_with_weapon_type types="[lista]" trigger="[trigger_info]"> <action type="BonusAction" name="[PoleStrike]"> <effect type="Damage" .../> </action> </on_attack_with_weapon_type>`**
+*   **`<on_creature_enters_reach_with_weapon_type types="[lista]"> <action type="Reaction" name="[ReactiveStrike|MakeOneMeleeAttack]"/> </on_creature_enters_reach_with_weapon_type>`**
+
+**`<damage_reduction>`** (Dentro de `<benefit>`, ej. Heavy Armor Master)
+Reduce el daño recibido.
+*   **`when_hit_by_attack="true|false"`** (default `true`).
+*   **`requires_armor_type="[Heavy|Medium|Light|Any]"`** (opcional).
+*   **`requires_shield_equipped="true"`** (opcional).
+*   **`damage_types="[lista_de_tipos_de_daño_separados_por_coma_o_pipa|any_nonmagical_BPS]"`**: Tipos de daño que se reducen.
+*   **`reduction_formula="[ProficiencyBonus|FixedNumber|AbilityModifier]"`**.
+*   **`reduction_value="[numero]"`** (si es fijo).
+
+**`<saving_throw_modification>`** (Dentro de `<benefit>`)
+Modifica tiradas de salvación.
+*   **`type="[Advantage|SucceedOnFailedSave|RerollFailedSave|Bonus]"`**.
+*   **`on_saves="[DeathSavingThrows|Intelligence|Wisdom|Charisma|Concentration|SpecificSpellSchoolSaves]"`** (lista separada por coma/pipa).
+*   **`uses_per_rest type="[ShortOrLongRest|LongRest|Dawn]" count="[numero]"`** (para SucceedOnFailedSave o RerollFailedSave).
+*   **`value="[+N|dado]"`** (para `type="Bonus"`).
+
+**`<concentration_effect>`** (Dentro de `<benefit>`)
+Afecta la concentración.
+*   **`<on_damage_dealing_to_concentrating_creature> <effect type="Disadvantage" on="concentration_save_of_target"/> </on_damage_dealing_to_concentrating_creature>`**
+*   **`<self_effect type="Advantage" on="Constitution_saving_throws_for_Concentration"/>`**
+
+**`<reactive_spell_cast>`** (Dentro de `<benefit>`, ej. War Caster)
+Permite lanzar un conjuro como reacción.
+*   **`trigger="[when_creature_provokes_opportunity_attack_by_leaving_reach|other_trigger_text]"`**.
+*   **`replaces_opportunity_attack="true|false"`** (default `false`).
+*   **`spell_requirements_text="[texto_descriptivo_requisitos_conjuro]"`** (ej: "casting_time_one_action_and_must_target_only_that_creature").
+*   **`spell_list_source="[KnownSpells|PreparedSpells|SpecificSpellName]"`** (opcional).
+
+**`<somatic_component_allowance description="[texto]">`** (Dentro de `<benefit>`, ej. War Caster)
+Permite realizar componentes somáticos bajo condiciones especiales. Podría usar `<modifies_rule rule_name="SomaticComponentRequirement" .../>`.
+
+**`<weapon_mastery_option name="[MasteryName]">`** (Dentro de `<benefit>`, ej. Weapon Master Feat)
+Otorga acceso o modifica propiedades de maestría de armas.
+*   **`name`**: Nombre del beneficio.
+*   **`description="[texto]"`** (ej: "allows_you_to_use_the_mastery_property_of_one_kind_of_Simple_or_Martial_weapon_of_your_choice").
+*   **`requires_proficiency_with_weapon="true|false"`**.
+*   **`can_change_weapon_on_long_rest="true|false"`**.
+*   **`choose_weapon_type_text="[texto_eleccion]"`**.
+
+**`<blindsight_grant range="[numero_pies]">`** (Dentro de `<benefit>`)
+Otorga blindsight.
+
+**`<stealth_enhancement>`** (Dentro de `<benefit>`)
+Mejora las capacidades de sigilo.
+*   **`<effect type="Advantage" on="Dexterity_Stealth_checks" condition="[texto_condicion]"/>`**
+
+**`<hidden_attack_rule description="[texto]">`** (Dentro de `<benefit>`, ej. Skulker "Sniper")
+Modifica las reglas sobre ser revelado después de un ataque oculto. Podría usar `<modifies_rule rule_name="RevealingLocationOnAttack" .../>`.
+
+**`<speed_increase_static value="[numero_pies]">`** (Dentro de `<benefit>`)
+Aumenta la velocidad base.
+
+**`<difficult_terrain_interaction condition="[texto_condicion]" effect_description="[texto_efecto]">`** (Dentro de `<benefit>`)
+Modifica cómo afecta el terreno difícil. Podría usar `<modifies_rule rule_name="DifficultTerrainMovementCost" .../>`.
+
+**`<opportunity_attack_modification>`** (Dentro de `<benefit>`)
+Modifica las reglas de los ataques de oportunidad (ya sea hechos por el personaje o contra él).
+*   **`against_self_have_disadvantage="true"`** (ej: Speedy).
+*   **`<on_event trigger="[CreatureTakesDisengage|CreatureHitsOtherTarget]" range="[5_feet]"> <action type="Reaction" name="MakeOpportunityAttack" target="triggering_creature"/> </on_event>`** (ej: Sentinel).
+*   **`<on_hit_with_opportunity_attack> <effect type="SpeedReduction" value="to_0" duration="rest_of_current_turn"/> </on_hit_with_opportunity_attack>`** (ej: Sentinel).
+
+**`<cover_interaction type="[ranged_weapon_attacks|spell_attack_rolls]" ignores_cover="[HalfCover|ThreeQuartersCover|TotalCover]"/>`** (Dentro de `<benefit>`)
+Modifica cómo interactúan los ataques con la cobertura. Lista de coberturas separadas por pipa.
+
+**`<long_range_interaction type="[ranged_weapon_attacks]" no_disadvantage_at_long_range="true"/>`** (Dentro de `<benefit>`)
+Elimina la desventaja al atacar a larga distancia.
+
+**`<spell_range_increase condition="[texto_condicion_conjuro]" increase_by="[+X_feet|double]"/>`** (Dentro de `<benefit>`)
+Aumenta el alcance de los conjuros.
+
+**`<shield_bash_option>`** (Dentro de `<benefit>`, ej. Shield Master)
+Permite un "shield bash" como parte de una acción.
+*   **`trigger="[texto_disparador]"`** (ej: "on_melee_weapon_hit_as_part_of_Attack_action_on_creature_within_5_feet").
+*   **`requires_shield_equipped="true|false"`**.
+*   **`action_type="[PartOfAttackAction|BonusAction]"`**.
+*   **`<effect type="TargetChoiceSave">`**
+    *   **`save_type="[STR|DEX|etc.]"`**
+    *   **`save_dc_formula="[8 + RelevantModifier + ProficiencyBonus]"`** (especificar `RelevantModifier`)
+    *   **`<on_failed_save_choice>`**
+        *   **`<option name="Push"><effect type="Movement" direction="pushed_X_feet_away"/></option>`**
+        *   **`<option name="Prone"><effect type="Condition" name="Prone"/></option>`**
+    *   **`</on_failed_save_choice>`**
+*   **`uses_per_turn="[numero]"`** (opcional).
+
+**`<shield_interpose_option>`** (Dentro de `<benefit>`, ej. Shield Master)
+Permite usar el escudo para mejorar una salvación.
+*   **`trigger="[subjected_to_effect_allowing_Dexterity_save_for_half_damage|other_trigger]"`**.
+*   **`requires_shield_equipped="true|false"`**.
+*   **`action_type="Reaction"`**.
+*   **`effect_description="[texto_efecto]"`** (ej: "take_no_damage_on_successful_Dex_save").
+    *   Alternativamente: `<modifies_save_effect original_effect="half_damage_on_success" new_effect="no_damage_on_success"/>`.
+
+**`<telepathic_communication range="[numero_pies]">`** (Dentro de `<benefit>`)
+Otorga la habilidad de comunicarse telepáticamente.
+*   **`target_description="[any_creature_you_can_see]"`**.
+*   **`language_dependent="true|false"`**.
+*   **`one_way_communication="true|false"`**.
+*   **`duration="[texto_duracion_si_no_es_constante]"`**.
+
+**`<repeatable_note condition="[texto_condicion_para_repetir]">`** (Dentro de `<feat>` si `repeatable="true"`)
+Nota sobre las condiciones para tomar el dote múltiples veces.
+
+---
+### **Etiquetas Específicas de Subclase/Mecánicas Únicas (Clase)**
 ---
 
 **`<mystic_arcanum level="[6|7|8|9]" spell_choice_from_list="Warlock">`** (Warlock)
@@ -377,7 +632,6 @@ Contenedor para las penalizaciones por uso repetido.
 
 ---
 
-Este glosario debería cubrir la gran mayoría de las estructuras que hemos implementado. Es un sistema bastante detallado y espero que sea de gran ayuda.
-Avísame si tienes alguna pregunta o si quieres que me enfoque en alguna parte específica.
-
-Ahora, si estás listo, podemos empezar con el **Paso 1 del Plan V3: Análisis de Casos Existentes y Definición de Estructura XML para Requisitos de Equipamiento**.
+Este glosario debería cubrir la gran mayoría de las estructuras para clases y dotes. Es un sistema detallado y se espera que sea de gran ayuda para el parseo y la utilización de estos datos.
+Cualquier nueva mecánica encontrada que no encaje claramente en estas etiquetas deberá ser analizada para determinar si se requiere una nueva etiqueta o una extensión de una existente.
+La consistencia en la aplicación de estas etiquetas es clave para la mantenibilidad y utilidad del compendio XML.
