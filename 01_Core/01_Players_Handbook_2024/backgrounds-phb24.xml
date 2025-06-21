@@ -14,8 +14,9 @@ Source:	Player's Handbook 2024 p. 178</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Magic Initiate (Cleric)</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Magic Initiate (Cleric)</feat>
+You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
 
@@ -33,7 +34,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -50,8 +53,9 @@ Source:	Player's Handbook 2024 p. 178</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Crafter</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Crafter</feat>
+You gain the following benefits.
 
 Tool Proficiency. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.
 
@@ -98,7 +102,9 @@ Woodcarver's tools | 1 gp | 5 lb.</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -115,8 +121,9 @@ Source:	Player's Handbook 2024 p. 179</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
+      <name>Feat</name>
+      <text><feat>Skilled</feat>
+You gain proficiency in any combination of three skills or tools of your choice.
 
 Repeatable: You can take this feat more than once.
 
@@ -128,7 +135,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 C p</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Forgery Kit, Costume, Fine Clothes, 15 GP</equipmentA>
+      <equipmentB>50 C p</equipmentB>
     </trait>
   </background>
   <background>
@@ -145,8 +154,9 @@ Source:	Player's Handbook 2024 p. 179</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Alert</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Alert</feat>
+You gain the following benefits.
 
 Initiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.
 
@@ -160,7 +170,9 @@ Source:	Player's Handbook 2024 p. 200</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -177,8 +189,9 @@ Source:	Player's Handbook 2024 p. 180</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Musician</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Musician</feat>
+You gain the following benefits.
 
 Instrument Training: You gain proficiency with three Musical Instruments of your choice.
 
@@ -205,7 +218,9 @@ Viol | 30 gp | 1 lb.</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -222,8 +237,9 @@ Source:	Player's Handbook 2024 p. 180</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Tough</name>
-      <text>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.
+      <name>Feat</name>
+      <text><feat>Tough</feat>
+Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.
 
 Source:	Player's Handbook 2024 p. 202</text>
     </trait>
@@ -233,7 +249,9 @@ Source:	Player's Handbook 2024 p. 202</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -250,8 +268,9 @@ Source:	Player's Handbook 2024 p. 181</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Alert</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Alert</feat>
+You gain the following benefits.
 
 Initiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.
 
@@ -272,7 +291,9 @@ Three-Dragon Ante set | 1 gp | -</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP: or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -289,8 +310,9 @@ Source:	Player's Handbook 2024 p. 181</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Magic Initiate (Druid)</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Magic Initiate (Druid)</feat>
+You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
 
@@ -308,7 +330,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -325,8 +349,9 @@ Source:	Player's Handbook 2024 p. 182</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Healer</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Healer</feat>
+You gain the following benefits.
 
 Battle Medic. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.
 
@@ -340,7 +365,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flask s), Traveler's Clothes, 16 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flask s), Traveler's Clothes, 16 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -357,8 +384,9 @@ Source:	Player's Handbook 2024 p. 182</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Lucky</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Lucky</feat>
+You gain the following benefits.
 
 Luck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.
 
@@ -374,7 +402,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -391,8 +421,9 @@ Source:	Player's Handbook 2024 p. 183</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
+      <name>Feat</name>
+      <text><feat>Skilled</feat>
+You gain proficiency in any combination of three skills or tools of your choice.
 
 Repeatable. You can take this feat more than once.
 
@@ -411,7 +442,9 @@ Three-Dragon Ante set | 1 gp | -</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or 8: (A) Gaming Set (same as above), Fine Clothes, Per fume, 29 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Gaming Set (same as above), Fine Clothes, Per fume, 29 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -428,8 +461,9 @@ Source:	Player's Handbook 2024 p. 183</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Magic Initiate (Wizard)</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Magic Initiate (Wizard)</feat>
+You gain the following benefits.
 
 Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
 
@@ -447,7 +481,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or 8: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -464,8 +500,9 @@ Source:	Player's Handbook 2024 p. 184</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Tavern Brawler</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Tavern Brawler</feat>
+You gain the following benefits.
 
 Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.
 
@@ -483,7 +520,9 @@ Source:	Player's Handbook 2024 p. 202</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -500,8 +539,9 @@ Source:	Player's Handbook 2024 p. 184</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Skilled</name>
-      <text>You gain proficiency in any combination of three skills or tools of your choice.
+      <name>Feat</name>
+      <text><feat>Skilled</feat>
+You gain proficiency in any combination of three skills or tools of your choice.
 
 Repeatable. You can take this feat more than once.
 
@@ -513,7 +553,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -530,8 +572,9 @@ Source:	Player's Handbook 2024 p. 185</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Savage Attacker</name>
-      <text>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.
+      <name>Feat</name>
+      <text><feat>Savage Attacker</feat>
+You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.
 
 Source:	Player's Handbook 2024 p. 201</text>
     </trait>
@@ -548,7 +591,9 @@ Three-Dragon Ante set | 1 gp | -</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
   <background>
@@ -565,8 +610,9 @@ Source:	Player's Handbook 2024 p. 185</text>
       <text>A background lists three of your character's ability scores. Increase one by 2 and another one by 1, or increase all three by 1. None of these increases can raise a score above 20.</text>
     </trait>
     <trait>
-      <name>Feat: Lucky</name>
-      <text>You gain the following benefits.
+      <name>Feat</name>
+      <text><feat>Lucky</feat>
+You gain the following benefits.
 
 Luck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.
 
@@ -582,7 +628,9 @@ Source:	Player's Handbook 2024 p. 201</text>
     </trait>
     <trait>
       <name>Starting Equipment</name>
-      <text>Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</text>
+      <text>Choose A or B:</text>
+      <equipmentA>2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP</equipmentA>
+      <equipmentB>50 GP</equipmentB>
     </trait>
   </background>
 </compendium>

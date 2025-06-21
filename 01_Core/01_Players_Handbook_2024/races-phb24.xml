@@ -4,7 +4,10 @@
     <name>Aasimar [2024]</name>
     <size>M</size>
     <speed>30</speed>
-    <resist>necrotic, radiant</resist>
+    <resist>
+      <type>necrotic</type>
+      <type>radiant</type>
+    </resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -178,8 +181,11 @@ Source:	Player's Handbook 2024 p. 189</text>
     <trait category="subspecies">
       <name>Drow Lineage</name>
       <text>The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip.
-	When you reach character levels 3 and 5, you learn Faerie Fire and Darkness respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select' the lineage).</text>
+      <spells>
+        <spell level="3" name="Faerie Fire" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Darkness" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Fey Ancestry</name>
@@ -224,8 +230,11 @@ Source:	Player's Handbook 2024 p. 189</text>
     <trait category="subspecies">
       <name>High Elf Lineage</name>
       <text>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.
-	When you reach character levels 3 and 5, you learn Detect Magic and Misty Step respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select' the lineage).</text>
+      <spells>
+        <spell level="3" name="Detect Magic" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Misty Step" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Fey Ancestry</name>
@@ -270,8 +279,11 @@ Source:	Player's Handbook 2024 p. 189</text>
     <trait category="subspecies">
       <name>Wood Elf Lineage</name>
       <text>Your Speed increases to 35 feet. You also know the Druidcraft cantrip.
-	When you reach character levels 3 and 5, you learn Longstrider and Pass without Trace respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</text>
+      <spells>
+        <spell level="3" name="Longstrider" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Pass without Trace" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Fey Ancestry</name>
@@ -530,8 +542,11 @@ Source:	Player's Handbook 2024 p. 196</text>
     <trait category="subspecies">
       <name>Fiendish Legacy</name>
       <text>You have Resistance to Poison damage. You also know the Poison Spray cantrip.
-	When you reach character levels 3 and 5, you learn Ray of Sickness and Hold Person respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell s lots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
+      <spells>
+        <spell level="3" name="Ray of Sickness" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Hold Person" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Otherworldly Presence</name>
@@ -566,8 +581,11 @@ Source:	Player's Handbook 2024 p. 196</text>
     <trait category="subspecies">
       <name>Fiendish Legacy</name>
       <text>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.
-	When you reach character levels 3 and 5, you learn False Life and Ray of Enfeeblement respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell s lots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
+      <spells>
+        <spell level="3" name="False Life" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Ray of Enfeeblement" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Otherworldly Presence</name>
@@ -602,8 +620,11 @@ Source:	Player's Handbook 2024 p. 196</text>
     <trait category="subspecies">
       <name>Fiendish Legacy</name>
       <text>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.
-	When you reach character levels 3 and 5, you learn Hellish Rebuke and Darkness respectively. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell s lots you have of the appropriate level.
 	Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
+      <spells>
+        <spell level="3" name="Hellish Rebuke" type="una_vez_por_descanso_largo"/>
+        <spell level="5" name="Darkness" type="una_vez_por_descanso_largo"/>
+      </spells>
     </trait>
     <trait category="species">
       <name>Otherworldly Presence</name>
