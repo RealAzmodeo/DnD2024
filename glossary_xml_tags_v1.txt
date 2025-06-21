@@ -380,4 +380,67 @@ Contenedor para las penalizaciones por uso repetido.
 Este glosario debería cubrir la gran mayoría de las estructuras que hemos implementado. Es un sistema bastante detallado y espero que sea de gran ayuda.
 Avísame si tienes alguna pregunta o si quieres que me enfoque en alguna parte específica.
 
-Ahora, si estás listo, podemos empezar con el **Paso 1 del Plan V3: Análisis de Casos Existentes y Definición de Estructura XML para Requisitos de Equipamiento**.
+---
+### **Etiquetas Específicas para Trasfondos (Backgrounds)**
+---
+
+**`<background>`**
+Contenedor raíz para la definición de un trasfondo.
+*   **`<name>`**: Nombre del trasfondo.
+*   **`<source book="[BookName]" page="[PageNumber]" (otros_atributos_opcionales)/>`**: Especifica el libro y la página de origen del trasfondo.
+    *   `book`: Nombre del libro fuente (ej: "Player's Handbook 2024").
+    *   `page`: Número de página.
+*   **`<description>`**: Párrafo o párrafos con la descripción general y narrativa del trasfondo.
+    *   **`<text>`**: Texto de la descripción. Puede haber múltiples etiquetas `<text>` si la descripción original está dividida en párrafos.
+    *   **`<source book="[BookName]" page="[PageNumber]"/>`**: (Opcional, si la descripción tiene una fuente específica diferente al trasfondo general, aunque usualmente será la misma).
+*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades otorgadas por el trasfondo.
+    *   **`<skill name="[SkillName]"/>`**: Define una competencia en una habilidad específica (ej: `<skill name="Insight"/>`, `<skill name="Religion"/>`).
+*   **`<ability_score_increase>`**: Describe las reglas para el incremento de puntuaciones de característica otorgado por el trasfondo.
+    *   **`<text>`**: El texto explicativo de cómo se aplican los incrementos (ej: "Increase one by 2 and another one by 1, or increase all three by 1...").
+    *   **`<applies_to_abilities>`**: Contenedor para las habilidades específicas que pueden ser incrementadas por este trasfondo.
+        *   **`<ability name="[AbilityName]"/>`**: Lista cada una de las tres habilidades relevantes (ej: `<ability name="Intelligence"/>`, `<ability name="Wisdom"/>`, `<ability name="Charisma"/>`).
+*   **`<feat_granted>`**: Detalla el dote (feat) que el trasfondo otorga.
+    *   **`<name ref="[FeatName]">[FeatName]</name>`**: Nombre del dote. El atributo `ref` puede usarse si el dote está definido en una base de datos global de dotes.
+    *   **`<text>`**: Descripción completa del dote, incluyendo todos sus beneficios y reglas.
+    *   **`<source book="[BookName]" page="[PageNumber]"/>`**: Especifica el libro y la página de origen del dote.
+*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas.
+    *   **`<tool name="[ToolName]"/>`**: Si el trasfondo otorga competencia con una herramienta específica (ej: `<tool name="Calligrapher's Supplies"/>`).
+    *   **`<tool_choice count="[number]">`**: Si el trasfondo permite elegir una o más herramientas.
+        *   `count`: Número de herramientas a elegir.
+        *   **`<category name="[CategoryName]"/>`**: Especifica la categoría de herramientas de la cual elegir (ej: "Artisan's Tools", "Gaming Set", "Musical Instrument").
+        *   **`<text>`**: Texto descriptivo de la elección, incluyendo la lista de herramientas disponibles si se detalla en la fuente (ej: la lista de Artisan's Tools con costo y peso).
+*   **`<starting_equipment>`**: Contenedor para las opciones de equipo inicial.
+    *   **`<text>`** (opcional): Texto introductorio como "Choose A or B:".
+    *   **`<option name="[OptionLabel]">`**: Define una opción de equipo (ej: `<option name="A">`).
+        *   **`<item name="[ItemName]" quantity="[number|text]"/>`**: Especifica un ítem y su cantidad. La cantidad puede ser un número o texto si es descriptivo (ej: "Book (prayers)").
+        *   **`<gold amount="[GPValue]" currency="[GP|SP|CP]"/>`**: Especifica una cantidad de monedas y su tipo (GP por defecto).
+*   **`<language_proficiencies>`** (Opcional, si el trasfondo otorga idiomas).
+    *   **`<language name="[LanguageName]"/>`**: Para un idioma específico.
+    *   **`<language_choice count="[number]">`**: Para elegir uno o más idiomas.
+        *   **`<from_list="[lista_idiomas_separados_por_coma|any_standard|any_exotic]"/>`**
+
+**Etiquetas para Trasfondos Personalizables (ej: Custom Background del DMG)**
+
+Las siguientes etiquetas pueden usarse dentro de un `<background>` para indicar que el jugador debe tomar decisiones, siguiendo las directrices del DMG.
+
+*   **`<ability_score_choice>`**
+    *   **`<text>`**: Descripción de cómo elegir las puntuaciones de habilidad (ej: "Choose three abilities that seem appropriate...").
+*   **`<feat_choice>`**
+    *   **`<text>`**: Descripción de cómo elegir el dote (ej: "Choose one feat from the Origin category...").
+    *   **`<category name="Origin"/>`** (opcional, para especificar la categoría del dote).
+*   **`<skill_proficiency_choice count="[number]">`**
+    *   `count`: Número de habilidades a elegir.
+    *   **`<text>`**: Descripción de cómo elegir las competencias en habilidades.
+*   **`<tool_proficiency_choice count="[number]">`**
+    *   `count`: Número de herramientas a elegir.
+    *   **`<text>`**: Descripción de cómo elegir la competencia en herramientas.
+*   **`<starting_equipment_custom>`**
+    *   **`<text>`**: Descripción de cómo ensamblar el paquete de equipo (ej: "Assemble a package of equipment worth 50 GP...").
+    *   **`<value_limit amount="[GPValue]" currency="GP"/>`**: Límite de valor del equipo.
+    *   **`<restrictions>`**: (Opcional) Para listar restricciones como "Don't include Martial weapons or armor...".
+        *   **`<text>`**: Texto de la restricción.
+
+---
+
+Este glosario debería cubrir la gran mayoría de las estructuras que hemos implementado. Es un sistema bastante detallado y espero que sea de gran ayuda.
+Avísame si tienes alguna pregunta o si quieres que me enfoque en alguna parte específica.
