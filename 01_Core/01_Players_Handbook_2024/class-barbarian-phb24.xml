@@ -66,7 +66,7 @@ Each time the Rage is extended, it lasts until the end of your next turn. You ca
 
 Source:	Player's Handbook 2024 p. 51</text>
         <action type="BonusAction" to_enter="true">
-          <equipment_requirements armor_must_not_be="Heavy"/>
+          <equipment_requirements max_armor_type="medium"/>
         </action>
         <uses type="scaling_table" table_ref="BarbarianFeaturesTable_RagesColumn"/> <!-- App needs to know table -->
         <recharge type="1_per_SR_all_per_LR"/>
@@ -91,7 +91,7 @@ Source:	Player's Handbook 2024 p. 51</text>
 
 Source:	Player's Handbook 2024 p. 51</text>
         <special>Unarmored Defense: Constitution</special> <!-- This tag is specific, might be used by some systems -->
-        <equipment_requirements wearing_no_armor="true" shield="allowed"/>
+        <equipment_requirements armor_type="none" shield_handling="allowed"/>
         <modifies_rule rule_name="ArmorClassCalculation">
           <new_formula>10 + DEX_modifier + CON_modifier</new_formula>
         </modifies_rule>
@@ -182,7 +182,7 @@ Source:	Player's Handbook 2024 p. 53</text>
         <text>Your speed increases by 10 feet while you aren't wearing Heavy armor.
 
 Source:	Player's Handbook 2024 p. 53</text>
-        <equipment_requirements armor_must_not_be="Heavy"/>
+        <equipment_requirements max_armor_type="medium"/>
         <modifier category="bonus">speed +10</modifier>
         <effect type="SpeedIncrease" value="10"/>
       </feature>
@@ -570,7 +570,7 @@ Source:	Player's Handbook 2024 p. 55</text>
         <effect type="ChooseOption" from_list="PowerOfTheWildsOptions" count="1"/>
         <options name="PowerOfTheWildsOptions">
           <option name="Falcon">
-            <equipment_requirements wearing_no_armor="true"/>
+            <equipment_requirements armor_type="none"/>
             <effect type="Speed" speed_type="Fly" value_formula="your_Speed" condition="while_Rage_is_active"/>
           </option>
           <option name="Lion">
