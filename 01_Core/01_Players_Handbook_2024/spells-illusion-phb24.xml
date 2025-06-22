@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compendium version="5" auto_indent="NO">
+  <spell>
+    <name>Blur [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Your body becomes blurred. For the duration, any creature has Disadvantage on attack rolls against you. An attacker is immune to this effect if it perceives you with Blindsight or Truesight.</p>
+    </description>
+    <classes text_original="School: Illusion, Sorcerer [2024], Wizard [2024], Druid [2024] (Arid Land)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="248" />
+  </spell>
+  <spell>
+    <name>Color Spray [2024]</name>
+    <level>1</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="15 feet">
+      <value>15</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a pinch of colorful sand</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="251" />
+  </spell>
+  <spell>
+    <name>Creation [2024]</name>
+    <level>5</level>
+    <school code="I">Illusion</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a paintbrush</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>You pull wisps of shadow material from the Shadowfell to create an object within range. It is either an object of vegetable matter (soft goods, rope, wood, and the like) or mineral matter (stone, crystal, metal, and the like). The object must be no larger than a 5-foot Cube, and the object must be of a form and material that you have seen.</p>
+      <p>The spell's duration depends on the object's material, as shown in the Materials table. If the object is composed of multiple materials, use the shortest duration. Using any object created by this spell as another spell's Material component causes the other spell to fail.</p>
+      <p>Materials:
+Material | Duration
+Vegetable matter | 24 hours
+Stone or crystal | 12 hours
+Precious metals | 1 hour
+Gems | 10 minutes
+Adamantine or mithral | 1 minute</p>
+    </description>
+    <classes text_original="School: Illusion, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="259" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">The Cube increases by 5 feet for each spell slot level above 5.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Dancing Lights [2024]</name>
+    <level>0</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of phosphorus</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.</p>
+      <p>As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="259" />
+  </spell>
+  <spell>
+    <name>Disguise Self [2024]</name>
+    <level>1</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.</p>
+      <p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.</p>
+      <p>To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an Intelligence (Investigation) check against your spell save DC.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (Trickery), Ranger [2024] (Gloomstalker)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Gloomstalker" />
+    </classes>
+    <source name="Player's Handbook 2024" page="262" />
+  </spell>
+  <spell>
+    <name>Dream [2024]</name>
+    <level>5</level>
+    <school code="I">Illusion</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a handful of sand</material>
+    </components>
+    <duration description="8 hour">
+      <value>8</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You target a creature you know on the same plane of existence. You or a willing creature you touch enters a trance state to act as a dream messenger. While in the trance, the messenger is Incapacitated and has a Speed of 0.</p>
+      <p>If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the spell's duration. The messenger can also shape the dream's environment, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the spell. The target recalls the dream perfectly upon waking.</p>
+      <p>If the target is awake when you cast the spell, the messenger knows it and can either end the trance (and the spell) or wait for the target to sleep, at which point the messenger enters its dreams.</p>
+      <p>You can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="266" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Fear [2024]</name>
+    <level>3</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a white feather</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Each creature in a 30-foot Cone must succeed on a Wisdom saving throw or drop whatever it is holding and have the Frightened condition for the duration.</p>
+      <p>A Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Ranger [2024] (Gloomstalker), Sorcerer [2024] (Draconic)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Gloomstalker" />
+      <subclass_restriction for_class="Sorcerer" name="Draconic" />
+    </classes>
+    <source name="Player's Handbook 2024" page="271" />
+  </spell>
+  <spell>
+    <name>Greater Invisibility [2024]</name>
+    <level>4</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A creature you touch has the Invisible condition until the spell ends.</p>
+      <p>Invisible:</p>
+      <p>• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.</p>
+      <p>• Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024], Ranger [2024] (Gloomstalker), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Gloomstalker" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="281" />
+  </spell>
+  <spell>
+    <name>Hallucinatory Terrain [2024]</name>
+    <level>4</level>
+    <school code="I">Illusion</school>
+    <casting_time description="10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="300 feet">
+      <value>300</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a mushroom</material>
+    </components>
+    <duration description="24 hour">
+      <value>24</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You make natural terrain in a 150-foot Cube in range look, sound, and smell like another sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed.</p>
+      <p>The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to notice the illusion. If the difference isn't obvious by touch, a creature examining the illusion can take the Study action to make an Intelligence (Investigation) check against your spell save DC to disbelieve it. If a creature discerns that the terrain is illusory, the creature sees a vague image superimposed on the real terrain.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Druid [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="283" />
+  </spell>
+  <spell>
+    <name>Hypnotic Pattern [2024]</name>
+    <level>3</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <somatic />
+      <material>a pinch of confetti</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a twisting pattern of colors in a 30-foot Cube within range. The pattern appears for a moment and vanishes. Each creature in the area who can see the pattern must succeed on a Wisdom saving throw or have the Charmed condition for the duration. While Charmed, the creature has the Incapacitated condition and a Speed of 0.</p>
+      <p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Cleric [2024] (Trickery)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+    </classes>
+    <source name="Player's Handbook 2024" page="287" />
+  </spell>
+  <spell>
+    <name>Illusory Script [2024]</name>
+    <level>1</level>
+    <school code="I">Illusion</school>
+    <ritual available="true" />
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <somatic />
+      <material consumed="true" cost_gp="10" cost_text="worth 10+ GP">ink</material>
+    </components>
+    <duration description="10 day">
+      <value>10</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know.</p>
+      <p>If the spell is dispelled, the original script and the illusion both disappear.</p>
+      <p>A creature that has Truesight can read the hidden message.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="288" />
+  </spell>
+  <spell>
+    <name>Invisibility [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>an eyelash in gum arabic</material>
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A creature you touch has the Invisible condition until the spell ends. The spell ends early immediately after the target makes an attack roll, deals damage, or casts a spell.</p>
+      <p>Invisible:</p>
+      <p>• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.</p>
+      <p>• Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Cleric [2024] (Trickery)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+    </classes>
+    <source name="Player's Handbook 2024" page="289" />
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Magic Mouth [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <ritual available="true" />
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="10" cost_text="worth 10+ GP">jade dust</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.</p>
+      <p>When that trigger occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there, so the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.</p>
+      <p>The trigger can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="295" />
+  </spell>
+  <spell>
+    <name>Major Image [2024]</name>
+    <level>3</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of fleece</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot Cube. The image appears at a spot that you can see within range and lasts for the duration. It seems real, including sounds, smells, and temperature appropriate to the thing depicted, but it can't deal damage or cause conditions.</p>
+      <p>If you are within range of the illusion, you can take a Magic action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.</p>
+      <p>Physical interaction with the image reveals it to be an illusion, for things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="295" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">The spell lasts until dispelled, without requiring Concentration, if cast with a level 4+ spell slot.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Minor Illusion [2024]</name>
+    <level>0</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <somatic />
+      <material>a bit of fleece</material>
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>You create a sound or an image of an object within range that lasts for the duration. See the descriptions below for the effects of each. The illusion ends if you cast this spell again.</p>
+      <p>If a creature takes a Study action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
+      <p>Sound: If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
+      <p>Image: If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot Cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, since things can pass through it.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="298" />
+  </spell>
+  <spell>
+    <name>Mirage Arcane [2024]</name>
+    <level>7</level>
+    <school code="I">Illusion</school>
+    <casting_time description="10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="Sight">
+      <value>sight</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="10 day">
+      <value>10</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other rough or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.</p>
+      <p>Similarly, you can alter the appearance of structures or add them where none are present. The spell doesn't disguise, conceal, or add creatures.</p>
+      <p>The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into Difficult Terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.</p>
+      <p>Creatures with Truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Druid [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="299" />
+  </spell>
+  <spell>
+    <name>Mirror Image [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real.</p>
+      <p>Each time a creature hits you with an attack roll during the spell's duration, roll a d6 for each of your remaining duplicates. If any of the d6s rolls a 3 or higher, one of the duplicates is hit instead of you, and the duplicate is destroyed. The duplicates otherwise ignore all other damage and effects. The spell ends when all three duplicates are destroyed.</p>
+      <p>A creature is unaffected by this spell if it has the Blinded condition, Blindsight, or Truesight.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="299" />
+    <roll description="" type="damage">
+      <dice>1d6</dice>
+    </roll>
+  </spell>
+  <spell>
+    <name>Mislead [2024]</name>
+    <level>5</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You gain the Invisible condition at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends immediately after you make an attack roll, deal damage, or cast a spell.</p>
+      <p>As a Magic action, you can move the illusory double up to twice your Speed and make it gesture, speak, and behave in whatever way you choose. It is intangible and invulnerable.</p>
+      <p>You can see through its eyes and hear through its ears as if you were located where it is.</p>
+      <p>Invisible:</p>
+      <p>• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.</p>
+      <p>• Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Warlock [2024], Wizard [2024], Ranger [2024] (Fey Wanderer)">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Fey Wanderer" />
+    </classes>
+    <source name="Player's Handbook 2024" page="299" />
+  </spell>
+  <spell>
+    <name>Nystul's Magic Aura [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a small square of silk</material>
+    </components>
+    <duration description="24 hour">
+      <value>24</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>With a touch, you place an illusion on a willing creature or an object that isn't being worn or carried. A creature gains the Mask effect below, and an object gains the False Aura effect below. The effect lasts for the duration. If you cast the spell on the same target every day for 30 days, the illusion lasts until dispelled.</p>
+      <p>Mask (Creature): Choose a creature type other than the target's actual type. Spells and other magical effects treat the target as if it were a creature of the chosen type.</p>
+      <p>False Aura (Object): You change the way the target appears to spells and magical effects that detect magical auras, such as Detect Magic. You can make a nonmagical object appear magical, make a magic item appear nonmagical, or change the object's aura so that it appears to belong to a school of magic you choose.</p>
+    </description>
+    <classes text_original="School: Illusion, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="302" />
+  </spell>
+  <spell>
+    <name>Phantasmal Force [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of fleece</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You attempt to craft an illusion in the mind of a creature you can see within range. The target makes an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other phenomenon that is no larger than a 10-foot Cube and that is perceivable only to the target for the duration. The phantasm includes sound, temperature, and other stimuli.</p>
+      <p>The target can take a Study action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.</p>
+      <p>While affected by the spell, the target treats the phantasm as if it were real and rationalizes any illogical outcomes from interacting with it. For example, if the target steps through a phantasmal bridge and survives the fall, it believes the bridge exists and something else caused it to fall.</p>
+      <p>An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm's area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024], Warlock [2024] (Archfey), Warlock [2024] (Great Old One)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+      <subclass_restriction for_class="Warlock" name="Great Old One" />
+    </classes>
+    <source name="Player's Handbook 2024" page="304" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Phantasmal Killer [2024]</name>
+    <level>4</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes 4d10 Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends.</p>
+      <p>For the duration, the target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="304" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>8d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>9d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The damage increases by 1d10">
+          <roll_increase increase_dice="1d10" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Phantom Steed [2024]</name>
+    <level>3</level>
+    <school code="I">Illusion</school>
+    <ritual available="true" />
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>A Large, quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, and it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.</p>
+      <p>For the duration, you or a creature you choose can ride the steed. The steed uses the Riding Horse stat block, except it has a Speed of 100 feet and can travel 13 miles in an hour. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends early if the steed takes any damage.</p>
+    </description>
+    <classes text_original="School: Illusion, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="304" />
+  </spell>
+  <spell>
+    <name>Programmed Illusion [2024]</name>
+    <level>6</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="25" cost_text="worth 25+ GP">jade dust</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific trigger occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot Cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.</p>
+      <p>When the trigger you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes, after which the illusion can be activated again.</p>
+      <p>The trigger can be as general or as detailed as you like, though it must be based on visual or audible phenomena that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door.</p>
+      <p>Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="309" />
+  </spell>
+  <spell>
+    <name>Project Image [2024]</name>
+    <level>7</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="500 Miles">
+      <value>500</value>
+      <unit>mile</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="5" cost_text="worth 5+ GP">a statuette of yourself</material>
+    </components>
+    <duration description="Concentration, up to 1 day">
+      <value>1</value>
+      <unit>day</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you, but it is intangible. If the illusion takes any damage, it disappears, and the spell ends.</p>
+      <p>You can see through the illusion's eyes and hear through its ears as if you were in its space. As a Magic action, you can move it up to 60 feet and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.</p>
+      <p>Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="309" />
+  </spell>
+  <spell>
+    <name>Seeming [2024]</name>
+    <level>5</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="8 hour">
+      <value>8</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You give an illusory appearance to each creature of your choice that you can see within range. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected by this spell.</p>
+      <p>You can give the same appearance or different ones to the targets. The spell can change the appearance of the targets' bodies and equipment. You can make each creature seem 1 foot shorter or taller and appear heavier or lighter. A target's new appearance must have the same basic arrangement of limbs as the target, but the extent of the illusion is otherwise up to you. The spell lasts for the duration.</p>
+      <p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a creature's outfit, objects pass through the hat.</p>
+      <p>A creature that takes the Study action to examine a target can make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024], Ranger [2024] (Gloomstalker), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Gloomstalker" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="314" />
+  </spell>
+  <spell>
+    <name>Silence [2024]</name>
+    <level>2</level>
+    <school code="I">Illusion</school>
+    <ritual available="true" />
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>For the duration, no sound can be created within or pass through a 20-foot-radius Sphere centered on a point you choose within range. Any creature or object entirely inside the Sphere has Immunity to Thunder damage, and creatures have the Deafened condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Cleric [2024], Ranger [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Ranger</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="316" />
+  </spell>
+  <spell>
+    <name>Silent Image [2024]</name>
+    <level>1</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of fleece</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.</p>
+      <p>As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.</p>
+      <p>Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.</p>
+    </description>
+    <classes text_original="School: Illusion, Bard [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="317" />
+  </spell>
+  <spell>
+    <name>Simulacrum [2024]</name>
+    <level>7</level>
+    <school code="I">Illusion</school>
+    <casting_time description="12 hour">
+      <value>12</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1500" cost_text="worth 1,500+ GP">powdered ruby</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>You create a simulacrum of one Beast or Humanoid that is within 10 feet of you for the entire casting of the spell. You finish the casting by touching both the creature and a pile of ice or snow that is the same size as that creature, and the pile turns into the simulacrum, which is a creature. It uses the game statistics of the original creature at the time of casting, except it is a Construct, its Hit Points maximum is half as much, and it can't cast this spell.</p>
+      <p>The simulacrum is Friendly to you and creatures you designate. It obeys your commands and acts on your turn in combat. The simulacrum can't gain levels, and it can't take Short or Long Rests.</p>
+      <p>If the simulacrum takes damage, the only way to restore its Hit Points is to repair it as you take a Long Rest, during which you expend components worth 100 GP per Hit Points restored. The simulacrum must stay within 5 feet of you for the repair.</p>
+      <p>The simulacrum lasts until it drops to 0 Hit Points, at which point it reverts to snow and melts away. If you cast this spell again, any simulacrum you created with this spell is instantly destroyed.</p>
+    </description>
+    <classes text_original="School: Illusion, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="317" />
+  </spell>
+  <spell>
+    <name>Weird [2024]</name>
+    <level>9</level>
+    <school code="I">Illusion</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You try to create illusory terrors in others' minds. Each creature of your choice in a 30-foot-radius Sphere centered on a point within range makes a Wisdom saving throw. On a failed save, a target takes 10d10 Psychic damage and has the Frightened condition for the duration. On a successful save, a target takes half as much damage only.</p>
+      <p>A Frightened target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes 5d10 Psychic damage. On a successful save, the spell ends on that target.</p>
+    </description>
+    <classes text_original="School: Illusion, Warlock [2024], Wizard [2024]">
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="341" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>10d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+</compendium>

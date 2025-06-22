@@ -486,7 +486,82 @@ Contenedor para las penalizaciones por uso repetido.
 *   **`<scaling_penalty_on_further_uses_before_LR description="[texto]"/>`**
 
 ---
+### **Etiquetas Específicas para Hechizos (Spells)**
+---
 
-Este glosario debería cubrir la gran mayoría de las estructuras para clases, dotes y razas. Es un sistema detallado y se espera que sea de gran ayuda para el parseo y la utilización de estos datos.
+**`<spell>`**
+Contenedor raíz para la definición de un hechizo individual. Se espera que estos se agrupen en archivos por escuela (ej: `spells-abjuration-phb24.xml`).
+*   **`<name>`**: Nombre del hechizo. (Existente en otros contextos, adaptado).
+*   **`<level>`**: Nivel del hechizo (0 para trucos/cantrips). (Existente en otros contextos, adaptado).
+*   **`<school code="[A|C|D|EN|EV|I|N|T]">[NombreCompletoEscuela]</school>`**: Escuela de magia.
+    *   `code`: Abreviatura estándar de la escuela (A: Abjuración, C: Conjuración, D: Adivinación, EN: Encantamiento, EV: Evocación, I: Ilusión, N: Nigromancia, T: Transmutación).
+    *   Texto: Nombre completo de la escuela (ej: "Abjuración").
+*   **`<ritual available="[true|false]"/>`**: Indica si el hechizo puede ser lanzado como un ritual.
+    *   `available`: "true" si es un ritual, "false" en caso contrario.
+*   **`<casting_time description="[TextoCompletoDelTiempoDeLanzamiento]">`**: Describe el tiempo de lanzamiento.
+    *   `description`: El texto original del tiempo de lanzamiento (ej: "1 Action", "1 Bonus Action", "1 Reaction, which you take when...").
+    *   **`<value>`** (opcional): Valor numérico si aplica (ej: 1, 10).
+    *   **`<unit>`** (opcional): Unidad del tiempo (`action`, `bonus_action`, `reaction`, `minute`, `hour`, `round`, `special`).
+    *   **`<condition text="[condicion_especial_o_trigger_reaccion]"/>`** (opcional): Texto adicional si el tiempo de lanzamiento tiene condiciones especiales o es una reacción con un disparador específico.
+*   **`<range description="[TextoCompletoDelRango]">`**: Describe el rango del hechizo.
+    *   `description`: El texto original del rango (ej: "Self", "Touch", "60 feet", "Self (15-foot cone)").
+    *   **`<value>`** (opcional): Valor numérico o palabra clave (`self`, `touch`, `sight`, `unlimited`, `special`).
+    *   **`<unit>`** (opcional): Unidad del rango si `value` es numérico (`feet`, `mile`).
+    *   **`<shape>`** (opcional): Forma del área de efecto si aplica (`cone`, `cube`, `cylinder`, `line`, `radius`, `sphere`, `special`).
+    *   **`<shape_value>`** (opcional): Dimensiones de la forma (ej: "15-foot" para un cono, "20-foot-radius" para una esfera).
+*   **`<components>`**: Contenedor para los componentes del hechizo.
+    *   **`<verbal/>`**: Etiqueta vacía si el componente Verbal está presente.
+    *   **`<somatic/>`**: Etiqueta vacía si el componente Somático está presente.
+    *   **`<material consumed="[true|false]" cost_gp="[numero]" cost_text="[texto_alternativo_costo]">[descripcion_del_material]</material>`**: Describe un componente material. Puede haber múltiples.
+        *   `consumed`: "true" si el material se consume, "false" o ausente si no.
+        *   `cost_gp` (opcional): Costo en piezas de oro si el material tiene un valor específico que se consume o es requerido.
+        *   `cost_text` (opcional): Para costos no estándar o descripciones adicionales (ej: "a diamond worth at least 50 gp", "which the spell consumes").
+        *   Texto: La descripción textual del componente material (ej: "a tiny ball of bat guano and sulfur").
+*   **`<duration description="[TextoCompletoDeLaDuracion]">`**: Describe la duración del hechizo.
+    *   `description`: El texto original de la duración (ej: "Instantaneous", "Concentration, up to 1 minute", "8 hours").
+    *   **`<value>`** (opcional): Valor numérico o palabra clave (`instantaneous`, `until_dispelled`, `until_triggered`, `special`, `concentration`).
+    *   **`<unit>`** (opcional): Unidad de la duración si `value` es numérico (`round`, `minute`, `hour`, `day`, `year`).
+    *   **`<concentration available="[true|false]" up_to="[true|false]"/>`**: Indica si requiere concentración.
+        *   `available`: "true" si requiere concentración.
+        *   `up_to`: "true" si la duración es "hasta X tiempo" (ej: "Concentration, up to 1 minute").
+*   **`<description>`**: Contenedor principal para el texto descriptivo del hechizo.
+    *   **`<p>[parrafo_de_texto]</p>`**: Para párrafos de texto. Se pueden usar múltiples.
+    *   **`<list type="[bullet|ordered]">`**: Para listas.
+        *   **`<item>[elemento_de_lista]</item>`**: Elemento individual de la lista.
+    *   **`<table>`**: Para tablas dentro de la descripción del hechizo (usar estructura similar a `<inline_table>`).
+        *   **`<header><col label="Col1"/><col label="Col2"/></header>`**
+        *   **`<row><cell>Val1</cell><cell>Val2</cell></row>`**
+*   **`<classes text_original="[TextoOriginalDeClases]">`**: Lista de clases y subclases que pueden aprender/usar el hechizo.
+    *   `text_original`: El texto original de la sección de clases del hechizo.
+    *   **`<class_name>[NombreClase]</class_name>`**: Nombre de la clase (ej: "Wizard").
+    *   **`<subclass_restriction for_class="[NombreClasePadre]" name="[NombreSubclase] (Dominio/Patron/etc.)"/>`**: Si el hechizo es específico de una subclase.
+*   **`<source name="[NombreDelLibro]" page="[NumeroPagina]"/>`**: Información de la fuente del hechizo. (Adaptación de la etiqueta `<source>` existente).
+*   **`<roll description="[DescripcionDeLaTirada]" type="[damage|healing|effect|attack]">`**: Para representar dados que se tiran como parte del hechizo.
+    *   `description`: Descripción de para qué es la tirada (ej: "Acid Damage", "Heal", "Subtract from Roll").
+    *   `type`: El propósito de la tirada (`damage`, `healing`, `effect` para tiradas misceláneas, `attack` para tiradas de ataque de conjuro si se quiere desglosar).
+    *   **`<dice>[formula_dado]</dice>`**: La fórmula del dado (ej: "1d6", "2d8+SPELL").
+    *   **`<damage_type>[Acid|Cold|Fire|...]</damage_type>`** (opcional): Si `type="damage"`, el tipo de daño.
+    *   **`<bonus_from_ability>[SPELL|STR|DEX|CON|INT|WIS|CHA]</bonus_from_ability>`** (opcional): Si se añade un modificador de característica al resultado (ej: `+SPELL` para el modificador de la aptitud mágica).
+    *   **`<scaling_level value="[NivelPersonaje/Hechizo]">`** (opcional): Si la tirada escala con el nivel.
+        *   **`<dice>[nueva_formula_dado]</dice>`**
+    *   **`<save_required type="[STR|DEX|CON|INT|WIS|CHA]" dc_formula="[8+ProficiencyBonus+SPELL]" effect_on_success="[half_damage|negates_effect|none]" effect_on_failure="[full_damage|condition_applied]"/>`** (opcional): Si la tirada de daño/efecto permite una salvación.
+*   **`<area_of_effect shape="[cone|cube|cylinder|line|radius|sphere|special]" value="[dimensiones]" description="[texto_descriptivo_area]"/>`**: Describe el área de efecto si no está implícita en el rango.
+*   **`<saving_throw ability="[STR|DEX|CON|INT|WIS|CHA]" effect_on_success="[texto]" effect_on_failure="[texto]"/>`**: Para tiradas de salvación principales del hechizo que no son parte de un `<roll>`.
+*   **`<at_higher_levels>`**: Contenedor para describir cómo escala el hechizo al usar espacios de conjuro de nivel superior.
+    *   **`<text_block title="Cantrip Upgrade">[texto_completo_mejora_truco]</text_block>`**: Para la sección de mejora de trucos.
+        *   **`<scaling level="[NivelPersonaje]"> <effect description="[descripcion_mejora_nivel_X]"/> </scaling>`**: Para detallar mejoras específicas por nivel de personaje.
+    *   **`<per_slot_above base_level="[NivelDesdeElQueMejora]">`**: Para mejoras que aplican por cada nivel de espacio de conjuro por encima de un nivel base.
+        *   **`<effect description="[descripcion_efecto_por_slot_adicional]">`**: Descripción del efecto (ej: "The damage increases by 1d6").
+        *   **`<roll_increase original_roll_description="[IdentificadorTiradaOriginal]" increase_dice="[dado_adicional]" increase_bonus="[numero]"/>`**: Si la mejora es un aumento a una tirada existente.
+        *   **`<additional_targets count="[numero_adicional]"/>`**: Si se pueden afectar más objetivos.
+        *   **`<duration_increase value="[numero]" unit="[minute|hour|day]"/>`**: Si la duración aumenta.
+    *   **`<specific_slot level="[NivelDeEspacioEspecifico]">`**: Para mejoras que ocurren a un nivel de espacio de conjuro específico.
+        *   **`<effect description="[descripcion_efecto_a_este_nivel]">`**
+*   **`<tags>`** (opcional): Para categorización funcional del hechizo.
+    *   **`<tag>[utility|combat|healing|control|debuff|buff|summoning|sensory|social|exploration|teleportation|creation|warding]</tag>`**: Ejemplos de etiquetas.
+
+---
+
+Este glosario debería cubrir la gran mayoría de las estructuras para clases, dotes, razas, trasfondos y ahora hechizos. Es un sistema detallado y se espera que sea de gran ayuda para el parseo y la utilización de estos datos.
 Cualquier nueva mecánica encontrada que no encaje claramente en estas etiquetas deberá ser analizada para determinar si se requiere una nueva etiqueta o una extensión de una existente.
 La consistencia en la aplicación de estas etiquetas es clave para la mantenibilidad y utilidad del compendio XML.

@@ -1,0 +1,1612 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compendium version="5" auto_indent="NO">
+  <spell>
+    <name>Animal Friendship [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a morsel of food</material>
+    </components>
+    <duration description="24 hour">
+      <value>24</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. If you or one of your allies deals damage to the target, the spells ends.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Ranger [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="239" />
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You can target one additional Beast">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Animal Messenger [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <ritual available="true" />
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a morsel of food</material>
+    </components>
+    <duration description="24 hour">
+      <value>24</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>A Tiny Beast of your choice that you can see within range must succeed on a Charisma saving throw, or it attempts to deliver a message for you (if the target's Challenge Rating isn't 0, it automatically succeeds). You specify a location you have visited and a recipient who matches a general description, such as "a person dressed in the uniform of the town guard" or "a red-haired dwarf wearing a pointed hat." You also communicate a message of up to twenty-five words. The Beast travels for the duration toward the specified location, covering about 25 miles per 24 hours or 50 miles if the Beast can fly.</p>
+      <p>When the Beast arrives, it delivers your message to the creature that you described, mimicking your communication. If the Beast doesn't reach its destination before the spell ends, the message is lost, and the Beast returns to where you cast the spell.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Ranger [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="240" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">The spell's duration increases by 48 hours for each spell slot level above 2.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Antipathy/Sympathy [2024]</name>
+    <level>8</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a mix of vinegar and honey</material>
+    </components>
+    <duration description="10 day">
+      <value>10</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. Your choice of antipathy or sympathy determines what happens to a creature when it fails that save:</p>
+      <p>Antipathy: The creature has the Frightened condition. The Frightened creature must use its movement on its turns to get as far away as possible from the target, moving by the safest route.</p>
+      <p>Sympathy: The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. If the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below.</p>
+      <p>Ending the Effect: If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="242" />
+  </spell>
+  <spell>
+    <name>Bane [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a drop of blood</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Warlock [2024], Paladin [2024] (Vengeance)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Vengeance" />
+    </classes>
+    <source name="Player's Handbook 2024" page="245" />
+    <roll description="Subtract from Roll" type="effect">
+      <dice>1d4</dice>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Befuddlement [2024]</name>
+    <level>8</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a key ring with no keys</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw.</p>
+      <p>On a failed save, the target takes 10d12 Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target repeats the save, ending the effect on a success. The effect can also be ended by the Greater Restoration, Heal, or Wish spell.</p>
+      <p>On a successful save, the target takes half as much damage only.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="245" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>10d12</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Bless [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="5" cost_text="worth 5+ GP">a Holy Symbol</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.</p>
+    </description>
+    <classes text_original="School: Enchantment, Cleric [2024], Paladin [2024], Cleric [2024] (Life)">
+      <class_name>Cleric</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Cleric" name="Life" />
+    </classes>
+    <source name="Player's Handbook 2024" page="247" />
+    <roll description="Add to Roll" type="effect">
+      <dice>1d4</dice>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Calm Emotions [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Each Humanoid in a 20-foot-radius Sphere centered on a point you choose within range must succeed on a Charisma saving throw or be affected by one of the following effects (choose for each creature):</p>
+      <p>• The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration.</p>
+      <p>• The creature becomes Indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Sorcerer [2024] (Aberrant), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Sorcerer</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Aberrant" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+  </spell>
+  <spell>
+    <name>Charm Monster [2024]</name>
+    <level>4</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>One creature you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Sorcerer [2024] (Draconic)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Draconic" />
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Charm Person [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Cleric [2024] (Trickery), Ranger [2024] (Fey Wanderer)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+      <class_name>Ranger</class_name>
+      <subclass_restriction for_class="Ranger" name="Fey Wanderer" />
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Command [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:</p>
+      <p>Approach: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p>
+      <p>Drop: The target drops whatever it is holding and then ends its turn.</p>
+      <p>Flee: The target spends its turn moving away from you by the fastest available means.</p>
+      <p>Grovel: The target has the Prone condition and then ends its turn.</p>
+      <p>Halt: On its turn, the target doesn't move and takes no action or Bonus Action.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Paladin [2024], Sorcerer [2024] (Draconic), Warlock [2024] (Fiend)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Paladin</class_name>
+      <class_name>Sorcerer</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Draconic" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="251" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">You can affect one additional creature for each spell slot level above 1.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Compelled Duel [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Bonus Action">
+      <value>1</value>
+      <unit>bonus_action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You try to compel a creature into a duel. One creature that you can see within range makes a Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you.</p>
+      <p>The spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if you end your turn more than 30 feet away from the target.</p>
+    </description>
+    <classes text_original="School: Enchantment, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="252" />
+  </spell>
+  <spell>
+    <name>Compulsion [2024]</name>
+    <level>4</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition until the spell ends.</p>
+      <p>For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each Charmed target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Paladin [2024] (Glory)">
+      <class_name>Bard</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Glory" />
+    </classes>
+    <source name="Player's Handbook 2024" page="252" />
+  </spell>
+  <spell>
+    <name>Confusion [2024]</name>
+    <level>4</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>three nut shells</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Each creature in a 10-foot-radius Sphere centered on a point you choose within range must succeed on a Wisdom saving throw, or that target can't take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below.</p>
+      <p>Confused Actions:
+1d10 | Behavior for the Turn
+1 | The target doesn't take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4, west.
+2-6 | The target doesn't move or take actions.
+7-8 | The target doesn't move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action.
+9-10 | The target chooses its behavior.</p>
+      <p>At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Druid [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (Trickery), Warlock [2024] (Great Old One)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Great Old One" />
+    </classes>
+    <source name="Player's Handbook 2024" page="253" />
+    <roll description="Behavior" type="damage">
+      <dice>1d10</dice>
+    </roll>
+    <roll description="Direction" type="damage">
+      <dice>1d4</dice>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The Sphere's radius increases by 5 feet" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Crown of Madness [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One creature that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The creature succeeds automatically if it isn't Humanoid.</p>
+      <p>A spectral crown appears on the Charmed target's head, and it must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if no creature is within its reach. The target repeats the save at the end of each of its turns, ending the spell on itself on a success.</p>
+      <p>On your later turns, you must take the Magic action to maintain control of the target, or the spell ends.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="259" />
+  </spell>
+  <spell>
+    <name>Dissonant Whispers [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024] (Aberrant), Warlock [2024] (Great Old One)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Aberrant" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Great Old One" />
+    </classes>
+    <source name="Player's Handbook 2024" page="264" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Dominate Beast [2024]</name>
+    <level>4</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One Beast you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.</p>
+      <p>You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as "Attack that creature," "Move over there," or "Fetch that object." The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, it acts and moves as it likes, focusing on protecting itself.</p>
+      <p>You can command the target to take a Reaction but must take your own Reaction to do so.</p>
+    </description>
+    <classes text_original="School: Enchantment, Druid [2024], Ranger [2024], Sorcerer [2024], Warlock [2024] (Archfey)">
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="265" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">Your Concentration can last longer with a spell slot of level 5 (up to 10 minutes), 6 (up to 1 hour), or 7+ (up to 8 hours).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Dominate Monster [2024]</name>
+    <level>8</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One creature you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.</p>
+      <p>You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as "Attack that creature," "Move over there," or "Fetch that object." The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, it acts and moves as it likes, focusing on protecting itself.</p>
+      <p>You can command the target to take a Reaction but must take your own Reaction to do so.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="265" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">Your Concentration can last longer with a level 9 spell slot (up to 8 hours).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Dominate Person [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One Humanoid you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.</p>
+      <p>You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as "Attack that creature," "Move over there," or "Fetch that object." The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, it acts and moves as it likes, focusing on protecting itself.</p>
+      <p>You can command the target to take a Reaction but must take your own Reaction to do so.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (Trickery), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="266" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">Your Concentration can last longer with a spell slot of level 6 (up to 10 minutes), 7 (up to 1 hour), or 8+ (up to 8 hours).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Enthrall [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom (Perception) checks and Passive Perception until the spell ends.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Warlock [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="269" />
+  </spell>
+  <spell>
+    <name>Friends [2024]</name>
+    <level>0</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="10 feet">
+      <value>10</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <somatic />
+      <material>some makeup</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You magically emanate a sense of friendship toward one creature you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours.</p>
+      <p>The spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was Charmed by you.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="277" />
+  </spell>
+  <spell>
+    <name>Geas [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="30 day">
+      <value>30</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>You give a verbal command to a creature that you can see within range, ordering it to carry out some service or refrain from an action or a course of activity as you decide. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target automatically succeeds if it can't understand your command.</p>
+      <p>While Charmed, the creature takes 5d10 Psychic damage if it acts in a manner directly counter to your command. It takes this damage no more than once each day.</p>
+      <p>You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.</p>
+      <p>A Remove Curse, Greater Restoration, or Wish spell ends this spell.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Druid [2024], Wizard [2024], Paladin [2024], Warlock [2024] (Fiend)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Paladin</class_name>
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="278" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <specific_slot level="7 or 8">
+        <effect description="the duration is 365 days" />
+      </specific_slot>
+      <specific_slot level="9">
+        <effect description="the spell lasts until it is ended by one of the spells mentioned above" />
+      </specific_slot>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Heroism [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Paladin [2024], Paladin [2024] (Glory)">
+      <class_name>Bard</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Glory" />
+    </classes>
+    <source name="Player's Handbook 2024" page="285" />
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Hex [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Bonus Action">
+      <value>1</value>
+      <unit>bonus_action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>the petrified eye of a newt</material>
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.</p>
+      <p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.</p>
+    </description>
+    <classes text_original="School: Enchantment, Warlock [2024]">
+      <class_name>Warlock</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="285" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3-4 (up to 8 hours), or 5+ (24 hours).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Hold Monster [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a straight piece of iron</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or have the Paralyzed condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Cleric [2024] (War), Druid [2024] (Sea), Paladin [2024] (Vengeance)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="War" />
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Sea" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Vengeance" />
+    </classes>
+    <source name="Player's Handbook 2024" page="285" />
+    <at_higher_levels>
+      <per_slot_above base_level="5">
+        <effect description="You can target one additional creature">
+          <additional_targets count="1" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Hold Person [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a straight piece of iron</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Choose a Humanoid that you can see within range. The target must succeed on a Wisdom saving throw or have the Paralyzed condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Druid [2024] (Polar Land), Paladin [2024] (Vengeance)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Polar Land" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Vengeance" />
+    </classes>
+    <source name="Player's Handbook 2024" page="286" />
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="You can target one additional Humanoid" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Mass Suggestion [2024]</name>
+    <level>6</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <material>a snake's tongue</material>
+    </components>
+    <duration description="24 hour">
+      <value>24</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You suggest a course of activity—described in no more than 25 words—to twelve or fewer creatures you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to any of the targets or their allies. For example, you could say, "Walk to the village down that road, and help the villagers there harvest crops until sunset." Or you could say, "Now is not the time for violence. Drop your weapons, and dance! Stop in an hour."</p>
+      <p>Each target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. Each Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for a target upon completing it.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="296" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">The duration is longer with a spell slot of level 7 (10 days), 8 (30 days), or 9 (366 days).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Mind Sliver [2024]</name>
+    <level>0</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Enchantment, Sorcerer [2024], Warlock [2024], Wizard [2024], Sorcerer [2024] (Aberrant)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Aberrant" />
+    </classes>
+    <source name="Player's Handbook 2024" page="298" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Subtract from Saving Throw" type="damage">
+      <dice>1d4</dice>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d6" />
+      </scaling>
+      <scaling level="11">
+        <effect description="3d6" />
+      </scaling>
+      <scaling level="17">
+        <effect description="4d6" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Modify Memory [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You attempt to reshape another creature's memories. One creature that you can see within range makes a Wisdom saving throw. If you are fighting the creature, it has Advantage on the save. On a failed save, the target has the Charmed condition for the duration. While Charmed in this way, the target also has the Incapacitated condition and is unaware of its surroundings, though it can hear you. If it takes any damage or is targeted by another spell, this spell ends, and no memories are modified.</p>
+      <p>While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity, change its memory of the event's details, or create a memory of some other event.</p>
+      <p>You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you finish describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends.</p>
+      <p>A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as a false memory of how much the creature enjoyed swimming in acid, is dismissed as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature.</p>
+      <p>A Remove Curse or Greater Restoration spell cast on the target restores the creature's true memory.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Wizard [2024], Cleric [2024] (Trickery), Warlock [2024] (Great Old One)">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Trickery" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Great Old One" />
+    </classes>
+    <source name="Player's Handbook 2024" page="299" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">You can alter the target's memories of an event that took place up to 7 days ago (level 6 spell slot), 30 days ago (level 7 spell slot), 365 days ago (level 8 spell slot), or any time in the creature's past (level 9 spell slot).</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Otto's Irresistible Dance [2024]</name>
+    <level>6</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One creature that you can see within range must make a Wisdom saving throw. On a successful save, the target dances comically until the end of its next turn, during which it must spend all its movement to dance in place.</p>
+      <p>On a failed save, the target has the Charmed condition for the duration. While Charmed, the target dances comically, must use all its movement to dance in place, and has Disadvantage on Dexterity saving throws and attack rolls, and other creatures have Advantage on attack rolls against it. On each of its turns, the target can take an action to collect itself and repeat the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="303" />
+  </spell>
+  <spell>
+    <name>Power Word Fortify [2024]</name>
+    <level>7</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="306" />
+  </spell>
+  <spell>
+    <name>Power Word Heal [2024]</name>
+    <level>9</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A wave of healing energy washes over one creature you can see within range. The target regains all its Hit Points. If the creature has the Charmed, Frightened, Paralyzed, Poisoned, or Stunned condition, the condition ends. If the creature has the Prone condition, it can use its Reaction to stand up.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="306" />
+  </spell>
+  <spell>
+    <name>Power Word Kill [2024]</name>
+    <level>9</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You compel one creature you can see within range to die. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes 12d12 Psychic damage.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="306" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>12d12</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Power Word Stun [2024]</name>
+    <level>8</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You overwhelm the mind of one creature you can see within range. If the target has 150 Hit Points or fewer, it has the Stunned condition. Otherwise, its Speed is 0 until the start of your next turn.</p>
+      <p>The Stunned target makes a Constitution saving throw at the end of each of its turns, ending the condition on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="306" />
+  </spell>
+  <spell>
+    <name>Sleep [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a pinch of sand or rose petals</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the Incapacitated condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.</p>
+      <p>Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Temperate Land), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Temperate Land" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="317" />
+  </spell>
+  <spell>
+    <name>Staggering Smite [2024]</name>
+    <level>4</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike">
+      <value>1</value>
+      <unit>bonus_action</unit>
+      <condition>
+        <text>you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike</text>
+      </condition>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Enchantment, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="320" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The extra damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Suggestion [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <material>a drop of honey</material>
+    </components>
+    <duration description="Concentration, up to 8 hour">
+      <value>8</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or it allies. For example, you could say, "Fetch the key to the cult's treasure vault, and give the key to me." Or you could say, "Stop fighting, leave this library peacefully, and don't return."</p>
+      <p>The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. The Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Warlock [2024] (Fiend)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="320" />
+  </spell>
+  <spell>
+    <name>Synaptic Static [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.</p>
+      <p>On a failed save, a target also has muddled thoughts for 1 minute. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration. The target makes an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="330" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Subtract from Roll" type="effect">
+      <dice>1d6</dice>
+    </roll>
+  </spell>
+  <spell>
+    <name>Tasha's Hideous Laughter [2024]</name>
+    <level>1</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a tart and a feather</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself.</p>
+      <p>At the end of each of its turns and each time it takes damage, it makes another Wisdom saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Warlock [2024], Wizard [2024], Warlock [2024] (Great Old One)">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Warlock" name="Great Old One" />
+    </classes>
+    <source name="Player's Handbook 2024" page="331" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">You can target one additional creature for each spell slot level about 1.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Vicious Mockery [2024]</name>
+    <level>0</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024]">
+      <class_name>Bard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="337" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d6" />
+      </scaling>
+      <scaling level="11">
+        <effect description="3d6" />
+      </scaling>
+      <scaling level="17">
+        <effect description="4d6" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Yolande's Regal Presence [2024]</name>
+    <level>5</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a miniature tiara</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes 4d6 Psychic damage and has the Prone condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Wizard [2024], Paladin [2024] (Glory)">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Glory" />
+    </classes>
+    <source name="Player's Handbook 2024" page="343" />
+    <roll description="Psychic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Psychic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Zone of Truth [2024]</name>
+    <level>2</level>
+    <school code="EN">Enchantment</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>You create a magical zone that guards against deception in a 15-foot-radius Sphere centered on a point within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there makes a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether a creature succeeds or fails on this save.</p>
+      <p>An affected creature is aware of the spell and can avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive yet must be truthful.</p>
+    </description>
+    <classes text_original="School: Enchantment, Bard [2024], Cleric [2024], Paladin [2024], Paladin [2024] (Devotion)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Devotion" />
+    </classes>
+    <source name="Player's Handbook 2024" page="343" />
+  </spell>
+</compendium>

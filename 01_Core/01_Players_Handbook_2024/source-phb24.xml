@@ -41,6 +41,13 @@ The biggest Player's Handbook in Dungeons &amp; Dragons history!
     <doc href="items-phb24.xml"/>
     <doc href="optionalfeatures-phb24.xml"/>
     <doc href="races-phb24.xml"/>
-    <doc href="spells-phb24.xml"/>
+    <doc href="spells-abjuration-phb24.xml"/>
+    <doc href="spells-conjuration-phb24.xml"/>
+    <doc href="spells-divination-phb24.xml"/>
+    <doc href="spells-enchantment-phb24.xml"/>
+    <doc href="spells-evocation-phb24.xml"/>
+    <doc href="spells-illusion-phb24.xml"/>
+    <doc href="spells-necromancy-phb24.xml"/>
+    <doc href="spells-transmutation-phb24.xml"/>
   </collection>
 </source>
