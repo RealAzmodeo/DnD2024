@@ -83,28 +83,19 @@
     <name>Origin: Magic Initiate [2024]</name>
     <source page="201">Player's Handbook 2024</source>
     <repeatable_note condition="You must choose a different spell list each time."/>
-    <benefit name="Spellcasting Ability Choice">
-        <choice name="Spellcasting Ability for Feat Spells" type="Ability">
-            <option name="Intelligence"/>
-            <option name="Wisdom"/>
-            <option name="Charisma"/>
+    <benefit name="Spellcasting">
+        <grants_spell_learning type="Cantrip" count="2" spell_list_choice="Cleric|Druid|Wizard" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" counts_against_known="false">
+             <description>You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</description>
+        </grants_spell_learning>
+        <grants_spell_learning type="Spell" count="1" spell_level="1" spell_list_choice="Cleric|Druid|Wizard" spellcasting_ability_choice_ref="Spellcasting Ability for Feat Spells" always_prepared="true" free_casts_per_rest type="LongRest" count="1" can_use_spell_slots="true" counts_against_known="false">
+            <description>Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</description>
+        </grants_spell_learning>
+        <choice name="Spellcasting Ability for Feat Spells" count="1">
+            <option name="Intelligence" description_text="Use Intelligence as your spellcasting ability for these spells."/>
+            <option name="Wisdom" description_text="Use Wisdom as your spellcasting ability for these spells."/>
+            <option name="Charisma" description_text="Use Charisma as your spellcasting ability for these spells."/>
         </choice>
-        <note text="Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."/>
-    </benefit>
-    <benefit name="Two Cantrips">
-      <grants_spell_learning type="Cantrip" count="2" spell_list_choice="Cleric|Druid|Wizard" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" counts_against_known="false">
-        <description>You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list.</description>
-      </grants_spell_learning>
-    </benefit>
-    <benefit name="Level 1 Spell">
-      <grants_spell_learning type="Spell" count="1" spell_level="1" spell_list_choice="Cleric|Druid|Wizard" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" always_prepared="true" free_casts_per_rest type="LongRest" count="1" can_use_spell_slots="true" counts_against_known="false">
-        <description>Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</description>
-      </grants_spell_learning>
-    </benefit>
-    <benefit name="Spell Change">
-        <passive_effect description="Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.">
-            <modifies_spell_learning rule="spell_replacement_on_level_up" applies_to_feat_spells="true"/>
-        </passive_effect>
+        <modifies_spell_learning rule="spell_replacement_on_level_up" applies_to_feat_spells="true" description="Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list."/>
     </benefit>
   </feat>
   <feat origin_feat="true">
@@ -1454,14 +1445,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Strength">
         <grants_ability_score_increase>
             <fixed_ability name="Strength" value="+1" max="20"/>
         </grants_ability_score_increase>
-        <note text="The text implies you choose an ability for the +1, but the name of the feat variant (Strength) and the proficiency gain (Strength) strongly suggest the +1 is to Strength. The PHB errata for Resilient (original) clarified it's +1 to the chosen ability. This 2024 version seems to link the ASI to the feat variant's ability directly."/>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Strength"/>
+        <description>You increase your Strength score by 1, to a maximum of 20. You also gain proficiency in Strength saving throws.</description>
+        <note text="This 2024 version links the ASI directly to the feat variant's ability (Strength)."/>
     </benefit>
   </feat>
   <feat>
@@ -1470,13 +1460,12 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Dexterity">
         <grants_ability_score_increase>
             <fixed_ability name="Dexterity" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Dexterity"/>
+        <description>You increase your Dexterity score by 1, to a maximum of 20. You also gain proficiency in Dexterity saving throws.</description>
     </benefit>
   </feat>
   <feat>
@@ -1485,13 +1474,12 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Constitution">
         <grants_ability_score_increase>
             <fixed_ability name="Constitution" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Constitution"/>
+        <description>You increase your Constitution score by 1, to a maximum of 20. You also gain proficiency in Constitution saving throws.</description>
     </benefit>
   </feat>
   <feat>
@@ -1500,13 +1488,12 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Wisdom">
         <grants_ability_score_increase>
             <fixed_ability name="Wisdom" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Wisdom"/>
+        <description>You increase your Wisdom score by 1, to a maximum of 20. You also gain proficiency in Wisdom saving throws.</description>
     </benefit>
   </feat>
   <feat>
@@ -1515,13 +1502,12 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Intelligence">
         <grants_ability_score_increase>
             <fixed_ability name="Intelligence" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Intelligence"/>
+        <description>You increase your Intelligence score by 1, to a maximum of 20. You also gain proficiency in Intelligence saving throws.</description>
     </benefit>
   </feat>
   <feat>
@@ -1530,13 +1516,12 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Resilience in Charisma">
         <grants_ability_score_increase>
             <fixed_ability name="Charisma" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Saving Throw Proficiency">
         <grants_proficiency type="SavingThrow" name="Charisma"/>
+        <description>You increase your Charisma score by 1, to a maximum of 20. You also gain proficiency in Charisma saving throws.</description>
     </benefit>
   </feat>
   <feat>
@@ -1810,16 +1795,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Strength">
         <grants_ability_score_increase>
             <fixed_ability name="Strength" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Strength score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
@@ -1828,16 +1810,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Dexterity">
         <grants_ability_score_increase>
             <fixed_ability name="Dexterity" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Dexterity score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
@@ -1846,16 +1825,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Constitution">
         <grants_ability_score_increase>
             <fixed_ability name="Constitution" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Constitution score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
@@ -1864,16 +1840,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Wisdom">
         <grants_ability_score_increase>
             <fixed_ability name="Wisdom" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Wisdom score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
@@ -1882,16 +1855,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Intelligence">
         <grants_ability_score_increase>
             <fixed_ability name="Intelligence" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Intelligence score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
@@ -1900,16 +1870,13 @@
     <prerequisite>
         <level min="4"/>
     </prerequisite>
-    <benefit name="Ability Score Increase">
+    <benefit name="Expertise in Charisma">
         <grants_ability_score_increase>
             <fixed_ability name="Charisma" value="+1" max="20"/>
         </grants_ability_score_increase>
-    </benefit>
-    <benefit name="Skill Proficiency">
         <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
-    </benefit>
-    <benefit name="Expertise">
         <grants_proficiency type="Skill" choice_from_list="any_skill_you_are_proficient_in" count="1" expertise="true" condition="must_choose_skill_you_have_proficiency_in_but_lack_Expertise"/>
+        <description>Increase your Charisma score by 1, to a maximum of 20. Choose one skill in which you have proficiency. You gain Expertise with that skill. You also gain proficiency in one skill of your choice.</description>
     </benefit>
   </feat>
   <feat>
