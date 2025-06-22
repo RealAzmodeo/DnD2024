@@ -1,0 +1,1560 @@
+{
+    "glossary_tags_count": 194,
+    "all_found_tags_in_project_count": 242,
+    "discrepancies_found": true,
+    "discrepant_tags": [
+        {
+            "tag": "abilities",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "abilities_using_focus_points",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "ability",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "ac",
+            "count": 30,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml"
+            ]
+        },
+        {
+            "tag": "action_to_end_vibrations",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "activation_conditions",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_effect",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_option",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_option_for_attack",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_recharge_method",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_use_of_pool",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "additional_uses_for_die",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml"
+            ]
+        },
+        {
+            "tag": "adds_options_to",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "alignment",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "ally_must_not_be_condition",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "ally_within_feet",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "ancestry",
+            "count": 26,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_w.xml"
+            ]
+        },
+        {
+            "tag": "attack",
+            "count": 27,
+            "files": [
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml"
+            ]
+        },
+        {
+            "tag": "benefit_in_aura",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefit_while_holding_map",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefit_while_in_form",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefits",
+            "count": 7,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefits_while_active",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefits_while_in_form",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "benefits_while_persists",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml"
+            ]
+        },
+        {
+            "tag": "can_reuse_by_expending",
+            "count": 4,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "category",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "cha",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "chooses_land_type_on_long_rest",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "compendium",
+            "count": 49,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/02_Dungeon_Masters_Guide_2024/backgrounds-dmg24.xml",
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml"
+            ]
+        },
+        {
+            "tag": "con",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "conditionImmune",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "condition_ends_early",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "condition_set",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "condition_to_end_vibrations",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "cost_for_condition_removal",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "cost_options",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "cr",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "damage",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "damage_type_choice",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "defines_category",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "detail",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "detects",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "dex",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "dice_roll",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml"
+            ]
+        },
+        {
+            "tag": "dmg1",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "dmg2",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "dmgType",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "effect_on_ending_vibrations",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "effect_on_target",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml"
+            ]
+        },
+        {
+            "tag": "effects_while_active",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "ends_early_if",
+            "count": 3,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "enhancement",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "environment",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "equipment_condition_sets",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "extension_conditions",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "grants_advantage",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "grants_expertise",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml"
+            ]
+        },
+        {
+            "tag": "grants_item",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "grants_language",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "grants_spell_casting",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "hp",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "ignores",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "immune",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "imposes_disadvantage",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "init",
+            "count": 26,
+            "files": [
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml"
+            ]
+        },
+        {
+            "tag": "int",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "land_spell_tables",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "land_type",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "languages",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "legendary",
+            "count": 12,
+            "files": [
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_m.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_c.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_a.xml"
+            ]
+        },
+        {
+            "tag": "light_emitted",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "magic",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "mastery",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_ability",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_area_property",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_feature",
+            "count": 5,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_spell_casting_time",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_spell_choice",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_spell_preparation",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_spell_property",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "modifies_spellcasting",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "monster",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "new_basis",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "new_formula",
+            "count": 4,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "on_failed_check",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "on_success",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "option_target",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml"
+            ]
+        },
+        {
+            "tag": "options",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "options_include",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-paladin-phb24.xml"
+            ]
+        },
+        {
+            "tag": "passive",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "properties",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "reaction",
+            "count": 20,
+            "files": [
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_w.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_m.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_c.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_r.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_p.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_a.xml",
+                "01_Core/01_Players_Handbook_2024/bestiary-phb24.xml"
+            ]
+        },
+        {
+            "tag": "reaction_option",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "related_ability",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "requires",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "resist",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "rule",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "rule_while_shape_shifted",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "rules_while_shape_shifted",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "save",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "save_dc",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/races-phb24.xml"
+            ]
+        },
+        {
+            "tag": "save_effect",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/races-phb24.xml"
+            ]
+        },
+        {
+            "tag": "save_type",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/races-phb24.xml"
+            ]
+        },
+        {
+            "tag": "self_must_not_have_disadvantage_on_attack_roll",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "senses",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "size",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "skills_affected",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "sortname",
+            "count": 26,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_w.xml"
+            ]
+        },
+        {
+            "tag": "special",
+            "count": 4,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-bard-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/optionalfeatures-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "spells",
+            "count": 21,
+            "files": [
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_q.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_m.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_c.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_r.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_p.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_a.xml"
+            ]
+        },
+        {
+            "tag": "stealth",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "str",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "strength",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "target_area",
+            "count": 2,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-monk-phb24.xml",
+                "01_Core/01_Players_Handbook_2024/class-druid-phb24.xml"
+            ]
+        },
+        {
+            "tag": "target_choice",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-cleric-phb24.xml"
+            ]
+        },
+        {
+            "tag": "target_conditions",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "text_description",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "trigger_conditions",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-barbarian-phb24.xml"
+            ]
+        },
+        {
+            "tag": "type",
+            "count": 30,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml"
+            ]
+        },
+        {
+            "tag": "vulnerable",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        },
+        {
+            "tag": "weapon_properties",
+            "count": 1,
+            "files": [
+                "01_Core/01_Players_Handbook_2024/class-rogue-phb24.xml"
+            ]
+        },
+        {
+            "tag": "weight",
+            "count": 2,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/items-dmg24.xml",
+                "01_Core/01_Players_Handbook_2024/items-phb24.xml"
+            ]
+        },
+        {
+            "tag": "wis",
+            "count": 28,
+            "files": [
+                "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_n.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_x.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_j.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_l.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_f.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_d.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_z.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_y.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_u.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_k.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_t.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_o.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_g.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_h.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_s.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_v.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_i.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_e.xml",
+                "01_Core/03_Monster_Manual_2024/bestiary_mm24_b.xml"
+            ]
+        }
+    ],
+    "tags_in_glossary_not_found_in_project": [
+        "ability_score",
+        "alternative_activation_cost",
+        "alternative_grant",
+        "and_conditions",
+        "area_of_effect",
+        "armor_proficiencies",
+        "blindsight_grant",
+        "bonus_from_ability",
+        "choice_from_abilities",
+        "choose_spell",
+        "combat_behavior",
+        "companion_rules",
+        "concentration_effect",
+        "count",
+        "cover_interaction",
+        "crafting_option",
+        "custom_choice_text",
+        "damage_reduction",
+        "difficult_terrain_interaction",
+        "discount_benefit",
+        "duration_increase",
+        "first_use_no_effect",
+        "fixed_ability",
+        "flexible_casting",
+        "grants_ability_score_increase",
+        "hidden_attack_rule",
+        "learns_invocations",
+        "learns_maneuvers",
+        "learns_metamagic_options",
+        "list",
+        "long_range_interaction",
+        "make_invisible",
+        "maneuver_save_dc",
+        "modifies_spell_casting",
+        "mystic_arcanum",
+        "opportunity_attack_modification",
+        "option_to_replace_attack",
+        "or_conditions",
+        "passive_effect",
+        "range_increase",
+        "reactive_spell_cast",
+        "repeatable_note",
+        "resource_pool",
+        "restoring_or_replacing",
+        "save_required",
+        "saving_throw",
+        "saving_throw_modification",
+        "saving_throw_proficiencies",
+        "scaling_level",
+        "scaling_penalty_on_further_uses_before_LR",
+        "shape",
+        "shape_value",
+        "shield_bash_option",
+        "shield_interpose_option",
+        "signature_spells",
+        "skill_proficiencies_options",
+        "somatic_component_allowance",
+        "special_jump",
+        "special_movement",
+        "speed_increase_static",
+        "spell_mastery",
+        "spell_modifications",
+        "spell_range_increase",
+        "spellcasting",
+        "stealth_enhancement",
+        "subsequent_use_before_LR",
+        "table",
+        "tag",
+        "tags",
+        "telepathic_communication",
+        "tool_proficiencies_options",
+        "usage_penalty",
+        "ward_recharge_options",
+        "weapon_mastery_option",
+        "weapon_proficiencies",
+        "weapon_property_interaction"
+    ]
+}
