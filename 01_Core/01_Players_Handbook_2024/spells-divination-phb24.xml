@@ -15,7 +15,7 @@
     <components>
       <verbal />
       <somatic />
-      <material>a bit of bat fur</material>
+      <material consumed="false">a bit of bat fur</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -50,7 +50,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="25" cost_text="worth 25+ GP">specially marked sticks, bones, cards, or other divinatory tokens</material>
+      <material consumed="false" cost_gp="25" cost_text="worth at least 25 GP">specially marked sticks, bones, cards, or other divinatory tokens</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -115,7 +115,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="100" cost_text="worth 100+ GP">a focus, either a jeweled horn for hearing or a glass eye for seeing</material>
+      <material consumed="false" cost_gp="100" cost_text="worth at least 100 GP (focus)">a jeweled horn for hearing or a glass eye for seeing</material>
     </components>
     <duration description="Concentration, up to 10 minute">
       <value>10</value>
@@ -392,7 +392,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material>1 Copper Piece</material>
+      <material consumed="false" cost_text="1 Copper Piece">a copper piece</material>
     </components>
     <duration description="Concentration, up to 1 minute">
       <value>1</value>
@@ -461,7 +461,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="100" cost_text="worth 100+ GP">a set of divination tools—such as cards or runes—</material>
+      <material consumed="false" cost_gp="100" cost_text="worth at least 100 GP">a set of divination tools (such as cards or runes)</material>
     </components>
     <duration description="Concentration, up to 1 day">
       <value>1</value>
@@ -523,7 +523,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material>a hummingbird feather</material>
+      <material consumed="false">a hummingbird feather</material>
     </components>
     <duration description="8 hour">
       <value>8</value>
@@ -625,7 +625,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="100" cost_text="worth 100+ GP">a pearl</material>
+      <material consumed="false" cost_gp="100" cost_text="worth at least 100 GP (pearl)">a pearl and an owl feather</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -654,7 +654,8 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="250" cost_text="worth 250+ GP">incense, and four ivory strips worth 50+ GP each</material>
+      <material consumed="true" cost_gp="250" cost_text="worth at least 250 GP">incense</material>
+      <material consumed="false" cost_gp="200" cost_text="four strips, worth at least 50 GP each">four ivory strips</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -690,7 +691,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material>fur from a bloodhound</material>
+      <material consumed="false">fur from a bloodhound</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -719,7 +720,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material>fur from a bloodhound</material>
+      <material consumed="false">fur from a bloodhound</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -862,7 +863,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material>two eggs</material>
+      <material consumed="false">two eggs</material>
     </components>
     <duration description="1 hour">
       <value>1</value>
@@ -894,7 +895,7 @@ Indifference | Neither good nor bad</p>
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="1000" cost_text="worth 1,000+ GP">a focus, such as a crystal ball, mirror, or water-filled font</material>
+      <material consumed="false" cost_gp="1000" cost_text="worth at least 1,000 GP (focus)">a crystal ball, mirror, or water-filled font</material>
     </components>
     <duration description="Concentration, up to 10 minute">
       <value>10</value>
@@ -938,7 +939,7 @@ Body part, lock of hair, or bit of nail | -10</p>
     <components>
       <verbal />
       <somatic />
-      <material>a pinch of talc</material>
+      <material consumed="false">a pinch of talc</material>
     </components>
     <duration description="1 hour">
       <value>1</value>
@@ -970,7 +971,7 @@ Body part, lock of hair, or bit of nail | -10</p>
     <components>
       <verbal />
       <somatic />
-      <material>a copper wire</material>
+      <material consumed="false">a copper wire</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -1037,7 +1038,7 @@ Body part, lock of hair, or bit of nail | -10</p>
     <components>
       <verbal />
       <somatic />
-      <material>a pair of linked silver rings</material>
+      <material consumed="false">a pair of linked silver rings</material>
     </components>
     <duration description="24 hour">
       <value>24</value>
@@ -1065,7 +1066,7 @@ Body part, lock of hair, or bit of nail | -10</p>
     </range>
     <components>
       <verbal />
-      <material>a miniature ziggurat</material>
+      <material consumed="false">a miniature ziggurat</material>
     </components>
     <duration description="1 hour">
       <value>1</value>
@@ -1128,7 +1129,7 @@ Body part, lock of hair, or bit of nail | -10</p>
     </range>
     <components>
       <somatic />
-      <material>a weapon with which you have proficiency and that is worth 1+ CP</material>
+      <material consumed="false" cost_text="worth at least 1 CP">a weapon with which you have proficiency</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>

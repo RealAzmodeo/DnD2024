@@ -16,7 +16,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -41,8 +41,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (10-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>10-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -64,41 +66,9 @@
       <dice>2d6</dice>
       <damage_type>Necrotic</damage_type>
     </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>3d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>4d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>5d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>6d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>7d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>8d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>9d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
-    <roll description="Necrotic Damage" type="damage">
-      <dice>10d6</dice>
-      <damage_type>Necrotic</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The damage increases by 1d6">
+        <effect description="The damage increases by 1d6.">
           <roll_increase increase_dice="1d6" />
         </effect>
       </per_slot_above>
@@ -154,7 +124,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -165,6 +135,7 @@
       <p>Until the spell ends, you can take a Magic action to call down lightning in that way again, targeting the same point or a different one.</p>
       <p>If you're outdoors in a storm when you cast this spell, the spell gives you control over that storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p>
     </description>
+    <area_of_effect shape="radius" value="5" unit="feet" description="around bolt impact point"/>
     <classes text_original="School: Conjuration, Druid [2024]">
       <class_name>Druid</class_name>
     </classes>
@@ -173,33 +144,9 @@
       <dice>3d10</dice>
       <damage_type>Lightning</damage_type>
     </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>4d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>5d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>6d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>7d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>8d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
-    <roll description="Lightning Damage" type="damage">
-      <dice>9d10</dice>
-      <damage_type>Lightning</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The damage increases by 1d10">
+        <effect description="The damage increases by 1d10.">
           <roll_increase increase_dice="1d10" />
         </effect>
       </per_slot_above>
@@ -231,6 +178,7 @@
       <p>You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn.</p>
       <p>On your later turns, you can take a Magic action to teleport the Cube up to 30 feet.</p>
     </description>
+    <area_of_effect shape="cube" value="5" unit="feet" />
     <classes text_original="School: Conjuration, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
       <class_name>Bard</class_name>
       <class_name>Sorcerer</class_name>
@@ -242,37 +190,9 @@
       <dice>4d4</dice>
       <damage_type>Slashing</damage_type>
     </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>5d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>6d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>7d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>8d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>9d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>10d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>11d4</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="2">
-        <effect description="The damage increases by 2d4">
+        <effect description="The damage increases by 2d4.">
           <roll_increase increase_dice="2d4" />
         </effect>
       </per_slot_above>
@@ -294,7 +214,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -304,6 +224,7 @@
       <p>Each creature in the Sphere makes a Constitution saving throw, taking 5d8 Poison damage on a failed save or half as much damage on a successful one. A creature must also make this save when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature makes this save only once per turn.</p>
       <p>The Sphere moves 10 feet away from you at the start of each of your turns.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Sorcerer [2024], Wizard [2024]">
       <class_name>Sorcerer</class_name>
       <class_name>Wizard</class_name>
@@ -313,25 +234,9 @@
       <dice>5d8</dice>
       <damage_type>Poison</damage_type>
     </roll>
-    <roll description="Poison Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Poison</damage_type>
-    </roll>
-    <roll description="Poison Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Poison</damage_type>
-    </roll>
-    <roll description="Poison Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Poison</damage_type>
-    </roll>
-    <roll description="Poison Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Poison</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="5">
-        <effect description="The damage increases by 1d8">
+        <effect description="The damage increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -353,7 +258,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -373,33 +278,9 @@
       <dice>3d10</dice>
       <damage_type>Slashing</damage_type>
     </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>4d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>5d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>6d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>7d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>8d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
-    <roll description="Slashing Damage" type="damage">
-      <dice>9d10</dice>
-      <damage_type>Slashing</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The damage increases by 1d10">
+        <effect description="The damage increases by 1d10.">
           <roll_increase increase_dice="1d10" />
         </effect>
       </per_slot_above>
@@ -413,14 +294,15 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="60 feet">
-      <value>60</value>
-      <unit>feet</unit>
+    <range description="Self (60-foot cone)">
+      <value>self</value>
+      <shape>cone</shape>
+      <shape_value>60-foot</shape_value>
     </range>
     <components>
       <verbal />
       <somatic />
-      <material>a Melee or Ranged weapon worth at least 1 CP</material>
+      <material cost_text="worth at least 1 CP">a Melee or Ranged weapon</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -436,33 +318,9 @@
       <dice>5d8</dice>
       <damage_type>Force</damage_type>
     </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>10d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>11d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The damage increases by 1d8">
+        <effect description="The damage increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -484,44 +342,35 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
     </duration>
     <description>
       <p>You conjure a spirit from the Upper Planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. For each creature you can see in the Cylinder, choose which of these lights shines on it:</p>
-      <p>Healing Light: The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier.</p>
-      <p>Searing Light: The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one. Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet. Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.</p>
+      <list type="bullet">
+        <item><strong>Healing Light:</strong> The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier.</item>
+        <item><strong>Searing Light:</strong> The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one.</item>
+      </list>
+      <p>Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet. Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.</p>
     </description>
+    <area_of_effect shape="cylinder" value="10-foot-radius, 40-foot-high" />
     <classes text_original="School: Conjuration, Cleric [2024]">
       <class_name>Cleric</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="254" />
-    <roll description="Radiant Damage" type="damage">
+    <roll description="Healing Light" type="healing">
+      <dice>4d12</dice>
+      <bonus_from_ability>SPELL</bonus_from_ability>
+    </roll>
+    <roll description="Searing Light" type="damage">
       <dice>6d12</dice>
       <damage_type>Radiant</damage_type>
     </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>7d12</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>8d12</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>4d12+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>5d12+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d12+%0</dice>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="7">
-        <effect description="The healing and damage increase by 1d12">
+        <effect description="The healing and damage increase by 1d12.">
           <roll_increase increase_dice="1d12" />
         </effect>
       </per_slot_above>
@@ -543,14 +392,14 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
     </duration>
     <description>
       <p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p>
-      <p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes 8d8 damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. On a failed save, the target takes 4d8 damage of the spirit's type. On a successful save, the target isn't Restrained by the spirit.</p>
+      <p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On a failed save, the target takes 8d8 damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. On a failed save, the target takes 4d8 damage of the spirit's type. On a successful save, the target isn't Restrained by the spirit.</p>
     </description>
     <classes text_original="School: Conjuration, Druid [2024], Wizard [2024], Druid [2024] (Sea)">
       <class_name>Druid</class_name>
@@ -558,29 +407,17 @@
       <subclass_restriction for_class="Druid" name="Sea" />
     </classes>
     <source name="Player's Handbook 2024" page="254" />
-    <roll description="Elemental Damage" type="damage">
+    <roll description="Initial Elemental Damage (chosen type)" type="damage">
       <dice>8d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
+      <damage_type>Special</damage_type> <!-- Lightning, Thunder, Fire, or Cold -->
     </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>10d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>11d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>12d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
+    <roll description="Ongoing Elemental Damage (Restrained, chosen type)" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Special</damage_type> <!-- Lightning, Thunder, Fire, or Cold -->
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="5">
-        <effect description="The damage increases by 1d8">
+        <effect description="The initial damage increases by 1d8."> <!-- Assuming it applies to the initial 8d8 -->
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -602,7 +439,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -618,22 +455,11 @@
     <roll description="Psychic Damage" type="damage">
       <dice>3d12</dice>
       <damage_type>Psychic</damage_type>
-    </roll>
-    <roll description="Psychic Damage" type="damage">
-      <dice>4d12</dice>
-      <damage_type>Psychic</damage_type>
-    </roll>
-    <roll description="Psychic Damage" type="damage">
-      <dice>5d12</dice>
-      <damage_type>Psychic</damage_type>
-    </roll>
-    <roll description="Psychic Damage" type="damage">
-      <dice>6d12</dice>
-      <damage_type>Psychic</damage_type>
+      <bonus_from_ability>SPELL</bonus_from_ability>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="6">
-        <effect description="The damage increases by 1d12">
+        <effect description="The damage increases by 1d12.">
           <roll_increase increase_dice="1d12" />
         </effect>
       </per_slot_above>
@@ -647,14 +473,16 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (15-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>15-foot</shape_value>
     </range>
     <components>
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -668,33 +496,13 @@
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="255" />
-    <roll description="Elemental Damage" type="damage">
+    <roll description="Extra Elemental Damage (chosen type)" type="damage">
       <dice>2d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>3d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>4d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>5d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
-    </roll>
-    <roll description="Elemental Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Elemental (Choose)</damage_type>
+      <damage_type>Special</damage_type> <!-- Acid, Cold, Fire, or Lightning -->
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="4">
-        <effect description="The damage increases by 1d8">
+        <effect description="The extra damage increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -715,7 +523,7 @@
     <components>
       <verbal />
       <somatic />
-      <material>a Melee or Ranged weapon worth at least 1 CP</material>
+      <material cost_text="worth at least 1 CP">a Melee or Ranged weapon</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -723,6 +531,7 @@
     <description>
       <p>You brandish the weapon used to cast the spell and choose a point within range. Hundreds of similar spectral weapons (or ammunition appropriate to the weapon) fall in a volley and then disappear. Each creature of your choice that you can see in a 40-foot-radius, 20-foot-high Cylinder centered on that point makes a Dexterity saving throw. A creature takes 8d8 Force damage on a failed save or half as much damage on a successful one.</p>
     </description>
+    <area_of_effect shape="cylinder" value="40-foot-radius, 20-foot-high" />
     <classes text_original="School: Conjuration, Ranger [2024]">
       <class_name>Ranger</class_name>
     </classes>
@@ -740,14 +549,16 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (10-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>10-foot</shape_value>
     </range>
     <components>
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -765,29 +576,9 @@
       <dice>5d8</dice>
       <damage_type>Force</damage_type>
     </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
-    <roll description="Force Damage" type="damage">
-      <dice>10d8</dice>
-      <damage_type>Force</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="4">
-        <effect description="The damage increases by 1d8">
+        <effect description="The damage increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -888,7 +679,7 @@
       <subclass_restriction for_class="Ranger" name="Fey Wanderer" />
     </classes>
     <source name="Player's Handbook 2024" page="262" />
-    <roll description="Force Damage" type="damage">
+    <roll description="Force Damage (mishap)" type="damage">
       <dice>4d6</dice>
       <damage_type>Force</damage_type>
     </roll>
@@ -908,9 +699,9 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="1000" cost_text="worth 1,000+ GP">a sapphire</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP (crushed to summon)">a sapphire</material>
     </components>
-    <duration description="">
+    <duration description="Until sapphire is crushed">
       <value>special</value>
     </duration>
     <description>
@@ -955,45 +746,13 @@
       <subclass_restriction for_class="Paladin" name="Ancient" />
     </classes>
     <source name="Player's Handbook 2024" page="268" />
-    <roll description="Piercing Damage" type="damage">
+    <roll description="Piercing Damage (ongoing)" type="damage">
       <dice>1d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>2d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>3d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>4d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>5d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>6d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>7d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>8d6</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>9d6</dice>
       <damage_type>Piercing</damage_type>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The damage increases by 1d6">
+        <effect description="The ongoing Piercing damage increases by 1d6.">
           <roll_increase increase_dice="1d6" />
         </effect>
       </per_slot_above>
@@ -1024,6 +783,7 @@
       <p>Grasping plants sprout from the ground in a 20-foot square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends.</p>
       <p>Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.</p>
     </description>
+    <area_of_effect shape="square" value="20" unit="feet" />
     <classes text_original="School: Conjuration, Druid [2024], Ranger [2024]">
       <class_name>Druid</class_name>
       <class_name>Ranger</class_name>
@@ -1045,7 +805,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -1064,10 +824,14 @@
     </classes>
     <source name="Player's Handbook 2024" page="269" />
     <at_higher_levels>
-      <per_slot_above base_level="7">
-        <effect description="You can target up to three willing creatures (including yourself)" />
-      </per_slot_above>
-      <text_block title="General Higher Level Effects">The creatures must be within 10 feet of you when you cast the spell.</text_block>
+      <slot_scaling>
+        <specific_slot level="8">
+           <effect description="You can target up to three willing creatures (including yourself). The creatures must be within 10 feet of you when you cast the spell." />
+        </specific_slot>
+         <specific_slot level="9">
+           <effect description="You can target up to three willing creatures (including yourself). The creatures must be within 10 feet of you when you cast the spell." />
+        </specific_slot>
+      </slot_scaling>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1097,6 +861,7 @@
       <p>Each creature in that area makes a Strength saving throw. On a failed save, it takes 3d6 Bludgeoning damage, and it has the Restrained condition until the spell ends. A creature also makes that save if it enters the area or ends it turn there. A creature makes that save only once per turn.</p>
       <p>A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC, ending the condition on itself on a success.</p>
     </description>
+    <area_of_effect shape="square" value="20" unit="feet" />
     <classes text_original="School: Conjuration, Wizard [2024], Sorcerer [2024] (Aberrant)">
       <class_name>Wizard</class_name>
       <class_name>Sorcerer</class_name>
@@ -1124,18 +889,18 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="10" cost_text="worth 10+ GP">burning incense</material>
+      <material consumed="true" cost_gp="10" cost_text="charcoal, incense, and herbs worth 10 GP">charcoal, incense, and herbs</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
     </duration>
     <description>
       <p>You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands.</p>
-      <p>Telepathic Connection: While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.</p>
+      <p><strong>Telepathic Connection:</strong> While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.</p>
       <p>Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell.</p>
-      <p>Combat: The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p>
-      <p>Disappearance of the Familiar: When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.</p>
-      <p>One Familiar Only: You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.</p>
+      <p><strong>Combat:</strong> The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p>
+      <p><strong>Disappearance of the Familiar:</strong> When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.</p>
+      <p><strong>One Familiar Only:</strong> You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.</p>
     </description>
     <classes text_original="School: Conjuration, Wizard [2024]">
       <class_name>Wizard</class_name>
@@ -1164,15 +929,15 @@
     <description>
       <p>You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the Otherworldly Steed stat block. If you already have a steed from this spell, the steed is replaced by the new one.</p>
       <p>The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type—Celestial, Fey, or Fiend—which determines certain traits in the stat block.</p>
-      <p>Combat: The steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you.</p>
-      <p>Disappearance of the Steed: The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one.</p>
+      <p><strong>Combat:</strong> The steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you.</p>
+      <p><strong>Disappearance of the Steed:</strong> The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one.</p>
     </description>
     <classes text_original="School: Conjuration, Paladin [2024]">
       <class_name>Paladin</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="272" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1202,6 +967,7 @@
       <p>As a Bonus Action, you can move the sphere up to 30 feet, rolling it along the ground. If you move the sphere into a creature's space, that creature makes the save against the sphere, and the sphere stops moving for the turn.</p>
       <p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. Flammable objects that aren't being worn or carried start burning if touched by the sphere, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.</p>
     </description>
+    <area_of_effect shape="sphere" value="5-foot-diameter" />
     <classes text_original="School: Conjuration, Druid [2024], Sorcerer [2024], Wizard [2024]">
       <class_name>Druid</class_name>
       <class_name>Sorcerer</class_name>
@@ -1212,37 +978,9 @@
       <dice>2d6</dice>
       <damage_type>Fire</damage_type>
     </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>3d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>4d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>5d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>6d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>7d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>8d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>9d6</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="2">
-        <effect description="The damage increases by 1d6">
+        <effect description="The damage increases by 1d6.">
           <roll_increase increase_dice="1d6" />
         </effect>
       </per_slot_above>
@@ -1272,6 +1010,7 @@
     <description>
       <p>You create a 20-foot-radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as one created by Gust of Wind) disperses it.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Polar Land), Druid [2024] (Sea)">
       <class_name>Druid</class_name>
       <class_name>Ranger</class_name>
@@ -1282,7 +1021,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="276" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">The fog's radius increases by 20 feet for each spell slot level above 1.</text_block>
+      <text_block title="At Higher Levels">The fog's radius increases by 20 feet for each spell slot level above 1.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1300,7 +1039,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="5000" cost_text="worth 5,000+ GP">a diamond</material>
+      <material consumed="false" cost_gp="5000" cost_text="worth at least 5,000 GP">a diamond</material>
     </components>
     <duration description="Concentration, up to 1 minute">
       <value>1</value>
@@ -1337,7 +1076,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -1351,7 +1090,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="279" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1370,7 +1109,7 @@
       <somatic />
       <material>a sprig of mistletoe</material>
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
@@ -1421,7 +1160,7 @@
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="4">
-        <effect description="The number of creatures the vine can grapple increases by one" />
+        <effect description="The number of creatures the vine can grapple increases by one." />
       </per_slot_above>
     </at_higher_levels>
   </spell>
@@ -1450,6 +1189,7 @@
       <p>Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into Difficult Terrain for the duration.</p>
       <p>When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the Prone condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone.</p>
     </description>
+    <area_of_effect shape="square" value="10" unit="feet" />
     <classes text_original="School: Conjuration, Sorcerer [2024], Wizard [2024]">
       <class_name>Sorcerer</class_name>
       <class_name>Wizard</class_name>
@@ -1471,7 +1211,7 @@
     <components>
       <verbal />
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -1511,6 +1251,7 @@
     <description>
       <p>As you hit the creature, this spell creates a rain of thorns that sprouts from your Ranged weapon or ammunition. The target of the attack and each creature within 5 feet of it make a Dexterity saving throw, taking 1d10 Piercing damage on a failed save or half as much damage on a successful one.</p>
     </description>
+    <area_of_effect shape="radius" value="5" unit="feet" description="around target of attack"/>
     <classes text_original="School: Conjuration, Ranger [2024]">
       <class_name>Ranger</class_name>
     </classes>
@@ -1519,41 +1260,9 @@
       <dice>1d10</dice>
       <damage_type>Piercing</damage_type>
     </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>2d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>3d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>4d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>5d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>6d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>7d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>8d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>9d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The damage increases by 1d10">
+        <effect description="The damage increases by 1d10.">
           <roll_increase increase_dice="1d10" />
         </effect>
       </per_slot_above>
@@ -1563,7 +1272,7 @@
     <name>Heroes' Feast [2024]</name>
     <level>6</level>
     <school code="C">Conjuration</school>
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -1574,7 +1283,7 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">a gem-encrusted bowl</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP">a gem-encrusted bowl</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -1589,7 +1298,7 @@
       <class_name>Druid</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="284" />
-    <roll description="Hit Point Maximum Increase" type="damage">
+    <roll description="Hit Point Maximum Increase" type="effect">
       <dice>2d10</dice>
     </roll>
   </spell>
@@ -1619,6 +1328,7 @@
       <p>You open a gateway to the Far Realm, a region infested with unspeakable horrors. A 20-foot-radius Sphere of Darkness appears, centered on a point with range and lasting for the duration. The Sphere is Difficult Terrain, and it is filled with strange whispers and slurping noises, which can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within it have the Blinded condition.</p>
       <p>Any creature that starts its turn in the area takes 2d6 Cold damage. Any creature that ends its turn there must succeed on a Dexterity saving throw or take 2d6 Acid damage from otherworldly tentacles.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Warlock [2024], Sorcerer [2024] (Aberrant), Warlock [2024] (Great Old One)">
       <class_name>Warlock</class_name>
       <class_name>Sorcerer</class_name>
@@ -1626,36 +1336,16 @@
       <subclass_restriction for_class="Warlock" name="Great Old One" />
     </classes>
     <source name="Player's Handbook 2024" page="286" />
-    <roll description="Cold Damage" type="damage">
+    <roll description="Cold Damage (start of turn)" type="damage">
       <dice>2d6</dice>
       <damage_type>Cold</damage_type>
     </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>3d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>4d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>5d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>6d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>7d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>8d6</dice>
-      <damage_type>Cold</damage_type>
+    <roll description="Acid Damage (end of turn)" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Acid</damage_type>
     </roll>
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">The Cold or Acid damage (your choice) increases by 1d6 for each spell slot level above 3.</text_block>
+      <text_block title="At Higher Levels">The Cold or Acid damage (your choice) increases by 1d6 for each spell slot level above 3.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1680,55 +1370,24 @@
     <description>
       <p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 Cold damage.</p>
     </description>
+    <area_of_effect shape="radius" value="5" unit="feet" description="around shard explosion point"/>
     <classes text_original="School: Conjuration, Druid [2024], Sorcerer [2024], Wizard [2024]">
       <class_name>Druid</class_name>
       <class_name>Sorcerer</class_name>
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="287" />
-    <roll description="Cold Damage" type="damage">
+    <roll description="Piercing Damage (on hit)" type="damage">
       <dice>1d10</dice>
-      <damage_type>Cold</damage_type>
+      <damage_type>Piercing</damage_type>
     </roll>
-    <roll description="Cold Damage" type="damage">
+    <roll description="Cold Damage (explosion)" type="damage">
       <dice>2d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>3d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>4d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>5d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>6d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>7d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>8d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>9d6</dice>
-      <damage_type>Cold</damage_type>
-    </roll>
-    <roll description="Cold Damage" type="damage">
-      <dice>10d6</dice>
       <damage_type>Cold</damage_type>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The Cold damage increases by 1d6">
+        <effect description="The Cold damage (from explosion) increases by 1d6.">
           <roll_increase increase_dice="1d6" />
         </effect>
       </per_slot_above>
@@ -1760,6 +1419,7 @@
       <p>When the cloud appears, each creature in it makes a Dexterity saving throw, taking 10d8 Fire damage on a failed save or half as much damage on a successful one. A creature must also make this save when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature makes this save only once per turn.</p>
       <p>The cloud moves 10 feet away from you in a direction you choose at the start of each of your turns.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Druid [2024], Sorcerer [2024], Wizard [2024]">
       <class_name>Druid</class_name>
       <class_name>Sorcerer</class_name>
@@ -1788,7 +1448,7 @@
       <somatic />
       <material>a locust</material>
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -1797,6 +1457,7 @@
       <p>Swarming locusts fill a 20-foot-radius Sphere centered on a point you choose within range. The Sphere remains for the duration, and its area is Lightly Obscured and Difficult Terrain.</p>
       <p>When the swarm appears, each creature in it makes a Constitution saving throw, taking 4d10 Piercing damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Cleric [2024], Druid [2024], Sorcerer [2024], Druid [2024] (Tropical Land), Warlock [2024] (Fiend)">
       <class_name>Cleric</class_name>
       <class_name>Druid</class_name>
@@ -1810,25 +1471,9 @@
       <dice>4d10</dice>
       <damage_type>Piercing</damage_type>
     </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>5d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>6d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>7d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing Damage" type="damage">
-      <dice>8d10</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="5">
-        <effect description="The damage increases by 1d10">
+        <effect description="The damage increases by 1d10.">
           <roll_increase increase_dice="1d10" />
         </effect>
       </per_slot_above>
@@ -1848,15 +1493,15 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="5000" cost_text="worth 5,000+ GP">a chest, 3 feet by 2 feet by 2 feet, constructed from rare materials, and a Tiny replica of the chest made from the same materials worth 50+ GP</material>
+      <material consumed="false" cost_gp="5050" cost_text="Exquisite chest (at least 5,000 GP) and tiny replica (at least 50 GP)">an exquisite chest and a miniature replica</material>
     </components>
-    <duration description="">
+    <duration description="Until spell ends (see description)">
       <value>special</value>
     </duration>
     <description>
       <p>You hide a chest and all its contents on the Ethereal Plane. You must touch the chest and the miniature replica that serve as Material components for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).</p>
       <p>While the chest remains on the Ethereal Plane, you can take a Magic action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by taking a Magic action to touch the chest and the replica.</p>
-      <p>After 60 days, there is a cumulative 5 chance at the end of each day that the spell ends. The spell also ends if you cast this spell again or if the Tiny replica chest is destroyed. If the spell ends and the larger chest is on the Ethereal Plane, the chest remains there for you or someone else to find.</p>
+      <p>After 60 days, there is a cumulative 5% chance at the end of each day that the spell ends. The spell also ends if you cast this spell again or if the Tiny replica chest is destroyed. If the spell ends and the larger chest is on the Ethereal Plane, the chest remains there for you or someone else to find.</p>
     </description>
     <classes text_original="School: Conjuration, Wizard [2024]">
       <class_name>Wizard</class_name>
@@ -1913,7 +1558,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -1978,9 +1623,9 @@
     <components>
       <verbal />
       <somatic />
-      <material>a silver whistle</material>
+      <material consumed="false">a silver whistle</material>
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -2014,9 +1659,9 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="15" cost_text="worth 15+ GP">a miniature door</material>
+      <material consumed="false" cost_gp="15" cost_text="worth at least 15 GP (ivory, jade, or diamond)">a miniature door</material>
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
@@ -2037,7 +1682,7 @@
     <name>Planar Ally [2024]</name>
     <level>6</level>
     <school code="C">Conjuration</school>
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -2078,7 +1723,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="250" cost_text="worth 250+ GP">a forked, metal rod and attuned to a plane of existence</material>
+      <material consumed="false" cost_gp="250" cost_text="worth at least 250 GP, attuned to a specific plane of existence">a forked metal rod</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -2111,7 +1756,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="10 minute">
+    <duration description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </duration>
@@ -2127,28 +1772,18 @@
       <dice>1d8</dice>
       <damage_type>Fire</damage_type>
     </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>2d8</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>3d8</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
-    <roll description="Fire Damage" type="damage">
-      <dice>4d8</dice>
-      <damage_type>Fire</damage_type>
-    </roll>
     <at_higher_levels>
-      <scaling level="5">
-        <effect description="2d8" />
-      </scaling>
-      <scaling level="11">
-        <effect description="3d8" />
-      </scaling>
-      <scaling level="17">
-        <effect description="4d8" />
-      </scaling>
+      <cantrip_scaling>
+        <scaling level="5">
+          <effect description="The fire damage increases to 2d8."/>
+        </scaling>
+        <scaling level="11">
+          <effect description="The fire damage increases to 3d8."/>
+        </scaling>
+        <scaling level="17">
+          <effect description="The fire damage increases to 4d8."/>
+        </scaling>
+      </cantrip_scaling>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2177,6 +1812,7 @@
       <p>Until the spell ends, sleet falls in a 40-foot-tall, 20-foot-radius Cylinder centered on a point you choose within range. The area is Heavily Obscured, and exposed flames in the area are doused.</p>
       <p>Ground in the Cylinder is Difficult Terrain. When a creature enters the Cylinder for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the Prone condition and lose Concentration.</p>
     </description>
+    <area_of_effect shape="cylinder" value="20-foot-radius, 40-foot-high" />
     <classes text_original="School: Conjuration, Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Polar Land)">
       <class_name>Druid</class_name>
       <class_name>Sorcerer</class_name>
@@ -2193,15 +1829,17 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (15-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>15-foot</shape_value>
     </range>
     <components>
       <verbal />
       <somatic />
       <material>a prayer scroll</material>
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -2215,37 +1853,17 @@
       <subclass_restriction for_class="Cleric" name="War" />
     </classes>
     <source name="Player's Handbook 2024" page="319" />
-    <roll description="Radiant Damage" type="damage">
+    <roll description="Radiant Damage (Good/Neutral caster)" type="damage">
       <dice>3d8</dice>
       <damage_type>Radiant</damage_type>
     </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>4d8</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>5d8</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Radiant</damage_type>
-    </roll>
-    <roll description="Radiant Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Radiant</damage_type>
+    <roll description="Necrotic Damage (Evil caster)" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Necrotic</damage_type>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The damage increases by 1d8">
+        <effect description="The damage increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -2265,7 +1883,7 @@
     </range>
     <components>
       <somatic />
-      <material>a Melee weapon worth 1+ SP</material>
+      <material consumed="false" cost_text="worth at least 1 SP">a Melee weapon</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
@@ -2312,6 +1930,7 @@
       <p>You create a 20-foot-radius Sphere of yellow, nauseating gas centered on a point within range. The cloud is Heavily Obscured. The cloud lingers in the air for the duration or until a strong wind (such as the one created by Gust of Wind) disperses it.</p>
       <p>Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or have the Poisoned condition until the end of the current turn. While Poisoned in this way, the creature can't take an action or a Bonus Action.</p>
     </description>
+    <area_of_effect shape="sphere" value="20-foot-radius" />
     <classes text_original="School: Conjuration, Bard [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Tropical Land), Warlock [2024] (Fiend)">
       <class_name>Bard</class_name>
       <class_name>Sorcerer</class_name>
@@ -2331,7 +1950,7 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="1 Miles">
+    <range description="1 mile">
       <value>1</value>
       <unit>mile</unit>
     </range>
@@ -2347,32 +1966,33 @@
     <description>
       <p>A churning storm cloud forms for the duration, centered on a point within range and spreading to a radius of 300 feet. Each creature under the cloud when it appears must succeed on a Constitution saving throw or take 2d6 Thunder damage and have the Deafened condition for the duration.</p>
       <p>At the start of each of your later turns, the storm produces different effects, as detailed below.</p>
-      <p>Turn 2: Acidic rain falls. Each creature and object under the cloud takes 4d6 Acid damage.</p>
-      <p>Turn 3: You call six bolts of lightning from the cloud to strike six different creatures or objects beneath it. Each target makes a Dexterity saving throw, taking 10d6 Lightning damage on a failed save or half as much damage on a successful one.</p>
-      <p>Turn 4: Hailstones rain down. Each creature under the cloud takes 2d6 Bludgeoning damage.</p>
-      <p>Turns 5-10: Gusts and freezing rain assail the area under the cloud. Each creature there takes 1d6 Cold damage. Until the spell ends, the area is Difficult Terrain and Heavily Obscured, ranged attacks with weapons are impossible there, and strong wind blows through the area.</p>
+      <p><strong>Turn 2:</strong> Acidic rain falls. Each creature and object under the cloud takes 4d6 Acid damage.</p>
+      <p><strong>Turn 3:</strong> You call six bolts of lightning from the cloud to strike six different creatures or objects beneath it. Each target makes a Dexterity saving throw, taking 10d6 Lightning damage on a failed save or half as much damage on a successful one.</p>
+      <p><strong>Turn 4:</strong> Hailstones rain down. Each creature under the cloud takes 2d6 Bludgeoning damage.</p>
+      <p><strong>Turns 5-10:</strong> Gusts and freezing rain assail the area under the cloud. Each creature there takes 1d6 Cold damage. Until the spell ends, the area is Difficult Terrain and Heavily Obscured, ranged attacks with weapons are impossible there, and strong wind blows through the area.</p>
     </description>
+    <area_of_effect shape="sphere" value="300-foot-radius" />
     <classes text_original="School: Conjuration, Druid [2024]">
       <class_name>Druid</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="320" />
-    <roll description="Thunder Damage" type="damage">
+    <roll description="Initial Thunder Damage" type="damage">
       <dice>2d6</dice>
       <damage_type>Thunder</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
+    <roll description="Turn 2 Acid Damage" type="damage">
       <dice>4d6</dice>
       <damage_type>Acid</damage_type>
     </roll>
-    <roll description="Lightning Damage" type="damage">
+    <roll description="Turn 3 Lightning Damage" type="damage">
       <dice>10d6</dice>
       <damage_type>Lightning</damage_type>
     </roll>
-    <roll description="Bludgeoning Damage" type="damage">
+    <roll description="Turn 4 Bludgeoning Damage" type="damage">
       <dice>2d6</dice>
       <damage_type>Bludgeoning</damage_type>
     </roll>
-    <roll description="Cold Damage" type="damage">
+    <roll description="Turns 5-10 Cold Damage" type="damage">
       <dice>1d6</dice>
       <damage_type>Cold</damage_type>
     </roll>
@@ -2392,7 +2012,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="400" cost_text="worth 400+ GP">a pickled tentacle and an eyeball in a platinum-inlaid vial</material>
+      <material consumed="false" cost_gp="400" cost_text="worth at least 400 GP">a pickled tentacle and an eyeball in a platinum-inlaid vial</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2412,7 +2032,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="322" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2430,7 +2050,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="200" cost_text="worth 200+ GP">a feather, tuft of fur, and fish tail inside a gilded acorn</material>
+      <material consumed="false" cost_gp="200" cost_text="worth at least 200 GP">a feather, tuft of fur, and fish tail inside a gilded acorn</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2447,7 +2067,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="322" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2465,7 +2085,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="500" cost_text="worth 500+ GP">a reliquary</material>
+      <material consumed="false" cost_gp="500" cost_text="worth at least 500 GP">a reliquary</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2484,7 +2104,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="323" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2502,7 +2122,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="400" cost_text="worth 400+ GP">a lockbox</material>
+      <material consumed="false" cost_gp="400" cost_text="worth at least 400 GP">a lockbox</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2520,7 +2140,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="324" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2538,7 +2158,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="500" cost_text="worth 500+ GP">an object with the image of a dragon engraved on it</material>
+      <material consumed="false" cost_gp="500" cost_text="worth at least 500 GP">an object with the image of a dragon engraved on it</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2556,7 +2176,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="324" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2574,7 +2194,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="400" cost_text="worth 400+ GP">air, a pebble, ash, and water inside a gold-inlaid vial</material>
+      <material consumed="false" cost_gp="400" cost_text="worth at least 400 GP">air, a pebble, ash, and water inside a gold-inlaid vial</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2592,7 +2212,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="325" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2610,7 +2230,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="300" cost_text="worth 300+ GP">a gilded flower</material>
+      <material consumed="false" cost_gp="300" cost_text="worth at least 300 GP">a gilded flower</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2630,7 +2250,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="326" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2648,7 +2268,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="600" cost_text="worth 600+ GP">a bloody vial</material>
+      <material consumed="false" cost_gp="600" cost_text="worth at least 600 GP">a bloody vial</material>
     </components>
     <duration description="Concentration, up to 1 hour">
       <value>1</value>
@@ -2665,7 +2285,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="326" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block.</text_block>
+      <text_block title="At Higher Levels">Use the spell slot's level for the spell's level in the stat block.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -2683,9 +2303,9 @@
     <components>
       <verbal />
       <somatic />
-      <material>a gilded ladle worth 500 + GP</material>
+      <material consumed="false" cost_gp="500" cost_text="worth at least 500 GP">a gilded ladle</material>
     </components>
-    <duration description="10 minute">
+    <duration description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </duration>
@@ -2721,25 +2341,29 @@
     <description>
       <p>This spell instantly transports you and up to eight willing creatures that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be Large or smaller, and it can't be held or carried by an unwilling creature.</p>
       <p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls 1d100 and consults the Teleportation Outcome table and the explanations after it.</p>
-      <p>Teleportation Outcome:
-Familiarity | Mishap | Similar Area | Off Target | On Target
-Permanent circle | — | — | — | 01-00
-Linked object | — | — | — | 01-00
-Very familiar | 01-05 | 06-13 | 14-24 | 25-00
-Seen casually | 01-33 | 34-43 | 44-53 | 54-00
-Viewed once or described | 01-43 | 44-53 | 54-73 | 74-00
-False destination | 01-50 | 51-00 | — | —</p>
-      <p>Familiarity: Here are the meanings of the terms in the table's Familiarity column:</p>
-      <p>• "Permanent circle" means a permanent teleportation circle whose sigil sequence you know.</p>
-      <p>• "Linked object" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.</p>
-      <p>• "Very familiar" is a place you have visited often, a place you have carefully studied, or a place you can see when you cast the spell.</p>
-      <p>• "Seen casually" is a place you have seen more than once but with which you aren't very familiar.</p>
-      <p>• "Viewed once or described" is a place you have seen once, possibly using magic, or a place you know through someone else's description, perhaps from a map.</p>
-      <p>• "False destination" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no longer exists.</p>
-      <p>Mishap: The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 Force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>
-      <p>Similar Area: You and your group (or the target object) appear in a different area that's visually or thematically similar to the target area. You appear in the closest similar place. If you are heading for your home laboratory, for example, you might appear in another person's laboratory in the same city.</p>
-      <p>Off Target: You and your group (or the target object) appear 2d12 miles away from the destination in a random direction. Roll 1d8 for the direction: 1, east; 2, southeast; 3, south; 4, southwest; 5, west; 6, northwest; 7, north; or 8, northeast.</p>
-      <p>On Target: You and your group (or the target object) appear where you intended.</p>
+      <p><strong>Teleportation Outcome:</strong></p>
+      <table>
+        <header><col label="Familiarity"/><col label="Mishap"/><col label="Similar Area"/><col label="Off Target"/><col label="On Target"/></header>
+        <row><cell>Permanent circle</cell><cell>—</cell><cell>—</cell><cell>—</cell><cell>01-100</cell></row>
+        <row><cell>Linked object</cell><cell>—</cell><cell>—</cell><cell>—</cell><cell>01-100</cell></row>
+        <row><cell>Very familiar</cell><cell>01-05</cell><cell>06-13</cell><cell>14-24</cell><cell>25-100</cell></row>
+        <row><cell>Seen casually</cell><cell>01-33</cell><cell>34-43</cell><cell>44-53</cell><cell>54-100</cell></row>
+        <row><cell>Viewed once or described</cell><cell>01-43</cell><cell>44-53</cell><cell>54-73</cell><cell>74-100</cell></row>
+        <row><cell>False destination</cell><cell>01-50</cell><cell>51-100</cell><cell>—</cell><cell>—</cell></row>
+      </table>
+      <p><strong>Familiarity:</strong> Here are the meanings of the terms in the table's Familiarity column:</p>
+      <list type="bullet">
+        <item>"Permanent circle" means a permanent teleportation circle whose sigil sequence you know.</item>
+        <item>"Linked object" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.</item>
+        <item>"Very familiar" is a place you have visited often, a place you have carefully studied, or a place you can see when you cast the spell.</item>
+        <item>"Seen casually" is a place you have seen more than once but with which you aren't very familiar.</item>
+        <item>"Viewed once or described" is a place you have seen once, possibly using magic, or a place you know through someone else's description, perhaps from a map.</item>
+        <item>"False destination" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no longer exists.</item>
+      </list>
+      <p><strong>Mishap:</strong> The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 Force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>
+      <p><strong>Similar Area:</strong> You and your group (or the target object) appear in a different area that's visually or thematically similar to the target area. You appear in the closest similar place. If you are heading for your home laboratory, for example, you might appear in another person's laboratory in the same city.</p>
+      <p><strong>Off Target:</strong> You and your group (or the target object) appear 2d12 miles away from the destination in a random direction. Roll 1d8 for the direction: 1, east; 2, southeast; 3, south; 4, southwest; 5, west; 6, northwest; 7, north; or 8, northeast.</p>
+      <p><strong>On Target:</strong> You and your group (or the target object) appear where you intended.</p>
     </description>
     <classes text_original="School: Conjuration, Bard [2024], Sorcerer [2024], Wizard [2024]">
       <class_name>Bard</class_name>
@@ -2747,17 +2371,17 @@ False destination | 01-50 | 51-00 | — | —</p>
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="331" />
-    <roll description="Teleportation Outcome" type="damage">
+    <roll description="Teleportation Outcome" type="utility">
       <dice>1d100</dice>
     </roll>
-    <roll description="Force Damage" type="damage">
+    <roll description="Force Damage (mishap)" type="damage">
       <dice>3d10</dice>
       <damage_type>Force</damage_type>
     </roll>
-    <roll description="Miles" type="damage">
+    <roll description="Off Target Miles" type="utility">
       <dice>2d12</dice>
     </roll>
-    <roll description="Direction" type="damage">
+    <roll description="Off Target Direction" type="utility">
       <dice>1d8</dice>
     </roll>
   </spell>
@@ -2775,7 +2399,7 @@ False destination | 01-50 | 51-00 | — | —</p>
     </range>
     <components>
       <verbal />
-      <material consumed="true" cost_gp="50" cost_text="worth 50+ GP">rare inks</material>
+      <material consumed="true" cost_gp="50" cost_text="rare chalks and inks infused with precious gems worth 50 GP">rare chalks and inks infused with precious gems</material>
     </components>
     <duration description="1 round">
       <value>1</value>
@@ -2896,7 +2520,7 @@ False destination | 01-50 | 51-00 | — | —</p>
       <value>1</value>
       <unit>minute</unit>
     </casting_time>
-    <range description="1 Miles">
+    <range description="1 mile">
       <value>1</value>
       <unit>mile</unit>
     </range>
@@ -2904,7 +2528,7 @@ False destination | 01-50 | 51-00 | — | —</p>
       <verbal />
       <somatic />
     </components>
-    <duration description="Concentration, up to 6 round">
+    <duration description="Concentration, up to 6 rounds">
       <value>6</value>
       <unit>round</unit>
       <concentration available="true" up_to="true" />
@@ -2919,16 +2543,13 @@ False destination | 01-50 | 51-00 | — | —</p>
       <class_name>Druid</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="336" />
-    <roll description="Bludgeoning Damage" type="damage">
+    <roll description="Initial Bludgeoning Damage" type="damage">
       <dice>6d10</dice>
       <damage_type>Bludgeoning</damage_type>
     </roll>
-    <roll description="Bludgeoning Damage" type="damage">
-      <dice>5d10</dice>
+    <roll description="Ongoing Bludgeoning Damage" type="damage">
+      <dice>5d10</dice> <!-- Note: This damage reduces by 1d10 each round after the first ongoing damage. -->
       <damage_type>Bludgeoning</damage_type>
-    </roll>
-    <roll description="Damage Reduction" type="damage">
-      <dice>1d10</dice>
     </roll>
   </spell>
   <spell>
@@ -2982,7 +2603,7 @@ False destination | 01-50 | 51-00 | — | —</p>
       <somatic />
       <material>a handful of thorns</material>
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -2996,24 +2617,16 @@ False destination | 01-50 | 51-00 | — | —</p>
       <class_name>Druid</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="339" />
-    <roll description="Piercing or Slashing Damage" type="damage">
+    <roll description="Piercing Damage (on appearance)" type="damage">
       <dice>7d8</dice>
       <damage_type>Piercing</damage_type>
     </roll>
-    <roll description="Piercing or Slashing Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing or Slashing Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Piercing</damage_type>
-    </roll>
-    <roll description="Piercing or Slashing Damage" type="damage">
-      <dice>10d8</dice>
-      <damage_type>Piercing</damage_type>
+    <roll description="Slashing Damage (entering/end turn in wall)" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Slashing</damage_type>
     </roll>
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Both types of damage increase by 1d8 for each spell slot level above 6.</text_block>
+      <text_block title="At Higher Levels">Both types of damage increase by 1d8 for each spell slot level above 6.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -3045,6 +2658,7 @@ False destination | 01-50 | 51-00 | — | —</p>
       <p>A creature Restrained by the webs can take an action to make a Strength (Athletics) check against your spell save DC. If it succeeds, it is no longer Restrained.</p>
       <p>The webs are flammable. Any 5-foot Cube of webs exposed to fire burns away in 1 round, dealing 2d4 Fire damage to any creature that starts its turn in the fire.</p>
     </description>
+    <area_of_effect shape="cube" value="20" unit="feet" />
     <classes text_original="School: Conjuration, Sorcerer [2024], Wizard [2024], Druid [2024] (Tropical Land)">
       <class_name>Sorcerer</class_name>
       <class_name>Wizard</class_name>
@@ -3052,7 +2666,7 @@ False destination | 01-50 | 51-00 | — | —</p>
       <subclass_restriction for_class="Druid" name="Tropical Land" />
     </classes>
     <source name="Player's Handbook 2024" page="340" />
-    <roll description="Fire Damage" type="damage">
+    <roll description="Fire Damage (burning webs)" type="damage">
       <dice>2d4</dice>
       <damage_type>Fire</damage_type>
     </roll>
@@ -3078,25 +2692,27 @@ False destination | 01-50 | 51-00 | — | —</p>
       <p>Wish is the mightiest spell a mortal can cast. By simply speaking aloud, you can alter reality itself.</p>
       <p>The basic use of this spell is to duplicate any other spell of level 8 or lower. If you use it this way, you don't need to meet any requirements to cast that spell, including costly components. The spell simply takes effect.</p>
       <p>Alternatively, you can create one of the following effects of your choice:</p>
-      <p>Object Creation: You create one object of up to 25,000 GP in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space that you can see on the ground.</p>
-      <p>Instant Health: You allow yourself and up to twenty creatures that you can see to regain all Hit Points, and you end all effects on them listed in the Greater Restoration spell.</p>
-      <p>Resistance: You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.</p>
-      <p>Spell Immunity: You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours.</p>
-      <p>Sudden Learning: You replace one of your feats with another feat for which you are eligible. You lose all the benefits of the old feat and gain the benefits of the new one. You can't replace a feat that is a prerequisite for any of your other feats or features.</p>
-      <p>Roll Redo: You undo a single recent event by forcing a reroll of any die roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a Wish spell could undo an ally's failed saving throw or a foe's Critical Hit. You can force the reroll to be made with Advantage or Disadvantage, and you choose whether to use the reroll or the original roll.</p>
-      <p>Reshape Reality: You may wish for something not included in any of the other effects. To do so, state your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might be achieved only in part, or you might suffer an unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a Legendary magic item or an Artifact might instantly transport you to the presence of the item's current owner. If your wish is granted and its effects have consequences for a whole community, region, or world, you are likely to attract powerful foes. If your wish would affect a god, the god's divine servants might instantly intervene to prevent it or to encourage you to craft the wish in a particular way. If your wish would undo the multiverse itself, threaten the City of Sigil, or affect the Lady of Pain in any way, you see an image of her in your mind for a moment; she shakes her head, and your wish fails.</p>
-      <p>The stress of casting Wish to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a Long Rest, you take 1d10 Necrotic damage per level of that spell. This damage can't be reduced or prevented in any way. In addition, your Strength score becomes 3 for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 chance that you are unable to cast Wish ever again if you suffer this stress.</p>
+      <list type="bullet">
+        <item><strong>Object Creation:</strong> You create one object of up to 25,000 GP in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space that you can see on the ground.</item>
+        <item><strong>Instant Health:</strong> You allow yourself and up to twenty creatures that you can see to regain all Hit Points, and you end all effects on them listed in the Greater Restoration spell.</item>
+        <item><strong>Resistance:</strong> You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.</item>
+        <item><strong>Spell Immunity:</strong> You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours.</item>
+        <item><strong>Sudden Learning:</strong> You replace one of your feats with another feat for which you are eligible. You lose all the benefits of the old feat and gain the benefits of the new one. You can't replace a feat that is a prerequisite for any of your other feats or features.</item>
+        <item><strong>Roll Redo:</strong> You undo a single recent event by forcing a reroll of any die roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a Wish spell could undo an ally's failed saving throw or a foe's Critical Hit. You can force the reroll to be made with Advantage or Disadvantage, and you choose whether to use the reroll or the original roll.</item>
+      </list>
+      <p><strong>Reshape Reality:</strong> You may wish for something not included in any of the other effects. To do so, state your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might be achieved only in part, or you might suffer an unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a Legendary magic item or an Artifact might instantly transport you to the presence of the item's current owner. If your wish is granted and its effects have consequences for a whole community, region, or world, you are likely to attract powerful foes. If your wish would affect a god, the god's divine servants might instantly intervene to prevent it or to encourage you to craft the wish in a particular way. If your wish would undo the multiverse itself, threaten the City of Sigil, or affect the Lady of Pain in any way, you see an image of her in your mind for a moment; she shakes her head, and your wish fails.</p>
+      <p>The stress of casting Wish to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a Long Rest, you take 1d10 Necrotic damage per level of that spell. This damage can't be reduced or prevented in any way. In addition, your Strength score becomes 3 for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33% chance that you are unable to cast Wish ever again if you suffer this stress.</p>
     </description>
     <classes text_original="School: Conjuration, Sorcerer [2024], Wizard [2024]">
       <class_name>Sorcerer</class_name>
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="341" />
-    <roll description="Necrotic Damage" type="damage">
+    <roll description="Necrotic Damage (stress)" type="damage">
       <dice>1d10</dice>
       <damage_type>Necrotic</damage_type>
     </roll>
-    <roll description="Days" type="damage">
+    <roll description="Strength Recovery Days (stress)" type="effect">
       <dice>2d4</dice>
     </roll>
   </spell>

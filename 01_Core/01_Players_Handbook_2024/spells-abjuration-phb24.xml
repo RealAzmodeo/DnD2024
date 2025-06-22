@@ -17,7 +17,7 @@
       <somatic />
       <material>a strip of white cloth</material>
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -39,7 +39,9 @@
     </classes>
     <source name="Player's Handbook 2024" page="239" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">Each target's Hit Points increase by 5 for each spell slot level above 2.</text_block>
+      <per_slot_above base_level="2">
+        <effect description="Each target's Hit Points increase by 5 for each spell slot level above 2."/>
+      </per_slot_above>
     </at_higher_levels>
   </spell>
   <spell>
@@ -60,14 +62,14 @@
       <somatic />
       <material>a bell and silver wire</material>
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
     <description>
       <p>You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is audible or mental:</p>
-      <p>Audible Alarm: The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.</p>
-      <p>Mental Alarm: You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep.</p>
+      <p><strong>Audible Alarm:</strong> The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.</p>
+      <p><strong>Mental Alarm:</strong> You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep.</p>
     </description>
     <classes text_original="School: Abjuration, Ranger [2024], Wizard [2024], Sorcerer [2024] (Clockwork)">
       <class_name>Ranger</class_name>
@@ -85,8 +87,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (10-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>10-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -114,8 +118,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (10-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>10-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -155,8 +161,8 @@
       <somatic />
       <material consumed="true" cost_gp="25" cost_text="worth 25+ GP">gold dust</material>
     </components>
-    <duration description="">
-      <value>special</value>
+    <duration description="Until dispelled">
+      <value>until_dispelled</value>
     </duration>
     <description>
       <p>You touch a closed door, window, gate, container, or hatch and magically lock it for the duration. This lock can't be unlocked by any nonmagical means. You and any creatures you designate when you cast the spell can open and close the object despite the lock. You can also set a password that, when spoken within 5 feet of the object, unlocks it for 1 minute.</p>
@@ -194,7 +200,7 @@
     <source name="Player's Handbook 2024" page="242" />
     <at_higher_levels>
       <per_slot_above base_level="2">
-        <effect description="The number of unexpended Hit Dice you can roll increases by one" />
+        <effect description="The number of unexpended Hit Dice you can roll increases by one." />
       </per_slot_above>
     </at_higher_levels>
   </spell>
@@ -227,7 +233,7 @@
     <source name="Player's Handbook 2024" page="243" />
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The Temporary Hit Points and the Cold damage both increase by 5" />
+        <effect description="The Temporary Hit Points and the Cold damage both increase by 5." />
       </per_slot_above>
     </at_higher_levels>
   </spell>
@@ -239,13 +245,15 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -268,13 +276,15 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -296,8 +306,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -357,7 +369,7 @@
     <source name="Player's Handbook 2024" page="245" />
     <at_higher_levels>
       <per_slot_above base_level="4">
-        <effect description="You can target one additional creature">
+        <effect description="You can target one additional creature.">
           <additional_targets count="1" />
         </effect>
       </per_slot_above>
@@ -436,13 +448,15 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -461,7 +475,7 @@
     <name>Contingency [2024]</name>
     <level>6</level>
     <school code="A">Abjuration</school>
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -471,9 +485,9 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="1500" cost_text="worth 1,500+ GP">a gem-encrusted statuette of yourself</material>
+      <material consumed="false" cost_gp="1500" cost_text="worth at least 1500 GP">a gem-encrusted statuette of yourself</material>
     </components>
-    <duration description="10 day">
+    <duration description="10 days">
       <value>10</value>
       <unit>day</unit>
     </duration>
@@ -552,35 +566,12 @@
     </classes>
     <source name="Player's Handbook 2024" page="259" />
     <roll description="Heal" type="healing">
-      <dice>2d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>4d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>8d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>10d8+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>12d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>14d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>16d8+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>18d8+SPELL</dice>
+      <dice>2d8</dice>
+      <bonus_from_ability>SPELL</bonus_from_ability>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The healing increases by 2d8">
+        <effect description="The healing increases by 2d8.">
           <roll_increase increase_dice="2d8" />
         </effect>
       </per_slot_above>
@@ -601,7 +592,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -639,8 +630,8 @@
     </duration>
     <description>
       <p>For the duration, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions.</p>
-      <p>Break Enchantment: As a Magic action, you touch a creature that is possessed by or has the Charmed or Frightened condition from one or more creatures of the types above. The target is no longer possessed, Charmed, or Frightened by such creatures.</p>
-      <p>Dismissal: As a Magic action, you target one creature you can see within 5 feet of you that has one of the creature types above. The target must succeed on a Charisma saving throw or be sent back to its home plane if it isn't there already. If they aren't on their home plane, Undead are sent to the Shadowfell, and Fey are sent to the Feywild.</p>
+      <p><strong>Break Enchantment:</strong> As a Magic action, you touch a creature that is possessed by or has the Charmed or Frightened condition from one or more creatures of the types above. The target is no longer possessed, Charmed, or Frightened by such creatures.</p>
+      <p><strong>Dismissal:</strong> As a Magic action, you target one creature you can see within 5 feet of you that has one of the creature types above. The target must succeed on a Charisma saving throw or be sent back to its home plane if it isn't there already. If they aren't on their home plane, Undead are sent to the Shadowfell, and Fey are sent to the Feywild.</p>
     </description>
     <classes text_original="School: Abjuration, Cleric [2024], Paladin [2024]">
       <class_name>Cleric</class_name>
@@ -684,7 +675,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="265" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</text_block>
+      <text_block title="At Higher Levels">You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -692,7 +683,7 @@
     <level>6</level>
     <school code="A">Abjuration</school>
     <ritual available="true" />
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -702,7 +693,7 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="1000" cost_text="worth 1,000+ GP">ruby dust</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP">ruby dust</material>
     </components>
     <duration description="1 day">
       <value>1</value>
@@ -718,9 +709,13 @@
       <class_name>Cleric</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="276" />
-    <roll description="Radiant Damage" type="damage">
+    <roll description="Radiant Damage (chosen at casting)" type="damage">
       <dice>5d10</dice>
       <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Necrotic Damage (chosen at casting)" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Necrotic</damage_type>
     </roll>
   </spell>
   <spell>
@@ -763,7 +758,7 @@
     <source name="Player's Handbook 2024" page="277" />
     <at_higher_levels>
       <per_slot_above base_level="4">
-        <effect description="You can target one additional creature">
+        <effect description="You can target one additional creature.">
           <additional_targets count="1" />
         </effect>
       </per_slot_above>
@@ -777,8 +772,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (10-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>10-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -800,7 +797,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="279" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">The barrier blocks spells of 1 level higher for each spell slot level above 6.</text_block>
+      <text_block title="At Higher Levels">The barrier blocks spells of 1 level higher for each spell slot level above 6.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -817,19 +814,19 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="200" cost_text="worth 200+ GP">powdered diamond</material>
+      <material consumed="true" cost_gp="200" cost_text="worth at least 200 GP">powdered diamond</material>
     </components>
-    <duration description="">
-      <value>special</value>
+    <duration description="Until dispelled or triggered">
+      <value>special</value> <!-- Could be until_dispelled or until_triggered -->
     </duration>
     <description>
       <p>You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p>
       <p>The glyph is nearly imperceptible and requires a successful Wisdom (Perception) check against your spell save DC to notice.</p>
       <p>When you inscribe the glyph, you set its trigger and choose whether it's an explosive rune or a spell glyph, as explained below.</p>
-      <p>Set the Trigger: You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.</p>
+      <p><strong>Set the Trigger:</strong> You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.</p>
       <p>You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.</p>
-      <p>Explosive Rune: When triggered, the glyph erupts with magical energy in a 20-foot-radius Sphere centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes 5d8 Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one.</p>
-      <p>Spell Glyph: You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way.</p>
+      <p><strong>Explosive Rune:</strong> When triggered, the glyph erupts with magical energy in a 20-foot-radius Sphere centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes 5d8 Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one.</p>
+      <p><strong>Spell Glyph:</strong> You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way.</p>
       <p>When the glyph is triggered, the stored spell takes effect. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons Hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires Concentration, it lasts until the end of its full duration.</p>
     </description>
     <classes text_original="School: Abjuration, Bard [2024], Cleric [2024], Wizard [2024]">
@@ -838,41 +835,33 @@
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="279" />
-    <roll description="Acid Damage" type="damage">
+    <roll description="Explosive Rune Damage (Acid, chosen at casting)" type="damage">
       <dice>5d8</dice>
       <damage_type>Acid</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>6d8</dice>
-      <damage_type>Acid</damage_type>
+    <roll description="Explosive Rune Damage (Cold, chosen at casting)" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Cold</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>7d8</dice>
-      <damage_type>Acid</damage_type>
+    <roll description="Explosive Rune Damage (Fire, chosen at casting)" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Fire</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>8d8</dice>
-      <damage_type>Acid</damage_type>
+    <roll description="Explosive Rune Damage (Lightning, chosen at casting)" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Lightning</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>9d8</dice>
-      <damage_type>Acid</damage_type>
-    </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>10d8</dice>
-      <damage_type>Acid</damage_type>
-    </roll>
-    <roll description="Acid Damage" type="damage">
-      <dice>11d8</dice>
-      <damage_type>Acid</damage_type>
+    <roll description="Explosive Rune Damage (Thunder, chosen at casting)" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Thunder</damage_type>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The damage of an explosive rune increases by 1d8">
+        <effect description="The damage of an explosive rune increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
-      <text_block title="General Higher Level Effects">If you create a spell glyph, you can store any spell of up to the same level as the spell slot you use for the Glyph of Warding.</text_block>
+      <text_block title="Spell Glyph">If you create a spell glyph, you can store any spell of up to the same level as the spell slot you use for the Glyph of Warding.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -889,18 +878,20 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="100" cost_text="worth 100+ GP">diamond dust</material>
+      <material consumed="true" cost_gp="100" cost_text="worth at least 100 GP">diamond dust</material>
     </components>
     <duration description="Instantaneous">
       <value>instantaneous</value>
     </duration>
     <description>
       <p>You touch a creature and magically remove one of the following effects from it:</p>
-      <p>• 1 Exhaustion level</p>
-      <p>• The Charmed or Petrified condition</p>
-      <p>• A curse, including the target's Attunement to a cursed magic item</p>
-      <p>• Any reduction to one of the target's ability scores</p>
-      <p>• Any reduction to the target's Hit Point maximum</p>
+      <list type="bullet">
+        <item>1 Exhaustion level</item>
+        <item>The Charmed or Petrified condition</item>
+        <item>A curse, including the target's Attunement to a cursed magic item</item>
+        <item>Any reduction to one of the target's ability scores</item>
+        <item>Any reduction to the target's Hit Point maximum</item>
+      </list>
     </description>
     <classes text_original="School: Abjuration, Bard [2024], Cleric [2024], Druid [2024], Ranger [2024], Paladin [2024], Cleric [2024] (Life), Sorcerer [2024] (Clockwork), Warlock [2024] (Celestial)">
       <class_name>Bard</class_name>
@@ -930,9 +921,9 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="10" cost_text="worth 10+ GP">a silver rod</material>
+      <material consumed="false" cost_gp="10" cost_text="worth at least 10 GP">a silver rod</material>
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
@@ -940,15 +931,17 @@
       <p>You create a ward that protects up to 2,500 square feet of floor space. The warded area can be up to 20 feet tall, and you shape it as one 50-foot square, one hundred 5-foot squares that are contiguous, or twenty-five 10-foot squares that are contiguous.</p>
       <p>When you cast this spell, you can specify individuals that are unaffected by the spell's effects. You can also specify a password that, when spoken aloud within 5 feet of the warded area, makes the speaker immune to its effects.</p>
       <p>The spell creates the effects below within the warded area. Dispel Magic has no effect on Guards and Wards itself, but each of the following effects can be dispelled. If all four are dispelled, Guards and Wards ends. If you cast the spell every day for 365 days on the same area, the spell thereafter lasts until all its effects are dispelled.</p>
-      <p>Corridors: Fog fills all the warded corridors, making them Heavily Obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you believes it is going in the opposite direction from the one it chooses.</p>
-      <p>Doors: All doors in the warded area are magically locked, as if sealed by the Arcane Lock spell. In addition, you can cover up to ten doors with an illusion to make them appear as plain sections of wall.</p>
-      <p>Stairs: Webs fill all stairs in the warded area from top to bottom, as in the Web spell. These strands regrow in 10 minutes if they are destroyed while Guards and Wards lasts.</p>
-      <p>Other Spell Effect: Place one of the following magical effects within the warded area:</p>
-      <p>• Dancing Lights in four corridors, with a simple program that the lights repeat as long as Guards and Wards lasts</p>
-      <p>• Magic Mouth in two locations</p>
-      <p>• Stinking Cloud in two locations (the vapors return within 10 minutes if dispersed while Guards and Wards lasts)</p>
-      <p>• Gust of Wind in one corridor or room (the wind blows continuously while the spell lasts)</p>
-      <p>• Suggestion in one 5-foot square; any creature that enters that square receives the suggestion mentally</p>
+      <p><strong>Corridors:</strong> Fog fills all the warded corridors, making them Heavily Obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you believes it is going in the opposite direction from the one it chooses.</p>
+      <p><strong>Doors:</strong> All doors in the warded area are magically locked, as if sealed by the Arcane Lock spell. In addition, you can cover up to ten doors with an illusion to make them appear as plain sections of wall.</p>
+      <p><strong>Stairs:</strong> Webs fill all stairs in the warded area from top to bottom, as in the Web spell. These strands regrow in 10 minutes if they are destroyed while Guards and Wards lasts.</p>
+      <p><strong>Other Spell Effect:</strong> Place one of the following magical effects within the warded area:</p>
+      <list type="bullet">
+        <item>Dancing Lights in four corridors, with a simple program that the lights repeat as long as Guards and Wards lasts</item>
+        <item>Magic Mouth in two locations</item>
+        <item>Stinking Cloud in two locations (the vapors return within 10 minutes if dispersed while Guards and Wards lasts)</item>
+        <item>Gust of Wind in one corridor or room (the wind blows continuously while the spell lasts)</item>
+        <item>Suggestion in one 5-foot square; any creature that enters that square receives the suggestion mentally</item>
+      </list>
     </description>
     <classes text_original="School: Abjuration, Bard [2024], Wizard [2024]">
       <class_name>Bard</class_name>
@@ -960,7 +953,7 @@
     <name>Hallow [2024]</name>
     <level>5</level>
     <school code="A">Abjuration</school>
-    <casting_time description="24 hour">
+    <casting_time description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </casting_time>
@@ -970,25 +963,27 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">incense</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP">incense</material>
     </components>
-    <duration description="">
-      <value>special</value>
+    <duration description="Until dispelled">
+      <value>until_dispelled</value>
     </duration>
     <description>
       <p>You touch a point and infuse an area around it with holy or unholy power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect of Hallow. The affected area has the following effects.</p>
-      <p>Hallowed Ward: Choose any of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area, and any creature that is possessed by or that has the Charmed or Frightened condition from such creatures isn't possessed, Charmed, or Frightened by them while in the area.</p>
-      <p>Extra Effect: You bind an extra effect to the area from the list below:</p>
-      <p>Courage: Creatures of any types you choose can't gain the Frightened condition while in the area.</p>
-      <p>Darkness: Darkness fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area.</p>
-      <p>Daylight: Bright light fills the area. Magical Darkness created by spells of a level lower than this spell can't extinguish the light.</p>
-      <p>Peaceful Rest: Dead bodies interred in the area can't be turned into Undead.</p>
-      <p>Extradimensional Interference: Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel.</p>
-      <p>Fear: Creatures of any types you choose have the Frightened condition while in the area.</p>
-      <p>Resistance: Creatures of any types you choose have Resistance to one damage type of your choice while in the area.</p>
-      <p>Silence: No sound can emanate from within the area, and no sound can reach into it.</p>
-      <p>Tongues: Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language.</p>
-      <p>Vulnerability: Creatures of any types you choose have Vulnerability to one damage type of your choice while in the area.</p>
+      <p><strong>Hallowed Ward:</strong> Choose any of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area, and any creature that is possessed by or that has the Charmed or Frightened condition from such creatures isn't possessed, Charmed, or Frightened by them while in the area.</p>
+      <p><strong>Extra Effect:</strong> You bind an extra effect to the area from the list below:</p>
+      <list type="bullet">
+        <item><strong>Courage:</strong> Creatures of any types you choose can't gain the Frightened condition while in the area.</item>
+        <item><strong>Darkness:</strong> Darkness fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area.</item>
+        <item><strong>Daylight:</strong> Bright light fills the area. Magical Darkness created by spells of a level lower than this spell can't extinguish the light.</item>
+        <item><strong>Peaceful Rest:</strong> Dead bodies interred in the area can't be turned into Undead.</item>
+        <item><strong>Extradimensional Interference:</strong> Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel.</item>
+        <item><strong>Fear:</strong> Creatures of any types you choose have the Frightened condition while in the area.</item>
+        <item><strong>Resistance:</strong> Creatures of any types you choose have Resistance to one damage type of your choice while in the area.</item>
+        <item><strong>Silence:</strong> No sound can emanate from within the area, and no sound can reach into it.</item>
+        <item><strong>Tongues:</strong> Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language.</item>
+        <item><strong>Vulnerability:</strong> Creatures of any types you choose have Vulnerability to one damage type of your choice while in the area.</item>
+      </list>
     </description>
     <classes text_original="School: Abjuration, Cleric [2024]">
       <class_name>Cleric</class_name>
@@ -1024,7 +1019,7 @@
     <source name="Player's Handbook 2024" page="284" />
     <at_higher_levels>
       <per_slot_above base_level="6">
-        <effect description="The healing increases by 10" />
+        <effect description="The healing increases by 10." />
       </per_slot_above>
     </at_higher_levels>
   </spell>
@@ -1056,35 +1051,12 @@
     </classes>
     <source name="Player's Handbook 2024" page="284" />
     <roll description="Heal" type="healing">
-      <dice>2d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>4d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>8d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>10d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>12d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>14d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>16d4+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>18d4+%0</dice>
+      <dice>2d4</dice>
+      <bonus_from_ability>SPELL</bonus_from_ability>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="1">
-        <effect description="The healing increases by 2d4">
+        <effect description="The healing increases by 2d4.">
           <roll_increase increase_dice="2d4" />
         </effect>
       </per_slot_above>
@@ -1098,13 +1070,15 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="1000" cost_text="worth 1,000+ GP">a reliquary</material>
+      <material consumed="false" cost_gp="1000" cost_text="worth at least 1,000 GP">a reliquary</material>
     </components>
     <duration description="Concentration, up to 1 minute">
       <value>1</value>
@@ -1134,20 +1108,22 @@
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="5000" cost_text="worth 5,000+ GP">a statuette of the target</material>
+      <material consumed="false" cost_gp="5000" cost_text="a vellum depiction or carved statuette of the target (worth at least 500gp per HD of target), plus a special component per version">a statuette of the target and special items</material> <!-- Simplified, true cost is variable -->
     </components>
-    <duration description="">
-      <value>special</value>
+    <duration description="Until triggered">
+      <value>until_triggered</value>
     </duration>
     <description>
       <p>You create a magical restraint to hold a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the target is unaffected, and it is immune to this spell for the next 24 hours. On a failed save, the target is imprisoned. While imprisoned, the target doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the imprisoned target, and the target can't teleport.</p>
       <p>Until the spell ends, the target is also affected by one of the following effects of your choice:</p>
-      <p>Burial: The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.</p>
-      <p>Chaining: Chains firmly rooted in the ground hold the target in place. The target has the Restrained condition and can't be moved by any means.</p>
-      <p>Hedged Prison: The target is trapped in a demiplane that is warded against teleportation and planar travel. The demiplane is your choice of a labyrinth, a cage, a tower, or the like.</p>
-      <p>Minimus Containment: The target becomes 1 inch tall and is trapped inside an indestructible gemstone or a similar object. Light can pass through the gemstone (allowing the target to see out and other creatures to see in), but nothing else can pass through by any means.</p>
-      <p>Slumber: The target has the Unconscious condition and can't be awoken.</p>
-      <p>Ending the Spell: When you cast the spell, specify a trigger that will end it. The trigger can be as simple or as elaborate as you choose, but the DM must agree that it has a high likelihood of happening within the next decade. The trigger must be an observable action, such as someone making a particular offering at the temple of your god, saving your true love, or defeating a specific monster.A Dispel Magic spell can end the spell only if it is cast with a level 9 spell slot, targeting either the prison or the component used to create it.</p>
+      <list type="bullet">
+        <item><strong>Burial:</strong> The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.</item>
+        <item><strong>Chaining:</strong> Chains firmly rooted in the ground hold the target in place. The target has the Restrained condition and can't be moved by any means.</item>
+        <item><strong>Hedged Prison:</strong> The target is trapped in a demiplane that is warded against teleportation and planar travel. The demiplane is your choice of a labyrinth, a cage, a tower, or the like.</item>
+        <item><strong>Minimus Containment:</strong> The target becomes 1 inch tall and is trapped inside an indestructible gemstone or a similar object. Light can pass through the gemstone (allowing the target to see out and other creatures to see in), but nothing else can pass through by any means.</item>
+        <item><strong>Slumber:</strong> The target has the Unconscious condition and can't be awoken.</item>
+      </list>
+      <p><strong>Ending the Spell:</strong> When you cast the spell, specify a trigger that will end it. The trigger can be as simple or as elaborate as you choose, but the DM must agree that it has a high likelihood of happening within the next decade. The trigger must be an observable action, such as someone making a particular offering at the temple of your god, saving your true love, or defeating a specific monster. A Dispel Magic spell can end the spell only if it is cast with a level 9 spell slot, targeting either the prison or the component used to create it.</p>
     </description>
     <classes text_original="School: Abjuration, Warlock [2024], Wizard [2024]">
       <class_name>Warlock</class_name>
@@ -1206,7 +1182,7 @@
       <somatic />
       <material>a piece of cured leather</material>
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -1234,7 +1210,7 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="100" cost_text="worth 100+ GP">salt and powdered silver</material>
+      <material consumed="true" cost_gp="100" cost_text="worth at least 100 GP">salt and powdered silver</material>
     </components>
     <duration description="1 hour">
       <value>1</value>
@@ -1243,9 +1219,11 @@
     <description>
       <p>You create a 10-foot-radius, 20-foot-tall Cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the Cylinder intersects with the floor or other surface.</p>
       <p>Choose one or more of the following types of creatures: Celestials, Elementals, Fey, Fiends, or Undead. The circle affects a creature of the chosen type in the following ways:</p>
-      <p>• The creature can't willingly enter the Cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.</p>
-      <p>• The creature has Disadvantage on attack rolls against targets within the Cylinder.</p>
-      <p>• Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature.</p>
+      <list type="bullet">
+        <item>The creature can't willingly enter the Cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.</item>
+        <item>The creature has Disadvantage on attack rolls against targets within the Cylinder.</item>
+        <item>Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature.</item>
+      </list>
       <p>Each time you cast this spell, you can cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the Cylinder and protecting targets outside it.</p>
     </description>
     <classes text_original="School: Abjuration, Cleric [2024], Warlock [2024], Wizard [2024], Paladin [2024]">
@@ -1257,7 +1235,7 @@
     <source name="Player's Handbook 2024" page="293" />
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The duration increases by 1 hour" />
+        <effect description="The duration increases by 1 hour." />
       </per_slot_above>
     </at_higher_levels>
   </spell>
@@ -1292,23 +1270,12 @@
     </classes>
     <source name="Player's Handbook 2024" page="296" />
     <roll description="Heal" type="healing">
-      <dice>5d8+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d8+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>7d8+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>8d8+%0</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>9d8+%0</dice>
+      <dice>5d8</dice>
+      <bonus_from_ability>SPELL</bonus_from_ability>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="5">
-        <effect description="The healing increases by 1d8">
+        <effect description="The healing increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -1369,29 +1336,12 @@
     </classes>
     <source name="Player's Handbook 2024" page="296" />
     <roll description="Heal" type="healing">
-      <dice>2d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>3d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>4d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>5d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>7d4+SPELL</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>8d4+SPELL</dice>
+      <dice>2d4</dice>
+      <bonus_from_ability>SPELL</bonus_from_ability>
     </roll>
     <at_higher_levels>
       <per_slot_above base_level="3">
-        <effect description="The healing increases by 1d4">
+        <effect description="The healing increases by 1d4.">
           <roll_increase increase_dice="1d4" />
         </effect>
       </per_slot_above>
@@ -1412,7 +1362,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
@@ -1429,7 +1379,7 @@
     <name>Mordenkainen's Private Sanctum [2024]</name>
     <level>4</level>
     <school code="A">Abjuration</school>
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -1442,19 +1392,21 @@
       <somatic />
       <material>a thin sheet of lead</material>
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
     <description>
       <p>You make an area within range magically secure. The area is a Cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration.</p>
       <p>When you cast the spell, you decide what sort of security the spell provides, choosing any of the following properties:</p>
-      <p>• Sound can't pass through the barrier at the edge of the warded area.</p>
-      <p>• The barrier of the warded area appears dark and foggy, preventing vision (including Darkvision) through it.</p>
-      <p>• Sensors created by Divination spells can't appear inside the protected area or pass through the barrier at its perimeter.</p>
-      <p>• Creatures in the area can't be targeted by Divination spells.</p>
-      <p>• Nothing can teleport into or out of the warded area.</p>
-      <p>• Planar travel is blocked within the warded area.</p>
+      <list type="bullet">
+        <item>Sound can't pass through the barrier at the edge of the warded area.</item>
+        <item>The barrier of the warded area appears dark and foggy, preventing vision (including Darkvision) through it.</item>
+        <item>Sensors created by Divination spells can't appear inside the protected area or pass through the barrier at its perimeter.</item>
+        <item>Creatures in the area can't be targeted by Divination spells.</item>
+        <item>Nothing can teleport into or out of the warded area.</item>
+        <item>Planar travel is blocked within the warded area.</item>
+      </list>
       <p>Casting this spell on the same spot every day for 365 days makes the spell last until dispelled.</p>
     </description>
     <classes text_original="School: Abjuration, Wizard [2024]">
@@ -1462,7 +1414,7 @@
     </classes>
     <source name="Player's Handbook 2024" page="301" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">You can increase the size of the Cube by 100 feet for each spell slot level above 4.</text_block>
+      <text_block title="At Higher Levels">You can increase the size of the Cube by 100 feet for each spell slot level above 4.</text_block>
     </at_higher_levels>
   </spell>
   <spell>
@@ -1479,9 +1431,9 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="25" cost_text="worth 25+ GP">a pinch of diamond dust</material>
+      <material consumed="true" cost_gp="25" cost_text="worth at least 25 GP">a pinch of diamond dust</material>
     </components>
-    <duration description="8 hour">
+    <duration description="8 hours">
       <value>8</value>
       <unit>hour</unit>
     </duration>
@@ -1538,8 +1490,10 @@
       <value>1</value>
       <unit>action</unit>
     </casting_time>
-    <range description="Self">
+    <range description="Self (30-foot emanation)">
       <value>self</value>
+      <shape>emanation</shape>
+      <shape_value>30-foot</shape_value>
     </range>
     <components>
       <verbal />
@@ -1577,9 +1531,9 @@
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">a jewel</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP">a jewel</material>
     </components>
-    <duration description="24 hour">
+    <duration description="24 hours">
       <value>24</value>
       <unit>hour</unit>
     </duration>
@@ -1596,14 +1550,14 @@
     </classes>
     <source name="Player's Handbook 2024" page="305" />
     <at_higher_levels>
-      <text_block title="General Higher Level Effects">The duration increases with a spell slot of level 6 (10 days), 7 (30 days), 8 (180 days), and 9 (366 days).</text_block>
+      <text_block title="At Higher Levels">The duration increases with a spell slot of level 6 (10 days), 7 (30 days), 8 (180 days), and 9 (366 days).</text_block>
     </at_higher_levels>
   </spell>
   <spell>
     <name>Prayer of Healing [2024]</name>
     <level>2</level>
     <school code="A">Abjuration</school>
-    <casting_time description="10 minute">
+    <casting_time description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </casting_time>
@@ -1628,30 +1582,9 @@
     <roll description="Heal" type="healing">
       <dice>2d8</dice>
     </roll>
-    <roll description="Heal" type="healing">
-      <dice>3d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>4d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>5d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>6d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>7d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>8d8</dice>
-    </roll>
-    <roll description="Heal" type="healing">
-      <dice>9d8</dice>
-    </roll>
     <at_higher_levels>
       <per_slot_above base_level="2">
-        <effect description="The healing increases by 1d8">
+        <effect description="The healing increases by 1d8.">
           <roll_increase increase_dice="1d8" />
         </effect>
       </per_slot_above>
@@ -1673,7 +1606,7 @@
       <verbal />
       <somatic />
     </components>
-    <duration description="10 minute">
+    <duration description="10 minutes">
       <value>10</value>
       <unit>minute</unit>
     </duration>
@@ -1682,38 +1615,64 @@
       <p>The wall sheds Bright Light within 100 feet and Dim Light for an additional 100 feet. You and creatures you designate when you cast the spell can pass through and be near the wall without harm. If another creature that can see the wall moves within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or have the Blinded condition for 1 minute.</p>
       <p>The wall consists of seven layers, each with a different color. When a creature reaches into or passes through the wall, it does so one layer at a time through all the layers. Each layer forces the creature to make a Dexterity saving throw or be affected by that layer's properties as described in the Prismatic Layers table.</p>
       <p>The wall, which has AC 10, can be destroyed one layer at a time, in order from red to violet, by means specific to each layer. If a layer is destroyed, it is gone for the duration. Antimagic Field has no effect on the wall, and Dispel Magic can affect only the violet layer.</p>
-      <p>Prismatic Layers:
-Order | Effects
-1 | Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage. Additional Effects: Nonmagical ranged attacks can't pass through this layer, which is destroyed if it takes at least 25 Cold damage.
-2 | Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage. Additional Effects: Magical ranged attacks can't pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind).
-3 | Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 60 Force damage.
-4 | Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage. Additional Effects: A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.
-5 | Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 25 Fire damage.
-6 | Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. Additional Effects: Spells can't be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell.
-7 | Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM's choice). Additional Effects: This layer is destroyed by Dispel Magic.</p>
+      <p><strong>Prismatic Layers:</strong></p>
+      <table>
+        <header>
+          <col label="Order"/>
+          <col label="Effects"/>
+        </header>
+        <row>
+          <cell>1</cell>
+          <cell><strong>Red.</strong> Failed Save: 12d6 Fire damage. Successful Save: Half as much damage. Additional Effects: Nonmagical ranged attacks can't pass through this layer, which is destroyed if it takes at least 25 Cold damage.</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell><strong>Orange.</strong> Failed Save: 12d6 Acid damage. Successful Save: Half as much damage. Additional Effects: Magical ranged attacks can't pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind).</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell><strong>Yellow.</strong> Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 60 Force damage.</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell><strong>Green.</strong> Failed Save: 12d6 Poison damage. Successful Save: Half as much damage. Additional Effects: A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell><strong>Blue.</strong> Failed Save: 12d6 Cold damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 25 Fire damage.</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell><strong>Indigo.</strong> Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. Additional Effects: Spells can't be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell.</cell>
+        </row>
+        <row>
+          <cell>7</cell>
+          <cell><strong>Violet.</strong> Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM's choice). Additional Effects: This layer is destroyed by Dispel Magic.</cell>
+        </row>
+      </table>
     </description>
     <classes text_original="School: Abjuration, Bard [2024], Wizard [2024]">
       <class_name>Bard</class_name>
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="308" />
-    <roll description="Fire Damage" type="damage">
+    <roll description="Red Layer Damage" type="damage">
       <dice>12d6</dice>
       <damage_type>Fire</damage_type>
     </roll>
-    <roll description="Acid Damage" type="damage">
+    <roll description="Orange Layer Damage" type="damage">
       <dice>12d6</dice>
       <damage_type>Acid</damage_type>
     </roll>
-    <roll description="Lightning Damage" type="damage">
+    <roll description="Yellow Layer Damage" type="damage">
       <dice>12d6</dice>
       <damage_type>Lightning</damage_type>
     </roll>
-    <roll description="Poison Damage" type="damage">
+    <roll description="Green Layer Damage" type="damage">
       <dice>12d6</dice>
       <damage_type>Poison</damage_type>
     </roll>
-    <roll description="Cold Damage" type="damage">
+    <roll description="Blue Layer Damage" type="damage">
       <dice>12d6</dice>
       <damage_type>Cold</damage_type>
     </roll>
@@ -1769,9 +1728,9 @@ Order | Effects
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="25" cost_text="worth 25+ GP">a flask of Holy Water</material>
+      <material consumed="true" cost_gp="25" cost_text="worth at least 25 GP">a flask of Holy Water</material>
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -1878,7 +1837,7 @@ Order | Effects
       <class_name>Druid</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="312" />
-    <roll description="Damage Reduction" type="damage">
+    <roll description="Damage Reduction" type="effect">
       <dice>1d4</dice>
     </roll>
   </spell>
@@ -1960,7 +1919,7 @@ Order | Effects
       <somatic />
       <material>a prayer scroll</material>
     </components>
-    <duration description="Concentration, up to 10 minute">
+    <duration description="Concentration, up to 10 minutes">
       <value>10</value>
       <unit>minute</unit>
       <concentration available="true" up_to="true" />
@@ -1990,24 +1949,26 @@ Order | Effects
     <components>
       <verbal />
       <somatic />
-      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">powdered diamond</material>
+      <material consumed="true" cost_gp="1000" cost_text="worth at least 1,000 GP">powdered diamond</material>
     </components>
-    <duration description="">
-      <value>special</value>
+    <duration description="Until dispelled or triggered">
+      <value>special</value> <!-- Could be until_dispelled or until_triggered -->
     </duration>
     <description>
       <p>You inscribe a harmful glyph either on a surface (such as a section of floor or wall) or within an object that can be closed (such as a book or chest). The glyph can cover an area no larger than 10 feet in diameter. If you choose an object, it must remain in place; if it is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p>
       <p>The glyph is nearly imperceptible and requires a successful Wisdom (Perception) check against your spell save DC to notice.</p>
       <p>When you inscribe the glyph, you set its trigger and choose which effect the symbol bears: Death, Discord, Fear, Pain, Sleep, or Stunning. Each one is explained below.</p>
-      <p>Set the Trigger: You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph.</p>
+      <p><strong>Set the Trigger:</strong> You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph.</p>
       <p>You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.</p>
       <p>Once triggered, the glyph glows, filling a 60-foot-radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn.</p>
-      <p>Death: Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.</p>
-      <p>Discord: Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.</p>
-      <p>Fear: Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30 feet away from the glyph on each of its turns, if able.</p>
-      <p>Pain: Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.</p>
-      <p>Sleep: Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.</p>
-      <p>Stunning: Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.</p>
+      <list type="bullet">
+        <item><strong>Death:</strong> Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.</item>
+        <item><strong>Discord:</strong> Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.</item>
+        <item><strong>Fear:</strong> Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30 feet away from the glyph on each of its turns, if able.</item>
+        <item><strong>Pain:</strong> Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.</item>
+        <item><strong>Sleep:</strong> Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.</item>
+        <item><strong>Stunning:</strong> Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.</item>
+      </list>
     </description>
     <classes text_original="School: Abjuration, Bard [2024], Cleric [2024], Druid [2024], Wizard [2024]">
       <class_name>Bard</class_name>
@@ -2016,7 +1977,7 @@ Order | Effects
       <class_name>Wizard</class_name>
     </classes>
     <source name="Player's Handbook 2024" page="329" />
-    <roll description="Necrotic Damage" type="damage">
+    <roll description="Death Symbol Damage" type="damage">
       <dice>10d10</dice>
       <damage_type>Necrotic</damage_type>
     </roll>
@@ -2035,7 +1996,7 @@ Order | Effects
     <components>
       <verbal />
       <somatic />
-      <material cost_gp="50" cost_text="worth 50+ GP">a pair of platinum rings each, which you and the target must wear for the duration</material>
+      <material consumed="false" cost_gp="100" cost_text="a pair of platinum rings, worth 50+ GP each, worn for duration">a pair of platinum rings</material>
     </components>
     <duration description="1 hour">
       <value>1</value>
