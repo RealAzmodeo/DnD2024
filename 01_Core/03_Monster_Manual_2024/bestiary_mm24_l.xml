@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Lacedon Ghoul [2024]</name>
+    <sortname>Ghoul, Lacedon</sortname>
+    <ancestry>Ghoul</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>22 (5d8)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>2</init>
+    <str>13</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>6</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The ghoul makes two Icy Bite attacks.</text>
+    </action>
+    <action>
+      <name>Icy Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Cold damage, and the target's Speed decreases by 5 feet until the start of the ghoul's next turn.</text>
+      <attack>Icy Bite|+4|2d6+2</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage. If the target is a creature that isn't an Undead or elf, it is subjected to the following effect. Constitution Saving Throw: DC 10. Failure: The target has the Paralyzed condition until the end of its next turn.</text>
+      <attack>Claw|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Watery Rush (Bonus Action)</name>
+      <text>While underwater, the ghoul moves up to half its Swim Speed without provoking Opportunity Attacks.</text>
+    </action>
+    <description>Packs of ghouls haunt the rotten corners of the world, ravenously hunting for corpses and those soon to be corpses. These gaunt, animate cadavers with unnaturally long tongues dwell in catacombs and ruins where they devour the contents of graves and paralyze foes with vicious claws.
+
+Lacedon Ghoul:
+Lacedons are loose-skinned, aquatic ghouls. They often arise from the corpses of greedy pirates, those who starved on deserted islands, or scoundrels who met their end by drowning.
+
+Source:	Monster Manual 2024 p. 132</description>
+    <environment>swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Lamia [2024]</name>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>97 (13d10+26)</hp>
+    <speed>40 ft.</speed>
+    <init>1</init>
+    <str>16</str>
+    <dex>13</dex>
+    <con>15</con>
+    <int>14</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save />
+    <skill>Insight +4, Deception +7, Stealth +5</skill>
+    <passive>12</passive>
+    <languages>Abyssal, Common</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage plus 7 (2d6) Psychic damage.</text>
+      <attack>Claw|+5|1d8+3</attack>
+      <attack>Psychic Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Corrupting Touch</name>
+      <text>Wisdom Saving Throw: DC 13, one creature the lamia can see within 5 feet. Failure: 13 (3d8) Psychic damage, and the target is cursed for 1 hour. Until the curse ends, the target has the Charmed and Poisoned conditions.</text>
+      <attack>Corrupting Touch||3d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The lamia casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):
+
+	• At will: Disguise Self (can appear as a Large or Medium biped), Minor Illusion
+	• 1/Day each: Geas, Major Image, Scrying</text>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The lamia jumps up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <spells>Disguise Self [2024], Minor Illusion [2024], Geas [2024], Major Image [2024], Scrying [2024]</spells>
+    <description>Legends say the first lamia was an ambitious ruler who made a sinister bargain with the demon lord Graz'zt for everlasting majesty. As a consequence, the ruler was transformed into a lamia, a monster with the body of a lion and an accursed touch.
+	Lamias either are descendants of that first lamia or have made similar deals. They often dwell near ruins, seeking mysterious magic they can use to gain riches and influence. Lamias use magical illusions and enchantments to trick others into serving them. They sometimes work with bandits to abduct travelers, releasing captives only if they accept a dangerous bargain. Roll on or choose a result from the Lamia Pacts table to inspire a lamia's desires.
+
+Lamia Pacts:
+1d6 | The Lamia Compels the Bargainer To...
+1 | Bring it a possession from a ruler or noble.
+2 | Create a map of a dungeon or ruin.
+3 | Escort it through a nearby community's gate.
+4 | Place a strange idol in a specific site or home.
+5 | Remove a magic item's curse, then return it.
+6 | Slay a monster and retrieve a specific organ.
+
+Source:	Monster Manual 2024 p. 192</description>
+    <environment>desert</environment>
+  </monster>
+
+<monster>
+    <name>Larva [2024]</name>
+    <sortname>Larva</sortname>
+    <ancestry>Larva</ancestry>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>9</ac>
+    <hp>9 (2d8)</hp>
+    <speed>20 ft.</speed>
+    <init>0</init>
+    <str>9</str>
+    <dex>9</dex>
+    <con>10</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>2</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +1, reach 5 ft. Hit: 1 (1d4 - 1) Necrotic damage.</text>
+      <attack>Bite|+1|1d4-1</attack>
+    </action>
+    <description>Souls condemned to the Lower Planes often become larvae—repulsive, maggot-like creatures with twisted features evocative of those they possessed in life. These pathetic creatures are nearly helpless and struggle to escape the attention of the more powerful inhabitants of the Lower Planes. Many Fiends view larvae as delicacies to be consumed, while evil magic-users find larvae useful for depraved rituals. Night hags frequently collect and herd larvae, trading them to nefarious parties across the multiverse.
+	Larvae that survive on the Lower Planes long enough can eventually transform into other sorts of lesser Fiends.
+
+Larva:
+Larvae have disjointed, painful memories of their past lives. Most desperately avoid other creatures.
+
+Source:	Monster Manual 2024 p. 193</description>
+    <environment>planar (lower)</environment>
+  </monster>
+
+<monster>
+    <name>Lemure [2024]</name>
+    <sortname>Lemure</sortname>
+    <ancestry>Lemure</ancestry>
+    <size>M</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>9</ac>
+    <hp>9 (2d8)</hp>
+    <speed>20 ft.</speed>
+    <init>-2</init>
+    <str>10</str>
+    <dex>5</dex>
+    <con>11</con>
+    <int>1</int>
+    <wis>11</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Infernal but can't speak</languages>
+    <cr>0</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Hellish Restoration</name>
+      <text>If the lemure dies in the Nine Hells, it revives with all its Hit Points in 1d10 days unless it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water.</text>
+    </trait>
+    <action>
+      <name>Vile Slime</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Poison damage.</text>
+      <attack>Vile Slime|+2|1d4</attack>
+    </action>
+    <description>The least of all devils, lemures arise from wicked souls, their mortal memories scoured away. Only vague limbs and anguished features jut from these slurries of infernal proto-matter.
+
+Lemure:
+Lemures torment weaker creatures, but in the Nine Hells, few such beings exist. To avoid greater suffering, they obey the orders of more powerful devils.
+
+Source:	Monster Manual 2024 p. 194</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Lich [2024]</name>
+    <size>M</size>
+    <type>undead (wizard)</type>
+    <alignment>neutral evil</alignment>
+    <ac>20</ac>
+    <hp>315 (42d8+126)</hp>
+    <speed>30 ft.</speed>
+    <init>17</init>
+    <str>11</str>
+    <dex>16</dex>
+    <con>16</con>
+    <int>21</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save>Wis +9, Con +10, Dex +10, Int +12</save>
+    <skill>Insight +9, Arcana +19, History +12, Perception +9</skill>
+    <passive>19</passive>
+    <languages>all</languages>
+    <cr>21</cr>
+    <vulnerable />
+    <resist>cold, lightning</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+7</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Component Pouch</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (4/Day, or 5/Day in Lair)</name>
+      <recharge>5/DAY</recharge>
+      <text>If the lich fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Spirit Jar</name>
+      <text>If destroyed, the lich reforms in 1d10 days if it has a spirit jar, reviving with all its Hit Points. The new body appears in an unoccupied space within the lich's lair.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The lich makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination.</text>
+    </action>
+    <action>
+      <name>Eldritch Burst</name>
+      <text>Melee or Ranged Attack Roll: +12, reach 5 ft. or range 120 ft. Hit: 31 (4d12 + 5) Force damage.</text>
+      <attack>Eldritch Burst|+12|4d12+5</attack>
+    </action>
+    <action>
+      <name>Paralyzing Touch</name>
+      <text>Melee Attack Roll: +12, reach 5 ft. Hit: 15 (3d6 + 5) Cold damage, and the target has the Paralyzed condition until the start of the lich's next turn.</text>
+      <attack>Paralyzing Touch|+12|3d6+5</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The lich casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 20):
+
+	• At will: Detect Magic, Detect Thoughts, Dispel Magic, Fireball (level 5 version), Invisibility, Lightning Bolt (level 5 version), Mage Hand, Prestidigitation
+	• 2/Day each: Animate Dead, Dimension Door, Plane Shift
+	• 1/Day each: Chain Lightning, Finger of Death, Power Word Kill, Scrying</text>
+    </action>
+    <reaction>
+      <name>Protective Magic</name>
+      <text>The lich casts Counterspell or Shield in response to the spell's trigger, using the same spellcasting ability as Spellcasting.</text>
+    </reaction>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Lich can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Lich regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Deathly Teleport</name>
+      <text>The lich teleports up to 60 feet to an unoccupied space it can see, and each creature within 10 feet of the space it left takes 11 (2d10) Necrotic damage.</text>
+      <attack>Deathly Teleport||2d10</attack>
+    </legendary>
+    <legendary>
+      <name>Disrupt Life</name>
+      <text>Constitution Saving Throw: DC 20, each creature that isn't an Undead in a 20-foot Emanation originating from the lich. Failure: 31 (9d6) Necrotic damage. Success: Half damage. Failure or Success: The lich can't take this action again until the start of its next turn.</text>
+      <attack>Disrupt Life||9d6</attack>
+    </legendary>
+    <legendary>
+      <name>Frightening Gaze</name>
+      <text>The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can't take this action again until the start of its next turn.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Lich Lairs</name>
+      <text>Liches create secluded libraries of magical lore and arcane laboratories hidden within extraplanar bastions, fortresses with cursed reputations, or other such deadly sanctuaries.
+	The region containing a lich's lair is warped by its presence, creating the following effects:
+
+All-Seeing: While in its lair, the lich can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcasting action.
+
+Inevitable Siphon: Whenever a Humanoid dies within 1 mile of the lair, its soul is immediately consumed by the lich. A Humanoid whose soul is consumed in this way can be brought back to life only by a True Resurrection or Wish spell.
+
+If the lich is destroyed or moves its lair elsewhere, these effects end immediately. These effects resume if the lich gains a new body (see its Spirit Jar trait).</text>
+    </legendary>
+    <spells>Clairvoyance [2024], True Resurrection [2024], Wish [2024], Detect Magic [2024], Detect Thoughts [2024], Dispel Magic [2024], Fireball [2024], Invisibility [2024], Lightning Bolt [2024], Mage Hand [2024], Prestidigitation [2024], Animate Dead [2024], Dimension Door [2024], Plane Shift [2024], Chain Lightning [2024], Finger of Death [2024], Power Word Kill [2024], Scrying [2024]</spells>
+    <description>Some nefarious magic-users carry out forbidden necromantic rituals that sever their souls from their bodies to turn themselves into liches, masters of magic and undeath. With their souls preserved in hidden relics, liches puppet their own corpses as they pursue ambitions free from mortal bonds.
+	Liches possess exceptional cunning and magical prowess, and they use their unnatural immortality to pursue arcane secrets few could grasp in a single life. Uncanny agendas lead them to plumb the secrets of life, the multiverse, godhood, and less fathomable topics. Careless of mortal lives or desires, liches go to any lengths to achieve their goals.
+	A lich's age and origin influences its form. Older liches appear as little more than brittle skeletons clad in the rotten finery of forgotten empires, while younger liches more closely resemble living creatures and are clad in contemporary garb. Many cloak themselves in illusions of their idealized mortal forms.
+	Although liches don't fear death, they're not free from the ravages of time. Over ages, some liches lose their connection to time and the physical world, degenerating into demiliches.
+
+Lich Spirit Jars:
+The process of becoming a lich is involved, dangerous, and unique to each would-be lich. If the rite succeeds, the lich's soul is bound to a spirit jar, a specially prepared magical repository. This relic anchors the lich's spirit to the world and preserves it should the lich's body be destroyed. A lich can be slain only if its spirit jar is ruined. As such, a lich goes to great lengths to hide and protect its spirit jar.
+	Spirit jars are typically small, well-made objects that were meaningful to a lich in life. Roll on or choose a result from the Lich Spirit Jar table to inspire where a lich hides its soul.
+
+Lich Spirit Jars:
+1d8 | The Lich's Spirit Jar Is...
+1 | A bottle or puzzle box inscribed with sigils.
+2 | A contract folded into a paper figure.
+3 | The first magic item the lich created.
+4 | A hollow figurine of a deity or monster.
+5 | An hourglass with its sands floating in stasis.
+6 | A locket or signet ring with a noble crest.
+7 | A rune-etched egg.
+8 | The skull of the lich's mentor.
+
+Source:	Monster Manual 2024 p. 196</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Lion [2024]</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>22 (4d10)</hp>
+    <speed>50 ft.</speed>
+    <init>2</init>
+    <str>17</str>
+    <dex>15</dex>
+    <con>11</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Stealth +4, Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The lion has Advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <trait>
+      <name>Running Leap</name>
+      <text>With a 10-foot running start, the lion can Long Jump up to 25 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The lion makes two Rend attacks. It can replace one attack with a use of Roar.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.</text>
+      <attack>Rend|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Roar</name>
+      <text>Wisdom Saving Throw: DC 11, one creature within 15 feet. Failure: The target has the Frightened condition until the start of the lion's next turn.</text>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 364,
+		Player's Handbook 2024 p. 352</description>
+    <environment>desert, grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Lizard [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>10</ac>
+    <hp>2 (1d4)</hp>
+    <speed>20 ft., climb 20 ft.</speed>
+    <init>0</init>
+    <str>2</str>
+    <dex>11</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>8</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.</text>
+      <attack>Bite|+2|1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 364,
+		Player's Handbook 2024 p. 353</description>
+    <environment>coastal, desert, forest, swamp, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Lizardfolk Geomancer [2024]</name>
+    <sortname>Lizardfolk, Geomancer</sortname>
+    <ancestry>Lizardfolk</ancestry>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>33 (6d8+6)</hp>
+    <speed>30 ft., burrow 20 ft., swim 30 ft.</speed>
+    <init>0</init>
+    <str>15</str>
+    <dex>10</dex>
+    <con>13</con>
+    <int>10</int>
+    <wis>15</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Nature +2, Stealth +4, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic, Primordial (Terran)</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The lizardfolk makes two Earth Burst attacks.</text>
+    </action>
+    <action>
+      <name>Earth Burst</name>
+      <text>Melee or Ranged Attack Roll: +4, reach 5 ft. or range 60 ft. Hit: 9 (2d6 + 2) Bludgeoning damage.</text>
+      <attack>Earth Burst|+4|2d6+2</attack>
+    </action>
+    <action>
+      <name>Hail of Stone (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Constitution Saving Throw: DC 12, each creature in a 20-foot-radius, 40-foot-high Cylinder centered on a point the lizardfolk can see within 60 feet. Failure: 15 (6d4) Bludgeoning damage, and the target has the Prone condition. Success: Half damage only.</text>
+      <attack>Hail of Stone||6d4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The lizardfolk casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12):
+
+	• At will: Elementalism
+	• 1/Day each: Meld into Stone, Speak with Plants, Spike Growth</text>
+    </action>
+    <spells>Elementalism [2024], Meld Into Stone [2024], Speak With Plants [2024], Spike Growth [2024]</spells>
+    <description>Lizardfolk dwell in wildernesses suffused with primal magic. While many lizardfolk are Humanoids with varied skills, some forge powerful bonds with the Elemental Plane of Earth, granting them magical connections to the cycle of growth and rebirth.
+
+Lizardfolk Geomancer:
+Lizardfolk geomancers draw magic from the natural world, using it to protect their people and territories.
+
+Source:	Monster Manual 2024 p. 197</description>
+    <environment>forest, swamp</environment>
+  </monster>
+
+<monster>
+    <name>Lizardfolk Sovereign [2024]</name>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>78 (12d8+24)</hp>
+    <speed>30 ft., burrow 20 ft., swim 30 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>12</dex>
+    <con>15</con>
+    <int>11</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +2, Con +4</save>
+    <skill>Stealth +5, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic, Primordial (Terran)</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>frightened</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The lizardfolk makes one Bite attack and one Earthen Maul attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage. If the target is a creature that isn't a Construct or an Undead, the lizardfolk gains Temporary Hit Points equal to the damage dealt.</text>
+      <attack>Bite|+5|1d10+3</attack>
+    </action>
+    <action>
+      <name>Earthen Maul</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Prone condition.</text>
+      <attack>Earthen Maul|+5|2d6+3</attack>
+    </action>
+    <action>
+      <name>Charge (Bonus Action)</name>
+      <text>The lizardfolk moves up to its Speed or Swim Speed straight toward an enemy it can see.</text>
+    </action>
+    <description>Lizardfolk dwell in wildernesses suffused with primal magic. While many lizardfolk are Humanoids with varied skills, some forge powerful bonds with the Elemental Plane of Earth, granting them magical connections to the cycle of growth and rebirth.
+
+Lizardfolk Sovereign:
+Lizardfolk sovereigns undergo magical rites that imbue them with fantastic strength and magic from the Elemental Plane of Earth. In some, though, it also unlocks a primal viciousness.
+
+Source:	Monster Manual 2024 p. 197</description>
+    <environment>forest, swamp</environment>
+  </monster>
+
+</compendium>

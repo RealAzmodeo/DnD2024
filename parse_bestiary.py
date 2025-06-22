@@ -397,12 +397,23 @@ def parse_summon_stat_formulas(monster_element, monster_data):
             #         monster_data["attacks"]["base_damage_formula"] = "see_action_text"
             pass # Per-action damage parsing is more reliable
 
+import glob # Import glob for file matching
+
 def main():
     xml_files = [
         "01_Core/01_Players_Handbook_2024/bestiary-phb24.xml",
-        "01_Core/03_Monster_Manual_2024/bestiary_mm24.xml",
         # "01_Core/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml" # Optional
     ]
+
+    # Add MM24 files using glob
+    mm24_path_pattern = "01_Core/03_Monster_Manual_2024/bestiary_mm24_*.xml"
+    mm24_files = glob.glob(mm24_path_pattern)
+    if mm24_files:
+        xml_files.extend(sorted(mm24_files)) # Sort for consistent order
+        print(f"Found MM24 bestiary files: {mm24_files}")
+    else:
+        print(f"Warning: No MM24 bestiary files found matching pattern {mm24_path_pattern}. Check the path and file names.")
+
 
     all_monsters_data = []
     for xml_file in xml_files:

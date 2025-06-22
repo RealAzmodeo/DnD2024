@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Quaggoth [2024]</name>
+    <sortname>Quaggoth</sortname>
+    <ancestry>Quaggoth</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Athletics +5</skill>
+    <passive>11</passive>
+    <languages>Undercommon</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Bloodied Fury</name>
+      <text>While Bloodied, the quaggoth has Advantage on attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The quaggoth makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage, or 13 (3d6 + 3) Slashing damage if the quaggoth is Bloodied.</text>
+      <attack>Claw|+5|1d6+3</attack>
+      <attack>Slashing while Bloodied||3d6+3</attack>
+    </action>
+    <description>Beastly hunters endemic to subterranean depths, quaggoths scrape harsh existences from the Underdark. While they can survive on bitter lichens and toxic fungi, they viciously attack anything they can make a meal of, from giant spiders to explorers. Quaggoths sometimes serve as muscle for Underdark-dwelling villains.
+	Quaggoths frequently collect in small bands led by the most fearsome group member. These bands are proud and quick to hold grudges. Anyone who harms a quaggoth—or who is suspected of doing so—earns the enmity of that quaggoth's band regardless of reason or fault. These grudges sometimes extend to whole communities rather than individuals. Generations of quaggoths might seek revenge against a settlement's inhabitants for decades-old slights. Only the leader of a quaggoth band can demand that a grudge ends.
+
+Quaggoth:
+For quaggoths, every fight means life or death. They battle with wild fury and do anything to survive.
+
+Source:	Monster Manual 2024 p. 251</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Quaggoth Thonot [2024]</name>
+    <sortname>Quaggoth, Thonot</sortname>
+    <ancestry>Quaggoth</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>15</ac>
+    <hp>67 (9d8+27)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>14</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Athletics +5</skill>
+    <passive>12</passive>
+    <languages>Undercommon</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Bloodied Fury</name>
+      <text>While Bloodied, the quaggoth has Advantage on attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The quaggoth makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage plus 5 (2d4) Psychic damage.</text>
+      <attack>Claw|+5|1d6+3+2d4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The quaggoth casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save DC 12):
+
+	• At will: Mage Hand (the hand is Invisible), Minor Illusion
+	• 2/Day: Mind Spike</text>
+    </action>
+    <reaction>
+      <name>Psionic Defense (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>The quaggoth casts Feather Fall or Shield in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Spellcasting.</text>
+    </reaction>
+    <description>Beastly hunters endemic to subterranean depths, quaggoths scrape harsh existences from the Underdark. While they can survive on bitter lichens and toxic fungi, they viciously attack anything they can make a meal of, from giant spiders to explorers. Quaggoths sometimes serve as muscle for Underdark-dwelling villains.
+	Quaggoths frequently collect in small bands led by the most fearsome group member. These bands are proud and quick to hold grudges. Anyone who harms a quaggoth—or who is suspected of doing so—earns the enmity of that quaggoth's band regardless of reason or fault. These grudges sometimes extend to whole communities rather than individuals. Generations of quaggoths might seek revenge against a settlement's inhabitants for decades-old slights. Only the leader of a quaggoth band can demand that a grudge ends.
+
+Quaggoth Thonot:
+Quaggoth thonots possess psionic abilities, which they use to give themselves an edge in combat and to coerce the service of other quaggoths.
+
+Source:	Monster Manual 2024 p. 251</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Quasit [2024]</name>
+    <size>T</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>25 (10d4)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>5</str>
+    <dex>17</dex>
+    <con>10</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <save />
+    <skill>Stealth +5</skill>
+    <passive>10</passive>
+    <languages>Abyssal, Common</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The quasit has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage, and the target has the Poisoned condition until the start of the quasit's next turn.</text>
+      <attack>Rend|+5|1d4+3</attack>
+    </action>
+    <action>
+      <name>Scare (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Wisdom Saving Throw: DC 10, one creature within 20 feet. Failure: The target has the Frightened condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</text>
+    </action>
+    <action>
+      <name>Shape-Shift</name>
+      <text>The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <action>
+      <name>Invisibility</name>
+      <text>The quasit casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.
+
+	• At will: Invisibility</text>
+    </action>
+    <spells>Invisibility [2024]</spells>
+    <description>Tirelessly destructive, quasits sow discord through nasty pranks, sabotage, and ambushes. These tiny demons use chaos and violence to terrorize others. By shape-shifting into harmless but ill-omened creatures or by turning invisible, quasits sneak into places where they spy for villainous masters or set vicious traps. Quasits delight in hiding in dark places and—when least expected—bursting forth to slash foes with their poisoned claws.
+	Quasits are usually overlooked and underestimated by other demons. This drives them to prove themselves through cruel acts or by seeking paths to the Material Plane. Among mortals, quasits sow senseless chaos, and they might find kindred evil spirits among violent cultists and magic-users.
+
+Source:	Monster Manual 2024 p. 252,
+		Player's Handbook 2024 p. 355</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Questing Knight [2024]</name>
+    <sortname>Knight, Questing</sortname>
+    <ancestry>Knight</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>18</ac>
+    <hp>202 (27d8+81)</hp>
+    <speed>30 ft.</speed>
+    <init>7</init>
+    <str>20</str>
+    <dex>16</dex>
+    <con>16</con>
+    <int>11</int>
+    <wis>12</wis>
+    <cha>18</cha>
+    <save>Str +9, Wis +5, Con +7, Cha +8</save>
+    <skill>Persuasion +8, Athletics +9, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common plus one other language</languages>
+    <cr>12</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Greatsword, Longbow, Plate Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <trait>
+      <name>Aura of Bravery</name>
+      <text>Creatures of the knight's choice in a 30-foot Emanation originating from it have Immunity to the Charmed and Frightened conditions while there.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The knight makes three attacks, using Greatsword or Longbow in any combination.</text>
+    </action>
+    <action>
+      <name>Greatsword</name>
+      <text>Melee Attack Roll: +9, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 22 (5d8) Radiant damage.</text>
+      <attack>Greatsword|+9|2d6+5</attack>
+      <attack>Radiant Damage||5d8</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Attack Roll: +7, range 150/600 ft. Hit: 12 (2d8 + 3) Piercing damage plus 22 (5d8) Radiant damage.</text>
+      <attack>Longbow|+7|2d8+3</attack>
+      <attack>Radiant Damage||5d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The knight casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 16):
+
+	• 1/Day each: Daylight, Dispel Evil and Good, Greater Restoration, Phantom Steed</text>
+    </action>
+    <spells>Daylight [2024], Dispel Evil and Good [2024], Greater Restoration [2024], Phantom Steed [2024]</spells>
+    <description>Knights are skilled warriors trained for war and tested in battle. Many serve the rulers of a realm, a religion, or an order devoted to a cause.
+
+Questing Knight:
+Questing knights travel in pursuit of a cause, such as slaying a villain, defeating a monster, recovering an Artifact, or restoring their lost honor.
+
+Source:	Monster Manual 2024 p. 184</description>
+    <environment>any</environment>
+  </monster>
+
+</compendium>
