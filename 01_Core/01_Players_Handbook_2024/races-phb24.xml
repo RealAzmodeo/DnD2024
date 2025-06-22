@@ -264,8 +264,8 @@ Drow typically dwell in the Underdark and have been shaped by it. Some drow indi
       <text>The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</text>
       <effect type="Sense" name="Darkvision" range="120" upgrades_existing="true"/>
       <grants_spell_learning type="Cantrip" spell_known="Dancing Lights" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Faerie Fire" gained_at_character_level="3" spellcasting_ability_choice_ref="Drow Lineage" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Darkness" gained_at_character_level="5" spellcasting_ability_choice_ref="Drow Lineage" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Faerie Fire" gained_at_character_level="3" spellcasting_ability_choice_ref="Drow Lineage" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Darkness" gained_at_character_level="5" spellcasting_ability_choice_ref="Drow Lineage" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Fey Ancestry">
       <text>You have Advantage on saving throws you make to avoid or end the Charmed condition.</text>
@@ -294,7 +294,7 @@ Drow typically dwell in the Underdark and have been shaped by it. Some drow indi
 	Elves have pointed ears and lack facial and body hair. They live for around 750 years, and they don't sleep but instead enter a trance when they need to rest. In that state, they remain aware of their surroundings while immersing themselves in memories and meditations.
 	An environment subtly transforms elves after they inhabit it for a millennium or more, and it grants them certain kinds of magic. Drow, high elves, and wood elves are examples of elves who have been transformed thus.
 
-High elves have been infused with the magic of crossings between the Feywild and the Material Plane. On some worlds. high elves refer to themselves by other names. For example. they call them· selves sun or moon elves in the Forgotten Realms setting, Silvanesti and Qualinesti in the Dragon· lance setting, and Aereni in the Eberron setting.</text>
+High elves have been infused with the magic of crossings between the Feywild and the Material Plane. On some worlds. high elves refer to themselves by other names. For example. they call themselves sun or moon elves in the Forgotten Realms setting, Silvanesti and Qualinesti in the Dragon lance setting, and Aereni in the Eberron setting.</text>
     </trait>
     <trait category="core" name="Creature Type">
       <text>Humanoid</text>
@@ -310,8 +310,8 @@ High elves have been infused with the magic of crossings between the Feywild and
     <trait category="lineage" name="High Elf Lineage">
       <text>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</text>
       <grants_spell_learning type="Cantrip" spell_known="Prestidigitation" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1" can_replace_on_long_rest="true" replacement_spell_list="Wizard"/>
-      <grants_spell_learning type="Spell" spell_known="Detect Magic" gained_at_character_level="3" spellcasting_ability_choice_ref="High Elf Lineage" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Misty Step" gained_at_character_level="5" spellcasting_ability_choice_ref="High Elf Lineage" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Detect Magic" gained_at_character_level="3" spellcasting_ability_choice_ref="High Elf Lineage" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Misty Step" gained_at_character_level="5" spellcasting_ability_choice_ref="High Elf Lineage" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Fey Ancestry">
       <text>You have Advantage on saving throws you make to avoid or end the Charmed condition.</text>
@@ -357,8 +357,8 @@ Wood elves carry the magic of primeval forests within themselves. They are known
       <text>Your Speed increases to 35 feet. You also know the Druidcraft cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</text>
       <effect type="SpeedIncrease" value="5" new_total_speed="35" note="Base speed becomes 35 feet."/>
       <grants_spell_learning type="Cantrip" spell_known="Druidcraft" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Longstrider" gained_at_character_level="3" spellcasting_ability_choice_ref="Wood Elf Lineage" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Pass without Trace" gained_at_character_level="5" spellcasting_ability_choice_ref="Wood Elf Lineage" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Longstrider" gained_at_character_level="3" spellcasting_ability_choice_ref="Wood Elf Lineage" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Pass without Trace" gained_at_character_level="5" spellcasting_ability_choice_ref="Wood Elf Lineage" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Fey Ancestry">
       <text>You have Advantage on saving throws you make to avoid or end the Charmed condition.</text>
@@ -405,10 +405,7 @@ Wood elves carry the magic of primeval forests within themselves. They are known
     <trait category="lineage" name="Forest Lineage">
       <text>You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</text>
       <grants_spell_learning type="Cantrip" spell_known="Minor Illusion" spellcasting_ability_fixed="Intelligence"/> <!-- Assuming INT for Gnomes, needs confirmation if choice -->
-      <grants_spell_learning type="Spell" spell_known="Speak with Animals" always_prepared="true" spellcasting_ability_fixed="Intelligence">
-         <free_casts_per_rest type="LongRest" count_formula="ProficiencyBonus"/>
-         <can_use_spell_slots="true"/>
-      </grants_spell_learning>
+      <grants_spell_learning type="Spell" spell_known="Speak with Animals" always_prepared="true" spellcasting_ability_fixed="Intelligence" free_casts_per_rest="LongRest" count_formula="ProficiencyBonus" can_use_spell_slots="true"/>
     </trait>
   </race>
   <race>
@@ -667,8 +664,8 @@ The entropy of the Abyss, the chaos of Pandemonium, and the despair of Carceri c
       <text>You have Resistance to Poison damage. You also know the Poison Spray cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
       <effect type="Resistance" damage_types="Poison"/>
       <grants_spell_learning type="Cantrip" spell_known="Poison Spray" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Ray of Sickness" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Abyssal)" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Hold Person" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Abyssal)" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Ray of Sickness" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Abyssal)" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Hold Person" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Abyssal)" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Otherworldly Presence">
       <text>You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</text>
@@ -708,8 +705,8 @@ Tieflings who have the chthonic legacy feel not only the tug of Carceri but also
       <text>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
       <effect type="Resistance" damage_types="Necrotic"/>
       <grants_spell_learning type="Cantrip" spell_known="Chill Touch" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="False Life" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Chthonic)" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Ray of Enfeeblement" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Chthonic)" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="False Life" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Chthonic)" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Ray of Enfeeblement" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Chthonic)" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Otherworldly Presence">
       <text>You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</text>
@@ -749,8 +746,8 @@ The infernal legacy connects tieflings not only to Gehenna but also the Nine Hel
       <text>You have Resistance to Fire damage. You also know the Fire Bolt cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</text>
       <effect type="Resistance" damage_types="Fire"/>
       <grants_spell_learning type="Cantrip" spell_known="Fire Bolt" spellcasting_ability_choice="Intelligence|Wisdom|Charisma" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Hellish Rebuke" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Infernal)" free_casts_per_rest type="LongRest" count="1"/>
-      <grants_spell_learning type="Spell" spell_known="Darkness" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Infernal)" free_casts_per_rest type="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Hellish Rebuke" gained_at_character_level="3" spellcasting_ability_choice_ref="Fiendish Legacy (Infernal)" free_casts_per_rest="LongRest" count="1"/>
+      <grants_spell_learning type="Spell" spell_known="Darkness" gained_at_character_level="5" spellcasting_ability_choice_ref="Fiendish Legacy (Infernal)" free_casts_per_rest="LongRest" count="1"/>
     </trait>
     <trait category="species" name="Otherworldly Presence">
       <text>You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</text>
