@@ -25,7 +25,6 @@ Repeatable: You can take this feat more than once, but you must choose a differe
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -35,10 +34,10 @@ Repeatable: You can take this feat more than once, but you must choose a differe
         <item name="Holy Symbol" quantity="1"/>
         <item name="Parchment (10 sheets)" quantity="1"/>
         <item name="Robe" quantity="1"/>
-        <gold amount="8"/>
+        <gold currency_code="GP" amount="8"/>
       </option_A>
       <option_B>
-        <gold amount="50"/>
+        <gold currency_code="GP" amount="50"/>
       </option_B>
     </starting_equipment>
   </background>
@@ -75,9 +74,7 @@ Woodcarver's Tools | Club, Greatclub, Quarterstaff</text>
       <skill name="Persuasion"/>
     </skill_proficiencies>
     <tool_proficiencies>
-      <choice_from_category category="ArtisansTools" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
-
-Artisan's tools:
+      <choice_from_category category="ArtisansTools" description_text_override="Artisan's tools:
 Tools | Cost | Weight
 Alchemist's supplies | 50 gp | 8 lb.
 Brewer's supplies | 20 gp | 9 lb.
@@ -103,10 +100,10 @@ Woodcarver's tools | 1 gp | 5 lb."/>
         <item name="Artisan's Tools (chosen from category)" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="32"/>
+        <gold currency_code="GP" amount="32"/>
       </option_A>
       <option_B>
-        <gold amount="50"/>
+        <gold currency_code="GP" amount="50"/>
       </option_B>
     </starting_equipment>
   </background>
@@ -129,7 +126,6 @@ Repeatable: You can take this feat more than once.</text>
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Forgery Kit"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -165,7 +161,6 @@ Initiative Swap. Immediately after you roll Initiative, you can swap your Initia
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Thieves' Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -202,9 +197,7 @@ Encouraging Song: As you finish a Short or Long Rest, you can play a song on a M
       <skill name="Performance"/>
     </skill_proficiencies>
     <tool_proficiencies>
-      <choice_from_category category="MusicalInstruments" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
-
-Musical instruments:
+      <choice_from_category category="MusicalInstruments" description_text_override="Musical instruments:
 Instrument | Cost | Weight
 Bagpipes | 30 gp | 6 lb.
 Drum | 6 gp | 3 lb.
@@ -249,7 +242,6 @@ Viol | 30 gp | 1 lb."/>
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Carpenter's Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -287,9 +279,7 @@ Initiative Swap. Immediately after you roll Initiative, you can swap your Initia
       <skill name="Perception"/>
     </skill_proficiencies>
     <tool_proficiencies>
-      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
-
-Gaming sets:
+      <choice_from_category category="GamingSets" description_text_override="Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
@@ -339,7 +329,6 @@ Repeatable. You can take this feat more than once, but you must choose a differe
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Cartographer's Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -379,7 +368,6 @@ Healing Rerolls. Whenever you roll a die to determine the number of Hit Points y
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Herbalism Kit"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -421,7 +409,6 @@ Disadvantage. When a creature rolls a d20 for an attack roll against you, you ca
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Navigator's Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -454,9 +441,7 @@ Repeatable: You can take this feat more than once.</text>
       <skill name="Persuasion"/>
     </skill_proficiencies>
     <tool_proficiencies>
-      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
-
-Gaming sets:
+      <choice_from_category category="GamingSets" description_text_override="Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
@@ -501,7 +486,6 @@ Repeatable. You can take this feat more than once, but you must choose a differe
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -543,7 +527,6 @@ Push. When you hit a creature with an Unarmed Strike as part of the Attack actio
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Navigator's Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -578,7 +561,6 @@ Repeatable: You can take this feat more than once.</text>
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Calligrapher's Supplies"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -611,9 +593,7 @@ Repeatable: You can take this feat more than once.</text>
       <skill name="Intimidation"/>
     </skill_proficiencies>
     <tool_proficiencies>
-      <choice_from_category category="GamingSets" description_text_override="Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.
-
-Gaming sets:
+      <choice_from_category category="GamingSets" description_text_override="Gaming sets:
 Set | Cost | Weight
 Dice set | 1 sp | -
 Dragonchess set | 1 gp | 1/2 lb
@@ -660,7 +640,6 @@ Disadvantage. When a creature rolls a d20 for an attack roll against you, you ca
     </skill_proficiencies>
     <tool_proficiencies>
       <tool name="Thieves' Tools"/>
-      <text>Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category.</text>
     </tool_proficiencies>
     <starting_equipment>
       <text>Choose A or B:</text>
@@ -671,10 +650,10 @@ Disadvantage. When a creature rolls a d20 for an attack roll against you, you ca
         <item name="Bedroll" quantity="1"/>
         <item name="Pouch" quantity="2"/>
         <item name="Traveler's Clothes" quantity="1"/>
-        <gold amount="16"/>
+        <gold currency_code="GP" amount="15"/>
       </option_A>
       <option_B>
-        <gold amount="50"/>
+        <gold currency_code="GP" amount="50"/>
       </option_B>
     </starting_equipment>
   </background>

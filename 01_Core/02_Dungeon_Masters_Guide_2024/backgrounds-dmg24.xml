@@ -2,12 +2,8 @@
 <compendium version="5" auto_indent="NO">
   <background>
     <name>Custom Background [2024]</name>
-    <proficiency />
-    <trait>
-      <name>Description</name>
-      <text>A character's background represents what the character did prior to becoming an adventurer. Creating a unique background or customizing an existing one from the Player's Handbook can reflect the particular theme of your campaign or elements of your world. You can also create a background to help a player craft the story they have in mind for their character.</text>
-      <text>Source:	Dungeon Master's Guide 2024 p. 54</text>
-    </trait>
+    <source page="54">Dungeon Master's Guide 2024</source>
+    <description_text>A character's background represents what the character did prior to becoming an adventurer. Creating a unique background or customizing an existing one from the Player's Handbook can reflect the particular theme of your campaign or elements of your world. You can also create a background to help a player craft the story they have in mind for their character.</description_text>
     <trait>
       <name>Choose Abilities</name>
       <text>Choose three abilities that seem appropriate for the background:
@@ -20,23 +16,17 @@ Intelligence or Wisdom. One or both abilities are ideal for a background that fo
 
 Charisma. This ability is ideal for a background that involves performance or social interaction.</text>
     </trait>
-    <trait>
-      <name>Choose a Feat</name>
-      <text>Choose one feat from the Origin category. See the Player's Handbook for examples of Origin feats.</text>
-    </trait>
-    <trait>
-      <name>Choose Skill Proficiencies</name>
-      <text>Choose two skills appropriate for the background. There needn't be a relationship between the skill proficiencies a background grants and the ability scores it increases.
-      </text>
-    </trait>
-    <trait>
-      <name>Choose a Tool Proficiency</name>
-      <text>Choose one tool used in the practice of the background or often associated with it.</text>
-    </trait>
-    <trait>
-      <name>Choose Equipment</name>
-      <text>Assemble a package of equipment worth 50 GP (including unspent gold). Don't include Martial weapons or armor, as characters get them from their class choices.
-      </text>
-    </trait>
+    <granted_feat>
+      <custom_choice_text>Choose one feat from the Origin category. See the Player's Handbook for examples of Origin feats.</custom_choice_text>
+    </granted_feat>
+    <skill_proficiencies>
+      <custom_choice_text count="2">Choose two skills appropriate for the background. There needn't be a relationship between the skill proficiencies a background grants and the ability scores it increases.</custom_choice_text>
+    </skill_proficiencies>
+    <tool_proficiencies>
+      <custom_choice_text>Choose one tool used in the practice of the background or often associated with it.</custom_choice_text>
+    </tool_proficiencies>
+    <starting_equipment>
+      <custom_choice_text>Assemble a package of equipment worth 50 GP (including unspent gold). Don't include Martial weapons or armor, as characters get them from their class choices.</custom_choice_text>
+    </starting_equipment>
   </background>
 </compendium>
