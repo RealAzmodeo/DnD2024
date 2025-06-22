@@ -1,6 +1,6 @@
-## Glosario de Etiquetas XML para Características de Clase, Dotes y Razas D&D 5e (v1.1)
+## Glosario de Etiquetas XML para D&D 5e (v1.2)
 
-Este documento detalla las etiquetas XML y atributos utilizados para estructurar las características de clase, dotes (feats) y razas, basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml`, la revisión de dotes de PHB24, y la estructuración de razas de PHB24.
+Este documento detalla las etiquetas XML y atributos utilizados para estructurar características de clase, dotes (feats), razas, trasfondos (backgrounds) y objetos (items), basado en el trabajo realizado hasta la V2 de `feature/structure-class-features-xml`, la revisión de dotes de PHB24, la estructuración de razas de PHB24, la revisión de trasfondos de PHB24 y la estructuración de objetos de DMG24.
 
 ---
 ### **Etiquetas Principales (Contenedores Raíz)**
