@@ -25,8 +25,8 @@
       <discount_benefit item_type="nonmagical" value_percentage="20" description="Whenever you buy a nonmagical item, you receive a 20 percent discount on it."/>
     </benefit>
     <benefit name="Fast Crafting">
-      <crafting_option name="Fast Crafting" trigger="on_long_rest_finish" requires_tool_proficiency_from_table="FastCraftingTable" item_duration="until_next_long_rest" item_count_formula="1">
-        <description>When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</description>
+      <crafting_option name="Fast Crafting" trigger="on_long_rest_finish" item_duration="until_next_long_rest" item_count_formula="1">
+        <description>When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table (see below), provided you have the Artisan's Tools associated with that item and have proficiency with those tools (requires tool proficiency from FastCraftingTable). The item lasts until you finish another Long Rest, at which point the item falls apart.</description>
       </crafting_option>
       <inline_table name="FastCraftingTable">
         <header><col label="Artisan's Tools"/><col label="Crafted Gear"/></header>
@@ -61,22 +61,24 @@
   <feat origin_feat="true">
     <name>Origin: Lucky [2024]</name>
     <source page="201">Player's Handbook 2024</source>
-    <benefit name="Luck Points">
+    <benefit name="Luck Points Resource">
       <resource_pool name="Luck Point" value_formula="ProficiencyBonus" recharge_on="LongRest">
-        <description>You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</description>
-        <uses_for>
-          <benefit_option name="Advantage on D20 Test">
-            <cost resource="Luck Point" value="1"/>
-            <effect type="Advantage" on="d20_test" target="self" description="When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll."/>
-          </benefit_option>
-          <benefit_option name="Impose Disadvantage on Attack Against You">
-            <trigger text="When a creature rolls a d20 for an attack roll against you"/>
-            <action type="Reaction" name="Impose Disadvantage"/>
-            <cost resource="Luck Point" value="1"/>
-            <effect type="Disadvantage" on="attack_roll" target="attacker" description="When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll."/>
-          </benefit_option>
-        </uses_for>
+        <description>You have a number of Luck Points equal to your Proficiency Bonus. You regain your expended Luck Points when you finish a Long Rest. These points can be spent on the 'Advantage on D20 Test' and 'Impose Disadvantage on Attack Against You' benefits.</description>
       </resource_pool>
+    </benefit>
+    <benefit name="Advantage on D20 Test (Costs Luck Point)">
+        <action_option name="Use Luck for Advantage" type="Special">
+            <description>When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.</description>
+            <cost resource="Luck Point" value="1"/>
+            <effect type="Advantage" on="d20_test" target="self"/>
+        </action_option>
+    </benefit>
+    <benefit name="Impose Disadvantage on Attack Against You (Costs Luck Point)">
+        <action_option name="Use Luck to Impose Disadvantage" type="Reaction" trigger="When a creature rolls a d20 for an attack roll against you">
+            <description>When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point as a Reaction to impose Disadvantage on that roll.</description>
+            <cost resource="Luck Point" value="1"/>
+            <effect type="Disadvantage" on="attack_roll" target="attacker"/>
+        </action_option>
     </benefit>
   </feat>
   <feat origin_feat="true" repeatable="true">
@@ -95,7 +97,7 @@
             <option name="Wisdom" description_text="Use Wisdom as your spellcasting ability for these spells."/>
             <option name="Charisma" description_text="Use Charisma as your spellcasting ability for these spells."/>
         </choice>
-        <modifies_spell_learning rule="spell_replacement_on_level_up" applies_to_feat_spells="true" description="Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list."/>
+        <note text="Spell Replacement on Level Up: Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. This applies to the spells chosen for this feat."/>
     </benefit>
   </feat>
   <feat origin_feat="true">
@@ -108,7 +110,7 @@
       <action_option name="Encouraging Song" type="Special" trigger="As you finish a Short or Long Rest">
         <description>As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</description>
         <effect type="Buff" name="Heroic Inspiration" target_description="allies who hear the song" target_count_formula="ProficiencyBonus">
-            <requires_proficiency type="Tool" name="Played Musical Instrument"/>
+            <condition text="Requires proficiency with the played Musical Instrument."/>
         </effect>
       </action_option>
     </benefit>
@@ -117,8 +119,8 @@
     <name>Origin: Savage Attacker [2024]</name>
     <source page="201">Player's Handbook 2024</source>
     <benefit name="Savage Attack">
-      <passive_effect description="Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.">
-        <reroll_option on_roll_for="weapon_damage" timing="once_per_turn" rule="roll_damage_dice_twice_use_either"/>
+      <passive_effect description="Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target (this is the 'roll_damage_dice_twice_use_either' rule).">
+        <reroll_option on_roll_for="weapon_damage" timing="once_per_turn"/>
       </passive_effect>
     </benefit>
   </feat>
@@ -126,15 +128,27 @@
     <name>Origin: Skilled [2024]</name>
     <source page="201">Player's Handbook 2024</source>
     <benefit name="Skill or Tool Proficiencies">
-      <grants_proficiency type="SkillOrTool" choice_from_list="any_skill_or_tool" count="3"/>
+      <description>You gain proficiency in three skills of your choice, three tools of your choice, or any combination of three such proficiencies.</description>
+      <!-- Original: <grants_proficiency type="SkillOrTool" choice_from_list="any_skill_or_tool" count="3"/> -->
+      <!-- Correction: Split into a choice structure to conform to glossary 'type' attribute for grants_proficiency. -->
+      <!-- This is a complex choice; the description above clarifies the intent. The structure below allows picking one type 3 times. -->
+      <choice name="Skill or Tool Proficiency Choice" count="3">
+        <option name="Choose Skill">
+            <grants_proficiency type="Skill" choice_from_list="any" count="1"/>
+        </option>
+        <option name="Choose Tool">
+            <grants_proficiency type="Tool" choice_from_list="any" count="1"/>
+        </option>
+      </choice>
+      <note text="This allows choosing any combination of three skills or tools."/>
     </benefit>
   </feat>
   <feat origin_feat="true">
     <name>Origin: Tavern Brawler [2024]</name>
     <source page="202">Player's Handbook 2024</source>
     <benefit name="Enhanced Unarmed Strike">
-        <modifies_rule rule_name="UnarmedStrikeDamage" new_formula="1d4 + STR_modifier" new_damage_type="Bludgeoning">
-            <description>When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</description>
+        <modifies_rule rule_name="UnarmedStrikeDamage" new_formula="1d4 + STR_modifier">
+            <description>When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage (new_damage_type) equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</description>
         </modifies_rule>
     </benefit>
     <benefit name="Damage Rerolls">
@@ -180,11 +194,11 @@
     </benefit>
     <benefit name="Mimicry">
         <action_option name="Mimicry" type="Special">
-            <description>You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus).</description>
-            <effect type="Special" description="Mimic sounds of other creatures, including speech.">
-                <save_dc_calculation base_ability="Charisma" base_value="8" add_proficiency_bonus="true"/>
-                <on_failed_save description_of_save_by_target="Wisdom (Insight) check by creature that hears to determine if faked">Target believes mimicry.</on_failed_save>
-                <on_successful_save description_of_save_by_target="Wisdom (Insight) check by creature that hears to determine if faked">Target determines effect is faked.</on_successful_save>
+            <description>You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check (DC = 8 + your Charisma modifier + your Proficiency Bonus) to determine the effect is faked. On a failed save (Wisdom (Insight) check by creature that hears to determine if faked): Target believes mimicry. On a successful save (Wisdom (Insight) check by creature that hears to determine if faked): Target determines effect is faked.</description>
+            <effect type="Special" description="Mimic sounds of other creatures, including speech." save_type="Wisdom" save_ability_for_dc="Insight" save_dc="8 + Charisma_modifier + ProficiencyBonus">
+                <!-- Original save_dc_calculation moved into save_dc attribute -->
+                <on_failed_save>Target believes mimicry.</on_failed_save> <!-- Original description_of_save_by_target moved to main description -->
+                <on_successful_save>Target determines effect is faked.</on_successful_save> <!-- Original description_of_save_by_target moved to main description -->
             </effect>
         </action_option>
     </benefit>
@@ -211,7 +225,7 @@
     </benefit>
     <benefit name="Hop Up">
         <special_movement name="Hop Up" condition="prone">
-            <modifies_action action_name="StandUp" movement_cost="5_feet" description="When you have the Prone condition, you can right yourself with only 5 feet of movement."/>
+            <modifies_action action_name="StandUp" description="When you have the Prone condition, you can right yourself with only 5 feet of movement (movement_cost is 5 feet)."/>
         </special_movement>
     </benefit>
     <benefit name="Jumping">
@@ -404,10 +418,10 @@
         </grants_ability_score_increase>
     </benefit>
     <benefit name="Ignore Loading">
-        <weapon_property_interaction weapon_type_affected="Hand Crossbow|Heavy Crossbow|Light Crossbow">
-            <ignores_property name="Loading"/>
-            <allows_loading_without_free_hand description="If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand."/>
-        </weapon_property_interaction>
+        <passive_effect description="You ignore the Loading property of crossbows you are proficient with. If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.">
+             <modifies_rule rule_name="LoadingProperty" status="ignore" condition="using_crossbows_you_are_proficient_with"/>
+             <note text="Also allows loading without a free hand for these weapons."/>
+        </passive_effect>
     </benefit>
     <benefit name="Firing in Melee">
         <passive_effect description="Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows.">
@@ -415,10 +429,11 @@
         </passive_effect>
     </benefit>
     <benefit name="Dual Wielding Crossbows">
-         <weapon_property_interaction weapon_type_affected="CrossbowWithLightProperty">
-            <modifies_light_property_extra_attack add_ability_modifier_to_damage="true" condition="attack_is_with_a_crossbow_that_has_the_Light_property_and_you_aren_t_already_adding_that_modifier_to_the_damage"/>
-            <description>When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.</description>
-         </weapon_property_interaction>
+        <passive_effect description="When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.">
+            <modifies_rule rule_name="LightPropertyExtraAttack" status="modified" condition="attack_is_with_a_crossbow_that_has_the_Light_property_and_you_aren_t_already_adding_that_modifier_to_the_damage">
+                <note text="Allows adding ability modifier to the damage of the Light property's extra attack under specific conditions."/>
+            </modifies_rule>
+        </passive_effect>
     </benefit>
   </feat>
   <feat>
@@ -747,8 +762,10 @@
     </benefit>
     <benefit name="Punch and Grab">
         <action_option name="Punch and Grab" type="PartOfAttackAction" trigger="When you hit a creature with an Unarmed Strike as part of the Attack action on your turn" uses_per_turn="1">
-            <description>You can use both the Damage and the Grapple option (of the Unarmed Strike).</description>
-            <modifies_action action_name="UnarmedStrike" additional_effect_on_hit="Can_also_use_Grapple_option"/>
+            <description>You can use both the Damage and the Grapple option (of the Unarmed Strike). This means the Unarmed Strike can also use the Grapple option on hit.</description>
+            <modifies_action action_name="UnarmedStrike">
+                <note text="The Unarmed Strike can also use the Grapple option on hit, in addition to damage."/>
+            </modifies_action>
         </action_option>
     </benefit>
     <benefit name="Attack Advantage">
@@ -807,18 +824,17 @@
         </grants_ability_score_increase>
     </benefit>
     <benefit name="Heavy Weapon Mastery">
-        <weapon_property_interaction weapon_type_affected="HeavyPropertyWeapon">
-            <on_hit_with_weapon_type type="HeavyPropertyWeapon" timing="as_part_of_Attack_action_on_your_turn">
-                 <effect type="ExtraDamage" value_formula="ProficiencyBonus" description="When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus."/>
-            </on_hit_with_weapon_type>
-        </weapon_property_interaction>
+        <passive_effect description="When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.">
+            <trigger text="When you hit with a Heavy property weapon as part of Attack action on your turn"/>
+            <effect type="ExtraDamage" value_formula="ProficiencyBonus" condition="Target hit with Heavy property weapon during Attack action on your turn."/>
+        </passive_effect>
     </benefit>
     <benefit name="Hew">
-        <weapon_property_interaction>
-            <on_event trigger="CriticalHitWithMeleeWeapon|ReduceCreatureTo0HPWithMeleeWeapon" weapon_scope="same_weapon">
-                <action type="BonusAction" name="MakeOneAttackWithSameWeapon" description="Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action."/>
-            </on_event>
-        </weapon_property_interaction>
+        <action_option name="Hew Attack" type="BonusAction" trigger="CriticalHitWithMeleeWeapon|ReduceCreatureTo0HPWithMeleeWeapon">
+             <description>Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon (weapon_scope: same_weapon) as a Bonus Action.</description>
+             <!-- <action type="BonusAction" name="MakeOneAttackWithSameWeapon" description="..."/> -->
+             <note text="This allows making one attack with the same weapon as a Bonus Action upon the trigger."/>
+        </action_option>
     </benefit>
   </feat>
   <feat>
@@ -1314,26 +1330,31 @@
     </benefit>
     <benefit name="Potent Poison">
         <passive_effect description="When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.">
-            <modifies_rule rule_name="DamageResistance" status="ignore" condition="dealing_Poison_damage" specific_resistance_type="Poison"/>
+            <modifies_rule rule_name="DamageResistance" status="ignore" condition="dealing_Poison_damage">
+                <note text="This specifically ignores Poison resistance."/>
+            </modifies_rule>
         </passive_effect>
     </benefit>
     <benefit name="Brew Poison">
         <grants_proficiency type="Tool" name="Poisoner's Kit"/>
-        <crafting_option name="Brew Poison" trigger="1_hour_of_work" item_count_formula="ProficiencyBonus" gp_cost_per_item="50_divided_by_PB_effectively_50gp_total">
-            <description>With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus.</description>
+        <crafting_option name="Brew Poison" trigger="1_hour_of_work" item_count_formula="ProficiencyBonus" gp_cost="50">
+            <description>With 1 hour of work using such a kit and expending 50 GP worth of materials (gp_cost_per_item is effectively 50 GP total, divided by PB for individual cost if needed for other contexts, but here it's a single 50gp cost for PB doses), you can create a number of poison doses equal to your Proficiency Bonus.</description>
             <note text="Creates 'Poison Dose' items."/>
         </crafting_option>
         <action_option name="Apply Poison Dose" type="BonusAction">
             <description>As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter.</description>
             <cost resource="Poison Dose" value="1"/>
-            <effect type="ApplyDebuff" name="AppliedPoison" duration="1_minute_or_until_damage_dealt_with_item">
+            <effect type="Special" name="AppliedPoisonEffect" duration="1_minute_or_until_damage_dealt_with_item">
                 <target description="a weapon or piece of ammunition"/>
+                <note text="On hit with the poisoned item: target takes 2d8 Poison damage (save CON DC 8 + Dexterity_modifier + ProficiencyBonus for half). On failed save, target is also Poisoned until end of your next turn."/>
+                <!-- Original structure:
                 <on_hit_with_poisoned_item>
                     <effect type="Damage" damage_type="Poison" value_dice="2d8">
                         <save type="Constitution" dc_formula="8 + Dexterity_modifier + ProficiencyBonus"/>
                         <on_failed_save also_applies_condition="Poisoned" condition_duration="until_end_of_your_next_turn"/>
                     </effect>
                 </on_hit_with_poisoned_item>
+                -->
             </effect>
         </action_option>
     </benefit>
@@ -1351,26 +1372,31 @@
     </benefit>
     <benefit name="Potent Poison">
         <passive_effect description="When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.">
-            <modifies_rule rule_name="DamageResistance" status="ignore" condition="dealing_Poison_damage" specific_resistance_type="Poison"/>
+            <modifies_rule rule_name="DamageResistance" status="ignore" condition="dealing_Poison_damage">
+                <note text="This specifically ignores Poison resistance."/>
+            </modifies_rule>
         </passive_effect>
     </benefit>
     <benefit name="Brew Poison">
         <grants_proficiency type="Tool" name="Poisoner's Kit"/>
-        <crafting_option name="Brew Poison" trigger="1_hour_of_work" item_count_formula="ProficiencyBonus" gp_cost_per_item="50_divided_by_PB_effectively_50gp_total">
-            <description>With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus.</description>
+        <crafting_option name="Brew Poison" trigger="1_hour_of_work" item_count_formula="ProficiencyBonus" gp_cost="50">
+            <description>With 1 hour of work using such a kit and expending 50 GP worth of materials (gp_cost_per_item is effectively 50 GP total, divided by PB for individual cost if needed for other contexts, but here it's a single 50gp cost for PB doses), you can create a number of poison doses equal to your Proficiency Bonus.</description>
             <note text="Creates 'Poison Dose' items."/>
         </crafting_option>
         <action_option name="Apply Poison Dose" type="BonusAction">
             <description>As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter.</description>
             <cost resource="Poison Dose" value="1"/>
-            <effect type="ApplyDebuff" name="AppliedPoison" duration="1_minute_or_until_damage_dealt_with_item">
+            <effect type="Special" name="AppliedPoisonEffect" duration="1_minute_or_until_damage_dealt_with_item">
                 <target description="a weapon or piece of ammunition"/>
+                <note text="On hit with the poisoned item: target takes 2d8 Poison damage (save CON DC 8 + Intelligence_modifier + ProficiencyBonus for half). On failed save, target is also Poisoned until end of your next turn."/>
+                <!-- Original structure:
                 <on_hit_with_poisoned_item>
                     <effect type="Damage" damage_type="Poison" value_dice="2d8">
                         <save type="Constitution" dc_formula="8 + Intelligence_modifier + ProficiencyBonus"/>
                         <on_failed_save also_applies_condition="Poisoned" condition_duration="until_end_of_your_next_turn"/>
                     </effect>
                 </on_hit_with_poisoned_item>
+                -->
             </effect>
         </action_option>
     </benefit>
@@ -1391,20 +1417,17 @@
         </grants_ability_score_increase>
     </benefit>
     <benefit name="Pole Strike">
-        <weapon_property_interaction weapon_type_affected="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-            <on_attack_with_weapon_type types="Quarterstaff|Spear|HeavyAndReachPropertyWeapon" trigger="Immediately_after_you_take_the_Attack_action_and_attack">
-                <action type="BonusAction" name="Pole Strike">
-                    <effect type="Damage" damage_type="Bludgeoning" value_dice="1d4" description="Make a melee attack with the opposite end of the weapon."/>
-                </action>
-            </on_attack_with_weapon_type>
-        </weapon_property_interaction>
+        <action_option name="Pole Strike Attack" type="BonusAction" trigger="Immediately_after_you_take_the_Attack_action_and_attack_with_Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
+            <description>Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can make one melee attack with the opposite end of the weapon as a Bonus Action. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a d4, and it deals Bludgeoning damage.</description>
+            <effect type="Damage" damage_type="Bludgeoning" value_dice="1d4"/>
+        </action_option>
     </benefit>
     <benefit name="Reactive Strike">
-        <weapon_property_interaction weapon_type_affected="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-            <on_creature_enters_reach_with_weapon_type types="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-                <action type="Reaction" name="MakeOneMeleeAttack" description="While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon."/>
-            </on_creature_enters_reach_with_weapon_type>
-        </weapon_property_interaction>
+        <action_option name="Polearm Reactive Strike" type="Reaction" trigger="Creature_enters_reach_with_Quarterstaff|Spear|HeavyAndReachPropertyWeapon_you_are_holding">
+            <description>While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</description>
+            <!-- <action type="Reaction" name="MakeOneMeleeAttack" description="..."/> -->
+            <note text="This allows making one melee attack as a reaction."/>
+        </action_option>
     </benefit>
   </feat>
   <feat>
@@ -1423,20 +1446,17 @@
         </grants_ability_score_increase>
     </benefit>
     <benefit name="Pole Strike">
-        <weapon_property_interaction weapon_type_affected="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-            <on_attack_with_weapon_type types="Quarterstaff|Spear|HeavyAndReachPropertyWeapon" trigger="Immediately_after_you_take_the_Attack_action_and_attack">
-                <action type="BonusAction" name="Pole Strike">
-                    <effect type="Damage" damage_type="Bludgeoning" value_dice="1d4" description="Make a melee attack with the opposite end of the weapon."/>
-                </action>
-            </on_attack_with_weapon_type>
-        </weapon_property_interaction>
+        <action_option name="Pole Strike Attack" type="BonusAction" trigger="Immediately_after_you_take_the_Attack_action_and_attack_with_Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
+            <description>Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can make one melee attack with the opposite end of the weapon as a Bonus Action. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a d4, and it deals Bludgeoning damage.</description>
+            <effect type="Damage" damage_type="Bludgeoning" value_dice="1d4"/>
+        </action_option>
     </benefit>
     <benefit name="Reactive Strike">
-        <weapon_property_interaction weapon_type_affected="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-            <on_creature_enters_reach_with_weapon_type types="Quarterstaff|Spear|HeavyAndReachPropertyWeapon">
-                <action type="Reaction" name="MakeOneMeleeAttack" description="While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon."/>
-            </on_creature_enters_reach_with_weapon_type>
-        </weapon_property_interaction>
+        <action_option name="Polearm Reactive Strike" type="Reaction" trigger="Creature_enters_reach_with_Quarterstaff|Spear|HeavyAndReachPropertyWeapon_you_are_holding">
+            <description>While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</description>
+            <!-- <action type="Reaction" name="MakeOneMeleeAttack" description="..."/> -->
+            <note text="This allows making one melee attack as a reaction."/>
+        </action_option>
     </benefit>
   </feat>
   <feat>
@@ -1548,8 +1568,10 @@
     </benefit>
     <benefit name="Quick Ritual">
         <action_option name="Quick Ritual" type="Action">
-            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
-            <modifies_spell_casting applies_to_prepared_ritual_spells="true" allows_casting_with_regular_time="true" no_slot_cost="true"/>
+            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest. This applies to prepared ritual spells, allows casting with regular time, and has no slot cost.</description>
+            <modifies_spell_casting>
+                 <note text="Applies to prepared ritual spells, allows casting with regular time, no slot cost."/>
+            </modifies_spell_casting>
             <uses_per_rest type="LongRest" count="1"/>
         </action_option>
     </benefit>
@@ -1578,8 +1600,10 @@
     </benefit>
     <benefit name="Quick Ritual">
         <action_option name="Quick Ritual" type="Action">
-            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
-            <modifies_spell_casting applies_to_prepared_ritual_spells="true" allows_casting_with_regular_time="true" no_slot_cost="true"/>
+            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest. This applies to prepared ritual spells, allows casting with regular time, and has no slot cost.</description>
+            <modifies_spell_casting>
+                 <note text="Applies to prepared ritual spells, allows casting with regular time, no slot cost."/>
+            </modifies_spell_casting>
             <uses_per_rest type="LongRest" count="1"/>
         </action_option>
     </benefit>
@@ -1608,8 +1632,10 @@
     </benefit>
     <benefit name="Quick Ritual">
         <action_option name="Quick Ritual" type="Action">
-            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
-            <modifies_spell_casting applies_to_prepared_ritual_spells="true" allows_casting_with_regular_time="true" no_slot_cost="true"/>
+            <description>With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest. This applies to prepared ritual spells, allows casting with regular time, and has no slot cost.</description>
+            <modifies_spell_casting>
+                 <note text="Applies to prepared ritual spells, allows casting with regular time, no slot cost."/>
+            </modifies_spell_casting>
             <uses_per_rest type="LongRest" count="1"/>
         </action_option>
     </benefit>
@@ -1770,7 +1796,9 @@
     <benefit name="Shield Bash">
         <shield_bash_option trigger="If_you_attack_a_creature_within_5_feet_of_you_as_part_of_the_Attack_action_and_hit_with_a_Melee_weapon" requires_shield_equipped="true" action_type="ImmediatelyFollowingAttack" uses_per_turn="1">
             <description>If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice).</description>
-            <effect type="TargetChoiceSave">
+            <effect type="Special" name="ShieldBashEffect" save_type="Strength" save_dc="8 + Strength_modifier + ProficiencyBonus">
+                <note text="On a failed save by the target, you choose one of the following: push the target 5 feet away, or cause the target to have the Prone condition."/>
+                <!-- Original Structure:
                 <save_type="Strength" dc_formula="8 + Strength_modifier + ProficiencyBonus"/>
                 <on_failed_save_choice>
                     <option name="Push">
@@ -1780,6 +1808,7 @@
                         <effect type="Condition" name="Prone"/>
                     </option>
                 </on_failed_save_choice>
+                -->
             </effect>
         </shield_bash_option>
     </benefit>
@@ -2103,8 +2132,8 @@
         <grants_spell_learning type="Cantrip" spell_known="Mage Hand" spellcasting_ability_fixed="Intelligence" no_components_list="Verbal|Somatic" counts_against_known="false">
             <spell_modifications>
                 <range_increase value="+30_feet"/>
-                <make_invisible description="spectral hand is Invisible"/>
-                <note text="Distance spectral hand can be away from you also increases by 30 feet."/>
+                <make_invisible/> <!-- Changed: description attribute removed, implies true -->
+                <note text="The spectral hand is Invisible. Distance spectral hand can be away from you also increases by 30 feet."/>
             </spell_modifications>
             <description>You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</description>
         </grants_spell_learning>
@@ -2135,8 +2164,8 @@
         <grants_spell_learning type="Cantrip" spell_known="Mage Hand" spellcasting_ability_fixed="Wisdom" no_components_list="Verbal|Somatic" counts_against_known="false">
             <spell_modifications>
                 <range_increase value="+30_feet"/>
-                <make_invisible description="spectral hand is Invisible"/>
-                <note text="Distance spectral hand can be away from you also increases by 30 feet."/>
+                <make_invisible/> <!-- Changed: description attribute removed, implies true -->
+                <note text="The spectral hand is Invisible. Distance spectral hand can be away from you also increases by 30 feet."/>
             </spell_modifications>
             <description>You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</description>
         </grants_spell_learning>
@@ -2167,8 +2196,8 @@
         <grants_spell_learning type="Cantrip" spell_known="Mage Hand" spellcasting_ability_fixed="Charisma" no_components_list="Verbal|Somatic" counts_against_known="false">
             <spell_modifications>
                 <range_increase value="+30_feet"/>
-                <make_invisible description="spectral hand is Invisible"/>
-                <note text="Distance spectral hand can be away from you also increases by 30 feet."/>
+                <make_invisible/> <!-- Changed: description attribute removed, implies true -->
+                <note text="The spectral hand is Invisible. Distance spectral hand can be away from you also increases by 30 feet."/>
             </spell_modifications>
             <description>You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</description>
         </grants_spell_learning>
