@@ -8,46 +8,85 @@ Este documento detalla las etiquetas XML y atributos utilizados para estructurar
 
 **`<class>`**
 Contenedor raíz para una definición de clase.
-*   **`<name>`**: Nombre de la clase.
-*   **`<source page="[numero]">Player's Handbook 2024</source>`**: (Recomendado) Información de la fuente.
-*   **`<hd>`**: Dado de golpe (Hit Die) de la clase (ej: 8, 10, 12).
-*   **`<proficiency>`**: (Legado/Provisional) Lista textual de competencias en tiradas de salvación y habilidades iniciales. (Nota: Reemplazar por etiquetas más estructuradas como `<saving_throw_proficiencies>` y `<skill_proficiencies_options>`).
-*   **`<numSkills>`**: (Legado/Provisional) Número de habilidades a elegir de la lista de competencias.
-*   **`<armor>`**: (Legado/Provisional) Lista textual de competencias en armaduras. (Nota: Reemplazar por `<armor_proficiencies>`).
-*   **`<weapons>`**: (Legado/Provisional) Lista textual de competencias en armas. (Nota: Reemplazar por `<weapon_proficiencies>`).
-*   **`<tools>`**: (Legado/Provisional) Lista textual de competencias en herramientas. (Nota: Reemplazar por `<tool_proficiencies_options>`).
-*   **`<spellAbility>`**: Característica principal para el lanzamiento de conjuros (ej: Wisdom, Charisma, Intelligence).
-*   **`<slotsReset>`**: Cuándo se reinician los espacios de conjuro (ej: L para Long Rest, S para Short Rest). (Nota: Más relevante para Pact Magic de Warlock).
-*   **`<autolevel level="X">`**: Contenedor para características y cambios que ocurren en un nivel específico "X" de la clase.
-    *   **`scoreImprovement="YES"`** (atributo opcional): Indica que en este nivel se ofrece una Mejora de Puntuación de Característica (ASI).
-    *   **`<slots>`** (opcional): Define los espacios de conjuros por nivel de conjuro para este nivel de clase (ej: `<slots>2,3</slots>` para 2 de nivel 1, 3 de nivel 2).
-    *   **`<feature optional="YES|NO">`**: Define una característica de clase. (Ver sección `<feature>` / `<trait>` más abajo).
-        *   **`<subclass>`** (opcional): Nombre de la subclase a la que pertenece esta característica.
-    *   **`<counter>`** (opcional): Para rastrear usos de características (ej: Indomitable).
-        *   **`<name>`**: Nombre del contador.
-        *   **`<value>`**: Valor inicial.
-        *   **`<reset>`**: Cuándo se resetea (S: Short Rest, L: Long Rest, Dawn: Amanecer).
+*   **`<name>`**: Nombre de la clase (ej: "Fighter [2024]").
+*   **`<source page="[numero]">[NombreLibroFuente]</source>`**: Información de la fuente del libro y número de página. (Recomendado como hijo directo de `<class>`).
+    *   *Nota de Discrepancia (Clases): Actualmente, los archivos de clase como `class-fighter-phb24.xml` no tienen este tag a nivel raíz; la información de la fuente suele estar dentro del texto de una característica general o de características individuales. Se recomienda mover a un tag `<source>` de nivel superior para consistencia.*
+*   **`<description_text>`**: (Opcional) Párrafo introductorio o de lore general sobre la clase.
+*   **`<hd>`**: Dado de golpe (Hit Die) de la clase (ej: 6, 8, 10, 12).
+*   **`<saving_throw_proficiencies>`**: Contenedor para las competencias en tiradas de salvación.
+    *   **`<ability>[AbilityName]</ability>`**: (Repetir para cada habilidad, ej: `<ability>Strength</ability>`, `<ability>Constitution</ability>`).
+*   **`<armor_proficiencies>`**: Contenedor para las competencias en armaduras y escudos.
+    *   **`<proficiency type="[LightArmor|MediumArmor|HeavyArmor|Shields|SpecificArmorName]"/>`**: (Repetir para cada tipo).
+    *   *(Nota: `SpecificArmorName` podría usarse si una clase solo obtiene competencia con un tipo muy específico de armadura no cubierto por las categorías generales).*
+*   **`<weapon_proficiencies>`**: Contenedor para las competencias en armas.
+    *   **`<proficiency type="[SimpleWeapons|MartialWeapons|SpecificWeaponName|WeaponCategory]"/>`**: (Repetir para cada tipo. `WeaponCategory` podría ser "Swords", "Axes", etc., si es necesario).
+*   **`<tool_proficiencies_options>`**: (Opcional) Contenedor para opciones de competencia en herramientas.
+    *   **`<choice_from_list list="[ToolName1|ToolName2|any_artisans_tool|any_musical_instrument]" count="[numero]"/>`**.
+    *   **`<fixed_tool name="[ToolName]"/>`**: Si se otorga una herramienta específica sin elección.
+*   **`<skill_proficiencies_options>`**: Contenedor para opciones de competencia en habilidades.
+    *   **`<choice_from_list list="[SkillName1|SkillName2|...|any]" count="[numero]"/>`**: Define de qué lista y cuántas habilidades se pueden elegir.
+    *   **`<fixed_skill name="[SkillName]"/>`**: Si se otorga una habilidad específica sin elección.
+*   **`<starting_equipment_options>`**: (Opcional) Contenedor para las opciones de equipo inicial. (Ver estructura detallada similar a la de Trasfondos `<starting_equipment>`).
+*   **`<spellcasting ability="[AbilityName]" progression="[Full|Half|Third|Pact|None]" prepared_caster="[true|false]">`**: (Opcional, si la clase tiene lanzamiento de conjuros).
+    *   `ability`: Característica principal para el lanzamiento de conjuros (ej: Wisdom, Charisma, Intelligence).
+    *   `progression`: Describe la progresión de los espacios de conjuro (ej: "Full" para Cleric/Wizard, "Half" para Paladin/Ranger, "Third" para Eldritch Knight, "Pact" para Warlock). "None" si no es lanzador de conjuros primario.
+    *   `prepared_caster`: "true" si la clase prepara conjuros de una lista más amplia (ej. Cleric, Wizard), "false" si conoce un número fijo de conjuros (ej. Sorcerer, Bard).
+    *   **`<slotsReset type="[LongRest|ShortRest]"/>`**: Cuándo se reinician los espacios de conjuro.
+    *   **`<ritual_casting available="[true|false]"/>`**: Si la clase puede lanzar conjuros como rituales (si tiene la característica).
+    *   **`<spellbook_access type="[WizardList|ClericList|BardList|...|SubclassSpecificList]" can_learn_from_scrolls="true|false"/>`**: Define la lista de conjuros principal a la que accede la clase.
+*   **`<subclass_title name="[TítuloSubclase]"/>`**: (Opcional) El nombre que la clase usa para sus subclases (ej: "Dominio Divino" para Clérigo, "Sendero Primario" para Bárbaro, "Escuela Arcana" para Mago).
+*   **`<autolevel level="[numero]">`**: Contenedor para características y cambios que ocurren en un nivel específico "X" de la clase.
+    *   **`scoreImprovement="true|false"`** (atributo opcional, default `false`): Indica si en este nivel se ofrece una Mejora de Puntuación de Característica (ASI).
+    *   **`<slots>`** (opcional): Define los espacios de conjuros por nivel de conjuro para este nivel de clase (ej: `<slots>2,3</slots>` para 2 de nivel 1, 3 de nivel 2). Se usa para clases con progresión de slots definida por tabla.
+    *   **`<feature optional="true|false" type="[CoreFeature|SubclassFeatureChoice|SubclassFeature]">`**: Define una característica de clase. (Ver sección `<feature>` / `<trait>` más abajo).
+        *   `optional`: "true" si es una elección (ej. algunas características de subclase), "false" si se gana automáticamente.
+        *   `type`: Ayuda a categorizar la característica. `CoreFeature` para características de la clase base. `SubclassFeatureChoice` si este feature representa el momento en que se elige la subclase. `SubclassFeature` para características otorgadas por una subclase.
+        *   **`<subclass_restriction name="[NombreSubclase]"/>`** (opcional): Si esta característica pertenece o es modificada por una subclase específica.
+        *   **`<replaces_feature name="[OldFeatureName]"/>`** (opcional): Si esta característica reemplaza una anterior (ej: Tasha's Cauldron of Everything optional features).
+    *   **`<counter name="[CounterName]" initial_value="[numero]" reset_on="[ShortRest|LongRest|Dawn|Never]" notes="[texto_explicativo]">`**: (Opcional) Para rastrear usos de características.
+        *   `initial_value`: Valor inicial del contador.
+        *   `reset_on`: Cuándo se resetea el contador.
+        *   `notes`: Para explicar cómo escala el contador si no es por `<scaling>` dentro de un `<uses>` de una característica.
+*   **`<multiclassing_requirements>`**: (Opcional) Requisitos para multiclasear *hacia* esta clase.
+    *   **`<ability_score name="[AbilityName]" min="[numero]"/>`** (puede haber varios).
+*   **`<multiclassing_proficiencies_gained>`**: (Opcional) Competencias ganadas al multiclasear *hacia* esta clase.
+    *   (Usar `<armor_proficiencies>`, `<weapon_proficiencies>`, etc. aquí).
+*   *(Nota de Discrepancia (Clases): Los archivos de clase actuales como `class-fighter-phb24.xml` usan etiquetas planas como `<proficiency>`, `<numSkills>`, `<armor>`, `<weapons>`, `<tools>`. Estas deben ser reemplazadas por las etiquetas estructuradas como `<saving_throw_proficiencies>`, `<skill_proficiencies_options>`, `<armor_proficiencies>`, `<weapon_proficiencies>`, `<tool_proficiencies_options>` definidas arriba).*
 
 **`<feat>`**
 Contenedor raíz para la definición de un dote.
-*   **`<name>`**: Nombre del dote.
-*   **`<source page="[numero]">Player's Handbook 2024</source>`**: Información de la fuente.
-*   **`repeatable="true|false"`** (opcional, default `false`): Si el dote puede ser tomado múltiples veces.
-    *   `<repeatable_note condition="[texto_condicion]">` (si `repeatable="true"`).
-*   **`origin_feat="true|false"`** (opcional, default `false`): Si es un dote de origen.
-*   **`<prerequisite>`**: Condiciones para tomar el dote. (Ver sección `<prerequisite>`).
-*   **`<benefit name="[BenefitName]">`**: Beneficio específico del dote. (Ver sección `<benefit>`).
-*   **`<text>`**: (Legado) Descripción textual completa. Reemplazar con etiquetas estructuradas.
-*   **`<modifier>`**: (Legado) Reemplazar con etiquetas semánticas dentro de `<benefit>`.
+*   **`<name>`**: Nombre del dote (ej: "Origin: Alert [2024]", "Actor [2024]").
+*   **`<source page="[numero]">[NombreLibroFuente]</source>`**: Información de la fuente.
+*   **`repeatable="true|false"`** (atributo opcional, default `false`): Si el dote puede ser tomado múltiples veces.
+    *   **`<repeatable_note condition="[texto_condicion]">`** (si `repeatable="true"`): Texto explicando las condiciones de repetición.
+*   **`origin_feat="true|false"`** (atributo opcional, default `false`): Si es un dote de origen (normalmente elegible en nivel 1).
+*   **`<prerequisite>`**: Condiciones para tomar el dote. (Ver sección `<prerequisite>` más abajo).
+*   **`<benefit name="[BenefitName]">`**: Contenedor para un beneficio específico del dote. Un dote puede tener múltiples beneficios. (Ver sección `<feature>` / `<benefit>` / `<trait>` más abajo para sub-etiquetas comunes).
+*   **`<text>`**: (Legado/Evitar) Descripción textual completa. Reemplazar con etiquetas estructuradas dentro de `<benefit>`.
+*   **`<modifier>`**: (Legado/Evitar) Reemplazar con etiquetas semánticas dentro de `<benefit>`.
 
 **`<race>`**
-Contenedor raíz para la definición de una raza.
-*   **`<name>`**: Nombre de la raza (ej: "Aasimar [2024]", "Elf, Drow [2024]").
-*   **`<source page="[numero]">Player's Handbook 2024</source>`**: Información de la fuente.
-*   **`<size_summary code="[S|M|L|T|G|H]"/>`**: Código de tamaño resumido (ej: M, S). El detalle y opciones van en un `<trait name="Size">`.
-*   **`<speed base="[numero_pies]"/>`**: Velocidad base de movimiento terrestre. Otras velocidades (vuelo, nado) se definen en traits.
-*   **`<spellcasting_ability default="[AbilityName]"/>`** (opcional): Habilidad de lanzamiento por defecto para conjuros raciales si no se especifica otra cosa en un `<trait>` o `<grants_spell_learning>`.
-*   **`<trait name="[TraitName]" ...>`**: Define una característica racial. (Ver sección `<feature>` / `<trait>` más abajo).
+Contenedor raíz para la definición de una raza o linaje.
+*   **`<name>`**: Nombre de la raza/linaje (ej: "Aasimar [2024]", "Elf, Drow [2024]").
+*   **`<source page="[numero]">[NombreLibroFuente]</source>`**: Información de la fuente.
+*   **`<description_text>`**: (Opcional) Párrafo(s) introductorio(s) o de lore general sobre la raza.
+*   **`<creature_type type="[Humanoid|Aberration|etc.]" tags="[tag1,tag2]"/>`**: (Recomendado) Tipo de criatura y cualquier subtipo/etiqueta.
+    *   `type`: El tipo principal de criatura.
+    *   `tags` (opcional): Una lista separada por comas de etiquetas adicionales (ej: "elf", "orc", "shapechanger").
+    *   *(Nota de Discrepancia (Razas): Actualmente, los archivos de raza como `races-phb24.xml` definen esto mediante un `<trait category="core" name="Creature Type"><text>Humanoid</text></trait>`. Se recomienda esta etiqueta de nivel superior para mayor consistencia y facilidad de consulta).*
+*   **`<size_summary code="[S|M|L|T|G|H]"/>`**: Código de tamaño resumido (ej: M, S). El detalle y opciones van en un `<trait name="Size" category="core">`.
+*   **`<speed base="[numero_pies]"/>`**: Velocidad base de movimiento terrestre. Otras velocidades (vuelo, nado, etc.) se definen en traits.
+*   **`<ability_score_increases_option>`**: (Opcional, si la raza otorga ASI directamente, más común en versiones anteriores a 2024. Las razas de PHB24 suelen obtener ASIs a través de su trasfondo).
+    *   (Ver estructura de `<grants_ability_score_increase>` o `<asi_options>` si se necesita aquí).
+*   **`<age_description text="[texto_descripcion_edad]"/>`**: (Opcional) Descripción textual sobre la edad típica de la raza.
+*   **`<alignment_description text="[texto_descripcion_alineamiento]"/>`**: (Opcional) Descripción textual sobre las tendencias de alineamiento de la raza.
+*   **`<languages_known>`**: (Opcional) Contenedor para idiomas conocidos por la raza.
+    *   **`<language name="[LanguageName]" type="[standard|telepathy|understands_only]"/>`** (repetible)
+    *   **`<choice_from_list list="[Language1|Language2|any_standard|any_exotic]" count="[numero]"/>`** (para opciones de idioma)
+*   **`<spellcasting_ability default="[AbilityName]" allow_choice="[true|false]"`**: (Opcional, si la raza tiene conjuros raciales generales cuya habilidad no está definida en el propio trait que los otorga).
+    *   `default`: Habilidad de lanzamiento por defecto si `allow_choice="false"` o si el jugador no elige.
+    *   `allow_choice`: "true" si la habilidad de lanzamiento para los conjuros raciales puede ser una elección (ej: INT/WIS/CHA). La elección real se haría a través de un `<choice>` en un `<trait>` o al seleccionar el conjuro si el `<grants_spell_learning>` lo permite.
+*   **`<trait name="[TraitName]" category="[description|core|species|lineage|ancestry_choice]" gained_at_character_level="[numero]">`**: Define una característica racial. (Ver sección `<feature>` / `<benefit>` / `<trait>` más abajo para sub-etiquetas comunes).
 
 ---
 ### **Etiquetas de Características (Común a Clases, Dotes, Razas)**
@@ -246,6 +285,30 @@ Define cómo una característica mejora otra característica o habilidad existen
 *   ... (atributos como en la v1) ...
 
 ---
+#### **Notas sobre Modelado de Mecánicas Complejas y Específicas**
+
+Si bien el objetivo de este glosario es proporcionar un conjunto robusto de etiquetas para estructurar la mayor cantidad de información mecánica posible, algunas características o reglas de juego pueden tener interacciones o condiciones muy específicas que no se asignan directamente a una única etiqueta predefinida. En tales casos, se deben seguir los siguientes principios:
+
+1.  **Composición sobre Proliferación:** Antes de proponer una nueva etiqueta muy específica, se debe intentar modelar la mecánica mediante la combinación de las etiquetas genéricas existentes (`<effect>`, `<action>`, `<choice>`, `<condition>`, `<trigger>`, `<uses>`, `<recharge>`, `<modifies_rule>`, `<enhances_feature>`, etc.). La flexibilidad de estas etiquetas, especialmente con el uso de atributos descriptivos y la etiqueta `<text>` para clarificación, puede cubrir muchas situaciones complejas.
+
+2.  **Ejemplos de Modelado Compuesto:**
+    *   **Múltiples Formas de Recarga/Uso:** Si una característica puede recargarse de varias maneras (ej: "una vez por descanso corto, o gastando un recurso X"), se puede usar múltiples elementos `<recharge>` dentro de `<uses>`, o combinar un `<recharge>` estándar con un `<alternative_activation_cost>` o una etiqueta similar a `<can_reuse_by_expending resource="[ResourceName]">` (como se ve en algunos ejemplos de dotes o características de clase ya estructuradas).
+    *   **Añadir Opciones a Características Existentes:** Si una nueva característica de subclase añade una nueva forma de usar una característica de clase base (ej: "ahora también puedes usar tu Inspiración de Bardo para X"), esto se modelaría idealmente con `<enhances_feature feature_name="[FeatureNameBase]">` y luego, dentro de esta, se añadiría la nueva `<choice>` u `<option>` o `<effect>` que describe la funcionalidad adicional.
+    *   **Acciones Condicionadas por Estados Específicos:** Para mecánicas como "una acción para terminar las vibraciones en un objetivo" (ej: Monk Quivering Palm), esto se representaría como un `<action type="Action">` cuyo efecto (`<effect>`) es terminar una `<condition name="Vibrating">` previamente aplicada por otra característica. El estado "vibrating" en sí mismo sería un efecto de la característica inicial.
+
+3.  **Priorizar la Semántica Mecánica:** El objetivo es capturar la *intención mecánica* de la regla. Si una etiqueta personalizada en un XML existente (ej: `<action_to_end_vibrations>`) puede ser descompuesta en un disparador, una acción, y un efecto sobre una condición, esa descomposición es preferible.
+
+4.  **Uso del Tag `<text>` para Clarificación:** Dentro de cualquier etiqueta estructurada, el tag `<text>` o un atributo `description` pueden usarse para incluir el texto original o una explicación en lenguaje natural, especialmente cuando la estructura, aunque mecánicamente completa, pueda ser compleja de interpretar a primera vista.
+
+5.  **Cuándo Proponer Nuevas Etiquetas:** Si después de intentar la composición, una mecánica resulta ser:
+    *   Común a múltiples clases, dotes, razas, etc.
+    *   Claramente distinta en su función de las etiquetas existentes.
+    *   Difícil de representar de forma intuitiva o no ambigua con las etiquetas actuales.
+    En ese caso, se debe proponer la adición de una nueva etiqueta genérica al glosario.
+
+El objetivo es mantener un equilibrio entre un glosario manejable y la capacidad de representar fielmente las reglas del juego de forma estructurada.
+
+---
 ### **Etiquetas Específicas de Dotes (Feats) y Mecánicas Detalladas**
 ---
 
@@ -407,35 +470,45 @@ Define un beneficio que está siempre activo o se aplica automáticamente bajo c
 **`<background>`**
 Contenedor raíz para la definición de un trasfondo.
 *   **`<name>`**: Nombre del trasfondo (ej: "Acolyte [2024]").
-*   **`<source page="[numero]">[LibroDeFuente]</source>`**: Información de la fuente.
-*   **`<description_text>`**: Descripción general del trasfondo, incluyendo la narrativa y la página de origen si no está en la etiqueta `<source>`.
+*   **`<source page="[numero]">[NombreLibroFuente]</source>`**: Información de la fuente.
+*   **`<description_text>`**: Descripción general y narrativa del trasfondo.
 *   **`<ability_score_increase_option>`**: Describe las opciones de incremento de puntuación de característica.
-    *   **`<text>`**: Texto que describe las opciones estándar de ASI (ej: "+2 a una, +1 a otra, o +1 a tres de una lista"). Este texto también puede indicar las tres habilidades relevantes para el trasfondo si no se usa `<abilities_list>`.
-    *   **`<abilities_list list="[AbilityName1,AbilityName2,AbilityName3]"/>`**: (Opcional, más estructurado) Enumera las tres habilidades relevantes para este trasfondo de las cuales se pueden elegir los incrementos.
-    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir las habilidades.
-*   **`<granted_feat name="[FeatName]" source_text="[LibroDeFuente p.NumeroPagina]">`**: Especifica el dote otorgado por el trasfondo.
+    *   **`<text>`**: (Opcional, si se quiere incluir la descripción textual de la regla de ASI del trasfondo). Texto que describe las opciones estándar de ASI (ej: "+2 a una, +1 a otra, o +1 a tres de una lista").
+    *   **`<abilities_list list="[AbilityName1,AbilityName2,AbilityName3]"/>`**: Enumera las tres habilidades relevantes para este trasfondo de las cuales se pueden elegir los incrementos.
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir las habilidades si no sigue el patrón estándar.
+*   **`<granted_feat name="[FeatName]" source_text="[LibroDeFuente p.NumeroPagina]" feat_id_ref="[ID_del_Dote_si_existe_en_otro_archivo]">`**: Especifica el dote otorgado por el trasfondo.
     *   `name`: El nombre del dote.
-    *   `source_text`: Texto que indica la fuente y página del dote.
-    *   **`<text>`**: Descripción completa del dote. (Nota: Podría ser reemplazado por una referencia si los dotes están completamente estructurados y son referenciables por nombre/ID).
-    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir un dote de origen.
-*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades.
+    *   `source_text` (opcional): Texto que indica la fuente y página del dote si se quiere repetir aquí.
+    *   `feat_id_ref` (recomendado a futuro): Un identificador único que enlaza al dote definido en un archivo de dotes separado.
+    *   **`<text>`**: (Opcional si `feat_id_ref` se usa y los dotes son consultables) Descripción completa del dote. (Nota: Idealmente, se reemplazaría por una referencia `feat_id_ref` si los dotes están completamente estructurados y son referenciables).
+    *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir un dote de origen si no es uno fijo.
+*   **`<skill_proficiencies>`**: Contenedor para las competencias en habilidades. (Normalmente dos habilidades específicas).
     *   **`<skill name="[SkillName1]"/>`**: Otorga competencia en una habilidad específica.
     *   **`<skill name="[SkillName2]"/>`**: Otorga competencia en otra habilidad específica.
     *   **`<custom_choice_text count="[numero]">`**: (Para trasfondos personalizados) Texto que describe cómo elegir un número específico de competencias en habilidades.
-*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas.
+*   **`<tool_proficiencies>`**: Contenedor para las competencias en herramientas. (Normalmente una herramienta específica o una elección de categoría).
     *   **`<tool name="[SpecificToolName]"/>`**: Otorga competencia en una herramienta específica.
-    *   **`<choice_from_category category="[ArtisansTools|MusicalInstruments|GamingSets]" description_text_override="[texto_opcional_con_lista_de_herramientas]">`**: Permite elegir una herramienta de una categoría específica.
-        *   `category`: El tipo de categoría de herramienta (ej: "ArtisansTools", "MusicalInstruments", "GamingSets").
-        *   `description_text_override` (opcional): Si se proporciona, este texto (que puede incluir la lista de herramientas de esa categoría) se usará en lugar de una descripción genérica. Es útil si la lista de herramientas se incluye directamente en el XML del trasfondo.
+    *   **`<choice_from_category category="[ArtisansTools|MusicalInstruments|GamingSets]" description_text_override="[lista_de_herramientas_de_esa_categoria_si_se_incluye_directamente]"`**: Permite elegir una herramienta de una categoría específica.
+        *   `category`: El tipo de categoría de herramienta.
+        *   `description_text_override` (opcional): Si se proporciona, este texto (que debe ser la lista de herramientas de esa categoría) se usará. Es útil si la lista de herramientas se incluye directamente en el XML del trasfondo. Evitar texto genérico aquí si ya está cubierto por la estructura.
     *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo elegir una competencia en herramienta.
+    *   *(Nota de Discrepancia (Trasfondos): Evitar incluir un tag `<text>` genérico dentro de `<tool_proficiencies>` si ya se usa `<tool name="..."/>` o `<choice_from_category.../>`, ya que la estructura es autoexplicativa).*
 *   **`<starting_equipment>`**: Contenedor para el equipo inicial.
-    *   **`<text>`**: Texto introductorio general (ej: "Elige A o B:").
+    *   **`<text>`**: (Opcional) Texto introductorio general si es necesario (ej: "Elige A o B:").
     *   **`<option_A>`**: Contenedor para la opción A de equipo.
         *   **`<item name="[ItemName]" quantity="[numero]"/>`**: Un objeto específico y su cantidad.
-        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+        *   **`<gold currency_code="GP" amount="[numero]"/>`**: Cantidad de oro (u otra moneda).
     *   **`<option_B>`**: Contenedor para la opción B de equipo.
-        *   **`<gold amount="[numero]"/>`**: Cantidad de oro.
+        *   **`<gold currency_code="GP" amount="[numero]"/>`**: Cantidad de oro.
     *   **`<custom_choice_text>`**: (Para trasfondos personalizados) Texto que describe cómo ensamblar un paquete de equipo (ej: "Ensambla un paquete de equipo por valor de 50 PO...").
+*   **`<background_feature name="[NombreCaracteristicaTrasfondo]" source_text="[LibroDeFuente p.NumeroPagina]">`**: (Opcional) Para la característica especial del trasfondo si no es el dote.
+    *   **`<text>`**: Descripción completa de la característica.
+    *   *(Nota: Muchos trasfondos de PHB24 otorgan un dote en lugar de una característica única de trasfondo. Esta etiqueta es para casos donde sí exista una característica separada).*
+*   **`<suggested_characteristics>`**: (Opcional) Contenedor para Rasgos de Personalidad, Ideales, Vínculos y Defectos.
+    *   **`<personality_traits><trait_option text="[texto rasgo 1]"/><trait_option text="[texto rasgo 2]"/>...</personality_traits>`**
+    *   **`<ideals><ideal_option text="[texto ideal 1]" alignment_hint="[Bueno|Legal|Caótico|etc.]"/>...</ideals>`**
+    *   **`<bonds><bond_option text="[texto vínculo 1]"/>...</bonds>`**
+    *   **`<flaws><flaw_option text="[texto defecto 1]"/>...</flaws>`**
 
 ---
 ### **Etiquetas Específicas de Subclase/Mecánicas Únicas (Clase)**
@@ -532,33 +605,218 @@ Contenedor raíz para la definición de un hechizo individual. Se espera que est
         *   **`<header><col label="Col1"/><col label="Col2"/></header>`**
         *   **`<row><cell>Val1</cell><cell>Val2</cell></row>`**
 *   **`<classes text_original="[TextoOriginalDeClases]">`**: Lista de clases y subclases que pueden aprender/usar el hechizo.
-    *   `text_original`: El texto original de la sección de clases del hechizo.
-    *   **`<class_name>[NombreClase]</class_name>`**: Nombre de la clase (ej: "Wizard").
-    *   **`<subclass_restriction for_class="[NombreClasePadre]" name="[NombreSubclase] (Dominio/Patron/etc.)"/>`**: Si el hechizo es específico de una subclase.
-*   **`<source name="[NombreDelLibro]" page="[NumeroPagina]"/>`**: Información de la fuente del hechizo. (Adaptación de la etiqueta `<source>` existente).
-*   **`<roll description="[DescripcionDeLaTirada]" type="[damage|healing|effect|attack]">`**: Para representar dados que se tiran como parte del hechizo.
-    *   `description`: Descripción de para qué es la tirada (ej: "Acid Damage", "Heal", "Subtract from Roll").
-    *   `type`: El propósito de la tirada (`damage`, `healing`, `effect` para tiradas misceláneas, `attack` para tiradas de ataque de conjuro si se quiere desglosar).
-    *   **`<dice>[formula_dado]</dice>`**: La fórmula del dado (ej: "1d6", "2d8+SPELL").
+    *   `text_original` (opcional): El texto original de la sección de clases del hechizo, para referencia.
+    *   **`<class_name>[NombreClase]</class_name>`**: Nombre de la clase (ej: "Wizard"). (Repetible).
+    *   **`<subclass_restriction for_class="[NombreClasePadre]" name="[NombreSubclase] (Dominio/Patron/etc.)"/>`**: Si el hechizo es específico de una subclase. (Repetible).
+*   **`<source book="[NombreDelLibro]" page="[NumeroPagina]" other_sources="[fuente_alternativa_si_existe]"/>`**: Información de la fuente del hechizo.
+    *    `book`: Nombre del libro de origen principal.
+    *    `page`: Número de página en el libro de origen.
+    *    `other_sources` (opcional): Para listar otras fuentes si el hechizo aparece en múltiples lugares.
+*   **`<roll description="[DescripcionDeLaTirada]" type="[damage|healing|effect|attack|utility]">`**: (Repetible) Para representar dados que se tiran como parte del hechizo.
+    *   `description`: Descripción de para qué es la tirada (ej: "Acid Damage", "Healing", "Subtract from Roll", "Determine effect duration").
+    *   `type`: El propósito de la tirada (`damage`, `healing`, `effect` para tiradas misceláneas, `attack` para tiradas de ataque de conjuro, `utility` para tiradas no directamente dañinas/curativas como duración en dX rounds).
+    *   **`<dice>[formula_dado]</dice>`**: La fórmula del dado (ej: "1d6", "2d8"). *Nota de Discrepancia (Hechizos): Los XML actuales a veces incluyen el modificador de habilidad aquí (ej: "2d8+SPELL"). Se recomienda mover esto a `<bonus_from_ability>`.*
     *   **`<damage_type>[Acid|Cold|Fire|...]</damage_type>`** (opcional): Si `type="damage"`, el tipo de daño.
     *   **`<bonus_from_ability>[SPELL|STR|DEX|CON|INT|WIS|CHA]</bonus_from_ability>`** (opcional): Si se añade un modificador de característica al resultado (ej: `+SPELL` para el modificador de la aptitud mágica).
-    *   **`<scaling_level value="[NivelPersonaje/Hechizo]">`** (opcional): Si la tirada escala con el nivel.
-        *   **`<dice>[nueva_formula_dado]</dice>`**
-    *   **`<save_required type="[STR|DEX|CON|INT|WIS|CHA]" dc_formula="[8+ProficiencyBonus+SPELL]" effect_on_success="[half_damage|negates_effect|none]" effect_on_failure="[full_damage|condition_applied]"/>`** (opcional): Si la tirada de daño/efecto permite una salvación.
-*   **`<area_of_effect shape="[cone|cube|cylinder|line|radius|sphere|special]" value="[dimensiones]" description="[texto_descriptivo_area]"/>`**: Describe el área de efecto si no está implícita en el rango.
-*   **`<saving_throw ability="[STR|DEX|CON|INT|WIS|CHA]" effect_on_success="[texto]" effect_on_failure="[texto]"/>`**: Para tiradas de salvación principales del hechizo que no son parte de un `<roll>`.
-*   **`<at_higher_levels>`**: Contenedor para describir cómo escala el hechizo al usar espacios de conjuro de nivel superior.
-    *   **`<text_block title="Cantrip Upgrade">[texto_completo_mejora_truco]</text_block>`**: Para la sección de mejora de trucos.
-        *   **`<scaling level="[NivelPersonaje]"> <effect description="[descripcion_mejora_nivel_X]"/> </scaling>`**: Para detallar mejoras específicas por nivel de personaje.
-    *   **`<per_slot_above base_level="[NivelDesdeElQueMejora]">`**: Para mejoras que aplican por cada nivel de espacio de conjuro por encima de un nivel base.
-        *   **`<effect description="[descripcion_efecto_por_slot_adicional]">`**: Descripción del efecto (ej: "The damage increases by 1d6").
-        *   **`<roll_increase original_roll_description="[IdentificadorTiradaOriginal]" increase_dice="[dado_adicional]" increase_bonus="[numero]"/>`**: Si la mejora es un aumento a una tirada existente.
-        *   **`<additional_targets count="[numero_adicional]"/>`**: Si se pueden afectar más objetivos.
-        *   **`<duration_increase value="[numero]" unit="[minute|hour|day]"/>`**: Si la duración aumenta.
-    *   **`<specific_slot level="[NivelDeEspacioEspecifico]">`**: Para mejoras que ocurren a un nivel de espacio de conjuro específico.
-        *   **`<effect description="[descripcion_efecto_a_este_nivel]">`**
-*   **`<tags>`** (opcional): Para categorización funcional del hechizo.
-    *   **`<tag>[utility|combat|healing|control|debuff|buff|summoning|sensory|social|exploration|teleportation|creation|warding]</tag>`**: Ejemplos de etiquetas.
+    *   **`<save_details required="[true|false]" type="[STR|DEX|CON|INT|WIS|CHA]" dc_formula="[8+ProficiencyBonus+SPELL|fixed_DC]" effect_on_success="[half_damage|negates_effect|custom_effect_text|none]" effect_on_failure="[full_damage|condition_applied|custom_effect_text]"/>`** (opcional): Si esta tirada específica (ej: de daño) permite una salvación.
+        *   `required`: "true" si la salvación es parte integral de este efecto de tirada.
+        *   `type`: Tipo de tirada de salvación.
+        *   `dc_formula`: Cómo se calcula la CD (puede ser una fórmula o un valor fijo).
+        *   `effect_on_success`: Qué ocurre si se tiene éxito en la salvación.
+        *   `effect_on_failure`: Qué ocurre si se falla la salvación (a menudo implícito si no se especifica, ej. daño completo).
+*   **`<area_of_effect shape="[cone|cube|cylinder|line|radius|sphere|self|special]" value="[dimensiones_numericas]" unit="[feet|miles]" description="[texto_descriptivo_area_completo]"/>`**: (Opcional) Describe el área de efecto si es una característica principal del hechizo y no solo parte del rango.
+    *   `description`: Texto completo del área de efecto para referencia.
+    *   *(Nota de Discrepancia (Hechizos): Los XML actuales parseados por `parse_spells.py` integran la forma y valor del AoE dentro de la etiqueta `<range>`. Esta etiqueta `<area_of_effect>` es para una definición más explícita y separada si es necesario).*
+*   **`<saving_throw ability="[STR|DEX|CON|INT|WIS|CHA]" dc_formula="[8+ProficiencyBonus+SPELL|fixed_DC|text_description]" effect_on_success="[texto_efecto_exito]" effect_on_failure="[texto_efecto_fallo]" notes="[notas_adicionales]"/>`**: (Opcional) Para la tirada de salvación principal del hechizo, si no está directamente ligada a un `<roll>`.
+    *   `dc_formula`: Puede ser una fórmula, un número fijo, o una descripción textual si la CD es variable o compleja (ej: "caster's spell save DC").
+    *   *(Nota de Discrepancia (Hechizos): Los XML actuales generados por `parse_spells.py` no extraen esta información a una etiqueta de nivel superior; permanece en el texto de descripción. Se recomienda añadirla para mayor estructura).*
+*   **`<at_higher_levels>`**: Contenedor para describir cómo escala el hechizo.
+    *   **`<cantrip_scaling>`** (para trucos que mejoran con el nivel del personaje):
+        *   **`<scaling level="[NivelPersonaje]"> <effect description="[descripcion_mejora_nivel_X]"/> </scaling>`**: (Repetible) Para detallar mejoras específicas por nivel de personaje. El `<effect>` puede incluir cambios a dados de daño, nuevos efectos, etc.
+    *   **`<slot_scaling>`** (para hechizos de nivel 1+ que mejoran con espacios de conjuro de nivel superior):
+        *   **`<per_slot_above base_level="[NivelDesdeElQueMejora]">`**: Para mejoras que aplican por cada nivel de espacio de conjuro por encima de un nivel base.
+            *   **`<effect description="[descripcion_efecto_por_slot_adicional]">`** (Puede contener sub-etiquetas como `<roll_increase>`, `<additional_targets>`, `<duration_increase>`).
+        *   **`<specific_slot level="[NivelDeEspacioEspecifico]">`**: Para mejoras que ocurren a un nivel de espacio de conjuro específico.
+            *   **`<effect description="[descripcion_efecto_a_este_nivel]">`** (Puede contener sub-etiquetas).
+        *   **`<text_block title="[TituloOpcional]">[texto_completo_mejora_inespecifica]</text_block>`**: Para mejoras de nivel superior que son difíciles de estructurar más allá del texto.
+*   **`<tags>`** (opcional): Para categorización funcional del hechizo. (Recomendado para facilitar búsquedas y filtros).
+    *   **`<tag>[utility|combat|healing|control|debuff|buff|summoning|sensory|social|exploration|teleportation|creation|warding|banishment|movement|perception|communication|environmental]</tag>`**: Ejemplos de etiquetas. (Repetible).
+*   *(Nota General sobre Descripciones de Hechizos: Aunque el objetivo es estructurar la mayor cantidad de mecánica posible, la etiqueta `<description><p>...</p></description>` seguirá siendo crucial para el flujo narrativo del hechizo. Para elementos complejos dentro de la descripción, como listas de opciones o tablas (ej. Prismatic Wall), se debe usar `<list>` y `<table>` dentro de `<description>`. La actual `parse_spells.py` no desglosa esto, requiriendo mejora en el parser o edición manual para lograrlo).*
+
+---
+### **Etiquetas Específicas para Monstruos (Bestiary)**
+---
+
+**`<monster>`**
+Contenedor raíz para la definición de un monstruo.
+    *   *Nota de Discrepancia (Monstruos): Los archivos XML de bestiario actuales (`bestiary-*.xml`) utilizan una estructura que difiere significativamente de las recomendaciones detalladas a continuación. Las etiquetas actuales son más planas (ej: `<ac>`, `<hp>` como hijos directos de `<monster>`) y dependen mucho de parsear texto. El siguiente esquema propone una estructura más alineada con el resto del glosario para mejorar la consistencia y la granularidad de los datos.*
+
+*   **`<name>[NombreDelMonstruo]</name>`**: Nombre completo del monstruo.
+    *   **`<sort_name>[NombreParaOrdenar]</sort_name>`** (opcional): Nombre alternativo para propósitos de ordenamiento (ej: "Dragon, Adult Black").
+    *   **`<ancestry>[AncestroComun]</ancestry>`** (opcional): Si es parte de un grupo ancestral (ej: "Black Dragon" para "Adult Black Dragon").
+*   **`<source book="[NombreLibro]" page="[numero]" other_sources="[otras_fuentes]"/>`**: Información de la fuente.
+*   **`<description_text>`**: (Opcional) Bloque de texto con la descripción general, lore, y ecología del monstruo.
+*   **`<flavor_text quote="[true|false]">[TextoDeAmbientacion]</flavor_text>`**: (Opcional, repetible) Texto de ambientación, puede ser una cita.
+*   **`<size code="[T|S|M|L|H|G]">[NombreCompletoTamaño]</size>`**: Tamaño del monstruo (ej: `<size code="M">Medium</size>`).
+*   **`<creature_type type="[Aberration|Beast|...]" tags="[tag1,tag2,...]"/>`**: Tipo de criatura y etiquetas adicionales.
+    *   `type`: El tipo principal (ej: "Fiend", "Humanoid").
+    *   `tags` (opcional): Lista separada por comas (ej: "devil", "shapechanger", "orc").
+*   **`<alignment text_override="[AlineamientoComplejo]">[AlineamientoAbreviado]</alignment>`**: Alineamiento del monstruo.
+    *   Texto: Abreviatura común (ej: LG, N, CE, Unaligned, AnyAlignment).
+    *   `text_override` (opcional): Para alineamientos complejos o descripciones textuales (ej: "Usually Lawful Good", "Neutral Evil (75%) or Chaotic Evil (25%)").
+*   **`<statistics>`**: Contenedor para las puntuaciones de característica.
+    *   **`<strength score="[numero]"/>`**
+    *   **`<dexterity score="[numero]"/>`**
+    *   **`<constitution score="[numero]"/>`**
+    *   **`<intelligence score="[numero]"/>`**
+    *   **`<wisdom score="[numero]"/>`**
+    *   **`<charisma score="[numero]"/>`**
+*   **`<defenses>`**: Contenedor para información defensiva.
+    *   **`<armor_class value="[numero]" description="[texto_explicativo_ac]"/>`**: Clase de Armadura.
+        *   `description` (opcional): Cómo se calcula la CA si no es simple (ej: "18 (natural armor)", "15 (studded leather, shield)").
+    *   **`<hit_points average="[promedio]" formula="[formula_dados]" notes="[notas_adicionales_hp]"/>`**: Puntos de Golpe.
+        *   `average`: HP promedio.
+        *   `formula`: Fórmula de dados (ej: "12d8+24").
+        *   `notes` (opcional): Cualquier nota adicional sobre los HP.
+    *   **`<saving_throw_proficiencies>`**: (Opcional) Competencias explícitas en tiradas de salvación.
+        *   **`<ability name="[AbilityName]" bonus="[+N]"/>`** (Repetible. El bonus incluye el modificador de característica + competencia si aplica).
+    *   **`<damage_resistances list="[type1,type2,...]" notes="[texto_condicional]"/>`**: (Opcional)
+    *   **`<damage_immunities list="[type1,type2,...]" notes="[texto_condicional]"/>`**: (Opcional)
+    *   **`<damage_vulnerabilities list="[type1,type2,...]" notes="[texto_condicional]"/>`**: (Opcional)
+    *   **`<condition_immunities list="[condition1,condition2,...]" notes="[texto_condicional]"/>`**: (Opcional)
+*   **`<speed>`**: Contenedor para las velocidades.
+    *   **`<walk value="[numero_pies]"/>`**
+    *   **`<fly value="[numero_pies]" hover="[true|false]"/>`** (opcional)
+    *   **`<swim value="[numero_pies]"/>`** (opcional)
+    *   **`<burrow value="[numero_pies]"/>`** (opcional)
+    *   **`<climb value="[numero_pies]"/>`** (opcional)
+    *   **`<notes>[texto_adicional_velocidad]</notes>`** (opcional, ej: "Spider Climb")
+*   **`<senses>`**: Contenedor para los sentidos.
+    *   **`<sense name="[Darkvision|Blindsight|Tremorsense|Truesight]" range="[numero_pies]"/>`** (Repetible)
+    *   **`<passive_perception value="[numero]"/>`**
+    *   **`<notes>[texto_adicional_sentidos]</notes>`** (opcional)
+*   **`<languages>`**: Contenedor para los idiomas.
+    *   **`<language name="[LanguageName]"/>`** (Repetible)
+    *   **`<telepathy range="[numero_pies]"/>`** (opcional)
+    *   **`<understands_but_cant_speak list="[Language1,Language2]"/>`** (opcional)
+    *   **`<notes>[texto_adicional_idiomas]</notes>`** (opcional, ej: "understands all languages spoken by its creator but can't speak")
+*   **`<challenge_rating value="[CR]" xp_value="[XP]"/>`**: Valor de desafío y Puntos de Experiencia.
+*   **`<proficiency_bonus value="[+N]"/>`**: (Opcional, si se quiere listar explícitamente. Normalmente se deriva del CR).
+*   **`<skill_proficiencies>`**: (Opcional) Competencias en habilidades.
+    *   **`<skill name="[SkillName]" bonus="[+N]"/>`** (Repetible. El bonus incluye mod de característica + competencia).
+*   **`<traits>`**: Contenedor para rasgos especiales.
+    *   **`<trait name="[TraitName]" source_page="[página_si_es_referencia_común]"`**:
+        *   Contiene `<text>` para la descripción y puede usar etiquetas estructuradas como `<action>`, `<effect>`, `<uses>`, `<recharge>` si el rasgo tiene mecánicas complejas. (Ver "Etiquetas Detalladas").
+        *   *(Nota de Discrepancia (Monstruos): Los XML actuales a menudo tienen un tag `<attack>` no estándar dentro de `<trait>`. Esto debería reestructurarse usando `<effect type="Damage">` dentro de una sub-etiqueta `<action>` si el trait permite una acción, o como un efecto pasivo/disparado).*
+*   **`<actions>`**: Contenedor para acciones principales.
+    *   **`<action name="[ActionName]" type="[MeleeWeaponAttack|RangedWeaponAttack|MeleeSpellAttack|RangedSpellAttack|Special|Multiattack]"`**:
+        *   Contiene `<text>` para la descripción y etiquetas estructuradas.
+        *   Para ataques: `<attack_bonus value="[+N]"/>`, `<reach value="[X_feet]"/>` o `<range short="[X_feet]" long="[Y_feet]"/>`, `<target description="[texto_objetivo]"/>`.
+        *   Efectos del impacto se definen con `<on_hit><effect type="Damage" .../></on_hit>`.
+        *   *(Nota de Discrepancia (Monstruos): Los XML actuales usan un tag `<attack>Nombre|Bonus|Daño</attack>` dentro de `<action>`. Esto debe ser reemplazado por la estructura más detallada).*
+*   **`<bonus_actions>`**: (Opcional) Contenedor para acciones adicionales.
+    *   **`<action name="[ActionName]" ...>`**: (Misma estructura que acciones principales).
+*   **`<reactions>`**: (Opcional) Contenedor para reacciones.
+    *   **`<reaction name="[ReactionName]" trigger_text="[texto_disparador]"`**:
+        *   Contiene `<text>` y etiquetas estructuradas.
+*   **`<legendary_actions per_turn="[numero]">`**: (Opcional) Contenedor para acciones legendarias.
+    *   `per_turn`: Número de acciones legendarias que puede usar por turno.
+    *   **`<legendary_action name="[ActionName]" cost="[coste_si_es_mas_de_1]"`**:
+        *   Contiene `<text>` y etiquetas estructuradas.
+*   **`<mythic_actions>`**: (Opcional, para monstruos míticos) Contenedor para acciones míticas.
+    *   **`<mythic_action name="[ActionName]" trigger_text="[texto_disparador_mitico]"`**:
+        *   Contiene `<text>` y etiquetas estructuradas.
+*   **`<lair_actions>`**: (Opcional) Contenedor para acciones de guarida.
+    *   **`<lair_action initiative="[numero_iniciativa_guarida]"`**:
+        *   `initiative`: En qué cuenta de iniciativa ocurre (normalmente 20).
+        *   Contiene `<text>` y etiquetas estructuradas describiendo el efecto.
+*   **`<regional_effects>`**: (Opcional) Contenedor para efectos regionales.
+    *   **`<effect_description text="[descripcion_efecto_regional]"/>`** (Repetible).
+*   **`<spellcasting type="[Innate|SpellcasterClass]" ability="[AbilityName]" spell_save_dc="[DC]" attack_bonus="[+N]"`**: (Opcional)
+    *   `type`: "Innate" para lanzamiento innato, "SpellcasterClass" si emula niveles de una clase.
+    *   `ability`: Característica de lanzamiento.
+    *   **`<at_will>`**:
+        *   **`<spell_ref name="[SpellName]" notes="[ej_sin_componentes]"/>`** (Repetible)
+    *   **`<per_day count="[X]"`**: (Repetible para diferentes cuentas, ej: 3/Day, 1/Day)
+        *   **`<spell_ref name="[SpellName]" notes="[ej_como_nivel_X]"/>`** (Repetible)
+    *   **`<spell_slots level="[1-9]" count="[numero]"/>`**: (Repetible, para tipo "SpellcasterClass")
+    *   **`<known_spells>`**: (Para tipo "SpellcasterClass" si no prepara)
+        *   **`<spell_ref name="[SpellName]"/>`** (Repetible)
+    *   **`<prepared_spells>`**: (Para tipo "SpellcasterClass" si prepara)
+        *   **`<spell_ref name="[SpellName]"/>`** (Repetible)
+    *   *(Nota de Discrepancia (Monstruos): Los XML actuales usan un tag `<spells>Lista de hechizos</spells>`. Se recomienda esta estructura más detallada).*
+*   **`<equipment>`**: (Opcional) Lista de equipo notable que lleva el monstruo.
+    *   **`<item_entry name="[ItemName]" quantity="[numero]"/>`**
+*   **`<environment_tags tags="[tag1,tag2,...]"/>`**: (Opcional) Etiquetas de entorno donde se encuentra comúnmente (ej: "forest", "underdark", "urban").
+    *   *(Nota de Discrepancia (Monstruos): Los XML actuales usan un tag `<environment>texto libre</environment>`. Se recomienda usar etiquetas para facilitar filtros).*
+
+---
+### **Etiquetas Específicas para Objetos (Items)**
+---
+
+**`<item>`**
+Contenedor raíz para la definición de un objeto, ya sea mundano o mágico.
+    *   *Nota de Discrepancia (Objetos): Los archivos XML de objetos actuales (ej: `items-phb24.xml`) son muy planos, con la mayoría de los detalles mecánicos y propiedades en texto. El siguiente esquema propone una estructura más detallada, especialmente para armas, armaduras y herramientas, para alinearlos con el enfoque estructurado del resto del glosario.*
+
+*   **`<name>[NombreDelObjeto]</name>`**: Nombre completo del objeto (ej: "Longsword [2024]", "Potion of Healing [2024]").
+*   **`<source book="[NombreLibro]" page="[numero]" other_sources="[otras_fuentes]"/>`**: Información de la fuente.
+*   **`<description_text>`**: (Opcional) Descripción general o lore del objeto.
+*   **`<item_type main="[Weapon|Armor|Shield|Tool|Gear|Currency|MagicItem|Potion|Scroll|Wand|Rod|Staff|Ring|WondrousItem]" sub="[subtipo_especifico]"/>`**: Categorización del objeto.
+    *   `main`: Categoría principal del objeto.
+    *   `sub` (opcional): Subtipo más específico (ej: para Weapon: "SimpleMelee", "MartialRanged"; para Tool: "ArtisansTools", "GamingSet"; para MagicItem: "Weapon", "Armor", "Wondrous").
+*   **`<rarity type="[Common|Uncommon|Rare|VeryRare|Legendary|Artifact|Varies]"/>`**: (Para objetos mágicos, o si aplica a otros).
+*   **`<attunement required="[true|false]" prerequisites="[texto_prerrequisitos_si_los_hay]"/>`**: (Para objetos mágicos).
+*   **`<value amount="[numero]" currency="[GP|SP|CP|etc.]"/>`**: Costo del objeto.
+*   **`<weight amount="[numero]" unit="[lb|oz|none]"/>`**: Peso del objeto.
+*   **`<stackable size="[numero]"/>`**: (Opcional) Si el objeto se apila y cuántos caben en una "ranura" o unidad de inventario.
+
+*   **Si `item_type main="Weapon"`:**
+    *   **`<weapon_details category="[Simple|Martial]" type="[Melee|Ranged]"`**:
+        *   **`<damage dice="[formula_dado]" type="[Bludgeoning|Piercing|Slashing|...]" versatile_dice="[formula_dado_versatil]"/>`**: (Repetible para múltiples tipos de daño si es necesario).
+            *   `versatile_dice` (opcional): Dado de daño si se usa con dos manos (para armas versátiles).
+        *   **`<properties>`**: Contenedor para propiedades del arma.
+            *   **`<property name="[PropertyName]" value="[valor_si_aplica]"/>`** (Repetible). Ejemplos:
+                *   `<property name="Ammunition" ammo_type="[Arrow|Bolt|Needle|SlingBullet|FirearmBullet]" range_short="[X]" range_long="[Y]"/>`
+                *   `<property name="Finesse"/>`
+                *   `<property name="Heavy" strength_requirement="[13|15]"/>`
+                *   `<property name="Light"/>`
+                *   `<property name="Loading"/>`
+                *   `<property name="Reach"/>`
+                *   `<property name="Thrown" range_short="[X]" range_long="[Y]"/>`
+                *   `<property name="TwoHanded"/>`
+                *   `<property name="Versatile"/>`
+                *   `<property name="Special" description="[descripcion_propiedad_especial]"/>`
+        *   **`<mastery_options>`**: (Opcional) Contenedor para propiedades de maestría de armas disponibles.
+            *   **`<mastery name="[MasteryName]" default="[true|false]"/>`** (Repetible. Ej: "Topple", "Vex", "Sap", "Push", "Slow", "Nick", "Graze", "Cleave").
+                *   `default`: "true" si es la maestría por defecto para este tipo de arma.
+                *   *(Nota: Las mecánicas de cada maestría deberían definirse globalmente o referenciarse, o detallarse aquí con sub-etiquetas de efecto si es necesario).*
+        *   **`<proficiency_requirement text="[simple|martial|specific_weapon_name]"/>`**: Qué competencia se necesita para usarla.
+
+*   **Si `item_type main="Armor"` o `main="Shield"`:**
+    *   **`<armor_details category="[Light|Medium|Heavy|Shield]"`**:
+        *   **`<armor_class base="[numero]" add_dex_modifier="[true|false]" max_dex_bonus="[numero_o_none]"/>`**:
+            *   `max_dex_bonus`: "none" si no hay límite.
+        *   **`<strength_requirement value="[numero]"/>`** (opcional).
+        *   **`<stealth_disadvantage value="[true|false]"/>`**.
+        *   **`<don_time description="[texto_tiempo_ponerse]"/>`** (opcional).
+        *   **`<doff_time description="[texto_tiempo_quitarse]"/>`** (opcional).
+
+*   **Si `item_type main="Tool"`:**
+    *   **`<tool_details category="[ArtisansTools|GamingSet|MusicalInstrument|Other]"`**:
+        *   `category`: Categoría general de la herramienta.
+        *   **`<associated_ability name="[AbilityName]"/>`** (opcional): Habilidad comúnmente usada con esta herramienta.
+        *   **`<utilization_options>`**: (Opcional) Usos comunes de la herramienta.
+            *   **`<option description="[texto_uso]" dc="[numero]" check_ability="[AbilityName]" check_skill="[SkillName]"/>`** (Repetible).
+        *   **`<craftable_items>`**: (Opcional) Objetos que se pueden crear con esta herramienta.
+            *   **`<item_ref name="[ItemName]"/>`** (Repetible).
+
+*   **Si `item_type main="Gear"` o `main="Potion"`, etc.:**
+    *   **`<effects>`**: (Opcional, especialmente para pociones o equipo con efectos mecánicos).
+        *   Contiene etiquetas de `<action>`, `<effect>`, `<uses>`, `<recharge>` similares a las de características/dotes para describir sus mecánicas.
+    *   **`<capacity value="[numero]" unit="[pints|gallons|pounds|cubic_feet]" description="[texto_capacidad]"/>`**: (Opcional) Para contenedores.
+    *   **`<consumable charges="[numero]" on_last_charge_behavior="[destroyed|becomes_mundane|roll_on_table]"/>`**: (Opcional) Para objetos consumibles o con cargas.
+
+*   **`<text_full>`**: (Opcional) Para incluir el texto completo original del objeto si la estructura anterior no captura todos los matices o para referencia. Se recomienda que la información mecánica esté en las etiquetas estructuradas.
 
 ---
 
