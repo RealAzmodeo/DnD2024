@@ -889,7 +889,7 @@ Source:	Player's Handbook 2024 p. 215</text>
     <weight>8</weight>
     <value>5</value>
     <ac>11</ac>
-    <stealth>YES</stealth>
+    <effect type="Disadvantage" on="Dexterity_Stealth_checks" condition="wearing_this_armor" description="The wearer has disadvantage on Dexterity (Stealth) checks."/>
     <text>Source:	Player's Handbook 2024 p. 219</text>
   </item>
   <item>
@@ -1014,8 +1014,8 @@ Source:	Player's Handbook 2024 p. 219</text>
     <type>S</type>
     <weight>6</weight>
     <value>10</value>
-    <ac>2</ac>
-    <text>Source:	Player's Handbook 2024 p. 219 Utilize Action to Don or Doff.</text>
+    <effect type="ACBonus" value="2" description="Wielding a shield increases your Armor Class by 2."/>
+    <text>Source:	Player's Handbook 2024 p. 219. Utilize Action to Don or Doff.</text>
   </item>
   <item>
     <name>Alchemist's Supplies [2024]</name>
