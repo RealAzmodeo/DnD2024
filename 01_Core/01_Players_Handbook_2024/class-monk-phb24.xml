@@ -119,35 +119,38 @@ Source:	Player's Handbook 2024 p. 101</text>
           <recharge type="SR_or_LR" description="regain_all_expended_points"/>
         </resource>
         <focus_point_save_dc formula="8+WIS+PROF"/>
-        <abilities_using_focus_points>
-          <ability name="Flurry of Blows">
-            <action type="BonusAction"/>
+
+        <action_option name="Flurry of Blows" type="BonusAction">
+            <description_text>Expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.</description_text>
             <cost resource="FocusPoint" value="1"/>
             <effect description="make_two_Unarmed_Strikes"/>
-          </ability>
-          <ability name="Patient Defense">
-            <action type="BonusAction">
-              <option name="Disengage_NoCost">
-                <effect description="take_the_Disengage_action"/>
-              </option>
-              <option name="DisengageAndDodge_WithCost">
-                <cost resource="FocusPoint" value="1"/>
-                <effect description="take_both_the_Disengage_and_the_Dodge_actions"/>
-              </option>
-            </action>
-          </ability>
-          <ability name="Step of the Wind">
-            <action type="BonusAction">
-              <option name="Dash_NoCost">
-                <effect description="take_the_Dash_action"/>
-              </option>
-              <option name="DisengageAndDash_WithCost">
-                <cost resource="FocusPoint" value="1"/>
-                <effect description="take_both_the_Disengage_and_Dash_actions_AND_your_jump_distance_is_doubled_for_the_turn"/>
-              </option>
-            </action>
-          </ability>
-        </abilities_using_focus_points>
+        </action_option>
+
+        <action_option name="Patient Defense" type="BonusAction">
+            <description_text>Take the Disengage action as a Bonus Action. Alternatively, expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.</description_text>
+            <choice name="PatientDefenseChoice">
+                <option name="Disengage (No Cost)">
+                    <effect description="take_the_Disengage_action"/>
+                </option>
+                <option name="Disengage and Dodge (Costs 1 Focus Point)">
+                    <cost resource="FocusPoint" value="1"/>
+                    <effect description="take_both_the_Disengage_and_the_Dodge_actions"/>
+                </option>
+            </choice>
+        </action_option>
+
+        <action_option name="Step of the Wind" type="BonusAction">
+            <description_text>Take the Dash action as a Bonus Action. Alternatively, expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.</description_text>
+            <choice name="StepOfTheWindChoice">
+                <option name="Dash (No Cost)">
+                    <effect description="take_the_Dash_action"/>
+                </option>
+                <option name="Disengage and Dash (Costs 1 Focus Point)">
+                    <cost resource="FocusPoint" value="1"/>
+                    <effect description="take_both_the_Disengage_and_Dash_actions_AND_your_jump_distance_is_doubled_for_the_turn"/>
+                </option>
+            </choice>
+        </action_option>
       </feature>
       <feature>
         <name>Level 2: Unarmored Movement</name>
