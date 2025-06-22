@@ -1,0 +1,3564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Saber-Toothed Tiger [2024]</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>13</ac>
+    <hp>52 (7d10+14)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>18</str>
+    <dex>17</dex>
+    <con>15</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <save>Str +6, Dex +5</save>
+    <skill>Stealth +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages />
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Running Leap</name>
+      <text>With a 10-foot running start, the tiger can Long Jump up to 25 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The tiger makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6 + 4) Slashing damage.</text>
+      <attack>Rend|+6|2d6+4</attack>
+    </action>
+    <action>
+      <name>Nimble Escape (Bonus Action)</name>
+      <text>The tiger takes the Disengage or Hide action.</text>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 369</description>
+    <environment>arctic, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Sahuagin Baron [2024]</name>
+    <sortname>Sahuagin, Baron</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>lawful evil</alignment>
+    <ac>16</ac>
+    <hp>76 (9d10+27)</hp>
+    <speed>30 ft., swim 50 ft.</speed>
+    <init>5</init>
+    <str>19</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>17</cha>
+    <save>Wis +4, Con +6, Dex +5</save>
+    <skill>Perception +7</skill>
+    <passive>17</passive>
+    <languages>Sahuagin</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>acid, cold</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Breastplate, Trident</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Blood Frenzy</name>
+      <text>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Hit Points.</text>
+    </trait>
+    <trait>
+      <name>Limited Amphibiousness</name>
+      <text>The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</text>
+    </trait>
+    <trait>
+      <name>Shark Telepathy</name>
+      <text>The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sahuagin makes three Trident attacks.</text>
+    </action>
+    <action>
+      <name>Trident</name>
+      <text>Melee or Ranged Attack Roll: +7, reach 5 ft. or range 20/60 ft. Hit: 13 (2d8 + 4) Piercing damage.</text>
+      <attack>Trident|+7|2d8+4</attack>
+    </action>
+    <reaction>
+      <name>Fiendish Blood</name>
+      <text>Trigger: The sahuagin takes Piercing or Slashing damage. Response: dConstitution Saving Throw: DC 14, each creature of the sahuagin's choice in a 5-foot Emanation originating from the sahuagin. Failure: 10 (3d6) Acid damage, and the target is cursed until it finishes a Short or Long Rest. While cursed, the target can't benefit from the Invisible condition, its Speed decreases by 10 feet, and all Fiends within 120 feet of the target can sense its location regardless of interposing obstacles.</text>
+      <attack>Fiendish Blood||3d6</attack>
+    </reaction>
+    <description>Sahuagin are fiendish terrors that prey on creatures above and below the water. Called "sea devils" by residents of coastal communities, sahuagin are ruthless raiders. They ransack ships, fishing villages, and undersea communities to slake their bloodthirst, claim treasure, and make sacrifices to their vicious deity—the sharklike god Sekolah.
+	Sahuagin constantly war on any peoples living near their territory. Merfolk and other aquatic folk bear the brunt of these attacks, but sahuagin also hunt air-breathers who sail over or swim through the waters the sea devils claim. Sahuagin often attack alongside sharks, which they can telepathically command.
+
+Sahuagin Baron:
+During times of great conflict, Sekolah blesses particularly ruthless sahuagin warriors with increased size and an additional pair of arms, transforming them into sahuagin barons. These boons elevate the recipients' status among their kind, and they become champions or leaders. Sahuagin barons' blood is infused with profane magic capable of searing their enemies and making these foes irresistible targets for other Fiends.
+
+Source:	Monster Manual 2024 p. 265</description>
+    <environment>coastal, underwater</environment>
+  </monster>
+
+<monster>
+    <name>Sahuagin Priest [2024]</name>
+    <sortname>Sahuagin, Priest</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>38 (7d8+7)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <init>0</init>
+    <str>13</str>
+    <dex>11</dex>
+    <con>12</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>13</cha>
+    <save />
+    <skill>Perception +6, Religion +3</skill>
+    <passive>16</passive>
+    <languages>Sahuagin</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist>acid, cold</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Blood Frenzy</name>
+      <text>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Hit Points.</text>
+    </trait>
+    <trait>
+      <name>Limited Amphibiousness</name>
+      <text>The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</text>
+    </trait>
+    <trait>
+      <name>Shark Telepathy</name>
+      <text>The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sahuagin makes two Spectral Jaws attacks.</text>
+    </action>
+    <action>
+      <name>Spectral Jaws</name>
+      <text>Melee or Ranged Attack Roll: +4, reach 5 ft. or range 120 ft. Hit: 11 (2d8 + 2) Force damage.</text>
+      <attack>Spectral Jaws|+4|2d8+2</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The sahuagin casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12):
+
+	• At will: Thaumaturgy
+	• 2/Day each: Hold Person, Tongues</text>
+    </action>
+    <action>
+      <name>Fiendish Aid (2/Day) (Bonus Action)</name>
+      <recharge>2/DAY</recharge>
+      <text>The sahuagin casts Bless or Healing Word, using the same spellcasting ability as Spellcasting.</text>
+    </action>
+    <spells>Bless [2024], Healing Word [2024], Thaumaturgy [2024], Hold Person [2024], Tongues [2024]</spells>
+    <description>Sahuagin are fiendish terrors that prey on creatures above and below the water. Called "sea devils" by residents of coastal communities, sahuagin are ruthless raiders. They ransack ships, fishing villages, and undersea communities to slake their bloodthirst, claim treasure, and make sacrifices to their vicious deity—the sharklike god Sekolah.
+	Sahuagin constantly war on any peoples living near their territory. Merfolk and other aquatic folk bear the brunt of these attacks, but sahuagin also hunt air-breathers who sail over or swim through the waters the sea devils claim. Sahuagin often attack alongside sharks, which they can telepathically command.
+
+Sahuagin Priest:
+Sahuagin priests serve the will of Sekolah or other fiendish masters. They direct and support other sahuagin, and they consider every combatant that falls in battle—whether enemy or ally—a sacrifice to their fierce deities.
+
+Source:	Monster Manual 2024 p. 265</description>
+    <environment>coastal, underwater</environment>
+  </monster>
+
+<monster>
+    <name>Sahuagin Warrior [2024]</name>
+    <sortname>Sahuagin, Warrior</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>22 (4d8+4)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <init>0</init>
+    <str>13</str>
+    <dex>11</dex>
+    <con>12</con>
+    <int>12</int>
+    <wis>13</wis>
+    <cha>9</cha>
+    <save />
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages>Sahuagin</languages>
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist>acid, cold</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Blood Frenzy</name>
+      <text>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Hit Points.</text>
+    </trait>
+    <trait>
+      <name>Limited Amphibiousness</name>
+      <text>The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</text>
+    </trait>
+    <trait>
+      <name>Shark Telepathy</name>
+      <text>The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sahuagin makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.</text>
+      <attack>Claw|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Aquatic Charge (Bonus Action)</name>
+      <text>The sahuagin swims up to its Swim Speed straight toward an enemy it can see.</text>
+    </action>
+    <description>Sahuagin are fiendish terrors that prey on creatures above and below the water. Called "sea devils" by residents of coastal communities, sahuagin are ruthless raiders. They ransack ships, fishing villages, and undersea communities to slake their bloodthirst, claim treasure, and make sacrifices to their vicious deity—the sharklike god Sekolah.
+	Sahuagin constantly war on any peoples living near their territory. Merfolk and other aquatic folk bear the brunt of these attacks, but sahuagin also hunt air-breathers who sail over or swim through the waters the sea devils claim. Sahuagin often attack alongside sharks, which they can telepathically command.
+
+Sahuagin Warrior:
+Sahuagin warriors are vicious combatants that savage their foes with webbed claws. Once sahuagin draw blood, they usually attack until either they or their foe is slain.
+
+Source:	Monster Manual 2024 p. 264</description>
+    <environment>coastal, underwater</environment>
+  </monster>
+
+<monster>
+    <name>Salamander [2024]</name>
+    <sortname>Salamander</sortname>
+    <ancestry>Salamander</ancestry>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>90 (12d10+24)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>2</init>
+    <str>18</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>11</int>
+    <wis>10</wis>
+    <cha>12</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Primordial (Ignan)</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Fire Aura</name>
+      <text>At the end of each of the salamander's turns, each creature of the salamander's choice in a 5-foot Emanation originating from the salamander takes 7 (2d6) Fire damage.</text>
+      <attack>Fire Aura||2d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict.</text>
+    </action>
+    <action>
+      <name>Flame Spear</name>
+      <text>Melee or Ranged Attack Roll: +7, reach 5 ft. or range 20/60 ft. Hit: 13 (2d8 + 4) Piercing damage plus 7 (2d6) Fire damage. Hit or Miss: The spear magically returns to the salamander's hand immediately after a ranged attack.</text>
+      <attack>Flame Spear|+7|2d8+4</attack>
+      <attack>Fire Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Strength Saving Throw: DC 15, one Large or smaller creature the salamander can see within 10 feet. Failure: 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Fire damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends.</text>
+      <attack>Constrict||2d6+4</attack>
+      <attack>Fire Damage||2d6</attack>
+    </action>
+    <description>Salamanders are serpentine denizens of the Elemental Plane of Fire. They believe that flames expose the purest forms of all things and delight in burning and melting things, seeing fleeting beauty and striking nuances in blazes consuming different fuels—ancient forests, artistic masterpieces, or living creatures. To salamanders, those that can't endure their flames are nothing but ashes in disguise. They harbor malice toward few creatures, but they consider creating remarkable flames more important than the pain and loss their fires cause.
+	Salamanders are typically content to dwell on the Elemental Plane of Fire, creating strange, temporary art amid the flames. Some travel to other planes of existence and worlds to experience the flames of other realms or create conflagrations of unprecedented scale.
+
+Salamander:
+Most salamanders are arrogant yet curious, seeking to create artful blazes or burn that which has never been burned. They eagerly explain their work to strangers before trying to determine how the strangers burn. Salamanders radiate intense heat, which is conducted by their blazing weapons.
+
+Source:	Monster Manual 2024 p. 267</description>
+    <environment>planar (elemental plane of fire), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Salamander Fire Snake [2024]</name>
+    <sortname>Salamander, Fire Snake</sortname>
+    <ancestry>Salamander</ancestry>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>14</ac>
+    <hp>27 (6d8)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>2</init>
+    <str>12</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>8</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Primordial but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Fire Aura</name>
+      <text>At the end of each of the salamander's turns, each creature of the salamander's choice in a 5-foot Emanation originating from the salamander takes 3 (1d6) Fire damage.</text>
+      <attack>Fire Aura||1d6</attack>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage plus 3 (1d6) Fire damage.</text>
+      <attack>Bite|+4|1d8+2</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <description>Salamanders are serpentine denizens of the Elemental Plane of Fire. They believe that flames expose the purest forms of all things and delight in burning and melting things, seeing fleeting beauty and striking nuances in blazes consuming different fuels—ancient forests, artistic masterpieces, or living creatures. To salamanders, those that can't endure their flames are nothing but ashes in disguise. They harbor malice toward few creatures, but they consider creating remarkable flames more important than the pain and loss their fires cause.
+	Salamanders are typically content to dwell on the Elemental Plane of Fire, creating strange, temporary art amid the flames. Some travel to other planes of existence and worlds to experience the flames of other realms or create conflagrations of unprecedented scale.
+
+Salamander Fire Snake:
+Juvenile salamanders emerge from burning hot, two-foot-diameter eggs. Called fire snakes, these serpentlike creatures slither through the Plane of Fire and other intensely hot places. After consuming the proper fuels and exposing themselves to fiery extremes, fire snakes grow into salamanders.
+
+Source:	Monster Manual 2024 p. 266</description>
+    <environment>planar (elemental plane of fire), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Salamander Inferno Master [2024]</name>
+    <sortname>Salamander, Inferno Master</sortname>
+    <ancestry>Salamander</ancestry>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>18</ac>
+    <hp>256 (27d10+108)</hp>
+    <speed>40 ft., climb 40 ft.</speed>
+    <init>8</init>
+    <str>24</str>
+    <dex>16</dex>
+    <con>18</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>20</cha>
+    <save>Wis +5, Dex +8</save>
+    <skill />
+    <passive>10</passive>
+    <languages>Primordial (Ignan)</languages>
+    <cr>15</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Fire Aura</name>
+      <text>At the end of each of the salamander's turns, each creature of the salamander's choice in a 10-foot Emanation originating from the salamander takes 10 (3d6) Fire damage.</text>
+      <attack>Fire Aura||3d6</attack>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The salamander has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The salamander makes two Flame Trident attacks.</text>
+    </action>
+    <action>
+      <name>Flame Trident</name>
+      <text>Melee or Ranged Attack Roll: +12, reach 5 ft. or range 30/90 ft. Hit: 16 (2d8 + 7) Piercing damage plus 14 (4d6) Fire damage. Hit or Miss: The trident magically returns to the salamander's hand immediately after a ranged attack.</text>
+      <attack>Flame Trident|+12|2d8+7</attack>
+      <attack>Fire Damage||4d6</attack>
+    </action>
+    <action>
+      <name>Inferno Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 18, each creature in a 30-foot-radius Sphere centered on a point the salamander can see within 120 feet. Failure: 35 (10d6) Fire damage, and the target starts burning, taking 5 (1d10) Fire damage at the start of each of its turns instead of the normal burning damage. The target gains 1 Exhaustion level whenever it takes this burning damage. Success: Half damage only.</text>
+      <attack>Inferno Blast||10d6</attack>
+      <attack>Fire Damage||1d10</attack>
+    </action>
+    <action>
+      <name>Blazing Movement (Bonus Action)</name>
+      <text>The salamander moves up to its Speed without provoking Opportunity Attacks. During this movement, fire fills a 5-foot Emanation originating from the salamander. When the Emanation enters a creature's space, that creature takes 7 (2d6) Fire damage. A creature can take this damage only once per turn.</text>
+      <attack>Blazing Movement||2d6</attack>
+    </action>
+    <description>Salamanders are serpentine denizens of the Elemental Plane of Fire. They believe that flames expose the purest forms of all things and delight in burning and melting things, seeing fleeting beauty and striking nuances in blazes consuming different fuels—ancient forests, artistic masterpieces, or living creatures. To salamanders, those that can't endure their flames are nothing but ashes in disguise. They harbor malice toward few creatures, but they consider creating remarkable flames more important than the pain and loss their fires cause.
+	Salamanders are typically content to dwell on the Elemental Plane of Fire, creating strange, temporary art amid the flames. Some travel to other planes of existence and worlds to experience the flames of other realms or create conflagrations of unprecedented scale.
+
+Salamander Inferno Master:
+Salamander inferno masters are ancient connoisseurs of flames and often inhabit places with unique scorching properties. They gather communes of apprentices who learn fiery techniques while helping their mentors accomplish great works. Inferno masters have ambitious goals, such as causing massive volcanic eruptions, opening portals to burning planes, destroying Artifacts, or burning all instances of something from the multiverse.
+
+Source:	Monster Manual 2024 p. 267</description>
+    <environment>planar (elemental plane of fire), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Satyr [2024]</name>
+    <sortname>Satyr</sortname>
+    <ancestry>Satyr</ancestry>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13</ac>
+    <hp>31 (7d8)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>12</str>
+    <dex>16</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <save />
+    <skill>Performance +6, Stealth +5, Perception +2</skill>
+    <passive>12</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The satyr has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Hooves</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.</text>
+      <attack>Hooves|+5|1d4+3</attack>
+    </action>
+    <action>
+      <name>Mockery</name>
+      <text>Wisdom Saving Throw: DC 12, one creature the satyr can see within 90 feet. Failure: 5 (1d6 + 2) Psychic damage.</text>
+      <attack>Mockery||1d6+2</attack>
+    </action>
+    <description>Satyrs embody the untamed joys of the wilderness. They indulge in sprees of merrymaking—eating, drinking, performing, fighting, and frolicking.
+
+Satyr:
+Satyrs enjoy demonstrating their physicality through contests, evicting party poopers, and defending Fey realms.
+
+Source:	Monster Manual 2024 p. 268</description>
+    <environment>forest, planar (feywild)</environment>
+  </monster>
+
+<monster>
+    <name>Satyr Revelmaster [2024]</name>
+    <sortname>Satyr, Revelmaster</sortname>
+    <ancestry>Satyr</ancestry>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>17</ac>
+    <hp>82 (15d8+15)</hp>
+    <speed>40 ft.</speed>
+    <init>7</init>
+    <str>12</str>
+    <dex>18</dex>
+    <con>12</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>17</cha>
+    <save>Wis +5, Dex +7</save>
+    <skill>Performance +9, Acrobatics +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>6</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The satyr has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The satyr makes three Prance attacks.</text>
+    </action>
+    <action>
+      <name>Prance</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage, and the target has the Charmed condition until the start of the satyr's next turn.</text>
+      <attack>Prance|+7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Fey Melody (Recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>The satyr conjures a charming or frightening song. Wisdom Saving Throw: DC 14, each enemy in a 60-foot Emanation originating from the satyr. Failure: The target is subjected to the song's effect:
+
+Charming: The target has the Charmed condition for 1 minute. While Charmed, the target has the Incapacitated condition and uses all its movement to dance in place. The effect ends on the target if it takes any damage. Frightening: 10 (2d6 + 3) Psychic damage, and the target has the Frightened condition for 1 minute. If the target ends its turn out of line of sight from the satyr, the condition ends on it.
+</text>
+      <attack>Frightening Fey Melody||2d6+3</attack>
+    </action>
+    <description>Satyrs embody the untamed joys of the wilderness. They indulge in sprees of merrymaking—eating, drinking, performing, fighting, and frolicking.
+
+Satyr Revelmaster:
+Satyr revelmasters use magical music to change the moods of other creatures. They do so to keep their celebrations exciting and to ward off foes.
+
+Source:	Monster Manual 2024 p. 268</description>
+    <environment>forest, planar (feywild)</environment>
+  </monster>
+
+<monster>
+    <name>Scarecrow [2024]</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>chaotic evil</alignment>
+    <ac>11</ac>
+    <hp>27 (6d8)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>11</str>
+    <dex>13</dex>
+    <con>11</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>13</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common plus one other language</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Fearsome Claw</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Slashing damage, and the target has the Frightened condition until the end of the scarecrow's next turn.</text>
+      <attack>Fearsome Claw|+3|2d4+1</attack>
+    </action>
+    <action>
+      <name>Terrifying Glare</name>
+      <text>Wisdom Saving Throw: DC 11, one creature the scarecrow can see within 30 feet. Failure: The target has the Frightened condition until the end of the scarecrow's next turn. While Frightened, the target has the Paralyzed condition.</text>
+    </action>
+    <description>Spirits of vengeance bound to crude frames, scarecrows arise from folk magic, the prayers of desperate commoners, or possession by spirits that died with violent work left undone. Scarecrows might serve those who created them or might defend a place, family, or community from threats—whether physical or to their way of life.
+	Although scarecrows take their name from rural eﬃgies, they might take varied patchwork forms. Roll on or choose a result from the Scarecrow Frames table to inspire a scarecrow's appearance.
+
+Scarecrow Frames:
+1d8 | The Scarecrow Is Made From...
+1 | Animal furs, bones, horns, and claws.
+2 | Beehives or wasp nests over a wicker frame.
+3 | A carved pumpkin atop a body of thick vines.
+4 | Nets, flotsam, grapnels, and fishing tackle.
+5 | Oversize stuffed animal or mannequin parts.
+6 | Rusty armor and torture devices.
+7 | A sackcloth head atop straw-stuffed clothes.
+8 | Wedding clothes that were never worn.
+
+Source:	Monster Manual 2024 p. 269</description>
+    <environment>grassland</environment>
+  </monster>
+
+<monster>
+    <name>Scorpion [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>10 ft.</speed>
+    <init>0</init>
+    <str>2</str>
+    <dex>11</dex>
+    <con>8</con>
+    <int>1</int>
+    <wis>8</wis>
+    <cha>2</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Sting</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage plus 3 (1d6) Poison damage.</text>
+      <attack>Sting|+2|1d6</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 369,
+		Player's Handbook 2024 p. 356</description>
+    <environment>desert</environment>
+  </monster>
+
+<monster>
+    <name>Scout [2024]</name>
+    <sortname>Scout</sortname>
+    <ancestry>Scout</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>16 (3d8+3)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>11</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>11</int>
+    <wis>13</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Nature +4, Survival +5, Stealth +6, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common plus one other language</languages>
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Leather Armor, Longbow, Shortsword</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The scout makes two attacks, using Shortsword and Longbow in any combination.</text>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.</text>
+      <attack>Shortsword|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.</text>
+      <attack>Longbow|+4|1d8+2</attack>
+    </action>
+    <description>Scouts are warriors of the wilderness, trained in hunting and tracking. They might be explorers or trappers, or they could perform more martial roles as archers, bounty hunters, or outriders.
+
+Scout:
+Scouts are keen archers and acutely aware of their surroundings. They often know several regions particularly well and are familiar with local creatures, landmarks, and perils.
+
+Source:	Monster Manual 2024 p. 270</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Scout Captain [2024]</name>
+    <sortname>Scout, Captain</sortname>
+    <ancestry>Scout</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>5</init>
+    <str>11</str>
+    <dex>16</dex>
+    <con>12</con>
+    <int>14</int>
+    <wis>15</wis>
+    <cha>11</cha>
+    <save>Dex +5, Int +4</save>
+    <skill>Survival +6, Stealth +7, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common plus one other language</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Longbow, Shortsword, Studded Leather Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The scout makes two attacks, using Shortsword or Longbow in any combination.</text>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage, plus 10 (3d6) Piercing damage if the attack was made with Advantage.</text>
+      <attack>Shortsword|+5|1d6+3</attack>
+      <attack>Piercing with Advantage||3d6</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Attack Roll: +5, range 150/600 ft. Hit: 7 (1d8 + 3) Piercing damage, plus 10 (3d6) Piercing damage if the attack was made with Advantage.</text>
+      <attack>Longbow|+5|1d8+3</attack>
+      <attack>Piercing with Advantage||3d6</attack>
+    </action>
+    <action>
+      <name>Aim (Bonus Action)</name>
+      <text>The scout has Advantage on the next attack roll it makes during the current turn.</text>
+    </action>
+    <reaction>
+      <name>Uncanny Dodge</name>
+      <text>Trigger: The scout is hit by an attack roll. Response: The scout halves the damage (round down) it takes from that attack.</text>
+    </reaction>
+    <description>Scouts are warriors of the wilderness, trained in hunting and tracking. They might be explorers or trappers, or they could perform more martial roles as archers, bounty hunters, or outriders.
+
+Scout Captain:
+Scout captains are experienced explorers and sharpshooters. They might lead bands of other scouts or disappear into the wilds alone for months at a time.
+
+Source:	Monster Manual 2024 p. 270</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Sea Hag [2024]</name>
+    <sortname>Hag, Sea</sortname>
+    <ancestry>Hag</ancestry>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>52 (7d8+21)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <init>1</init>
+    <str>16</str>
+    <dex>13</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>12</wis>
+    <cha>13</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages>Common, Giant, Primordial (Aquan)</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The hag can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Vile Appearance</name>
+      <text>Wisdom Saving Throw: DC 11, any Beast or Humanoid that starts its turn within 30 feet of the hag and can see the hag's true form. Failure: The target has the Frightened condition until the start of its next turn. Success: The target is immune to this hag's Vile Appearance for 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Coven Magic</name>
+      <text>While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.</text>
+    </trait>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.</text>
+      <attack>Claw|+5|2d6+3</attack>
+    </action>
+    <action>
+      <name>Death Glare (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Wisdom Saving Throw: DC 11, one Frightened creature the hag can see within 30 feet. Failure: If the target has 20 Hit Points or fewer, it drops to 0 Hit Points. Otherwise, the target takes 13 (3d8) Psychic damage.</text>
+      <attack>Death Glare||3d8</attack>
+    </action>
+    <action>
+      <name>Illusory Appearance</name>
+      <text>The hag casts Disguise Self, using Constitution as the spellcasting ability (spell save DC 13). The spell's duration is 24 hours.
+
+	• At will: Disguise Self</text>
+    </action>
+    <spells>Disguise Self [2024]</spells>
+    <description>Sea hags loathe peace and beauty. Bitter, jealous creatures, they spread chaos and undermine joy however they can, undertaking elaborate deceptions to sow discord for its own sake. The hags' true forms are supernaturally vile, and their baleful gazes can strike down creatures frightened by their appearance.
+	Sea hags cloak themselves in illusions to work their schemes. Roll on or choose a result from the Sea Hag Disguises table to inspire a sea hag's illusion and how they might use it to wreak chaos and destruction.
+
+Sea Hag Disguises:
+1d6 The Sea Hag Takes the Form of A...
+1 | Captive and claims nearby villagers bound them and left them to drown.
+2 | Castaway and shares a cursed item's location with would-be rescuers.
+3 | Healer and passes off poisons as medicine.
+4 | Panic-spreading prophesier of doom.
+5 | Ship captain and delivers passengers to the hag's pet sea monster.
+6 | Wounded sailor and claims their ship was destroyed by merfolk or other peaceful people.
+
+Source:	Monster Manual 2024 p. 271</description>
+    <environment>coastal, underwater</environment>
+  </monster>
+
+<monster>
+    <name>Seahorse [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>5 ft., swim 20 ft.</speed>
+    <init>1</init>
+    <str>1</str>
+    <dex>12</dex>
+    <con>8</con>
+    <int>1</int>
+    <wis>10</wis>
+    <cha>2</cha>
+    <save />
+    <skill>Stealth +5, Perception +2</skill>
+    <passive>12</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The seahorse can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bubble Dash</name>
+      <text>While underwater, the seahorse moves up to its Swim Speed without provoking Opportunity Attacks.</text>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 369</description>
+    <environment>underwater</environment>
+  </monster>
+
+<monster>
+    <name>Shadow [2024]</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>27 (5d8+5)</hp>
+    <speed>40 ft.</speed>
+    <init>2</init>
+    <str>6</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Stealth +6</skill>
+    <passive>10</passive>
+    <languages />
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist>acid, cold, fire, lightning, thunder</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Amorphous</name>
+      <text>The shadow can move through a space as narrow as 1 inch without expending extra movement to do so.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Weakness</name>
+      <text>While in sunlight, the shadow has Disadvantage on D20 Tests.</text>
+    </trait>
+    <action>
+      <name>Draining Swipe</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.</text>
+      <attack>Draining Swipe|+4|1d6+2</attack>
+      <attack>Hours Later||1d4</attack>
+    </action>
+    <action>
+      <name>Shadow Stealth (Bonus Action)</name>
+      <text>While in Dim Light or Darkness, the shadow takes the Hide action.</text>
+    </action>
+    <description>Shadows are incorporeal Undead that feed on life. They resent the living for possessing the potential and vitality lost to them.
+	Shadows lurk in dark, lonely places, typically sites that were meaningful to them in life or cursed places with ties to death, sinister magic, or the Shadowfell. Their victims rise as new shadows and prey on the living.
+	Shadows might resemble the silhouettes of who they were in life or take on more menacing forms. Roll on or choose a result from the Shadow Shapes table to inspire a shadow's form and haunting.
+
+Shadow Shapes:
+1d6 | The Shadow Appears As...
+1 | A distorted stalker that lurks in the woods.
+2 | A fiend that dwells near a wicked ritual site.
+3 | Grasping hands that haunt a miser's home.
+4 | A grim storybook character that follows those who speak its name.
+5 | Its target, acting in eerie pantomime.
+6 | An ominous priest that haunts a defiled site.
+
+Source:	Monster Manual 2024 p. 272</description>
+    <environment>planar (shadowfell), underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Shadow Demon [2024]</name>
+    <size>M</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>30 ft., fly 30 ft.(hover)</speed>
+    <init>3</init>
+    <str>1</str>
+    <dex>17</dex>
+    <con>12</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>14</cha>
+    <save>Dex +5, Cha +4</save>
+    <skill>Stealth +7</skill>
+    <passive>11</passive>
+    <languages>Abyssal; telepathy 120 ft.</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist>acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Demonic Restoration</name>
+      <text>If the demon dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The demon can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</text>
+      <attack>Incorporeal Movement||1d10</attack>
+    </trait>
+    <trait>
+      <name>Light Sensitivity</name>
+      <text>While in Bright Light, the demon has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Umbral Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 16 (3d8 + 3) Psychic damage.</text>
+      <attack>Umbral Claw|+5|3d8+3</attack>
+    </action>
+    <action>
+      <name>Shadow Stealth (Bonus Action)</name>
+      <text>While in Dim Light or Darkness, the demon takes the Hide action.</text>
+    </action>
+    <description>Shadow demons form when exceptionally wicked demons are destroyed and prevented from reconstituting their physical forms in the Abyss. This might occur due to divine intervention, when a demon is destroyed in the Abyss, or under more unusual circumstances. Shadow demons are the incorporeal remnants of these destroyed demons' evil. They usually vaguely resemble their former shapes, but some take purposefully deceptive shapes. Many lurk in dark places or venture out only at night to hide their true forms from those they manipulate.
+	Shadow demons seek ways to regain their former might and take revenge on those who destroyed them. They often ingratiate themselves with more powerful demons or mortal spellcasters, bargaining with and coercing others into restoring them to power. Many try to claim or corrupt souls to restore their fiendish forms, while some shadow demons seek wicked relics or nexuses of profane magic. It typically takes shadow demons centuries to recover their demonic power, if they ever do.
+	Particularly powerful demons might return as multiple shadow demons after being defeated. These fiendish entities each think they're the true manifestation of their past self and hunt one another to recover their power.
+	In rare cases, Fiends other than demons might adopt forms similar to shadow demons.
+
+Source:	Monster Manual 2024 p. 273</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Shadow Dragon [2024]</name>
+    <sortname>Shadow Dragon</sortname>
+    <ancestry>Shadow Dragon</ancestry>
+    <size>H</size>
+    <type>dragon</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16</ac>
+    <hp>189 (18d12+72)</hp>
+    <speed>40 ft., climb 40 ft., fly 80 ft.</speed>
+    <init>14</init>
+    <str>21</str>
+    <dex>19</dex>
+    <con>18</con>
+    <int>14</int>
+    <wis>12</wis>
+    <cha>18</cha>
+    <save>Wis +6, Dex +9</save>
+    <skill>Stealth +14, Perception +11</skill>
+    <passive>21</passive>
+    <languages>Common, Draconic</languages>
+    <cr>13</cr>
+    <vulnerable />
+    <resist>See Living Shadow</resist>
+    <immune>necrotic</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day, or 4/Day in Lair)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Living Shadow</name>
+      <text>While in Dim Light or Darkness, the dragon has Resistance to damage that isn't Force, Psychic, or Radiant.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the dragon has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 3 (1d6) Necrotic damage.</text>
+      <attack>Rend|+10|2d6+5</attack>
+      <attack>Necrotic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Shadow Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 17, each creature in a 60-foot Cone. Failure: 35 (10d6) Necrotic damage. Success: Half damage. Failure or Success: A Humanoid reduced to 0 Hit Points by this damage dies, and a Shadow rises from the corpse. The shadow is under the dragon's control and shares the dragon's Initiative count but acts immediately after the dragon.</text>
+      <attack>Shadow Breath||10d6</attack>
+    </action>
+    <action>
+      <name>Shadow Stealth (Bonus Action)</name>
+      <text>While in Dim Light or Darkness, the dragon takes the Hide action.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Shadow Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Shadow Dragon regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Pounce</name>
+      <text>The dragon moves up to half its Speed, and it makes one Rend attack.</text>
+    </legendary>
+    <legendary>
+      <name>Veil of Shadow</name>
+      <text>The dragon uses Shadow Stealth, and one creature of its choice that it can see within 10 feet of it takes 10 (3d6) Necrotic damage. The dragon can't take this action again until the start of its next turn.</text>
+      <attack>Veil of Shadow||3d6</attack>
+    </legendary>
+    <legendary category="lair">
+      <name>Shadow Dragon Lairs</name>
+      <text>Shadow dragons lair in places of darkness and despair, such as accursed ruins, the depths of the Underdark, or the Shadowfell.
+	The region around a shadow dragon's lair is twisted by its presence, creating the following effects:
+
+Negative Energy Suffusion: Whenever a creature within 1 mile of the lair regains Hit Points from a spell, it subtracts 1d10 from the number of Hit Points regained.
+
+Stifling Shadows: Within 1 mile of the lair, effects that normally create Bright Light instead create Dim Light, and creatures there have Advantage on Dexterity (Stealth) checks.
+
+If the dragon dies or moves its lair elsewhere, these effects end immediately.</text>
+      <attack>Negative Energy Suffusion||1d10</attack>
+    </legendary>
+    <description>Shadow dragons haunt forgotten, lightless places. While they might have once been other types of dragons, the influence of planar forces, negative energy, or sinister magic has stripped them of their former color or luster. In place of any former breath weapon, shadow dragons exhale caliginous gouts that saps life from everything it touches. Those slain by a shadow dragon's breath rise as shades obedient to the shadow dragon's will.
+	Shadow dragons typically dwell in the Underdark, particularly in areas with connections to the Shadowfell or other tenebrous realms. In some cases, they might lurk in dark, corrupted reaches of the regions they preferred before transforming into shadow dragons. Overgrown swamps, sepulchral desert ruins, and ash-choked volcanoes make natural lairs for shadow dragons.
+	Like many other dragons, shadow dragons collect hoards. Their tastes tend to be morbid—collecting coins from ruined empires and their victims' skulls.
+
+Source:	Monster Manual 2024 p. 275</description>
+    <environment>planar (shadowfell), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Shambling Mound [2024]</name>
+    <size>L</size>
+    <type>plant</type>
+    <alignment>unaligned</alignment>
+    <ac>15</ac>
+    <hp>110 (13d10+39)</hp>
+    <speed>30 ft., swim 20 ft.</speed>
+    <init>-1</init>
+    <str>18</str>
+    <dex>8</dex>
+    <con>16</con>
+    <int>5</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save />
+    <skill>Stealth +3</skill>
+    <passive>10</passive>
+    <languages />
+    <cr>5</cr>
+    <vulnerable />
+    <resist>cold, fire</resist>
+    <immune>lightning</immune>
+    <conditionImmune>deafened, exhaustion</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Lightning Absorption</name>
+      <text>Whenever the shambling mound is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf.</text>
+    </action>
+    <action>
+      <name>Charged Tendril</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Lightning damage. If the target is a Medium or smaller creature, the shambling mound pulls the target 5 feet straight toward itself.</text>
+      <attack>Charged Tendril|+7|1d6+4</attack>
+      <attack>Lightning Damage||2d4</attack>
+    </action>
+    <action>
+      <name>Engulf</name>
+      <text>Strength Saving Throw: DC 15, one Medium or smaller creature within 5 feet. Failure: The target is pulled into the shambling mound's space and has the Grappled condition (escape DC 14). Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (3d6) Lightning damage at the start of each of its turns. When the shambling mound moves, the Grappled target moves with it, costing it no extra movement. The shambling mound can have only one creature Grappled by this action at a time.</text>
+      <attack>Engulf||3d6</attack>
+    </action>
+    <description>Shambling mounds—also known as "shamblers"—embody the tenacity of the wilderness, seeking only to consume and grow. These masses of vegetation rise up to half again as tall as a human and possess thick limbs and a vague head. As they move through bogs and undergrowth, they ensnare creatures that come within reach. Shambling mounds bury those they catch within their own forms as compost.
+	Strange circumstances might give rise to shambling mounds, transforming vegetation into hulks with rudimentary cunning. Such conditions include strikes from magical lightning, nature defending itself, or druidic curses. Roll on or choose a result from the Shambling Mound Cultivation table to inspire a shambling mound's origins and features.
+
+Shambling Mound Cultivation:
+1d6 | The Shambling Mound Is...
+1 | Covered in vibrant alien or Feywild blooms.
+2 | Hauling a rune-etched menhir in its torso.
+3 | Infested with vermin or fungi.
+4 | Made up of knotty vines entangling skeletons.
+5 | Mutated and leaking glowing pollution.
+6 | The remains of an ancient tree or a treant.
+
+Source:	Monster Manual 2024 p. 276</description>
+    <environment>forest, swamp</environment>
+  </monster>
+
+<monster>
+    <name>Shield Guardian [2024]</name>
+    <size>L</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>17</ac>
+    <hp>142 (15d10+60)</hp>
+    <speed>30 ft.</speed>
+    <init>-1</init>
+    <str>18</str>
+    <dex>8</dex>
+    <con>18</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands commands given in any language but can't speak</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Bound</name>
+      <text>The guardian is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (round up) is transferred to the guardian.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The guardian regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point.</text>
+    </trait>
+    <trait>
+      <name>Spell Storing</name>
+      <text>A spellcaster who wears the guardian's amulet can cause the guardian to store one spell of level 4 or lower. To do so, the wearer must cast the spell on the guardian while within 5 feet of it. The spell has no effect but is stored within the guardian. Any previously stored spell is lost when a new spell is stored. The guardian can cast the spell stored with any parameters set by the original caster, requiring no spell components and using the caster's spellcasting ability. The stored spell is then lost.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The guardian makes two Fist attacks.</text>
+    </action>
+    <action>
+      <name>Fist</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Force damage.</text>
+      <attack>Fist|+7|2d6+4</attack>
+      <attack>Force Damage||2d6</attack>
+    </action>
+    <reaction>
+      <name>Protection</name>
+      <text>Trigger: An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian. Response: The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian's next turn.</text>
+    </reaction>
+    <description>An intimidating magical automaton, a shield guardian obeys its master's commands and protects its master from danger. When such a guardian is created, the magic that animates it is intertwined with a bonded command amulet. Any creature that has a shield guardian's command amulet can control that Construct and, in the case of magic-users, imbue it with a spell to unleash under predetermined circumstances. Yet a shield guardian's primary goal is to protect its master. It escorts whoever bears its command amulet and intercedes between the bearer and any threat. Although it isn't mindless, a shield guardian has no sense of self preservation and will sacrifice itself to protect its master.
+	Shield guardians are typically constructed of steel, stone, and wood in the shape of watchful soldiers. More fanciful designs exist, reflecting the tastes of their creators. Given their resilience, it's common for shield guardians to eventually serve creatures other than their creators. A shield guardian's command amulet might be passed down through a magic-using society or family for generations.
+
+Source:	Monster Manual 2024 p. 277</description>
+    <environment>urban</environment>
+  </monster>
+
+<monster>
+    <name>Shrieker Fungus [2024]</name>
+    <sortname>Fungus, Shrieker</sortname>
+    <ancestry>Fungus</ancestry>
+    <size>M</size>
+    <type>plant</type>
+    <alignment>unaligned</alignment>
+    <ac>5</ac>
+    <hp>13 (3d8)</hp>
+    <speed>5 ft.</speed>
+    <init>-4</init>
+    <str>1</str>
+    <dex>1</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>3</wis>
+    <cha>1</cha>
+    <save />
+    <skill />
+    <passive>6</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>blinded, charmed, deafened, frightened</conditionImmune>
+    <senses>blindsight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <reaction>
+      <name>Shriek</name>
+      <text>Trigger: A creature or a source of Bright Light moves within 30 feet of the shrieker. Response: The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies.</text>
+    </reaction>
+    <description>The dank, sunless Underdark is a fertile breeding ground for weird and dangerous fungi.
+
+Shrieker Fungus:
+If exposed to light or otherwise disturbed, mushroomlike shriekers emit a high-pitched noise that gives them their name. This wailing might alert other creatures or attract predators.
+
+Source:	Monster Manual 2024 p. 125</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Silver Dragon Wyrmling [2024]</name>
+    <sortname>Silver Dragon, Wyrmling</sortname>
+    <ancestry>Silver Dragon</ancestry>
+    <size>M</size>
+    <type>dragon (metallic)</type>
+    <alignment>lawful good</alignment>
+    <ac>17</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <init>2</init>
+    <str>19</str>
+    <dex>10</dex>
+    <con>17</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +2, Dex +2</save>
+    <skill>Stealth +2, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 9 (1d10 + 4) Piercing damage.</text>
+      <attack>Rend|+6|1d10+4</attack>
+    </action>
+    <action>
+      <name>Cold Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage.</text>
+      <attack>Cold Breath||4d8</attack>
+    </action>
+    <action>
+      <name>Paralyzing Breath</name>
+      <text>Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</text>
+    </action>
+    <description>Silver dragons work to preserve peace and encourage greatness. They try to live as examples of decency while remaining watchful against evil.
+	Silver dragons typically dwell amid snow-capped mountains, though aspirations and congeniality drive some to instead live among cosmopolitan societies. Disguised as humanoids, they ally with artists, historians, knights, and humble leaders who learn from the past to create better futures.
+	Silver dragons take inspiration from legendary heroes and have grand ambitions. Many collect treasures that reflect these interests, such as histories, ancient art, and the gear of famous champions.
+
+Silver Dragon Wyrmling:
+Silver dragon wyrmlings typically live with one or more parents or mentors, learning much about the world and its past before living on their own.
+
+Source:	Monster Manual 2024 p. 278</description>
+    <environment>mountain, urban</environment>
+  </monster>
+
+<monster>
+    <name>Skeleton [2024]</name>
+    <sortname>Skeleton</sortname>
+    <ancestry>Skeleton</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>lawful evil</alignment>
+    <ac>14</ac>
+    <hp>13 (2d8+4)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>10</str>
+    <dex>16</dex>
+    <con>15</con>
+    <int>6</int>
+    <wis>8</wis>
+    <cha>5</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Shortbow, Shortsword</text>
+    </trait>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.</text>
+      <attack>Shortsword|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Shortbow</name>
+      <text>Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage.</text>
+      <attack>Shortbow|+5|1d6+3</attack>
+    </action>
+    <description>Skeletons rise at the summons of necromancers and foul spirits. Whether they're the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers. In rare cases, skeletons are reanimated but given no particular direction. Roll on or choose a result from the Skeleton Pantomimes table to inspire how undirected skeletons behave.
+
+Skeleton Pantomimes:
+1d6 | Left to Its Own Devices, the Skeleton...
+1 | Delivers meal salvers or ages-old correspondence to the crypt of its dead master.
+2 | Endlessly trains in battle with other skeletons, despite being hacked to animate splinters.
+3 | Mimics ways it entertained itself in life, such as acting, dancing, or reading.
+4 | Performs a familiar task, such as cleaning, cooking, mining, or praying.
+5 | Repeats its final moments of life.
+6 | Stands guard at the post it protected in life.
+
+Skeleton:
+Skeletons are reanimated Humanoid bones bearing the equipment they had in life. They have rudimentary faculties and greater agility than zombies and similar shambling corpses. While they aren't capable of creating plans of their own, they avoid obvious barriers and self-destructive situations.
+
+Source:	Monster Manual 2024 p. 282,
+		Player's Handbook 2024 p. 356</description>
+    <environment>planar (shadowfell), underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Slaad Tadpole [2024]</name>
+    <sortname>Slaad, Tadpole</sortname>
+    <ancestry>Slaad</ancestry>
+    <size>T</size>
+    <type>aberration</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>12</ac>
+    <hp>7 (3d4)</hp>
+    <speed>30 ft., burrow 10 ft.</speed>
+    <init>2</init>
+    <str>7</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>3</int>
+    <wis>5</wis>
+    <cha>3</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>7</passive>
+    <languages>understands Slaad but can't speak</languages>
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist>acid, cold, fire, lightning, thunder</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The slaad has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.</text>
+      <attack>Bite|+4|1d6+2</attack>
+    </action>
+    <description>Unpredictable slaadi devour and multiply across the Ever-Changing Chaos of Limbo. These toadlike, extraplanar beings embody the endless potentiality of their home plane of existence. While slaadi aren't inherently evil, their impulses are wild and often destructive. Many are driven to propagate through supernatural processes. Unfortunately, these processes typically are fatal for other creatures.
+	Slaadi have no formal society. Rather, strong slaadi dominate weaker ones. Blue and red slaadi rampage across Limbo and spill into other worlds at the direction of green slaadi. More powerful slaadi have connections to the Spawning Stone, a source of chaotic magic from which the first slaadi originated. The Spawning Stone is hidden deep within Limbo, and legends tie its origins to the modron overlord Primus or the ruinous slaad lords, such as Ssendam, the golden amoeboid terror, and Ygorl, the winged skeleton. These slaad lords and others plot to spread slaadi across the multiverse.
+
+Salad Control Gems:
+A salad born from the Spawning Stone has a magical control gem embedded in its head. If a creature claims the gem, the salad has the Charmed condition and obeys the gem's bearer. The salad ceases to be Charmed if it is harmed by the gem's bearer or the bearer's allies or if the gem is returned to the salad. A Greater Restoration spell cast on a salad destroys the gem, and the salad ceases to be Charmed. One can obtain a salad's control gem using a Wish or Imprisonment spell. If the salad fails its saving throw against Imprisonment, the caster against the gem, and the salad isn't imprisoned. An Incapacitated salads control gem can be removed by spending 1 minute and succeeding on a DC 20 Wisdom (Medicine) check. Failing this check deals 22 (4d10) piercing damage to the salad.
+
+Slaad Tadpole:
+Slaad tadpoles are ravenous, newborn slaadi. They hatch from eggs implanted into living hosts by red slaadi, but they also appear in great numbers in Limbo and other chaotic realms. Under most conditions, a slaad tadpole transforms into a blue slaad—or a green slaad if its host was able to cast spells of level 3 or higher—within 2d12 hours of hatching.
+
+Source:	Monster Manual 2024 p. 284,
+		Player's Handbook 2024 p. 357</description>
+    <environment>planar (limbo)</environment>
+  </monster>
+
+<monster>
+    <name>Smoke Mephit [2024]</name>
+    <sortname>Mephit, Smoke</sortname>
+    <ancestry>Mephit</ancestry>
+    <size>S</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>13 (3d6+3)</hp>
+    <speed>30 ft., fly 30 ft.</speed>
+    <init>2</init>
+    <str>6</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Stealth +4, Perception +2</skill>
+    <passive>12</passive>
+    <languages>Primordial (Auran, Ignan)</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire, poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Death Burst</name>
+      <text>The mephit explodes when it dies. Constitution Saving Throw: DC 11, each creature in a 5-foot Emanation originating from the mephit. Failure: The target has the Poisoned condition until the end of its next turn.</text>
+    </trait>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.</text>
+      <attack>Claw|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Cinder Breath (Recharge 6)</name>
+      <text>Dexterity Saving Throw: DC 11, one creature the mephit can see within 15 feet. Failure: The target has the Blinded condition until the end of the mephit's next turn.</text>
+      <recharge>D6</recharge>
+    </action>
+    <description>Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.
+	Mephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.
+
+Smoke Mephit:
+Smoke mephits are elusive beings formed of fiery cinders and hot air. They love misleading creatures and then mocking them for their gullibility.
+
+Source:	Monster Manual 2024 p. 208</description>
+    <environment>planar (elemental)</environment>
+  </monster>
+
+<monster>
+    <name>Solar [2024]</name>
+    <size>L</size>
+    <type>celestial (angel)</type>
+    <alignment>lawful good</alignment>
+    <ac>21</ac>
+    <hp>297 (22d10+176)</hp>
+    <speed>50 ft., fly 150 ft.(hover)</speed>
+    <init>20</init>
+    <str>26</str>
+    <dex>22</dex>
+    <con>26</con>
+    <int>25</int>
+    <wis>25</wis>
+    <cha>30</cha>
+    <save />
+    <skill>Perception +14</skill>
+    <passive>24</passive>
+    <languages>all; telepathy 120 ft.</languages>
+    <cr>21</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison, radiant</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+7</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Divine Awareness</name>
+      <text>The solar knows if it hears a lie.</text>
+    </trait>
+    <trait>
+      <name>Exalted Restoration</name>
+      <text>If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (4/Day)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the solar fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The solar has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.</text>
+    </action>
+    <action>
+      <name>Flying Sword</name>
+      <text>Melee or Ranged Attack Roll: +15, reach 10 ft. or range 120 ft. Hit: 22 (4d6 + 8) Slashing damage plus 36 (8d8) Radiant damage. Hit or Miss: The sword magically returns to the solar's hand or hovers within 5 feet of the solar immediately after a ranged attack.</text>
+      <attack>Flying Sword|+15|4d6+8</attack>
+      <attack>Radiant Damage||8d8</attack>
+    </action>
+    <action>
+      <name>Slaying Bow</name>
+      <text>Dexterity Saving Throw: DC 21, one creature the solar can see within 600 feet. Failure: If the creature has 100 Hit Points or fewer, it dies. It otherwise takes 24 (4d8 + 6) Piercing damage plus 36 (8d8) Radiant damage.</text>
+      <attack>Slaying Bow||4d8+6</attack>
+      <attack>Radiant Damage||8d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 25):
+
+	• At will: Detect Evil and Good
+	• 1/Day each: Commune, Control Weather, Dispel Evil and Good, Resurrection</text>
+    </action>
+    <action>
+      <name>Divine Aid (3/Day) (Bonus Action)</name>
+      <recharge>3/DAY</recharge>
+      <text>The solar casts Cure Wounds (level 2 version), Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Solar can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Solar regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Blinding Gaze</name>
+      <text>Constitution Saving Throw: DC 25, one creature the solar can see within 120 feet. Failure: The target has the Blinded condition for 1 minute. Failure or Success: The solar can't take this action again until the start of its next turn.</text>
+    </legendary>
+    <legendary>
+      <name>Radiant Teleport</name>
+      <text>The solar teleports up to 60 feet to an unoccupied space it can see. Dexterity Saving Throw: DC 25, each creature in a 10-foot Emanation originating from the solar at its destination space. Failure: 11 (2d10) Radiant damage. Success: Half damage.</text>
+      <attack>Radiant Teleport||2d10</attack>
+    </legendary>
+    <spells>Detect Evil and Good [2024], Commune [2024], Control Weather [2024], Dispel Evil and Good [2024], Resurrection [2024], Cure Wounds [2024], Lesser Restoration [2024], Remove Curse [2024]</spells>
+    <description>Source:	Monster Manual 2024 p. 288</description>
+    <environment>planar (upper)</environment>
+  </monster>
+
+<monster>
+    <name>Spectator [2024]</name>
+    <size>M</size>
+    <type>aberration (beholder)</type>
+    <alignment>lawful neutral</alignment>
+    <ac>14</ac>
+    <hp>45 (7d8+14)</hp>
+    <speed>5 ft., fly 30 ft.(hover)</speed>
+    <init>2</init>
+    <str>8</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>13</int>
+    <wis>14</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages>Deep Speech, Undercommon; telepathy 120 ft.</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>exhaustion, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spectator uses Eye Rays twice.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.</text>
+      <attack>Bite|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Eye Rays</name>
+      <text>The spectator randomly shoots one of the following magical rays at a target it can see within 90 feet of itself (roll 1d4; reroll if the spectator has already used that ray during this turn):
+
+Eye Rays:
+1d4 | Effect
+1 | Confusion Ray: Wisdom Saving Throw: DC 12. Failure: 5 (2d4) Psychic damage, and the target can't take Reactions until the end of its next turn. On its next turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on that turn.
+2 | Paralyzing Ray: Constitution Saving Throw: DC 12. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+3 | Fear Ray. Wisdom Saving Throw: DC 12. Failure: 5 (2d4) Psychic damage, and the target has the Frightened condition until the end of its next turn.
+4 | Wounding Ray: Constitution Saving Throw: DC 12. Failure: 16 (3d10) Necrotic damage. Success: Half damage.
+</text>
+      <attack>Eye Rays||1d4</attack>
+      <attack>Confusion Ray||2d4</attack>
+      <attack>Fear Ray||2d4</attack>
+      <attack>Wounding Ray||3d10</attack>
+    </action>
+    <reaction>
+      <name>Spell Reflection</name>
+      <text>Trigger: The spectator succeeds on a saving throw against a spell, or a spell's attack roll misses it. Response: dDexterity Saving Throw: DC 12, one creature the spectator can see within 120 feet. Failure: 10 (3d6) Force damage.</text>
+      <attack>Spell Reflection||3d6</attack>
+    </reaction>
+    <description>Invoking mysterious rites involving four beholder eyestalks, a spellcaster can mold aberrant dreams into a beholder-like guardian. Called a spectator, the being summoned by such a ritual resembles a beholder with five magical eyes—a central eye and four on stalks arrayed around the crown of the creature's spherical body.
+	A spectator serves its conjurer for 101 years by guarding something of the spellcaster's choice—typically a treasure or location. The spectator is a reliable guardian and allows only its summoner access to what it protects. A spectator might converse with other creatures, openly discussing its orders and the magic-user who conjured it, but it has no ambitions of its own and won't abandon its post. Should an intruder ignore its warnings, a spectator attempts to drive away the intruder with its magical eye rays.
+	At the end of its service, a spectator might discorporate back into nothingness or wander away, seeking to learn more of the multiverse.
+
+Source:	Monster Manual 2024 p. 289</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Specter [2024]</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>22 (5d8)</hp>
+    <speed>30 ft., fly 50 ft.(hover)</speed>
+    <init>2</init>
+    <str>1</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>11</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist>acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Life Drain</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</text>
+      <attack>Life Drain|+4|2d6</attack>
+    </action>
+    <description>Specters are bodiless, life-devouring spirits drawn to darkness and negative emotions. Having lost all connection to the beings they once were, these hateful spirits drain mortal essence to steal fleeting tastes of life and warmth.
+	Specters seek creatures and locations that exude evil and feed on the suffering they inspire. Roll on or choose a result from the Specter Haunts table to inspire where a specter lurks.
+
+Specter Haunts:
+1d8 | The Specter Lurks Near...
+1 | A community aﬄicted by curses, grudges, plagues, or tragedies.
+2 | An evil Artifact or a deadly magical device.
+3 | The lair of a Fiend or an Undead.
+4 | The place where a villain died or is buried.
+5 | A portal to the Lower Planes, Negative Plane, or Shadowfell.
+6 | The sanctuary of a necromancer or death cult.
+7 | A secluded monument binding wicked souls.
+8 | The site of a disaster or mass death.
+
+Source:	Monster Manual 2024 p. 290</description>
+    <environment>underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Sphinx of Lore [2024]</name>
+    <sortname>Sphinx, Lore</sortname>
+    <ancestry>Sphinx</ancestry>
+    <size>L</size>
+    <type>celestial</type>
+    <alignment>lawful neutral</alignment>
+    <ac>17</ac>
+    <hp>170 (20d10+60)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <init>10</init>
+    <str>18</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>18</int>
+    <wis>18</wis>
+    <cha>18</cha>
+    <save />
+    <skill>Arcana +12, History +12, Perception +8, Religion +12</skill>
+    <passive>18</passive>
+    <languages>Celestial, Common</languages>
+    <cr>11</cr>
+    <vulnerable />
+    <resist>necrotic, radiant</resist>
+    <immune>psychic</immune>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Inscrutable</name>
+      <text>No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day, or 4/Day in Lair)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the sphinx fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sphinx makes three Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +8, reach 5 ft. Hit: 14 (3d6 + 4) Slashing damage.</text>
+      <attack>Claw|+8|3d6+4</attack>
+    </action>
+    <action>
+      <name>Mind-Rending Roar (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Wisdom Saving Throw: DC 16, each enemy in a 300-foot Emanation originating from the sphinx. Failure: 35 (10d6) Psychic damage, and the target has the Incapacitated condition until the start of the sphinx's next turn.</text>
+      <attack>Mind-Rending Roar||10d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):
+
+	• At will: Detect Magic, Identify, Mage Hand, Minor Illusion, Prestidigitation
+	• 1/Day each: Dispel Magic, Legend Lore, Locate Object, Plane Shift, Remove Curse, Tongues</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Sphinx of Lore can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Sphinx of Lore regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Arcane Prowl</name>
+      <text>The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.</text>
+    </legendary>
+    <legendary>
+      <name>Weight of Years</name>
+      <text>Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can't take this action again until the start of its next turn.</text>
+      <attack>Weight of Years||3d10</attack>
+    </legendary>
+    <legendary category="lair">
+      <name>Sphinx Lairs</name>
+      <text>Sphinxes typically dwell in places that hold great knowledge or prophetic magic.
+	The region containing a sphinx of lore's or sphinx of valor's lair is altered by its presence, creating the following effects:
+
+Distant Sight: While in its lair, the sphinx can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcasting action. When cast this way, the spell's range is 1 mile.
+
+Infusion of Knowledge: Whenever the sphinx or one of its allies takes a Study action while within 1 mile of the lair, it adds 1d6 to any ability check it makes for that action.
+
+If the sphinx dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Detect Magic [2024], Identify [2024], Mage Hand [2024], Minor Illusion [2024], Prestidigitation [2024], Dispel Magic [2024], Legend Lore [2024], Locate Object [2024], Plane Shift [2024], Remove Curse [2024], Tongues [2024]</spells>
+    <description>Sphinxes protect the secrets of the multiverse. Formed from the spirits of sages and explorers, sphinxes know the power of truth and the importance of preserving it. They share their wisdom only with those who prove themselves wise or overcome tests of worthiness, such as riddles or battles with dangerous beasts. Through their existences, sphinxes might change form as they gain more nuanced understanding of cosmic enigmas.
+
+Sphinx of Lore:
+Sphinxes of lore each know a great secret and protect it all costs. This truth might take the form of an ancient text, a magical puzzle, or a path to another world. These sphinxes might gain reputations as sages or oracles, but they typically dwell far from civilization.
+
+Source:	Monster Manual 2024 p. 293</description>
+    <environment>desert, planar (upper)</environment>
+  </monster>
+
+<monster>
+    <name>Sphinx of Secrets [2024]</name>
+    <sortname>Sphinx, Secrets</sortname>
+    <ancestry>Sphinx</ancestry>
+    <size>L</size>
+    <type>celestial</type>
+    <alignment>lawful neutral</alignment>
+    <ac>16</ac>
+    <hp>136 (16d10+48)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <init>5</init>
+    <str>18</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>18</int>
+    <wis>18</wis>
+    <cha>18</cha>
+    <save />
+    <skill>History +7, Perception +7, Religion +7</skill>
+    <passive>17</passive>
+    <languages>Celestial, Common</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist>necrotic, radiant</resist>
+    <immune>psychic</immune>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Inscrutable</name>
+      <text>No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The sphinx has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sphinx makes three Claw attacks. It can replace one attack with a use of Curses of the Riddle.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage plus 7 (2d6) Radiant damage.</text>
+      <attack>Claw|+7|2d8+4</attack>
+      <attack>Radiant Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Curse of the Riddle</name>
+      <text>Intelligence Saving Throw: DC 15, one creature the sphinx can see within 60 feet. Failure: 21 (6d6) Psychic damage, and the target is cursed with a riddle. The cursed target has Disadvantage on ability checks and attack rolls. In addition, if it takes the Magic action, it must succeed on a DC 15 Intelligence saving throw or that action is wasted. The cursed target can take a Study action to make a DC 15 Intelligence check, solving the riddle and ending the curse on a success. The curse ends early if the sphinx curses another target.</text>
+      <attack>Curse of the Riddle||6d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 15):
+
+	• At will: Detect Magic, Identify, Prestidigitation
+	• 1/Day each: Locate Object, Remove Curse</text>
+    </action>
+    <legendary category="lair">
+      <name>Sphinx Lairs</name>
+      <text>Sphinxes typically dwell in places that hold great knowledge or prophetic magic.
+	The region containing a sphinx of lore's or sphinx of valor's lair is altered by its presence, creating the following effects:
+
+Distant Sight: While in its lair, the sphinx can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcasting action. When cast this way, the spell's range is 1 mile.
+
+Infusion of Knowledge: Whenever the sphinx or one of its allies takes a Study action while within 1 mile of the lair, it adds 1d6 to any ability check it makes for that action.
+
+If the sphinx dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Clairvoyance [2024], Detect Magic [2024], Identify [2024], Prestidigitation [2024], Locate Object [2024], Remove Curse [2024]</spells>
+    <description>Sphinxes protect the secrets of the multiverse. Formed from the spirits of sages and explorers, sphinxes know the power of truth and the importance of preserving it. They share their wisdom only with those who prove themselves wise or overcome tests of worthiness, such as riddles or battles with dangerous beasts. Through their existences, sphinxes might change form as they gain more nuanced understanding of cosmic enigmas.
+
+Sphinx of Secrets:
+Sphinxes of secrets are commonly associated with a site of great magic or learning. These immortal beings often outlive such locations, though, and might protect a site's ruins as they continue their own studies. Sphinxes of secrets fiercely guard their dwellings and research.
+
+Source:	Monster Manual 2024 p. 292</description>
+    <environment>desert, planar (upper)</environment>
+  </monster>
+
+<monster>
+    <name>Sphinx of Valor [2024]</name>
+    <sortname>Sphinx, Valor</sortname>
+    <ancestry>Sphinx</ancestry>
+    <size>L</size>
+    <type>celestial</type>
+    <alignment>lawful neutral</alignment>
+    <ac>17</ac>
+    <hp>199 (19d10+95)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <init>12</init>
+    <str>22</str>
+    <dex>10</dex>
+    <con>20</con>
+    <int>16</int>
+    <wis>23</wis>
+    <cha>18</cha>
+    <save>Wis +12, Con +11, Dex +6, Int +9</save>
+    <skill>Arcana +9, Perception +12, Religion +15</skill>
+    <passive>22</passive>
+    <languages>Celestial, Common</languages>
+    <cr>17</cr>
+    <vulnerable />
+    <resist>necrotic, radiant</resist>
+    <immune>psychic</immune>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+6</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Inscrutable</name>
+      <text>No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day, or 4/Day in Lair)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the sphinx fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sphinx makes two Claw attacks and uses Roar.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +12, reach 5 ft. Hit: 20 (4d6 + 6) Slashing damage.</text>
+      <attack>Claw|+12|4d6+6</attack>
+    </action>
+    <action>
+      <name>Roar (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):
+
+First Roar: Wisdom Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: The target has the Frightened condition for 1 minute.
+
+Second Roar: Wisdom Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+Third Roar: Constitution Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: 44 (8d10) Thunder damage, and the target has the Prone condition. Success: Half damage only.
+</text>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 20):
+
+	• At will: Detect Evil and Good, Thaumaturgy
+	• 1/Day each: Detect Magic, Dispel Magic, Greater Restoration, Heroes' Feast, Zone of Truth</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Sphinx of Valor can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Sphinx of Valor regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Arcane Prowl</name>
+      <text>The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.</text>
+    </legendary>
+    <legendary>
+      <name>Weight of Years</name>
+      <text>Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can't take this action again until the start of its next turn.</text>
+      <attack>Weight of Years||3d10</attack>
+    </legendary>
+    <legendary category="lair">
+      <name>Sphinx Lairs</name>
+      <text>Sphinxes typically dwell in places that hold great knowledge or prophetic magic.
+	The region containing a sphinx of lore's or sphinx of valor's lair is altered by its presence, creating the following effects:
+
+Distant Sight: While in its lair, the sphinx can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcasting action. When cast this way, the spell's range is 1 mile.
+
+Infusion of Knowledge: Whenever the sphinx or one of its allies takes a Study action while within 1 mile of the lair, it adds 1d6 to any ability check it makes for that action.
+
+If the sphinx dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Clairvoyance [2024], Detect Evil and Good [2024], Thaumaturgy [2024], Detect Magic [2024], Dispel Magic [2024], Greater Restoration [2024], Heroes' Feast [2024], Zone of Truth [2024]</spells>
+    <description>Sphinxes protect the secrets of the multiverse. Formed from the spirits of sages and explorers, sphinxes know the power of truth and the importance of preserving it. They share their wisdom only with those who prove themselves wise or overcome tests of worthiness, such as riddles or battles with dangerous beasts. Through their existences, sphinxes might change form as they gain more nuanced understanding of cosmic enigmas.
+
+Sphinx of Valor:
+Sphinxes of valor guard world-changing or dangerous secrets—evidence of weird truths, deadly Artifacts, and things that shouldn't exist. They inhabit hidden, magical sites and hold their duty above mortal life. If threatened, a sphinx of valor defends its charge with its supernaturally empowered roar and fierce strikes.
+
+Source:	Monster Manual 2024 p. 294</description>
+    <environment>desert, planar (upper)</environment>
+  </monster>
+
+<monster>
+    <name>Sphinx of Wonder [2024]</name>
+    <sortname>Sphinx, Wonder</sortname>
+    <ancestry>Sphinx</ancestry>
+    <size>T</size>
+    <type>celestial</type>
+    <alignment>lawful good</alignment>
+    <ac>13</ac>
+    <hp>24 (7d4+7)</hp>
+    <speed>20 ft., fly 40 ft.</speed>
+    <init>3</init>
+    <str>6</str>
+    <dex>17</dex>
+    <con>13</con>
+    <int>15</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Stealth +5, Arcana +4, Religion +4</skill>
+    <passive>11</passive>
+    <languages>Celestial, Common</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist>necrotic, psychic, radiant</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The sphinx has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</text>
+      <attack>Rend|+5|1d4+3</attack>
+      <attack>Radiant Damage||2d6</attack>
+    </action>
+    <reaction>
+      <name>Burst of Ingenuity (2/Day)</name>
+      <recharge>2/DAY</recharge>
+      <text>Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll.</text>
+    </reaction>
+    <legendary category="lair">
+      <name>Sphinx Lairs</name>
+      <text>Sphinxes typically dwell in places that hold great knowledge or prophetic magic.
+	The region containing a sphinx of lore's or sphinx of valor's lair is altered by its presence, creating the following effects:
+
+Distant Sight: While in its lair, the sphinx can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcasting action. When cast this way, the spell's range is 1 mile.
+
+Infusion of Knowledge: Whenever the sphinx or one of its allies takes a Study action while within 1 mile of the lair, it adds 1d6 to any ability check it makes for that action.
+
+If the sphinx dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Clairvoyance [2024]</spells>
+    <description>Sphinxes protect the secrets of the multiverse. Formed from the spirits of sages and explorers, sphinxes know the power of truth and the importance of preserving it. They share their wisdom only with those who prove themselves wise or overcome tests of worthiness, such as riddles or battles with dangerous beasts. Through their existences, sphinxes might change form as they gain more nuanced understanding of cosmic enigmas.
+
+Sphinx of Wonder:
+A sphinx of wonder is brightly feathered and the size of a lion cub. One comes into being every time a unique idea is conceived on the Material Plane. Each sphinx of wonder is fascinated by a particular type of story or field of study, and it learns all it can about that topic. It bears a unique sigil on its forehead that suggests the type of knowledge that fascinates it. Sometimes, a sphinx of wonder forms a bond with a mortal scholar and aids them in their research.
+
+Source:	Monster Manual 2024 p. 291,
+		Player's Handbook 2024 p. 357</description>
+    <environment>desert, planar (upper)</environment>
+  </monster>
+
+<monster>
+    <name>Spider [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>20 ft., climb 20 ft.</speed>
+    <init>2</init>
+    <str>2</str>
+    <dex>14</dex>
+    <con>8</con>
+    <int>1</int>
+    <wis>10</wis>
+    <cha>2</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>10</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 2 (1d4) Poison damage.</text>
+      <attack>Bite|+4|1d4</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 369,
+		Player's Handbook 2024 p. 357</description>
+    <environment>desert, forest, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Spined Devil [2024]</name>
+    <size>S</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>13</ac>
+    <hp>45 (10d6+10)</hp>
+    <speed>20 ft., fly 40 ft.</speed>
+    <init>2</init>
+    <str>10</str>
+    <dex>15</dex>
+    <con>12</con>
+    <int>11</int>
+    <wis>14</wis>
+    <cha>8</cha>
+    <save />
+    <skill />
+    <passive>12</passive>
+    <languages>Infernal; telepathy 120 ft.</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Flyby</name>
+      <text>The devil doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes two attacks, using Infernal Fork and Tail Spine in any combination.</text>
+    </action>
+    <action>
+      <name>Infernal Fork</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 3 (1d6) Fire damage.</text>
+      <attack>Infernal Fork|+4|1d6+2</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Tail Spine</name>
+      <text>Ranged Attack Roll: +4, range 20/80 ft. Hit: 4 (1d4 + 2) Piercing damage plus 3 (1d6) Fire damage.</text>
+      <attack>Tail Spine|+4|1d4+2</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <description>Spined devils, also known as spinagons, lurk in the shadows of the Lower Planes, seeking secrets for their infernal lords. They prefer to attack from the air, flinging wicked barbs while staying out of reach of foes. Spined devils collect information to gain leverage over mortals or to entice powerful devils. Roll on or choose a result from the Spined Devil Intelligence table to inspire what information a spined devil seeks or already possesses.
+
+Spined Devil Intelligence:
+1d6 | The Spined Devil Covets Information About...
+1 | Artifacts, their locations, and their owners.
+2 | Betrayals by infernal allies or other devils.
+3 | Crimes or deceptions by influential leaders.
+4 | The identities of incognito individuals.
+5 | The movements of extraplanar armies.
+6 | Prophecies or secrets hidden by gods.
+
+Source:	Monster Manual 2024 p. 296</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Spirit Naga [2024]</name>
+    <sortname>Naga, Spirit</sortname>
+    <ancestry>Naga</ancestry>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17</ac>
+    <hp>135 (18d10+36)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>18</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>16</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save>Wis +5, Con +5, Dex +6, Cha +6</save>
+    <skill />
+    <passive>12</passive>
+    <languages>Abyssal, Common</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Fiendish Restoration</name>
+      <text>If it dies, the naga returns to life in 1d6 days and regains all its Hit Points. Only a Wish spell can prevent this trait from functioning.</text>
+      <attack>Fiendish Restoration||1d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The naga makes three attacks, using Bite or Necrotic Ray in any combination.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 7 (1d6 + 4) Piercing damage plus 14 (4d6) Poison damage.</text>
+      <attack>Bite|+7|1d6+4+4d6</attack>
+    </action>
+    <action>
+      <name>Necrotic Ray</name>
+      <text>Ranged Attack Roll: +6, range 60 ft. Hit: 21 (6d6) Necrotic damage.</text>
+      <attack>Necrotic Ray|+6|6d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14):
+
+	• At will: Detect Magic, Mage Hand, Minor Illusion, Water Breathing
+	• 2/Day each: Detect Thoughts, Dimension Door, Hold Person (level 3 version), Lightning Bolt (level 4 version)</text>
+    </action>
+    <spells>Detect Magic [2024], Mage Hand [2024], Minor Illusion [2024], Water Breathing [2024], Detect Thoughts [2024], Dimension Door [2024], Hold Person [2024], Lightning Bolt [2024]</spells>
+    <description>Spirit nagas loathe the world and all creatures. Possessing perfect memories, these venomous, cobra-like creatures recall every slight committed against them during their immortal existences. In their dank, joyless lairs, they create vicious plots to avenge themselves against even petty offenses.
+	Spirit nagas seek to claim what they believe they deserve. Their schemes often involve poisons, vile spells, cursed objects, or magical compulsions, eventually making them wellsprings of diabolical knowledge and evil inspiration. Other villains often seek out spirit nagas as advisers and allies. Roll on or choose a result from the Spirit Naga Grievances table to inspire what motivates a spirit naga's schemes.
+
+Spirit Naga Grievances:
+1d6 | The Spirit Naga Believes...
+1 | A character is to blame for its recent failures.
+2 | It has been evicted from its rightful home.
+3 | Locals have reneged on an age-old bargain.
+4 | Other creatures are mocking it.
+5 | A rival is spying on it.
+6 | Someone's treasure rightfully belongs to it.
+
+Source:	Monster Manual 2024 p. 297</description>
+    <environment>planar (lower), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Sprite [2024]</name>
+    <size>T</size>
+    <type>fey</type>
+    <alignment>neutral good</alignment>
+    <ac>15</ac>
+    <hp>10 (4d4)</hp>
+    <speed>10 ft., fly 40 ft.</speed>
+    <init>4</init>
+    <str>3</str>
+    <dex>18</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Stealth +8, Perception +3</skill>
+    <passive>13</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Needle Sword</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Piercing damage.</text>
+      <attack>Needle Sword|+6|1d4+4</attack>
+    </action>
+    <action>
+      <name>Enchanting Bow</name>
+      <text>Ranged Attack Roll: +6, range 40/160 ft. Hit: 1 Piercing damage, and the target has the Charmed condition until the start of the sprite's next turn.</text>
+      <attack>Enchanting Bow|+6|1</attack>
+    </action>
+    <action>
+      <name>Heart Sight</name>
+      <text>Charisma Saving Throw: DC 10, one creature within 5 feet the sprite can see (Celestials, Fiends, and Undead automatically fail the save). Failure: The sprite knows the target's emotions and alignment.</text>
+    </action>
+    <action>
+      <name>Invisibility</name>
+      <text>The sprite casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.
+
+	• At will: Invisibility</text>
+    </action>
+    <spells>Invisibility [2024]</spells>
+    <description>Sprites dwell in mystical forests touched by the magic of the Feywild, living peacefully with most other Fey and friends of nature. These foot-tall spirits of nature resemble elves with exaggerated, whimsical features and gossamer wings.
+	Sprites can sense the innate goodness or wickedness of other creatures. Those that enter their realms with good intentions might be treated to tiny feasts and celebrations. The wicked face nasty tricks and bold ambushes at the hands of invisible sprite defenders. These woodland guardians enchant the arrows of their tiny bows with charming magic that can pierce the heart of the fiercest foe. Sprites oppose any creatures that seek to harm places of natural magic and beauty. This can put them into conflict with would-be settlers, monsters like ettercaps, and despoilers such as goblinoids and hags. They frequently aid other good creatures of the forest, including treants and unicorns, in defending their homes.
+
+Source:	Monster Manual 2024 p. 298,
+		Player's Handbook 2024 p. 358</description>
+    <environment>forest, planar (feywild)</environment>
+  </monster>
+
+<monster>
+    <name>Spy [2024]</name>
+    <sortname>Spy</sortname>
+    <ancestry>Spy</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>12</ac>
+    <hp>27 (6d8)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>4</init>
+    <str>10</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save />
+    <skill>Insight +4, Deception +5, Stealth +6, Investigation +5, Sleight Of Hand +4, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common plus one other language</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Hand Crossbow, Shortsword, Thieves' Tools</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Shortsword|+4|1d6+2</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Hand Crossbow</name>
+      <text>Ranged Attack Roll: +4, range 30/120 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Hand Crossbow|+4|1d6+2</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Cunning Action (Bonus Action)</name>
+      <text>The spy takes the Dash, Disengage, or Hide action.</text>
+    </action>
+    <description>Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity. Roll on or choose a result from the Spy Personas table to inspire a spy's disguise.
+
+Spy Personas:
+1d4 | The Spy Disguises Themself As...
+1 | A bard or traveling performer.
+2 | A captive or servant of a monster or villain.
+3 | A dignitary or traveler from a distant land.
+4 | A visitor from a different time or world.
+
+Spy:
+Spies use charm and deception to veil their true intentions. If forced into combat, they seek to end such conflicts quietly and decisively.
+
+Source:	Monster Manual 2024 p. 295</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Spy Master [2024]</name>
+    <sortname>Spy, Master</sortname>
+    <ancestry>Spy</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>19</ac>
+    <hp>137 (25d8+25)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>9</init>
+    <str>10</str>
+    <dex>20</dex>
+    <con>12</con>
+    <int>18</int>
+    <wis>16</wis>
+    <cha>16</cha>
+    <save>Wis +7, Con +5, Dex +9, Int +8</save>
+    <skill>Insight +7, Deception +7, Stealth +13, Investigation +8, Sleight Of Hand +9, Perception +11</skill>
+    <passive>21</passive>
+    <languages>Common plus two other languages</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Hand Crossbow, Rapier, Thieves' Tools</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spy makes three attacks, using Rapier or Hand Crossbow in any combination.</text>
+    </action>
+    <action>
+      <name>Rapier</name>
+      <text>Melee Attack Roll: +9, reach 5 ft. Hit: 14 (2d8 + 5) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Rapier|+9|2d8+5</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Hand Crossbow</name>
+      <text>Ranged Attack Roll: +9, range 30/120 ft. Hit: 12 (2d6 + 5) Piercing damage plus 9 (2d8) Poison damage.</text>
+      <attack>Hand Crossbow|+9|2d6+5</attack>
+      <attack>Poison Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Smoke Bomb (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>The spy throws a bomb to a point it can see within 30 feet of itself. Constitution Saving Throw: DC 16, each creature in a 20-foot-radius Sphere centered on that point. Failure: 28 (8d6) Poison damage, and the target has the Blinded condition until the end of the spy's next turn. Success: Half damage only.</text>
+      <attack>Smoke Bomb||8d6</attack>
+    </action>
+    <action>
+      <name>Cunning Action (Bonus Action)</name>
+      <text>The spy takes the Dash, Disengage, or Hide action.</text>
+    </action>
+    <description>Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity. Roll on or choose a result from the Spy Personas table to inspire a spy's disguise.
+
+Spy Personas:
+1d4 | The Spy Disguises Themself As...
+1 | A bard or traveling performer.
+2 | A captive or servant of a monster or villain.
+3 | A dignitary or traveler from a distant land.
+4 | A visitor from a different time or world.
+
+Spy Master:
+Spy masters have extensive experience in gathering secrets while leaving no evidence of their presence.
+
+Source:	Monster Manual 2024 p. 295</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Steam Mephit [2024]</name>
+    <sortname>Mephit, Steam</sortname>
+    <ancestry>Mephit</ancestry>
+    <size>S</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>10</ac>
+    <hp>17 (5d6)</hp>
+    <speed>30 ft., fly 30 ft.</speed>
+    <init>0</init>
+    <str>5</str>
+    <dex>11</dex>
+    <con>10</con>
+    <int>11</int>
+    <wis>10</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Stealth +2</skill>
+    <passive>10</passive>
+    <languages>Primordial (Aquan, Ignan)</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire, poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Blurred Form</name>
+      <text>Attack rolls against the mephit are made with Disadvantage unless the mephit has the Incapacitated condition.</text>
+    </trait>
+    <trait>
+      <name>Death Burst</name>
+      <text>The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Fire damage. Success: Half damage.</text>
+    </trait>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.</text>
+      <attack>Claw|+2|1d4+1d4</attack>
+    </action>
+    <action>
+      <name>Steam Breath (Recharge 6)</name>
+      <text>Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target's Speed decreases by 10 feet until the end of the mephit's next turn. Success: Half damage only. Failure or Success: Being underwater doesn't grant Resistance to this Fire damage.</text>
+      <recharge>D6</recharge>
+    </action>
+    <description>Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.
+	Mephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.
+
+Steam Mephit:
+These arrogant mephits are made of heat and vaporous water. They often trick creatures into doing them favors, then renege on promised rewards.
+
+Source:	Monster Manual 2024 p. 208</description>
+    <environment>planar (elemental)</environment>
+  </monster>
+
+<monster>
+    <name>Stirge [2024]</name>
+    <sortname>Stirge</sortname>
+    <ancestry>Stirge</ancestry>
+    <size>T</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>13</ac>
+    <hp>5 (2d4)</hp>
+    <speed>10 ft., fly 40 ft.</speed>
+    <init>3</init>
+    <str>4</str>
+    <dex>16</dex>
+    <con>11</con>
+    <int>2</int>
+    <wis>8</wis>
+    <cha>6</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Proboscis</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage, and the stirge attaches to the target. While attached, the stirge can't make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stirge's turns.
+	The stirge can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the stirge as an action.</text>
+      <attack>Proboscis|+5|1d6+3</attack>
+      <attack>Necrotic Damage||2d4</attack>
+    </action>
+    <description>Stirges are bat-size vermin with dagger-length proboscises that attach to other creatures and drain life from them. Stirges are most active at night and hide in shadowy places during the day. If disturbed, they take flight and defend themselves. Roll on or choose a result from the Stirge Roosts table to inspire where stirges might lurk.
+
+Stirge Roosts:
+1d4 | Between Hunts, the Stirge Lurks In...
+1 | The attic or furniture of a ruined building.
+2 | A cave or narrow crevice.
+3 | A hollow tree or thicket.
+4 | The remains of a gigantic, dead creature.
+
+Stirge:
+A single stirge is usually little more than an annoyance, but several can be deadly if they attach faster than a victim can remove them.
+
+Source:	Monster Manual 2024 p. 299</description>
+    <environment>desert, forest, grassland, hill, mountain, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Stone Giant [2024]</name>
+    <sortname>Giant, Stone</sortname>
+    <ancestry>Giant</ancestry>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>neutral</alignment>
+    <ac>17</ac>
+    <hp>126 (11d12+55)</hp>
+    <speed>40 ft.</speed>
+    <init>5</init>
+    <str>23</str>
+    <dex>15</dex>
+    <con>20</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>9</cha>
+    <save>Wis +4, Con +8, Dex +5</save>
+    <skill>Stealth +5, Athletics +12, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Giant</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two attacks, using Stone Club or Boulder in any combination.</text>
+    </action>
+    <action>
+      <name>Stone Club</name>
+      <text>Melee Attack Roll: +9, reach 15 ft. Hit: 22 (3d10 + 6) Bludgeoning damage.</text>
+      <attack>Stone Club|+9|3d10+6</attack>
+    </action>
+    <action>
+      <name>Boulder</name>
+      <text>Ranged Attack Roll: +9, range 60/240 ft. Hit: 15 (2d8 + 6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.</text>
+      <attack>Boulder|+9|2d8+6</attack>
+    </action>
+    <reaction>
+      <name>Deflect Missile (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Trigger: The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. Response: The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack's force. Dexterity Saving Throw: DC 17, one creature the giant can see within 60 feet. Failure: 11 (1d10 + 6) Force damage.</text>
+      <attack>Deflect Missile||1d10+6</attack>
+    </reaction>
+    <description>In cavernous depths and amid mountain canyons, stone giants contemplate the strength and persistence of the earth. Stone giants have rugged features and skin with patterns and hues similar to the rock common near their homes. This makes them adept at blending in with their stony surroundings despite their size.
+	Stone giants rarely interfere in the affairs of other creatures, whether their smaller neighbors or other Giants. Most are slow to act, preferring to weather hardships or wait out perilous times. When roused to action—particularly when sites of ancient wonder or their homes are threatened—stone giants can unleash the might of mountains and crush foes with the force of an avalanche.
+	Stone giants often ponder the mysteries of natural wonders, such as mountain spires, crystal formations, or mystical petroglyphs. Some know much about the magic and secret messages hidden within the earth. Those who confine themselves to the Underdark often regard the surface world and its inhabitants as dreams imagined into being by slumbering primordials, strange gods, or other entities.
+
+Source:	Monster Manual 2024 p. 300</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Stone Golem [2024]</name>
+    <sortname>Golem, Stone</sortname>
+    <ancestry>Golem</ancestry>
+    <size>L</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>18</ac>
+    <hp>220 (21d10+105)</hp>
+    <speed>30 ft.</speed>
+    <init>4</init>
+    <str>22</str>
+    <dex>9</dex>
+    <con>20</con>
+    <int>3</int>
+    <wis>11</wis>
+    <cha>1</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common plus two other languages but can't speak</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison, psychic</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>The golem can't shape-shift.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The golem has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The golem makes two attacks, using Slam or Force Bolt in any combination.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Attack Roll: +10, reach 5 ft. Hit: 15 (2d8 + 6) Bludgeoning damage plus 9 (2d8) Force damage.</text>
+      <attack>Slam|+10|2d8+6</attack>
+      <attack>Force Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Force Bolt</name>
+      <text>Ranged Attack Roll: +9, range 120 ft. Hit: 22 (4d10) Force damage.</text>
+      <attack>Force Bolt|+9|4d10</attack>
+    </action>
+    <action>
+      <name>Slow (Recharge 5-6) (Bonus Action)</name>
+      <text>The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17).</text>
+      <recharge>D5</recharge>
+    </action>
+    <description>Stone golems take varied forms, such as weathered carvings of ancient deities, lifelike sculptures of heroes, or any other shape their makers imagine. No matter their design or the rock from which they're crafted, these golems are strengthened by the magic that animates them, allowing them to follow their creators' orders for centuries.
+	Stone golems are typically created to protect places of significance to a group, such as a monument to an important event, a leader's tomb, or a faith's sanctuary. Roll on or choose a result from the Stone Golem Orders table to inspire the commands a stone golem follows.
+
+Stone Golem Orders:
+1d6 | The Stone Golem Follows Orders To...
+1 | Allow only those wearing ritual garb to pass.
+2 | Cast Slow on and aid in apprehending anyone who touches a city's prized relic.
+3 | Destroy a dam or bridge at the command of one bearing a ruler's medallion of oﬃce.
+4 | Obey whoever places a missing crest in its chest, then deactivate for a year.
+5 | Reveal a hidden passage to those who recite a leader's final words.
+6 | Watch for and do battle with the type of monster that slew the hero it resembles.
+
+Source:	Monster Manual 2024 p. 301</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Storm Giant [2024]</name>
+    <sortname>Giant, Storm</sortname>
+    <ancestry>Giant</ancestry>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>chaotic good</alignment>
+    <ac>16</ac>
+    <hp>230 (20d12+100)</hp>
+    <speed>50 ft., fly 25 ft.(hover), swim 50 ft.</speed>
+    <init>7</init>
+    <str>29</str>
+    <dex>14</dex>
+    <con>20</con>
+    <int>16</int>
+    <wis>20</wis>
+    <cha>18</cha>
+    <save>Str +14, Wis +10, Con +10, Cha +9</save>
+    <skill>Arcana +8, History +8, Athletics +14, Perception +10</skill>
+    <passive>20</passive>
+    <languages>Common, Giant</languages>
+    <cr>13</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>lightning, thunder</immune>
+    <conditionImmune />
+    <senses>darkvision 120 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The giant can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two attacks, using Storm Sword or Thunderbolt in any combination.</text>
+    </action>
+    <action>
+      <name>Storm Sword</name>
+      <text>Melee Attack Roll: +14, reach 10 ft. Hit: 23 (4d6 + 9) Slashing damage plus 13 (3d8) Lightning damage.</text>
+      <attack>Storm Sword|+14|4d6+9</attack>
+      <attack>Lightning Damage||3d8</attack>
+    </action>
+    <action>
+      <name>Thunderbolt</name>
+      <text>Ranged Attack Roll: +14, range 500 ft. Hit: 22 (2d12 + 9) Lightning damage, and the target has the Blinded and Deafened conditions until the start of the giant's next turn.</text>
+      <attack>Thunderbolt|+14|2d12+9</attack>
+    </action>
+    <action>
+      <name>Lightning Storm (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 18, each creature in a 10-foot-radius, 40-foot-high Cylinder originating from a point the giant can see within 500 feet. Failure: 55 (10d10) Lightning damage. Success: Half damage.</text>
+      <attack>Lightning Storm||10d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18):
+
+	• At will: Detect Magic, Light
+	• 1/Day: Control Weather</text>
+    </action>
+    <spells>Detect Magic [2024], Light [2024], Control Weather [2024]</spells>
+    <description>Among the tallest giants, storm giants live amid extreme forces of nature. In palaces at the bottom of the sea and castles floating amid the clouds, they revel in the power of mighty storms. When angered, they can shape the weather and call down devastating lightning. More often, though, these giants watch the rise and fall of nations and interpret supernatural omens, interfering in the world only when they're needed most.
+
+Source:	Monster Manual 2024 p. 302</description>
+    <environment>coastal, underwater</environment>
+  </monster>
+
+<monster>
+    <name>Succubus [2024]</name>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>71 (13d8+13)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <init>3</init>
+    <str>8</str>
+    <dex>17</dex>
+    <con>13</con>
+    <int>15</int>
+    <wis>12</wis>
+    <cha>20</cha>
+    <save />
+    <skill>Persuasion +9, Insight +5, Deception +9, Stealth +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Abyssal, Common, Infernal; telepathy 60 ft.</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist>cold, fire, poison, psychic</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Incubus Form</name>
+      <text>When the succubus finishes a Long Rest, it can shape-shift into an Incubus, using that stat block instead of this one.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.</text>
+    </action>
+    <action>
+      <name>Fiendish Touch</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 16 (2d10 + 5) Psychic damage.</text>
+      <attack>Fiendish Touch|+7|2d10+5</attack>
+    </action>
+    <action>
+      <name>Charm</name>
+      <text>The succubus casts Dominate Person (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15).</text>
+    </action>
+    <action>
+      <name>Draining Kiss</name>
+      <text>Constitution Saving Throw: DC 15, one creature Charmed by the succubus within 5 feet. Failure: 13 (3d8) Psychic damage. Success: Half damage. Failure or Success: The target's Hit Point maximum decreases by an amount equal to the damage taken.</text>
+      <attack>Draining Kiss||3d8</attack>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The succubus shape-shifts to resemble a Medium or Small Humanoid or back into its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it's wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Dominate Person [2024]</spells>
+    <description>Succubi prey on mortals physically and exploit their waking desires. They relish corrupting virtuous souls and the pain an individual's downfall can cause. Once their targets are at their lowest, succubi slay their victims with their essence-draining kiss.
+	Through fiendish rites, succubi can transform into incubi to manipulate their prey in dreams as well as the waking world. They can also change shape to torment their victims. These tempters can dominate Humanoids, but they usually do so to reinforce their manipulations or defend themselves rather than controlling others outright. Roll on or choose a result from the Succubus Temptations table to inspire how a succubus toys with its victims.
+
+Succubus Temptations:
+1d6 | The Succubus Manipulates Its Target By...
+1 | Adopting the form of a lost loved one.
+2 | Charming someone close to its target.
+3 | I solating them from their loved ones.
+4 | Manipulating events to bring surprise fortune.
+5 | Posing as a flattering underling.
+6 | Taking the form of one in need of protection.
+
+Source:	Monster Manual 2024 p. 303</description>
+    <environment>planar (lower), urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Bats [2024]</name>
+    <sortname>Bat, Swarm</sortname>
+    <ancestry>Bat</ancestry>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>11 (2d10)</hp>
+    <speed>5 ft., fly 30 ft.</speed>
+    <init>2</init>
+    <str>5</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>4</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages />
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.</text>
+      <attack>Bites|+4|2d4+1d4</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 370</description>
+    <environment>forest, mountain, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Crawling Claws [2024]</name>
+    <sortname>Crawling Claw, Swarm</sortname>
+    <ancestry>Crawling Claw</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>49 (11d8)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>2</init>
+    <str>14</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>5</int>
+    <wis>10</wis>
+    <cha>4</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, incapacitated, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Swarm of Grasping Hands</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 20 (4d8 + 2) Necrotic damage, or 11 (2d8 + 2) Necrotic damage if the swarm is Bloodied. If the target is a Medium or smaller creature, it has the Prone condition.</text>
+      <attack>Swarm of Grasping Hands|+4|4d8+2</attack>
+      <attack>Necrotic if Bloodied|+4|2d8+2</attack>
+    </action>
+    <description>Crawling claws are severed hands that move and act of their own murderous accord. These deathless appendages can spring to life from the severed limbs of killers and villains, and sinister magic-users might animate crawling claws as foul servants. Crawling claws appear in a variety of forms, from decaying human hands to the fresh appendages of animals or monsters.
+
+Swarms of crawling claws are typically animated by depraved necromancers. Occasionally, these grotesque swarms arise from mass graves or after tragedies, refusing to let their murderers escape their grasp.
+
+Source:	Monster Manual 2024 p. 83</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Dretches [2024]</name>
+    <sortname>Dretch, Swarm</sortname>
+    <ancestry>Dretch</ancestry>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>45 (6d10+12)</hp>
+    <speed>40 ft.</speed>
+    <init>0</init>
+    <str>14</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>5</int>
+    <wis>8</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages>Abyssal; telepathy 60 ft. (works only with creatures that understand Abyssal)</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist>bludgeoning, cold, fire, lightning, piercing, slashing</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Fetid Aura</name>
+      <text>Constitution Saving Throw: DC 12, any creature that starts its turn in a 10-foot Emanation originating from the swarm. Failure: The target has the Poisoned condition until the start of its next turn. While Poisoned, the target can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Small creature. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The swarm makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 12 (3d6 + 2) Slashing damage, or 9 (3d4 + 2) Slashing damage if the swarm is Bloodied.</text>
+      <attack>Rend|+4|3d6+2</attack>
+      <attack>Slashing while Bloodied|+4|3d4+2</attack>
+    </action>
+    <description>The servants and victims of greater demons, dretches embody petty instincts, chaotic impulses, and violent urges. Dretches exist in unfathomable numbers in the depths of the Abyss, where their reeking throngs fill vast demonic hordes.
+
+Swarm of Dretches:
+Swarms of dretches sometimes escape the Abyss onto other planes of existence, or they might be part of a demonic invasion. Without direction, these crude demons rampage and despoil with cruel enthusiasm.
+
+Source:	Monster Manual 2024 p. 104</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Insects [2024]</name>
+    <sortname>Insect, Swarm</sortname>
+    <ancestry>Insect</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>19 (3d8+6)</hp>
+    <speed>20 ft., choose null ft.null</speed>
+    <init>1</init>
+    <str>3</str>
+    <dex>13</dex>
+    <con>14</con>
+    <int>1</int>
+    <wis>7</wis>
+    <cha>1</cha>
+    <save />
+    <skill />
+    <passive>8</passive>
+    <languages />
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>If the swarm has a Climb Speed, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Poison damage, or 3 (1d4 + 1) Poison damage if the swarm is Bloodied.</text>
+      <attack>Bites|+3|2d4+1</attack>
+      <attack>While Bloodied|+3|1d4+1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 370</description>
+    <environment>desert, forest, grassland, hill, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Larvae [2024]</name>
+    <sortname>Larva, Swarm</sortname>
+    <ancestry>Larva</ancestry>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>22 (3d10+6)</hp>
+    <speed>30 ft.</speed>
+    <init>0</init>
+    <str>14</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>2</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages>understands all but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Medium creature. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Necrotic damage, or 7 (2d4 + 2) Necrotic damage if the swarm is Bloodied.</text>
+      <attack>Bites|+4|2d6+2</attack>
+      <attack>While Bloodied|+4|2d4+2</attack>
+    </action>
+    <description>Souls condemned to the Lower Planes often become larvae—repulsive, maggot-like creatures with twisted features evocative of those they possessed in life. These pathetic creatures are nearly helpless and struggle to escape the attention of the more powerful inhabitants of the Lower Planes. Many Fiends view larvae as delicacies to be consumed, while evil magic-users find larvae useful for depraved rituals. Night hags frequently collect and herd larvae, trading them to nefarious parties across the multiverse.
+	Larvae that survive on the Lower Planes long enough can eventually transform into other sorts of lesser Fiends.
+
+Swarm of Larvae:
+Lone larvae pose little threat, but in large numbers, larvae can overwhelm vulnerable creatures. Out of desperation, larvae band together in grotesque swarms, their squirming stampedes heralded by a din of wordless whimpers and stomach-turning worm sounds.
+
+Source:	Monster Manual 2024 p. 193</description>
+    <environment>planar (lower)</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Lemures [2024]</name>
+    <sortname>Lemure, Swarm</sortname>
+    <ancestry>Lemure</ancestry>
+    <size>L</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>45 (6d10+12)</hp>
+    <speed>40 ft.</speed>
+    <init>-1</init>
+    <str>14</str>
+    <dex>7</dex>
+    <con>14</con>
+    <int>1</int>
+    <wis>12</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages>understands Infernal but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist>bludgeoning, cold, piercing, slashing</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Hellish Restoration</name>
+      <text>If the swarm dies in the Nine Hells, it revives with all its Hit Points in 1d10 days unless it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water.</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Medium creature. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The swarm makes two Vile Slime attacks.</text>
+    </action>
+    <action>
+      <name>Vile Slime</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 11 (2d8 + 2) Poison damage, or 9 (2d6 + 2) Poison damage if the swarm is Bloodied.</text>
+      <attack>Vile Slime|+4|2d8+2</attack>
+      <attack>When Bloodied|+4|2d6+2</attack>
+    </action>
+    <description>The least of all devils, lemures arise from wicked souls, their mortal memories scoured away. Only vague limbs and anguished features jut from these slurries of infernal proto-matter.
+
+Swarm of Lemures:
+When devils drive hosts of lemures into close proximity or when lemures compress into a single mass, a swarm forms and adopts a unified mind.
+
+Source:	Monster Manual 2024 p. 194</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Piranhas [2024]</name>
+    <sortname>Piranhas, Swarm</sortname>
+    <ancestry>Piranhas</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>13</ac>
+    <hp>28 (8d8-8)</hp>
+    <speed>5 ft., swim 40 ft.</speed>
+    <init>3</init>
+    <str>13</str>
+    <dex>16</dex>
+    <con>9</con>
+    <int>1</int>
+    <wis>7</wis>
+    <cha>2</cha>
+    <save />
+    <skill />
+    <passive>8</passive>
+    <languages />
+    <cr>1</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny piranha. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The swarm can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +5 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage, or 5 (1d4 + 3) Piercing damage if the swarm is Bloodied.</text>
+      <attack>Bites|+5|2d4+3+1d4+3</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 370</description>
+    <environment>underwater</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Rats [2024]</name>
+    <sortname>Rat, Swarm</sortname>
+    <ancestry>Rat</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>10</ac>
+    <hp>14 (4d8-4)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>0</init>
+    <str>9</str>
+    <dex>11</dex>
+    <con>9</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages />
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.</text>
+      <attack>Bites|+2|2d4+1d4</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 370</description>
+    <environment>forest, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Ravens [2024]</name>
+    <sortname>Raven, Swarm</sortname>
+    <ancestry>Raven</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>11 (2d8+2)</hp>
+    <speed>10 ft., fly 50 ft.</speed>
+    <init>2</init>
+    <str>6</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>5</int>
+    <wis>12</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages />
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Beaks</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.</text>
+      <attack>Beaks|+4|1d6+2+1d4</attack>
+    </action>
+    <action>
+      <name>Cacophony (Recharge 6)</name>
+      <text>Wisdom Saving Throw: DC 10, one creature in the swarm's space. Failure: The target has the Deafened condition until the start of the swarm's next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls.</text>
+      <recharge>D6</recharge>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 371</description>
+    <environment>hill, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Stirges [2024]</name>
+    <sortname>Stirge, Swarm</sortname>
+    <ancestry>Stirge</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>14</ac>
+    <hp>36 (8d8)</hp>
+    <speed>10 ft., fly 40 ft.</speed>
+    <init>3</init>
+    <str>4</str>
+    <dex>16</dex>
+    <con>11</con>
+    <int>2</int>
+    <wis>8</wis>
+    <cha>6</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>2</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Swarm of Proboscises</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 14 (2d10 + 3) Piercing damage, or 8 (1d10 + 3) Piercing damage if the swarm is Bloodied. If the target is a Medium or smaller creature in the swarm's space, the target has the Grappled condition (escape DC 13). Until the grapple ends, the target takes 7 (2d6) Necrotic damage at the end of each of its turns.</text>
+      <attack>Swarm of Proboscises|+5|2d10+3</attack>
+      <attack>Piercing if Bloodied|+5|1d10+3</attack>
+      <attack>Necrotic Damage||2d6</attack>
+    </action>
+    <description>Stirges are bat-size vermin with dagger-length proboscises that attach to other creatures and drain life from them. Stirges are most active at night and hide in shadowy places during the day. If disturbed, they take flight and defend themselves. Roll on or choose a result from the Stirge Roosts table to inspire where stirges might lurk.
+
+Stirge Roosts:
+1d4 | Between Hunts, the Stirge Lurks In...
+1 | The attic or furniture of a ruined building.
+2 | A cave or narrow crevice.
+3 | A hollow tree or thicket.
+4 | The remains of a gigantic, dead creature.
+
+Swarm of Stirges:
+Swarms of stirges sometimes form in swamps and Underdark caverns, draining livestock and any other creatures that can't escape them.
+
+Source:	Monster Manual 2024 p. 299</description>
+    <environment>desert, forest, grassland, hill, mountain, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Swarm of Venomous Snakes [2024]</name>
+    <sortname>Venomous Snake, Swarm</sortname>
+    <ancestry>Venomous Snake</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>14</ac>
+    <hp>36 (8d8)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>4</init>
+    <str>8</str>
+    <dex>18</dex>
+    <con>11</con>
+    <int>1</int>
+    <wis>10</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages />
+    <cr>2</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune />
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain Hit Points or gain Temporary Hit Points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Piercing damage—or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied—plus 10 (3d6) Poison damage.</text>
+      <attack>Bites|+6|1d8+4</attack>
+      <attack>Piercing if Bloodied||1d4+4</attack>
+      <attack>Piercing Damage||3d6</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 371</description>
+    <environment>coastal, desert, forest, grassland, hill, swamp</environment>
+  </monster>
+
+</compendium>

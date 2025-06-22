@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Nalfeshnee [2024]</name>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18</ac>
+    <hp>184 (16d10+96)</hp>
+    <speed>20 ft., fly 30 ft.</speed>
+    <init>5</init>
+    <str>21</str>
+    <dex>10</dex>
+    <con>22</con>
+    <int>19</int>
+    <wis>12</wis>
+    <cha>15</cha>
+    <save>Wis +6, Con +11, Cha +7, Int +9</save>
+    <skill />
+    <passive>11</passive>
+    <languages>Abyssal; telepathy 120 ft.</languages>
+    <cr>13</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>poison</immune>
+    <conditionImmune>frightened, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Demonic Restoration</name>
+      <text>If the nalfeshnee dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The nalfeshnee has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nalfeshnee makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage plus 11 (2d10) Force damage.</text>
+      <attack>Rend|+10|2d10+5</attack>
+      <attack>Force Damage||2d10</attack>
+    </action>
+    <action>
+      <name>Teleport</name>
+      <text>The nalfeshnee teleports up to 120 feet to an unoccupied space it can see.</text>
+    </action>
+    <action>
+      <name>Horror Nimbus (Recharge 5-6) (Bonus Action)</name>
+      <recharge>D5</recharge>
+      <text>Wisdom Saving Throw: DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. Failure: 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. Success: The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.</text>
+      <attack>Horror Nimbus||8d6</attack>
+    </action>
+    <reaction>
+      <name>Pursuit</name>
+      <text>Trigger: Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. Response: The nalfeshnee uses Teleport, but its destination space must be within 10 feet of the triggering creature.</text>
+    </reaction>
+    <description>Nalfeshnees seek to dominate all they encounter. Hulking and grotesque, these demons combine misshapen, bestial features with ogre-like frames. Through both brute force and cunning, nalfeshnees compel cultists and weaker demons to serve them in the endless conflicts of the Abyss or in plots on the Material Plane.
+	Many nalfeshnees view themselves as prospective demon lords and seek to conquer realms of their own. They often use promises of fiendish magic or Abyssal alliances to tempt ambitious mortals into ruinous pacts. Should they run out of patience, nalfeshnees conjure visions of the Abyss and other nightmares to terrorize others into obeying.
+
+Source:	Monster Manual 2024 p. 224</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Needle Blight [2024]</name>
+    <sortname>Blight, Needle</sortname>
+    <ancestry>Blight</ancestry>
+    <size>M</size>
+    <type>plant</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>16 (3d8+3)</hp>
+    <speed>30 ft.</speed>
+    <init>1</init>
+    <str>12</str>
+    <dex>12</dex>
+    <con>13</con>
+    <int>4</int>
+    <wis>8</wis>
+    <cha>3</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages>understands Common but can't speak</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>deafened</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Slashing damage.</text>
+      <attack>Claw|+3|2d4+1</attack>
+    </action>
+    <action>
+      <name>Needles</name>
+      <text>Ranged Attack Roll: +3, range 30/60 ft. Hit: 6 (2d4 + 1) Piercing damage.</text>
+      <attack>Needles|+3|2d4+1</attack>
+    </action>
+    <description>Blights are malicious plants that sprout from deep-rooted evil. Their gnarled forms twist with fearsome features suggestive of human limbs and vicious maws. Blights lurk in ambush amid mundane vegetation and lash out at non-Plant creatures. While blights can act independently, they're usually motivated by whatever sinister forces spawned them or by wicked creatures with control over nature. The magic that creates blights often affects other vegetation as well, causing brambles, vines, and gnarled trees to overwhelm roads and fields, choke wells and streams, and force animals from their natural habitat. This might make blights the first sign of an oncoming wave of corruption.
+
+Needle Blight:
+Needle blights have vaguely bipedal forms, with gaunt, misshapen limbs. Whether standing unnaturally still or lurching with their awkward gaits, these blights can't pass as either normal plants or woodland travelers. Once they spot foes, needle blights attack using their thorn-covered claws or by rapidly growing and flinging volleys of serrated, needlelike projectiles.
+
+Source:	Monster Manual 2024 p. 43</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Night Hag [2024]</name>
+    <sortname>Hag, Night</sortname>
+    <ancestry>Hag</ancestry>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>17</ac>
+    <hp>112 (15d8+45)</hp>
+    <speed>30 ft.</speed>
+    <init>5</init>
+    <str>18</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>16</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save />
+    <skill>Insight +5, Deception +6, Stealth +5, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Abyssal, Common, Infernal, Primordial</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>cold, fire</resist>
+    <immune />
+    <conditionImmune>charmed</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The hag has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Soul Bag</name>
+      <text>The hag has a soul bag. While holding or carrying the bag, the hag can use its Nightmare Haunting action.
+	The bag has AC 15, HP 20, and Resistance to all damage. The bag turns to dust if reduced to 0 Hit Points. If the bag is destroyed, any souls the bag is holding are released. The hag can create a new bag after 7 days.</text>
+    </trait>
+    <trait>
+      <name>Coven Magic</name>
+      <text>While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hag makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage.</text>
+      <attack>Claw|+7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The hag casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 14):
+
+	• At will: Detect Magic, Etherealness, Magic Missile (level 4 version)
+	• 2/Day each: Phantasmal Killer, Plane Shift (self only)</text>
+    </action>
+    <action>
+      <name>Nightmare Haunting (1/Day; Requires Soul Bag)</name>
+      <text>While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell's messenger, and the target must be a creature the hag can see on the Material Plane. The spell fails and is wasted if the target is under the effect of the Protection from Evil and Good spell or within a Magic Circle spell.
+
+	• 1/Day: Dream, Protection from Evil and Good, Magic Circle</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Augury [2024], Detect Magic [2024], Dream [2024], Etherealness [2024], Find Familiar [2024], Identify [2024], Locate Object [2024], Magic Circle [2024], Magic Missile [2024], Phantasmal Killer [2024], Plane Shift [2024], Protection from Evil and Good [2024], Scrying [2024], Unseen Servant [2024]</spells>
+    <description>Night hags seek mortals to torment and turn to evil. By day, night hags use supernatural deceptions to plague their victims, shape-shifting to pose as other creatures and make their targets believe the world has turned against them. By night, these hags reinforce their tortures with terrifying dreams. Once they force their targets to desperate limits, night hags claim their victims' tormented spirits, capturing them in sinister traps called soul bags. The hags then slip between planes of existence to barter stolen souls to vile magic-users and fiendish entities.
+	Night hags maintain networks of nefarious customers and collect rumors from across the Lower Planes. These hags might part with their secrets in exchange for magic items and other wicked prices.
+
+Source:	Monster Manual 2024 p. 225</description>
+    <environment>planar (lower)</environment>
+  </monster>
+
+<monster>
+    <name>Nightmare [2024]</name>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>68 (8d10+24)</hp>
+    <speed>60 ft., fly 90 ft.(hover)</speed>
+    <init>2</init>
+    <str>18</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages>understands Abyssal, Common, and Infernal but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Confer Fire Resistance</name>
+      <text>The nightmare can grant Resistance to Fire damage to a rider while it is on the nightmare.</text>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The nightmare sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</text>
+    </trait>
+    <action>
+      <name>Hooves</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 10 (3d6) Fire damage.</text>
+      <attack>Hooves|+6|2d8+4</attack>
+      <attack>Fire Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Ethereal Stride</name>
+      <text>The nightmare and up to three willing creatures within 5 feet of it teleport to the Ethereal Plane from the Material Plane or vice versa.</text>
+    </action>
+    <description>Nightmares resemble horses with flaming manes, burning hooves, and smoldering eyes. They terrorize weaker creatures and often ally with denizens of the Lower Planes in committing evil acts. These supernatural horses can innately travel between the Ethereal Plane and the Material Plane, and many know the locations of portals to the Lower Planes, the Shadowfell, and other sinister realms.
+	Nightmares' speed, resilience, and ability to gallop between planes of existence make them steeds coveted by evildoers. Roll on or choose a result from the Nightmare Riders table to inspire what might employ a nightmare steed.
+
+Nightmare Riders:
+1d6 | The Nightmare Carries...
+1 | The champion or messenger of an evil deity.
+2 | A group of joyriding imps or quasits.
+3 | An innocent soul trapped on the wild Fiend.
+4 | A lore-hunting mage, cultist, or lich.
+5 | A night hag herding larvae between planes.
+6 | A wicked cavalier, such as a death knight, an erinyes, an incubus, or a vampire.
+
+Source:	Monster Manual 2024 p. 226</description>
+    <environment>planar (lower)</environment>
+  </monster>
+
+<monster>
+    <name>Noble [2024]</name>
+    <sortname>Noble</sortname>
+    <ancestry>Noble</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>9 (2d8)</hp>
+    <speed>30 ft.</speed>
+    <init>1</init>
+    <str>11</str>
+    <dex>12</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save />
+    <skill>Persuasion +5, Insight +4, Deception +5</skill>
+    <passive>12</passive>
+    <languages>Common plus two other languages</languages>
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Breastplate, Rapier</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Rapier</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.</text>
+      <attack>Rapier|+3|1d8+1</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>Trigger: The noble is hit by a melee attack roll while holding a weapon. Response: The noble adds 2 to its AC against that attack, possibly causing it to miss.</text>
+    </reaction>
+    <description>Nobles encompass a variety of people with social influence. They might be rulers, wealthy merchants, callous bureaucrats, or the idle elite.
+
+Noble:
+A noble's social advantages typically grant the noble access to greater education and training than most common folk, while nobles' experience with business or politics makes many adept negotiators.
+
+Source:	Monster Manual 2024 p. 227</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Noble Prodigy [2024]</name>
+    <sortname>Noble, Prodigy</sortname>
+    <ancestry>Noble</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>16</ac>
+    <hp>148 (27d8+27)</hp>
+    <speed>30 ft.</speed>
+    <init>7</init>
+    <str>8</str>
+    <dex>16</dex>
+    <con>12</con>
+    <int>15</int>
+    <wis>14</wis>
+    <cha>19</cha>
+    <save>Wis +6, Con +5, Dex +7, Cha +8</save>
+    <skill>Persuasion +8, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common plus two other languages</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The noble makes three Beguiling Strike attacks.</text>
+    </action>
+    <action>
+      <name>Beguiling Strike</name>
+      <text>Melee or Ranged Attack Roll: +8, reach 5 ft. or range 60 ft. Hit: 18 (4d6 + 4) Psychic damage, and the target has the Charmed condition until the start of the noble's next turn.</text>
+      <attack>Beguiling Strike|+8|4d6+4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The noble casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):
+
+	• At will: Mage Armor (included in AC), Mage Hand, Minor Illusion
+	• 1/Day each: Befuddlement, Detect Thoughts, Fly, Scrying, Shatter (level 7 version)</text>
+    </action>
+    <reaction>
+      <name>Shield (2/Day)</name>
+      <recharge>2/DAY</recharge>
+      <text>The noble casts Shield in response to that spell's trigger, using the same spellcasting ability as Spellcasting.</text>
+    </reaction>
+    <spells>Shield [2024], Mage Armor [2024], Mage Hand [2024], Minor Illusion [2024], Befuddlement [2024], Detect Thoughts [2024], Fly [2024], Scrying [2024], Shatter [2024]</spells>
+    <description>Nobles encompass a variety of people with social influence. They might be rulers, wealthy merchants, callous bureaucrats, or the idle elite.
+
+Noble Prodigy:
+Noble prodigies trace their lineage to a legendary hero, a demigod, a dragon, or some other ancestor that grants them magical prowess. Among some nobles, the source of a prodigy's magic might be a family secret.
+
+Source:	Monster Manual 2024 p. 227</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Nothic [2024]</name>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>14</str>
+    <dex>16</dex>
+    <con>16</con>
+    <int>13</int>
+    <wis>10</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Insight +4, Stealth +5, Arcana +3, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Undercommon</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nothic makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage.</text>
+      <attack>Claw|+5|1d10+3</attack>
+    </action>
+    <action>
+      <name>Rotting Gaze</name>
+      <text>Constitution Saving Throw: DC 13, one creature the nothic can see within 120 feet. Failure: 17 (5d6) Necrotic damage. Success: Half damage.</text>
+      <attack>Rotting Gaze||5d6</attack>
+    </action>
+    <action>
+      <name>Weird Insight (Recharge 6) (Bonus Action)</name>
+      <text>Wisdom Saving Throw: DC 14, one creature the nothic can see within 120 feet. Failure: The nothic magically learns one fact or secret about the target.</text>
+      <recharge>D6</recharge>
+    </action>
+    <description>Consumed by their thirst for forbidden knowledge, nothics are cursed lore seekers transformed by secrets never meant to be known. The bodies of these former scholars are warped into otherworldly shapes, each with a head dominated by a gigantic, unblinking eye. Nothics remember nothing of their past lives and care only for their endless pursuit of hidden mysteries and uncanny truths. They seek revelations amid the rubble of forgotten ruins, and they use their supernatural sight to pierce magical deceptions, rot the flesh of enemies, and steal the secrets of those who interrupt their investigations.
+	Some nothics seek to end the curse that warped them into their bizarre forms, but many are unaware of—or uninterested in—their transformation.
+
+Source:	Monster Manual 2024 p. 228</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Nycaloth [2024]</name>
+    <size>L</size>
+    <type>fiend (yugoloth)</type>
+    <alignment>neutral evil</alignment>
+    <ac>18</ac>
+    <hp>152 (16d10+64)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <init>4</init>
+    <str>20</str>
+    <dex>11</dex>
+    <con>19</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>15</cha>
+    <save />
+    <skill>Stealth +4, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Abyssal, Infernal; telepathy 60 ft.</languages>
+    <cr>9</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>acid, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Fiendish Restoration</name>
+      <text>If the nycaloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in Gehenna.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The nycaloth has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nycaloth makes two Mercurial Axe attacks.</text>
+    </action>
+    <action>
+      <name>Mercurial Axe</name>
+      <text>Melee or Ranged Attack Roll: +9, reach 10 ft. or range 30/90 ft. Hit: 18 (2d12 + 5) Slashing damage plus 10 (3d6) Force damage. Hit or Miss: The axe magically returns to the nycaloth's hand immediately after a ranged attack.</text>
+      <attack>Mercurial Axe|+9|2d12+5</attack>
+      <attack>Force Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Shadowy Teleport (Bonus Action)</name>
+      <text>The nycaloth has the Invisible condition for 1 minute, and it teleports up to 30 feet to an unoccupied space it can see. The condition ends early immediately after it deals damage.</text>
+    </action>
+    <description>Fiendish warmongers, nycaloths relish combat and conquest. These tremendous winged yugoloths teleport around battlefields and into the air to bewilder their foes and attack with constantly shifting, Gehenna-forged axes—mercurial weapons similar to those favored by many yugoloths.
+	Nycaloths might command groups of mezzoloths and make pacts to serve arcanaloths, ultroloths, fiendish warlords, or wicked mortals. So long as they can indulge their bloodlust, most nycaloths are willing to obey more powerful or cunning creatures. Some even serve competent leaders past the terms of their agreements to achieve long-pursued victories. But masters that lead nycaloths to defeat should fear these proud yugoloths' retribution.
+	Nycaloths and other yugoloths frequently serve as mercenary forces in extraplanar conflicts that spill onto the Material Plane. Roll on or choose a result from the Yugoloth Incursions table to inspire the plans of a yugoloth war band.
+
+Yugoloth Incursions:
+1d4 | Yugoloth Mercenaries Seek To...
+1 | Claim a portal with strategic importance.
+2 | Enlist monsters as allies or beasts of war.
+3 | Destroy a city harboring enemy cultists.
+4 | Liberate an imprisoned fiendish ally.
+
+Source:	Monster Manual 2024 p. 229</description>
+    <environment>planar (gehenna)</environment>
+  </monster>
+
+</compendium>

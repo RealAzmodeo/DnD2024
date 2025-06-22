@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Baboon [2024]</name>
+    <size>S</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>3 (1d6)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>2</init>
+    <str>8</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>4</int>
+    <wis>12</wis>
+    <cha>6</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The baboon has Advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +1, reach 5 ft. Hit: 1 (1d4 - 1) Piercing damage.</text>
+      <attack>Bite|+1|1d4-1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 349</description>
+    <environment>forest, hill</environment>
+  </monster>
+
+<monster>
+    <name>Badger [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>5 (1d4+3)</hp>
+    <speed>20 ft., burrow 5 ft.</speed>
+    <init>0</init>
+    <str>10</str>
+    <dex>11</dex>
+    <con>16</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>5</cha>
+    <save />
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist>poison</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.</text>
+      <attack>Bite|+2|1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 349,
+		Player's Handbook 2024 p. 346</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Balor [2024]</name>
+    <size>H</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>19</ac>
+    <hp>287 (23d12+138)</hp>
+    <speed>40 ft., fly 80 ft.</speed>
+    <init>14</init>
+    <str>26</str>
+    <dex>15</dex>
+    <con>22</con>
+    <int>20</int>
+    <wis>16</wis>
+    <cha>22</cha>
+    <save>Wis +9, Con +12</save>
+    <skill>Perception +9</skill>
+    <passive>19</passive>
+    <languages>Abyssal; telepathy 120 ft.</languages>
+    <cr>19</cr>
+    <vulnerable />
+    <resist>cold, lightning</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+6</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Death Throes</name>
+      <text>The balor explodes when it dies. Dexterity Saving Throw: DC 20, each creature in a 30-foot Emanation originating from the balor. Failure: 31 (9d6) Fire damage plus 31 (9d6) Force damage. Success: Half damage. Failure or Success: If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.</text>
+      <attack>Death Throes||9d6</attack>
+    </trait>
+    <trait>
+      <name>Fire Aura</name>
+      <text>At the end of each of the balor's turns, each creature in a 5-foot Emanation originating from the balor takes 13 (3d8) Fire damage.</text>
+      <attack>Fire Aura||3d8</attack>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>If the balor fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The balor has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The balor makes one Flame Whip attack and one Lightning Blade attack.</text>
+    </action>
+    <action>
+      <name>Flame Whip</name>
+      <text>Melee Attack Roll: +14, reach 30 ft. Hit: 18 (3d6 + 8) Force damage plus 17 (5d6) Fire damage. If the target is a Huge or smaller creature, the balor pulls the target up to 25 feet straight toward itself, and the target has the Prone condition.</text>
+      <attack>Flame Whip|+14|3d6+8</attack>
+      <attack>Fire Damage||5d6</attack>
+    </action>
+    <action>
+      <name>Lightning Blade</name>
+      <text>Melee Attack Roll: +14, reach 10 ft. Hit: 21 (3d8 + 8) Force damage plus 22 (4d10) Lightning damage, and the target can't take Reactions until the start of the balor's next turn.</text>
+      <attack>Lightning Blade|+14|3d8+8</attack>
+      <attack>Lightning Damage||4d10</attack>
+    </action>
+    <action>
+      <name>Teleport (Bonus Action)</name>
+      <text>The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see.</text>
+    </action>
+    <description>Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames. A balor's fury persists until the moment of its demise, at which point it explodes—a last act of vengeance against those who slew it. Demon lords and evil gods harness balors' rage by making balors commanders of armies or guardians of grave secrets.
+
+Source:	Monster Manual 2024 p. 26</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Bandit [2024]</name>
+    <sortname>Bandit</sortname>
+    <ancestry>Bandit</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>12</ac>
+    <hp>11 (2d8+2)</hp>
+    <speed>30 ft.</speed>
+    <init>1</init>
+    <str>11</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common, Thieves' cant</languages>
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Leather Armor, Light Crossbow, Scimitar</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.</text>
+      <attack>Scimitar|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Light Crossbow</name>
+      <text>Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.</text>
+      <attack>Light Crossbow|+3|1d8+1</attack>
+    </action>
+    <description>Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.
+	Roll on or choose a result from the Bandit Motivations table to determine the circumstances behind a bandit's crimes.
+
+Bandit Motivations:
+1d6 | The Bandit...
+1 | Fights only oppressors.
+2 | Is an ex-soldier who was discarded by their nation and now takes what they were promised.
+3 | Is in a gang that views nonmembers as foes.
+4 | Hesitantly serves a villainous leader.
+5 | Secretly works for a government or a regional ruler to sow chaos.
+6 | Takes what they need to survive.
+
+Bandits are inexperienced ne'er-do-wells who typically follow the orders of higher-ranking bandits.
+
+Source:	Monster Manual 2024 p. 27</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Bandit Captain [2024]</name>
+    <sortname>Bandit, Captain</sortname>
+    <ancestry>Bandit</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>15</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>14</int>
+    <wis>11</wis>
+    <cha>14</cha>
+    <save>Str +4, Wis +2, Dex +5</save>
+    <skill>Deception +4, Athletics +4</skill>
+    <passive>10</passive>
+    <languages>Common, Thieves' cant</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Pistol, Scimitar, Studded Leather Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bandit makes two attacks, using Scimitar and Pistol in any combination.</text>
+    </action>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.</text>
+      <attack>Scimitar|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Pistol</name>
+      <text>Ranged Attack Roll: +5, range 30/90 ft. Hit: 8 (1d10 + 3) Piercing damage.</text>
+      <attack>Pistol|+5|1d10+3</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>Trigger: The bandit is hit by a melee attack roll while holding a weapon. Response: The bandit adds 2 to its AC against that attack, possibly causing it to miss.</text>
+    </reaction>
+    <description>Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.
+	Roll on or choose a result from the Bandit Motivations table to determine the circumstances behind a bandit's crimes.
+
+Bandit Motivations:
+1d6 | The Bandit...
+1 | Fights only oppressors.
+2 | Is an ex-soldier who was discarded by their nation and now takes what they were promised.
+3 | Is in a gang that views nonmembers as foes.
+4 | Hesitantly serves a villainous leader.
+5 | Secretly works for a government or a regional ruler to sow chaos.
+6 | Takes what they need to survive.
+
+Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.
+
+Source:	Monster Manual 2024 p. 27</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Bandit Crime Lord [2024]</name>
+    <sortname>Bandit, Crime Lord</sortname>
+    <ancestry>Bandit</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>17</ac>
+    <hp>169 (26d8+52)</hp>
+    <speed>30 ft.</speed>
+    <init>9</init>
+    <str>10</str>
+    <dex>20</dex>
+    <con>14</con>
+    <int>18</int>
+    <wis>14</wis>
+    <cha>15</cha>
+    <save>Con +6, Dex +9</save>
+    <skill>Stealth +13, Acrobatics +9, Perception +10</skill>
+    <passive>20</passive>
+    <languages>Common, Thieves' cant</languages>
+    <cr>11</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Pistols (2), Scimitar, Studded Leather Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <trait>
+      <name>Evasion</name>
+      <text>If the bandit is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the bandit instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bandit makes three attacks, using Scimitar or Pistol in any combination.</text>
+    </action>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Attack Roll: +9, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 14 (4d6) Poison damage.</text>
+      <attack>Scimitar|+9|2d6+5+4d6</attack>
+    </action>
+    <action>
+      <name>Pistol</name>
+      <text>Ranged Attack Roll: +9, range 30/90 ft. Hit: 10 (1d10 + 5) Piercing damage plus 14 (4d6) Poison damage.</text>
+      <attack>Pistol|+9|1d10+5+4d6</attack>
+    </action>
+    <action>
+      <name>Deadly Aim (Bonus Action)</name>
+      <text>The bandit gives itself Advantage on the next attack roll it makes during the current turn. If that attack hits, the target takes an extra 28 (8d6) Poison damage.</text>
+    </action>
+    <description>Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.
+	Roll on or choose a result from the Bandit Motivations table to determine the circumstances behind a bandit's crimes.
+
+Bandit Motivations:
+1d6 | The Bandit...
+1 | Fights only oppressors.
+2 | Is an ex-soldier who was discarded by their nation and now takes what they were promised.
+3 | Is in a gang that views nonmembers as foes.
+4 | Hesitantly serves a villainous leader.
+5 | Secretly works for a government or a regional ruler to sow chaos.
+6 | Takes what they need to survive.
+
+Bandit crime lords manipulate shadowy organizations and prioritize their own survival over any single lackey or plot.
+
+Source:	Monster Manual 2024 p. 28</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Bandit Deceiver [2024]</name>
+    <sortname>Bandit, Deceiver</sortname>
+    <ancestry>Bandit</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>16</ac>
+    <hp>130 (20d8+40)</hp>
+    <speed>30 ft.</speed>
+    <init>6</init>
+    <str>8</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>17</int>
+    <wis>12</wis>
+    <cha>16</cha>
+    <save>Dex +6, Int +6</save>
+    <skill>Stealth +9, Acrobatics +6, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Common, Thieves' cant</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Daggers (6), Wand</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bandit makes three Dagger attacks.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Attack Roll: +6, reach 5 ft. or range 20/60 ft. Hit: 8 (2d4 + 3) Piercing damage plus 10 (3d6) Poison damage.</text>
+      <attack>Dagger|+6|2d4+3</attack>
+      <attack>Poison Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Blinding Flash (Recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>Constitution Saving Throw: DC 14, each creature in a 10-foot-radius Sphere centered on a point the bandit can see within 120 feet. Failure: 13 (3d6 + 3) Radiant damage, and the target has the Blinded condition until the start of the bandit's next turn. Success: Half damage only.</text>
+      <attack>Blinding Flash||3d6+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The bandit casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):
+
+	• At will: Disguise Self, Mage Hand, Minor Illusion
+	• 1/Day each: Hold Person (level 4 version), Mage Armor (included in AC), Major Image</text>
+    </action>
+    <spells>Disguise Self [2024], Mage Hand [2024], Minor Illusion [2024], Hold Person [2024], Mage Armor [2024], Major Image [2024]</spells>
+    <description>Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.
+	Roll on or choose a result from the Bandit Motivations table to determine the circumstances behind a bandit's crimes.
+
+Bandit Motivations:
+1d6 | The Bandit...
+1 | Fights only oppressors.
+2 | Is an ex-soldier who was discarded by their nation and now takes what they were promised.
+3 | Is in a gang that views nonmembers as foes.
+4 | Hesitantly serves a villainous leader.
+5 | Secretly works for a government or a regional ruler to sow chaos.
+6 | Takes what they need to survive.
+
+Bandit deceivers use magic to disguise their activities or create flashy distractions.
+
+Source:	Monster Manual 2024 p. 28</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Banshee [2024]</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>54 (12d8)</hp>
+    <speed>5 ft., fly 40 ft.(hover)</speed>
+    <init>2</init>
+    <str>1</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>17</cha>
+    <save>Wis +2</save>
+    <skill />
+    <passive>10</passive>
+    <languages>Common, Elvish</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist>acid, bludgeoning, fire, lightning, piercing, slashing, thunder</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Detect Life</name>
+      <text>The banshee magically senses the direction of creatures up to 1 mile away that aren't Constructs or Undead.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The banshee can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The banshee makes two Corrupting Touch attacks and uses Horrify.</text>
+    </action>
+    <action>
+      <name>Corrupting Touch</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Necrotic damage.</text>
+      <attack>Necrotic Damage|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Horrify</name>
+      <text>Wisdom Saving Throw: DC 13, one creature the banshee can see within 60 feet that can see the banshee. Failure: The target has the Frightened condition until the start of the banshee's next turn. Success: The target is immune to this banshee's Horrify for 24 hours.</text>
+    </action>
+    <action>
+      <name>Deathly Wail (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>The banshee releases a mournful wail if it isn't in sunlight. Constitution Saving Throw: DC 13, each creature within 30 feet that can hear the wail and isn't a Construct or an Undead. Failure: If the target has 25 Hit Points or fewer, it drops to 0 Hit Points. Otherwise, the target takes 10 (3d6) Psychic damage.</text>
+      <attack>Psychic Damage||3d6</attack>
+    </action>
+    <description>Heralds of doom and plagues on the living, banshees are spirits obsessed by unresolved bitterness or sorrow. These storied phantoms slay any who glimpse them or hear their baleful wails. Although any tormented soul can arise as a banshee, some elven communities particularly fear them and believe that those who hoard or destroy beauty—natural or otherwise—risk returning as a banshee.
+	All manner of torments might give rise to a banshee. Roll on or choose a result from the Banshee Sorrows table to inspire how a banshee's torment influences its behavior.
+
+Banshee Sorrows:
+1d6 | Torment Compels the Banshee To...
+1 | Appear prior to a family member's death.
+2 | Haunt the site where it was executed.
+3 | Lament a lost love and haunt their grave.
+4 | Presage a disaster or tragedy.
+5 | Seek the return of a stolen treasure.
+6 | Slay those more beautiful than it was in life.
+
+Source:	Monster Manual 2024 p. 29</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Barbed Devil [2024]</name>
+    <size>M</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>15</ac>
+    <hp>110 (13d8+52)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>3</init>
+    <str>16</str>
+    <dex>17</dex>
+    <con>18</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>14</cha>
+    <save>Str +6, Wis +5, Con +7, Cha +5</save>
+    <skill>Insight +5, Deception +5, Perception +8</skill>
+    <passive>18</passive>
+    <languages>Infernal; telepathy 120 ft.</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Barbed Hide</name>
+      <text>At the start of each of its turns, the devil deals 5 (1d10) Piercing damage to any creature it is grappling or any creature grappling it.</text>
+    </trait>
+    <trait>
+      <name>Diabolical Restoration</name>
+      <text>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks.</text>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13) from both claws.</text>
+      <attack>Claws|+6|2d6+3</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>Melee Attack Roll: +6, reach 10 ft. Hit: 14 (2d10 + 3) Slashing damage.</text>
+      <attack>Tail|+6|2d10+3</attack>
+    </action>
+    <action>
+      <name>Hurl Flame</name>
+      <text>Ranged Attack Roll: +5, range 150 ft. Hit: 17 (5d6) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts burning.</text>
+      <attack>Hurl Flame|+5|5d6</attack>
+    </action>
+    <description>Infernal collectors, barbed devils fanatically protect troves of treasure and scour the planes of existence for additions to their hoards. Also known as hamatulas among the ranks of the Nine Hells, these devils bedeck their barbed hides with their most prized possessions and trophies taken from those who failed to steal from them. When threatened, barbed devils strike with their thorny limbs and hurl infernal flame.
+	Barbed devils often serve as guards and accountants for ice devil generals, pit fiend warlords, archdevils, and similarly powerful villains. In return, barbed devils gain protection for their own collections. Many barbed devils also maintain networks of imps that search the planes for treasures of interest or usefully greedy mortals.
+	Barbed devils rarely collect anything as prosaic as coins and gems. Rather, they pride themselves on having the multiverse's greatest collection of one kind of thing—typically items of rare pedigree or emblems of power. Barbed devils refuse to steal what they covet; instead they strike bargains to claim both treasure and mortal souls.
+
+Source:	Monster Manual 2024 p. 30</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Barlgura [2024]</name>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15</ac>
+    <hp>85 (10d10+30)</hp>
+    <speed>40 ft., climb 40 ft.</speed>
+    <init>2</init>
+    <str>18</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>7</int>
+    <wis>14</wis>
+    <cha>9</cha>
+    <save>Con +6, Dex +5</save>
+    <skill>Stealth +5, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Abyssal; telepathy 120 ft.</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Demonic Restoration</name>
+      <text>If the barlgura dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The barlgura makes one Tormenting Bite attack and two Thrash attacks.</text>
+    </action>
+    <action>
+      <name>Tormenting Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage plus 13 (2d12) Psychic damage.</text>
+      <attack>Tormenting Bite|+7|2d6+4</attack>
+      <attack>Psychic Damage||2d12</attack>
+    </action>
+    <action>
+      <name>Thrash</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 9 (1d10 + 4) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.</text>
+      <attack>Thrash|+7|1d10+4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The barlgura casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 13):
+
+	• 2/Day each: Disguise Self, Invisibility (self only)
+	• 1/Day each: Entangle, Phantasmal Killer (level 6 version)</text>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The barlgura jumps up to 40 feet by spending 10 feet of movement.</text>
+    </action>
+    <spells>Disguise Self [2024], Invisibility [2024], Entangle [2024], Phantasmal Killer [2024]</spells>
+    <description>Barlguras are demons that embody brutality and killer instincts. They ruthlessly hunt creatures that enter their territories, whether such places are Abyssal wildernesses or locations where these demons have been conjured by wicked magic-users. Barlguras litter their territories with fiendish icons and terrifying evidence of their kills.
+	Barlguras cooperate with other demons, particularly other barlguras, so long as they have ample prey. Should a region be depleted of creatures to slaughter, these demons turn on one another in frays that can devastate vast expanses.
+	Barlguras vary in appearance, but all have powerful frames and hands capable of climbing swiftly and delivering crushing blows. If brute force isn't enough to overwhelm their foes, barlguras can use demonic magic to conjure terrifying illusions and grasping vines. Most barlguras resemble nightmarish apes, and some bear exaggerated versions of features of predators common to the lands the barlguras inhabit. Many embed trophies from past hunts in their demonic bodies.
+
+Source:	Monster Manual 2024 p. 31</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Basilisk [2024]</name>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>15</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>20 ft.</speed>
+    <init>-1</init>
+    <str>16</str>
+    <dex>8</dex>
+    <con>15</con>
+    <int>2</int>
+    <wis>8</wis>
+    <cha>7</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Bite|+5|2d6+3</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Petrifying Gaze (Recharge 4-6) (Bonus Action)</name>
+      <text>Constitution Saving Throw: DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection within the Cone, the basilisk must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.</text>
+      <recharge>D4</recharge>
+    </action>
+    <description>Basilisks are ponderous predators with eight clawed legs, crystalline spines, and mighty jaws. Rather than chasing prey, they use their supernatural gaze to turn creatures to stone and then consume these victims at their leisure. While basilisks are most comfortable in subterranean lairs, many are captured and kept by unscrupulous folk seeking guardians for their treasures.
+	The remains of Petrified creatures litter the area where a basilisk hunts. These might be mundane creatures or more unusual beings that had dire encounters with a basilisk. Roll on or choose a result from the Petrified Basilisk Victims table to inspire the statues that might appear in a basilisk's hunting grounds. There is a 50 percent chance that any of these statues are missing limbs or broken into pieces.
+
+Petrified Basilisk Victims:
+1d8 | A Basilisk Used Its Gaze to Petrify...
+1 | An adventurer with an ornate key hanging around their neck.
+2 | Animals like bats, bears, deer, or goats.
+3 | A climber clinging to a stalactite.
+4 | Itself using a large mirror or shiny surface.
+5 | A mimic disguised as a chest full of treasure.
+6 | A monster such as an umber hulk or a troglodyte.
+7 | Someone caught in a comic pose or making a regrettable face.
+8 | A victim now being used as a nest for insects or other vermin.
+
+Source:	Monster Manual 2024 p. 32</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Bat [2024]</name>
+    <sortname>Bat</sortname>
+    <ancestry>Bat</ancestry>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>5 ft., fly 30 ft.</speed>
+    <init>2</init>
+    <str>2</str>
+    <dex>15</dex>
+    <con>8</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>4</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4 to hit, reach 5 ft. Hit: 1 Piercing damage.</text>
+      <attack>Bite|+4|1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 349,
+		Player's Handbook 2024 p. 346</description>
+    <environment>forest, mountain, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Bearded Devil [2024]</name>
+    <size>M</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>13</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>16</str>
+    <dex>15</dex>
+    <con>15</con>
+    <int>9</int>
+    <wis>11</wis>
+    <cha>14</cha>
+    <save>Str +5, Con +4, Cha +4</save>
+    <skill />
+    <passive>10</passive>
+    <languages>Infernal; telepathy 120 ft.</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>frightened, poisoned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes one Beard attack and one Infernal Glaive attack.</text>
+    </action>
+    <action>
+      <name>Beard</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage, and the target has the Poisoned condition until the start of the devil's next turn. Until this poison ends, the target can't regain Hit Points.</text>
+      <attack>Beard|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Infernal Glaive</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage. If the target is a creature and doesn't already have an infernal wound, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target receives an infernal wound. While wounded, the target loses 5 (1d10) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 12 Wisdom (Medicine) check.</text>
+      <attack>Infernal Glaive|+5|1d10+3</attack>
+    </action>
+    <description>Bearded devils, also known as barbazus, fill the legions of the Nine Hells. These cruel soldiers follow the orders of diabolical generals as they defend infernal realms, invade Material Plane worlds, and clash against demons in planes-spanning conflicts.
+	Left to their own devices, bearded devils encourage mortals to act callously and abuse their power, inflating their egos and inspiring petty tyrannies. Villains aligned with the Nine Hells call on bearded devils to serve as guardians, enforce their will, or fight in wicked armies.
+	Bearded devils' eponymous beards consist of grotesque, tentacle-like growths. These squirming, barb-riddled beards carry poison capable of preventing magical healing. Bearded devils are also known for their distinctive glaives, through which they channel hellish energy. Those struck by these unnatural weapons suffer infernal wounds that grow worse until stanched or magically healed.
+
+Source:	Monster Manual 2024 p. 33</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Behir [2024]</name>
+    <size>H</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>17</ac>
+    <hp>168 (16d12+64)</hp>
+    <speed>50 ft., climb 50 ft.</speed>
+    <init>3</init>
+    <str>23</str>
+    <dex>16</dex>
+    <con>18</con>
+    <int>7</int>
+    <wis>14</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Stealth +7, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Draconic</languages>
+    <cr>11</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning</immune>
+    <conditionImmune />
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes one Bite attack and uses Constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 19 (2d12 + 6) Piercing damage plus 11 (2d10) Lightning damage.</text>
+      <attack>Bite|+10|2d12+6</attack>
+      <attack>Lightning Damage||2d10</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Strength Saving Throw: DC 18, one Large or smaller creature the behir can see within 5 feet. Failure: 28 (5d8 + 6) Bludgeoning damage. The target has the Grappled condition (escape DC 16), and it has the Restrained condition until the grapple ends.</text>
+      <attack>Constrict||5d8+6</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 16, each creature in a 90-foot-long, 5-foot-wide Line. Failure: 66 (12d10) Lightning damage. Success: Half damage.</text>
+      <attack>Lightning Breath||12d10</attack>
+    </action>
+    <action>
+      <name>Swallow (Bonus Action)</name>
+      <text>Dexterity Saving Throw: DC 18, one Large or smaller creature Grappled by the behir (the behir can have only one creature swallowed at a time). Failure: The behir swallows the target, which is no longer Grappled. While swallowed, a creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the behir, and takes 21 (6d6) Acid damage at the start of each of the behir's turns.
+	If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls in a space within 10 feet of the behir and has the Prone condition. If the behir dies, a swallowed creature is no longer Restrained and can escape from the corpse by using 15 feet of movement, exiting Prone.</text>
+      <attack>Acid Damage||6d6</attack>
+    </action>
+    <description>Twelve-legged, reptilian predators, behirs endlessly hunt for their next meal. Their short legs propel them quickly across floors and walls. Any prey that behirs can't chase down, they blast with breaths of powerful lightning.
+	Legends claim the first behirs were magically created by storm giants during an ancient, multiversal conflict between giants and dragons. The giants used their mastery of weather to alter the essence of blue dragons. The results were the first behirs, which served as hunters with a particular taste for dragon eggs.
+	Behirs live in sprawling cave systems and elaborate ruins where they can make the most of their exceptional mobility. They are mindful of areas where dragons dwell, as most dragons view behirs as dangerous abominations and attack them on sight. Nevertheless, behirs occasionally hunt for dragon lairs in the hope of finding and devouring unhatched dragon eggs.
+
+Source:	Monster Manual 2024 p. 34</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Beholder [2024]</name>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>190 (20d10+80)</hp>
+    <speed>5 ft., fly 40 ft.(hover)</speed>
+    <init>12</init>
+    <str>16</str>
+    <dex>14</dex>
+    <con>18</con>
+    <int>17</int>
+    <wis>15</wis>
+    <cha>17</cha>
+    <save>Wis +7, Con +9</save>
+    <skill>Perception +12</skill>
+    <passive>22</passive>
+    <languages>Deep Speech, Undercommon</languages>
+    <cr>13</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day, or 4/Day in Lair)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the beholder fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The beholder uses Eye Rays three times.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +8, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage.</text>
+      <attack>Bite|+8|3d6+3</attack>
+    </action>
+    <action>
+      <name>Eye Rays</name>
+      <text>The beholder randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d10; reroll if the beholder has already used that ray during this turn):
+
+Eye Rays:
+d10 | Ray
+1 | Charm Ray: Wisdom Saving Throw: DC 16. Failure: 13 (3d8) Psychic damage, and the target has the Charmed condition for 1 hour or until it takes damage. Success: Half damage only.
+2 | Paralyzing Ray: Constitution Saving Throw: DC 16. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+3 | Fear Ray: Wisdom Saving Throw: DC 16. Failure: 14 (4d6) Psychic damage, and the target has the Frightened condition until the end of its next turn. Success: Half damage only.
+4 | Slowing Ray: Constitution Saving Throw: DC 16. Failure: 18 (4d8) Necrotic damage. Until the end of the target's next turn, the target's Speed is halved; the target can't take Reactions; and it can take either an action or a Bonus Action on its turn, not both. Success: Half damage only.
+5 | Enervation Ray: Constitution Saving Throw: DC 16. Failure: 13 (3d8) Poison damage, and the target has the Poisoned condition until the end of its next turn. While Poisoned, the target can't regain Hit Points. Success: Half damage only.
+6 | Telekinetic Ray: Strength Saving Throw: DC 16 (the target succeeds automatically if it is Gargantuan). Failure: The beholder moves the target up to 30 feet in any direction. The target has the Restrained condition until the start of the beholder's next turn or until the beholder has the Incapacitated condition. The beholder can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container.
+7 | Sleep Ray: Wisdom Saving Throw: DC 16 (the target succeeds automatically if it is a Construct or an Undead). Failure: The target has the Unconscious condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it.
+8 | Petrification Ray: Constitution Saving Throw: DC 16. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.
+9 | Disintegration Ray: Dexterity Saving Throw: DC 16. Failure: 36 (8d8) Force damage. If the target is a nonmagical object or a creation of magical force, a 10- foot Cube of it disintegrates into dust. Success: Half damage. Failure or Success: If the target is a creature and this damage reduces it to 0 Hit Points, it disintegrates into dust.
+10 | Death Ray: Dexterity Saving Throw: DC 16. Failure: 55 (10d10) Necrotic damage. Success: Half damage. Failure or Success: The target dies if the ray reduces it to 0 Hit Points.</text>
+      <attack>Eye Rays||1d10</attack>
+    </action>
+    <action>
+      <name>Antimagic Cone (Bonus Action)</name>
+      <text>The beholder's central eye emits an antimagic wave in a 150-foot Cone. Until the start of the beholder's next turn, that area acts as an Antimagic Field spell, and that area works against the beholder's own Eye Rays.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Beholder can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Beholder regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Chomp</name>
+      <text>The beholder makes two Bite attacks.</text>
+    </legendary>
+    <legendary>
+      <name>Glare</name>
+      <text>The beholder uses Eye Rays.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Beholder Lairs</name>
+      <text>Beholders lurk in cavern complexes they've carved using their eye rays deep in the Underdark or in lairs created for them by their servants.
+
+The region containing a beholder's lair is twisted by its presence, creating the following effects:
+
+Scopophobia: Creatures within 1 mile of the lair feel as if they're being watched. Any creature (excluding the beholder and its allies) that finishes a Short Rest while within 1 mile of the lair must succeed on a DC 13 Wisdom saving throw or gain no benefit from that rest.
+
+Warping Terrain: Minor warps in reality occur near the lair; any creature (excluding the beholder) within 1 mile of the lair that makes a D20 Test and rolls a 1 has the Prone condition.
+
+If the beholder dies or moves its lair elsewhere, these effects end immediately.</text>
+      <attack>Beholder Lairs||1d20</attack>
+    </legendary>
+    <description>Beholders—also known as eye tyrants—number among the most notorious inhabitants of the Underdark. Few creatures in the multiverse are as loathed and feared as these maniacal horrors.
+	A beholder's distinctive, globular body is dominated by an oversize maw and a gigantic central eye. Ten stalks ending in smaller eyes crown its form. From each of these eleven eyes, a beholder can unleash a different magic power. The central eye can deactivate magic, while the smaller eyes emit rays that inflict various dooms—such as petrifying creatures, disintegrating them, slaying them outright, or other effects.
+	Beholders possess utterly alien minds. Most exhibit paranoid, narcissistic, and megalomaniacal tendencies, and they act on agendas beyond human reasoning. While some keep to themselves, others force weaker creatures into their service. Still others cultivate grand ambitions, creating networks of minions to manipulate groups, settlements, and whole nations in the Underdark and sometimes the surface world.
+	Few creatures loathe beholders more than other beholders. Every beholder views itself as the physical and intellectual pinnacle of its species. To them, all other beholders are aberrant rivals to be dominated or destroyed. Conflicts between beholders can last for decades and lay waste to vast subterranean realms.
+	Beholders are a particular threat to adventurers because both gravitate toward mysterious ruins and sites of great magic. Many beholders collect the magic items and petrified bodies of heroes they've defeated, displaying them as trophies.
+
+Source:	Monster Manual 2024 p. 36</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Beholder Zombie [2024]</name>
+    <sortname>Zombie, Beholder</sortname>
+    <ancestry>Zombie</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>93 (11d10+33)</hp>
+    <speed>5 ft., fly 20 ft.(hover)</speed>
+    <init>-1</init>
+    <str>14</str>
+    <dex>8</dex>
+    <con>16</con>
+    <int>3</int>
+    <wis>8</wis>
+    <cha>5</cha>
+    <save>Wis +2</save>
+    <skill />
+    <passive>9</passive>
+    <languages>understands Deep Speech and Undercommon but can't speak</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned, prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The zombie uses Eye Rays twice.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 16 (4d6 + 2) Piercing damage.</text>
+      <attack>Bite|+5|4d6+2</attack>
+    </action>
+    <action>
+      <name>Eye Rays</name>
+      <text>The zombie randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d4; reroll if the zombie has already used that ray during this turn):
+
+Beholder Rays:
+d4 | Rays
+1 | Paralyzing Ray: Constitution Saving Throw: DC 14. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+2 | Fear Ray: Wisdom Saving Throw: DC 14. Failure: 13 (3d8) Psychic damage, and the target has the Frightened condition until the end of its next turn.
+3 | Enervation Ray: Constitution Saving Throw: DC 14. Failure: 10 (3d6) Necrotic damage, and the target has the Poisoned condition until the end of its next turn. While Poisoned, the target can't regain Hit Points. Success: Half damage only.
+4 | Disintegration Ray: Dexterity Saving Throw: DC 14. Failure: 27 (5d10) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust. Success: Half damage. Failure or Success: If the target is a creature and this damage reduces it to 0 Hit Points, it disintegrates into dust.</text>
+    </action>
+    <description>Zombies are unthinking, reanimated corpses, often gruesomely marred by decay and lethal traumas. They serve whatever supernatural force animates them—typically evil necromancers or fiendish spirits. Zombies are relentless, merciless, and resilient, and their dead flesh can carry on even after suffering grievous wounds. While they can follow simple orders, they rely on primal drives rather than thought. They fulfill commands by working tirelessly or battering through foes, but they are easily stymied by barriers or unexpected circumstances.
+	Zombies are usually created from Humanoid corpses, but the remains of other creatures can also become zombies. Such monstrous zombies might possess the strength they had in life or a measure of their supernatural abilities, but they employ such abilities haphazardly at best.
+
+Beholder Zombie:
+Zombies animated from the corpses of beholders retain some use of those monsters' magical eyestalks. These hovering corpses rely on their magic to destroy impediments and paralyze foes, allowing them to savage foes with their rotting maws.
+	Magic-using beholders typically raise these abominations from the corpses of defeated rivals.
+
+Source:	Monster Manual 2024 p. 347</description>
+    <environment>planar (shadowfell), underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Berserker [2024]</name>
+    <sortname>Berserker</sortname>
+    <ancestry>Berserker</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>67 (9d8+27)</hp>
+    <speed>30 ft.</speed>
+    <init>1</init>
+    <str>16</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>9</int>
+    <wis>11</wis>
+    <cha>9</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Greataxe, Hide Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <trait>
+      <name>Bloodied Frenzy</name>
+      <text>While Bloodied, the berserker has Advantage on attack rolls and saving throws.</text>
+    </trait>
+    <action>
+      <name>Greataxe</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 9 (1d12 + 3) Slashing damage.</text>
+      <attack>Greataxe|+5|1d12+3</attack>
+    </action>
+    <description>Gripped by the adrenaline of battle, berserkers are reckless invaders, pit fighters, and other ferocious warriors.
+
+Source:	Monster Manual 2024 p. 37</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Berserker Commander [2024]</name>
+    <sortname>Berserker, Commander</sortname>
+    <ancestry>Berserker</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>16</ac>
+    <hp>136 (16d8+64)</hp>
+    <speed>40 ft.</speed>
+    <init>5</init>
+    <str>19</str>
+    <dex>14</dex>
+    <con>19</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>9</cha>
+    <save>Str +7, Con +7</save>
+    <skill>Athletics +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Greataxe, Javelins (6)</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <trait>
+      <name>Bloodied Frenzy</name>
+      <text>While Bloodied, the berserker has Advantage on attack rolls and saving throws.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The berserker makes three attacks, using Greataxe or Javelin in any combination.</text>
+    </action>
+    <action>
+      <name>Greataxe</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 10 (1d12 + 4) Slashing damage, plus 10 (3d6) Thunder damage to the target or another creature within 5 feet of the target.</text>
+      <attack>Greataxe|+7|1d12+4</attack>
+      <attack>Thunder Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Javelin</name>
+      <text>Melee or Ranged Attack Roll: +7, reach 5 ft. or range 30/120 ft. Hit: 18 (4d6 + 4) Piercing damage, and the target's Speed decreases by 5 feet until the start of the berserker's next turn.</text>
+      <attack>Javelin|+7|4d6+4</attack>
+    </action>
+    <action>
+      <name>Frenzied Rush (Bonus Action)</name>
+      <text>Each ally within 30 feet of the berserker can take a Reaction to move up to half the ally's Speed without provoking Opportunity Attacks. The berserker can also move up to half its Speed without provoking Opportunity Attacks.</text>
+    </action>
+    <description>Gripped by the adrenaline of battle, berserkers are reckless invaders, pit fighters, and other ferocious warriors.
+
+Berserker commanders bear the scars of battle and drive their followers to match their deadly zeal. These commanders tap into a primal magic to enhance their might.
+
+Source:	Monster Manual 2024 p. 37</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Black Bear [2024]</name>
+    <sortname>Bear, Black</sortname>
+    <ancestry>Bear</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>19 (3d8+6)</hp>
+    <speed>30 ft., climb 30 ft., swim 30 ft.</speed>
+    <init>1</init>
+    <str>15</str>
+    <dex>12</dex>
+    <con>14</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages />
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bear makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage.</text>
+      <attack>Rend|+4|1d6+2</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 349,
+		Player's Handbook 2024 p. 346</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Black Dragon Wyrmling [2024]</name>
+    <sortname>Black Dragon, Wyrmling</sortname>
+    <ancestry>Black Dragon</ancestry>
+    <size>M</size>
+    <type>dragon (chromatic)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17</ac>
+    <hp>33 (6d8+6)</hp>
+    <speed>30 ft., fly 60 ft., swim 30 ft.</speed>
+    <init>4</init>
+    <str>15</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>10</int>
+    <wis>11</wis>
+    <cha>13</cha>
+    <save>Wis +2, Dex +4</save>
+    <skill>Stealth +4, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune>acid</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage plus 2 (1d4) Acid damage.</text>
+      <attack>Rend|+4|1d6+2</attack>
+      <attack>Acid Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 11, each creature in a 15-foot-long, 5-foot-wide Line. Failure: 22 (5d8) Acid damage. Success: Half damage.</text>
+      <attack>Acid Breath||5d8</attack>
+    </action>
+    <description>Black dragons delight in suffering and ruin. While other chromatic dragons scheme for power and wealth, these dragons seek to tear down all they see and rule over what remains.
+	Black dragons are terrifying creatures with curved horns and withered visages suggestive of fiendish skulls. They typically inhabit stagnant swamps, crumbling ruins, or places of magical or environmental corruption. Their acid breath scars their domains, eroding the features from ancient statues and leaving nature with festering wounds.
+	Black dragons hoard tarnished symbols of hope and relics of fallen empires. The more sought-after the treasure, the more black dragons prize it—particularly if they were responsible for it being lost.
+
+Black dragon wyrmlings lurk in bogs and polluted waterways, hunting for prey and weaker creatures to overpower. While older wyrmlings eventually seek their own territories, recently hatched ones might hunt one another, seeking dominance over their clutch and slaying rivals they can't subjugate.
+
+Source:	Monster Manual 2024 p. 38</description>
+    <environment>swamp</environment>
+  </monster>
+
+<monster>
+    <name>Black Pudding [2024]</name>
+    <size>L</size>
+    <type>ooze</type>
+    <alignment>unaligned</alignment>
+    <ac>7</ac>
+    <hp>68 (8d10+24)</hp>
+    <speed>20 ft., climb 20 ft.</speed>
+    <init>-2</init>
+    <str>16</str>
+    <dex>5</dex>
+    <con>16</con>
+    <int>1</int>
+    <wis>6</wis>
+    <cha>1</cha>
+    <save />
+    <skill />
+    <passive>8</passive>
+    <languages />
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune>acid, cold, lightning, slashing</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, grappled, prone, restrained</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Amorphous</name>
+      <text>The pudding can move through a space as narrow as 1 inch without expending extra movement to do so.</text>
+    </trait>
+    <trait>
+      <name>Corrosive Form</name>
+      <text>A creature that hits the pudding with a melee attack roll takes 4 (1d8) Acid damage. Nonmagical ammunition is destroyed immediately after hitting the pudding and dealing any damage. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing damage to the pudding and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the Mending spell on the weapon.
+	In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.</text>
+      <attack>Acid Damage||1d8</attack>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The pudding can climb difficult surfaces, including along ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Dissolving Pseudopod</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 17 (4d6 + 3) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor.</text>
+      <attack>Dissolving Pseudopod|+5|4d6+3</attack>
+    </action>
+    <reaction>
+      <name>Split</name>
+      <text>Trigger: While the pudding is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. Response: The pudding splits into two new Black Puddings. Each new pudding is one size smaller than the original pudding and acts on its Initiative. The original pudding's Hit Points are divided evenly between the new puddings (round down).</text>
+    </reaction>
+    <description>Black puddings are shapeless masses of predatory cells. Once a pudding detects organic matter, it oozes toward its prey, dissolving living matter and various objects. If a black pudding is split by lightning or slashing attacks, it divides into two smaller, independent puddings.
+	Various supernatural conditions might bring black puddings into being. Roll on or choose a result from the Black Pudding Sources table to inspire a pudding's origins.
+
+Black Pudding Sources:
+1d6 | The Black Pudding Formed From...
+1 | An ancient black dragon's acidic saliva.
+2 | The blood or extreme emotions of a foul deity.
+3 | Cosmic entropy or ruinous planar forces.
+4 | A curse that transformed a forgotten tyrant.
+5 | Forbidden or industrialized magic.
+6 | Necrotic material animated by aimless spirits.
+
+Source:	Monster Manual 2024 p. 42</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Blink Dog [2024]</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>lawful good</alignment>
+    <ac>13</ac>
+    <hp>22 (4d8+4)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>12</str>
+    <dex>17</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Stealth +5, Perception +5</skill>
+    <passive>15</passive>
+    <languages>understands Elvish and Sylvan but can't speak them</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage.</text>
+      <attack>Bite|+5|1d4+3</attack>
+    </action>
+    <action>
+      <name>Teleport (Recharge 4-6) (Bonus Action)</name>
+      <text>The dog teleports up to 40 feet to an unoccupied space it can see.</text>
+      <recharge>D4</recharge>
+    </action>
+    <description>Blink dogs glimmer with a magic that allows them to teleport, "blinking" from one spot to another. These dogs use this power to chase prey, baﬄe foes, and express joy. They're frequently found among Feywild folk, such as centaurs and pixies—often as members of rollicking hunts between worlds.
+
+Source:	Monster Manual 2024 p. 46</description>
+    <environment>forest, planar (feywild)</environment>
+  </monster>
+
+<monster>
+    <name>Blob of Annihilation [2024]</name>
+    <size>G</size>
+    <type>ooze (titan)</type>
+    <alignment>neutral evil</alignment>
+    <ac>18</ac>
+    <hp>448 (23d20+207)</hp>
+    <speed>30 ft.</speed>
+    <init>16</init>
+    <str>27</str>
+    <dex>14</dex>
+    <con>28</con>
+    <int>10</int>
+    <wis>16</wis>
+    <cha>10</cha>
+    <save>Con +16, Dex +9</save>
+    <skill />
+    <passive>13</passive>
+    <languages />
+    <cr>23</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune>acid, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious</conditionImmune>
+    <senses>blindsight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+7</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Astral Implosion</name>
+      <text>If the blob is reduced to 0 Hit Points, it implodes and ejects any creatures and objects engulfed by it into the Astral Sea. The blob itself vanishes, leaving behind a layer of slime on everything that was within 600 feet of it. In 1d20 years, the blob reconstitutes on a random world in the Material Plane.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (4/Day)</name>
+      <recharge>4/DAY</recharge>
+      <text>If the blob fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The blob has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The blob makes two Pseudopod attacks and uses Engulf. It can replace one attack with a use of Restraining Glob.</text>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Attack Roll: +15, reach 30 ft. Hit: 24 (3d10 + 8) Force damage.</text>
+      <attack>Pseudopod|+15|3d10+8</attack>
+    </action>
+    <action>
+      <name>Engulf</name>
+      <text>The blob moves up to its Speed and can move through the spaces of Huge or smaller creatures and objects. Strength Saving Throw: DC 23, each creature or object whose space the blob enters for the first time during this move. Failure: The target is engulfed. While engulfed, a target has Total Cover against attacks and other effects outside the blob, and when the blob moves, the engulfed target moves with it. A nonmagical object is destroyed after spending 1 minute engulfed.
+	While engulfed, a creature takes 21 (6d6) Force damage at the start of each of its turns, is suffocating, has the Restrained condition, and repeats the save at the end of each of its turns. An engulfed creature that is reduced to 0 Hit Points dissolves into ash, which is ejected into the Astral Sea. Success: The target escapes and enters the nearest unoccupied space.</text>
+      <attack>Force Damage||6d6</attack>
+    </action>
+    <action>
+      <name>Restraining Glob</name>
+      <text>The blob lobs a slimy glob at one Large or smaller creature it can see within 600 feet of itself. Dexterity Saving Throw: DC 23, the targeted creature. Failure: 18 (3d6 + 8) Acid damage. The glob rolls the target 60 feet straight toward the blob, and the target has the Restrained condition until the end of its next turn, when the glob harmlessly dissolves. Success: Half damage only.</text>
+      <attack>Restraining Glob||3d6+8</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Blob of Annihilation can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Blob of Annihilation regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Decay</name>
+      <text>The blob deals 14 (4d6) Necrotic damage to each creature engulfed by it. The blob can't take this action again until the start of its next turn.</text>
+      <attack>Decay||4d6</attack>
+    </legendary>
+    <legendary>
+      <name>Grasping Glob</name>
+      <text>The blob uses Restraining Glob. The blob can't take this action again until the start of its next turn.</text>
+    </legendary>
+    <legendary>
+      <name>Lashing Goop</name>
+      <text>The blob makes one Pseudopod attack.</text>
+    </legendary>
+    <description>The blob of annihilation is a coagulation of cosmic entropy conjoined to the remains of dead gods. This malicious entity drifts through Wildspace and multiversal expanses inimical to life—vast regions where the chance of encountering it is low.
+	The blob poses the greatest threat when disasters or nihilistic magic-users summon it to inhabited realms. Once unleashed, the blob of annihilation rolls across the land in vast, cosmic gyres, with fragments of the blob splitting off to engulf targets. The blob consumes anything it encounters, sweeping forests, villages, and fortresses into its mass. Within the blob is an expanse without air or gravity where entropic forces destroy whatever they engulf. Nothing can survive within for long.
+	Only magic items and the corpses of gods and titans can endure inside the blob. Because of that fact, treasure hunters and theologians sometimes give themselves the deadly task of trying to retrieve something from within the blob. This quest usually ends in annihilation, but occasionally it results in the find of a lifetime.
+	When the blob appears, roll on or choose a result from the Blob of Annihilation Contents table to inspire what extraordinary thing remains within its goop.
+
+Blob of Annihilation Contents:
+1d10 | The Blob Contains...
+1 | An A mulet of the Planes.
+2 | An Artifact of the DM's choice.
+3 | The corpses of two gods who were entangled in battle when the blob consumed them.
+4 | A Cubic Gate.
+5 | A Deck of Many Things.
+6 | A magic key that opens a door in Sigil that no other key and no spell can open.
+7 | The preserved corpse of an empyrean.
+8 | The remains of half a kraken.
+9 | The skull of a death god.
+10 | A tarrasque that just died.
+
+Source:	Monster Manual 2024 p. 47</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Blood Hawk [2024]</name>
+    <size>S</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>7 (2d6)</hp>
+    <speed>10 ft., fly 60 ft.</speed>
+    <init>2</init>
+    <str>6</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>3</int>
+    <wis>14</wis>
+    <cha>5</cha>
+    <save />
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages />
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The hawk has Advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Beak</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if the target is Bloodied.</text>
+      <attack>Beak|+4|1d4+2</attack>
+      <attack>Piercing while Bloodied|+4|1d8+2</attack>
+    </action>
+    <description>Excessively aggressive hawklike avians known for stealing gems.
+
+Source:	Monster Manual 2024 p. 350</description>
+    <environment>arctic, coastal, forest, grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Blue Dragon Wyrmling [2024]</name>
+    <sortname>Blue Dragon, Wyrmling</sortname>
+    <ancestry>Blue Dragon</ancestry>
+    <size>M</size>
+    <type>dragon (chromatic)</type>
+    <alignment>lawful evil</alignment>
+    <ac>17</ac>
+    <hp>65 (10d8+20)</hp>
+    <speed>30 ft., fly 60 ft., burrow 15 ft.</speed>
+    <init>2</init>
+    <str>17</str>
+    <dex>10</dex>
+    <con>15</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +2, Dex +2</save>
+    <skill>Stealth +2, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage plus 3 (1d6) Lightning damage.</text>
+      <attack>Rend|+5|1d10+3</attack>
+      <attack>Lightning Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-foot-wide Line. Failure: 21 (6d6) Lightning damage. Success: Half damage.</text>
+      <attack>Lightning Breath||6d6</attack>
+    </action>
+    <description>Arrogant and imperious, blue dragons are chromatic dragons that crave control and collect followers like other dragons hoard treasure. They seek to transform their territories into empires, domains to be feared by nations.
+	Blue dragons have sharp features with piercing horns and scales that range from sapphire to the shades of stormy skies. They dwell in deserts and badlands, particularly regions with dramatic spires from whose tops they might see for miles. They seek lairs near sites of symbolic power, such as the abandoned fortresses of giants, the colossi of fallen empires, or monuments raised by their followers.
+	Regalia of rulership and artistic masterpieces fill blue dragons' hoards. These dragons have no interest in treasures that are common or flawed, preferring one-of-a-kind gemstones, the crowns of fallen royals, and magic items capable of spreading the dragons' influence.
+
+Blue dragon wyrmlings often serve other powerful creatures, learning the ways of control and establishing fearful reputations among weaker creatures. Many wyrmlings initially serve loyally, but as their powers grow to match their ambitions, they eventually betray or abandon their associates. These wyrmlings tempt small groups of creatures into their service, rewarding them with modest treasures and promises of future power.
+
+Source:	Monster Manual 2024 p. 48</description>
+    <environment>coastal, desert</environment>
+  </monster>
+
+<monster>
+    <name>Blue Slaad [2024]</name>
+    <sortname>Slaad, Blue</sortname>
+    <ancestry>Slaad</ancestry>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>15</ac>
+    <hp>133 (14d10+56)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>20</str>
+    <dex>15</dex>
+    <con>18</con>
+    <int>7</int>
+    <wis>7</wis>
+    <cha>9</cha>
+    <save />
+    <skill>Perception +1</skill>
+    <passive>11</passive>
+    <languages>Slaad; telepathy 60 ft.</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist>acid, cold, fire, lightning, thunder</resist>
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The slaad has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The slaad regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The slaad makes three Mutating Claw attacks.</text>
+    </action>
+    <action>
+      <name>Mutating Claw</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 3 (1d6) Poison damage. If the target is a Humanoid not cursed by a slaad, it is subjected to the following effect. Constitution Saving Throw: DC 15. Failure: The target is cursed. The cursed target can't regain Hit Points, and its Hit Point maximum decreases by 10 (3d6) after every 24 hours and doesn't return to normal after finishing a Long Rest. If the curse reduces the target's Hit Point maximum to 0, the curse ends, and instead of dying, the target instantly transforms into a Red Slaad or, if it can cast spells of level 3 or higher, a Green Slaad. Only a Wish spell can reverse this transformation.</text>
+      <attack>Mutating Claw|+8|2d6+5+1d6</attack>
+    </action>
+    <description>Unpredictable slaadi devour and multiply across the Ever-Changing Chaos of Limbo. These toadlike, extraplanar beings embody the endless potentiality of their home plane of existence. While slaadi aren't inherently evil, their impulses are wild and often destructive. Many are driven to propagate through supernatural processes. Unfortunately, these processes typically are fatal for other creatures.
+	Slaadi have no formal society. Rather, strong slaadi dominate weaker ones. Blue and red slaadi rampage across Limbo and spill into other worlds at the direction of green slaadi. More powerful slaadi have connections to the Spawning Stone, a source of chaotic magic from which the first slaadi originated. The Spawning Stone is hidden deep within Limbo, and legends tie its origins to the modron overlord Primus or the ruinous slaad lords, such as Ssendam, the golden amoeboid terror, and Ygorl, the winged skeleton. These slaad lords and others plot to spread slaadi across the multiverse.
+
+Salad Control Gems:
+A salad born from the Spawning Stone has a magical control gem embedded in its head. If a creature claims the gem, the salad has the Charmed condition and obeys the gem's bearer. The salad ceases to be Charmed if it is harmed by the gem's bearer or the bearer's allies or if the gem is returned to the salad. A Greater Restoration spell cast on a salad destroys the gem, and the salad ceases to be Charmed. One can obtain a salad's control gem using a Wish or Imprisonment spell. If the salad fails its saving throw against Imprisonment, the caster against the gem, and the salad isn't imprisoned. An Incapacitated salads control gem can be removed by spending 1 minute and succeeding on a DC 20 Wisdom (Medicine) check. Failing this check deals 22 (4d10) piercing damage to the salad.
+
+Blue Slaad:
+Almost as numerous as red slaadi, blue slaadi are muscular brutes with vicious blades extending from the backs of their claws. These claws carry a magical curse called chaos phage, which can transform victims into red or green slaadi. Blue slaadi accompany red slaadi and behave similarly. They innately know the signs of chaos phage and avoid slaying creatures that carry it or other slaad curses.
+
+Source:	Monster Manual 2024 p. 285</description>
+    <environment>planar (limbo)</environment>
+  </monster>
+
+<monster>
+    <name>Boar [2024]</name>
+    <sortname>Boar</sortname>
+    <ancestry>Boar</ancestry>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>13 (2d8+4)</hp>
+    <speed>40 ft.</speed>
+    <init>0</init>
+    <str>13</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>2</int>
+    <wis>9</wis>
+    <cha>5</cha>
+    <save />
+    <skill />
+    <passive>9</passive>
+    <languages />
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Bloodied Fury</name>
+      <text>While Bloodied, the boar has Advantage on attack rolls.</text>
+    </trait>
+    <action>
+      <name>Gore</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and has the Prone condition.</text>
+      <attack>Gore|+3|1d6+1+1d6</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 350,
+		Player's Handbook 2024 p. 347</description>
+    <environment>forest, grassland, hill</environment>
+  </monster>
+
+<monster>
+    <name>Bone Devil [2024]</name>
+    <size>L</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>16</ac>
+    <hp>161 (17d10+68)</hp>
+    <speed>40 ft., fly 40 ft.</speed>
+    <init>7</init>
+    <str>18</str>
+    <dex>16</dex>
+    <con>18</con>
+    <int>13</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save>Str +8, Wis +6, Cha +7, Int +5</save>
+    <skill>Insight +6, Deception +7</skill>
+    <passive>12</passive>
+    <languages>Infernal; telepathy 120 ft.</languages>
+    <cr>9</cr>
+    <vulnerable />
+    <resist>cold</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Diabolical Restoration</name>
+      <text>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes two Claw attacks and one Infernal Sting attack.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 13 (2d8 + 4) Slashing damage.</text>
+      <attack>Claw|+8|2d8+4</attack>
+    </action>
+    <action>
+      <name>Infernal Sting</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil's next turn. While Poisoned, the target can't regain Hit Points.</text>
+      <attack>Infernal Sting|+8|2d10+4</attack>
+      <attack>Poison Damage||4d8</attack>
+    </action>
+    <description>Bone devils are gaunt, nightmarish Fiends with pallid skin stretched tight over frames that combine human and insectile features. Also known as osyluths, these Fiends command weaker devils and other beings aligned with infernal legions. Bone devils ensure that the commands of hellish sovereigns are exacted eﬃciently and that non-devils fulfill their commitments to the Nine Hells. They slay those who renege on infernal deals, sending treacherous mortal souls to face unspeakable punishments.
+	When not serving their diabolical masters, bone devils tempt self-obsessed mortals with promises of other creatures' adulation and obedience. These devils prop up petty tyrants, helping them grow increasingly calloused and amoral.
+	Bone devils travel across the multiverse to fulfill diabolical orders. If left with no other choices, they might conscript mortals to aid them in their vicious goals. Roll on or choose a result from the Bone Devil Objectives table to inspire a bone devil's goals.
+
+Bone Devil Objectives:
+1d4 | The Bone Devil Seeks To...
+1 | Capture a soul that escaped the Nine Hells.
+2 | Convey a message or make an example of someone in the name of an archdevil.
+3 | Find someone who broke a deal with a devil.
+4 | Slay someone or steal something as part of its pact with a wicked magic-user.
+
+Source:	Monster Manual 2024 p. 52</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Bone Naga [2024]</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>65 (10d10+10)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>15</str>
+    <dex>16</dex>
+    <con>12</con>
+    <int>16</int>
+    <wis>15</wis>
+    <cha>15</cha>
+    <save />
+    <skill />
+    <passive>12</passive>
+    <languages>Common plus one other language</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The naga makes two Bite attacks. It can replace any attack with a use of Serpentine Gaze.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 10 (2d6 + 3) Piercing damage plus 7 (2d6) Necrotic damage.</text>
+      <attack>Bite|+5|2d6+3</attack>
+      <attack>Necrotic Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Serpentine Gaze</name>
+      <text>Wisdom Saving Throw: DC 13, one creature the naga can see within 60 feet. Failure: 13 (3d6 + 3) Psychic damage, and the target has the Charmed condition until the start of the naga's next turn.</text>
+      <attack>Psychic Damage||3d6+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The naga casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 13):
+
+	• At will: Mage Hand, Thaumaturgy
+	• 1/Day each: Command, Detect Thoughts, Lightning Bolt</text>
+    </action>
+    <spells>Mage Hand [2024], Thaumaturgy [2024], Command [2024], Detect Thoughts [2024], Lightning Bolt [2024]</spells>
+    <description>Nagas are immortal but not invincible, and powerful magic can end their lives. Bone nagas are skeletal terrors raised from the remains of magically slain nagas or nagas that were killed but that hadn't yet rejuvenated. They are granted unlife through rituals practiced by cultists, yuan-ti, and morbid spirit nagas. These Undead nagas possess magical abilities similar to those they had in life, along with an eerie gaze that can beguile other creatures.
+	Bone nagas typically obey those who resurrected them, serving their creators as tireless guards and sharing the lore they collected in life. Undeath disrupts the perfect memory bone nagas enjoyed while alive, leaving them with gaps in their memories or details scrambled into puzzle-like jumbles.
+	In rare cases, bone nagas continue to pursue the goals they had while alive instead of serving other creatures. Most free-willed bone nagas are evil beings raised from spirit naga remains, but in unusual instances, bone nagas created from guardian nagas continue good, albeit confused, existences.
+
+Source:	Monster Manual 2024 p. 53</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Brass Dragon Wyrmling [2024]</name>
+    <sortname>Brass Dragon, Wyrmling</sortname>
+    <ancestry>Brass Dragon</ancestry>
+    <size>M</size>
+    <type>dragon (metallic)</type>
+    <alignment>chaotic good</alignment>
+    <ac>15</ac>
+    <hp>22 (4d8+4)</hp>
+    <speed>30 ft., fly 60 ft., burrow 15 ft.</speed>
+    <init>2</init>
+    <str>15</str>
+    <dex>10</dex>
+    <con>13</con>
+    <int>10</int>
+    <wis>11</wis>
+    <cha>13</cha>
+    <save>Wis +2, Dex +2</save>
+    <skill>Stealth +2, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage.</text>
+      <attack>Rend|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Fire Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 11, each creature in a 20-foot-long, 5-foot-wide Line. Failure: 14 (4d6) Fire damage. Success: Half damage.</text>
+      <attack>Fire Breath||4d6</attack>
+    </action>
+    <action>
+      <name>Sleep Breath</name>
+      <text>Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn, at which point it repeats the save. Second Failure: The target has the Unconscious condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it.</text>
+    </action>
+    <description>Gregarious and outgoing, brass dragons relish sharing knowledge and stories. Although these metallic dragons favor arid lands, they cheerfully journey considerable distances to visit friendly creatures, pass on what they've learned, and collect news. Though good natured, brass dragons don't shirk from combat when necessary, thwarting foes with magical sleep and searing them with flame.
+	Brass dragons favor warm climes, particularly steppes and rocky or sandy deserts, and they usually dwell near prominent crossroads or oases that regularly draw visitors. They enjoy adopting Humanoid forms, disguising themselves as traveling merchants, scholars, storytellers, or anyone else invested in others' stories.
+	Brass dragons collect eclectic objects. While such items might seem like knickknacks, each is part of a story—perhaps a nostalgic memento or evidence of a tale passed into myth. An old friend's hat and the crown of the last ruler of a forgotten dynasty could occupy the same shelf in a brass dragon's hoard.
+
+Brass dragon wyrmlings are relentlessly curious. These dragons eagerly engage approachable creatures and are quick to explore any place that has an interesting story. Once they hear tales of adventure, many are keen to start their own quests.
+
+Source:	Monster Manual 2024 p. 54</description>
+    <environment>desert</environment>
+  </monster>
+
+<monster>
+    <name>Brazen Gorgon [2024]</name>
+    <sortname>Gorgon, Brazen</sortname>
+    <ancestry>Gorgon</ancestry>
+    <size>L</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>19</ac>
+    <hp>161 (17d10+68)</hp>
+    <speed>40 ft.</speed>
+    <init>2</init>
+    <str>18</str>
+    <dex>14</dex>
+    <con>19</con>
+    <int>2</int>
+    <wis>14</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Perception +10</skill>
+    <passive>20</passive>
+    <languages />
+    <cr>9</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune>exhaustion, petrified</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Flame Aura</name>
+      <text>At the end of each of the gorgon's turns, each creature in a 5-foot Emanation originating from the gorgon takes 13 (3d8) Fire damage.</text>
+      <attack>Flame Aura||3d8</attack>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The gorgon sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The gorgon makes two Gore attacks.</text>
+    </action>
+    <action>
+      <name>Gore</name>
+      <text>Melee Attack Roll: +8, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage plus 10 (3d6) Fire damage.</text>
+      <attack>Gore|+8|2d6+4</attack>
+      <attack>Fire Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Smelting Charge (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The gorgon moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each time the gorgon enters a creature's space for the first time during this move, that target is subjected to the following effect. Dexterity Saving Throw: DC 16. Failure: 13 (2d8 + 4) Piercing damage plus 13 (3d8) Fire damage, and the target is pulled into the gorgon's space and has the Grappled condition (escape DC 14); if the gorgon already has a creature Grappled, the target has the Prone condition instead. Until the grapple ends, the target has the Restrained condition. When the gorgon moves, the Grappled target moves with it, costing no extra movement.</text>
+      <attack>Piercing Damage||2d8+4</attack>
+      <attack>Fire Damage||3d8</attack>
+    </action>
+    <description>Resembling mighty bulls armored in iron plates, gorgons are lifelike automatons that seek to destroy all who enter their territories. In addition to goring foes with their deadly horns and trampling them under their iron hooves, gorgons exhale gouts of noxious gas.
+	Gorgons are created by magic-users to serve as guardians. The process for creating a gorgon is labor intensive and dangerous, with one method requiring the skeleton of a bull, the blood of a medusa, and the brain of a basilisk fused into a frame of ensorcelled iron. If the process fails, petrifying gas emerges from the materials, creating a magical threat that can fill a structure and linger for years.
+	When magic-users create gorgons, they often enchant them to ignore those who confront the creature with a specific command key, usually a password or a specific signal. Once a gorgon is set to guard an area, it attacks any who enter until they flee or are destroyed. Should someone provide the command key, the monster ignores that intruder so long as the intruder remains in its sight. But if the intruder ventures out of sight and then returns without again presenting the command key, the gorgon attacks. Those in a gorgon's territory must remain vigilant and aware of the monster's exact position, or they risk being attacked by a gorgon they thought was no longer a threat.
+	Those who create gorgons strive to give them purposefully obscure command keys. Hints at command keys might be found among the records of a gorgon's creator or in the area the gorgon protects—perhaps scrawled as a petrified trespasser's final act. Roll on or choose a result from the Gorgon Command Keys table to inspire the word or signal that temporarily neutralizes a gorgon.
+
+Gorgon Command Keys:
+1d6 | Gorgon Won't Attack Those That...
+1 | Cast a particular spell in the gorgon's presence.
+2 | Keep their back to the gorgon or otherwise act like they don't see the monster.
+3 | Offer it a drink of blood, water, or wine.
+4 | Recite a specific rhyme or sing a certain song.
+5 | Say its creator's name backward.
+6 | Wear a mask, perhaps in the shape of a bull or an animal meaningful to the gorgon's creator.
+
+Followers of the exiled archdevil Moloch altered the process of creating gorgons to craft their own diabolical guardians called brazen gorgons. These gorgons are hollow, bull-like automatons whose metal bodies glow with intense heat. When they charge their foes, the ribs of their frames open like cages to ensnare enemies and roast them within. Brazen gorgons are often found in blasphemous sites dedicated to Moloch, other archdevils, or bloodthirsty gods.
+
+Source:	Monster Manual 2024 p. 149</description>
+    <environment>forest, grassland, hill</environment>
+  </monster>
+
+<monster>
+    <name>Bronze Dragon Wyrmling [2024]</name>
+    <sortname>Bronze Dragon, Wyrmling</sortname>
+    <ancestry>Bronze Dragon</ancestry>
+    <size>M</size>
+    <type>dragon (metallic)</type>
+    <alignment>lawful good</alignment>
+    <ac>15</ac>
+    <hp>39 (6d8+12)</hp>
+    <speed>30 ft., fly 60 ft., swim 30 ft.</speed>
+    <init>2</init>
+    <str>17</str>
+    <dex>10</dex>
+    <con>15</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +2, Dex +2</save>
+    <skill>Stealth +2, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage.</text>
+      <attack>Rend|+5|1d10+3</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 12, each creature in a 40-foot-long, 5-foot-wide Line. Failure: 16 (3d10) Lightning damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Repulsion Breath</name>
+      <text>Strength Saving Throw: DC 12, each creature in a 30-foot Cone. Failure: The target is pushed up to 30 feet straight away from the dragon and has the Prone condition.</text>
+    </action>
+    <description>Where bronze dragons dwell, wonders flourish. Imaginative yet mindful, these metallic dragons work toward greatness and help others achieve all they can. They strive to preserve innovations, from the works of past civilizations to new discoveries, and they share such works widely. When dealing with shorter-lived beings, bronze dragons prefer to win them over through conversation and cultivation, but they don't shy from battle when villains keep others from achieving their potential.
+	Bronze dragons enjoy the power and endless possibilities of the sea, and they often make their lairs in places of natural beauty or communities they wish to preserve. Within their dwellings, bronze dragons hoard things they believe will be useful one day. They salvage treasure lost to the sea, reclaiming wealth or sunken ships.
+
+Source:	Monster Manual 2024 p. 58</description>
+    <environment>coastal</environment>
+  </monster>
+
+<monster>
+    <name>Brown Bear [2024]</name>
+    <sortname>Bear, Brown</sortname>
+    <ancestry>Bear</ancestry>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>22 (3d10+6)</hp>
+    <speed>40 ft., climb 30 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>12</dex>
+    <con>15</con>
+    <int>2</int>
+    <wis>13</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bear makes one Bite attack and one Claw attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage.</text>
+      <attack>Bite|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.</text>
+      <attack>Claw|+5|1d4+3</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 350,
+		Player's Handbook 2024 p. 347</description>
+    <environment>arctic, forest, hill</environment>
+  </monster>
+
+<monster>
+    <name>Bugbear Stalker [2024]</name>
+    <sortname>Bugbear, Stalker</sortname>
+    <ancestry>Bugbear</ancestry>
+    <size>M</size>
+    <type>fey (goblinoid)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15</ac>
+    <hp>65 (10d8+20)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>17</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>11</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>Wis +3, Con +4</save>
+    <skill>Survival +3, Stealth +6</skill>
+    <passive>11</passive>
+    <languages>Common, Goblin</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Chain Shirt, Javelins (6), Morningstar</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Abduct</name>
+      <text>The bugbear needn't spend extra movement to move a creature it is grappling.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bugbear makes two Javelin or Morningstar attacks.</text>
+    </action>
+    <action>
+      <name>Javelin</name>
+      <text>Melee or Ranged Attack Roll: +5, reach 10 ft. or range 30/120 ft. Hit: 13 (3d6 + 3) Piercing damage.</text>
+      <attack>Javelin|+5|3d6+3</attack>
+    </action>
+    <action>
+      <name>Morningstar</name>
+      <text>Melee Attack Roll: +5 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. Hit: 12 (2d8 + 3) Piercing damage.</text>
+      <attack>Morningstar|+5|2d8+3</attack>
+    </action>
+    <action>
+      <name>Quick Grapple (Bonus Action)</name>
+      <text>Dexterity Saving Throw: DC 13, one Medium or smaller creature the bugbear can see within 10 feet. Failure: The target has the Grappled condition (escape DC 13).</text>
+    </action>
+    <description>Bugbears embody fear of the wilds and the menace of natural places. They're notoriously stealthy, and foes that venture into their territories often vanish without a trace.
+
+Bugbear stalkers frequently take their victims hostage, relishing opportunities to imprison and terrorize other creatures.
+
+Source:	Monster Manual 2024 p. 62</description>
+    <environment>forest, grassland, planar (feywild), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Bugbear Warrior [2024]</name>
+    <sortname>Bugbear, Warrior</sortname>
+    <ancestry>Bugbear</ancestry>
+    <size>M</size>
+    <type>fey (goblinoid)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>33 (6d8+6)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>15</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>8</int>
+    <wis>11</wis>
+    <cha>9</cha>
+    <save />
+    <skill>Survival +2, Stealth +6</skill>
+    <passive>10</passive>
+    <languages>Common, Goblin</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Hide Armor, Light Hammers (3)</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Abduct</name>
+      <text>The bugbear needn't spend extra movement to move a creature it is grappling.</text>
+    </trait>
+    <action>
+      <name>Grab</name>
+      <text>Melee Attack Roll: +4, reach 10 ft. Hit: 9 (2d6 + 2) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).</text>
+      <attack>Grab|+4|2d6+2</attack>
+    </action>
+    <action>
+      <name>Light Hammer</name>
+      <text>Melee or Ranged Attack Roll: +4 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. or range 20/60 ft. Hit: 9 (3d4 + 2) Bludgeoning damage.</text>
+      <attack>Light Hammer|+4|3d4+2</attack>
+    </action>
+    <description>Bugbears embody fear of the wilds and the menace of natural places. They're notoriously stealthy, and foes that venture into their territories often vanish without a trace.
+
+Bugbear warriors serve those who offer them treasure, food, or the chance to hunt challenging prey.
+
+Source:	Monster Manual 2024 p. 62</description>
+    <environment>forest, grassland, planar (feywild), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Bulette [2024]</name>
+    <sortname>Bulette</sortname>
+    <ancestry>Bulette</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>17</ac>
+    <hp>94 (9d10+45)</hp>
+    <speed>40 ft., burrow 40 ft.</speed>
+    <init>0</init>
+    <str>19</str>
+    <dex>11</dex>
+    <con>21</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save />
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages />
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft., tremorsense 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bulette makes two Bite attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 17 (2d12 + 4) Piercing damage.</text>
+      <attack>Bite|+7|2d12+4</attack>
+    </action>
+    <action>
+      <name>Deadly Leap</name>
+      <text>The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. Dexterity Saving Throw: DC 15, each creature in the bulette's destination space. Failure: 19 (3d12) Bludgeoning damage, and the target has the Prone condition. Success: Half damage, and the target is pushed 5 feet straight away from the bulette.</text>
+      <attack>Deadly Leap||3d12</attack>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The bulette jumps up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <description>Also called "land sharks," bulettes are single-minded predators that burrow under, leap over, and burst through obstacles in pursuit of their quarry. They burrow rapidly just belowground. On sensing movement, they erupt from below, attempting to catch prey in their oversize maws.
+
+Bulettes range under vast territories. They often threaten animal herds, and they can wipe out whole farming communities.
+
+Source:	Monster Manual 2024 p. 63</description>
+    <environment>grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Bulette Pup [2024]</name>
+    <sortname>Bulette, Pup</sortname>
+    <ancestry>Bulette</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>16</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>30 ft., burrow 20 ft.</speed>
+    <init>-1</init>
+    <str>16</str>
+    <dex>8</dex>
+    <con>17</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>4</cha>
+    <save />
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages />
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 30 ft., tremorsense 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 14 (2d10 + 3) Piercing damage.</text>
+      <attack>Bite|+5|2d10+3</attack>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The bulette jumps up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <description>Also called "land sharks," bulettes are single-minded predators that burrow under, leap over, and burst through obstacles in pursuit of their quarry. They burrow rapidly just belowground. On sensing movement, they erupt from below, attempting to catch prey in their oversize maws.
+
+Juvenile bulettes are known as pups. They travel in small groups, using their numbers to bring down larger foes. Their arrival frequently presages the appearance of an adult bulette.
+
+Source:	Monster Manual 2024 p. 63</description>
+    <environment>grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Bullywug Bog Sage [2024]</name>
+    <sortname>Bullywug, Bog Sage</sortname>
+    <ancestry>Bullywug</ancestry>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>neutral</alignment>
+    <ac>16</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>3</init>
+    <str>8</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>10</int>
+    <wis>16</wis>
+    <cha>12</cha>
+    <save>Wis +5, Con +4, Cha +3</save>
+    <skill>Nature +4, Stealth +5</skill>
+    <passive>13</passive>
+    <languages>Bullywug, Common</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Component Pouch</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The bullywug can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Speak with Frogs and Toads</name>
+      <text>The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bullywug makes two Bog Staff attacks. It can replace any attack with a use of Spellcasting to cast Ray of Sickness.</text>
+    </action>
+    <action>
+      <name>Bog Staff</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 10 (3d6) Poison damage.</text>
+      <attack>Bog Staff|+5|1d8+3</attack>
+      <attack>Poison Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The bullywug casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13, +5 to hit with spell attacks):
+
+	• At will: Dancing Lights, Druidcraft, Ray of Sickness
+	• 1/Day each: Speak with Plants, Vitriolic Sphere</text>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The bullywug can jump up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <spells>Dancing Lights [2024], Druidcraft [2024], Ray of Sickness [2024], Speak With Plants [2024], Vitriolic Sphere [2024]</spells>
+    <description>Fey embodiments of swamplands, bullywugs protect the murky wilds and consider themselves cosmically favored for that role. These human-size, toador frog-like creatures have close relationships with the creatures of the swamp.
+
+Bullywug bog sages channel the magic of the swamp to sicken foes and speak with plants.
+
+Source:	Monster Manual 2024 p. 64</description>
+    <environment>swamp</environment>
+  </monster>
+
+<monster>
+    <name>Bullywug Warrior [2024]</name>
+    <sortname>Bullywug, Warrior</sortname>
+    <ancestry>Bullywug</ancestry>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>11 (2d8+2)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>2</init>
+    <str>12</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>10</passive>
+    <languages>Bullywug, Common</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The bullywug can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Speak with Frogs and Toads</name>
+      <text>The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.</text>
+    </trait>
+    <action>
+      <name>Insectile Rapier</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage plus 2 (1d4) Poison damage.</text>
+      <attack>Insectile Rapier|+4|1d8+2</attack>
+      <attack>Poison Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The bullywug can jump up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <description>Fey embodiments of swamplands, bullywugs protect the murky wilds and consider themselves cosmically favored for that role. These human-size, toador frog-like creatures have close relationships with the creatures of the swamp.
+
+Bullywug warriors are adept at moving through swamps and ambushing trespassers. They often work alongside packs of trained giant frogs.
+
+Source:	Monster Manual 2024 p. 64</description>
+    <environment>swamp</environment>
+  </monster>
+
+</compendium>

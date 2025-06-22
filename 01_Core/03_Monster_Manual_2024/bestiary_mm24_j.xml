@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Jackal [2024]</name>
+    <size>S</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>3 (1d6)</hp>
+    <speed>40 ft.</speed>
+    <init>2</init>
+    <str>8</str>
+    <dex>15</dex>
+    <con>11</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Stealth +4, Perception +5</skill>
+    <passive>15</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +1, reach 5 ft. Hit: 1 (1d4 - 1) Piercing damage.</text>
+      <attack>Bite|+1|1d4-1</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 364</description>
+    <environment>desert, grassland</environment>
+  </monster>
+
+<monster>
+    <name>Jackalwere [2024]</name>
+    <size>S</size>
+    <type>fiend</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>18 (4d6+4)</hp>
+    <speed>40 ft.</speed>
+    <init>2</init>
+    <str>11</str>
+    <dex>15</dex>
+    <con>12</con>
+    <int>13</int>
+    <wis>11</wis>
+    <cha>10</cha>
+    <save />
+    <skill>Deception +4, Stealth +4, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Common</languages>
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The jackalwere has Advantage on an attack roll against a creature if at least one of the jackalwere's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The jackalwere makes two Rend or Slam attacks.</text>
+    </action>
+    <action>
+      <name>Rend (Jackal or Hybrid Form Only)</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.</text>
+      <attack>Rend|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Slam (Human or Hybrid Form Only)</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.</text>
+      <attack>Slam|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Sleep Gaze (Recharge 5-6)</name>
+      <text>Wisdom Saving Throw: DC 10, one creature the jackalwere can see within 30 feet (Constructs and Undead succeed automatically). Failure: The target has the Unconscious condition for 10 minutes or until it takes damage or a creature within 5 feet of it takes an action to wake it. Success: The target is immune to this jackalwere's Sleep Gaze for 24 hours.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The jackalwere shape-shifts into a Medium human or a Medium jackal-humanoid hybrid, or it returns to its true form (that of a Small jackal). Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <description>Indistinguishable from jackals in their natural form, jackalweres shape-shift to deceive others. These shape-shifters can take three forms: a jackal, a human, or a monstrous hybrid of the two. Jackalweres are easily mistaken for werewolves, but jackalweres aren't supernaturally aﬄicted—their jackal forms are their natural state. Jackalweres also possess magical gazes capable of putting foes to sleep, allowing jackalweres to play their tricks unimpeded or get the upper hand over threats.
+	Jackalweres dwell in inhospitable wildernesses and pride themselves on their cleverness. They take offense at those who travel through their lands without leaving a gift of treasure or fresh game. Roll on or choose a result from the Jackalwere Tricks table to inspire how a jackalwere repays such slights.
+
+Jackalwere Tricks:
+1d4 | The Jackalwere Tricks Travelers By...
+1 | Guiding them into wildernesses, then abandoning them.
+2 | Mapping a shortcut through a monster's lair.
+3 | Putting them to sleep, then stealing mounts or supplies.
+4 | Sharing the location of hidden treasure, which turns out to be sunlight on sand or water.
+
+Source:	Monster Manual 2024 p. 182</description>
+    <environment>desert, grassland</environment>
+  </monster>
+
+<monster>
+    <name>Juvenile Shadow Dragon [2024]</name>
+    <sortname>Shadow Dragon, Juvenile</sortname>
+    <ancestry>Shadow Dragon</ancestry>
+    <size>M</size>
+    <type>dragon</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>30 ft., climb 30 ft., fly 60 ft.</speed>
+    <init>4</init>
+    <str>17</str>
+    <dex>14</dex>
+    <con>17</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Dex +4</save>
+    <skill>Stealth +6, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Common, Draconic</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist>See Living Shadow</resist>
+    <immune>necrotic</immune>
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Living Shadow</name>
+      <text>While in Dim Light or Darkness, the dragon has Resistance to damage that isn't Force, Psychic, or Radiant.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the dragon has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 7 (1d8 + 3) Slashing damage plus 3 (1d6) Necrotic damage.</text>
+      <attack>Rend|+5|1d8+3</attack>
+      <attack>Necrotic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Shadow Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 13, each creature in a 30-foot Cone. Failure: 17 (5d6) Necrotic damage. Success: Half damage. Failure or Success: A Humanoid reduced to 0 Hit Points by this damage dies, and a Shadow rises from its corpse. The shadow is under the dragon's control and shares the dragon's Initiative count but acts immediately after the dragon.</text>
+      <attack>Shadow Breath||5d6</attack>
+    </action>
+    <action>
+      <name>Shadow Stealth (Bonus Action)</name>
+      <text>While in Dim Light or Darkness, the dragon takes the Hide action.</text>
+    </action>
+    <description>Shadow dragons haunt forgotten, lightless places. While they might have once been other types of dragons, the influence of planar forces, negative energy, or sinister magic has stripped them of their former color or luster. In place of any former breath weapon, shadow dragons exhale caliginous gouts that saps life from everything it touches. Those slain by a shadow dragon's breath rise as shades obedient to the shadow dragon's will.
+	Shadow dragons typically dwell in the Underdark, particularly in areas with connections to the Shadowfell or other tenebrous realms. In some cases, they might lurk in dark, corrupted reaches of the regions they preferred before transforming into shadow dragons. Overgrown swamps, sepulchral desert ruins, and ash-choked volcanoes make natural lairs for shadow dragons.
+	Like many other dragons, shadow dragons collect hoards. Their tastes tend to be morbid—collecting coins from ruined empires and their victims' skulls.
+
+Source:	Monster Manual 2024 p. 275</description>
+    <environment>planar (shadowfell), underdark</environment>
+  </monster>
+
+</compendium>

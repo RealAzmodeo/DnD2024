@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Faerie Dragon Adult [2024]</name>
+    <sortname>Faerie Dragon, Adult</sortname>
+    <ancestry>Faerie Dragon</ancestry>
+    <size>T</size>
+    <type>dragon</type>
+    <alignment>chaotic good</alignment>
+    <ac>15</ac>
+    <hp>35 (10d4+10)</hp>
+    <speed>10 ft., fly 60 ft.</speed>
+    <init>5</init>
+    <str>3</str>
+    <dex>20</dex>
+    <con>13</con>
+    <int>12</int>
+    <wis>12</wis>
+    <cha>14</cha>
+    <save />
+    <skill>Stealth +7, Arcana +4, Perception +3</skill>
+    <passive>13</passive>
+    <languages>Draconic, Sylvan; telepathy 60 ft. (faerie dragons only)</languages>
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The dragon has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 7 (1d4 + 5) Piercing damage plus 3 (1d6) Psychic damage.</text>
+      <attack>Bite|+7|1d4+5</attack>
+      <attack>Psychic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Euphoria Breath (Recharge 5-6)</name>
+      <text>Wisdom Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: The target has the Incapacitated condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Incapacitated, the target uses all its movement on each of its turns to move in a random direction.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):
+
+At will: Dancing Lights, Mage Hand, Minor Illusion
+
+1/Day each: Hallucinatory Terrain, Polymorph</text>
+    </action>
+    <action>
+      <name>Superior Invisibility (Bonus Action)</name>
+      <text>The dragon casts Greater Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.</text>
+    </action>
+    <spells>Greater Invisibility [2024]</spells>
+    <description>Faerie dragons are cat-size pranksters with draconic features, butterfly-like wings, and scales of warm hues as youths and cool hues as adults.
+
+Faerie Dragon Adult:
+The pranks of faerie dragon adults tend to lead others to people in need or wrongs to be righted.
+
+Source:	Monster Manual 2024 p. 117</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Faerie Dragon Youth [2024]</name>
+    <sortname>Faerie Dragon, Youth</sortname>
+    <ancestry>Faerie Dragon</ancestry>
+    <size>T</size>
+    <type>dragon</type>
+    <alignment>chaotic good</alignment>
+    <ac>13</ac>
+    <hp>21 (6d4+6)</hp>
+    <speed>10 ft., fly 60 ft.</speed>
+    <init>3</init>
+    <str>3</str>
+    <dex>16</dex>
+    <con>12</con>
+    <int>12</int>
+    <wis>12</wis>
+    <cha>14</cha>
+    <save />
+    <skill>Stealth +5, Arcana +3, Perception +3</skill>
+    <passive>13</passive>
+    <languages>Draconic, Sylvan; telepathy 60 ft. (faerie dragons only)</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The dragon has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage plus 2 (1d4) Psychic damage.</text>
+      <attack>Bite|+5|1d4+3</attack>
+      <attack>Psychic Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Euphoria Breath (Recharge 5-6)</name>
+      <text>Wisdom Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn and uses all its movement on its turn to move in a random direction.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 12):
+
+	• At will: Dancing Lights, Mage Hand, Minor Illusion</text>
+    </action>
+    <action>
+      <name>Superior Invisibility (Bonus Action)</name>
+      <text>The dragon casts Greater Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.</text>
+    </action>
+    <spells>Greater Invisibility [2024], Dancing Lights [2024], Mage Hand [2024], Minor Illusion [2024]</spells>
+    <description>Faerie dragons are cat-size pranksters with draconic features, butterfly-like wings, and scales of warm hues as youths and cool hues as adults.
+
+Faerie Dragon Youth:
+Faerie dragon youths are quick to use their euphoria-inducing breath on rude or uptight folk.
+
+Source:	Monster Manual 2024 p. 117</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Fiend Cultist [2024]</name>
+    <sortname>Cultist, Fiend</sortname>
+    <ancestry>Cultist</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral evil</alignment>
+    <ac>16</ac>
+    <hp>127 (17d8+51)</hp>
+    <speed>30 ft.</speed>
+    <init>5</init>
+    <str>19</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>18</wis>
+    <cha>10</cha>
+    <save>Wis +7, Con +6</save>
+    <skill>Perception +7, Religion +4</skill>
+    <passive>17</passive>
+    <languages>Abyssal, Common, Infernal</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 90 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Breastplate</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.
+Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cultist makes three Pact Axe attacks.</text>
+    </action>
+    <action>
+      <name>Pact Axe</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 10 (1d12 + 4) Slashing damage plus 13 (3d8) Fire damage.</text>
+      <attack>Pact Axe|+7|1d12+4</attack>
+      <attack>Fire Damage||3d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: Scorching Ray (level 5 version), Thaumaturgy
+	• 2/Day: Fireball (level 6 version)</text>
+    </action>
+    <reaction>
+      <name>Hellish Rebuke</name>
+      <text>The cultist casts Hellish Rebuke in response to that spell's trigger, using the same spellcasting ability as Spellcasting.</text>
+    </reaction>
+    <spells>Scorching Ray [2024], Thaumaturgy [2024], Fireball [2024]</spells>
+    <description>Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.
+
+Cultist Agendas:
+1d6 | The Cultist Strives To...
+1 | Bring about the end of a dominant order, an age, or the world.
+2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.
+3 | Expand their faith through mind control or supernatural coercion.
+4 | Make global changes, like sinking the land or awakening volcanoes.
+5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.
+6 | Summon their deity or its herald, weapon, or realm into their world.
+
+Occult Symbols:
+Cults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.
+
+Cult Symbols:
+1d10 | The Symbol Is... Depicted As...
+1 | An alchemical sign A calendar or map
+2 | An animal A crest or as heraldry
+3 | A celestial body An elaborate diagram
+4 | A deity's icon A metaphorical image
+5 | An element A mystical being
+6 | An eye Part of an equation
+7 | A geometric shape A repeating pattern
+8 | A letter or number A series of scratches
+9 | Part of a monster A simple pictogram
+10 | A skull A weapon or tool
+
+Cult Members:
+Cults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.
+
+Types of Cultists:
+Cults can organize around any mystical tradition, but many serve supernatural beings. Cult members often have abilities tied to the forces they worship.
+
+Fiend Cultist:
+Fiend cultists worship fiends or evil deities. They often work to bring ruin to innocents or to summon their sinister patron into the world. Fiend cultists might serve infamous powers such as archdevils and demon lords, or foul immortals—beings such as Demogorgon, Pazuzu, Iuz, Zariel, or Zuggtmoy.
+
+Source:	Monster Manual 2024 p. 87</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Fire Elemental [2024]</name>
+    <sortname>Elemental, Fire</sortname>
+    <ancestry>Elemental</ancestry>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>93 (11d10+33)</hp>
+    <speed>50 ft.</speed>
+    <init>3</init>
+    <str>10</str>
+    <dex>17</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Primordial (Ignan)</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Fire Aura</name>
+      <text>At the end of each of the elemental's turns, each creature in a 10-foot Emanation originating from the elemental takes 5 (1d10) Fire damage. Creatures and flammable objects in the Emanation start burning.</text>
+      <attack>Fire Aura||1d10</attack>
+    </trait>
+    <trait>
+      <name>Fire Form</name>
+      <text>The elemental can move through a space as narrow as 1 inch without expending extra movement to do so, and it can enter a creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) Fire damage.</text>
+      <attack>Fire Form||1d10</attack>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The elemental sheds Bright Light in a 30- foot radius and Dim Light for an additional 30 feet.</text>
+    </trait>
+    <trait>
+      <name>Water Susceptibility</name>
+      <text>The elemental takes 3 (1d6) Cold damage for every 5 feet the elemental moves in water or for every gallon of water splashed on it.</text>
+      <attack>Water Susceptibility||1d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The elemental makes two Burn attacks.</text>
+    </action>
+    <action>
+      <name>Burn</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Fire damage. If the target is a creature or a flammable object, it starts burning.</text>
+      <attack>Burn|+6|2d6+3</attack>
+    </action>
+    <description>Fire elementals arise when spirits of the Elemental Plane of Fire inhabit flames, burning cinders, and heated smoke. These beings are tangible despite largely being made of flames and particles, and they can uses their vague limbs to ignite foes and flammable materials. Fire elementals typically burn in shades of orange and red, but other colors are possible. Most on the Material Plane are summoned by magical means, or they might appear near rifts amid desert depths, volcanoes, wildfires, or magma flows that connect to their home plane.
+
+Fire elementals might burn in distinctive ways. Roll on or choose a result from the Fire Elemental Compositions table to inspire a fire elemental's features.
+
+Fire Elemental Compositions:
+1d8 | The Fire Elemental's Body Features...
+1 | Colorful, superheated gases.
+2 | A column of diabolical or divine flame.
+3 | Crackling shapes that look like animals, fiends, skeletons, sprites, or other beings.
+4 | Flames that are predominantly white, blue, or a more unusual color.
+5 | The form of a calm or tormented humanoid.
+6 | Smoke that forms eerie shapes or symbols.
+7 | Soot that smells like cedar, cloves, incense, or burning meat.
+8 | Swirls of cinders and burning debris.
+
+Source:	Monster Manual 2024 p. 118</description>
+    <environment>desert, planar (elemental plane of fire)</environment>
+  </monster>
+
+<monster>
+    <name>Fire Giant [2024]</name>
+    <sortname>Giant, Fire</sortname>
+    <ancestry>Giant</ancestry>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>162 (13d12+78)</hp>
+    <speed>30 ft.</speed>
+    <init>4</init>
+    <str>25</str>
+    <dex>9</dex>
+    <con>23</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>13</cha>
+    <save>Con +10, Dex +3, Cha +5</save>
+    <skill>Athletics +11, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Giant</languages>
+    <cr>9</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.</text>
+    </action>
+    <action>
+      <name>Flame Sword</name>
+      <text>Melee Attack Roll: +11, reach 10 ft. Hit: 21 (4d6 + 7) Slashing damage plus 10 (3d6) Fire damage.</text>
+      <attack>Flame Sword|+11|4d6+7</attack>
+      <attack>Fire Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Hammer Throw</name>
+      <text>Ranged Attack Roll: +11, range 60/240 ft. Hit: 23 (3d10 + 7) Bludgeoning damage plus 4 (1d8) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn.</text>
+      <attack>Hammer Throw|+11|3d10+7</attack>
+      <attack>Fire Damage||1d8</attack>
+    </action>
+    <description>Fire giants inhabit the hollow vaults and molten rivers of mountainous depths. There, they use subterranean heat and riches to craft wonders, from titanic weapons of war to delicate works of art.
+
+Fire giants have broad frames, skin tones in a variety of rocklike shades, and hair like flame.
+
+Most fire giants dwell in volcanically active mountains or cavernous depths that house their fortress-forges. Evil fire giants tend to be martially minded, and they craft mighty arms to conquer their neighbors and seize valuable resources. More temperate fire giants trade their works for what they need, and they might share the ancient techniques of Giant artisans with other craftspeople. In either case, fire giants are prone to undertaking ambitious designs, and they rarely appreciate interruptions in their titanic workshops.
+
+Source:	Monster Manual 2024 p. 119</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Flameskull [2024]</name>
+    <size>T</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>40 (9d4+18)</hp>
+    <speed>5 ft., fly 40 ft.(hover)</speed>
+    <init>3</init>
+    <str>1</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>16</int>
+    <wis>10</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Arcana +5, Perception +2</skill>
+    <passive>12</passive>
+    <languages>Common plus two other languages</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The flameskull sheds Bright Light in a 15- foot radius and Dim Light for an additional 15 feet.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The flameskull has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Undead Restoration</name>
+      <text>If the flameskull is destroyed, it regains all its Hit Points in 1 hour unless Holy Water is sprinkled on its remains or the Dispel Evil and Good spell is cast on them.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The flameskull makes two Fire Ray attacks.</text>
+    </action>
+    <action>
+      <name>Fire Ray</name>
+      <text>Melee or Ranged Attack Roll: +5, reach 5 ft. or range 60 ft. Hit: 13 (3d6 + 3) Fire damage.</text>
+      <attack>Fire Ray|+5|3d6+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The flameskull casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 13):
+
+	• At will: Mage Hand
+	• 2/Day: Magic Missile (level 2 version)
+	• 1/Day: Fireball</text>
+    </action>
+    <spells>Mage Hand [2024], Fireball [2024], Magic Missile [2024]</spells>
+    <description>Flameskulls are flying skulls that blaze with magical fire and the half-
+remembered arcana of dead spellcasters. They rise from the remains of dead
+magic-users who were reanimated by sinister necromancers or whose magical
+pursuits drive them beyond death. Flameskulls might serve as guardians for their
+creators or pursue ambitions left unfulfilled in life. They lash out at foes with
+destructive spells and bursts of fire, wielding magic without the need for most
+components.
+Flameskulls take various forms, from skulls with humanlike features to ones with
+fearsome or bestial alterations. Their flames vary in color and grow more intense
+when they're angry. Roll on or choose a result from the Flameskull Details table
+to inspire what makes a flameskull distinctive.
+
+Flameskull Details:
+1d6 | The Flameskull Features...
+1 | Arcane diagrams etched into it.
+2 | Flames like dramatic features, horns, or hair.
+3 | Fractured pieces that fly in unison.
+4 | An iron plate bolted over its mouth.
+5 | Lethal head trauma.
+6 | Mismatched animal teeth.
+
+Source:	Monster Manual 2024 p. 120</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Flaming Skeleton [2024]</name>
+    <sortname>Skeleton, Flaming</sortname>
+    <ancestry>Skeleton</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>lawful evil</alignment>
+    <ac>15</ac>
+    <hp>65 (10d8+20)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>10</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>10</int>
+    <wis>15</wis>
+    <cha>8</cha>
+    <save />
+    <skill />
+    <passive>12</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire, poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Death Burst</name>
+      <text>The skeleton explodes when it dies. Dexterity Saving Throw: DC 12, each creature in a 10-foot Emanation originating from the skeleton. Failure: 14 (4d6) Fire damage. Success: Half damage.</text>
+      <attack>Death Burst||4d6</attack>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The skeleton sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The skeleton makes two attacks, using Flame Scepter or Hurl Flame in any combination.</text>
+    </action>
+    <action>
+      <name>Flame Scepter</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage plus 3 (1d6) Fire damage.</text>
+      <attack>Flame Scepter|+4|1d6+2</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Hurl Flame</name>
+      <text>Ranged Attack Roll: +4, range 60 ft. Hit: 7 (1d10 + 2) Fire damage.</text>
+      <attack>Hurl Flame|+4|1d10+2</attack>
+    </action>
+    <description>Skeletons rise at the summons of necromancers and foul spirits. Whether they're the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers. In rare cases, skeletons are reanimated but given no particular direction. Roll on or choose a result from the Skeleton Pantomimes table to inspire how undirected skeletons behave.
+
+Skeleton Pantomimes:
+1d6 | Left to Its Own Devices, the Skeleton...
+1 | Delivers meal salvers or ages-old correspondence to the crypt of its dead master.
+2 | Endlessly trains in battle with other skeletons, despite being hacked to animate splinters.
+3 | Mimics ways it entertained itself in life, such as acting, dancing, or reading.
+4 | Performs a familiar task, such as cleaning, cooking, mining, or praying.
+5 | Repeats its final moments of life.
+6 | Stands guard at the post it protected in life.
+
+Flaming Skeleton:
+Flaming skeletons burn with unbridled necromantic energy. This magic grants them blazing attacks and greater awareness, which they use to command lesser Undead.
+
+Source:	Monster Manual 2024 p. 283</description>
+    <environment>planar (shadowfell), underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Flesh Golem [2024]</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>neutral</alignment>
+    <ac>9</ac>
+    <hp>127 (15d8+60)</hp>
+    <speed>30 ft.</speed>
+    <init>0</init>
+    <str>19</str>
+    <dex>9</dex>
+    <con>18</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Aversion to Fire</name>
+      <text>If the golem takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Berserk</name>
+      <text>Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer Bloodied.
+	The golem's creator, if within 60 feet of the berserk golem, can try to calm it by taking an action to make a DC 15 Charisma (Persuasion) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still Bloodied.</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>The golem can't shape-shift.</text>
+    </trait>
+    <trait>
+      <name>Lightning Absorption</name>
+      <text>Whenever the golem is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The golem has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The golem makes two Slam attacks.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 4 (1d8) Lightning damage.</text>
+      <attack>Slam|+7|2d8+4</attack>
+      <attack>Lightning Damage||1d8</attack>
+    </action>
+    <description>Flesh golems are roughly human-shaped collections of body parts bound together by misused magic or strange science. They serve their reckless creators, but many possess disjointed memories and instincts from their component parts. If wounded, these golems might go berserk and vent their confusion on anything in their sight, including their creators.
+	Flesh golems appear in varied forms. Roll on or choose a result from the Flesh Golem Characteristics table to inspire a flesh golem's features.
+
+Flesh Golem Characteristics:
+1d6 | The Flesh Golem Has...
+1 | Animal parts among its humanlike pieces.
+2 | A disguise of makeup and heavy clothing.
+3 | Missing parts and exposed insides.
+4 | Parts serving unintended roles, like a body composed of dozens of hands.
+5 | Perfect features accented by beautiful stitching.
+6 | Visible mechanisms, bellows, and engines.
+
+Source:	Monster Manual 2024 p. 121</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Flumph [2024]</name>
+    <size>S</size>
+    <type>aberration</type>
+    <alignment>lawful good</alignment>
+    <ac>12</ac>
+    <hp>7 (2d6)</hp>
+    <speed>5 ft., fly 30 ft.(hover)</speed>
+    <init>2</init>
+    <str>6</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>14</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Arcana +4, History +4, Religion +4</skill>
+    <passive>12</passive>
+    <languages>understands Undercommon but can't speak; telepathy 60 ft.</languages>
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Advanced Telepathy</name>
+      <text>The flumph perceives the content of any telepathic communication within 60 feet of it.</text>
+    </trait>
+    <trait>
+      <name>Prone Deficiency</name>
+      <text>If the flumph receives the Prone condition, roll a die. On an odd number, it has the Incapacitated condition. At the end of each of its turns, the flumph makes a DC 10 Dexterity saving throw, ending the Incapacitated condition on a success.</text>
+    </trait>
+    <trait>
+      <name>Telepathic Shroud</name>
+      <text>The flumph's thoughts can't be read by any means, and magic can't detect its location or observe it remotely.</text>
+    </trait>
+    <action>
+      <name>Tentacle</name>
+      <text>Melee Attack Roll: +4, reach 5 feet. Hit: 4 (1d4 + 2) Acid damage.</text>
+      <attack>Tentacle|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Stench Spray (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Dexterity Saving Throw: DC 10, one creature the flumph can see within 15 feet. Failure: The target is coated in a foul-smelling liquid, exudes a stench for 1d4 hours, and has the Poisoned condition while the stench lasts. Other creatures have the Poisoned condition while in a 5-foot Emanation originating from the coated target. The target can remove the stench on itself if it bathes during a Short or Long Rest.</text>
+      <attack>Stench Spray||1d4</attack>
+    </action>
+    <description>Bizarre creatures with aberrant agendas inhabit the Underdark. Flumphs number among the few that are helpful to strangers.
+
+These tentacled, telepathic creatures jet through the air in short bursts, venting gases with a sound that gives them their name. Rather than speaking, flumphs communicate telepathically and by changing color to reflect their moods.
+
+Flumphs dwell in psychically charged regions or near creatures with psionic magic. They harmlessly feed off psychic energies, but in doing so, they often encounter dangerous beings such as aboleths and mind flayers. While flumphs generally avoid combat, they often help adventurers in peril. Such help might be of doubtful use, but flumphs mean well. Roll on or choose a result from the Flumph Assistance table to inspire what support flumphs provide.
+
+Flumph Assistance:
+1d6 | The Flumph Helps By...
+1 | Cooking a meal of Underdark delicacies.
+2 | Performing a psychic song or "smell poem."
+3 | Recovering and nursing fallen adventurers.
+4 | Revealing the location of helpful magic items.
+5 | Serving as a guide to a foe's hidden lair.
+6 | Sharing excessive encouragement and praise.
+
+Flumph Colors:
+A flumph's extremities change color to reflect its mood. The Flumph Colors and Emotions table summarizes common flumph colors and the human emotions to which they most closely correspond.
+
+Flumph Colors and Emotions:
+Color | Emotion
+Blue, Dark | Sadness
+Blue, Light | Happiness
+Green | Curiosity
+Magenta | Unknown*
+Orange | Confusion
+Pink | Amusement
+Purple | Fear
+Red | Anger
+Teal | Serenity
+Yellow | Excitement
+
+*Rarely seen; potentially no human equivalent
+
+Source:	Monster Manual 2024 p. 122</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Flying Snake [2024]</name>
+    <size>T</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>14</ac>
+    <hp>5 (2d4)</hp>
+    <speed>30 ft., fly 60 ft., swim 30 ft.</speed>
+    <init>2</init>
+    <str>4</str>
+    <dex>15</dex>
+    <con>11</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>5</cha>
+    <save />
+    <skill />
+    <passive>11</passive>
+    <languages />
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Flyby</name>
+      <text>The snake doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 5 (2d4) Poison damage.</text>
+      <attack>Bite|+4|2d4</attack>
+    </action>
+    <description>Winged, venomous snakes often trained to serve as messengers.
+
+Source:	Monster Manual 2024 p. 353</description>
+    <environment>desert, forest, grassland</environment>
+  </monster>
+
+<monster>
+    <name>Fomorian [2024]</name>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>172 (15d12+75)</hp>
+    <speed>40 ft.</speed>
+    <init>0</init>
+    <str>23</str>
+    <dex>10</dex>
+    <con>20</con>
+    <int>9</int>
+    <wis>14</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Stealth +3, Perception +8</skill>
+    <passive>18</passive>
+    <languages>Giant, Undercommon</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The fomorian makes two Stone Club attacks. It can replace one attack with a use of Warping Hex if available.</text>
+    </action>
+    <action>
+      <name>Stone Club</name>
+      <text>Melee Attack Roll: +9, reach 15 ft. Hit: 24 (4d8 + 6) Bludgeoning damage.</text>
+      <attack>Stone Club|+9|4d8+6</attack>
+    </action>
+    <action>
+      <name>Warping Hex (Recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>Wisdom Saving Throw: DC 16, one creature the fomorian can see within 120 feet. Failure: 21 (6d6) Psychic damage, and the target gains 1 Exhaustion level. Success: Half damage only.</text>
+      <attack>Warping Hex||6d6</attack>
+    </action>
+    <description>Once infamous for their magical aptitude, fomorians are giants aﬄicted with a fey curse. In their pride, they were tricked into invading the Feywild to claim its magic for their own. When the archfey rulers of that realm united, the fomorians were turned back and cursed with supernatural strangeness to make their bodies match their vile souls. Ever since, fomorians have dwelled in the Underdark amid the ruins of their magical cities. The archfey's curse aﬄicts them still, tormenting them with wandering cankers, lurching organs, and stranger discomforts. Rather than atoning for their offenses, fomorians harness the magic of their curse and turn it against others. Roll on or choose a result from the Fomorian Warping table to inspire the cosmetic effects a creature undergoes while they're affected by a fomorian's Warping Hex.
+
+Fomorian Warping:
+1d4 | The Fomorian's Hex Causes...
+1 | Colorful, wandering pustules.
+2 | Excessive sweating of rainbow-hued fluids.
+3 | Patches of wriggling hair.
+4 | Veins that bulge and lurch under the skin.
+
+Source:	Monster Manual 2024 p. 123</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Frog [2024]</name>
+    <sortname>Frog</sortname>
+    <ancestry>Frog</ancestry>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>20 ft., swim 20 ft.</speed>
+    <init>1</init>
+    <str>1</str>
+    <dex>13</dex>
+    <con>8</con>
+    <int>1</int>
+    <wis>8</wis>
+    <cha>3</cha>
+    <save />
+    <skill>Stealth +3, Perception +1</skill>
+    <passive>11</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The frog can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Standing Leap</name>
+      <text>The frog's Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 1 Piercing damage.</text>
+      <attack>Bite|+3|</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 354,
+		Player's Handbook 2024 p. 349</description>
+    <environment>forest, swamp</environment>
+  </monster>
+
+<monster>
+    <name>Frost Giant [2024]</name>
+    <sortname>Giant, Frost</sortname>
+    <ancestry>Giant</ancestry>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>149 (13d12+65)</hp>
+    <speed>40 ft.</speed>
+    <init>3</init>
+    <str>23</str>
+    <dex>9</dex>
+    <con>21</con>
+    <int>9</int>
+    <wis>10</wis>
+    <cha>12</cha>
+    <save>Wis +3, Con +8, Cha +4</save>
+    <skill>Athletics +9, Perception +3</skill>
+    <passive>13</passive>
+    <languages>Giant</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold</immune>
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two attacks, using Frost Axe or Great Bow in any combination.</text>
+    </action>
+    <action>
+      <name>Frost Axe</name>
+      <text>Melee Attack Roll: +9, reach 10 ft. Hit: 19 (2d12 + 6) Slashing damage plus 9 (2d8) Cold damage.</text>
+      <attack>Frost Axe|+9|2d12+6</attack>
+      <attack>Cold Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Great Bow</name>
+      <text>Ranged Attack Roll: +9, range 150/600 ft. Hit: 17 (2d10 + 6) Piercing damage plus 7 (2d6) Cold damage, and the target's Speed decreases by 10 feet until the end of its next turn.</text>
+      <attack>Great Bow|+9|2d10+6</attack>
+      <attack>Cold Damage||2d6</attack>
+    </action>
+    <action>
+      <name>War Cry (Recharge 5-6) (Bonus Action)</name>
+      <recharge>D5</recharge>
+      <text>The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant's next turn.</text>
+      <attack>War Cry||2d10+5</attack>
+    </action>
+    <description>From glacial mountain heights and vast tundras rise the homes of frost giants. These giants have skin and hair of icy hues. Their natural immunity to cold allows them to flourish in places inhospitable to most other creatures. They use this resilience to aid them when hunting and in combat, bolstering their allies with chilling war cries.
+
+Frost giants often travel far to find food and goods. This leads many to become raiders and earn violent reputations. Others live more peaceably by hunting titanic game or creating sanctuaries from the cold (frequently featuring hot springs or snowy contests). Frost giants sometimes forge partnerships with icy Fey or fire giants dwelling underground, serving as guardians to their realms in exchange for treasure, weapons, and crafts.
+
+Source:	Monster Manual 2024 p. 124</description>
+    <environment>arctic, mountain</environment>
+  </monster>
+
+</compendium>

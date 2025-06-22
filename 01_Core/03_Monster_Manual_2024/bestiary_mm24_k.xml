@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Kenku [2024]</name>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>13 (3d8)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>10</str>
+    <dex>16</dex>
+    <con>10</con>
+    <int>11</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <save />
+    <skill>Deception +4, Stealth +5, Perception +2</skill>
+    <passive>12</passive>
+    <languages>Common, Primordial (Auran)</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Mimicry</name>
+      <text>The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check.</text>
+    </trait>
+    <action>
+      <name>Shadow Blade</name>
+      <text>Melee or Ranged Attack Roll: +5, reach 5 ft. or range 60 ft. Hit: 6 (1d6 + 3) Necrotic damage. Hit or Miss: The blade magically returns to the kenku's hand immediately after a ranged attack.</text>
+      <attack>Shadow Blade|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Eldritch Lantern (Recharge 4-6) (Bonus Action)</name>
+      <recharge>D4</recharge>
+      <text>The kenku casts Faerie Fire, using Intelligence as the spellcasting ability (spell save DC 10).</text>
+    </action>
+    <description>Kenku are birdlike folk who once soared the skies and sang enchanted songs, but a curse stole their wings and transformed their voices. Now kenku slip through the shadows of cities and the Shadowfell, trying to recover what they've lost. To some, this means seeking an end to their curse; others search for magic or contraptions to enable them to fly and sing again.
+	The curse affecting kenku allows them to vocally communicate only by mimicking sounds they've heard. Kenku can supernaturally re-create vast varieties of noises, from crying babies to running water and short phrases in others' voices. Cunning kenku use their mimicry to deceive foes, lure creatures into ambushes, and signal to allies.
+
+Source:	Monster Manual 2024 p. 183</description>
+    <environment>forest, planar (shadowfell), urban</environment>
+  </monster>
+
+<monster>
+    <name>Killer Whale [2024]</name>
+    <size>H</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>90 (12d12+12)</hp>
+    <speed>5 ft., swim 60 ft.</speed>
+    <init>2</init>
+    <str>19</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Stealth +4, Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The whale can hold its breath for 30 minutes.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 21 (5d6 + 4) Piercing damage.</text>
+      <attack>Bite|+6|5d6+4</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 364</description>
+    <environment>underwater</environment>
+  </monster>
+
+<monster>
+    <name>Knight [2024]</name>
+    <sortname>Knight</sortname>
+    <ancestry>Knight</ancestry>
+    <size>S</size>
+    <type>humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>18</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>30 ft.</speed>
+    <init>0</init>
+    <str>16</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>11</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +2, Con +4</save>
+    <skill />
+    <passive>10</passive>
+    <languages>Common plus one other language</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>frightened</conditionImmune>
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Greatsword, Heavy Crossbow, Plate Armor</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Size</name>
+      <text>Small, Medium</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination.</text>
+    </action>
+    <action>
+      <name>Greatsword</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage plus 4 (1d8) Radiant damage.</text>
+      <attack>Greatsword|+5|2d6+3</attack>
+      <attack>Radiant Damage||1d8</attack>
+    </action>
+    <action>
+      <name>Heavy Crossbow</name>
+      <text>Ranged Attack Roll: +2, range 100/400 ft. Hit: 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage.</text>
+      <attack>Heavy Crossbow|+2|2d10</attack>
+      <attack>Radiant Damage||1d8</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>Trigger: The knight is hit by a melee attack roll while holding a weapon. Response: The knight adds 2 to its AC against that attack, possibly causing it to miss.</text>
+    </reaction>
+    <description>Knights are skilled warriors trained for war and tested in battle. Many serve the rulers of a realm, a religion, or an order devoted to a cause.
+
+Knight:
+Knights frequently lead troops in combat or work in units that dominate the battlefield. They're often attended by squires, who might be less skilled soldiers or commoners.
+
+Source:	Monster Manual 2024 p. 184</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Kobold Warrior [2024]</name>
+    <sortname>Kobold, Warrior</sortname>
+    <ancestry>Kobold</ancestry>
+    <size>S</size>
+    <type>dragon</type>
+    <alignment>neutral</alignment>
+    <ac>14</ac>
+    <hp>7 (3d6-3)</hp>
+    <speed>30 ft.</speed>
+    <init>2</init>
+    <str>7</str>
+    <dex>15</dex>
+    <con>9</con>
+    <int>8</int>
+    <wis>7</wis>
+    <cha>8</cha>
+    <save />
+    <skill />
+    <passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>1/8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Daggers (3)</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has Advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Attack Roll: +4, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <description>Cowardly cousins to chromatic dragons, kobolds serve draconic overlords as warriors and servants. These scrappy menaces mimic the behaviors of their dragon masters. Though their small stature and recklessness make kobolds poor imitators of dragons, what they lack in ferocity they make up for in zeal and ingenuity. They are especially adept at creating traps and setting ambushes.
+	Kobolds' scales resemble those of chromatic dragons that live near their warrens. Rarely, kobolds possess features evocative of metallic dragons or other dragon-like creatures.
+
+Kobold Warrior:
+Kobold warriors use hit-and-run tactics to raid their enemies and defend their homes. To avoid danger, they frequently employ haphazard traps.
+
+Source:	Monster Manual 2024 p. 185</description>
+    <environment>arctic, coastal, desert, forest, hill, mountain, swamp, underdark, urban</environment>
+  </monster>
+
+<monster>
+    <name>Kraken [2024]</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18</ac>
+    <hp>481 (26d20+208)</hp>
+    <speed>30 ft., swim 120 ft.</speed>
+    <init>14</init>
+    <str>30</str>
+    <dex>11</dex>
+    <con>26</con>
+    <int>22</int>
+    <wis>18</wis>
+    <cha>20</cha>
+    <save>Str +17, Wis +11, Con +15, Dex +7</save>
+    <skill>History +13, Perception +11</skill>
+    <passive>21</passive>
+    <languages>understands Abyssal, Celestial, Infernal, and Primordial but can't speak; telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold, lightning</immune>
+    <conditionImmune>frightened, grappled, paralyzed, restrained</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+7</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kraken can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (4/Day, or 5/Day in Lair)</name>
+      <recharge>5/DAY</recharge>
+      <text>If the kraken fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The kraken deals double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The kraken makes two Tentacle attacks and uses Fling, Lightning Strike, or Swallow.</text>
+    </action>
+    <action>
+      <name>Tentacle</name>
+      <text>Melee Attack Roll: +17, reach 30 ft. Hit: 24 (4d6 + 10) Bludgeoning damage. The target has the Grappled condition (escape DC 20) from one of ten tentacles, and it has the Restrained condition until the grapple ends.</text>
+      <attack>Tentacle|+17|4d6+10</attack>
+    </action>
+    <action>
+      <name>Fling</name>
+      <text>The kraken throws a Large or smaller creature Grappled by it to a space it can see within 60 feet of itself that isn't in the air. Dexterity Saving Throw: DC 25, the creature thrown and each creature in the destination space. Failure: 18 (4d8) Bludgeoning damage, and the target has the Prone condition. Success: Half damage only.</text>
+      <attack>Fling||4d8</attack>
+    </action>
+    <action>
+      <name>Lightning Strike</name>
+      <text>Dexterity Saving Throw: DC 23, one creature the kraken can see within 120 feet. Failure: 33 (6d10) Lightning damage. Success: Half damage.</text>
+      <attack>Lightning Strike||6d10</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>Dexterity Saving Throw: DC 25, one creature Grappled by the kraken (it can have up to four creatures swallowed at a time). Failure: 23 (3d8 + 10) Piercing damage. If the target is Large or smaller, it is swallowed and no longer Grappled. A swallowed creature has the Restrained condition, has Total Cover against attacks and other effects outside the kraken, and takes 24 (7d6) Acid damage at the start of each of its turns.
+	If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the kraken with the Prone condition. If the kraken dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone.</text>
+      <attack>Swallow||3d8+10</attack>
+      <attack>Acid Damage||7d6</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The Kraken can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Kraken regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Storm Bolt</name>
+      <text>The kraken uses Lightning Strike.</text>
+    </legendary>
+    <legendary>
+      <name>Toxic Ink</name>
+      <text>Constitution Saving Throw: DC 23, each creature in a 15-foot Emanation originating from the kraken while it is underwater. Failure: The target has the Blinded and Poisoned conditions until the end of the kraken's next turn. The kraken then moves up to its Speed. Failure or Success: The kraken can't take this action again until the start of its next turn.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Kraken Lairs</name>
+      <text>Kraken lairs tend to be sunken temples, eldritch ritual sites, or primeval places of divine power. They might lie deep beneath bodies of fresh or salt water, and they often connect to labyrinths of flooded subterranean tunnels or networks of magical portals.
+	The region containing a kraken's lair is twisted by its presence, creating the following effects:
+
+Ocean Tyrant: The kraken exerts its dominance over animals in its domain. All Beasts within 1 mile of the lair have the Charmed condition while in that area.
+
+Sea and Storms: While in its lair, the kraken can cast Control Weather, requiring no spell components and using Intelligence as the spellcasting ability.
+
+If the kraken dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Control Weather [2024]</spells>
+    <description>Ancient weapons of the gods, krakens slumber in the deepest oceanic abysses, awaiting their time to rise and dominate the world. These massive, manytentacled horrors combine overwhelming physical might with formidable cunning. Their powerful limbs shatter ships and topple spires, and they use their control over storms to rain down lightning on their foes.
+	Krakens usually have little interest in mortal affairs. These terrors were created by the gods to wage war in ages long forgotten. Since that era, most krakens have vanished beneath the waves to slumber until the gods call on them again. Some krakens serve divine masters still, protecting deep sea treasures or entire oceans. Others have forsaken their divine creators and pursue their own agendas, manipulating forces beneath the sea and beyond.
+	Krakens rarely appear on the surface, but when they do, they herald times of change and doom. When roused to action, these titans directly attack coastal cities or whole armadas. Kraken onslaughts persist until their wrath is sated, their divine patrons are appeased, or their egos are placated by valuable offerings. Roll on or choose a result from the Kraken Attacks table to inspire what ruin a kraken might unleash.
+
+Kraken Attacks:
+1d8 | The Enraged Kraken...
+1 | Abducts the vessel of a leader or another important community member.
+2 | Attacks a community from below using flooded ruins, hidden aquifers, or sewers.
+3 | Breaks a lighthouse or seaside tower, carrying it and the occupants to a secret island.
+4 | Calls down lightning on any ship that enters its aquatic territory.
+5 | Carries ships to an inescapable sargassum.
+6 | Dams a river or cuts off a city's sea access.
+7 | Devours all sea life near a fishing community, threatening it with ruin.
+8 | Masterminds an invasion from the sea by merfolk, sahuagin, or storm giants.
+
+Source:	Monster Manual 2024 p. 187</description>
+    <environment>underwater</environment>
+  </monster>
+
+<monster>
+    <name>Kuo-toa [2024]</name>
+    <ancestry>Kuo-toa</ancestry>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>18 (4d8)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>0</init>
+    <str>13</str>
+    <dex>10</dex>
+    <con>11</con>
+    <int>11</int>
+    <wis>10</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>Undercommon</languages>
+    <cr>1/4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Spear</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kuo-toa can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Spear</name>
+      <text>Melee or Ranged Attack Roll: +3, reach 5 ft. or range 20/60 ft. Hit: 5 (1d8 + 1) Piercing damage.</text>
+      <attack>Spear|+3|1d8+1</attack>
+    </action>
+    <action>
+      <name>Sticky Net (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Dexterity Saving Throw: DC 10, one Large or smaller creature the kuo-toa can see within 15 feet. Failure: The target has the Restrained condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can take an action to make a DC 10 Strength (Athletics) check to free itself or another creature in a net within 5 feet, destroying the net on a success.</text>
+    </action>
+    <reaction>
+      <name>Sticky Shield</name>
+      <text>Trigger: A creature misses the kuo-toa with a melee attack roll using a weapon. Response: dStrength Saving Throw: DC 11, the triggering creature. Failure: The attack's weapon sticks to the kuo-toa's shield. If the target doesn't let go of the weapon, the target has the Grappled condition while the weapon is stuck (escape DC 11). While stuck, the weapon can't be used. The target can take an action to make a DC 11 Strength (Athletics) check, freeing the weapon on a success.</text>
+    </reaction>
+    <description>Kuo-toa have slimy, humanoid bodies and the heads of goggle-eyed deep-sea fish. They claim they once dominated whole worlds, their empires spanning land and sea under the blessings of piscine gods. The kuo-toa can't say what disaster brought their glorious civilization to an end, but elves, humans, mind flayers, and the kuo-toan gods bear the brunt of their blame. From the lands and seas of the surface, the kuo-toa retreated into cavernous trenches and Underdark seas. In these hidden realms, kuo-toa brood over all they've lost and forgotten, nursing plots to avenge themselves for slights that might never have occurred.
+	Kuo-toa hate the civilizations of the surface and the Underdark, believing themselves to be victims of age-old slights and ongoing conspiracies. Kuo-toa undertake contrived plots to propel themselves to dominance, often kidnapping people to learn their secrets or making dubious sacrifices to bizarre gods. To facilitate such plots, kuo-toa try to capture creatures alive using nets or strange weapons. Drow, dwarves, and gnomes dwelling in the Underdark, as well as surface communities near submerged subterranean passages, are frequent targets for kuo-toa raids and other plots.
+	Kuo-toa frequently serve depraved masterminds such as aboleths and krakens. Such kuo-toa believe these powerful creatures are avatars of kuo-toan deities or gods in their own right. Kuo-toa might temporarily ally with other evil creatures, but these alliances shift as kuo-toa leaders interpret omens from their unpredictable deities.
+
+Kuo-toa Deities:
+Kuo-toa ever seek to placate their inscrutable deities. However, few kuo-toa can agree on the identities of their gods, and little consistency exists between kuo-toa communities. Only Blibdoolpoolp the Sea Mother, a figure with a human body but the head and claws of a crayfish, sees broad worship.
+	Lacking information about what their other gods look like, kuo-toa priests invent new forms for them, creating divine idols with whatever objects are at hand. But whether these kuo-toa priests draw power from belief or delusion, aberrant talent, or a stranger supernatural source, some power answers their petitions. Roll twice on or choose results from the Kuo-toa Deity Features table to inspire how kuo-toa represent a deity.
+
+Kuo-toa Deity Head Features:
+1d10 | The Deity's Head Is Like A...
+1 | Barnacle
+2 | Crab claw
+3 | Hagfish
+4 | Moray eel
+5 | Sea anemone
+6 | Shark
+7 | Sunfish
+8 | Tentacle
+9 | Treasure chest
+10 | Viperfish
+
+Kuo-toa Deity Body Features:
+1d10 | The Deity's Body Is Like A...
+1 | Hermit crab
+2 | Jellyfish
+3 | Kuo-toa
+4 | Mantis shrimp
+5 | Merfolk
+6 | Plesiosaurus
+7 | Sea cucumber
+8 | Ship's figurehead
+9 | Squid
+10 | Whale
+
+Kuo-toa Sanctuaries:
+Kuo-toa typically organize their communities around sites they believe to be important to their deities. These might be structures or series of caverns, and most feature both air-filled and submerged chambers. Important places within these sites suggest the rituals of kuo-toa faiths, the demands of kuo-toa deities, or the whims of omen-seeking archpriests. As with kuo-toa deities, the features of these locations vary between communities. Roll on or choose a result from the Kuo-toa Ritual Sites table to inspire features and suggest adventures within a kuo-toa community.
+
+Kuo-toa Ritual Sites:
+1d8 | The Kuo-toa Community Features...
+1 | An arena scattered with weapons made from crustacean shells.
+2 | A gallery of hibernating chuuls.
+3 | A garden of mussels and tide pool creatures that whisper secrets.
+4 | A hidden shrine with a patchwork depiction of a new kuo-toa deity.
+5 | The lavish chamber of an animal or monster said to be prophetic, lucky, or literate.
+6 | A pool filled with jellyfish, eels, or fish roe that glow in organized patterns.
+7 | A punishment chamber exposed to the light of the surface.
+8 | A towering statue of a kuo-toa deity.
+
+Kuo-toa:
+Kuo-toa loot ruins and raid communities near their dwellings in the Underdark. Their shields are coated in sticky slime, which they use to disarm their foes, and they employ slimy nets to entrap victims. They usually strive to take their enemies alive and drag captives to their hidden lairs.
+	Most kuo-toa follow the orders of their more powerful leaders out of a combination of faith and fear. In rare cases, a kuo-toa might abandon its community to live as a hermit or wanderer. Such kuo-toa might know much about the Underdark, but they live in fear of the strange gods they forsook.
+
+Source:	Monster Manual 2024 p. 189</description>
+    <environment>coastal, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Kuo-toa Archpriest [2024]</name>
+    <sortname>Kuo-toa, Archpriest</sortname>
+    <ancestry>Kuo-toa</ancestry>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>105 (14d8+42)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>2</init>
+    <str>16</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>13</int>
+    <wis>16</wis>
+    <cha>14</cha>
+    <save />
+    <skill>Perception +9, Religion +4</skill>
+    <passive>19</passive>
+    <languages>Undercommon</languages>
+    <cr>6</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kuo-toa can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The kuo-toa makes three Strange Scepter attacks.</text>
+    </action>
+    <action>
+      <name>Strange Scepter</name>
+      <text>Melee or Ranged Attack Roll: +6, reach 5 ft. or range 120 ft. Hit: 20 (5d6 + 3) Lightning damage.</text>
+      <attack>Strange Scepter|+6|5d6+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The kuo-toa casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14):
+
+	• At will: Detect Magic, Thaumaturgy
+	• 1/Day each: Destructive Wave, Divination, Hold Monster (level 6 version), Scrying, Tongues</text>
+    </action>
+    <action>
+      <name>Shield of Faith (2/Day) (Bonus Action)</name>
+      <recharge>2/DAY</recharge>
+      <text>The kuo-toa casts Shield of Faith, using the same spellcasting ability as Spellcasting.</text>
+    </action>
+    <spells>Detect Magic [2024], Thaumaturgy [2024], Destructive Wave [2024], Divination [2024], Hold Monster [2024], Scrying [2024], Tongues [2024], Shield of Faith [2024]</spells>
+    <description>Kuo-toa have slimy, humanoid bodies and the heads of goggle-eyed deep-sea fish. They claim they once dominated whole worlds, their empires spanning land and sea under the blessings of piscine gods. The kuo-toa can't say what disaster brought their glorious civilization to an end, but elves, humans, mind flayers, and the kuo-toan gods bear the brunt of their blame. From the lands and seas of the surface, the kuo-toa retreated into cavernous trenches and Underdark seas. In these hidden realms, kuo-toa brood over all they've lost and forgotten, nursing plots to avenge themselves for slights that might never have occurred.
+	Kuo-toa hate the civilizations of the surface and the Underdark, believing themselves to be victims of age-old slights and ongoing conspiracies. Kuo-toa undertake contrived plots to propel themselves to dominance, often kidnapping people to learn their secrets or making dubious sacrifices to bizarre gods. To facilitate such plots, kuo-toa try to capture creatures alive using nets or strange weapons. Drow, dwarves, and gnomes dwelling in the Underdark, as well as surface communities near submerged subterranean passages, are frequent targets for kuo-toa raids and other plots.
+	Kuo-toa frequently serve depraved masterminds such as aboleths and krakens. Such kuo-toa believe these powerful creatures are avatars of kuo-toan deities or gods in their own right. Kuo-toa might temporarily ally with other evil creatures, but these alliances shift as kuo-toa leaders interpret omens from their unpredictable deities.
+
+Kuo-toa Deities:
+Kuo-toa ever seek to placate their inscrutable deities. However, few kuo-toa can agree on the identities of their gods, and little consistency exists between kuo-toa communities. Only Blibdoolpoolp the Sea Mother, a figure with a human body but the head and claws of a crayfish, sees broad worship.
+	Lacking information about what their other gods look like, kuo-toa priests invent new forms for them, creating divine idols with whatever objects are at hand. But whether these kuo-toa priests draw power from belief or delusion, aberrant talent, or a stranger supernatural source, some power answers their petitions. Roll twice on or choose results from the Kuo-toa Deity Features table to inspire how kuo-toa represent a deity.
+
+Kuo-toa Deity Head Features:
+1d10 | The Deity's Head Is Like A...
+1 | Barnacle
+2 | Crab claw
+3 | Hagfish
+4 | Moray eel
+5 | Sea anemone
+6 | Shark
+7 | Sunfish
+8 | Tentacle
+9 | Treasure chest
+10 | Viperfish
+
+Kuo-toa Deity Body Features:
+1d10 | The Deity's Body Is Like A...
+1 | Hermit crab
+2 | Jellyfish
+3 | Kuo-toa
+4 | Mantis shrimp
+5 | Merfolk
+6 | Plesiosaurus
+7 | Sea cucumber
+8 | Ship's figurehead
+9 | Squid
+10 | Whale
+
+Kuo-toa Sanctuaries:
+Kuo-toa typically organize their communities around sites they believe to be important to their deities. These might be structures or series of caverns, and most feature both air-filled and submerged chambers. Important places within these sites suggest the rituals of kuo-toa faiths, the demands of kuo-toa deities, or the whims of omen-seeking archpriests. As with kuo-toa deities, the features of these locations vary between communities. Roll on or choose a result from the Kuo-toa Ritual Sites table to inspire features and suggest adventures within a kuo-toa community.
+
+Kuo-toa Ritual Sites:
+1d8 | The Kuo-toa Community Features...
+1 | An arena scattered with weapons made from crustacean shells.
+2 | A gallery of hibernating chuuls.
+3 | A garden of mussels and tide pool creatures that whisper secrets.
+4 | A hidden shrine with a patchwork depiction of a new kuo-toa deity.
+5 | The lavish chamber of an animal or monster said to be prophetic, lucky, or literate.
+6 | A pool filled with jellyfish, eels, or fish roe that glow in organized patterns.
+7 | A punishment chamber exposed to the light of the surface.
+8 | A towering statue of a kuo-toa deity.
+
+Kuo-toa Archpriest:
+Kuo-toa archpriests lead kuo-toa communities by interpreting omens and messages from their strange gods. They wear grotesque ceremonial regalia honoring their deities. Archpriests channel their faith into spells to support their followers.
+
+Source:	Monster Manual 2024 p. 191</description>
+    <environment>coastal, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Kuo-toa Monitor [2024]</name>
+    <sortname>Kuo-toa, Monitor</sortname>
+    <ancestry>Kuo-toa</ancestry>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>65 (10d8+20)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>0</init>
+    <str>16</str>
+    <dex>10</dex>
+    <con>14</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Perception +6, Religion +3</skill>
+    <passive>16</passive>
+    <languages>Undercommon</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kuo-toa can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The kuo-toa makes two Bone Whip attacks.</text>
+    </action>
+    <action>
+      <name>Bone Whip</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 6 (1d6 + 3) Slashing damage plus 7 (2d6) Lightning damage, and the target can't make Opportunity Attacks until the start of the kuo-toa's next turn.</text>
+      <attack>Bone Whip|+5|1d6+3</attack>
+      <attack>Lightning Damage||2d6</attack>
+    </action>
+    <description>Kuo-toa have slimy, humanoid bodies and the heads of goggle-eyed deep-sea fish. They claim they once dominated whole worlds, their empires spanning land and sea under the blessings of piscine gods. The kuo-toa can't say what disaster brought their glorious civilization to an end, but elves, humans, mind flayers, and the kuo-toan gods bear the brunt of their blame. From the lands and seas of the surface, the kuo-toa retreated into cavernous trenches and Underdark seas. In these hidden realms, kuo-toa brood over all they've lost and forgotten, nursing plots to avenge themselves for slights that might never have occurred.
+	Kuo-toa hate the civilizations of the surface and the Underdark, believing themselves to be victims of age-old slights and ongoing conspiracies. Kuo-toa undertake contrived plots to propel themselves to dominance, often kidnapping people to learn their secrets or making dubious sacrifices to bizarre gods. To facilitate such plots, kuo-toa try to capture creatures alive using nets or strange weapons. Drow, dwarves, and gnomes dwelling in the Underdark, as well as surface communities near submerged subterranean passages, are frequent targets for kuo-toa raids and other plots.
+	Kuo-toa frequently serve depraved masterminds such as aboleths and krakens. Such kuo-toa believe these powerful creatures are avatars of kuo-toan deities or gods in their own right. Kuo-toa might temporarily ally with other evil creatures, but these alliances shift as kuo-toa leaders interpret omens from their unpredictable deities.
+
+Kuo-toa Deities:
+Kuo-toa ever seek to placate their inscrutable deities. However, few kuo-toa can agree on the identities of their gods, and little consistency exists between kuo-toa communities. Only Blibdoolpoolp the Sea Mother, a figure with a human body but the head and claws of a crayfish, sees broad worship.
+	Lacking information about what their other gods look like, kuo-toa priests invent new forms for them, creating divine idols with whatever objects are at hand. But whether these kuo-toa priests draw power from belief or delusion, aberrant talent, or a stranger supernatural source, some power answers their petitions. Roll twice on or choose results from the Kuo-toa Deity Features table to inspire how kuo-toa represent a deity.
+
+Kuo-toa Deity Head Features:
+1d10 | The Deity's Head Is Like A...
+1 | Barnacle
+2 | Crab claw
+3 | Hagfish
+4 | Moray eel
+5 | Sea anemone
+6 | Shark
+7 | Sunfish
+8 | Tentacle
+9 | Treasure chest
+10 | Viperfish
+
+Kuo-toa Deity Body Features:
+1d10 | The Deity's Body Is Like A...
+1 | Hermit crab
+2 | Jellyfish
+3 | Kuo-toa
+4 | Mantis shrimp
+5 | Merfolk
+6 | Plesiosaurus
+7 | Sea cucumber
+8 | Ship's figurehead
+9 | Squid
+10 | Whale
+
+Kuo-toa Sanctuaries:
+Kuo-toa typically organize their communities around sites they believe to be important to their deities. These might be structures or series of caverns, and most feature both air-filled and submerged chambers. Important places within these sites suggest the rituals of kuo-toa faiths, the demands of kuo-toa deities, or the whims of omen-seeking archpriests. As with kuo-toa deities, the features of these locations vary between communities. Roll on or choose a result from the Kuo-toa Ritual Sites table to inspire features and suggest adventures within a kuo-toa community.
+
+Kuo-toa Ritual Sites:
+1d8 | The Kuo-toa Community Features...
+1 | An arena scattered with weapons made from crustacean shells.
+2 | A gallery of hibernating chuuls.
+3 | A garden of mussels and tide pool creatures that whisper secrets.
+4 | A hidden shrine with a patchwork depiction of a new kuo-toa deity.
+5 | The lavish chamber of an animal or monster said to be prophetic, lucky, or literate.
+6 | A pool filled with jellyfish, eels, or fish roe that glow in organized patterns.
+7 | A punishment chamber exposed to the light of the surface.
+8 | A towering statue of a kuo-toa deity.
+
+Kuo-toa Monitor:
+Kuo-toa monitors control the day-to-day life of weaker kuo-toa, directing their work and worship. They also train beasts or monsters in the kuo-toa's service—such as chuuls or giant crabs—and command them in battle. Archpriests bless monitors with the power to control their underlings and to subdue foes with electricity channeled through their bizarre whips.
+
+Source:	Monster Manual 2024 p. 190</description>
+    <environment>coastal, underdark</environment>
+  </monster>
+
+<monster>
+    <name>Kuo-toa Whip [2024]</name>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>11</ac>
+    <hp>45 (7d8+14)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>0</init>
+    <str>14</str>
+    <dex>10</dex>
+    <con>14</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>11</cha>
+    <save />
+    <skill>Perception +6, Religion +3</skill>
+    <passive>16</passive>
+    <languages>Undercommon</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 120 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kuo-toa can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</text>
+    </trait>
+    <action>
+      <name>Pincer Staff</name>
+      <text>Melee Attack Roll: +4, reach 10 ft. Hit: 9 (2d6 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12). Until the grapple ends, the kuo-toa can't make Pincer Staff attacks.</text>
+      <attack>Pincer Staff|+4|2d6+2</attack>
+    </action>
+    <action>
+      <name>Conjure Slimy Glob</name>
+      <text>Ranged Attack Roll: +4, range 60 ft. Hit: 9 (3d4 + 2) Acid damage.</text>
+      <attack>Conjure Slimy Glob|+4|3d4+2</attack>
+    </action>
+    <action>
+      <name>Shield of Faith (2/Day) (Bonus Action)</name>
+      <recharge>2/DAY</recharge>
+      <text>The kuo-toa casts Shield of Faith, using Wisdom as the spellcasting ability.</text>
+    </action>
+    <description>Kuo-toa have slimy, humanoid bodies and the heads of goggle-eyed deep-sea fish. They claim they once dominated whole worlds, their empires spanning land and sea under the blessings of piscine gods. The kuo-toa can't say what disaster brought their glorious civilization to an end, but elves, humans, mind flayers, and the kuo-toan gods bear the brunt of their blame. From the lands and seas of the surface, the kuo-toa retreated into cavernous trenches and Underdark seas. In these hidden realms, kuo-toa brood over all they've lost and forgotten, nursing plots to avenge themselves for slights that might never have occurred.
+	Kuo-toa hate the civilizations of the surface and the Underdark, believing themselves to be victims of age-old slights and ongoing conspiracies. Kuo-toa undertake contrived plots to propel themselves to dominance, often kidnapping people to learn their secrets or making dubious sacrifices to bizarre gods. To facilitate such plots, kuo-toa try to capture creatures alive using nets or strange weapons. Drow, dwarves, and gnomes dwelling in the Underdark, as well as surface communities near submerged subterranean passages, are frequent targets for kuo-toa raids and other plots.
+	Kuo-toa frequently serve depraved masterminds such as aboleths and krakens. Such kuo-toa believe these powerful creatures are avatars of kuo-toan deities or gods in their own right. Kuo-toa might temporarily ally with other evil creatures, but these alliances shift as kuo-toa leaders interpret omens from their unpredictable deities.
+
+Kuo-toa Deities:
+Kuo-toa ever seek to placate their inscrutable deities. However, few kuo-toa can agree on the identities of their gods, and little consistency exists between kuo-toa communities. Only Blibdoolpoolp the Sea Mother, a figure with a human body but the head and claws of a crayfish, sees broad worship.
+	Lacking information about what their other gods look like, kuo-toa priests invent new forms for them, creating divine idols with whatever objects are at hand. But whether these kuo-toa priests draw power from belief or delusion, aberrant talent, or a stranger supernatural source, some power answers their petitions. Roll twice on or choose results from the Kuo-toa Deity Features table to inspire how kuo-toa represent a deity.
+
+Kuo-toa Deity Head Features:
+1d10 | The Deity's Head Is Like A...
+1 | Barnacle
+2 | Crab claw
+3 | Hagfish
+4 | Moray eel
+5 | Sea anemone
+6 | Shark
+7 | Sunfish
+8 | Tentacle
+9 | Treasure chest
+10 | Viperfish
+
+Kuo-toa Deity Body Features:
+1d10 | The Deity's Body Is Like A...
+1 | Hermit crab
+2 | Jellyfish
+3 | Kuo-toa
+4 | Mantis shrimp
+5 | Merfolk
+6 | Plesiosaurus
+7 | Sea cucumber
+8 | Ship's figurehead
+9 | Squid
+10 | Whale
+
+Kuo-toa Sanctuaries:
+Kuo-toa typically organize their communities around sites they believe to be important to their deities. These might be structures or series of caverns, and most feature both air-filled and submerged chambers. Important places within these sites suggest the rituals of kuo-toa faiths, the demands of kuo-toa deities, or the whims of omen-seeking archpriests. As with kuo-toa deities, the features of these locations vary between communities. Roll on or choose a result from the Kuo-toa Ritual Sites table to inspire features and suggest adventures within a kuo-toa community.
+
+Kuo-toa Ritual Sites:
+1d8 | The Kuo-toa Community Features...
+1 | An arena scattered with weapons made from crustacean shells.
+2 | A gallery of hibernating chuuls.
+3 | A garden of mussels and tide pool creatures that whisper secrets.
+4 | A hidden shrine with a patchwork depiction of a new kuo-toa deity.
+5 | The lavish chamber of an animal or monster said to be prophetic, lucky, or literate.
+6 | A pool filled with jellyfish, eels, or fish roe that glow in organized patterns.
+7 | A punishment chamber exposed to the light of the surface.
+8 | A towering statue of a kuo-toa deity.
+
+Kuo-toa Whip:
+The servants of kuo-toa archpriests, kuo-toa whips—so named for their role in enforcing order among other kuo-toa—lead war bands in carrying out the commands of their superiors. In return for their zeal, these kuo-toa are granted minor magical abilities and pincerlike weapons for subduing foes. In battle, whips drive on other kuo-toa with threats of violence and burbling chants.
+
+Source:	Monster Manual 2024 p. 190</description>
+    <environment>coastal, underdark</environment>
+  </monster>
+
+</compendium>

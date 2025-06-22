@@ -17,6 +17,32 @@ We've filled this book with breathtaking creature art of almost every monster, i
 
 Populate your worlds and adventures with the hundreds of monsters provided, and let their stories, illustrations, and streamlined stat blocks fuel your D&amp;D adventures for years to come.</description>
   <collection>
-    <doc href="bestiary_mm24.xml"/>
+    <doc href="bestiary_mm24_a.xml"/>
+    <doc href="bestiary_mm24_b.xml"/>
+    <doc href="bestiary_mm24_c.xml"/>
+    <doc href="bestiary_mm24_d.xml"/>
+    <doc href="bestiary_mm24_e.xml"/>
+    <doc href="bestiary_mm24_f.xml"/>
+    <doc href="bestiary_mm24_g.xml"/>
+    <doc href="bestiary_mm24_h.xml"/>
+    <doc href="bestiary_mm24_i.xml"/>
+    <doc href="bestiary_mm24_j.xml"/>
+    <doc href="bestiary_mm24_k.xml"/>
+    <doc href="bestiary_mm24_l.xml"/>
+    <doc href="bestiary_mm24_m.xml"/>
+    <doc href="bestiary_mm24_n.xml"/>
+    <doc href="bestiary_mm24_o.xml"/>
+    <doc href="bestiary_mm24_p.xml"/>
+    <doc href="bestiary_mm24_q.xml"/>
+    <doc href="bestiary_mm24_r.xml"/>
+    <doc href="bestiary_mm24_s.xml"/>
+    <doc href="bestiary_mm24_t.xml"/>
+    <doc href="bestiary_mm24_u.xml"/>
+    <doc href="bestiary_mm24_v.xml"/>
+    <doc href="bestiary_mm24_w.xml"/>
+    <doc href="bestiary_mm24_x.xml"/>
+    <doc href="bestiary_mm24_y.xml"/>
+    <doc href="bestiary_mm24_z.xml"/>
+    <!-- If there's a bestiary_mm24_#.xml, it should be added here too -->
   </collection>
 </source>

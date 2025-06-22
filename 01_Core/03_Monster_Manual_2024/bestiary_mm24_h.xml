@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Half-Dragon [2024]</name>
+    <size>M</size>
+    <type>dragon</type>
+    <alignment>neutral</alignment>
+    <ac>18</ac>
+    <hp>105 (14d8+42)</hp>
+    <speed>40 ft.</speed>
+    <init>5</init>
+    <str>19</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>10</int>
+    <wis>15</wis>
+    <cha>14</cha>
+    <save>Wis +5, Dex +5</save>
+    <skill>Stealth +5, Athletics +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Draconic</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist>Damage type chosen for the Draconic Origin trait below</resist>
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Draconic Origin</name>
+      <text>The half-dragon is related to a type of dragon associated with one of the following damage types (DM's choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The half-dragon makes two Claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 6 (1d4 + 4) Slashing damage plus 7 (2d6) damage of the type chosen for the Draconic Origin trait.</text>
+      <attack>Claw|+7|1d4+4</attack>
+      <attack>Extra Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Dragon's Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 28 (8d6) damage of the type chosen for the Draconic Origin trait. Success: Half damage.</text>
+      <attack>Dragon's Breath||8d6</attack>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The half-dragon jumps up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <description>Born through magical rites involving the essences of dragons, half-dragons serve their creators and their own draconic whims. Most half-dragons are created by chromatic dragons who desire servants with some trace of their own might and grandeur. Half-dragons frequently command other servants of a villainous dragon or act as agents in lands where their draconic master would attract unwanted attention.
+
+Half-dragons share personality traits and agendas with the dragon who spawned them. Those resembling chromatic dragons typically loathe their creator even as they seek the same ends. Half-dragons with the traits of metallic dragons are especially rare, but they might arise through magical accidents, the efforts of reckless magic-users, or the last act of a dying dragon.
+
+Source:	Monster Manual 2024 p. 163</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Harpy [2024]</name>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>11</ac>
+    <hp>38 (7d8+7)</hp>
+    <speed>20 ft., fly 40 ft.</speed>
+    <init>1</init>
+    <str>12</str>
+    <dex>13</dex>
+    <con>12</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>13</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Slashing damage.</text>
+      <attack>Claw|+3|2d4+1</attack>
+    </action>
+    <action>
+      <name>Luring Song</name>
+      <text>The harpy sings a magical melody, which lasts until the harpy's Concentration ends on it. Wisdom Saving Throw: DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. Failure: The target has the Charmed condition until the song ends and repeats the save at the end of each of its turns. While Charmed, the target has the Incapacitated condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn't avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. Success: The target is immune to this harpy's Luring Song for 24 hours.</text>
+    </action>
+    <description>Hate-filled creatures, harpies strive to cause pain and bring an end to love and life. These monsters combine humanlike features with the talons and wings of avian scavengers. Their notorious songs compel listeners to follow them, heedless of danger. Creatures captivated by a harpy's song frequently meet their deaths on harpies' vicious claws or amid natural perils.
+
+Harpies dwell in remote, dismal places tainted by tragedy and despair. Some tales claim harpies offended the gods and were transformed as a punishment; harpies might also be the descendants of such cursed souls.
+
+Every harpy sings a distinct song. While some songs are said to be heartbreaking in their beauty, others are wretched squawking and compel only the magically enthralled.
+
+Source:	Monster Manual 2024 p. 164</description>
+    <environment>coastal, forest, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Haunting Revenant [2024]</name>
+    <sortname>Revenant, Haunting</sortname>
+    <ancestry>Revenant</ancestry>
+    <size>G</size>
+    <type>undead</type>
+    <alignment>neutral</alignment>
+    <ac>20</ac>
+    <hp>203 (14d20+56)</hp>
+    <speed>30 ft.</speed>
+    <init>5</init>
+    <str>20</str>
+    <dex>12</dex>
+    <con>18</con>
+    <int>16</int>
+    <wis>18</wis>
+    <cha>20</cha>
+    <save>Wis +8, Con +8</save>
+    <skill />
+    <passive>14</passive>
+    <languages>Common plus two other languages</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist>necrotic, psychic</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>truesight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Haunted Zone</name>
+      <text>Constitution Saving Throw: DC 17, any creature that casts a spell while inside the revenant's space. Failure: The spell fails and is wasted.</text>
+    </trait>
+    <trait>
+      <name>Undead Restoration</name>
+      <text>If the revenant dies, it revives 24 hours later unless Dispel Evil and Good is cast on its remains. If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Hit Points.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The revenant makes two Object Slam attacks and uses Invitation.</text>
+    </action>
+    <action>
+      <name>Object Slam</name>
+      <text>Melee or Ranged Attack Roll: +9 (with Advantage if the target is inside the revenant's space), reach 10 ft. or range 30/90 ft. Hit: 27 (5d8 + 5) Bludgeoning damage.</text>
+      <attack>Object Slam|+9|5d8+5</attack>
+    </action>
+    <action>
+      <name>Invitation</name>
+      <text>Charisma Saving Throw: DC 17, each creature in a 60-foot Cone. Failure: The target is teleported inside the revenant's space and swallowed. A swallowed creature has Total Cover against attacks and other effects outside the revenant.
+	While the revenant has Hit Points, a swallowed creature can leave the revenant's space only by using magic that enables planar travel, such as the Plane Shift spell.</text>
+    </action>
+    <description>Wrathful spirits bent on revenge, revenants possess corpses and other materials, using them to seek justice or vent their rage on those who wronged them. Revenants refuse to rest until those they seek to punish are no more. If their bodies are destroyed, revenants claim new forms and continue their ruthless quests.
+
+Haunting Revenant:
+Haunting revenants possess ruins and forsaken places connected with their deaths—such as abandoned buildings, wrecked ships, or junk heaps. These revenants lurk in plain sight, waiting for their foes to near, then trap their victims within their massive bodies. Those inside a revenant might be battered by animate furnishings or more unsettling manifestations of the revenant's hatred.
+
+The places haunting revenants lurk swiftly gain infamous reputations.
+
+Source:	Monster Manual 2024 p. 260</description>
+    <environment>forest, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Hawk [2024]</name>
+    <size>T</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>13</ac>
+    <hp>1 (1d4-1)</hp>
+    <speed>10 ft., fly 60 ft.</speed>
+    <init>3</init>
+    <str>5</str>
+    <dex>16</dex>
+    <con>8</con>
+    <int>2</int>
+    <wis>14</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Talons</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 1 Slashing damage.</text>
+      <attack>Talons|+5|</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 362,
+		Player's Handbook 2024 p. 352</description>
+    <environment>arctic, coastal, forest, grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Hell Hound [2024]</name>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>lawful evil</alignment>
+    <ac>15</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>50 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>12</dex>
+    <con>14</con>
+    <int>6</int>
+    <wis>13</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages>understands Infernal but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The hound has Advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hound makes two Bite attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage plus 3 (1d6) Fire damage.</text>
+      <attack>Bite|+5|1d8+3</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Fire Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 17 (5d6) Fire damage. Success: Half damage.</text>
+      <attack>Fire Breath||5d6</attack>
+    </action>
+    <description>Spawned from the pits of Acheron, Gehenna, and the Nine Hells, hell hounds enforce the merciless order of those realms and the whims of tyrannical masters. On their home planes of existence, these grim canines ensure that souls don't escape their bleak afterlives. On the Material Plane, hell hounds typically serve cruel masters—such as fire giants and cultists—who appreciate their viciousness, obedience, and fiery characteristics. Hell hounds serve other creatures so long as they're given opportunities to hunt and kill, but they're quick to turn on those who treat them as mere animals.
+	Hell hounds have greater cunning than normal canines. They're skilled trackers and work together well in packs, often employing tricks and ambushes. Hell hounds enjoy hearing prey scream in their scorching jaws and fiery breath. They often go out of their way to draw out the terror of their victims' final moments.
+
+Source:	Monster Manual 2024 p. 165</description>
+    <environment>mountain, planar (lower), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Helmed Horror [2024]</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>neutral</alignment>
+    <ac>20</ac>
+    <hp>67 (9d8+27)</hp>
+    <speed>30 ft., fly 30 ft.(hover)</speed>
+    <init>3</init>
+    <str>18</str>
+    <dex>13</dex>
+    <con>16</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <save />
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune>necrotic, poison</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Shield</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The helmed horror has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Spell Immunity</name>
+      <text>The helmed horror is immune to three spells chosen by its creator. Typical choices include Heat Metal, Lightning Bolt, and Magic Missile.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The helmed horror makes two Arcane Sword attacks.</text>
+    </action>
+    <action>
+      <name>Arcane Sword</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Slashing damage plus 5 (1d10) Force damage.</text>
+      <attack>Arcane Sword|+6|1d8+4</attack>
+      <attack>Force Damage||1d10</attack>
+    </action>
+    <description>Helmed horrors are suits of armor animated by magic. Rather than being unreasoning automatons, these armored shells possess the guile of soldiers and resilience against destructive magic. While their name suggests sinister intentions, these creatures serve their creators loyally. Helmed horrors are also sometimes called doom guards or spirit armors. Most show no evidence of a personality, but exceptions exist.
+	Helmed horrors might perform any number of assignments. Roll on or choose a result from the Helmed Horror Directives table to inspire what tasks helmed horrors perform.
+
+Helmed Horror Directives:
+1d6 | The Helmed Horror Follows Commands To...
+1 | Carry its master's palanquin through the air.
+2 | Defend a remarkable treasure or piece of armor by incorporating the item into its being.
+3 | Imitate a dead or imprisoned hero by using their armor and weapons.
+4 | Perform as a laborer or servant.
+5 | Serve in a legion formed from the armors of a land's ancient defenders.
+6 | Stand sentry in a gallery of mundane armors.
+
+Source:	Monster Manual 2024 p. 166</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Hezrou [2024]</name>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18</ac>
+    <hp>157 (15d10+75)</hp>
+    <speed>30 ft.</speed>
+    <init>6</init>
+    <str>19</str>
+    <dex>17</dex>
+    <con>20</con>
+    <int>5</int>
+    <wis>12</wis>
+    <cha>13</cha>
+    <save>Str +7, Wis +4, Con +8</save>
+    <skill />
+    <passive>11</passive>
+    <languages>Abyssal; telepathy 120 ft.</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Demonic Restoration</name>
+      <text>If the hezrou dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The hezrou has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Stench</name>
+      <text>Constitution Saving Throw: DC 16, any creature that starts its turn in a 10-foot Emanation originating from the hezrou. Failure: The target has the Poisoned condition until the start of its next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hezrou makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 6 (1d4 + 4) Slashing damage plus 9 (2d8) Poison damage.</text>
+      <attack>Rend|+7|1d4+4</attack>
+      <attack>Poison Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Leap (Bonus Action)</name>
+      <text>The hezrou jumps up to 30 feet by spending 10 feet of movement.</text>
+    </action>
+    <description>Hezrous compose the bulk of many demonic hordes. In croaking, reeking throngs, these ogre-size brutes seek to crush and consume foes. Their oozing hides are manifestations of embodied evils. Every few moments, patches of their slimy skins erupt with grotesque transformations such as rows of mismatched fangs, fungal growths, or half-formed features. These unsettling manifestations emerge, then roil away.
+
+Hezrous serve more powerful demons, such as nalfeshnees and mariliths. They take the abuse and intimidation of these deadlier demons and pass it on to droves of weaker dretches and manes. This predictable brutality makes hezrous useful links in the chaotic structure of a demonic horde.
+
+When on the Material Plane or otherwise left to their own devices, hezrous recklessly indulge in destructive, short-sighted rampages. Only magic and threats from more powerful masters can curb these demons' outrages and compel hezrous to pursue greater plots. Powerful spellcasters often use sinister coercions, spells like Magic Cir cle and Planar Binding , or other magic to force hezrous to serve them. Roll on or choose a result from the Demonic Undertakings table to inspire how a magic-user might employ a hezrou or similar demon.
+
+Demonic Undertakings:
+1d6 The Demon Is Compelled To...
+1 Break open a vault and steal what's within.
+2 Defile a place using blasphemous symbols and demonic gore.
+3 Fetch or otherwise provide materials for a profane ritual.
+4 Guard a site and slay anyone who comes near.
+5 Hunt down a foe, destroying everything barring the demon's path.
+6 Intimidate someone into following orders.
+
+Source:	Monster Manual 2024 p. 167</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Hill Giant [2024]</name>
+    <sortname>Giant, Hill</sortname>
+    <ancestry>Giant</ancestry>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>105 (10d12+40)</hp>
+    <speed>40 ft.</speed>
+    <init>2</init>
+    <str>21</str>
+    <dex>8</dex>
+    <con>19</con>
+    <int>5</int>
+    <wis>9</wis>
+    <cha>6</cha>
+    <save />
+    <skill>Perception +2</skill>
+    <passive>12</passive>
+    <languages>Giant</languages>
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two attacks, using Tree Club or Trash Lob in any combination.</text>
+    </action>
+    <action>
+      <name>Tree Club</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 18 (3d8 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.</text>
+      <attack>Tree Club|+8|3d8+5</attack>
+    </action>
+    <action>
+      <name>Trash Lob</name>
+      <text>Ranged Attack Roll: +8, range 60/240 ft. Hit: 16 (2d10 + 5) Bludgeoning damage, and the target has the Poisoned condition until the end of its next turn.</text>
+      <attack>Trash Lob|+8|2d10+5</attack>
+    </action>
+    <description>Hill giants live among rugged bluffs and highlands. Standing three times the size of most humans, these giants exhibit skin and hair in a range of shades, including hues suggestive of the earth and mosses near their dwellings.
+
+Among hidden valleys, pristine waterfalls, and game-filled slopes, hill giants usually find their needs met by nature's bounty. What the wilderness doesn't provide, hill giants make, crafting clothes, tools, and weapons from rocks, wood, and hides. When they encounter strangers, hill giants might be suspicious and protective of their territories, but some might be convinced to share their bounties with travelers willing to entertain them.
+
+Disaster, invasion, or want might drive hill giants from their homes into other people's lands. Some displaced hill giants might steal what they need or seek revenge for their losses by causing ruin among smaller beings. Others might take up lives of raiding or serve other giants in return for protection.
+
+Source:	Monster Manual 2024 p. 168</description>
+    <environment>hill</environment>
+  </monster>
+
+<monster>
+    <name>Hippogriff [2024]</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>26 (4d10+4)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <init>1</init>
+    <str>17</str>
+    <dex>13</dex>
+    <con>13</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <save />
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages />
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Flyby</name>
+      <text>The hippogriff doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hippogriff makes two Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.</text>
+      <attack>Rend|+5|1d8+3</attack>
+    </action>
+    <description>Part hunting bird, part horse, hippogriffs are majestic creatures that hunt opportunistically as they migrate, often targeting lone travelers and livestock. Hippogriffs might carry riders with them in their travels in return for food or other aid.
+	Hippogriff migrations might take months or years, and sages frequently predict their routes. Roll on or choose a result from the Hippogriff Destination table to inspire where a hippogriff might be en route to.
+
+Hippogriff Destination:
+1d6 | The Hippogriff Is Traveling to A...
+1 | Lost ruin hidden by clouds or fog.
+2 | Low-hanging moon, star, or other solar body.
+3 | Magical garden on a floating island.
+4 | Mountaintop with a view of a giant geoglyph.
+5 | Nest full of hippogriff eggs atop a spire.
+6 | Portal to the Feywild or an Upper Plane.
+
+Source:	Monster Manual 2024 p. 169</description>
+    <environment>grassland, hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Hippopotamus [2024]</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>14</ac>
+    <hp>82 (11d10+22)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <init>-1</init>
+    <str>21</str>
+    <dex>7</dex>
+    <con>15</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>4</cha>
+    <save>Str +7</save>
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>4</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses />
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The hippopotamus can hold its breath for 10 minutes.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hippopotamus makes two Bite attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 16 (2d10 + 5) Piercing damage.</text>
+      <attack>Bite|+7|2d10+5</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 362</description>
+    <environment>forest, grassland, swamp</environment>
+  </monster>
+
+<monster>
+    <name>Hobgoblin Captain [2024]</name>
+    <sortname>Hobgoblin, Captain</sortname>
+    <ancestry>Hobgoblin</ancestry>
+    <size>M</size>
+    <type>fey (goblinoid)</type>
+    <alignment>lawful evil</alignment>
+    <ac>17</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>30 ft.</speed>
+    <init>4</init>
+    <str>15</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>13</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common, Goblin</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Greatsword, Half Plate Armor, Longbow</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Aura of Authority</name>
+      <text>While in a 10-foot Emanation originating from the hobgoblin, the hobgoblin and its allies have Advantage on attack rolls and saving throws, provided the hobgoblin doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hobgoblin makes two attacks, using Greatsword or Longbow in any combination.</text>
+    </action>
+    <action>
+      <name>Greatsword</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Slashing damage plus 3 (1d6) Poison damage.</text>
+      <attack>Greatsword|+4|2d6+2</attack>
+      <attack>Poison Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage plus 5 (2d4) Poison damage.</text>
+      <attack>Longbow|+4|1d8+2</attack>
+      <attack>Poison Damage||2d4</attack>
+    </action>
+    <description>Hobgoblins embody the primal urge to grow and spread, expressing such drives by bending the world to their whims. Lone hobgoblins claim woodland territories and plunder the wilds. In groups, they form hierarchical, martial societies bent on conquering lands and stripping them of resources to serve their expansionist zeal.
+	Hobgoblins often subjugate animals, monsters, and destructive Fey—particularly goblins and bugbears—to serve their plans. Hobgoblins might ally with dragons, warlords, the servants of warlike gods, or other powerful creatures that promise them control of new territories. Should hobgoblins bring an entire land to heel, they seek new conquests, venturing across seas, into the Underdark, or to stars and planes of existence beyond.
+	Many hobgoblins serve the violent god Maglubiyet, whose hunger for conquest matches their own. Hobgoblin followers of Maglubiyet flourish in the Infinite Battlefield of Acheron, where they endlessly indulge their drive for domination. These war-obsessed hobgoblins employ elaborate tactics and strange weapons, which they sometimes unleash on worlds of the Material Plane.
+
+Hobgoblin Warfare:
+The drive to subjugate and pillage is part of hobgoblins' supernatural nature, though a few might repress their warlike tendencies or turn them to more useful ends. Roll on or choose a result from the Hobgoblin Strategies table to inspire how a hobgoblin carries out its conquest.
+
+Hobgoblin Strategies:
+1d6 | The Hobgoblin Works To...
+1 | Build a vessel to carry hobgoblin armies to new conquests.
+2 | Capture monsters and train them to fight.
+3 | Collapse a region into the Underdark so riches can be sifted from the ruins.
+4 | Construct a giant machine to strip resources.
+5 | Convince devils, dragons, or hobgoblins from Acheron to invade an enemy land.
+6 | Help shortsighted merchants undermine a government or despoil the environment.
+
+Hobgoblin Captain:
+Hobgoblin captains are battlefield tacticians. They lead their allies to victory by employing martial skill and rallying others with orders and threats. Hobgoblin captains usually oversee hobgoblin battle groups or gangs of weaker monsters.
+
+Source:	Monster Manual 2024 p. 171</description>
+    <environment>desert, forest, grassland, hill, mountain, planar (acheron), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Hobgoblin Warlord [2024]</name>
+    <sortname>Hobgoblin, Warlord</sortname>
+    <ancestry>Hobgoblin</ancestry>
+    <size>M</size>
+    <type>fey (goblinoid)</type>
+    <alignment>lawful evil</alignment>
+    <ac>20</ac>
+    <hp>112 (15d8+45)</hp>
+    <speed>30 ft.</speed>
+    <init>5</init>
+    <str>17</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>14</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +3, Dex +5, Cha +5, Int +5</save>
+    <skill />
+    <passive>10</passive>
+    <languages>Common, Goblin</languages>
+    <cr>6</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Javelins (9), Longsword, Plate Armor, Shield</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Aura of Authority</name>
+      <text>While in a 30-foot Emanation originating from the hobgoblin, the hobgoblin and its allies have Advantage on attack rolls and saving throws, provided the hobgoblin doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hobgoblin makes three attacks, using Javelin or Longsword in any combination.</text>
+    </action>
+    <action>
+      <name>Javelin</name>
+      <text>Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 11 (2d6 + 4) Piercing damage, and the target's Speed decreases by 10 feet until the start of the hobgoblin's next turn.</text>
+      <attack>Javelin|+6|2d6+4</attack>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Slashing damage.</text>
+      <attack>Longsword|+6|2d8+3</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>Trigger: The hobgoblin is hit by a melee attack roll while holding a weapon. Response: The hobgoblin adds 3 to its AC against that attack, possibly causing it to miss.</text>
+    </reaction>
+    <description>Hobgoblins embody the primal urge to grow and spread, expressing such drives by bending the world to their whims. Lone hobgoblins claim woodland territories and plunder the wilds. In groups, they form hierarchical, martial societies bent on conquering lands and stripping them of resources to serve their expansionist zeal.
+	Hobgoblins often subjugate animals, monsters, and destructive Fey—particularly goblins and bugbears—to serve their plans. Hobgoblins might ally with dragons, warlords, the servants of warlike gods, or other powerful creatures that promise them control of new territories. Should hobgoblins bring an entire land to heel, they seek new conquests, venturing across seas, into the Underdark, or to stars and planes of existence beyond.
+	Many hobgoblins serve the violent god Maglubiyet, whose hunger for conquest matches their own. Hobgoblin followers of Maglubiyet flourish in the Infinite Battlefield of Acheron, where they endlessly indulge their drive for domination. These war-obsessed hobgoblins employ elaborate tactics and strange weapons, which they sometimes unleash on worlds of the Material Plane.
+
+Hobgoblin Warfare:
+The drive to subjugate and pillage is part of hobgoblins' supernatural nature, though a few might repress their warlike tendencies or turn them to more useful ends. Roll on or choose a result from the Hobgoblin Strategies table to inspire how a hobgoblin carries out its conquest.
+
+Hobgoblin Strategies:
+1d6 | The Hobgoblin Works To...
+1 | Build a vessel to carry hobgoblin armies to new conquests.
+2 | Capture monsters and train them to fight.
+3 | Collapse a region into the Underdark so riches can be sifted from the ruins.
+4 | Construct a giant machine to strip resources.
+5 | Convince devils, dragons, or hobgoblins from Acheron to invade an enemy land.
+6 | Help shortsighted merchants undermine a government or despoil the environment.
+
+Hobgoblin Warlord:
+Hobgoblin warlords lead armies of hobgoblins and their allies, using their experience and strategic minds to command amid the ebb and flow of battle.
+
+Source:	Monster Manual 2024 p. 171</description>
+    <environment>desert, forest, grassland, hill, mountain, planar (acheron), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Hobgoblin Warrior [2024]</name>
+    <size>M</size>
+    <type>fey (goblinoid)</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>11 (2d8+2)</hp>
+    <speed>30 ft.</speed>
+    <init>3</init>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>9</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages>Common, Goblin</languages>
+    <cr>1/2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Gear</name>
+      <text>Half Plate Armor, Longbow, Longsword, Shield</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.
+Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The hobgoblin has Advantage on an attack roll against a creature if at least one of the hobgoblin's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 12 (2d10 + 1) Slashing damage.</text>
+      <attack>Longsword|+3|2d10+1</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Attack Roll: +3, range 150/600 ft. Hit: 5 (1d8 + 1) Piercing damage plus 7 (3d4) Poison damage.</text>
+      <attack>Longbow|+3|1d8+1</attack>
+      <attack>Poison Damage||3d4</attack>
+    </action>
+    <description>Hobgoblins embody the primal urge to grow and spread, expressing such drives by bending the world to their whims. Lone hobgoblins claim woodland territories and plunder the wilds. In groups, they form hierarchical, martial societies bent on conquering lands and stripping them of resources to serve their expansionist zeal.
+	Hobgoblins often subjugate animals, monsters, and destructive Fey—particularly goblins and bugbears—to serve their plans. Hobgoblins might ally with dragons, warlords, the servants of warlike gods, or other powerful creatures that promise them control of new territories. Should hobgoblins bring an entire land to heel, they seek new conquests, venturing across seas, into the Underdark, or to stars and planes of existence beyond.
+	Many hobgoblins serve the violent god Maglubiyet, whose hunger for conquest matches their own. Hobgoblin followers of Maglubiyet flourish in the Infinite Battlefield of Acheron, where they endlessly indulge their drive for domination. These war-obsessed hobgoblins employ elaborate tactics and strange weapons, which they sometimes unleash on worlds of the Material Plane.
+
+Hobgoblin Warfare:
+The drive to subjugate and pillage is part of hobgoblins' supernatural nature, though a few might repress their warlike tendencies or turn them to more useful ends. Roll on or choose a result from the Hobgoblin Strategies table to inspire how a hobgoblin carries out its conquest.
+
+Hobgoblin Strategies:
+1d6 | The Hobgoblin Works To...
+1 | Build a vessel to carry hobgoblin armies to new conquests.
+2 | Capture monsters and train them to fight.
+3 | Collapse a region into the Underdark so riches can be sifted from the ruins.
+4 | Construct a giant machine to strip resources.
+5 | Convince devils, dragons, or hobgoblins from Acheron to invade an enemy land.
+6 | Help shortsighted merchants undermine a government or despoil the environment.
+
+Hobgoblin Warrior:
+Hobgoblin warriors might hunt and raid alone or with trained mastiffs, worgs, goblin gangs, or other allies. They employ simple tactics and exploit every advantage their allies provide. They willingly sacrifice companions in their pursuit of victory.
+
+Source:	Monster Manual 2024 p. 170</description>
+    <environment>desert, forest, grassland, hill, mountain, planar (acheron), underdark</environment>
+  </monster>
+
+<monster>
+    <name>Homunculus [2024]</name>
+    <size>T</size>
+    <type>construct</type>
+    <alignment>neutral</alignment>
+    <ac>13</ac>
+    <hp>4 (1d4+2)</hp>
+    <speed>20 ft., fly 40 ft.</speed>
+    <init>2</init>
+    <str>4</str>
+    <dex>15</dex>
+    <con>14</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <save>Wis +2, Cha +0</save>
+    <skill />
+    <passive>10</passive>
+    <languages>understands Common plus one other language but can't speak</languages>
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Telepathic Bond</name>
+      <text>While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically with each other.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage, and the target is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target has the Poisoned condition until the end of the homunculus's next turn. Failure by 5 or More: The target has the Poisoned condition for 1 minute. While Poisoned, the target has the Unconscious condition, which ends early if the target takes any damage.</text>
+      <attack>Bite|+4|1</attack>
+    </action>
+    <description>A mage can create a cat-sized, obedient assistant called a homunculus through a ritual that uses the mage's blood. Each homunculus shares a telepathic bond with the mage who created it and loyally serves its creator. A homunculus is reduced to inert material if its creator dies.
+	A homunculus's appearance reflects its creator's tastes. Roll on or choose a result from the Homunculus Features table to inspire a homunculus's form.
+
+Homunculus Features:
+1d8 | The Homunculus Has Features That Are...
+1 | Bat-like with tattered wings.
+2 | Made of soft metal and delicate gears.
+3 | Marked with its creator's symbol.
+4 | Similar to those of a winged humanoid.
+5 | Sprouting flowers and leaves.
+6 | Suggestive of its creator's appearance.
+7 | Underdeveloped and fleshy with beady eyes.
+8 | Woven and patchwork, like a well-loved toy.
+
+Source:	Monster Manual 2024 p. 172</description>
+    <environment>any</environment>
+  </monster>
+
+<monster>
+    <name>Hook Horror [2024]</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>neutral</alignment>
+    <ac>15</ac>
+    <hp>75 (10d10+20)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>0</init>
+    <str>18</str>
+    <dex>10</dex>
+    <con>15</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <save>Con +4</save>
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages>Hook Horror</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hook horror makes two Hook attacks.</text>
+    </action>
+    <action>
+      <name>Hook</name>
+      <text>Melee Attack Roll: +6, reach 10 ft. Hit: 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature, the hook horror moves the target 5 feet straight toward or away from itself.</text>
+      <attack>Hook|+6|2d6+4</attack>
+    </action>
+    <description>Hook horrors are beaked predators whose forelimbs end in massive, hooklike claws. They flourish in the cavernous mazes of the Underdark, with its miles-deep trenches and stalactite forests suspended over empty darkness, where they barrel through caves and swing across cavern ceilings.
+
+Hook horrors feed opportunistically on plants, fungi, and any creatures that come close enough to hook. To perceive their surroundings, hook horrors echolocate via a range of noises, from banging on rocks and their own bodies to vocalizations that sound like strange squawks, screams, or clicks. Only hook horrors know the meaning of these noises, but many people who explore the Underdark or live near deep-reaching caves have sought the sources of such sounds only to fall victim to hungry hook horrors.
+
+Source:	Monster Manual 2024 p. 173</description>
+    <environment>underdark</environment>
+  </monster>
+
+<monster>
+    <name>Horned Devil [2024]</name>
+    <size>L</size>
+    <type>fiend (devil)</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>199 (19d10+95)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <init>7</init>
+    <str>22</str>
+    <dex>17</dex>
+    <con>21</con>
+    <int>12</int>
+    <wis>16</wis>
+    <cha>18</cha>
+    <save>Str +10, Wis +7, Dex +7, Cha +8</save>
+    <skill />
+    <passive>13</passive>
+    <languages>Infernal; telepathy 120 ft.</languages>
+    <cr>11</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 150 ft. (unimpeded by magical darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Diabolical Restoration</name>
+      <text>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes three attacks, using Searing Fork or Hurl Flame in any combination. It can replace one attack with a use of Infernal Tail.</text>
+    </action>
+    <action>
+      <name>Searing Fork</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Piercing damage plus 9 (2d8) Fire damage.</text>
+      <attack>Searing Fork|+10|2d8+6</attack>
+      <attack>Fire Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Hurl Flame</name>
+      <text>Ranged Attack Roll: +8, range 150 ft. Hit: 26 (5d8 + 4) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts burning.</text>
+      <attack>Hurl Flame|+8|5d8+4</attack>
+    </action>
+    <action>
+      <name>Infernal Tail</name>
+      <text>Dexterity Saving Throw: DC 17, one creature the devil can see within 10 feet. Failure: 10 (1d8 + 6) Necrotic damage, and the target receives an infernal wound if it doesn't have one. While wounded, the target loses 10 (3d6) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 17 Wisdom (Medicine) check.</text>
+      <attack>Infernal Tail||1d8+6</attack>
+    </action>
+    <description>Horned devils, also known as cornugons or malebranche, are infernal warriors that exact the will of diabolical generals and lead other devils in battle. Their bodies and weapons are forged in the Nine Hells, and they torment their foes with diabolical flames and pernicious wounds.
+
+Source:	Monster Manual 2024 p. 174</description>
+    <environment>planar (nine hells)</environment>
+  </monster>
+
+<monster>
+    <name>Hunter Shark [2024]</name>
+    <sortname>Shark, Hunter</sortname>
+    <ancestry>Shark</ancestry>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>45 (6d10+12)</hp>
+    <speed>5 ft., swim 40 ft.</speed>
+    <init>2</init>
+    <str>18</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>1</int>
+    <wis>10</wis>
+    <cha>4</cha>
+    <save />
+    <skill>Perception +2</skill>
+    <passive>12</passive>
+    <languages />
+    <cr>2</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The shark can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +6 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage.</text>
+      <attack>Bite|+6|3d6+4</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 363</description>
+    <environment>underwater</environment>
+  </monster>
+
+<monster>
+    <name>Hydra [2024]</name>
+    <size>H</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>15</ac>
+    <hp>184 (16d12+80)</hp>
+    <speed>40 ft., swim 40 ft.</speed>
+    <init>4</init>
+    <str>20</str>
+    <dex>12</dex>
+    <con>20</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages />
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune>blinded, charmed, deafened, frightened, stunned, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The hydra can hold its breath for 1 hour.</text>
+    </trait>
+    <trait>
+      <name>Multiple Heads</name>
+      <text>The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The hydra regains 20 Hit Points when it grows new heads.</text>
+    </trait>
+    <trait>
+      <name>Reactive Heads</name>
+      <text>For each head the hydra has beyond one, it gets an extra Reaction that can be used only for Opportunity Attacks.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hydra makes as many Bite attacks as it has heads.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 10 (1d10 + 5) Piercing damage.</text>
+      <attack>Bite|+8|1d10+5</attack>
+    </action>
+    <description>Hydras are storied hero slayers with vicious, serpentine heads and infamous regenerative powers. Endlessly hungry, they devour any creatures they catch. Hydras that deplete an area of prey often go into a lengthy torpor until new prey arrives.
+	Most hydras have five heads, but some mature or battle-tested hydras have more. Such elder hydras might become local legends, known for their battles with heroes or for the riches lost in their domains.
+	While many hydras claim their own territories, wicked deities might use them to guard treasures or magical sites. Roll on or choose a result from the Hydra Lairs table to inspire why a hydra lurks where it does.
+
+Hydra Lairs:
+1d4 | The Hydra Lurks Where It Does To...
+1 | Ensure none claim the weapon of a fallen hero.
+2 | Defend the home of a wise but sinister oracle.
+3 | Guard a magical herb that blooms once a year.
+4 | Protect a font of poison that pollutes a river.
+
+Source:	Monster Manual 2024 p. 175</description>
+    <environment>coastal, swamp</environment>
+  </monster>
+
+<monster>
+    <name>Hyena [2024]</name>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>11</ac>
+    <hp>5 (1d8+1)</hp>
+    <speed>50 ft.</speed>
+    <init>1</init>
+    <str>11</str>
+    <dex>13</dex>
+    <con>12</con>
+    <int>2</int>
+    <wis>12</wis>
+    <cha>5</cha>
+    <save />
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages />
+    <cr>0</cr>
+    <vulnerable />
+    <resist />
+    <immune />
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The hyena has Advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +2, reach 5 ft. Hit: 3 (1d6) Piercing damage.</text>
+      <attack>Bite|+2|1d6</attack>
+    </action>
+    <description>Source:	Monster Manual 2024 p. 363</description>
+    <environment>desert, forest, grassland, hill</environment>
+  </monster>
+
+</compendium>

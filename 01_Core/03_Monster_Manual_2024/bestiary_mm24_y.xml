@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+<monster>
+    <name>Yeti [2024]</name>
+    <sortname>Yeti</sortname>
+    <ancestry>Yeti</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>51 (6d10+18)</hp>
+    <speed>40 ft., climb 40 ft.</speed>
+    <init>1</init>
+    <str>18</str>
+    <dex>13</dex>
+    <con>16</con>
+    <int>8</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <save />
+    <skill>Stealth +5, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Yeti</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold</immune>
+    <conditionImmune />
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <trait>
+      <name>Fear of Fire</name>
+      <text>If the yeti takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yeti can use its Chilling Gaze and makes two attacks, using Claw or Ice Throw in any combination.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Slashing damage plus 3 (1d6) Cold damage.</text>
+      <attack>Claw|+6|1d6+4</attack>
+      <attack>Cold Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Ice Throw</name>
+      <text>Ranged Attack Roll: +6, range 30/120 ft. Hit: 6 (1d4 + 4) Bludgeoning damage plus 2 (1d4) Cold damage.</text>
+      <attack>Ice Throw|+6|1d4+4</attack>
+      <attack>Cold Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Chilling Gaze</name>
+      <text>Constitution Saving Throw: DC 13, one creature the yeti can see within 30 feet. Failure: 5 (2d4) Cold damage, and the target has the Paralyzed condition until the start of the yeti's next turn unless the target has Immunity to Cold damage. Success: The target is immune to the Chilling Gaze of all yetis (but not abominable yetis) for 1 hour.</text>
+      <attack>Chilling Gaze||2d4</attack>
+    </action>
+    <description>Across alpine extremes and frozen frontiers, yetis hunt those that trespass in their territories. Reclusive and merciless, they resemble giant apes with pale fur and ram-like horns. Yetis easily blend in with snow and icy cliffs, revealing themselves with blood-chilling howls just before striking with their icy claws. In addition to their physical might, yetis can chill creatures with a look, freezing their foes in place, and they can conjure ice and hurl it at foes.
+	Due to yetis' elusiveness, folktales about yetis are more common than sightings. Whether a distant scream is the howl of an enraged yeti or just the wind, few can be certain. Nevertheless, many mountainous settlements burn bonfires to ward off yetis, taking advantage of these brutes' aversion to fire.
+
+Yeti:
+Yetis hunt alone or in small family groups. They avoid the settlements of other creatures but lurk near paths frequented by traders and herders to pick off unsuspecting prey. Yetis make their homes in icy caves near frozen peaks and at extremes where few dare travel.
+
+Source:	Monster Manual 2024 p. 339</description>
+    <environment>arctic</environment>
+  </monster>
+
+<monster>
+    <name>Yochlol [2024]</name>
+    <size>M</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15</ac>
+    <hp>153 (18d8+72)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>8</init>
+    <str>15</str>
+    <dex>19</dex>
+    <con>18</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>17</cha>
+    <save>Wis +6, Dex +8, Cha +7, Int +5</save>
+    <skill>Insight +6, Deception +11</skill>
+    <passive>12</passive>
+    <languages>Abyssal, Elvish, Undercommon</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist>cold, fire, lightning</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Demonic Restoration</name>
+      <text>If the yochlol dies outside the Abyss, its body dissolves, and it gains a new body instantly, reviving with all its Hit Points in the Abyss.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yochlol has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The yochlol can climb difficult surfaces, including along ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The yochlol ignores movement restrictions caused by webs.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yochlol makes two Caustic Lash attacks, and it can use Spellcasting to cast Web or Dominate Person if available.</text>
+    </action>
+    <action>
+      <name>Caustic Lash</name>
+      <text>Melee or Ranged Attack Roll: +8, reach 10 ft. or range 120 ft. Hit: 25 (6d6 + 4) Acid damage.</text>
+      <attack>Caustic Lash|+8|6d6+4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The yochlol casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):
+
+	• At will: Detect Thoughts, Gaseous Form (self only), Web
+	• 1/Day: Dominate Person</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The yochlol shape-shifts into a Medium Humanoid or a Medium spider or back into its true form. Its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <reaction>
+      <name>Toxic Escape</name>
+      <text>Trigger: The yochlol is hit by an attack roll. Response: The yochlol halves the attack's damage to itself (round down), and it teleports to an unoccupied space it can see within 30 feet of itself. Constitution Saving Throw: DC 15, each creature within 5 feet of the yochlol's destination space. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, it has the Incapacitated condition.</text>
+    </reaction>
+    <spells>Detect Thoughts [2024], Gaseous Form [2024], Web [2024], Dominate Person [2024]</spells>
+    <description>Yochlols embody the pernicious will and infectious philosophies of the Abyss. In their rarely seen true forms, these noxious manipulators appear as evershifting masses of dripping tentacles and toxic flesh crowned by a single baleful eye. More often, though, yochlols take the form of spiders or zealous cultists. They use manipulative magic and dangerous rhetoric to spread demonic cults, corrupt the righteous, and further the plots of their fiendish overlords. They relish coercing the unwitting into furthering demonic plots and turning mortals against one another.
+	Most yochlols serve Lolth. The Demon Queen of Spiders claims all yochlols as minions and orders any yochlols that disagree destroyed. In rare cases, yochlols might serve other demon lords, particularly manipulative or changeable ones like Graz'zt, Juiblex, and Zuggtmoy.
+	Despite their service to demon lords, yochlols harbor their own vicious whims and ambitions. They might claim to speak for their overlords to further their own ambitions or seek to reveal rivals' selfish goals to gain standing with their demonic masters.
+
+Source:	Monster Manual 2024 p. 341</description>
+    <environment>planar (abyss)</environment>
+  </monster>
+
+<monster>
+    <name>Young Black Dragon [2024]</name>
+    <sortname>Black Dragon, Young</sortname>
+    <ancestry>Black Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (chromatic)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18</ac>
+    <hp>127 (15d10+45)</hp>
+    <speed>40 ft., fly 80 ft., swim 40 ft.</speed>
+    <init>5</init>
+    <str>19</str>
+    <dex>14</dex>
+    <con>17</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +3, Dex +5</save>
+    <skill>Stealth +5, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common, Draconic</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune>acid</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 3 (1d6) Acid damage.</text>
+      <attack>Rend|+7|2d4+4+1d6</attack>
+    </action>
+    <action>
+      <name>Acid Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-foot-wide Line. Failure: 49 (14d6) Acid damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <description>Black dragons delight in suffering and ruin. While other chromatic dragons scheme for power and wealth, these dragons seek to tear down all they see and rule over what remains.
+	Black dragons are terrifying creatures with curved horns and withered visages suggestive of fiendish skulls. They typically inhabit stagnant swamps, crumbling ruins, or places of magical or environmental corruption. Their acid breath scars their domains, eroding the features from ancient statues and leaving nature with festering wounds.
+	Black dragons hoard tarnished symbols of hope and relics of fallen empires. The more sought-after the treasure, the more black dragons prize it—particularly if they were responsible for it being lost.
+
+	Most young black dragons claim a hidden lair—typically a dismal place accessible through deadly ruins or a treacherous bog. They delight in exploiting fearful servants and might terrorize small communities or impress groups of kobolds or troglodytes into their service. Some ally themselves with powerful undead such as death knights and vampires or aberrations such as aboleths and kuo-toa.
+
+Source:	Monster Manual 2024 p. 38</description>
+    <environment>swamp</environment>
+  </monster>
+
+<monster>
+    <name>Young Blue Dragon [2024]</name>
+    <sortname>Blue Dragon, Young</sortname>
+    <ancestry>Blue Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (chromatic)</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>152 (16d10+64)</hp>
+    <speed>40 ft., fly 80 ft., burrow 20 ft.</speed>
+    <init>4</init>
+    <str>21</str>
+    <dex>10</dex>
+    <con>19</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>17</cha>
+    <save>Wis +5, Dex +4</save>
+    <skill>Stealth +4, Perception +9</skill>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>9</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +9, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 5 (1d10) Lightning damage.</text>
+      <attack>Rend|+9|2d6+5+1d10</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <description>Arrogant and imperious, blue dragons are chromatic dragons that crave control and collect followers like other dragons hoard treasure. They seek to transform their territories into empires, domains to be feared by nations.
+	Blue dragons have sharp features with piercing horns and scales that range from sapphire to the shades of stormy skies. They dwell in deserts and badlands, particularly regions with dramatic spires from whose tops they might see for miles. They seek lairs near sites of symbolic power, such as the abandoned fortresses of giants, the colossi of fallen empires, or monuments raised by their followers.
+	Regalia of rulership and artistic masterpieces fill blue dragons' hoards. These dragons have no interest in treasures that are common or flawed, preferring one-of-a-kind gemstones, the crowns of fallen royals, and magic items capable of spreading the dragons' influence.
+
+Young blue dragons seek to establish themselves as forces to be feared. Many claim isolated communities to rule over or ancient ruins where they might find magical paths to power. These blue dragons might temporarily cooperate with other dragons or powerful villains to gain followers and influence.
+
+Source:	Monster Manual 2024 p. 48</description>
+    <environment>coastal, desert</environment>
+  </monster>
+
+<monster>
+    <name>Young Brass Dragon [2024]</name>
+    <sortname>Brass Dragon, Young</sortname>
+    <ancestry>Brass Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (metallic)</type>
+    <alignment>chaotic good</alignment>
+    <ac>17</ac>
+    <hp>110 (13d10+39)</hp>
+    <speed>40 ft., fly 80 ft., burrow 20 ft.</speed>
+    <init>3</init>
+    <str>19</str>
+    <dex>10</dex>
+    <con>17</con>
+    <int>12</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Wis +3, Dex +3</save>
+    <skill>Persuasion +5, Stealth +3, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common, Draconic</languages>
+    <cr>6</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 15 (2d10 + 4) Slashing damage.</text>
+      <attack>Rend|+7|2d10+4</attack>
+    </action>
+    <action>
+      <name>Fire Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-foot-wide Line. Failure: 38 (11d6) Fire damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Sleep Breath</name>
+      <text>Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn, at which point it repeats the save. Second Failure: The target has the Unconscious condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it.</text>
+    </action>
+    <description>Gregarious and outgoing, brass dragons relish sharing knowledge and stories. Although these metallic dragons favor arid lands, they cheerfully journey considerable distances to visit friendly creatures, pass on what they've learned, and collect news. Though good natured, brass dragons don't shirk from combat when necessary, thwarting foes with magical sleep and searing them with flame.
+	Brass dragons favor warm climes, particularly steppes and rocky or sandy deserts, and they usually dwell near prominent crossroads or oases that regularly draw visitors. They enjoy adopting Humanoid forms, disguising themselves as traveling merchants, scholars, storytellers, or anyone else invested in others' stories.
+	Brass dragons collect eclectic objects. While such items might seem like knickknacks, each is part of a story—perhaps a nostalgic memento or evidence of a tale passed into myth. An old friend's hat and the crown of the last ruler of a forgotten dynasty could occupy the same shelf in a brass dragon's hoard.
+
+Young brass dragons travel extensively, often spending a few years in a region before circling back to their lair. Some work closely with other metallic dragons, carrying information between allies.
+
+Source:	Monster Manual 2024 p. 54</description>
+    <environment>desert</environment>
+  </monster>
+
+<monster>
+    <name>Young Bronze Dragon [2024]</name>
+    <sortname>Bronze Dragon, Young</sortname>
+    <ancestry>Bronze Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (metallic)</type>
+    <alignment>lawful good</alignment>
+    <ac>17</ac>
+    <hp>142 (15d10+60)</hp>
+    <speed>40 ft., fly 80 ft., swim 40 ft.</speed>
+    <init>3</init>
+    <str>21</str>
+    <dex>10</dex>
+    <con>19</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>17</cha>
+    <save>Wis +4, Dex +3</save>
+    <skill>Insight +4, Stealth +3, Perception +7</skill>
+    <passive>17</passive>
+    <languages>Common, Draconic</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune>lightning</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +8, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage.</text>
+      <attack>Rend|+8|2d10+5</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 15, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 49 (9d10) Lightning damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Repulsion Breath</name>
+      <text>Strength Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: The target is pushed up to 40 feet straight away from the dragon and has the Prone condition.</text>
+    </action>
+    <description>Where bronze dragons dwell, wonders flourish. Imaginative yet mindful, these metallic dragons work toward greatness and help others achieve all they can. They strive to preserve innovations, from the works of past civilizations to new discoveries, and they share such works widely. When dealing with shorter-lived beings, bronze dragons prefer to win them over through conversation and cultivation, but they don't shy from battle when villains keep others from achieving their potential.
+	Bronze dragons enjoy the power and endless possibilities of the sea, and they often make their lairs in places of natural beauty or communities they wish to preserve. Within their dwellings, bronze dragons hoard things they believe will be useful one day. They salvage treasure lost to the sea, reclaiming wealth or sunken ships.
+
+Source:	Monster Manual 2024 p. 58</description>
+    <environment>coastal</environment>
+  </monster>
+
+<monster>
+    <name>Young Copper Dragon [2024]</name>
+    <sortname>Copper Dragon, Young</sortname>
+    <ancestry>Copper Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (metallic)</type>
+    <alignment>chaotic good</alignment>
+    <ac>17</ac>
+    <hp>119 (14d10+42)</hp>
+    <speed>40 ft., climb 40 ft., fly 80 ft.</speed>
+    <init>4</init>
+    <str>19</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>16</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save>Wis +4, Dex +4</save>
+    <skill>Deception +5, Stealth +4, Perception +7</skill>
+    <passive>17</passive>
+    <languages>Common, Draconic</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune>acid</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 15 (2d10 + 4) Slashing damage.</text>
+      <attack>Rend|+7|2d10+4</attack>
+    </action>
+    <action>
+      <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-foot-wide Line. Failure: 40 (9d8) Acid damage. Success: Half damage.</text>
+      <attack>Acid Breath||9d8</attack>
+    </action>
+    <action>
+      <name>Slowing Breath</name>
+      <text>Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</text>
+    </action>
+    <description>Relentlessly friendly and curious, most copper dragons view the world as a place of endless wonder and possibility. These gregarious dragons are fonts of patience, hospitality, and humor, and they seek to improve the lives—or, at least, the mood—of those they interact with. If forced to fight to defend themselves or their friends, these dragons favor using their slowing breath and physical attacks to subdue antagonists. Only in cases of extreme peril or emotion do they use their deadly acid breath.
+	Copper dragons typically live in caverns amid picturesque hills and rock formations—particularly those that are prominent landmarks. These dragons collect gifts, though they have little interest in treasure without meaning, no matter how valuable it is. To them, thoughtfully given presents and the feelings or memories they symbolize are more important than masterpieces or magical relics.
+
+Young copper dragons forge strong connections with a community or group of friends while flitting from one artistic fixation to the next.
+
+Source:	Monster Manual 2024 p. 78</description>
+    <environment>hill</environment>
+  </monster>
+
+<monster>
+    <name>Young Gold Dragon [2024]</name>
+    <sortname>Gold Dragon, Young</sortname>
+    <ancestry>Gold Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (metallic)</type>
+    <alignment>lawful good</alignment>
+    <ac>18</ac>
+    <hp>178 (17d10+85)</hp>
+    <speed>40 ft., fly 80 ft., swim 40 ft.</speed>
+    <init>6</init>
+    <str>23</str>
+    <dex>14</dex>
+    <con>21</con>
+    <int>16</int>
+    <wis>13</wis>
+    <cha>20</cha>
+    <save>Wis +5, Dex +6</save>
+    <skill>Persuasion +9, Insight +5, Stealth +6, Perception +9</skill>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 17 (2d10 + 6) Slashing damage.</text>
+      <attack>Rend|+10|2d10+6</attack>
+    </action>
+    <action>
+      <name>Fire Breath (Recharge 5-6)</name>
+      <text>Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 55 (10d10) Fire damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <action>
+      <name>Weakening Breath</name>
+      <text>Strength Saving Throw: DC 17, each creature that isn't currently affected by this breath in a 30-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</text>
+    </action>
+    <description>Gold dragons work to make the world a better place. The most powerful of the metallic dragons, these awe-inspiring dragons strive to protect that which is good and bend fate toward a brighter future. Their kind dispositions don't prevent gold dragons from engaging in combat when necessary, though, and they exhale brilliant flames and weakening magic to rout their foes.
+	Gold dragons favor grasslands and pristine forests, frequently dwelling near awe-inspiring natural wonders or guarding monuments from ancient civilizations. In their lairs, gold dragons hoard coins and gems, but they frequently put their treasure to use in pursuit of greater goals. They often use their riches to buy rare lore books, pay informants, or patronize idealistic adventurers.
+
+Young Gold Dragon:
+Young gold dragons have seen glimpses of the world's true evils and crusade to oppose them. They often seek bold and direct solutions to problems.
+
+Source:	Monster Manual 2024 p. 144</description>
+    <environment>forest, grassland</environment>
+  </monster>
+
+<monster>
+    <name>Young Green Dragon [2024]</name>
+    <sortname>Green Dragon, Young</sortname>
+    <ancestry>Green Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (chromatic)</type>
+    <alignment>lawful evil</alignment>
+    <ac>18</ac>
+    <hp>136 (16d10+48)</hp>
+    <speed>40 ft., fly 80 ft., swim 40 ft.</speed>
+    <init>4</init>
+    <str>19</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>16</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save>Wis +4, Dex +4</save>
+    <skill>Deception +5, Stealth +4, Perception +7</skill>
+    <passive>17</passive>
+    <languages>Common, Draconic</languages>
+    <cr>8</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>The dragon can breathe air and water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Rend|+7|2d6+4+2d6</attack>
+    </action>
+    <action>
+      <name>Poison Breath (Recharge 5-6)</name>
+      <text>Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage.</text>
+      <recharge>D5</recharge>
+    </action>
+    <description>From forbidden forest depths, green dragons whisper evils into the world and manipulate the lives of those who listen. Elusive, conniving, and egotistical, these chromatic dragons patiently prey on the fears of shorter-lived beings, corrupting and isolating them. Green dragons might lurk amid labyrinthine wildernesses for centuries without revealing themselves; even their most devoted followers might know them only as the voice of the woodlands or a whisper in their dreams.
+	Despite their might, most green dragons disdain physical violence, viewing combat as servants' work and preferring to trick foes into dangerous or exploitative scenarios. These dragons collect "baubles" that embody their webs of manipulation and serve as tools of extortion, such as compromising documents, family heirlooms, and sentimental treasures.
+
+Young Green Dragon:
+Young green dragons frequently control groups of ettercaps, kobolds, thieves, or other cowardly servants. These dragons do so while avoiding other evil dragons, who would sabotage them. Gradually, oppressing weaker creatures and amassing meaningless fortunes bore young green dragons, and they pursue more ambitious ways to indulge their egos.
+
+Source:	Monster Manual 2024 p. 152</description>
+    <environment>forest</environment>
+  </monster>
+
+<monster>
+    <name>Young Red Dragon [2024]</name>
+    <sortname>Red Dragon, Young</sortname>
+    <ancestry>Red Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (chromatic)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18</ac>
+    <hp>178 (17d10+85)</hp>
+    <speed>40 ft., climb 40 ft., fly 80 ft.</speed>
+    <init>4</init>
+    <str>23</str>
+    <dex>10</dex>
+    <con>21</con>
+    <int>14</int>
+    <wis>11</wis>
+    <cha>19</cha>
+    <save>Wis +4, Dex +4</save>
+    <skill>Stealth +4, Perception +8</skill>
+    <passive>18</passive>
+    <languages>Common, Draconic</languages>
+    <cr>10</cr>
+    <vulnerable />
+    <resist />
+    <immune>fire</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 13 (2d6 + 6) Slashing damage plus 3 (1d6) Fire damage.</text>
+      <attack>Rend|+10|2d6+6</attack>
+      <attack>Fire Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Fire Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage.</text>
+      <attack>Fire Breath||16d6</attack>
+    </action>
+    <description>Red dragons take whatever they desire and burn to ash anything that stands in their way. These chromatic dragons endlessly desire more—more magic, territory, treasure, or whatever else inflames their cruel ambitions.
+	Red dragons make their lairs amid perilous cliffs and volcanoes. Within, they amass and fiercely protect hoards of treasure, and many have perfect recall of the hoards' contents and the locations of all they've collected. Should anything go missing, red dragons fly into rages. They don't rest until their treasures are returned and the thieves have burned.
+	Red dragons believe themselves to be the greatest of all dragons and, by extension, the greatest of all creatures. To them, pillaging and conquering are their right—treasures can find no more honored place than in their hoards, and other creatures are privileged to serve them.
+
+Young Red Dragon:
+Young red dragons number among the most unpredictable of their kind. They seek territories rich with treasures and potential followers, raiding, burning, and slaughtering to enforce their will. Unless these dragons meet significant resistance, they cement their power and begin reigns of terror that can last for centuries.
+
+Source:	Monster Manual 2024 p. 254</description>
+    <environment>hill, mountain</environment>
+  </monster>
+
+<monster>
+    <name>Young Remorhaz [2024]</name>
+    <sortname>Remorhaz, Young</sortname>
+    <ancestry>Remorhaz</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>14</ac>
+    <hp>93 (11d10+33)</hp>
+    <speed>30 ft., burrow 20 ft.</speed>
+    <init>1</init>
+    <str>18</str>
+    <dex>13</dex>
+    <con>17</con>
+    <int>3</int>
+    <wis>10</wis>
+    <cha>4</cha>
+    <save />
+    <skill />
+    <passive>10</passive>
+    <languages />
+    <cr>5</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold, fire</immune>
+    <conditionImmune />
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Heat Aura</name>
+      <text>At the end of each of the remorhaz's turns, each creature in a 5-foot Emanation originating from the remorhaz takes 11 (2d10) Fire damage.</text>
+      <attack>Heat Aura||2d10</attack>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 15 (2d10 + 4) Piercing damage plus 13 (3d8) Fire damage.</text>
+      <attack>Bite|+7|2d10+4</attack>
+      <attack>Fire Damage||3d8</attack>
+    </action>
+    <description>Remorhazes are centipede-like terrors that burrow through snow and ice to ambush smaller creatures that trespass in their frozen territories.
+
+Young Remorhaz:
+Young remorhazes scorch and consume any creatures they can chase down and overwhelm.
+
+Source:	Monster Manual 2024 p. 258</description>
+    <environment>arctic</environment>
+  </monster>
+
+<monster>
+    <name>Young Silver Dragon [2024]</name>
+    <sortname>Silver Dragon, Young</sortname>
+    <ancestry>Silver Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (metallic)</type>
+    <alignment>lawful good</alignment>
+    <ac>18</ac>
+    <hp>168 (16d10+80)</hp>
+    <speed>40 ft., fly 80 ft.</speed>
+    <init>4</init>
+    <str>23</str>
+    <dex>10</dex>
+    <con>21</con>
+    <int>14</int>
+    <wis>11</wis>
+    <cha>19</cha>
+    <save>Wis +4, Dex +4</save>
+    <skill>Stealth +4, History +6, Perception +8</skill>
+    <passive>18</passive>
+    <languages>Common, Draconic</languages>
+    <cr>9</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Slashing damage.</text>
+      <attack>Rend|+10|2d8+6</attack>
+    </action>
+    <action>
+      <name>Cold Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 49 (11d8) Cold damage. Success: Half damage.</text>
+      <attack>Cold Breath||11d8</attack>
+    </action>
+    <action>
+      <name>Paralyzing Breath</name>
+      <text>Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</text>
+    </action>
+    <description>Silver dragons work to preserve peace and encourage greatness. They try to live as examples of decency while remaining watchful against evil.
+	Silver dragons typically dwell amid snow-capped mountains, though aspirations and congeniality drive some to instead live among cosmopolitan societies. Disguised as humanoids, they ally with artists, historians, knights, and humble leaders who learn from the past to create better futures.
+	Silver dragons take inspiration from legendary heroes and have grand ambitions. Many collect treasures that reflect these interests, such as histories, ancient art, and the gear of famous champions.
+
+Young Silver Dragon:
+Young silver dragons usually have close ties with elder metallic dragons or heroic role models, helping those with great goals achieve their ambitions. They might serve as messengers for or representatives of such do-gooders.
+
+Source:	Monster Manual 2024 p. 278</description>
+    <environment>mountain, urban</environment>
+  </monster>
+
+<monster>
+    <name>Young White Dragon [2024]</name>
+    <sortname>White Dragon, Young</sortname>
+    <ancestry>White Dragon</ancestry>
+    <size>L</size>
+    <type>dragon (chromatic)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17</ac>
+    <hp>123 (13d10+52)</hp>
+    <speed>40 ft., fly 80 ft., burrow 20 ft., swim 40 ft.</speed>
+    <init>3</init>
+    <str>18</str>
+    <dex>10</dex>
+    <con>18</con>
+    <int>6</int>
+    <wis>11</wis>
+    <cha>12</cha>
+    <save>Wis +3, Dex +3</save>
+    <skill>Stealth +3, Perception +6</skill>
+    <passive>16</passive>
+    <languages>Common, Draconic</languages>
+    <cr>6</cr>
+    <vulnerable />
+    <resist />
+    <immune>cold</immune>
+    <conditionImmune />
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Ice Walk</name>
+      <text>The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes three Rend attacks.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 2 (1d4) Cold damage.</text>
+      <attack>Rend|+7|2d4+4</attack>
+      <attack>Cold Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Cold Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage.</text>
+      <attack>Cold Breath||9d8</attack>
+    </action>
+    <description>Among the most primal chromatic dragons, white dragons prioritize survival over all. Life is harsh and uncertain in the arctic expanses, glacial heights, and frozen seas where these dragons dwell. White dragons fiercely protect their territories, scouring the frigid regions for food and evidence of trespassers. Most white dragons ignore the plots of smaller creatures and other dragons, concerning themselves only with their own survival.
+	White dragons create lairs to defend themselves from other deadly arctic creatures and from dangerous natural conditions. Within these shelters, white dragons hoard testaments to their superiority, such as monstrous skulls, the gear of defeated rivals, and curiosities that capture their interest. To protect such treasure, white dragons coax ice to form over their hoards or sink their wealth in frigid pools. For white dragons, each piece of treasure embodies a victory—the details of which inflate as these dragons age.
+
+Young White Dragon:
+Young white dragons defend their hunting grounds from rivals. In some cases, kobolds and groups of humanoids might offer food and treasure to young white dragons, attempting to keep the dragons satiated and less likely to prey on their communities.
+
+Source:	Monster Manual 2024 p. 328</description>
+    <environment>arctic</environment>
+  </monster>
+
+<monster>
+    <name>Yuan-ti Abomination [2024]</name>
+    <sortname>Yuan-ti, Abomination</sortname>
+    <ancestry>Yuan-ti</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>127 (15d10+45)</hp>
+    <speed>40 ft., climb 30 ft.</speed>
+    <init>6</init>
+    <str>19</str>
+    <dex>16</dex>
+    <con>17</con>
+    <int>17</int>
+    <wis>18</wis>
+    <cha>15</cha>
+    <save />
+    <skill>Stealth +6, Perception +7</skill>
+    <passive>17</passive>
+    <languages>Abyssal, Common, Draconic</languages>
+    <cr>7</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yuan-ti has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yuan-ti makes two Bite attacks, and it can use Spellcasting to cast Suggestion if available.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage plus 10 (3d6) Poison damage.</text>
+      <attack>Bite|+7|2d6+4</attack>
+      <attack>Poison Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Strength Saving Throw: DC 15, one Large or smaller creature within 5 feet. Failure: 28 (7d6 + 4) Bludgeoning damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends. Success: Half damage only.</text>
+      <attack>Constrict||7d6+4</attack>
+    </action>
+    <action>
+      <name>Poison Spray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 21 (6d6) Poison damage, and the target has the Poisoned condition until the end of the yuan-ti's next turn. While Poisoned, the target has the Blinded condition. Success: Half damage only.</text>
+      <attack>Poison Spray||6d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting (Yuan-ti Form Only)</name>
+      <text>The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 15):
+
+	• At will: Animal Friendship (snakes only)
+	• 3/Day: Suggestion</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The yuan-ti shape-shifts into a Large snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Animal Friendship [2024], Suggestion [2024]</spells>
+    <description>Exploiting pacts with sinister supernatural forces, yuan-ti bargain away their humanity for the lethality and predatory deviousness of serpents. From hidden bastions, they manipulate rulers and the wealthy, seeking to control the world. Many yuan-ti possess venomous magic, which often manifests as fangs or striking serpents.
+	Yuan-ti have humanlike forms with a variety of horrifying serpentine transformations. Some have a scattering of reptilian scales, while others are giants that are more snake than human. Typically, the more snakelike yuan-ti are, the greater esteem they hold among their kind.
+	Yuan-ti might gain their reptilian features through dangerous supernatural rites. Roll on or choose a result from the Yuan-ti Transformations table to inspire how yuan-ti obtain their serpentine aspects.
+
+Yuan-ti Transformations:
+1d6 | A Yuan-ti Gained Its Snake Features From...
+1 | Bargaining parts of its soul to a pantheon of serpentine demigods.
+2 | A curse laid on its people in the distant past.
+3 | The dream-venom of Merrshaulk, a slumbering snake god.
+4 | Experiments by spirit nagas or other yuan-ti.
+5 | A ritual involving the skin of a fiendish snake.
+6 | Trials to excise its "weak" human parts.
+
+Yuan-ti Abomination:
+Yuan-ti abominations have traded away nearly all evidence of their humanity, coming to resemble giant, upright serpents with scaly arms and hands. In battle, they relish opportunities to crush foes in their powerful coils or strike with their venomous fangs. These abominations can also shape-shift into snakes. In these forms, abominations are indistinguishable from normal serpents.
+	The true threat of yuan-ti abominations stems not from their physical might but from their cunning. These masterminds often lead cultlike cells of other yuan-ti and direct them in enacting elaborate conspiracies. Abominations avoid jeopardizing themselves, typically scheming from hidden bastions where they're protected by yuan-ti and serpent guardians. These coldhearted leaders have a unique understanding of the supernatural forces that grant yuan-ti their powers, and they usually have insidious magical traps and contingencies at their disposal.
+
+Source:	Monster Manual 2024 p. 345</description>
+    <environment>desert, forest, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Yuan-ti Infiltrator [2024]</name>
+    <sortname>Yuan-ti, Infiltrator</sortname>
+    <ancestry>Yuan-ti</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>11</ac>
+    <hp>40 (9d8)</hp>
+    <speed>30 ft.</speed>
+    <init>1</init>
+    <str>11</str>
+    <dex>12</dex>
+    <con>11</con>
+    <int>13</int>
+    <wis>14</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Deception +5, Stealth +3, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Abyssal, Common, Draconic</languages>
+    <cr>1</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yuan-ti has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yuan-ti makes two Scimitar attacks.</text>
+    </action>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.</text>
+      <attack>Scimitar|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Poison Ray</name>
+      <text>Ranged Attack Roll: +4, range 120 ft. Hit: 9 (2d6 + 2) Poison damage.</text>
+      <attack>Poison Ray|+4|2d6+2</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12):
+
+	• At will: Animal Friendship (snakes only)
+	• 2/Day: Suggestion</text>
+    </action>
+    <spells>Animal Friendship [2024], Suggestion [2024]</spells>
+    <description>Exploiting pacts with sinister supernatural forces, yuan-ti bargain away their humanity for the lethality and predatory deviousness of serpents. From hidden bastions, they manipulate rulers and the wealthy, seeking to control the world. Many yuan-ti possess venomous magic, which often manifests as fangs or striking serpents.
+	Yuan-ti have humanlike forms with a variety of horrifying serpentine transformations. Some have a scattering of reptilian scales, while others are giants that are more snake than human. Typically, the more snakelike yuan-ti are, the greater esteem they hold among their kind.
+	Yuan-ti might gain their reptilian features through dangerous supernatural rites. Roll on or choose a result from the Yuan-ti Transformations table to inspire how yuan-ti obtain their serpentine aspects.
+
+Yuan-ti Transformations:
+1d6 | A Yuan-ti Gained Its Snake Features From...
+1 | Bargaining parts of its soul to a pantheon of serpentine demigods.
+2 | A curse laid on its people in the distant past.
+3 | The dream-venom of Merrshaulk, a slumbering snake god.
+4 | Experiments by spirit nagas or other yuan-ti.
+5 | A ritual involving the skin of a fiendish snake.
+6 | Trials to excise its "weak" human parts.
+
+Yuan-ti Infiltrator:
+Infiltrators can pass as human, their serpentine features limited to scaly skin, forked tongues, and other minor or internal transformations. These spies insinuate themselves among their rivals, manipulating others and making foes vulnerable to the plots of more powerful yuan-ti.
+
+Source:	Monster Manual 2024 p. 342</description>
+    <environment>desert, forest, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Yuan-ti Malison (Type 1) [2024]</name>
+    <sortname>Yuan-ti, Malison (Type 1)</sortname>
+    <ancestry>Yuan-ti</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>30 ft., climb 30 ft.(snake form only)</speed>
+    <init>2</init>
+    <str>16</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>14</int>
+    <wis>16</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>13</passive>
+    <languages>Abyssal, Common, Draconic</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Skill</name>
+      <text>Stealth +6 While In Snake Form</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yuan-ti has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yuan-ti makes two attacks, using Bite or Poison Ray in any combination, and it can use Spellcasting to cast Suggestion if available.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Bite|+5|1d4+3</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Poison Ray (Yuan-ti Form Only)</name>
+      <text>Ranged Attack Roll: +5, range 120 ft. Hit: 12 (2d8 + 3) Poison damage.</text>
+      <attack>Poison Ray|+5|2d8+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting (Yuan-ti Form Only)</name>
+      <text>The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 13):
+
+	• At will: Animal Friendship (snakes only)
+	• 2/Day: Suggestion</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Animal Friendship [2024], Suggestion [2024]</spells>
+    <description>Exploiting pacts with sinister supernatural forces, yuan-ti bargain away their humanity for the lethality and predatory deviousness of serpents. From hidden bastions, they manipulate rulers and the wealthy, seeking to control the world. Many yuan-ti possess venomous magic, which often manifests as fangs or striking serpents.
+	Yuan-ti have humanlike forms with a variety of horrifying serpentine transformations. Some have a scattering of reptilian scales, while others are giants that are more snake than human. Typically, the more snakelike yuan-ti are, the greater esteem they hold among their kind.
+	Yuan-ti might gain their reptilian features through dangerous supernatural rites. Roll on or choose a result from the Yuan-ti Transformations table to inspire how yuan-ti obtain their serpentine aspects.
+
+Yuan-ti Transformations:
+1d6 | A Yuan-ti Gained Its Snake Features From...
+1 | Bargaining parts of its soul to a pantheon of serpentine demigods.
+2 | A curse laid on its people in the distant past.
+3 | The dream-venom of Merrshaulk, a slumbering snake god.
+4 | Experiments by spirit nagas or other yuan-ti.
+5 | A ritual involving the skin of a fiendish snake.
+6 | Trials to excise its "weak" human parts.
+
+Yuan-ti Malisons:
+Malisons possesses deadly venom, which some manipulate into magical strikes. They can also shape-shift into snakes, helping them to position themselves for surprise attacks or to slither away with nary a trace.
+	Malisons exhibit snakelike features that make them deadly in combat. Three general types exist:
+
+Type 1:
+These malisons have human bodies and the heads of giant, venomous snakes.
+
+Source:	Monster Manual 2024 p. 343</description>
+    <environment>desert, forest, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Yuan-ti Malison (Type 2) [2024]</name>
+    <sortname>Yuan-ti, Malison (Type 2)</sortname>
+    <ancestry>Yuan-ti</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>30 ft., climb 30 ft.(snake form only)</speed>
+    <init>2</init>
+    <str>16</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>14</int>
+    <wis>16</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>13</passive>
+    <languages>Abyssal, Common, Draconic</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Skill</name>
+      <text>Stealth +6 While In Snake Form</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yuan-ti has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yuan-ti makes two Bite attacks, and it can use Spellcasting to cast Suggestion if available.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Attack Roll: +5, reach 10 ft. Hit: 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Bite|+5|1d8+3</attack>
+      <attack>Poison Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting (Yuan-ti Form Only)</name>
+      <text>The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 13):
+
+	• At will: Animal Friendship (snakes only)
+	• 2/Day: Suggestion</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Animal Friendship [2024], Suggestion [2024]</spells>
+    <description>Exploiting pacts with sinister supernatural forces, yuan-ti bargain away their humanity for the lethality and predatory deviousness of serpents. From hidden bastions, they manipulate rulers and the wealthy, seeking to control the world. Many yuan-ti possess venomous magic, which often manifests as fangs or striking serpents.
+	Yuan-ti have humanlike forms with a variety of horrifying serpentine transformations. Some have a scattering of reptilian scales, while others are giants that are more snake than human. Typically, the more snakelike yuan-ti are, the greater esteem they hold among their kind.
+	Yuan-ti might gain their reptilian features through dangerous supernatural rites. Roll on or choose a result from the Yuan-ti Transformations table to inspire how yuan-ti obtain their serpentine aspects.
+
+Yuan-ti Transformations:
+1d6 | A Yuan-ti Gained Its Snake Features From...
+1 | Bargaining parts of its soul to a pantheon of serpentine demigods.
+2 | A curse laid on its people in the distant past.
+3 | The dream-venom of Merrshaulk, a slumbering snake god.
+4 | Experiments by spirit nagas or other yuan-ti.
+5 | A ritual involving the skin of a fiendish snake.
+6 | Trials to excise its "weak" human parts.
+
+Yuan-ti Malisons:
+Malisons possesses deadly venom, which some manipulate into magical strikes. They can also shape-shift into snakes, helping them to position themselves for surprise attacks or to slither away with nary a trace.
+	Malisons exhibit snakelike features that make them deadly in combat. Three general types exist:
+
+Type 2:
+These malisons have human bodies, but they've replaced their arms with snakes.
+
+Source:	Monster Manual 2024 p. 343</description>
+    <environment>desert, forest, swamp, urban</environment>
+  </monster>
+
+<monster>
+    <name>Yuan-ti Malison (Type 3) [2024]</name>
+    <sortname>Yuan-ti, Malison (Type 3)</sortname>
+    <ancestry>Yuan-ti</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>12</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <init>2</init>
+    <str>16</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>14</int>
+    <wis>16</wis>
+    <cha>12</cha>
+    <save />
+    <skill>Stealth +4</skill>
+    <passive>13</passive>
+    <languages>Abyssal, Common, Draconic</languages>
+    <cr>3</cr>
+    <vulnerable />
+    <resist />
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Skill</name>
+      <text>Stealth +6 While In Snake Form</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The yuan-ti has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The yuan-ti makes two Poison Burst attacks, and it can use Spellcasting to cast Suggestion if available.</text>
+    </action>
+    <action>
+      <name>Poison Burst (Yuan-ti Form Only)</name>
+      <text>Melee or Ranged Attack Roll: +5, reach 5 ft. or range 120 ft. Hit: 12 (2d8 + 3) Poison damage.</text>
+      <attack>Poison Burst|+5|2d8+3</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Strength Saving Throw: DC 13, one Medium or smaller creature within 5 feet. Failure: 21 (4d8 + 3) Bludgeoning damage. The target has the Grappled condition (escape DC 13), and it has the Restrained condition until the grapple ends.</text>
+      <attack>Constrict||4d8+3</attack>
+    </action>
+    <action>
+      <name>Spellcasting (Yuan-ti Form Only)</name>
+      <text>The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 13):
+
+	• At will: Animal Friendship (snakes only)
+	• 2/Day: Suggestion</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</text>
+    </action>
+    <spells>Animal Friendship [2024], Suggestion [2024]</spells>
+    <description>Exploiting pacts with sinister supernatural forces, yuan-ti bargain away their humanity for the lethality and predatory deviousness of serpents. From hidden bastions, they manipulate rulers and the wealthy, seeking to control the world. Many yuan-ti possess venomous magic, which often manifests as fangs or striking serpents.
+	Yuan-ti have humanlike forms with a variety of horrifying serpentine transformations. Some have a scattering of reptilian scales, while others are giants that are more snake than human. Typically, the more snakelike yuan-ti are, the greater esteem they hold among their kind.
+	Yuan-ti might gain their reptilian features through dangerous supernatural rites. Roll on or choose a result from the Yuan-ti Transformations table to inspire how yuan-ti obtain their serpentine aspects.
+
+Yuan-ti Transformations:
+1d6 | A Yuan-ti Gained Its Snake Features From...
+1 | Bargaining parts of its soul to a pantheon of serpentine demigods.
+2 | A curse laid on its people in the distant past.
+3 | The dream-venom of Merrshaulk, a slumbering snake god.
+4 | Experiments by spirit nagas or other yuan-ti.
+5 | A ritual involving the skin of a fiendish snake.
+6 | Trials to excise its "weak" human parts.
+
+Yuan-ti Malisons:
+Malisons possesses deadly venom, which some manipulate into magical strikes. They can also shape-shift into snakes, helping them to position themselves for surprise attacks or to slither away with nary a trace.
+	Malisons exhibit snakelike features that make them deadly in combat. Three general types exist:
+
+Type 3:
+These malisons are human from the waist up, but below that extend the coils of a giant snake.
+
+Source:	Monster Manual 2024 p. 344</description>
+    <environment>desert, forest, swamp, urban</environment>
+  </monster>
+
+</compendium>
