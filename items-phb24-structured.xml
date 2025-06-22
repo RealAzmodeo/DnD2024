@@ -1,0 +1,3305 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compendium version="1.0">
+  <item>
+    <name>Trinket [2024]</name>
+    <source book="Player's Handbook 2024" page="47" />
+    <item_type main="Gear" />
+    <description_text>
+      <p>When you make your character, you can roll once on the Trinkets table to gain a Tiny trinket, a simple item lightly touched by mystery. The DM might also use this table. It can help stock a room in a dungeon or fill a creature's pockets.</p>
+      <table>
+        <header>
+          <col label="1d100" />
+          <col label="Trinket" />
+        </header>
+        <row>
+          <cell>01</cell>
+          <cell>A mummified goblin hand</cell>
+        </row>
+        <row>
+          <cell>02</cell>
+          <cell>A crystal that faintly glows in moonlight</cell>
+        </row>
+        <row>
+          <cell>03</cell>
+          <cell>A gold coin minted in an unknown land</cell>
+        </row>
+        <row>
+          <cell>04</cell>
+          <cell>A diary written in a language you don't know</cell>
+        </row>
+        <row>
+          <cell>05</cell>
+          <cell>A brass ring that never tarnishes</cell>
+        </row>
+        <row>
+          <cell>06</cell>
+          <cell>An old chess piece made from glass</cell>
+        </row>
+        <row>
+          <cell>07</cell>
+          <cell>A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips</cell>
+        </row>
+        <row>
+          <cell>08</cell>
+          <cell>A small idol depicting a nightmarish creature that gives you unsettling dreams when you sleep near it</cell>
+        </row>
+        <row>
+          <cell>09</cell>
+          <cell>A lock of someone's hair</cell>
+        </row>
+        <row>
+          <cell>10</cell>
+          <cell>The deed for a parcel of land in a realm unknown to you</cell>
+        </row>
+        <row>
+          <cell>11</cell>
+          <cell>A 1-ounce block made from an unknown material</cell>
+        </row>
+        <row>
+          <cell>12</cell>
+          <cell>A small cloth doll skewered with needles</cell>
+        </row>
+        <row>
+          <cell>13</cell>
+          <cell>A tooth from an unknown beast</cell>
+        </row>
+        <row>
+          <cell>14</cell>
+          <cell>An enormous scale, perhaps from a dragon</cell>
+        </row>
+        <row>
+          <cell>15</cell>
+          <cell>A bright-green feather</cell>
+        </row>
+        <row>
+          <cell>16</cell>
+          <cell>An old divination card bearing your likeness</cell>
+        </row>
+        <row>
+          <cell>17</cell>
+          <cell>A glass orb filled with moving smoke</cell>
+        </row>
+        <row>
+          <cell>18</cell>
+          <cell>A 1-pound egg with a bright-red shell</cell>
+        </row>
+        <row>
+          <cell>19</cell>
+          <cell>A pipe that blows bubbles</cell>
+        </row>
+        <row>
+          <cell>20</cell>
+          <cell>A glass jar containing a bit of flesh floating in pickling fluid</cell>
+        </row>
+        <row>
+          <cell>21</cell>
+          <cell>A gnome-crafted music box that plays a song you dimly remember from your childhood</cell>
+        </row>
+        <row>
+          <cell>22</cell>
+          <cell>A wooden statuette of a smug halfling</cell>
+        </row>
+        <row>
+          <cell>23</cell>
+          <cell>A brass orb etched with strange runes</cell>
+        </row>
+        <row>
+          <cell>24</cell>
+          <cell>A multicolored stone disk</cell>
+        </row>
+        <row>
+          <cell>25</cell>
+          <cell>A silver icon of a raven</cell>
+        </row>
+        <row>
+          <cell>26</cell>
+          <cell>A bag containing forty-seven teeth, one of which is rotten</cell>
+        </row>
+        <row>
+          <cell>27</cell>
+          <cell>A shard of obsidian that always feels warm to the touch</cell>
+        </row>
+        <row>
+          <cell>28</cell>
+          <cell>A dragon's talon strung on a leather necklace</cell>
+        </row>
+        <row>
+          <cell>29</cell>
+          <cell>A pair of old socks</cell>
+        </row>
+        <row>
+          <cell>30</cell>
+          <cell>A blank book whose pages refuse to hold ink, chalk, graphite, or any other marking</cell>
+        </row>
+        <row>
+          <cell>31</cell>
+          <cell>A silver badge that is a five-pointed star</cell>
+        </row>
+        <row>
+          <cell>32</cell>
+          <cell>A knife that belonged to a relative</cell>
+        </row>
+        <row>
+          <cell>33</cell>
+          <cell>A glass vial filled with nail clippings</cell>
+        </row>
+        <row>
+          <cell>34</cell>
+          <cell>A rectangular metal device with two tiny metal cups on one end that throws sparks when wet</cell>
+        </row>
+        <row>
+          <cell>35</cell>
+          <cell>A white, sequined glove sized for a human</cell>
+        </row>
+        <row>
+          <cell>36</cell>
+          <cell>A vest with one hundred tiny pockets</cell>
+        </row>
+        <row>
+          <cell>37</cell>
+          <cell>A weightless stone</cell>
+        </row>
+        <row>
+          <cell>38</cell>
+          <cell>A sketch of a goblin</cell>
+        </row>
+        <row>
+          <cell>39</cell>
+          <cell>An empty glass vial that smells of perfume</cell>
+        </row>
+        <row>
+          <cell>40</cell>
+          <cell>A gemstone that looks like a lump of coal when examined by anyone but you</cell>
+        </row>
+        <row>
+          <cell>41</cell>
+          <cell>A scrap of cloth from an old banner</cell>
+        </row>
+        <row>
+          <cell>42</cell>
+          <cell>A rank insignia from a lost legionnaire</cell>
+        </row>
+        <row>
+          <cell>43</cell>
+          <cell>A silver bell without a clapper</cell>
+        </row>
+        <row>
+          <cell>44</cell>
+          <cell>A mechanical canary inside a lamp</cell>
+        </row>
+        <row>
+          <cell>45</cell>
+          <cell>A miniature chest carved to look like it has numerous feet on the bottom</cell>
+        </row>
+        <row>
+          <cell>46</cell>
+          <cell>A dead sprite inside a clear glass bottle</cell>
+        </row>
+        <row>
+          <cell>47</cell>
+          <cell>A metal can that has no opening but sounds as if it is filled with liquid, sand, spiders, or broken glass (your choice)</cell>
+        </row>
+        <row>
+          <cell>48</cell>
+          <cell>A glass orb filled with water, in which swims a clockwork goldfish</cell>
+        </row>
+        <row>
+          <cell>49</cell>
+          <cell>A silver spoon with an M engraved on the handle</cell>
+        </row>
+        <row>
+          <cell>50</cell>
+          <cell>A whistle made from gold-colored wood</cell>
+        </row>
+        <row>
+          <cell>51</cell>
+          <cell>A dead scarab beetle the size of your hand</cell>
+        </row>
+        <row>
+          <cell>52</cell>
+          <cell>Two toy soldiers, one missing a head</cell>
+        </row>
+        <row>
+          <cell>53</cell>
+          <cell>A small box filled with different-sized buttons</cell>
+        </row>
+        <row>
+          <cell>54</cell>
+          <cell>A candle that can't be lit</cell>
+        </row>
+        <row>
+          <cell>55</cell>
+          <cell>A miniature cage with no door</cell>
+        </row>
+        <row>
+          <cell>56</cell>
+          <cell>An old key</cell>
+        </row>
+        <row>
+          <cell>57</cell>
+          <cell>An indecipherable treasure map</cell>
+        </row>
+        <row>
+          <cell>58</cell>
+          <cell>A hilt from a broken sword</cell>
+        </row>
+        <row>
+          <cell>59</cell>
+          <cell>A rabbit's foot</cell>
+        </row>
+        <row>
+          <cell>60</cell>
+          <cell>A glass eye</cell>
+        </row>
+        <row>
+          <cell>61</cell>
+          <cell>A cameo of a hideous person</cell>
+        </row>
+        <row>
+          <cell>62</cell>
+          <cell>A silver skull the size of a coin</cell>
+        </row>
+        <row>
+          <cell>63</cell>
+          <cell>An alabaster mask</cell>
+        </row>
+        <row>
+          <cell>64</cell>
+          <cell>A cone of sticky black incense that stinks</cell>
+        </row>
+        <row>
+          <cell>65</cell>
+          <cell>A nightcap that gives you pleasant dreams when you wear it</cell>
+        </row>
+        <row>
+          <cell>66</cell>
+          <cell>A single caltrop made from bone</cell>
+        </row>
+        <row>
+          <cell>67</cell>
+          <cell>A gold monocle frame without the lens</cell>
+        </row>
+        <row>
+          <cell>68</cell>
+          <cell>A 1-inch cube, each side a different color</cell>
+        </row>
+        <row>
+          <cell>69</cell>
+          <cell>A crystal doorknob</cell>
+        </row>
+        <row>
+          <cell>70</cell>
+          <cell>A packet filled with pink dust</cell>
+        </row>
+        <row>
+          <cell>71</cell>
+          <cell>A fragment of a beautiful song, written as musical notes on two pieces of parchment</cell>
+        </row>
+        <row>
+          <cell>72</cell>
+          <cell>A silver teardrop earring containing a real teardrop</cell>
+        </row>
+        <row>
+          <cell>73</cell>
+          <cell>An eggshell painted with scenes of misery in disturbing detail</cell>
+        </row>
+        <row>
+          <cell>74</cell>
+          <cell>A fan that, when unfolded, shows a sleepy cat</cell>
+        </row>
+        <row>
+          <cell>75</cell>
+          <cell>A set of bone pipes</cell>
+        </row>
+        <row>
+          <cell>76</cell>
+          <cell>A four-leaf clover pressed inside a book discussing manners and etiquette</cell>
+        </row>
+        <row>
+          <cell>77</cell>
+          <cell>A sheet of parchment upon which is drawn a mechanical contraption</cell>
+        </row>
+        <row>
+          <cell>78</cell>
+          <cell>An ornate scabbard that fits no blade you have found</cell>
+        </row>
+        <row>
+          <cell>79</cell>
+          <cell>An invitation to a party where a murder happened</cell>
+        </row>
+        <row>
+          <cell>80</cell>
+          <cell>A bronze pentacle with an etching of a rat's head in its center</cell>
+        </row>
+        <row>
+          <cell>81</cell>
+          <cell>A purple handkerchief embroidered with the name of an archmage</cell>
+        </row>
+        <row>
+          <cell>82</cell>
+          <cell>Half a floor plan for a temple, a castle, or another structure</cell>
+        </row>
+        <row>
+          <cell>83</cell>
+          <cell>A bit of folded cloth that, when unfolded, turns into a stylish cap</cell>
+        </row>
+        <row>
+          <cell>84</cell>
+          <cell>A receipt of deposit at a bank in a far-off city</cell>
+        </row>
+        <row>
+          <cell>85</cell>
+          <cell>A diary with seven missing pages</cell>
+        </row>
+        <row>
+          <cell>86</cell>
+          <cell>An empty silver snuffbox bearing the inscription "dreams" on its lid</cell>
+        </row>
+        <row>
+          <cell>87</cell>
+          <cell>An iron holy symbol devoted to an unknown god</cell>
+        </row>
+        <row>
+          <cell>88</cell>
+          <cell>A book about a legendary hero's rise and fall, with the last chapter missing</cell>
+        </row>
+        <row>
+          <cell>89</cell>
+          <cell>A vial of dragon blood</cell>
+        </row>
+        <row>
+          <cell>90</cell>
+          <cell>An ancient arrow of elven design</cell>
+        </row>
+        <row>
+          <cell>91</cell>
+          <cell>A needle that never bends</cell>
+        </row>
+        <row>
+          <cell>92</cell>
+          <cell>An ornate brooch of dwarven design</cell>
+        </row>
+        <row>
+          <cell>93</cell>
+          <cell>An empty wine bottle bearing a pretty label that says, "The Wizard of Wines Winery, Red Dragon Crush, 331422-W"</cell>
+        </row>
+        <row>
+          <cell>94</cell>
+          <cell>A mosaic tile with a multicolored, glazed surface</cell>
+        </row>
+        <row>
+          <cell>95</cell>
+          <cell>A petrified mouse</cell>
+        </row>
+        <row>
+          <cell>96</cell>
+          <cell>A black pirate flag adorned with a dragon's skull and crossbones</cell>
+        </row>
+        <row>
+          <cell>97</cell>
+          <cell>A tiny mechanical crab or spider that moves about when it's not being observed</cell>
+        </row>
+        <row>
+          <cell>98</cell>
+          <cell>A glass jar containing lard with a label that reads, "Griffon Grease"</cell>
+        </row>
+        <row>
+          <cell>99</cell>
+          <cell>A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body</cell>
+        </row>
+        <row>
+          <cell>100</cell>
+          <cell>A metal urn containing the ashes of a hero</cell>
+        </row>
+      </table>
+    </description_text>
+  </item>
+  <item>
+    <name>Psychic Blade [2024]</name>
+    <source book="Player's Handbook 2024" page="136" />
+    <item_type main="Weapon" sub="Melee" />
+    <proficiency_requirement>simple, psychic blade</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Psychic" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Thrown" range_short="20" range_long="60" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Copper Piece (CP) [2024]</name>
+    <source book="Player's Handbook 2024" page="213" />
+    <item_type main="Currency" sub="CP" />
+    <weight unit="lb">0.02</weight>
+    <description_text>
+      <p>Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of t heir material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
+	A coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+      <p>Coin Values:
+Coin | Value in GP
+Copper Piece (CP) | 1/100
+Silver Piece (SP) | 1/10
+Electrum Piece (EP) | 1/2
+Gold Piece (GP) | 1
+Platinum Piece (PP) | 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Silver Piece (SP) [2024]</name>
+    <source book="Player's Handbook 2024" page="213" />
+    <item_type main="Currency" sub="SP" />
+    <weight unit="lb">0.02</weight>
+    <description_text>
+      <p>Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of t heir material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
+	A coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+      <p>Coin Values:
+Coin | Value in GP
+Copper Piece (CP) | 1/100
+Silver Piece (SP) | 1/10
+Electrum Piece (EP) | 1/2
+Gold Piece (GP) | 1
+Platinum Piece (PP) | 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Electrum Piece (EP) [2024]</name>
+    <source book="Player's Handbook 2024" page="213" />
+    <item_type main="Currency" sub="EP" />
+    <weight unit="lb">0.02</weight>
+    <description_text>
+      <p>Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of t heir material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
+	A coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+      <p>Coin Values:
+Coin | Value in GP
+Copper Piece (CP) | 1/100
+Silver Piece (SP) | 1/10
+Electrum Piece (EP) | 1/2
+Gold Piece (GP) | 1
+Platinum Piece (PP) | 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Gold Piece (GP) [2024]</name>
+    <source book="Player's Handbook 2024" page="213" />
+    <item_type main="Currency" sub="GP" />
+    <weight unit="lb">0.02</weight>
+    <description_text>
+      <p>Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of t heir material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
+	A coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+      <p>Coin Values:
+Coin | Value in GP
+Copper Piece (CP) | 1/100
+Silver Piece (SP) | 1/10
+Electrum Piece (EP) | 1/2
+Gold Piece (GP) | 1
+Platinum Piece (PP) | 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Platinum Piece (PP) [2024]</name>
+    <source book="Player's Handbook 2024" page="213" />
+    <item_type main="Currency" sub="PP" />
+    <weight unit="lb">0.02</weight>
+    <description_text>
+      <p>Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of t heir material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
+	A coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+      <p>Coin Values:
+Coin | Value in GP
+Copper Piece (CP) | 1/100
+Silver Piece (SP) | 1/10
+Electrum Piece (EP) | 1/2
+Gold Piece (GP) | 1
+Platinum Piece (PP) | 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Club [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">0.1</value>
+    <proficiency_requirement>simple, club</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d4" type="Bludgeoning" />
+      <properties>
+        <property name="Light" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Dagger [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">2</value>
+    <proficiency_requirement>simple, dagger</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d4" type="Piercing" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Light" />
+        <property name="Thrown" range_short="20" range_long="60" />
+      </properties>
+      <mastery_options>
+        <mastery name="Nick" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Greatclub [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">0.2</value>
+    <proficiency_requirement>simple, greatclub</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d8" type="Bludgeoning" />
+      <properties>
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Push" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Handaxe [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>simple, handaxe</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Slashing" />
+      <properties>
+        <property name="Light" />
+        <property name="Thrown" range_short="20" range_long="60" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Javelin [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">0.5</value>
+    <proficiency_requirement>simple, javelin</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Piercing" />
+      <properties>
+        <property name="Thrown" range_short="30" range_long="120" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Light Hammer [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">2</value>
+    <proficiency_requirement>simple, light hammer</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d4" type="Bludgeoning" />
+      <properties>
+        <property name="Light" />
+        <property name="Thrown" range_short="20" range_long="60" />
+      </properties>
+      <mastery_options>
+        <mastery name="Nick" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Mace [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>simple, mace</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Bludgeoning" />
+      <properties />
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Quarterstaff [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">0.2</value>
+    <proficiency_requirement>simple, quarterstaff</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Bludgeoning" versatile_dice="1d8" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Topple" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Sickle [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">1</value>
+    <proficiency_requirement>simple, sickle</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d4" type="Slashing" />
+      <properties>
+        <property name="Light" />
+      </properties>
+      <mastery_options>
+        <mastery name="Nick" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Spear [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">1</value>
+    <proficiency_requirement>simple, spear</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Piercing" versatile_dice="1d8" />
+      <properties>
+        <property name="Thrown" range_short="20" range_long="60" />
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Dart [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">0.25</weight>
+    <value currency="GP">0.05</value>
+    <proficiency_requirement>simple, dart</proficiency_requirement>
+    <weapon_details category="Simple" type="Ranged">
+      <damage dice="1d4" type="Piercing" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Thrown" range_short="20" range_long="60" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Light Crossbow [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">25</value>
+    <proficiency_requirement>simple, light crossbow</proficiency_requirement>
+    <weapon_details category="Simple" type="Ranged">
+      <damage dice="1d8" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="80" range_long="320" ammo_type="bolt [2024]" />
+        <property name="Loading" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Shortbow [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">25</value>
+    <proficiency_requirement>simple, shortbow</proficiency_requirement>
+    <weapon_details category="Simple" type="Ranged">
+      <damage dice="1d6" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="80" range_long="320" ammo_type="arrow [2024]" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Sling [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <value currency="GP">0.1</value>
+    <proficiency_requirement>simple, sling</proficiency_requirement>
+    <weapon_details category="Simple" type="Ranged">
+      <damage dice="1d4" type="Bludgeoning" />
+      <properties>
+        <property name="Ammunition" range_short="30" range_long="120" ammo_type="sling bullet [2024]" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Battleaxe [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>martial, battleaxe</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Slashing" versatile_dice="1d10" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Topple" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Flail [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>simple, flail</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Bludgeoning" />
+      <properties />
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Glaive [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">20</value>
+    <proficiency_requirement>martial, glaive</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d10" type="Slashing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="Reach" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Graze" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Greataxe [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">7</weight>
+    <value currency="GP">30</value>
+    <proficiency_requirement>martial, greataxe</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d12" type="Slashing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Cleave" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Greatsword [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">50</value>
+    <proficiency_requirement>martial, greatsword</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="2d6" type="Slashing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Graze" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Halberd [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">20</value>
+    <proficiency_requirement>martial, halberd</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d10" type="Slashing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="Reach" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Cleave" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Lance [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>martial, lance</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d10" type="Piercing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="Reach" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Topple" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>A Lance requires two hands to wield when you aren't mounted.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Longsword [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">15</value>
+    <proficiency_requirement>martial, longsword</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Slashing" versatile_dice="1d10" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Maul [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>martial, maul</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="2d6" type="Bludgeoning" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Topple" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Morningstar [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">15</value>
+    <proficiency_requirement>simple, morningstar</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d8" type="Piercing" />
+      <properties />
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Pike [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">18</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>martial, pike</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d10" type="Piercing" />
+      <properties>
+        <property name="Heavy" strength_requirement="13" />
+        <property name="Reach" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Push" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Rapier [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">25</value>
+    <proficiency_requirement>martial, rapier</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Piercing" />
+      <properties>
+        <property name="Finesse" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Scimitar [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">25</value>
+    <proficiency_requirement>martial, scimitar</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d6" type="Slashing" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Light" />
+      </properties>
+      <mastery_options>
+        <mastery name="Nick" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Shortsword [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>martial, shortword</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d6" type="Piercing" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Light" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Trident [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>martial, trident</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Piercing" versatile_dice="1d10" />
+      <properties>
+        <property name="Thrown" range_short="20" range_long="60" />
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Topple" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Warhammer [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">15</value>
+    <proficiency_requirement>martial, warhammer</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Bludgeoning" versatile_dice="1d10" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Push" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>War Pick [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>martial, war pick</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d8" type="Piercing" versatile_dice="1d10" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+      <mastery_options>
+        <mastery name="Sap" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Whip [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Melee" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">2</value>
+    <proficiency_requirement>martial, whip</proficiency_requirement>
+    <weapon_details category="Martial" type="Melee">
+      <damage dice="1d4" type="Slashing" />
+      <properties>
+        <property name="Finesse" />
+        <property name="Reach" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Blowgun [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">10</value>
+    <proficiency_requirement>martial, blowgun</proficiency_requirement>
+    <weapon_details category="Martial" type="Ranged">
+      <damage dice="1" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="25" range_long="100" ammo_type="needle [2024]" />
+        <property name="Loading" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Hand Crossbow [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">75</value>
+    <proficiency_requirement>martial, hand crossbow</proficiency_requirement>
+    <weapon_details category="Martial" type="Ranged">
+      <damage dice="1d6" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="30" range_long="120" ammo_type="bolt [2024]" />
+        <property name="Light" />
+        <property name="Loading" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+    <description_text>
+      <p>For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Heavy Crossbow [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">18</weight>
+    <value currency="GP">50</value>
+    <proficiency_requirement>martial, heavy crossbow</proficiency_requirement>
+    <weapon_details category="Martial" type="Ranged">
+      <damage dice="1d10" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="100" range_long="400" ammo_type="bolt [2024]" />
+        <property name="Heavy" strength_requirement="13" />
+        <property name="Loading" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Push" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Longbow [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">50</value>
+    <proficiency_requirement>martial, longbow</proficiency_requirement>
+    <weapon_details category="Martial" type="Ranged">
+      <damage dice="1d8" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="150" range_long="600" ammo_type="arrow [2024]" />
+        <property name="Heavy" strength_requirement="13" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Musket [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">500</value>
+    <proficiency_requirement>martial, firearms</proficiency_requirement>
+    <weapon_details category="Martial" type="Ranged">
+      <damage dice="1d12" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="40" range_long="120" ammo_type="firearm bullet [2024]" />
+        <property name="Loading" />
+        <property name="TwoHanded" />
+      </properties>
+      <mastery_options>
+        <mastery name="Slow" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Pistol [2024]</name>
+    <source book="Player's Handbook 2024" page="215" />
+    <item_type main="Weapon" sub="Ranged" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">250</value>
+    <weapon_details category="Simple" type="Ranged">
+      <damage dice="1d10" type="Piercing" />
+      <properties>
+        <property name="Ammunition" range_short="30" range_long="90" ammo_type="firearm bullet [2024]" />
+        <property name="Loading" />
+      </properties>
+      <mastery_options>
+        <mastery name="Vex" default="true" />
+      </mastery_options>
+    </weapon_details>
+  </item>
+  <item>
+    <name>Padded Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Light" />
+    <weight unit="lb">8</weight>
+    <value currency="GP">5</value>
+    <armor_details category="Light">
+      <armor_class base="11" add_dex_modifier="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Leather Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Light" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">10</value>
+    <armor_details category="Light">
+      <armor_class base="11" add_dex_modifier="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Studded Leather Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Light" />
+    <weight unit="lb">13</weight>
+    <value currency="GP">45</value>
+    <armor_details category="Light">
+      <armor_class base="12" add_dex_modifier="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Hide Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Medium" />
+    <weight unit="lb">12</weight>
+    <value currency="GP">10</value>
+    <armor_details category="Medium">
+      <armor_class base="12" add_dex_modifier="true" max_dex_bonus="2" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Chain Shirt [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Medium" />
+    <weight unit="lb">20</weight>
+    <value currency="GP">50</value>
+    <armor_details category="Medium">
+      <armor_class base="13" add_dex_modifier="true" max_dex_bonus="2" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Scale Mail [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Medium" />
+    <weight unit="lb">45</weight>
+    <value currency="GP">50</value>
+    <armor_details category="Medium">
+      <armor_class base="14" add_dex_modifier="true" max_dex_bonus="2" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Breastplate [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Medium" />
+    <weight unit="lb">20</weight>
+    <value currency="GP">400</value>
+    <armor_details category="Medium">
+      <armor_class base="14" add_dex_modifier="true" max_dex_bonus="2" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Half Plate Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Medium" />
+    <weight unit="lb">40</weight>
+    <value currency="GP">750</value>
+    <armor_details category="Medium">
+      <armor_class base="15" add_dex_modifier="true" max_dex_bonus="2" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Ring Mail [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Heavy" />
+    <weight unit="lb">40</weight>
+    <value currency="GP">30</value>
+    <armor_details category="Heavy">
+      <armor_class base="14" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Chain Mail [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Heavy" />
+    <weight unit="lb">55</weight>
+    <value currency="GP">75</value>
+    <armor_details category="Heavy">
+      <armor_class base="16" />
+      <strength_requirement value="13" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Splint Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Heavy" />
+    <weight unit="lb">60</weight>
+    <value currency="GP">200</value>
+    <armor_details category="Heavy">
+      <armor_class base="17" />
+      <strength_requirement value="15" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Plate Armor [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Armor" sub="Heavy" />
+    <weight unit="lb">65</weight>
+    <value currency="GP">1500</value>
+    <armor_details category="Heavy">
+      <armor_class base="18" />
+      <strength_requirement value="15" />
+      <stealth_disadvantage value="true" />
+    </armor_details>
+  </item>
+  <item>
+    <name>Shield [2024]</name>
+    <source book="Player's Handbook 2024" page="219" />
+    <item_type main="Shield" sub="Shield" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">10</value>
+    <armor_details category="Shield">
+      <armor_class bonus="2" />
+      <don_time description="1 Action (Utilize)" />
+      <doff_time description="1 Action (Utilize)" />
+    </armor_details>
+    <description_text>
+      <p>.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Alchemist's Supplies [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">8</weight>
+    <value currency="GP">50</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Identify a substance" dc="15" />
+        <option description="start a fire" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Acid" />
+        <item_ref name="Alchemist's Fire" />
+        <item_ref name="Component Pouch" />
+        <item_ref name="Oil" />
+        <item_ref name="Paper" />
+        <item_ref name="Perfume" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Brewer's Supplies [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">9</weight>
+    <value currency="GP">20</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Detect poisoned drink" dc="15" />
+        <option description="identify alcohol" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Antitoxin" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Calligrapher's Supplies [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">10</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Write text with impressive flourishes that guard against forgery" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Ink" />
+        <item_ref name="Spell Scroll" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Carpenter's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">8</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Strength" />
+      <utilization_options>
+        <option description="Seal or pry open a door or container" dc="20" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Club" />
+        <item_ref name="Greatclub" />
+        <item_ref name="Quarterstaff" />
+        <item_ref name="Barrel" />
+        <item_ref name="Chest" />
+        <item_ref name="Ladder" />
+        <item_ref name="Pole" />
+        <item_ref name="Portable Ram" />
+        <item_ref name="Torch" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Cartographer's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">15</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Draft a map of a small area" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Map" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Cobbler's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">5</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Climber's Kit" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Cook's Utensils [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">8</weight>
+    <value currency="GP">1</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Improve food's flavor" dc="10" />
+        <option description="detect spoiled or poisoned food" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Rations" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Glassblower's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">30</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Discern what a glass object held in the past 24 hours" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Glass Bottle" />
+        <item_ref name="Magnifying Glass" />
+        <item_ref name="Spyglass" />
+        <item_ref name="Vial" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Jeweler's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="220" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">25</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Discern a gem's value" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Arcane Focus" />
+        <item_ref name="Holy Symbol" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Leatherworker's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">5</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Add a design to a leather item" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Sling" />
+        <item_ref name="Whip" />
+        <item_ref name="Hide Armor" />
+        <item_ref name="Leather Armor" />
+        <item_ref name="Studded Leather Armor" />
+        <item_ref name="Backpack" />
+        <item_ref name="Crossbow Bolt Case" />
+        <item_ref name="Map or Scroll Case" />
+        <item_ref name="Parchment" />
+        <item_ref name="Pouch" />
+        <item_ref name="Quiver" />
+        <item_ref name="Waterskin" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Mason's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">8</weight>
+    <value currency="GP">10</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Strength" />
+      <utilization_options>
+        <option description="Chisel a symbol or hole in stone" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Block and Tackle" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Painter's Supplies [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">10</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Paint a recognizable image of something you've seen" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Druidic Focus" />
+        <item_ref name="Holy Symbol" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Potter's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">10</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Discern what a ceramic object held in the past 24 hours" dc="15" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Jug" />
+        <item_ref name="Lamp" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Smith's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">8</weight>
+    <value currency="GP">20</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Strength" />
+      <utilization_options>
+        <option description="Pry open a door or container" dc="20" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Any Melee weapon (except Club" />
+        <item_ref name="Greatclub" />
+        <item_ref name="Quarterstaff" />
+        <item_ref name="and Whip)" />
+        <item_ref name="Medium armor (except Hide)" />
+        <item_ref name="Heavy armor" />
+        <item_ref name="Ball Bearings" />
+        <item_ref name="Bucket" />
+        <item_ref name="Caltrops" />
+        <item_ref name="Chain" />
+        <item_ref name="Crowbar" />
+        <item_ref name="Firearm Bullets" />
+        <item_ref name="Grappling Hook" />
+        <item_ref name="Iron Pot" />
+        <item_ref name="Iron Spikes" />
+        <item_ref name="Sling Bullets" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Tinker's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">50</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Assemble a Tiny item composed of scrap, which falls apart in 1 minute" dc="20" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Musket" />
+        <item_ref name="Pistol" />
+        <item_ref name="Bell" />
+        <item_ref name="Bullseye Lantern" />
+        <item_ref name="Flask" />
+        <item_ref name="Hooded Lantern" />
+        <item_ref name="Hunting Trap" />
+        <item_ref name="Lock" />
+        <item_ref name="Manacles" />
+        <item_ref name="Mirror" />
+        <item_ref name="Shovel" />
+        <item_ref name="Signal Whistle" />
+        <item_ref name="Tinderbox" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Weaver's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">1</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Mend a tear in clothing" dc="10" />
+        <option description="sew a Tiny design" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Padded Armor" />
+        <item_ref name="Basket" />
+        <item_ref name="Bedroll" />
+        <item_ref name="Blanket" />
+        <item_ref name="Fine Clothes" />
+        <item_ref name="Net" />
+        <item_ref name="Robe" />
+        <item_ref name="Rope" />
+        <item_ref name="Sack" />
+        <item_ref name="String" />
+        <item_ref name="Tent" />
+        <item_ref name="Traveler's Clothes" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Woodcarver's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="ArtisansTools" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">1</value>
+    <tool_details category="ArtisansTools">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Carve a pattern in wood" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Club" />
+        <item_ref name="Greatclub" />
+        <item_ref name="Quarterstaff" />
+        <item_ref name="Ranged weapons (except Pistol" />
+        <item_ref name="Musket" />
+        <item_ref name="and  Sling)" />
+        <item_ref name="Arcane Focus" />
+        <item_ref name="Arrows" />
+        <item_ref name="Bolts" />
+        <item_ref name="Druidic Focus" />
+        <item_ref name="Ink Pen" />
+        <item_ref name="Needles" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Disguise Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">25</value>
+    <tool_details category="Other">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Apply makeup" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Costume" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Forgery Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">15</value>
+    <tool_details category="Other">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Mimic 10 or fewer words of someone else's handwriting" dc="15" />
+        <option description="duplicate a wax seal" dc="20" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Herbalism Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">5</value>
+    <tool_details category="Other">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Identify a plant" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Antitoxin" />
+        <item_ref name="Candle" />
+        <item_ref name="Healer's Kit" />
+        <item_ref name="Potion of Healing" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Navigator's Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">25</value>
+    <tool_details category="Other">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Plot a course" dc="10" />
+        <option description="determine position by stargazing" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Poisoner's Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">50</value>
+    <tool_details category="Other">
+      <associated_ability name="Intelligence" />
+      <utilization_options>
+        <option description="Detect a poisoned object" dc="10" />
+      </utilization_options>
+      <craftable_items>
+        <item_ref name="Basic Poison" />
+      </craftable_items>
+    </tool_details>
+  </item>
+  <item>
+    <name>Thieves' Tools [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="Other" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">25</value>
+    <tool_details category="Other">
+      <associated_ability name="Dexterity" />
+      <utilization_options>
+        <option description="Pick a lock" dc="15" />
+        <option description="disarm a trap" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Dice Set [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="GamingSet" />
+    <value currency="GP">0.1</value>
+    <tool_details category="GamingSet">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Discern whether someone is cheating" dc="10" />
+        <option description="win the game" dc="20" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Dragonchess Set [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="GamingSet" />
+    <value currency="GP">1</value>
+    <tool_details category="GamingSet">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Discern whether someone is cheating" dc="10" />
+        <option description="win the game" dc="20" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Playing Cards [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="GamingSet" />
+    <value currency="GP">0.5</value>
+    <tool_details category="GamingSet">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Discern whether someone is cheating" dc="10" />
+        <option description="win the game" dc="20" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Three-Dragon Ante Set [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="GamingSet" />
+    <value currency="GP">1</value>
+    <tool_details category="GamingSet">
+      <associated_ability name="Wisdom" />
+      <utilization_options>
+        <option description="Discern whether someone is cheating" dc="10" />
+        <option description="win the game" dc="20" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Bagpipes [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="GamingSet" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">30</value>
+    <tool_details category="GamingSet">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Drum [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">6</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Dulcimer [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">25</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Flute [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">2</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Horn [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">3</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Lute [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">35</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Lyre [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">30</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Pan Flute [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">12</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Shawm [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">2</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Viol [2024]</name>
+    <source book="Player's Handbook 2024" page="221" />
+    <item_type main="Tool" sub="MusicalInstrument" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">30</value>
+    <tool_details category="MusicalInstrument">
+      <associated_ability name="Charisma" />
+      <utilization_options>
+        <option description="Play a known tune" dc="10" />
+        <option description="improvise a song" dc="15" />
+      </utilization_options>
+    </tool_details>
+  </item>
+  <item>
+    <name>Acid [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">25</value>
+    <effects>
+      <action type="AttackReplacement" description="throwing a vial of Acid. Target one creature or object you can see within 20 feet">
+        <effect type="Damage" save_required="true" save_ability="Dexterity" save_dc_formula="8+DEX+PB">
+          <dice>2d6</dice>
+          <damage_type>Acid</damage_type>
+        </effect>
+      </action>
+    </effects>
+    <consumable charges="1" on_last_charge_behavior="consumed" />
+  </item>
+  <item>
+    <name>Alchemist's Fire [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">50</value>
+    <effects>
+      <action type="AttackReplacement" description="throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet">
+        <effect type="Damage" save_required="true" save_ability="Dexterity" save_dc_formula="8+DEX+PB" description="Takes 1d4 Fire damage and start burning.">
+          <dice>1d4</dice>
+          <damage_type>Fire</damage_type>
+        </effect>
+      </action>
+    </effects>
+    <consumable charges="1" on_last_charge_behavior="consumed" />
+  </item>
+  <item>
+    <name>Arrows (20) [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Arrows are typically stored in a Quiver (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Arrow [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">0.05</weight>
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Arrows are typically stored in a Quiver (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bolts (20) [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">1.5</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Bolts are typically stored in a Crossbow Bolt Case (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bolt [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">0.075</weight>
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Bolts are typically stored in a Crossbow Bolt Case (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Firearm Bullets (10) [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">3</value>
+    <description_text>
+      <p>The ammunition of a firearm is destroyed upon use.
+	Firearm Bullets are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Firearm Bullet [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">0.1</weight>
+    <value currency="GP">0.15</value>
+    <description_text>
+      <p>The ammunition of a firearm is destroyed upon use.
+	Firearm Bullets are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sling Bullets (20) [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">1.5</weight>
+    <value currency="GP">0.04</value>
+    <description_text>
+      <p>Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Sling Bullets are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sling Bullet [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">0.075</weight>
+    <value currency="GP">0.002</value>
+    <description_text>
+      <p>Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Sling Bullets are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Needles (50) [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Needles are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Needle [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" sub="Ammunition" />
+    <weight unit="lb">0.05</weight>
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+	Needles are typically stored in a Pouch (bought separately).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Antitoxin [2024]</name>
+    <source book="Player's Handbook 2024" page="222" />
+    <item_type main="Gear" />
+    <value currency="GP">50</value>
+    <description_text>
+      <p>As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Crystal [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" sub="Crystal" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Orb [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" sub="Orb" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">20</value>
+    <description_text>
+      <p>An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Rod [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" sub="Rod" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Staff [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Weapon" sub="Staff" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>simple, quarterstaff</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Bludgeoning" versatile_dice="1d8" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+    </weapon_details>
+    <description_text>
+      <p>An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Wand [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Wand" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Backpack [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ball Bearings [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Barrel [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">70</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Basket [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">0.4</value>
+    <description_text>
+      <p>A Basket holds up to 40 pounds within 2 cubic feet.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bedroll [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">7</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bell [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <value currency="GP">1</value>
+    <description_text>
+      <p>When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Blanket [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">0.5</value>
+    <description_text>
+      <p>While wrapped in a blanket, you have Advantage on saving throws against extreme cold (see the Dungeon Master's Guide).</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Block and Tackle [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Block and Tackle allows you to hoist up to four times the weight you can normally lift.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Book [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">25</value>
+    <description_text>
+      <p>A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bottle, Glass [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>A Glass Bottle holds up to 1 1/2 pints.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Bucket [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>A Bucket holds up to half a cubic foot of contents.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Burglar's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">47.5</weight>
+    <value currency="GP">16</value>
+    <description_text>
+      <p>A Burglar's Pack contains the following items: Backpack, Ball Bearings, Bell, 10 Candles, Crowbar, Hooded Lantern, 7 flasks of Oil, 5 days of Rations, Rope, Tinderbox, and Waterskin.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Caltrops [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Candle [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <value currency="GP">0.01</value>
+    <description_text>
+      <p>For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Case, Crossbow Bolt [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Crossbow Bolt Case holds up to 20 Bolts.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Case, Map or Scroll [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Chain [2024]</name>
+    <source book="Player's Handbook 2024" page="224" />
+    <item_type main="Gear" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>As a Utilize action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Chest [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">25</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Chest holds up to 12 cubic feet of contents.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Climber's Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">12</weight>
+    <value currency="GP">25</value>
+    <description_text>
+      <p>A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a Utilize action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a Bonus Action.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Clothes, Fine [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">15</value>
+    <description_text>
+      <p>Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Clothes, Traveler's [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>Traveler's Clothes are resilient garments designed for travel in various environments.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Component Pouch [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">25</value>
+    <description_text>
+      <p>A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Costume [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Crowbar [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Diplomat's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">39</weight>
+    <value currency="GP">39</value>
+    <description_text>
+      <p>A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sprig of Mistletoe [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" sub="SprigOfMistletoe" />
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Druidic Focus takes one of the forms in the Druidic focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Wooden Staff [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Weapon" sub="WoodenStaff" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">5</value>
+    <proficiency_requirement>simple, quarterstaff</proficiency_requirement>
+    <weapon_details category="Simple" type="Melee">
+      <damage dice="1d6" type="Bludgeoning" versatile_dice="1d8" />
+      <properties>
+        <property name="Versatile" />
+      </properties>
+    </weapon_details>
+    <description_text>
+      <p>A Druidic Focus takes one of the forms in the Druidic focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Yew Wand [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" sub="YewWand" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>A Druidic Focus takes one of the forms in the Druidic focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Dungeoneer's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">55</weight>
+    <value currency="GP">12</value>
+    <description_text>
+      <p>A Dungeoneer's Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Entertainer's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">58.5</weight>
+    <value currency="GP">40</value>
+    <description_text>
+      <p>An Entertainer's Pack contains the following items: Backpack, Bedroll, Bell, Bullseye Lantern, 3 Costumes, Mirror, 8 flasks of Oil, 9 days of Rations, Tinderbox, and Waterskin.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Explorer's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">55</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>An Explorer's Pack contains the following items: Backpack, Bedroll, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Flask [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.02</value>
+    <description_text>
+      <p>A Flask holds up to 1 pint.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Grappling Hook [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Healer's Kit [2024]</name>
+    <source book="Player's Handbook 2024" page="225" />
+    <item_type main="Gear" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Amulet [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" sub="Amulet" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.
+	For an Amulet to be an effective Holy Symbol, it must be worn or held.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Emblem [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" sub="Emblem" />
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.
+	For an Emblem to be an effective Holy Symbol, it must be borne on fabric (such as a tabard or banner) or a Shield.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Reliquary [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" sub="Reliquary" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.
+	For a Reliquary to be an effective Holy Symbol, it must be held.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Holy Water [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">25</value>
+    <effects>
+      <action type="AttackReplacement" description="throwing a flask of Holy Water. Target one creature you can see within 20 feet">
+        <effect type="Damage" save_required="true" save_ability="Dexterity" save_dc_formula="8+DEX+PB" description="2d8 Radiant damage if it is a Fiend or an Undead.">
+          <dice>2d8</dice>
+          <damage_type>Radiant</damage_type>
+          <condition>Target is a Fiend or an Undead</condition>
+        </effect>
+      </action>
+    </effects>
+    <consumable charges="1" on_last_charge_behavior="consumed" />
+  </item>
+  <item>
+    <name>Hunting Trap [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">25</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ink [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <value currency="GP">10</value>
+    <description_text>
+      <p>Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ink Pen [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <value currency="GP">0.02</value>
+    <description_text>
+      <p>Using Ink, an Ink Pen is used to write or draw.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Jug [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">0.02</value>
+    <description_text>
+      <p>A Jug holds up to 1 gallon.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ladder [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">25</weight>
+    <value currency="GP">0.1</value>
+    <description_text>
+      <p>A Ladder is 10 feet tall. You must climb to move up or down it.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Lamp [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.5</value>
+    <description_text>
+      <p>A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Lantern, Bullseye [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>A Bullseye Lantern burns Oil as fuel to cast Bright Light in a 60-foot Cone and Dim Light for an additional 60 feet.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Lantern, Hooded [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A Hooded Lantern burns Oil as fuel to cast Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. As a Bonus Action, you can lower the hood, reducing the light to Dim Light in a 5-foot radius, or raise it again.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Lock [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Magnifying Glass [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <value currency="GP">100</value>
+    <description_text>
+      <p>A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Manacles [2024]</name>
+    <source book="Player's Handbook 2024" page="226" />
+    <item_type main="Gear" />
+    <weight unit="lb">6</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.
+	Each set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Map [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <value currency="GP">1</value>
+    <description_text>
+      <p>If you consult an accurate Map, you gain a +5 bonus to Wisdom (Survival) checks you make to find your way in the place represented on it.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Mirror [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <weight unit="lb">0.5</weight>
+    <value currency="GP">5</value>
+    <description_text>
+      <p>A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Net [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <weight unit="lb">3</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger.
+	To escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Oil [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.1</value>
+    <description_text>
+      <p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p>
+      <p>Dousing a Creature or an Object: When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil.</p>
+      <p>Dousing a Space: You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p>
+      <p>Fuel: Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Paper [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <value currency="GP">0.2</value>
+    <description_text>
+      <p>One sheet of Paper can hold about 250 handwritten words.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Parchment [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <value currency="GP">0.1</value>
+    <description_text>
+      <p>One sheet of Parchment can hold about 250 handwritten words.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Perfume [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <value currency="GP">5</value>
+    <description_text>
+      <p>Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Poison, Basic [2024]</name>
+    <source book="Player's Handbook 2024" page="227" />
+    <item_type main="Gear" />
+    <value currency="GP">100</value>
+    <description_text>
+      <p>As a Bonus Action, you can use a vial of Basic Poison to coat one weapon or up to three pieces of Ammunition: A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra 1d4 Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Pole [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">7</weight>
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Pot, Iron [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>An Iron Pot holds up to 1 gallon.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Potion of Healing [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <rarity type="Common" />
+    <attunement required="false" />
+    <item_type main="Potion" />
+    <weight unit="lb">0.5</weight>
+    <value currency="GP">50</value>
+    <effects>
+      <action type="BonusAction" description="drink it or administer it to another creature within 5 feet">
+        <effect type="Heal">
+          <dice>2d4</dice>
+          <bonus>2</bonus>
+        </effect>
+      </action>
+    </effects>
+    <consumable charges="1" on_last_charge_behavior="consumed" />
+  </item>
+  <item>
+    <name>Pouch [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.5</value>
+    <description_text>
+      <p>A Pouch holds up to 6 pounds within one-fifth of a cubic foot.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Priest's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">29</weight>
+    <value currency="GP">33</value>
+    <description_text>
+      <p>A Priest's Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Quiver [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Quiver holds up to 20 Arrows.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ram, Portable [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">35</weight>
+    <value currency="GP">4</value>
+    <description_text>
+      <p>You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Rations [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">2</weight>
+    <value currency="GP">0.5</value>
+    <description_text>
+      <p>Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See "Malnutrition" for the risks of not eating.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Robe [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">4</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Rope [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.
+	You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sack [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">0.5</weight>
+    <value currency="GP">0.01</value>
+    <description_text>
+      <p>A Sack holds up to 30 pounds within 1 cubic foot.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Scholar's Pack [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">22</weight>
+    <value currency="GP">40</value>
+    <description_text>
+      <p>A Scholar's Pack contains the following items: Backpack, Book, Ink, Ink Pen, Lamp, 10 flasks of Oil, 10 sheets of Parchment, and Tinderbox.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Shovel [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Signal Whistle [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <value currency="GP">0.05</value>
+    <description_text>
+      <p>When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Spell Scroll (Cantrip) [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <rarity type="Common" />
+    <attunement required="false" />
+    <item_type main="Scroll" />
+    <value currency="GP">30</value>
+    <effects>
+      <description_text>Allows casting of the spell on the scroll. Spell Save DC 13. Attack Bonus +5. Scroll disintegrates.</description_text>
+    </effects>
+    <consumable on_last_charge_behavior="disintegrates" />
+  </item>
+  <item>
+    <name>Spell Scroll (Level 1) [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <rarity type="Common" />
+    <attunement required="false" />
+    <item_type main="Scroll" />
+    <value currency="GP">50</value>
+    <effects>
+      <description_text>Allows casting of the spell on the scroll. Spell Save DC 13. Attack Bonus +5. Scroll disintegrates.</description_text>
+    </effects>
+    <consumable on_last_charge_behavior="disintegrates" />
+  </item>
+  <item>
+    <name>Spikes, Iron [2024]</name>
+    <source book="Player's Handbook 2024" page="228" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">1</value>
+    <description_text>
+      <p>Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Spyglass [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">1000</value>
+    <description_text>
+      <p>Objects viewed through a Spyglass are magnified to twice their size.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>String [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">0.1</value>
+    <description_text>
+      <p>String is 10 feet long. You can tie a knot in it as a Utilize action.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Tent [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <weight unit="lb">20</weight>
+    <value currency="GP">2</value>
+    <description_text>
+      <p>A Tent sleeps up to two Small or Medium creatures.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Tinderbox [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.5</value>
+    <description_text>
+      <p>A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch-or anything else with exposed fuel-takes a Bonus Action. Lighting any other fire takes 1 minute.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Torch [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <weight unit="lb">1</weight>
+    <value currency="GP">0.01</value>
+    <description_text>
+      <p>A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Vial [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">1</value>
+    <description_text>
+      <p>A Vial holds up to 4 ounces.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Waterskin [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <weight unit="lb">5</weight>
+    <value currency="GP">0.2</value>
+    <description_text>
+      <p>A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Camel [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">50</value>
+  </item>
+  <item>
+    <name>Elephant [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">200</value>
+  </item>
+  <item>
+    <name>Horse, Draft [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">50</value>
+  </item>
+  <item>
+    <name>Horse, Riding [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">75</value>
+  </item>
+  <item>
+    <name>Mastiff [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">25</value>
+  </item>
+  <item>
+    <name>Mule [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">8</value>
+  </item>
+  <item>
+    <name>Pony [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">30</value>
+  </item>
+  <item>
+    <name>Warhorse [2024]</name>
+    <source book="Player's Handbook 2024" page="229" />
+    <item_type main="Gear" />
+    <value currency="GP">400</value>
+  </item>
+  <item>
+    <name>Carriage [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">600</weight>
+    <value currency="GP">100</value>
+  </item>
+  <item>
+    <name>Cart [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">200</weight>
+    <value currency="GP">15</value>
+  </item>
+  <item>
+    <name>Chariot [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">100</weight>
+    <value currency="GP">250</value>
+  </item>
+  <item>
+    <name>Feed (per day) [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">10</weight>
+    <value currency="GP">0.05</value>
+  </item>
+  <item>
+    <name>Saddle, Exotic [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">40</weight>
+    <value currency="GP">60</value>
+    <description_text>
+      <p>A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. An Exotic Saddle is required for riding an aquatic or a flying mount.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Saddle, Military [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">30</weight>
+    <value currency="GP">20</value>
+    <description_text>
+      <p>A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. A Military Saddle gives Advantage on any ability check you make to remain mounted.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Saddle, Riding [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">25</weight>
+    <value currency="GP">10</value>
+    <description_text>
+      <p>A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle.</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sled [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">300</weight>
+    <value currency="GP">20</value>
+  </item>
+  <item>
+    <name>Stabling (per day) [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">0.05</value>
+  </item>
+  <item>
+    <name>Wagon [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <weight unit="lb">400</weight>
+    <value currency="GP">35</value>
+  </item>
+  <item>
+    <name>Airship [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">40000</value>
+    <description_text>
+      <p>Speed: 8 mph
+Crew: 10
+Passengers: 20
+Cargo (Tons): 1
+AC: 13
+HP: 300
+Damage Threshold: -</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Galley [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">30000</value>
+    <description_text>
+      <p>Speed: 4 mph
+Crew: 80
+Passengers: -
+Cargo (Tons): 150
+AC: 15
+HP: 500
+Damage Threshold: 20</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Keelboat [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">3000</value>
+    <description_text>
+      <p>Speed: 1 mph
+Crew: 1
+Passengers: 6
+Cargo (Tons): 1/2
+AC: 15
+HP: 100
+Damage Threshold: 10</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Longship [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">10000</value>
+    <description_text>
+      <p>Speed: 3 mph
+Crew: 40
+Passengers: 150
+Cargo (Tons): 10
+AC: 15
+HP: 300
+Damage Threshold: 15</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Rowboat [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">50</value>
+    <description_text>
+      <p>Speed: 1 1/2 mph
+Crew: 1
+Passengers: 3
+Cargo (Tons): -
+AC: 11
+HP: 50
+Damage Threshold: -</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Sailing Ship [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">10000</value>
+    <description_text>
+      <p>Speed: 2 mph
+Crew: 20
+Passengers: 20
+Cargo (Tons): 100
+AC: 15
+HP: 300
+Damage Threshold: 15</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Warship [2024]</name>
+    <source book="Player's Handbook 2024" page="230" />
+    <item_type main="Gear" />
+    <value currency="GP">25000</value>
+    <description_text>
+      <p>Speed: 2 1/2 mph
+Crew: 60
+Passengers: 60
+Cargo (Tons): 200
+AC: 15
+HP: 500
+Damage Threshold: 20</p>
+    </description_text>
+  </item>
+  <item>
+    <name>Ale (mug) [2024]</name>
+    <source book="Player's Handbook 2024" page="231" />
+    <item_type main="Gear" />
+    <value currency="GP">0.04</value>
+  </item>
+  <item>
+    <name>Bread (loaf) [2024]</name>
+    <source book="Player's Handbook 2024" page="231" />
+    <item_type main="Gear" />
+    <value currency="GP">0.02</value>
+  </item>
+  <item>
+    <name>Cheese (wedge) [2024]</name>
+    <source book="Player's Handbook 2024" page="231" />
+    <item_type main="Gear" />
+    <value currency="GP">0.1</value>
+  </item>
+  <item>
+    <name>Wine (bottle, common) [2024]</name>
+    <source book="Player's Handbook 2024" page="231" />
+    <rarity type="Common" />
+    <attunement required="false" />
+    <item_type main="Gear" />
+    <value currency="GP">0.2</value>
+  </item>
+  <item>
+    <name>Wine (bottle, fine) [2024]</name>
+    <source book="Player's Handbook 2024" page="231" />
+    <item_type main="Gear" />
+    <value currency="GP">10.0</value>
+  </item>
+</compendium>
