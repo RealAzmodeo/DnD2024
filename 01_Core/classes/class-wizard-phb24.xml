@@ -739,12 +739,6 @@ Source:	Player's Handbook 2024 p. 175</text>
           </can_cast_without_slot>
         </modifies_spell>
       </feature>
-      <counter>
-        <name>Phantasmal Creatures</name>
-        <value>1</value>
-        <reset>L</reset>
-        <subclass>Illusionist</subclass>
-      </counter>
     </autolevel>
     <autolevel level="10">
       <feature optional="YES">

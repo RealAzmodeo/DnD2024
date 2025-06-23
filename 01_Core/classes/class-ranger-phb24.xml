@@ -783,7 +783,6 @@ Source:	Player's Handbook 2024 p. 126</text>
         <alternative_grant condition="if_already_proficient_in_Wisdom_saves">
           <grants_proficiency type="SavingThrow" choice_from_list="Intelligence,Charisma" count="1"/>
         </alternative_grant>
-        <proficiency>wisdom</proficiency> <!-- Original tag -->
       </feature>
     </autolevel>
     <autolevel level="11">

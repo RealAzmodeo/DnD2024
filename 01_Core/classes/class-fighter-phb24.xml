@@ -478,8 +478,10 @@ Source:	Player's Handbook 2024 p. 94</text>
     </autolevel>
     <autolevel level="18">
       <feature optional="YES">
-        <!-- Name tag removed for testing parser error -->
-        <text>Your Superiority Die becomes a d12.&#10;Source: Player's Handbook 2024 p. 94</text>
+        <name>Level 18: Ultimate Combat Superiority (Battle Master)</name>
+        <text>Your Superiority Die becomes a d12.
+
+Source:	Player's Handbook 2024 p. 94</text>
         <subclass>Battle Master</subclass>
         <modifies_resource name="SuperiorityDice" new_die_type="d12"/>
       </feature>
