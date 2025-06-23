@@ -2143,8 +2143,7 @@
             <description>As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus Intelligence modifier and your Proficiency Bonus) or be moved 5 feet toward or away from you.</description>
             <target description="one creature you can see"/>
             <effect type="Movement" value="5_feet" direction_choice="toward_you|away_from_you">
-                <save type="Strength" dc_formula="8 + Intelligence_modifier + ProficiencyBonus"/>
-                <on_successful_save description="Target is not moved."/>
+                <save type="Strength" dc_formula="8 + Intelligence_modifier + ProficiencyBonus" effect_on_success="Target is not moved."/>
             </effect>
         </action_option>
     </benefit>
