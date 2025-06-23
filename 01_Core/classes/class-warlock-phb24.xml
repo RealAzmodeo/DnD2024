@@ -11,13 +11,13 @@
     <spellAbility>Charisma</spellAbility>
     <slotsReset>S</slotsReset>
     <autolevel level="1">
-      <slots>2,1</slots> <!-- Cantrips, Pact Magic Slots -->
+      <slots>2,1</slots>
     </autolevel>
     <autolevel level="2">
       <slots>2,2</slots>
     </autolevel>
     <autolevel level="3">
-      <slots>2,0,2</slots> <!-- Slot level increases, but # of slots is small -->
+      <slots>2,0,2</slots>
     </autolevel>
     <autolevel level="4">
       <slots>3,0,2</slots>
@@ -169,10 +169,6 @@ Level | Prepared Spells
 19 | 15
 
 Source:	Player's Handbook 2024 p. 153</text>
-        <!-- Pact Magic specific slot progression and SR refresh are key.
-             Spellcasting ability CHA is at class root.
-             Cantrips Known and Spells Prepared scale by table.
-        -->
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -213,8 +209,7 @@ Source:	Player's Handbook 2024 p. 155</text>
       </feature>
     </autolevel>
     <autolevel level="6">
-      <!-- Removed errant Clairvoyant Combatant counter -->
-    </autolevel>
+      </autolevel>
     <autolevel level="8" scoreImprovement="YES">
       <feature>
         <name>Level 8: Ability Score Improvement</name>
@@ -259,14 +254,14 @@ Source:	Player's Handbook 2024 p. 155</text>
 
 Source:	Player's Handbook 2024 p. 155</text>
         <mystic_arcanum level="6" spell_choice_from_list="Warlock"/>
-        <uses fixed="1" for_arcanum_spell="true"> <!-- Per arcanum spell level -->
+        <uses fixed="1" for_arcanum_spell="true">
           <recharge type="LR"/>
         </uses>
         <note text="gain_additional_arcanum_at_L13_L7spell_L15_L8spell_L17_L9spell"/>
         <note text="whenever_gain_Warlock_level_can_replace_one_arcanum_spell_with_another_Warlock_spell_of_same_level"/>
       </feature>
       <counter>
-        <name>Mystic Arcanum</name> <!-- This counter is general; specific arcanums track individually -->
+        <name>Mystic Arcanum</name>
         <value>1</value>
         <reset>L</reset>
       </counter>
@@ -483,7 +478,7 @@ Source:	Player's Handbook 2024 p. 159</text>
         <name>Level 14: Bewitching Magic (Archfey Patron)</name>
         <text>Your patron grants you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast Misty Step as part of the same action and without expending a spell slot.
 
-Source:	Player's Handbook 2024 p. 158</text> <!-- Page number seems off, likely p.159 or p.160 -->
+Source:	Player's Handbook 2024 p. 158</text>
         <subclass>Archfey Patron</subclass>
         <trigger text="immediately_after_you_cast_an_Enchantment_or_Illusion_spell_using_an_action_and_a_spell_slot"/>
         <effect description="can_cast_Misty_Step_as_part_of_the_same_action_and_without_expending_a_spell_slot"/>
@@ -935,10 +930,7 @@ Source:	Player's Handbook 2024 p. 163</text>
     <autolevel level="6">
       <feature optional="YES">
         <name>Level 6: Clairvoyant Combatant (Great Old One Patron)</name>
-        <text>When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
-	Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell s lot (no action required) to restore your use of it.
-
-Source:	Player's Handbook 2024 p. 163</text>
+        <text></text> <!-- Texto vaciado temporalmente -->
         <subclass>Great Old One Patron</subclass>
         <enhances_feature feature_name="Level 3: Awakened Mind (Great Old One Patron)">
           <trigger text="when_you_form_a_telepathic_bond_with_a_creature"/>

@@ -1,0 +1,1351 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compendium version="5" auto_indent="NO">
+  <spell>
+    <name>Animate Dead [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="10 feet">
+      <value>10</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a drop of blood, a piece of flesh, and a pinch of bone dust</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. The target becomes an Undead creature: a Skeleton if you chose bones or a Zombie if you chose a corpse.
+ On each of your turns, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete.
+ The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="240" />
+    <at_higher_levels>
+      <per_slot_above base_level="3">
+        <effect description="You animate or reassert control over two additional Undead creatures" />
+      </per_slot_above>
+      <text_block title="General Higher Level Effects">Each of the creatures must come from a different corpse or pile of bones</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Astral Projection [2024]</name>
+    <level>9</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="10 feet">
+      <value>10</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">for each of the spell's targets, one jacinth and one silver bar worth 100+ GP, all</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age.
+ A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut—which happens only when an effect states that it does so—the target's body and astral form both die.
+ A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane.
+ Any damage or other effects that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it.
+ When the spell ends for a target who isn't dead, the target reappears in its body and exits the state of suspended animation.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="243" />
+  </spell>
+  <spell>
+    <name>Bestow Curse [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You touch a creature, which must succeed on a Wisdom saving throw or become cursed for the duration. Until the curse ends, the target suffers one of the following effects of your choice:</p>
+      <p>• Choose one ability. The target has Disadvantage on ability checks and saving throws made with that ability.</p>
+      <p>• The target has Disadvantage on attack rolls against you.</p>
+      <p>• In combat, the target must succeed on a Wisdom saving throw at the start of each of its turns or be forced to take the Dodge action on that turn.</p>
+      <p>• If you deal damage to the target with an attack roll or a spell, the target takes an extra 1d8 Necrotic damage.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Cleric [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="246" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <specific_slot level="9">
+        <effect description="the spell lasts until dispelled" />
+      </specific_slot>
+      <text_block title="General Higher Level Effects">If you cast this spell using a level 4 spell slot, you can maintain Concentration on it for up to 10 minutes. If you use a level 5+ spell slot, the spell doesn't require Concentration, and the duration becomes 8 hours (level 5-6 slot) or 24 hours (level 7-8 slot)</text_block>
+    </at_higher_levels>
+    <saving_throw ability="Wisdom" />
+  </spell>
+  <spell>
+    <name>Blight [2024]</name>
+    <level>4</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A creature that you can see within range makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one. A Plant creature automatically fails the save.
+ Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies.</p>
+    </description>
+    <classes text_original="School: Necromancy, Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Druid [2024] (Arid Land)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="247" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>11d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>12d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>13d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Chill Touch [2024]</name>
+    <level>0</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d10" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Circle of Death [2024]</name>
+    <level>6</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="500" cost_text="worth 500+ GP">the powder of a crushed black pearl</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Negative energy ripples out in a 60-foot-radius Sphere from a point you choose within range. Each creature in that area makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="250" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>12d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>14d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="6">
+        <effect description="The damage increases by 2d8">
+          <roll_increase increase_dice="2d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Clone [2024]</name>
+    <level>8</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">a diamond and a sealable vessel worth 2,000+ GP that is large enough to hold the creature being cloned</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You touch a creature or at least 1 cubic inch of its flesh. An inert duplicate of that creature forms inside the vessel used in the spell's casting and finishes growing after 120 days; you choose whether the finished clone is the same age as the creature or younger. The clone remains inert and endures indefinitely while its vessel remains undisturbed.
+ If the original creature dies after the clone finishes forming, the creature's soul transfers to the clone if the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The creature's original remains, if any, become inert and can't be revived, since the creature's soul is elsewhere.</p>
+    </description>
+    <classes text_original="School: Necromancy, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="251" />
+  </spell>
+  <spell>
+    <name>Contagion [2024]</name>
+    <level>5</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="7 day">
+      <value>7</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability.
+ The target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.
+ Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Druid [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="256" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>11d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <saving_throw ability="Constitution" />
+  </spell>
+  <spell>
+    <name>Create Undead [2024]</name>
+    <level>6</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="10 feet">
+      <value>10</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="150">one black onyx stone for each corpse</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a Ghoul under your control (see the Monster Manual for its stat block).
+ As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.
+ The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="258" />
+    <at_higher_levels>
+      <specific_slot level="7">
+        <effect description="you can animate or reassert control over four Ghouls" />
+      </specific_slot>
+      <specific_slot level="8">
+        <effect description="you can animate or reassert control over five Ghouls or two Ghasts or Wights" />
+      </specific_slot>
+      <specific_slot level="9">
+        <effect description="you can animate or reassert control over six Ghouls, three Ghasts or Wights, or two Mummies. See the Monster Manual for these stat blocks" />
+      </specific_slot>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Eyebite [2024]</name>
+    <level>6</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>For the duration, your eyes become an inky void. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration.
+ On each of your turns until the spell ends, you can take a Magic action to target another creature but can't target a creature again if it has succeeded on a save against this casting of the spell.</p>
+      <p>Asleep: The target has the Unconscious condition. It wakes up if it takes any damage or if another creature takes an action to shake it awake.</p>
+      <p>Panicked: The target has the Frightened condition. On each of its turns, the Frightened target must take the Dash action and move away from you by the safest and shortest route available. If the target moves to a space at least 60 feet away from you where it can't see you, this effect ends.</p>
+      <p>Sickened: The target has the Poisoned condition.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="270" />
+  </spell>
+  <spell>
+    <name>False Life [2024]</name>
+    <level>1</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a drop of alcohol</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You gain 2d4 + 4 Temporary Hit Points.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="271" />
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+5</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+10</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+15</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+20</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+25</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+30</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+35</dice>
+    </roll>
+    <roll description="Temporary Hit Points" type="damage">
+      <dice>2d4+4+40</dice>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="You gain 5 additional Temporary Hit Points" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Feign Death [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <ritual available="true" />
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a pinch of graveyard dirt</material>
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.
+ For the duration, the target appears dead to outward inspection and to spells used to determine the target's status. The target has the Blinded and Incapacitated conditions, and its Speed is 0.
+ The target also has Resistance to all damage except Psychic damage, and it has Immunity to the Poisoned condition.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Cleric [2024], Druid [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="271" />
+  </spell>
+  <spell>
+    <name>Finger of Death [2024]</name>
+    <level>7</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You unleash negative energy toward a creature you can see within range. The target makes a Constitution saving throw, taking 7d8 + 30 Necrotic damage on a failed save or half as much damage on a successful one.
+ A Humanoid killed by this spell rises at the start of your next turn as a Zombie that follows your verbal orders.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="273" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>7d8+30</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Gentle Repose [2024]</name>
+    <level>2</level>
+    <school code="N">Necromancy</school>
+    <ritual available="true" />
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true">2 Copper Pieces</material>
+    </components>
+    <duration description="10 day">
+      <value>10</value>
+      <unit>day</unit>
+    </duration>
+    <description>
+      <p>You touch a corpse or other remains. For the duration, the target is protected from decay and can't become Undead.
+ The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as Raise Dead.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Wizard [2024], Paladin [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="278" />
+  </spell>
+  <spell>
+    <name>Harm [2024]</name>
+    <level>6</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You unleash virulent magic on a creature you can see within range. The target makes a Constitution saving throw. On a failed save, it takes 14d6 Necrotic damage, and its Hit Points maximum is reduced by an amount equal to the Necrotic damage it took. On a successful save, it takes half as much damage only. This spell can't reduce a target's Hit Points maximum below 1.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024]">
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="283" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>14d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Inflict Wounds [2024]</name>
+    <level>1</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024]">
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="288" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>8d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>9d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>10d10</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d10">
+          <roll_increase increase_dice="1d10" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Magic Jar [2024]</name>
+    <level>6</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="500" cost_text="worth 500+ GP">a gem, crystal, or reliquary</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's Material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or take Reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a Humanoid's body.
+ You can attempt to possess any Humanoid within 100 feet of you that you can see (creatures warded by a Protection from Evil and Good or Magic Circle spell can't be possessed). The target makes a Charisma saving throw. On a failed save, your soul enters the target's body, and the target's soul becomes trapped in the container. On a successful save, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours.
+ Once you possess a creature's body, you control it. Your Hit Points, Hit Point Dice, Strength, Dexterity, Constitution, Speed, and senses are replaced by the creature's. You otherwise keep your game statistics.
+ Meanwhile, the possessed creature's soul can perceive from the container using its own senses, but it can't move and it is Incapacitated.
+ While possessing a body, you can take a Magic action to return from the host body to the container if it is within 100 feet of you, returning the host creature's soul to its body. If the host body dies while you're in it, the creature dies, and you make a Charisma saving throw against your own spellcasting DC. On a success, you return to the container if it is within 100 feet of you. Otherwise, you die.
+ If the container is destroyed or the spell ends, your soul returns to your body. If your body is more than 100 feet away from you or if your body is dead, you die. If another creature's soul is in the container when it is destroyed, the creature's soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies.
+ When the spell ends, the container is destroyed.</p>
+    </description>
+    <classes text_original="School: Necromancy, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="294" />
+  </spell>
+  <spell>
+    <name>Poison Spray [2024]</name>
+    <level>0</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.</p>
+    </description>
+    <classes text_original="School: Necromancy, Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="306" />
+    <roll description="Poison Damage" type="damage">
+      <dice>1d12</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>2d12</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>3d12</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>4d12</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d12" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Raise Dead [2024]</name>
+    <level>5</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="500" cost_text="worth 500+ GP">a diamond</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>With a touch, you revive a dead creature if it has been dead no longer than 10 days and it wasn't Undead when it died.
+ The creature returns to life with 1 Hit Points. This spell also neutralizes any poisons that affected the creature at the time of death.
+ This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails.
+ Coming back from the dead is an ordeal. The target takes a -4 penalty to D20 Test. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Cleric [2024], Paladin [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="310" />
+  </spell>
+  <spell>
+    <name>Ray of Enfeeblement [2024]</name>
+    <level>2</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.
+ On a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.</p>
+    </description>
+    <classes text_original="School: Necromancy, Warlock [2024], Wizard [2024]">
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="311" />
+    <roll description="Subtract from Roll" type="effect">
+      <dice>1d8</dice>
+    </roll>
+    <saving_throw ability="Constitution" />
+  </spell>
+  <spell>
+    <name>Ray of Sickness [2024]</name>
+    <level>1</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Wizard [2024], Druid [2024] (Tropical Land)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Tropical Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="311" />
+    <roll description="Poison Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Reincarnate [2024]</name>
+    <level>5</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">rare oils</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You touch a dead Humanoid or a piece of one. If the creature has been dead no longer than 10 days, the spell forms a new body for it and calls the soul to enter that body. Roll 1d10 and consult the table below to determine the body's species, or the DM chooses another playable species.</p>
+      <p>Reincarnate:
+1d10 | Species
+1 | Aasimar
+2 | Dragonborn
+3 | Dwarf
+4 | Elf
+5 | Gnome
+6 | Goliath
+7 | Halfling
+8 | Human
+9 | Orc
+10 | Tiefling</p>
+    </description>
+    <classes text_original="School: Necromancy, Druid [2024]">
+      <class_name>Druid</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="311" />
+    <roll description="Species" type="damage">
+      <dice>1d10</dice>
+    </roll>
+  </spell>
+  <spell>
+    <name>Resurrection [2024]</name>
+    <level>7</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1000" cost_text="worth 1,000+ GP">a diamond</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>With a touch, you revive a dead creature that has been dead for no more than a century, didn't die of old age, and wasn't Undead when it died.
+ The creature returns to life with all its Hit Points. This spell also neutralizes any poisons that affected the creature at the time of death. This spell closes all mortal wounds and restores any missing body parts.
+ Coming back from the dead is an ordeal. The target takes a -4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.
+ Casting this spell to revive a creature that has been dead for 365 days or longer taxes you. Until you finish a Long Rest, you can't cast spells again, and you have Disadvantage on D20 Tests.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Cleric [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="312" />
+  </spell>
+  <spell>
+    <name>Revivify [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="300" cost_text="worth 300+ GP">a diamond</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You touch a creature that has died within the last minute. That creature revives with 1 Hit Points. This spell can't revive a creature that has died of old age, nor does it restore any missing body parts.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Druid [2024], Ranger [2024], Paladin [2024], Cleric [2024] (Life), Warlock [2024] (Celestial)">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Cleric" name="Life" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+    </classes>
+    <source name="Player's Handbook 2024" page="312" />
+  </spell>
+  <spell>
+    <name>Spare the Dying [2024]</name>
+    <level>0</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="15 feet">
+      <value>15</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Druid [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="318" />
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="30 feet" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Speak with Dead [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="10 feet">
+      <value>10</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>burning incense</material>
+    </components>
+    <duration description="10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>You grant the semblance of life to a corpse of your choice within range, allowing it to answer questions you pose. The corpse must have a mouth, and this spell fails if the deceased creature was Undead when it died. The spell also fails if the corpse was the target of this spell within the past 10 days.
+ Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are antagonistic toward it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.</p>
+    </description>
+    <classes text_original="School: Necromancy, Bard [2024], Cleric [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="318" />
+  </spell>
+  <spell>
+    <name>Summon Undead [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="300" cost_text="worth 300+ GP">a gilded skull</material>
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the Undead Spirit stat block. When you cast the spell, choose the creature's form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.
+ The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.</p>
+    </description>
+    <classes text_original="School: Necromancy, Warlock [2024], Wizard [2024]">
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="328" />
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">Use the spell slot's level for the spell's level in the stat block</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Toll the Dead [2024]</name>
+    <level>0</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="334" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d12</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>2d12</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d12</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d12</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8 or 2d12" />
+      </scaling>
+    </at_higher_levels>
+    <saving_throw ability="Wisdom" />
+  </spell>
+  <spell>
+    <name>True Resurrection [2024]</name>
+    <level>9</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="25000" cost_text="worth 25,000+ GP">diamonds</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. The creature is revived with all its Hit Points.
+ This spell closes all wounds, neutralizes any poison, cures all magical contagions, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs. If the creature was Undead, it is restored to its non-Undead form.
+ The spell can provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature then appears in an unoccupied space you choose within 10 feet of you.</p>
+    </description>
+    <classes text_original="School: Necromancy, Cleric [2024], Druid [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="336" />
+  </spell>
+  <spell>
+    <name>Vampiric Touch [2024]</name>
+    <level>3</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.
+ Until the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.</p>
+    </description>
+    <classes text_original="School: Necromancy, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="337" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="3">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Wrathful Smite [2024]</name>
+    <level>1</level>
+    <school code="N">Necromancy</school>
+    <casting_time description="Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike">
+      <value>1</value>
+      <unit>bonus_action</unit>
+      <condition>
+        <text>you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike</text>
+      </condition>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Necromancy, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="343" />
+    <roll description="Necrotic Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <roll description="Necrotic Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Necrotic</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+    <saving_throw ability="Wisdom" />
+  </spell>
+</compendium>

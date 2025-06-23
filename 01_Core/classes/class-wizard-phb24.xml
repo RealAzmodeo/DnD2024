@@ -723,9 +723,7 @@ Source:	Player's Handbook 2024 p. 175</text>
     <autolevel level="6">
       <feature optional="YES">
         <name>Level 6: Phantasmal Creatures (Illusionist)</name>
-        <text>You always have the Summon Beast and Summon Fey spells prepared. Whenever you cast either spell, you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot, but casting it without a slot halves the creature's Hit Points. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.
-
-Source:	Player's Handbook 2024 p. 175</text>
+        <text></text> <!-- Texto vaciado temporalmente -->
         <subclass>Illusionist</subclass>
         <grants_always_prepared_spell name="Summon Beast"/>
         <grants_always_prepared_spell name="Summon Fey"/>
@@ -736,14 +734,14 @@ Source:	Player's Handbook 2024 p. 175</text>
           </option_to_modify_casting>
           <can_cast_without_slot="true" version="Illusion">
             <effect description="casting_without_slot_halves_creatures_Hit_Points"/>
-            <uses fixed="1" per_spell="true"/> <!-- 1 use for Summon Beast, 1 for Summon Fey -->
+            <uses fixed="1" per_spell="true"/>
             <recharge type="LR"/>
           </can_cast_without_slot>
         </modifies_spell>
       </feature>
       <counter>
-        <name>Phantasmal Creatures</name> <!-- Tracks the free casts, one for each spell -->
-        <value>1</value> <!-- This counter is ambiguous, better handled by specific uses per spell if possible by application -->
+        <name>Phantasmal Creatures</name>
+        <value>1</value>
         <reset>L</reset>
         <subclass>Illusionist</subclass>
       </counter>
