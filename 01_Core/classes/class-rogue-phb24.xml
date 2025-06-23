@@ -718,7 +718,7 @@ Source:	Player's Handbook 2024 p. 136</text>
             <ability name="Homing Strikes">
               <trigger text="if_you_make_an_attack_roll_with_your_Psychic_Blade_and_miss_the_target"/>
               <action type="NoAction"/> <!-- Part of the miss -->
-              <effect description="roll_one_Psionic_Energy_Die_and_add_the_number_rolled_to_the_attack_roll"/>
+              <effect description="roll_one_Psionic_Energy_Die_and_add_number_rolled_to_the_attack_roll"/>
               <cost type="PsionicEnergyDie" value="1" expended_only_if_this_causes_the_attack_to_hit="true"/>
             </ability>
             <ability name="Psychic Teleportation">
@@ -906,4 +906,3 @@ Source:	Player's Handbook 2024 p. 137</text>
     </autolevel>
   </class>
 </compendium>
->>>>>>> REPLACE

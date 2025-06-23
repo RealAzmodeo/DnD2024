@@ -1,0 +1,3266 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compendium version="5" auto_indent="NO">
+  <spell>
+    <name>Acid Splash [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Druid [2024] (Tropical Land)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Tropical Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="239" />
+    <roll description="Acid Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d6" />
+      </scaling>
+    </at_higher_levels>
+    <saving_throw ability="Dexterity" />
+  </spell>
+  <spell>
+    <name>Bigby's Hand [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>an eggshell and a glove</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand.
+ The hand is an object that has AC 20 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space.
+ When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects:</p>
+      <p>Clenched Fist: The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage.</p>
+      <p>Forceful Hand: The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it.</p>
+      <p>Grasping Hand: The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier.</p>
+      <p>Interposing Hand: The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as Difficult Terrain for your enemies.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="246" />
+    <roll description="Force Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="5">
+        <effect description="The damage of the Clenched Fist increases by 2d8 and the damage of the Grasping Hand increases by 2d6">
+          <roll_increase increase_dice="2d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+    <saving_throw ability="Strength" />
+  </spell>
+  <spell>
+    <name>Blade Barrier [2024]</name>
+    <level>6</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a wall of whirling blades made of magical energy. The wall appears within range and lasts for the duration. You make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides Three-Quarters Cover, and its space is Difficult Terrain.
+ Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's space or ends it turn there. A creature makes that save only once per turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024]">
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="247" />
+    <roll description="Force Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Blinding Smite [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike">
+      <value>1</value>
+      <unit>bonus_action</unit>
+      <condition>
+        <text>you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike</text>
+      </condition>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success.</p>
+    </description>
+    <classes text_original="School: Evocation, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="247" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="3">
+        <effect description="The extra damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Burning Hands [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="15 feet">
+      <value>15</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.
+ Flammable objects in the Cone that aren't being worn or carried start burning.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Cleric [2024] (Light), Druid [2024] (Arid Land), Warlock [2024] (Fiend)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="248" />
+    <roll description="Fire Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Chain Lightning [2024]</name>
+    <level>6</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>three silver pins</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You launch a lightning bolt toward a target you can see within range. Three bolts then leap from that target to as many as three other targets of your choice, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
+ Each target makes a Dexterity saving throw, taking 10d8 Lightning damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+    <roll description="Lightning Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="6">
+        <effect description="One additional bolt leaps from the first target to another target" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Chromatic Orb [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="50" cost_text="worth 50+ GP">a diamond</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type.
+ If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Sorcerer [2024] (Draconic)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Draconic" />
+    </classes>
+    <source name="Player's Handbook 2024" page="249" />
+    <roll description="Elemental Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>11d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+      <text_block title="General Higher Level Effects">The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Cone of Cold [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a small crystal or glass cone</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You unleash a blast of cold air. Each creature in a 60-foot Cone originating from you makes a Constitution saving throw, taking 8d8 Cold damage on a failed save or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Polar Land)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Polar Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="253" />
+    <roll description="Cold Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>11d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>12d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="5">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Continual Flame [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="50" cost_text="worth 50+ GP">ruby dust</material>
+    </components>
+    <duration description="">
+      <value>special</value>
+    </duration>
+    <description>
+      <p>A flame springs from an object that you touch. The effect casts Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. It looks like a regular flame, but it creates no heat and consumes no fuel. The flame can be covered or hidden but not smothered or quenched.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Druid [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="256" />
+  </spell>
+  <spell>
+    <name>Crusader's Mantle [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You radiate a magical aura in a 30-foot Emanation. While in the aura, you and your allies each deal an extra 1d4 Radiant damage when hitting with a weapon or an Unarmed Strike.</p>
+    </description>
+    <classes text_original="School: Evocation, Paladin [2024], Cleric [2024] (War)">
+      <class_name>Paladin</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="War" />
+    </classes>
+    <source name="Player's Handbook 2024" page="259" />
+    <roll description="" type="damage">
+      <dice>1d4</dice>
+    </roll>
+  </spell>
+  <spell>
+    <name>Darkness [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <material>bat fur and a piece of coal</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it.
+ Alternatively, you cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the Darkness.
+ If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="260" />
+  </spell>
+  <spell>
+    <name>Daylight [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>For the duration, sunlight spreads from a point within range and fills a 60-foot-radius Sphere. The sunlight's area is Bright Light and sheds Dim Light for an additional 60 feet.
+ Alternatively, you cast the spell on an object that isn't being worn or carried, causing the sunlight to fill a 60-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the sunlight.
+ If any of this spell's area overlaps with an area of Darkness created by a spell of level 3 or lower, that other spell is dispelled.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Druid [2024], Ranger [2024], Sorcerer [2024], Paladin [2024], Cleric [2024] (Light), Warlock [2024] (Celestial)">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+    </classes>
+    <source name="Player's Handbook 2024" page="260" />
+  </spell>
+  <spell>
+    <name>Delayed Blast Fireball [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a ball of bat guano and sulfur</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one.
+ The spell's base damage is 12d6, and the damage increases by 1d6 whenever your turn ends and the spell hasn't ended.
+ If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends, and the bead explodes.
+ When the bead explodes, flammable objects in the explosion that aren't being worn or carried start burning.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="261" />
+    <roll description="Fire Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>13d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>14d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="7">
+        <effect description="The base damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Destructive Wave [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Destructive energy ripples outward from you in a 30-foot Emanation. Each creature you choose in the Emanation makes a Constitution saving throw. On a failed save, a target takes 5d6 Thunder damage and 5d6 Radiant or Necrotic damage (your choice) and has the Prone condition. On a successful save, a target takes half as much damage only.</p>
+    </description>
+    <classes text_original="School: Evocation, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="261" />
+    <roll description="Thunder Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Thunder and Radiant Damage" type="damage">
+      <dice>5d6+5d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Divine Word [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action">
+      <value>1</value>
+      <unit>bonus_action</unit>
+    </casting_time>
+    <range description="30 feet">
+      <value>30</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 Hit Points or fewer suffers an effect based on its current Hit Points, as shown in the Divine Word Effects table. Regardless of its Hit Points, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to the current plane for 24 hours by any means short of a Wish spell.</p>
+      <p>Divine Word Effects:
+Hit Points | Effect
+0-20 | The target dies.
+21-30 | The target has the Blinded, Deafened, and Stunned conditions for 1 hour.
+31-40 | The target has the Blinded and Deafened conditions for 10 minutes.
+41-50 | The target has the Deafened condition for 1 minute.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024]">
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="265" />
+  </spell>
+  <spell>
+    <name>Eldritch Blast [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage.</p>
+    </description>
+    <classes text_original="School: Evocation, Warlock [2024]">
+      <class_name>Warlock</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="267" />
+    <roll description="Force Damage" type="damage">
+      <dice>1d10</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>1d10+SPELL</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <at_higher_levels>
+      <text_block title="Cantrip Upgrade">The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Faerie Fire [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can't benefit from the Invisible condition.
+ Attack rolls against an affected creature or object have Advantage if the attacker can see it.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Druid [2024], Cleric [2024] (Light), Warlock [2024] (Archfey)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Archfey" />
+    </classes>
+    <source name="Player's Handbook 2024" page="271" />
+  </spell>
+  <spell>
+    <name>Fire Bolt [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Druid [2024] (Arid Land)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="274" />
+    <roll description="Fire Damage" type="damage">
+      <dice>1d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d10" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Fire Shield [2024]</name>
+    <level>4</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of phosphorus or a firefly</material>
+    </components>
+    <duration description="10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>Wispy flames wreathe your body for the duration, shedding Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.
+ The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you Resistance to Cold damage, and the chill shield grants you Resistance to Fire damage.
+ In addition, whenever a creature within 5 feet of you hits you with a melee attack roll, the shield erupts with flame. The attacker takes 2d8 Fire damage from a warm shield or 2d8 Cold damage from a chill shield.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (War), Warlock [2024] (Fiend)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="War" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="274" />
+    <roll description="Fire Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Fire Storm [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A storm of fire appears within range. The area of the storm consists of up to ten 10-foot Cubes, which you arrange as you like. Each Cube must be contiguous with at least one other Cube. Each creature in the area makes a Dexterity saving throw, taking 7d10 Fire damage on a failed save or half as much damage on a successful one.
+ Flammable objects in the area that aren't being worn or carried start burning.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Druid [2024], Sorcerer [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="275" />
+    <roll description="Fire Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Fireball [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a ball of bat guano and sulfur</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
+ Flammable objects in the area that aren't being worn or carried start burning.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Cleric [2024] (Light), Druid [2024] (Arid Land), Warlock [2024] (Fiend)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="274" />
+    <roll description="Fire Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>13d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>14d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="3">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Flame Blade [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action">
+      <value>1</value>
+      <unit>bonus_action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a sumac leaf</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke it again as a Bonus Action.
+ As a Magic action, you can make a melee spell attack with the fiery blade. On a hit, the target takes Fire damage equal to 3d6 plus your spellcasting ability modifier.
+ The flaming blade sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024]">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="275" />
+    <roll description="Fire Damage" type="damage">
+      <dice>3d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>4d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>5d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>6d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>7d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>8d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>10d6+SPELL</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Flame Strike [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a pinch of sulfur</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A vertical column of brilliant fire roars down from above. Each creature in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range makes a Dexterity saving throw, taking 5d6 Fire damage and 5d6 Radiant damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Cleric [2024] (Light), Paladin [2024] (Devotion)">
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Devotion" />
+    </classes>
+    <source name="Player's Handbook 2024" page="275" />
+    <roll description="Fire or Radiant Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire or Radiant Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire or Radiant Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire or Radiant Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire or Radiant Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire and Radiant Damage" type="damage">
+      <dice>5d6+5d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire and Radiant Damage" type="damage">
+      <dice>6d6+6d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire and Radiant Damage" type="damage">
+      <dice>7d6+7d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire and Radiant Damage" type="damage">
+      <dice>8d6+8d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire and Radiant Damage" type="damage">
+      <dice>9d6+9d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="5">
+        <effect description="The Fire damage and the Radiant damage increase by 1d6" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Forcecage [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="100 feet">
+      <value>100</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material consumed="true" cost_gp="1500" cost_text="worth 1,500+ GP">ruby dust</material>
+    </components>
+    <duration description="Concentration, up to 1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>An immobile, Invisible, Cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.
+ A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart. A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.
+ When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside it, are pushed away from the center of the area until they are completely outside it.
+ A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave, it must first make a Charisma saving throw. On a successful save, the creature can use that magic to exit the cage. On a failed save, the creature doesn't exit the cage and wastes the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.
+ This spell can't be dispelled by Dispel Magic.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="276" />
+  </spell>
+  <spell>
+    <name>Fount of Moonlight [2024]</name>
+    <level>4</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.
+ Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit.
+ In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Druid [2024], Druid [2024] (Moon)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Moon" />
+    </classes>
+    <source name="Player's Handbook 2024" page="277" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Guiding Bolt [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="1 round">
+      <value>1</value>
+      <unit>round</unit>
+    </duration>
+    <description>
+      <p>You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Cleric [2024] (War), Paladin [2024] (Glory), Warlock [2024] (Celestial)">
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="War" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Glory" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+    </classes>
+    <source name="Player's Handbook 2024" page="282" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Gust of Wind [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a legume seed</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A Line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the duration. Each creature in the Line must succeed on a Strength saving throw or be pushed 15 feet away from you in a direction following the Line. A creature that ends its turn in the Line must make the same save.
+ Any creature in the Line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.
+ The gust disperses gas or vapor, and it extinguishes candles and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.
+ As a Bonus Action on your later turns, you can change the direction in which the Line blasts from you.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Sea)">
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Sea" />
+    </classes>
+    <source name="Player's Handbook 2024" page="282" />
+    <saving_throw ability="Strength" />
+  </spell>
+  <spell>
+    <name>Hellish Rebuke [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="1 reaction, which you take in response to taking damage from a creature that you can see within 60 feet of yourself">
+      <value>1</value>
+      <unit>reaction</unit>
+      <condition>
+        <text>you take in response to taking damage from a creature that you can see within 60 feet of yourself</text>
+      </condition>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking 2d10 Fire damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Evocation, Warlock [2024]">
+      <class_name>Warlock</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="284" />
+    <roll description="Fire Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>8d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>10d10</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d10">
+          <roll_increase increase_dice="1d10" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Ice Storm [2024]</name>
+    <level>4</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="300 feet">
+      <value>300</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a mitten</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Hail falls in a 20-foot-radius, 40-foot-high Cylinder centered on a point within range. Each creature in the Cylinder makes a Dexterity saving throw. A creature takes 2d10 Bludgeoning damage and 4d6 Cold damage on a failed save or half as much damage on a successful one.
+ Hailstones turn ground in the Cylinder into Difficult Terrain until the end of your next turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Polar Land), Druid [2024] (Sea), Paladin [2024] (Ancient)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Polar Land" />
+      <subclass_restriction for_class="Druid" name="Sea" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Ancient" />
+    </classes>
+    <source name="Player's Handbook 2024" page="287" />
+    <roll description="Cold Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The Bludgeoning damage increases by 1d10">
+          <roll_increase increase_dice="1d10" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Jallarzi's Storm of Radiance [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a pinch of phosphorus</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the Blinded and Deafened conditions, and they can't cast spells with a Verbal component.
+ When the storm appears, each creature in it makes a Constitution saving throw, taking 2d10 Radiant damage and 2d10 Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Warlock [2024], Wizard [2024]">
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="289" />
+    <roll description="Radiant or Thunder Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant or Thunder Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant or Thunder Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant or Thunder Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant or Thunder Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant and Thunder Damage" type="damage">
+      <dice>2d10+2d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant and Thunder Damage" type="damage">
+      <dice>3d10+3d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant and Thunder Damage" type="damage">
+      <dice>4d10+4d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant and Thunder Damage" type="damage">
+      <dice>5d10+5d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant and Thunder Damage" type="damage">
+      <dice>6d10+6d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="5">
+        <effect description="The Radiant and Thunder damage increase by 1d10" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Leomund's Tiny Hut [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <ritual available="true" />
+    <casting_time description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a crystal bead</material>
+    </components>
+    <duration description="8 hour">
+      <value>8</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>A 10-foot Emanation springs into existence around you and remains stationary for the duration. The spell fails when you cast it if the Emanation isn't big enough to fully encapsulate all creatures in its area.
+ Creatures and objects within the Emanation when you cast the spell can move through it freely. All other creatures and objects are barred from passing through it. Spells of level 3 or lower can't be cast through it, and the effects of such spells can't extend into it.
+ The atmosphere inside the Emanation is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to have Dim Light or Darkness (no action required). The Emanation is opaque from the outside and of any color you choose, but it's transparent from the inside.
+ The spell ends early if you leave the Emanation or if you cast it again.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="291" />
+  </spell>
+  <spell>
+    <name>Light [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <material>a firefly or phosphorescent moss</material>
+    </components>
+    <duration description="1 hour">
+      <value>1</value>
+      <unit>hour</unit>
+    </duration>
+    <description>
+      <p>You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.
+ Covering the object with something opaque blocks the light. The spell ends if you cast it again.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Cleric [2024], Sorcerer [2024], Wizard [2024], Warlock [2024] (Celestial)">
+      <class_name>Bard</class_name>
+      <class_name>Cleric</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+    </classes>
+    <source name="Player's Handbook 2024" page="292" />
+  </spell>
+  <spell>
+    <name>Lightning Bolt [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="100 feet">
+      <value>100</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a bit of fur and a crystal rod</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A stroke of lightning forming a 100-foot-long, 5-foot-wide Line blasts out from you in a direction you choose. Each creature in the Line makes a Dexterity saving throw, taking 8d6 Lightning damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Druid [2024] (Temperate Land), Druid [2024] (Sea)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Temperate Land" />
+      <subclass_restriction for_class="Druid" name="Sea" />
+    </classes>
+    <source name="Player's Handbook 2024" page="292" />
+    <roll description="Lightning Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>13d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>14d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="3">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Magic Missile [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="295" />
+    <roll description="Force Damage" type="damage">
+      <dice>1d4+1</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The spell creates one more dart" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Melf's Acid Arrow [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>powdered rhubarb leaf</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.</p>
+    </description>
+    <classes text_original="School: Evocation, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="297" />
+    <roll description="Acid Damage" type="damage">
+      <dice>4d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>5d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>6d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>7d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>8d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>9d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>10d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>11d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="The damage (both initial and later) increases by 1d4">
+          <roll_increase increase_dice="1d4" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Meteor Swarm [2024]</name>
+    <level>9</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="1 Miles">
+      <value>1</value>
+      <unit>mile</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius Sphere centered on each of those points makes a Dexterity saving throw. A creature takes 20d6 Fire damage and 20d6 Bludgeoning damage on a failed save or half as much damage on a successful one. A creature in the area of more than one fiery Sphere is affected only once.
+ A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area, and the object starts burning if it's flammable.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="298" />
+    <roll description="Fire Damage" type="damage">
+      <dice>20d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>20d6</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+    <roll description="Fire and Bludgeoning Damage" type="damage">
+      <dice>20d6+20d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Moonbeam [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a moonseed leaf</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high Cylinder centered on a point within range. Until the spell ends, Dim Light fills the Cylinder, and you can take a Magic action on later turns to move the Cylinder up to 60 feet.
+ When the Cylinder appears, each creature in it makes a Constitution saving throw. On a failed save, a creature takes 2d10 Radiant damage, and if the creature is shape-shifted (as a result of the Polymorph spell, for example), it reverts to its true form and can't shape-shift until it leaves the Cylinder. On a successful save, a creature takes half as much damage only. A creature also makes this save when the spell's area moves into its space and when it enters the spell's area or ends its turn there. A creature makes this save only once per turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Druid [2024] (Moon), Paladin [2024] (Ancient)">
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Moon" />
+      <class_name>Paladin</class_name>
+      <subclass_restriction for_class="Paladin" name="Ancient" />
+    </classes>
+    <source name="Player's Handbook 2024" page="300" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>2d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>3d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>5d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>6d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>7d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>8d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>9d10</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="The damage increases by 1d10">
+          <roll_increase increase_dice="1d10" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Mordenkainen's Sword [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="90 feet">
+      <value>90</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material cost_gp="250" cost_text="worth 250+ GP">a miniature sword</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a spectral sword that hovers within range. It lasts for the duration.
+ When the sword appears, you make a melee spell attack against a target within 5 feet of the sword. On a hit, the target takes Force damage equal to 4d12 plus your spellcasting ability modifier.
+ On your later turns, you can take a Bonus Action to move the sword up to 30 feet to a spot you can see and repeat the attack against the same target or a different one.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="302" />
+    <roll description="Force Damage" type="damage">
+      <dice>4d12+%0</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Otiluke's Freezing Sphere [2024]</name>
+    <level>6</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="300 feet">
+      <value>300</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a miniature crystal sphere</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A frigid globe streaks from you to a point of your choice within range, where it explodes in a 60-foot-radius Sphere. Each creature in that area makes a Constitution saving throw, taking 10d6 Cold damage on failed save or half as much damage on a successful one.
+ If the globe strikes a body of water, it freezes the water to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice and have the Restrained condition. A trapped creature can take an action to make a Strength (Athletics) check against your spell save DC to break free.
+ You can refrain from firing the globe after completing the spell's casting. If you do so, a globe about the size of a sling bullet, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as a normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="302" />
+    <roll description="Cold Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>11d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>13d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="6">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Prismatic Spray [2024]</name>
+    <level>7</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Eight rays of light flash from you in a 60-foot Cone. Each creature in the Cone makes a Dexterity saving throw. For each target, roll 1d8 to determine which color ray affects it, consulting the Prismatic Rays table.</p>
+      <p>Prismatic Rays:
+1d8 | Ray
+1 | Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage.
+2 | Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage.
+3 | Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage.
+4 | Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage.
+5 | Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage.
+6 | Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.
+7 | Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM's choice).
+8 | Special. The target is struck by two rays. Roll twice, rerolling any 8.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="307" />
+    <roll description="Ray" type="damage">
+      <dice>1d8</dice>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Poison Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Poison</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Ray of Frost [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Druid [2024] (Polar Land), Druid [2024] (Sea)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Polar Land" />
+      <subclass_restriction for_class="Druid" name="Sea" />
+    </classes>
+    <source name="Player's Handbook 2024" page="311" />
+    <roll description="Cold Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Sacred Flame [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Warlock [2024] (Celestial)">
+      <class_name>Cleric</class_name>
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+    </classes>
+    <source name="Player's Handbook 2024" page="313" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8" />
+      </scaling>
+    </at_higher_levels>
+    <saving_throw ability="Dexterity" />
+  </spell>
+  <spell>
+    <name>Scorching Ray [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You hurl three fiery rays. You can hurl them at one target within range or at several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 Fire damage.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Cleric [2024] (Light), Warlock [2024] (Fiend)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="314" />
+    <roll description="Fire Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="You create one additional ray" />
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Searing Smite [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action, Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike">
+      <value>1</value>
+      <unit>bonus_action</unit>
+      <condition>
+        <text>you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</text>
+      </condition>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+    </duration>
+    <description>
+      <p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p>
+    </description>
+    <classes text_original="School: Evocation, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="314" />
+    <roll description="Fire Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="All the damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Shatter [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a chip of mica</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>A loud noise erupts from a point of your choice within range. Each creature in a 10-foot-radius Sphere centered there makes a Constitution saving throw, taking 3d8 Thunder damage on a failed save or half as much damage on a successful one. A Construct has Disadvantage on the save.
+ A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Sea)">
+      <class_name>Bard</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Sea" />
+    </classes>
+    <source name="Player's Handbook 2024" page="316" />
+    <roll description="Thunder Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="2">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Shocking Grasp [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Touch">
+      <value>touch</value>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024], Druid [2024] (Temperate Land)">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Temperate Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="316" />
+    <roll description="Lightning Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Sorcerous Burst [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
+ If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024]">
+      <class_name>Sorcerer</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="318" />
+    <roll description="Elemental Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <roll description="Elemental Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Elemental (Choose)</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Spiritual Weapon [2024]</name>
+    <level>2</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action">
+      <value>1</value>
+      <unit>bonus_action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against one creature within 5 feet of the force. On a hit, the target takes Force damage equal to 1d8 plus your spellcasting ability modifier.
+ As a Bonus Action on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Cleric [2024] (War)">
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="War" />
+    </classes>
+    <source name="Player's Handbook 2024" page="319" />
+    <roll description="Force Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <roll description="Force Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Force</damage_type>
+    </roll>
+    <at_higher_levels>
+      <text_block title="General Higher Level Effects">The damage increases by 1d8 for every slot level above 2</text_block>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Starry Wisp [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Druid [2024], Druid [2024] (Moon)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <subclass_restriction for_class="Druid" name="Moon" />
+    </classes>
+    <source name="Player's Handbook 2024" page="320" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>1d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d8" />
+      </scaling>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Sunbeam [2024]</name>
+    <level>6</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a magnifying glass</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You launch a sunbeam in a 5-foot-wide, 60-foot-long Line. Each creature in the Line makes a Constitution saving throw. On a failed save, a creature takes 6d8 Radiant damage and has the Blinded condition until the start of your next turn. On a successful save, it takes half as much damage only.
+ Until the spell ends, you can take a Magic action to create a new Line of radiance.
+ For the duration, a mote of brilliant radiance shines above you. It sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. This light is sunlight.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Druid [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="329" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Sunburst [2024]</name>
+    <level>8</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a piece of sunstone</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Brilliant sunlight flashes in a 60-foot-radius Sphere centered on a point you choose within range. Each creature in the Sphere makes a Constitution saving throw. On a failed save, a creature takes 12d6 Radiant damage and has the Blinded condition for 1 minute. On a successful save, it takes half as much damage only.
+ A creature Blinded by this spell makes another Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
+ This spell dispels Darkness in its area that was created by any spell.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024], Druid [2024], Sorcerer [2024], Wizard [2024]">
+      <class_name>Cleric</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="329" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Thunderclap [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100 feet away.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Druid [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="333" />
+    <roll description="Thunder Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d6" />
+      </scaling>
+    </at_higher_levels>
+    <saving_throw ability="Constitution" />
+  </spell>
+  <spell>
+    <name>Thunderous Smite [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike">
+      <value>1</value>
+      <unit>bonus_action</unit>
+      <condition>
+        <text>you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</text>
+      </condition>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition.</p>
+    </description>
+    <classes text_original="School: Evocation, Paladin [2024]">
+      <class_name>Paladin</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="334" />
+    <roll description="Thunder Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>9d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d6">
+          <roll_increase increase_dice="1d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+    <saving_throw ability="Strength" />
+  </spell>
+  <spell>
+    <name>Thunderwave [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="15 feet">
+      <value>15</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.
+ In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p>
+    </description>
+    <classes text_original="School: Evocation, Bard [2024], Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Sea)">
+      <class_name>Bard</class_name>
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Sea" />
+    </classes>
+    <source name="Player's Handbook 2024" page="334" />
+    <roll description="Thunder Damage" type="damage">
+      <dice>2d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>3d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <roll description="Thunder Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Thunder</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Vitriolic Sphere [2024]</name>
+    <level>4</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="150 feet">
+      <value>150</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a drop bile</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="337" />
+    <roll description="Acid Damage" type="damage">
+      <dice>5d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>10d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>12d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>14d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>16d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>18d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <roll description="Acid Damage" type="damage">
+      <dice>20d4</dice>
+      <damage_type>Acid</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The initial damage increases by 2d4">
+          <roll_increase increase_dice="2d4" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Wall of Fire [2024]</name>
+    <level>4</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a piece of charcoal</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.
+ When the wall appears, each creature in its area makes a Dexterity saving throw, taking 5d8 Fire damage on a failed save or half as much damage on a successful one.
+ One side of the wall, selected by you when you cast this spell, deals 5d8 Fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (Light), Warlock [2024] (Celestial), Warlock [2024] (Fiend)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <class_name>Cleric</class_name>
+      <subclass_restriction for_class="Cleric" name="Light" />
+      <class_name>Warlock</class_name>
+      <subclass_restriction for_class="Warlock" name="Celestial" />
+      <subclass_restriction for_class="Warlock" name="Fiend" />
+    </classes>
+    <source name="Player's Handbook 2024" page="338" />
+    <roll description="Fire Damage" type="damage">
+      <dice>5d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>6d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>7d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>8d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>9d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <roll description="Fire Damage" type="damage">
+      <dice>10d8</dice>
+      <damage_type>Fire</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="4">
+        <effect description="The damage increases by 1d8">
+          <roll_increase increase_dice="1d8" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Wall of Force [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a shard of glass</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side).
+ Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by Dispel Magic. A Disintegrate spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane and blocks ethereal travel through the wall.</p>
+    </description>
+    <classes text_original="School: Evocation, Wizard [2024], Sorcerer [2024] (Clockwork)">
+      <class_name>Wizard</class_name>
+      <class_name>Sorcerer</class_name>
+      <subclass_restriction for_class="Sorcerer" name="Clockwork" />
+    </classes>
+    <source name="Player's Handbook 2024" page="338" />
+  </spell>
+  <spell>
+    <name>Wall of Ice [2024]</name>
+    <level>6</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a piece of quartz</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.
+ If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side) and makes a Dexterity saving throw, taking 10d6 Cold damage on a failed save or half as much damage on a successful one.
+ The wall is an object that can be damaged and thus breached. It has AC 12 and 30 Hit Points per 10-foot section, and it has Immunity to Cold, Poison, and Psychic damage and Vulnerability to Fire damage. Reducing a 10-foot section of wall to 0 Hit Points destroys it and leaves behind a sheet of frigid air in the space the wall occupied.
+ A creature moving through the sheet of frigid air for the first time on a turn makes a Constitution saving throw, taking 5d6 Cold damage on a failed save or half as much damage on a successful one.</p>
+    </description>
+    <classes text_original="School: Evocation, Wizard [2024]">
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="339" />
+    <roll description="Cold Damage" type="damage">
+      <dice>10d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>12d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>14d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>16d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>5d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>6d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>7d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <roll description="Cold Damage" type="damage">
+      <dice>8d6</dice>
+      <damage_type>Cold</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="6">
+        <effect description="The damage the wall deals when it appears increases by 2d6 and the damage from passing through the sheet of frigid air increases by 1d6">
+          <roll_increase increase_dice="2d6" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Wall of Stone [2024]</name>
+    <level>5</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a cube of granite</material>
+    </components>
+    <duration description="Concentration, up to 10 minute">
+      <value>10</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.
+ If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its Reaction to move up to its Speed so that it is no longer enclosed by the wall.
+ The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on a firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.
+ If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create battlements and the like.
+ The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 Hit Points per inch of thickness, and it has Immunity to Poison and Psychic damage. Reducing a panel to 0 Hit Points destroys it and might cause connected panels to collapse at the DM's discretion.
+ If you maintain your Concentration on this spell for its full duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Arid Land)">
+      <class_name>Druid</class_name>
+      <class_name>Sorcerer</class_name>
+      <class_name>Wizard</class_name>
+      <subclass_restriction for_class="Druid" name="Arid Land" />
+    </classes>
+    <source name="Player's Handbook 2024" page="339" />
+  </spell>
+  <spell>
+    <name>Wind Wall [2024]</name>
+    <level>3</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="120 feet">
+      <value>120</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a fan and a feather</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
+ When the wall appears, each creature in its area makes a Strength saving throw, taking 4d8 Bludgeoning damage on a failed save or half as much damage on a successful one.
+ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and miss automatically. Boulders hurled by Giants or siege engines, and similar projectiles, are unaffected. Creatures in gaseous form can't pass through it.</p>
+    </description>
+    <classes text_original="School: Evocation, Druid [2024], Ranger [2024]">
+      <class_name>Druid</class_name>
+      <class_name>Ranger</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="341" />
+    <roll description="Bludgeoning Damage" type="damage">
+      <dice>4d8</dice>
+      <damage_type>Bludgeoning</damage_type>
+    </roll>
+  </spell>
+  <spell>
+    <name>Witch Bolt [2024]</name>
+    <level>1</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="60 feet">
+      <value>60</value>
+      <unit>feet</unit>
+    </range>
+    <components>
+      <verbal />
+      <somatic />
+      <material>a twig struck by lightning</material>
+    </components>
+    <duration description="Concentration, up to 1 minute">
+      <value>1</value>
+      <unit>minute</unit>
+      <concentration available="true" up_to="true" />
+    </duration>
+    <description>
+      <p>A beam of crackling energy lances toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against it. On a hit, the target takes 2d12 Lightning damage.
+ On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.
+ The spell ends if the target is ever outside the spell's range or if it has Total Cover from you.</p>
+    </description>
+    <classes text_original="School: Evocation, Sorcerer [2024], Warlock [2024], Wizard [2024]">
+      <class_name>Sorcerer</class_name>
+      <class_name>Warlock</class_name>
+      <class_name>Wizard</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="343" />
+    <roll description="Lightning Damage" type="damage">
+      <dice>2d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>3d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>4d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>5d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>6d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>7d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>8d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>9d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <roll description="Lightning Damage" type="damage">
+      <dice>10d12</dice>
+      <damage_type>Lightning</damage_type>
+    </roll>
+    <at_higher_levels>
+      <per_slot_above base_level="1">
+        <effect description="The initial damage increases by 1d12">
+          <roll_increase increase_dice="1d12" />
+        </effect>
+      </per_slot_above>
+    </at_higher_levels>
+  </spell>
+  <spell>
+    <name>Word of Radiance [2024]</name>
+    <level>0</level>
+    <school code="EV">Evocation</school>
+    <casting_time description="Action">
+      <value>1</value>
+      <unit>action</unit>
+    </casting_time>
+    <range description="Self">
+      <value>self</value>
+    </range>
+    <components>
+      <verbal />
+      <material>a sunburst token</material>
+    </components>
+    <duration description="Instantaneous">
+      <value>instantaneous</value>
+    </duration>
+    <description>
+      <p>Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.</p>
+    </description>
+    <classes text_original="School: Evocation, Cleric [2024]">
+      <class_name>Cleric</class_name>
+    </classes>
+    <source name="Player's Handbook 2024" page="343" />
+    <roll description="Radiant Damage" type="damage">
+      <dice>1d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>2d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>3d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <roll description="Radiant Damage" type="damage">
+      <dice>4d6</dice>
+      <damage_type>Radiant</damage_type>
+    </roll>
+    <at_higher_levels>
+      <scaling level="5">
+        <effect description="2d6" />
+      </scaling>
+    </at_higher_levels>
+    <saving_throw ability="Constitution" />
+  </spell>
+</compendium>
