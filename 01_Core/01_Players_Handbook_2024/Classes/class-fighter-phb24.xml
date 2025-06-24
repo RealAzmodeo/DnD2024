@@ -324,6 +324,31 @@ Superiority Dice. You have four Superiority Dice. which are d8s. A Superiority D
 Saving Throws. If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and Proficiency Bonus.
 
 Source:	Player's Handbook 2024 p. 93</text>
+        <!-- ADDED STRUCTURED DATA -->
+        <resource name="Superiority Dice" value_formula="d8" reset_on="ShortOrLongRest">
+            <count initial="4">
+                <scaling level="7" count="5"/>
+                <scaling level="15" count="6"/>
+            </count>
+            <die_size_scaling>
+                <scaling level="10" die_size="d10"/>
+                <scaling level="18" die_size="d12"/>
+            </die_size_scaling>
+            <notes>You regain all expended Superiority Dice when you finish a Short or Long Rest. Initial dice are d8s, improving at level 10 and 18.</notes>
+        </resource>
+        <maneuver_save_dc formula="8 + @prof + max(@strMod|@dexMod)">
+            <note>The ability modifier used is Strength or Dexterity (your choice).</note>
+        </maneuver_save_dc>
+        <learns_maneuvers>
+            <initial_count count="3"/>
+            <additional_learned level="7" count="2"/>
+            <additional_learned level="10" count="2"/>
+            <additional_learned level="15" count="2"/>
+            <can_replace_on_new_maneuver_learned count="1"/>
+            <source_list_note>Maneuvers are chosen from the list provided in maneuvers.xml.</source_list_note>
+        </learns_maneuvers>
+        <maneuvers_list source_file="maneuvers.xml"/>
+        <!-- END ADDED STRUCTURED DATA -->
       </feature>
       <feature optional="YES">
         <name>Level 3: Student of War (Battle Master)</name>
