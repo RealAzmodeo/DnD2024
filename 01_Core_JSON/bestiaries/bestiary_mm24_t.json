@@ -1,0 +1,804 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Tarrasque [2024]",
+        "size": "G",
+        "type": "monstrosity (titan)",
+        "alignment": "unaligned",
+        "ac": "25",
+        "hp": "697 (34d20+340)",
+        "speed": "60 ft., climb 60 ft., burrow 40 ft.",
+        "init": "18",
+        "str": "30",
+        "dex": "11",
+        "con": "30",
+        "int": "3",
+        "wis": "11",
+        "cha": "11",
+        "save": "Wis +9, Dex +9, Cha +9, Int +5",
+        "skill": "Perception +9",
+        "passive": "19",
+        "languages": null,
+        "cr": "30",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "fire, poison",
+        "conditionImmune": "charmed, deafened, frightened, paralyzed, poisoned",
+        "senses": "blindsight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+9"
+          },
+          {
+            "name": "Legendary Resistance (6/Day)",
+            "text": "If the tarrasque fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The tarrasque has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Reflective Carapace",
+            "text": "If the tarrasque is targeted by a Magic Missile spell or a spell that requires a ranged attack roll, roll 1d6. On a 1-5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected and reflects the spell, turning the caster into the target.",
+            "attack": "Reflective Carapace||1d6"
+          },
+          {
+            "name": "Siege Monster",
+            "text": "The tarrasque deals double damage to objects and structures."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +19, reach 15 ft. Hit: 36 (4d12 + 10) Piercing damage, and the target has the Grappled condition (escape DC 20). Until the grapple ends, the target has the Restrained condition and can't teleport.",
+            "attack": "Bite|+19|4d12+10"
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +19, reach 15 ft. Hit: 28 (4d8 + 10) Slashing damage.",
+            "attack": "Claw|+19|4d8+10"
+          },
+          {
+            "name": "Tail",
+            "text": "Melee Attack Roll: +19, reach 30 ft. Hit: 23 (3d8 + 10) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+            "attack": "Tail|+19|3d8+10"
+          },
+          {
+            "name": "Thunderous Bellow (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 27, each creature and each object that isn't being worn or carried in a 150-foot Cone. Failure: 78 (12d12) Thunder damage, and the target has the Deafened and Frightened conditions until the end of its next turn. Success: Half damage only.",
+            "attack": "Thunderous Bellow||12d12"
+          },
+          {
+            "name": "Swallow (Bonus Action)",
+            "text": "Strength Saving Throw: DC 27, one Large or smaller creature Grappled by the tarrasque (it can have up to six creatures swallowed at a time). Failure: The target is swallowed, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions and can't teleport, it has Total Cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) Acid damage at the start of each of the tarrasque's turns.\n\tIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the tarrasque and has the Prone condition. If the tarrasque dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone.",
+            "attack": "Swallow||16d6"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Tarrasque can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Tarrasque regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Onslaught",
+            "text": "The tarrasque moves up to half its Speed, and it makes one Claw or Tail attack."
+          },
+          {
+            "name": "World-Shaking Movement",
+            "text": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the Prone condition. The tarrasque can't take this action again until the start of its next turn."
+          }
+        ],
+        "description": "Among the most devastating creatures in existence, the tarrasque is an engine of catastrophe and a ruiner of nations. A terror of massive size and overwhelming might, this primeval destroyer survives from the earliest epochs of the Material Plane, when it served as a weapon of immortal forces. Since then, the tarrasque has slumbered in secret, rising every few ages to usher in eras of destruction.\n\tThe tarrasque is a bipedal, prehistoric Monstrosity that stands over seventy feet tall. Bristling with horns and spikes, its spiny carapace deflects harm and can reflect magical attacks.\n\tThe tarrasque is a creature of tireless rage. It lashes out at any creature that catches its attention, thrashing with claws and its mighty tail while swallowing smaller beings whole. It seems to take instinctual offense at the works of lesser beings, venting its rage at buildings, bridges, ships, and monuments. The larger a structure or foe is, the greater the tarrasque's wrath.\n\tIt is a mystery what—if anything—calms the tarrasque, but eventually it returns to its slumber, leaving the world irrevocably changed. While the tarrasque might be halted by incredible opposition, its threat can never be wiped from the multiverse. Whenever the tarrasque is defeated, another tarrasque awakes somewhere else on the Material Plane.\n\tFew things survive the tarrasque's rampages, and reports of the monster's devastation are often contradictory, incomplete, or beyond belief. In cases where it leaves no survivors, its calamities might initially be blamed on evil dragons or magical disasters, but the tarrasque frequently leaves behind some unmistakable indication of its passage. Roll on or choose a result from the Tarrasque Evidence table to inspire what marks the monster's rampages.\n\nTarrasque Evidence:\n1d4 | Amid Destruction, the Tarrasque Leaves...\n1 | Evidence of a magic spell reflected back on its caster, like Ice Knif e or Melf' s Acid Arr ow.\n2 | Massive footprints or claw marks.\n3 | A russet scale the size of a knight's shield.\n4 | A shattered mountain or diverted river.\n\nSource:\tMonster Manual 2024 p. 305",
+        "environment": "urban"
+      },
+      {
+        "name": "Thri-kreen Marauder [2024]",
+        "sortname": "Thri-kreen, Marauder",
+        "ancestry": "Thri-kreen",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral",
+        "ac": "15",
+        "hp": "33 (6d8+6)",
+        "speed": "40 ft.",
+        "init": "2",
+        "str": "12",
+        "dex": "15",
+        "con": "13",
+        "int": "8",
+        "wis": "12",
+        "cha": "7",
+        "save": null,
+        "skill": "Survival +3, Stealth +4, Perception +3",
+        "passive": "13",
+        "languages": "Thri-kreen; telepathy 60 ft.",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The thri-kreen makes two attacks, using Gythka or Chatkcha in any combination."
+          },
+          {
+            "name": "Gythka",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Slashing damage plus 2 (1d4) Poison damage.",
+            "attack": "Gythka|+3|1d8+1+1d4"
+          },
+          {
+            "name": "Chatkcha",
+            "text": "Ranged Attack Roll: +4, range 30/120 ft. Hit: 5 (1d6 + 2) Slashing damage.",
+            "attack": "Chatkcha|+4|1d6+2"
+          },
+          {
+            "name": "Leap (Bonus Action)",
+            "text": "The thri-kreen jumps up to 15 feet by spending 5 feet of movement."
+          }
+        ],
+        "description": "Thri-kreen are mantis-like wanderers who harness their innate camouflage and psychic abilities to survive. Different groups of thri-kreen have distinct carapaces, from the rocky shades of desert dwellers to the vibrant hues of those living in verdant lands. While their language has a distinctly insectile quality, thrikreen often use telepathy to communicate, and groups can rapidly share a wealth of detailed information without making a sound.\n\nThri-kreen Marauder:\nThri-kreen marauders employ weapons made of stone and bone, such as the spear-like gythka and throwing blades called chatkcha.\n\nSource:\tMonster Manual 2024 p. 306",
+        "environment": "desert, grassland"
+      },
+      {
+        "name": "Thri-kreen Psion [2024]",
+        "sortname": "Thri-kreen, Psion",
+        "ancestry": "Thri-kreen are mantis-like wanderers who harness their innate camouflage and\npsychic abilities to survive. Different groups of thri-kreen have distinct\ncarapaces, from the rocky shades of desert dwellers to the vibrant hues of those\nliving in verdant lands. While their language has a distinctly insectile quality, thri-\nkreen often use telepathy to communicate, and groups can rapidly share a\nwealth of detailed information without making a sound.",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral",
+        "ac": "16",
+        "hp": "149 (23d8+46)",
+        "speed": "40 ft., fly 20 ft.(hover)",
+        "init": "5",
+        "str": "18",
+        "dex": "15",
+        "con": "14",
+        "int": "19",
+        "wis": "12",
+        "cha": "11",
+        "save": "Str +7, Con +5, Dex +5, Int +7",
+        "skill": "Stealth +8, Perception +4",
+        "passive": "14",
+        "languages": "Thri-kreen; telepathy 120 ft.",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": "psychic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The thri-kreen makes three Psionic Lance attacks."
+          },
+          {
+            "name": "Psionic Lance",
+            "text": "Melee or Ranged Attack Roll: +7, reach 10 ft. or range 120 ft. Hit: 18 (4d6 + 4) Psychic damage.",
+            "attack": "Psionic Lance|+7|4d6+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The thri-kreen casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 15):\n\n\t• At will: Mage Hand (the hand is Invisible)\n\t• 1/Day each: Detect Thoughts, Sending, Synaptic Static"
+          }
+        ],
+        "spells": "Mage Hand [2024], Detect Thoughts [2024], Sending [2024], Synaptic Static [2024]",
+        "description": "Thri-kreen are mantis-like wanderers who harness their innate camouflage and psychic abilities to survive. Different groups of thri-kreen have distinct carapaces, from the rocky shades of desert dwellers to the vibrant hues of those living in verdant lands. While their language has a distinctly insectile quality, thrikreen often use telepathy to communicate, and groups can rapidly share a wealth of detailed information without making a sound.\n\nThri-kreen Psion:\nThri-kreen psions harness their psychic powers to avoid danger and manipulate objects from afar.\n\nSource:\tMonster Manual 2024 p. 306",
+        "environment": "desert, grassland"
+      },
+      {
+        "name": "Tiger [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "30 (4d10+8)",
+        "speed": "40 ft.",
+        "init": "3",
+        "str": "17",
+        "dex": "16",
+        "con": "14",
+        "int": "3",
+        "wis": "12",
+        "cha": "8",
+        "save": null,
+        "skill": "Stealth +7, Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Rend|+5|2d6+3"
+          },
+          {
+            "name": "Nimble Escape (Bonus Action)",
+            "text": "The tiger takes the Disengage or Hide action."
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 371,\n\t\tPlayer's Handbook 2024 p. 358",
+        "environment": "forest, grassland"
+      },
+      {
+        "name": "Tough [2024]",
+        "sortname": "Tough",
+        "ancestry": "Tough",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "12",
+        "hp": "32 (5d8+10)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "15",
+        "dex": "12",
+        "con": "14",
+        "int": "10",
+        "wis": "10",
+        "cha": "11",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Common",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Heavy Crossbow, Leather Armor, Mace"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The tough has Advantage on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          }
+        ],
+        "action": [
+          {
+            "name": "Mace",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage.",
+            "attack": "Mace|+4|1d6+2"
+          },
+          {
+            "name": "Heavy Crossbow",
+            "text": "Ranged Attack Roll: +3, range 100/400 ft. Hit: 6 (1d10 + 1) Piercing damage.",
+            "attack": "Heavy Crossbow|+3|1d10+1"
+          }
+        ],
+        "description": "Bodyguards, belligerents, and laborers, toughs rely on their physical strength to intimidate foes. They might be brawny criminals, rowdy tavern goers, seasoned workers, or anyone who uses their muscle to get what they want.\n\nTough:\nToughs might work in groups at the direction of a leader, or individual toughs might bully weaker folk into doing what they say.\n\nSource:\tMonster Manual 2024 p. 307",
+        "environment": "any"
+      },
+      {
+        "name": "Tough Boss [2024]",
+        "sortname": "Tough, Boss",
+        "ancestry": "Tough",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "16",
+        "hp": "82 (11d8+33)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "17",
+        "dex": "14",
+        "con": "16",
+        "int": "11",
+        "wis": "10",
+        "cha": "11",
+        "save": "Str +5, Con +5, Cha +2",
+        "skill": null,
+        "passive": "10",
+        "languages": "Common plus one other language",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Chain Mail, Heavy Crossbow, Warhammer"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The tough has Advantage on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination."
+          },
+          {
+            "name": "Warhammer",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Bludgeoning damage. If the target is a Large or smaller creature, the tough pushes the target up to 10 feet straight away from itself.",
+            "attack": "Warhammer|+5|2d8+3"
+          },
+          {
+            "name": "Heavy Crossbow",
+            "text": "Ranged Attack Roll: +4, range 100/400 ft. Hit: 13 (2d10 + 2) Piercing damage.",
+            "attack": "Heavy Crossbow|+4|2d10+2"
+          }
+        ],
+        "description": "Bodyguards, belligerents, and laborers, toughs rely on their physical strength to intimidate foes. They might be brawny criminals, rowdy tavern goers, seasoned workers, or anyone who uses their muscle to get what they want.\n\nTough Boss:\nTough bosses leverage their street smarts, brawling prowess, and reputation to compel others to follow their demands.\n\nSource:\tMonster Manual 2024 p. 307",
+        "environment": "any"
+      },
+      {
+        "name": "Treant [2024]",
+        "size": "H",
+        "type": "plant",
+        "alignment": "chaotic good",
+        "ac": "16",
+        "hp": "138 (12d12+60)",
+        "speed": "30 ft.",
+        "init": "3",
+        "str": "23",
+        "dex": "8",
+        "con": "21",
+        "int": "12",
+        "wis": "16",
+        "cha": "12",
+        "save": null,
+        "skill": null,
+        "passive": "13",
+        "languages": "Common, Druidic, Elvish, Sylvan",
+        "cr": "9",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Siege Monster",
+            "text": "The treant deals double damage to objects and structures."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The treant makes two Slam attacks."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 16 (3d6 + 6) Bludgeoning damage.",
+            "attack": "Slam|+10|3d6+6"
+          },
+          {
+            "name": "Hail of Bark",
+            "text": "Ranged Attack Roll: +10, range 180 ft. Hit: 28 (4d10 + 6) Piercing damage.",
+            "attack": "Hail of Bark|+10|4d10+6"
+          },
+          {
+            "name": "Animate Trees (1/Day)",
+            "recharge": "1/DAY",
+            "text": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible."
+          }
+        ],
+        "description": "Ancient inhabitants of the forest, treants are gigantic, animate trees with wizened faces. Most have lived for centuries and know secrets of the natural world. They avoid becoming embroiled in the conflicts of shorter-lived creatures, but they're protective of their forest homes. If roused to anger, treants can animate trees to aid them.\n\tTreants defend and are shaped by secrets of the forest. Roll on or choose a result from the Treant Secrets table to inspire what mysteries a treant protects.\n\nTreant Secrets:\n1d6 | The Treant Is...\n1 | Blessed by a god and grows magic fruit.\n2 | Growing atop the entrance to a dungeon or portal to the Feywild.\n3 | Home to a community of pixies or sprites.\n4 | The last lore keeper of lost druidic knowledge.\n5 | Rooted on a hero's burial mound and animates trees that look like questing knights.\n6 | Scarred by a fire and holds the bones of the arsonist who started it in a hollow.\n\nSource:\tMonster Manual 2024 p. 308",
+        "environment": "forest"
+      },
+      {
+        "name": "Tree Blight [2024]",
+        "sortname": "Blight, Tree",
+        "ancestry": "Blight",
+        "size": "H",
+        "type": "plant",
+        "alignment": "neutral evil",
+        "ac": "15",
+        "hp": "115 (10d12+50)",
+        "speed": "30 ft.",
+        "init": "3",
+        "str": "23",
+        "dex": "10",
+        "con": "20",
+        "int": "6",
+        "wis": "10",
+        "cha": "3",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "understands Common and Druidic but can't speak",
+        "cr": "7",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "deafened",
+        "senses": "blindsight 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The blight makes two Branch attacks and uses Grasping Root."
+          },
+          {
+            "name": "Branch",
+            "text": "Melee Attack Roll: +9, reach 15 ft. Hit: 16 (3d6 + 6) Bludgeoning damage.",
+            "attack": "Branch|+9|3d6+6"
+          },
+          {
+            "name": "Grasping Root",
+            "text": "Strength Saving Throw: DC 17, one Large or smaller creature the blight can see within 15 feet. Failure: The target is pulled up to 10 feet straight toward the blight and has the Grappled condition (escape DC 16) from one of six roots. Until the grapple ends, the target takes 13 (2d6 + 6) Bludgeoning damage at the start of each of its turns.",
+            "attack": "Grasping Root||2d6+6"
+          },
+          {
+            "name": "Gnash (Bonus Action)",
+            "text": "Dexterity Saving Throw: DC 17, one creature Grappled by the blight. Failure: 19 (3d8 + 6) Piercing damage. Success: Half damage.",
+            "attack": "Gnash||3d8+6"
+          }
+        ],
+        "description": "Blights are malicious plants that sprout from deep-rooted evil. Their gnarled forms twist with fearsome features suggestive of human limbs and vicious maws. Blights lurk in ambush amid mundane vegetation and lash out at non-Plant creatures. While blights can act independently, they're usually motivated by whatever sinister forces spawned them or by wicked creatures with control over nature. The magic that creates blights often affects other vegetation as well, causing brambles, vines, and gnarled trees to overwhelm roads and fields, choke wells and streams, and force animals from their natural habitat. This might make blights the first sign of an oncoming wave of corruption.\n\nTree Blight:\nTree blights look like ancient, dead trees with gnarled limbs and splintered hollows. Imbued with bloodlust, these blights feed on the living. Evidence of their past meals is often tangled amid their branches and roots. Tree blights cooperate with other blights, but they attack other tree-shaped beings they encounter, such as awakened trees and treants.\n\nSource:\tMonster Manual 2024 p. 44",
+        "environment": "forest"
+      },
+      {
+        "name": "Triceratops [2024]",
+        "size": "H",
+        "type": "beast (dinosaur)",
+        "alignment": "unaligned",
+        "ac": "14",
+        "hp": "114 (12d12+36)",
+        "speed": "50 ft.",
+        "init": "0",
+        "str": "22",
+        "dex": "9",
+        "con": "17",
+        "int": "2",
+        "wis": "11",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The triceratops makes two Gore attacks."
+          },
+          {
+            "name": "Gore",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 19 (2d12 + 6) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.",
+            "attack": "Gore|+9|2d12+6+2d8"
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 372",
+        "environment": "grassland"
+      },
+      {
+        "name": "Troglodyte [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "11",
+        "hp": "13 (2d8+4)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "0",
+        "str": "14",
+        "dex": "10",
+        "con": "14",
+        "int": "6",
+        "wis": "10",
+        "cha": "6",
+        "save": null,
+        "skill": "Stealth +4",
+        "passive": "10",
+        "languages": "Troglodyte",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Stench",
+            "text": "Constitution Saving Throw: DC 12, any creature (other than a troglodyte) that starts its turn in a 5-foot Emanation originating from the troglodyte. Failure: The target has the Poisoned condition until the start of its next turn. Success: The target is immune to the Stench of all troglodytes for 1 hour."
+          },
+          {
+            "name": "Sunlight Sensitivity",
+            "text": "While in sunlight, the troglodyte has Disadvantage on ability checks and attack rolls."
+          }
+        ],
+        "action": {
+          "name": "Rend",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage.",
+          "attack": "Rend|+4|1d6+2"
+        },
+        "description": "With features similar to those of pale cave lizards, troglodytes stalk the Underdark in an endless hunt for food. Troglodytes consume almost anything, including bones, giant insects, and other subterranean dwellers. They prey on subterranean communities and those near entrances to the Underdark, stealing livestock and kidnapping residents.\n\tTroglodytes prefer to ambush prey and can change their scale color to blend in with their surroundings. They often climb along cavern walls or emerge from deep fissures to take their prey by surprise. Despite their stealthiness, these stalkers exude a distinctly repulsive stench. Descriptions of what troglodytes smell like span a spectrum as complex as it is vile. This reek nauseates many who smell it, but it can also warn of the presence of troglodytes before they strike.\n\nSource:\tMonster Manual 2024 p. 309",
+        "environment": "underdark"
+      },
+      {
+        "name": "Troll [2024]",
+        "size": "L",
+        "type": "giant",
+        "alignment": "chaotic evil",
+        "ac": "15",
+        "hp": "94 (9d10+45)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "18",
+        "dex": "13",
+        "con": "20",
+        "int": "7",
+        "wis": "9",
+        "cha": "7",
+        "save": null,
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": "Giant",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Loathsome Limbs (4/Day)",
+            "recharge": "4/DAY",
+            "text": "If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a Troll Limb. The limb acts immediately after the troll's turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points."
+          },
+          {
+            "name": "Regeneration",
+            "text": "The troll regains 15 Hit Points at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The troll makes three Rend attacks."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage.",
+            "attack": "Rend|+7|2d6+4"
+          },
+          {
+            "name": "Charge (Bonus Action)",
+            "text": "The troll moves up to half its Speed straight toward an enemy it can see."
+          }
+        ],
+        "description": "Trolls creep forth to prey on smaller creatures and drag captives back to festering lairs. These misshapen brutes can regenerate from wounds and regrow severed body parts—including their heads. A troll's severed limbs continue to move and attack. Unless they're burned by flames or acid, trolls can recover from egregious wounds and seek revenge on those who felled them.\n\tTrolls typically hunt alone, but small groups occasionally cooperate to ambush prey or raid villages. Creatures such as hags and hill giants might convince trolls to work for them in exchange for disgusting meals.\n\nSource:\tMonster Manual 2024 p. 310",
+        "environment": "arctic, forest, hill, mountain, swamp, underdark"
+      },
+      {
+        "name": "Troll Limb [2024]",
+        "size": "S",
+        "type": "giant",
+        "alignment": "chaotic evil",
+        "ac": "13",
+        "hp": "14 (4d6)",
+        "speed": "20 ft.",
+        "init": "1",
+        "str": "18",
+        "dex": "12",
+        "con": "10",
+        "int": "1",
+        "wis": "9",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Regeneration",
+            "text": "The limb regains 5 Hit Points at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn't function on the limb's next turn. The limb dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+          },
+          {
+            "name": "Troll Spawn",
+            "text": "The limb uncannily has the same senses as a whole troll. If the limb isn't destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away.",
+            "attack": "Troll Spawn||1d12"
+          }
+        ],
+        "action": {
+          "name": "Rend",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage.",
+          "attack": "Rend|+6|2d4+4"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 310",
+        "environment": "arctic, forest, hill, mountain, swamp, underdark"
+      },
+      {
+        "name": "Twig Blight [2024]",
+        "sortname": "Blight, Twig",
+        "ancestry": "Blight",
+        "size": "S",
+        "type": "plant",
+        "alignment": "neutral evil",
+        "ac": "14",
+        "hp": "7 (2d6)",
+        "speed": "20 ft.",
+        "init": "2",
+        "str": "6",
+        "dex": "14",
+        "con": "11",
+        "int": "4",
+        "wis": "8",
+        "cha": "3",
+        "save": null,
+        "skill": "Stealth +4",
+        "passive": "9",
+        "languages": "understands Common but can't speak",
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "deafened",
+        "senses": "blindsight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The blight has Advantage on an attack roll against a creature if at least one of the blight's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          }
+        ],
+        "action": {
+          "name": "Claw",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.",
+          "attack": "Claw|+4|1d4+2"
+        },
+        "description": "Blights are malicious plants that sprout from deep-rooted evil. Their gnarled forms twist with fearsome features suggestive of human limbs and vicious maws. Blights lurk in ambush amid mundane vegetation and lash out at non-Plant creatures. While blights can act independently, they're usually motivated by whatever sinister forces spawned them or by wicked creatures with control over nature. The magic that creates blights often affects other vegetation as well, causing brambles, vines, and gnarled trees to overwhelm roads and fields, choke wells and streams, and force animals from their natural habitat. This might make blights the first sign of an oncoming wave of corruption.\n\nTwig Blight:\nResembling bundles of sticks or dead brush, twig blights easily blend in among deadwood, flotsam, and the wood piles common in many rural settings. Groups of them are often found near river crossings, forgotten wells, or natural campsites, where they ambush those who let down their guard.\n\nSource:\tMonster Manual 2024 p. 43",
+        "environment": "forest"
+      },
+      {
+        "name": "Tyrannosaurus Rex [2024]",
+        "size": "H",
+        "type": "beast (dinosaur)",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "136 (13d12+52)",
+        "speed": "50 ft.",
+        "init": "3",
+        "str": "25",
+        "dex": "10",
+        "con": "19",
+        "int": "2",
+        "wis": "12",
+        "cha": "9",
+        "save": "Str +10, Wis +4",
+        "skill": "Perception +4",
+        "passive": "14",
+        "languages": null,
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The tyrannosaurus makes one Bite attack and one Tail attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +10, reach 10 ft. Hit: 33 (4d12 + 7) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17). While Grappled, the target has the Restrained condition and can't be targeted by the tyrannosaurus's Tail.",
+            "attack": "Bite|+10|4d12+7"
+          },
+          {
+            "name": "Tail",
+            "text": "Melee Attack Roll: +10, reach 15 ft. Hit: 25 (4d8 + 7) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+            "attack": "Tail|+10|4d8+7"
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 372",
+        "environment": "grassland"
+      }
+    ]
+  }
+}

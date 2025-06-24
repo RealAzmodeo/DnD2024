@@ -1,0 +1,1670 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Cambion [2024]",
+        "size": "M",
+        "type": "fiend",
+        "alignment": "neutral evil",
+        "ac": "19",
+        "hp": "105 (14d8+42)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "4",
+        "str": "18",
+        "dex": "18",
+        "con": "16",
+        "int": "14",
+        "wis": "12",
+        "cha": "16",
+        "save": "Str +7, Con +6, Cha +6, Int +5",
+        "skill": "Deception +6, Stealth +7, Perception +4",
+        "passive": "14",
+        "languages": "Abyssal, Common, Infernal",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning, poison",
+        "immune": null,
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cambion makes two attacks, using Claw or Fire Ray in any combination."
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 8 (1d8 + 4) Slashing damage plus 7 (2d6) Fire damage.",
+            "attack": [
+              "Claw|+7|1d8+4",
+              "Fire Damage||2d6"
+            ]
+          },
+          {
+            "name": "Fire Ray",
+            "text": "Ranged Attack Roll: +7, range 120 ft. Hit: 13 (3d6 + 3) Fire damage.",
+            "attack": "Fire Ray|+7|3d6+3"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cambion casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):\n\n\t• 2/Day each: Alter Self, Command (level 3 version), Detect Magic\n\t• 1/Day each: Dominate Person (level 8 version), Plane Shift (self only)"
+          }
+        ],
+        "spells": "Alter Self [2024], Command [2024], Detect Magic [2024], Dominate Person [2024], Plane Shift [2024]",
+        "description": "Cambions are former mortals corrupted by fiendish power or possessed by insidious forces. While tieflings are free-willed individuals with a hint of fiendish ancestry, cambions are inherently tied to or remade by the wicked magic of the Lower Planes.\n\tMany cambions serve the malevolent forces that are the source of their powers. Others seek to claim the might of whatever created them or to seize otherworldly powers of their own. Among the most notorious of such cambions is Iuz, a villain who became an evil demigod and whose villainous nation threatens the Free City of Greyhawk on Oerth.\n\tCambions come into being in disparate ways. Roll on or choose a result from the Cambion Origins table to determine the source of a cambion's fiendish might.\n\nCambion Origins:\n1d6 | The Cambion Gained Its Power After...\n1 | Being possessed by a fiendish being.\n2 | Being resurrected by an evil magic-user.\n3 | Lengthy exposure to a Lower Plane.\n4 | Making a bargain with a Fiend.\n5 | Suffering a god's curse.\n6 | Taking part in fiendish rituals.\n\nSource:\tMonster Manual 2024 p. 65",
+        "environment": "any"
+      },
+      {
+        "name": "Camel [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "17 (2d10+6)",
+        "speed": "50 ft.",
+        "init": "-1",
+        "str": "15",
+        "dex": "8",
+        "con": "17",
+        "int": "2",
+        "wis": "11",
+        "cha": "5",
+        "save": "Con +5",
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.",
+          "attack": "Bite|+4|1d4+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 351,\n\t\tPlayer's Handbook 2024 p. 347",
+        "environment": "desert"
+      },
+      {
+        "name": "Carrion Crawler [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "51 (6d10+18)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "1",
+        "str": "14",
+        "dex": "13",
+        "con": "16",
+        "int": "1",
+        "wis": "12",
+        "cha": "5",
+        "save": null,
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The carrion crawler can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The carrion crawler uses Paralyzing Tentacles and makes one Bite attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage plus 3 (1d6) Poison damage.",
+            "attack": [
+              "Bite|+4|2d4+2",
+              "Poison Damage||1d6"
+            ]
+          },
+          {
+            "name": "Paralyzing Tentacles",
+            "text": "Constitution Saving Throw: DC 12, one creature the carrion crawler can see within 10 feet. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition."
+          }
+        ],
+        "description": "Ravenous corpse eaters, carrion crawlers gravitate toward places of slaughter and decay. In such charnel environs, they feast on the dead with no qualms about their meals' origins or freshness.\n\tCarrion crawlers have segmented bodies like gigantic cutworms. From beneath their multipart maws protrude eight thin, lashing tentacles. Creatures struck by these tentacles risk being paralyzed and consumed.\n\tCarrion crawlers scour sewers, battlefields, necropolises, and fetid wildernesses for corpses, clinging to ceilings to ambush smaller prey and to avoid competing hunters. They're drawn to light and the scent of blood, recognizing them as signs of food.\n\tThese scavengers avoid ingesting inorganic material. Crypts with funeral armors sucked clean of their corpses and eerily pristine catacombs are signs of infestation by carrion crawlers.\n\nSource:\tMonster Manual 2024 p. 66",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Cat [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "2 (1d4)",
+        "speed": "40 ft., climb 40 ft.",
+        "init": "2",
+        "str": "3",
+        "dex": "15",
+        "con": "10",
+        "int": "3",
+        "wis": "12",
+        "cha": "7",
+        "save": "Dex +4",
+        "skill": "Stealth +4, Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Jumper",
+            "text": "The cat's jump distance is determined using its Dexterity rather than its Strength."
+          }
+        ],
+        "action": {
+          "name": "Scratch",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Slashing damage.",
+          "attack": "Scratch|+4|1"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 351,\n\t\tPlayer's Handbook 2024 p. 347",
+        "environment": "desert, forest, grassland, urban"
+      },
+      {
+        "name": "Centaur Trooper [2024]",
+        "sortname": "Centaur, Trooper",
+        "ancestry": "Centaur",
+        "size": "L",
+        "type": "fey",
+        "alignment": "neutral good",
+        "ac": "16",
+        "hp": "45 (6d10+12)",
+        "speed": "50 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "14",
+        "con": "14",
+        "int": "9",
+        "wis": "13",
+        "cha": "11",
+        "save": null,
+        "skill": "Athletics +6, Perception +3",
+        "passive": "13",
+        "languages": "Elvish, Sylvan",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Breastplate, Longbow, Pike"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The centaur makes two attacks, using Pike or Longbow in any combination."
+          },
+          {
+            "name": "Pike",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Piercing damage.",
+            "attack": "Pike|+6|1d10+4"
+          },
+          {
+            "name": "Longbow",
+            "text": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+            "attack": "Longbow|+4|1d8+2"
+          },
+          {
+            "name": "Trampling Charge (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition.",
+            "attack": "Trampling Charge||1d6+4"
+          }
+        ],
+        "description": "Centaurs are defenders of forests, plains, and sites of primeval power. With upper bodies like humans' and the lower bodies of horses, centaurs charge into battle against those who would harm their allies.\n\nCentaur troopers are knight-like guardians. Many are suspicious of non-Fey creatures.\n\nSource:\tMonster Manual 2024 p. 67",
+        "environment": "forest, grassland, planar (feywild)"
+      },
+      {
+        "name": "Centaur Warden [2024]",
+        "sortname": "Centaur, Warden",
+        "ancestry": "Centaur",
+        "size": "L",
+        "type": "fey",
+        "alignment": "neutral good",
+        "ac": "16",
+        "hp": "105 (14d10+28)",
+        "speed": "50 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "14",
+        "con": "14",
+        "int": "9",
+        "wis": "18",
+        "cha": "11",
+        "save": "Wis +7, Con +5",
+        "skill": "Nature +5, Athletics +7, Perception +7",
+        "passive": "17",
+        "languages": "Druidic, Elvish, Sylvan",
+        "cr": "7",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The centaur makes two attacks, using Forest Staff or Sun Ray in any combination."
+          },
+          {
+            "name": "Forest Staff",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 14 (4d6) Poison damage.",
+            "attack": [
+              "Forest Staff|+7|2d8+4",
+              "Poison Damage||4d6"
+            ]
+          },
+          {
+            "name": "Sun Ray",
+            "text": "Ranged Attack Roll: +7, range 90 ft. Hit: 14 (3d6 + 4) Radiant damage, and the target has the Blinded condition until the start of the centaur's next turn.",
+            "attack": "Sun Ray|+7|3d6+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The centaur casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15):\n\n\t• At will: Druidcraft, Speak with Animals"
+          },
+          {
+            "name": "Entangling Trail (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The centaur moves up to its Speed without provoking Opportunity Attacks. Each creature within 5 feet of the centaur as it moves is targeted once by the following effect. Strength Saving Throw: DC 15. Failure: 11 (2d6 + 4) Bludgeoning damage, and the target has the Restrained condition until the end of its next turn.",
+            "attack": "Entangling Trail||2d6+4"
+          }
+        ],
+        "spells": "Druidcraft [2024], Speak With Animals [2024]",
+        "description": "Centaurs are defenders of forests, plains, and sites of primeval power. With upper bodies like humans' and the lower bodies of horses, centaurs charge into battle against those who would harm their allies.\n\nCentaur wardens often lead groups of centaur troopers and act as intermediaries between Fey creatures and trespassers into their territories.\n\nSource:\tMonster Manual 2024 p. 67",
+        "environment": "forest, grassland, planar (feywild)"
+      },
+      {
+        "name": "Chain Devil [2024]",
+        "size": "M",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil",
+        "ac": "15",
+        "hp": "85 (10d8+40)",
+        "speed": "30 ft.",
+        "init": "5",
+        "str": "18",
+        "dex": "15",
+        "con": "18",
+        "int": "11",
+        "wis": "12",
+        "cha": "14",
+        "save": "Wis +4, Con +7",
+        "skill": null,
+        "passive": "11",
+        "languages": "Infernal; telepathy 120 ft.",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": "bludgeoning, cold, piercing, slashing",
+        "immune": "fire, poison",
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 120 ft. (unimpeded by magical darkness)",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Diabolical Restoration",
+            "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The devil has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The devil makes two Chain attacks and uses Conjure Infernal Chain."
+          },
+          {
+            "name": "Chain",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two chains, and it has the Restrained condition until the grapple ends.",
+            "attack": "Chain|+7|2d6+4"
+          },
+          {
+            "name": "Conjure Infernal Chain",
+            "text": "The devil conjures a fiery chain to bind a creature. Dexterity Saving Throw: DC 15, one creature the devil can see within 60 feet. Failure: 9 (2d4 + 4) Fire damage, and the target has the Restrained condition until the end of the devil's next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. Success: The chain disappears.",
+            "attack": "Conjure Infernal Chain||2d4+2"
+          }
+        ],
+        "reaction": {
+          "name": "Unnerving Gaze",
+          "text": "Trigger: A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. Response: Wisdom Saving Throw: DC 15, the triggering creature. Failure: The target has the Frightened condition until the end of its turn. Success: The target is immune to this devil's Unnerving Gaze for 24 hours."
+        },
+        "description": "Also known as kytons, chain devils consider themselves morbid artisans who use deception, menace, and vicious metal to coerce prisoners into betraying themselves. Many serve powerful devils, wrenching secrets from imprisoned souls using deadly, animate chains. Left to their own devices, chain devils encourage ruthless individuals to pursue forbidden magic, leading their pupils down paths to the Nine Hells.\n\tAlong with psychological threats and physical harm, a chain devil uses its unnerving gaze to make its victims perceive their worst fear rather than the monster. Roll on or choose a result from the Chain Devil Masks table to inspire a chain devil's fearful appearance.\n\nChain Devil Masks:\n1d4 | To a Viewer, the Chain Devil Looks Like...\n1 | The corpse of a loved one.\n2 | A disapproving deity.\n3 | A harsh instructor or superior.\n4 | The viewer at their lowest point in life.\n\nSource:\tMonster Manual 2024 p. 68",
+        "environment": "planar (nine hells)"
+      },
+      {
+        "name": "Chasme [2024]",
+        "size": "L",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "15",
+        "hp": "78 (12d10+12)",
+        "speed": "20 ft., fly 60 ft.",
+        "init": "5",
+        "str": "15",
+        "dex": "15",
+        "con": "12",
+        "int": "11",
+        "wis": "14",
+        "cha": "10",
+        "save": "Wis +5, Dex +5",
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": "Abyssal; telepathy 120 ft.",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "poisoned",
+        "senses": "blindsight 10 ft., darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Demonic Restoration",
+            "text": "If the chasme dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The chasme has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The chasme can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          }
+        ],
+        "action": [
+          {
+            "name": "Proboscis",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 16 (4d6 + 2) Piercing damage plus 21 (6d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the Necrotic damage taken.",
+            "attack": [
+              "Proboscis|+5|4d6+2",
+              "Necrotic Damage||6d6"
+            ]
+          },
+          {
+            "name": "Drone (Bonus Action)",
+            "text": "Constitution Saving Throw: DC 12, each creature in a 30-foot Emanation originating from the chasme (demons automatically succeed on this save). Failure: The target has the Unconscious condition and repeats the save at the end of each of its turns. The target succeeds automatically after 10 minutes or if it takes damage or a creature within 5 feet of it takes an action to empty a flask of Holy Water on it. Success: The target is immune to this chasme's Drone for 24 hours."
+          }
+        ],
+        "description": "Flying forth from the Abyss, chasmes resemble horse-size flies. They incapacitate foes by producing a mind-numbing droning, then use their proboscises to drain victims of life. In the Abyss, most chasmes obsequiously serve more powerful demons and search for captives to press into demonic hordes.\n\nSource:\tMonster Manual 2024 p. 69",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Chimera [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "14",
+        "hp": "114 (12d10+48)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "0",
+        "str": "19",
+        "dex": "11",
+        "con": "19",
+        "int": "3",
+        "wis": "14",
+        "cha": "10",
+        "save": null,
+        "skill": "Perception +8",
+        "passive": "18",
+        "languages": "understands Draconic but can't speak",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The chimera makes one Ram attack, one Bite attack, and one Claw attack. It can replace the Claw attack with a use of Fire Breath if available."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage, or 18 (4d6 + 4) Piercing damage if the chimera had Advantage on the attack roll.",
+            "attack": [
+              "Bite|+7|2d6+4",
+              "Piercing with Advantage|+7|4d6+4"
+            ]
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 7 (1d6 + 4) Slashing damage.",
+            "attack": "Claw|+7|1d6+4"
+          },
+          {
+            "name": "Ram",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 10 (1d12 + 4) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Prone condition.",
+            "attack": "Ram|+7|1d12+4"
+          },
+          {
+            "name": "Fire Breath (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 15, each creature in a 15-foot Cone. Failure: 31 (7d8) Fire damage. Success: Half damage.",
+            "attack": "Fire Breath||7d8"
+          }
+        ],
+        "description": "Violent and unpredictable, chimeras combine the deadliest traits of lions, rams, and red dragons. With their fearsome claws, crushing horns, and fiery breath, chimeras are tempests of ferocity, driven by their three heads' conflicting instincts. Their heads agree on little but their desires to feed and to drive competitors from the rugged territories where these monsters make their lairs. When they spot prey, chimeras typically strafe foes with their fire breath before landing to attack with their fangs, horns, and claws.\n\tOwing to their draconic instincts, chimeras are greedy creatures that hoard treasures within cavernous lairs. They're undiscerning about what they collect, gathering shiny objects alongside trophies and bones from their recent kills. Brave souls seeking to distract or temporarily appease a chimera can do so by offering it treasure and food.\n\nSource:\tMonster Manual 2024 p. 70",
+        "environment": "grassland, hill, mountain"
+      },
+      {
+        "name": "Chuul [2024]",
+        "size": "L",
+        "type": "aberration",
+        "alignment": "chaotic evil",
+        "ac": "16",
+        "hp": "76 (9d10+27)",
+        "speed": "30 ft., swim 30 ft.",
+        "init": "0",
+        "str": "19",
+        "dex": "10",
+        "con": "16",
+        "int": "5",
+        "wis": "11",
+        "cha": "5",
+        "save": null,
+        "skill": "Perception +4",
+        "passive": "14",
+        "languages": "understands Deep Speech but can't speak",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The chuul can breathe air and water."
+          },
+          {
+            "name": "Sense Magic",
+            "text": "The chuul senses magic within 120 feet of itself. This trait otherwise works like the Detect Magic spell but isn't itself magical."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The chuul makes two Pincer attacks and uses Paralyzing Tentacles."
+          },
+          {
+            "name": "Pincer",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two pincers.",
+            "attack": "Pincer|+6|1d10+4"
+          },
+          {
+            "name": "Paralyzing Tentacles",
+            "text": "Constitution Saving Throw: DC 13, one creature Grappled by the chuul. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition."
+          }
+        ],
+        "description": "Chuuls originated in forgotten ages when aboleths and stranger beings ruled alien empires beneath the waves. The aboleths transformed numerous deepsea predators into servants that could venture beyond the seas to claim more magic and creatures to exploit. Chuuls are the most enduring of these bizarre servants.\n\tMany chuuls serve aboleth overlords, carrying out their whims amid lightless seas and primeval swamps. Other chuuls obey new aberrant masters, such as beholders, grells, or mind flayers. Some chuuls follow their own drives, endlessly collecting ancient magic treasures or interpreting age-old orders to bizarre ends. Regardless of their agendas, chuuls snare creatures in their massive pincers before rendering foes helpless with their paralytic tentacles.\n\tChuuls don't age and can lie dormant in hidden places for millennia before threats, ancient orders, or strange compulsions awaken them.\n\nSource:\tMonster Manual 2024 p. 71",
+        "environment": "coastal, swamp, underdark"
+      },
+      {
+        "name": "Clay Golem [2024]",
+        "size": "L",
+        "type": "construct",
+        "alignment": "unaligned",
+        "ac": "14",
+        "hp": "123 (13d10+52)",
+        "speed": "20 ft.",
+        "init": "4",
+        "str": "20",
+        "dex": "9",
+        "con": "18",
+        "int": "3",
+        "wis": "8",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "Common plus one other language",
+        "cr": "9",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "acid, poison, psychic",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Acid Absorption",
+            "text": "Whenever the golem is subjected to Acid damage, it takes no damage and instead regains a number of Hit Points equal to the Acid damage dealt."
+          },
+          {
+            "name": "Berserk",
+            "text": "Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it continues to be berserk until it is destroyed or it is no longer Bloodied."
+          },
+          {
+            "name": "Immutable Form",
+            "text": "The golem can't shape-shift."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The golem has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 10 (1d10 + 5) Bludgeoning damage plus 6 (1d12) Acid damage, and the target's Hit Point maximum decreases by an amount equal to the Acid damage taken.",
+            "attack": [
+              "Slam|+9|1d10+5",
+              "Acid Damage||1d12"
+            ]
+          },
+          {
+            "name": "Hasten (Recharge 5-6) (Bonus Action)",
+            "text": "The golem takes the Dash and Disengage actions.",
+            "recharge": "D5"
+          }
+        ],
+        "description": "Clay golems are magical defenders made from earth and clay to protect places or communities. The materials used in creating clay golems originate from near the location the golems protect and often have special significance to their creators, such as clay from a holy site or bricks from a magical ruin. While some clay golems are masterfully sculpted to resemble living beings, others have only vaguely humanlike forms.\n\tThese golems obey their creators' orders and protect what their makers value most. Some still follow these orders long after their creators' deaths. Roll on or choose a result from the Clay Golem Orders table to inspire the commands a clay golem follows.\n\nClay Golem Orders:\n1d4 | The Clay Golem Follows Orders To...\n1 | Block the path of anyone who enters a site with a weapon drawn.\n2 | Defend any member of their creator's family or community who is threatened in its sight.\n3 | Prevent any Fiend from crossing a bridge.\n4 | Remove any who enter its creator's workshop.\n\nSource:\tMonster Manual 2024 p. 72",
+        "environment": "urban"
+      },
+      {
+        "name": "Cloaker [2024]",
+        "size": "L",
+        "type": "aberration",
+        "alignment": "chaotic neutral",
+        "ac": "14",
+        "hp": "91 (14d10+14)",
+        "speed": "10 ft., fly 40 ft.",
+        "init": "5",
+        "str": "17",
+        "dex": "15",
+        "con": "12",
+        "int": "13",
+        "wis": "14",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +5",
+        "passive": "12",
+        "languages": "Deep Speech, Undercommon",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "frightened",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Light Sensitivity",
+            "text": "While in Bright Light, the cloaker has Disadvantage on attack rolls."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cloaker makes one Attach attack and two Tail attacks."
+          },
+          {
+            "name": "Attach",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage. If the target is a Large or smaller creature, the cloaker attaches to it. While the cloaker is attached, the target has the Blinded condition, and the cloaker can't make Attach attacks against other targets. In addition, the cloaker halves the damage it takes (round down), and the target takes the same amount of damage.\n\tThe cloaker can detach itself by spending 5 feet of movement. The target or a creature within 5 feet of it can take an action to try to detach the cloaker, doing so by succeeding on a DC 14 Strength (Athletics) check.",
+            "attack": "Attach|+6|3d6+3"
+          },
+          {
+            "name": "Tail",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage.",
+            "attack": "Tail|+6|1d10+3"
+          },
+          {
+            "name": "Moan (Bonus Action)",
+            "text": "Wisdom Saving Throw: DC 13, each creature in a 60-foot Emanation originating from the cloaker. Failure: The target has the Frightened condition until the end of the cloaker's next turn. Success: The target is immune to this cloaker's Moan for the next 24 hours."
+          },
+          {
+            "name": "Phantasms (Recharge after a Short or Long Rest) (Bonus Action)",
+            "text": "The cloaker casts the Mirror Image spell, requiring no spell components and using Wisdom as the spellcasting ability. The spell ends early if the cloaker starts or ends its turn in Bright Light."
+          }
+        ],
+        "description": "Cloakers are mysterious Underdark predators, named by adventurers for their resemblance to hanging cloaks when they cling to walls. What cloakers call themselves is unknown, if they refer to themselves at all. Though they're undeniably intelligent, their behavior is often inscrutable.\n\tCloakers sometimes gather in Underdark enclaves, but they rarely build settlements or form social structures. Most operate as solitary predators, lurking in dismal subterranean reaches or abandoned dungeons—sometimes for months at a time—as they wait for prey to pass. They use their mottled hides to blend in with their surroundings. When unsuspecting prey nears, cloakers unfurl and attempt to latch on and then smother their victims in their powerful wings.\n\tCloakers delight in frightening foes. In addition to their methods of ambush, cloakers can create illusory duplicates of themselves and emit surreal moans that non-cloakers find terrifying in unexplainable, primal ways. Cloakers might antagonize explorers lost in the Underdark for days, terrorizing and scattering them before attacking. They rarely converse with other beings, except to whisper eerie riddles to those they're about to consume.\n\nSource:\tMonster Manual 2024 p. 73",
+        "environment": "underdark"
+      },
+      {
+        "name": "Cloud Giant [2024]",
+        "size": "H",
+        "type": "giant",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "200 (16d12+96)",
+        "speed": "40 ft., fly 20 ft.(hover)",
+        "init": "4",
+        "str": "27",
+        "dex": "10",
+        "con": "22",
+        "int": "12",
+        "wis": "16",
+        "cha": "16",
+        "save": "Wis +7, Con +10",
+        "skill": "Insight +7, Perception +11",
+        "passive": "21",
+        "languages": "Common, Giant",
+        "cr": "9",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast Fog Cloud."
+          },
+          {
+            "name": "Thunderous Mace",
+            "text": "Melee Attack Roll: +12, reach 10 ft. Hit: 21 (3d8 + 8) Bludgeoning damage plus 7 (2d6) Thunder damage.",
+            "attack": [
+              "Thunderous Mace|+12|3d8+8",
+              "Thunder Damage||2d6"
+            ]
+          },
+          {
+            "name": "Thundercloud",
+            "text": "Ranged Attack Roll: +12, range 240 ft. Hit: 18 (3d6 + 8) Thunder damage, and the target has the Incapacitated condition until the end of its next turn.",
+            "attack": "Thundercloud|+12|3d6+8"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The giant casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):\n\n\t• At will: Detect Magic, Fog Cloud, Light\n\t• 1/Day each: Control Weather, Gaseous Form, Telekinesis"
+          },
+          {
+            "name": "Misty Step (Bonus Action)",
+            "text": "The giant casts the Misty Step spell, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Detect Magic [2024], Fog Cloud [2024], Light [2024], Control Weather [2024], Gaseous Form [2024], Telekinesis [2024]",
+        "description": "Cloud giants use the power of the skies to observe and subtly influence the world. These giants resemble humans with hair ranging from silver to blue and with skin in cloudlike shades from stark white to twilight hues. Curved canines grow in their upper jaws, extending past their lower lips. In battle, they attack with weapons wreathed in storm clouds and throw roaring thunderheads.\n\tMost cloud giants inhabit citadels crowning tremendous mountains or magical palaces that drift amid the clouds. Many of these giants believe they possess similarly lofty status or purpose. Some view themselves as godlike beings who can manipulate and steal from terrestrial beings with impunity.\n\tOthers claim their long lives and place among the clouds grant them unique perspectives, so they chronicle what they witness in the world below without interfering. In either case, cloud giants often possess fabulous magical treasures, either claimed from across the world or created by (and gigantically sized for) themselves.\n\nSource:\tMonster Manual 2024 p. 74",
+        "environment": "mountain"
+      },
+      {
+        "name": "Cockatrice [2024]",
+        "sortname": "Cockatrice",
+        "ancestry": "Cockatrice",
+        "size": "S",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "22 (5d6+5)",
+        "speed": "20 ft., fly 40 ft.",
+        "init": "1",
+        "str": "6",
+        "dex": "12",
+        "con": "12",
+        "int": "2",
+        "wis": "13",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "petrified",
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Petrifying Bite",
+          "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 11. First Failure: The target has the Restrained condition. The target repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition, instead of the Restrained condition, for 24 hours.",
+          "attack": "Petrifying Bite|+3|1d4+1"
+        },
+        "description": "Cockatrices combine the features of irate roosters and starving reptiles. They petrify those they bite, their slightest peck turning their prey to stone.\n\tCockatrices often try to claim eye-catching structures—such as ruins and secluded farms—as roosts.\n\nSource:\tMonster Manual 2024 p. 75",
+        "environment": "grassland"
+      },
+      {
+        "name": "Cockatrice Regent [2024]",
+        "sortname": "Cockatrice, Regent",
+        "ancestry": "Cockatrice",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "15",
+        "hp": "136 (16d10+48)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "2",
+        "str": "19",
+        "dex": "14",
+        "con": "16",
+        "int": "3",
+        "wis": "16",
+        "cha": "5",
+        "save": "Wis +6",
+        "skill": null,
+        "passive": "13",
+        "languages": null,
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "petrified",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Flyby",
+            "text": "The cockatrice doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cockatrice makes one Petrifying Bite attack and two Talons attacks."
+          },
+          {
+            "name": "Petrifying Bite",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 14. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
+            "attack": "Petrifying Bite|+7|2d8+4"
+          },
+          {
+            "name": "Talons",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 18 (4d6 + 4) Slashing damage.",
+            "attack": "Talons|+7|4d6+4"
+          }
+        ],
+        "reaction": {
+          "name": "Magical Backlash",
+          "text": "Trigger: A creature within 120 feet of the cockatrice deals damage to it. Response: dDexterity Saving Throw: DC 14, the triggering creature. Failure: 13 (3d6 + 3) Force damage.",
+          "attack": "Magical Backlash||3d6+3"
+        },
+        "description": "Cockatrices combine the features of irate roosters and starving reptiles. They petrify those they bite, their slightest peck turning their prey to stone.\n\tBolder than their smaller cousins, cockatrice regents brim with unstable magical energy they use to restrain distant foes.\n\nSource:\tMonster Manual 2024 p. 75",
+        "environment": "grassland"
+      },
+      {
+        "name": "Colossus [2024]",
+        "size": "G",
+        "type": "construct (titan)",
+        "alignment": "unaligned",
+        "ac": "23",
+        "hp": "553 (27d20+270)",
+        "speed": "60 ft.",
+        "init": "16",
+        "str": "30",
+        "dex": "11",
+        "con": "30",
+        "int": "3",
+        "wis": "11",
+        "cha": "8",
+        "save": "Wis +8, Dex +8",
+        "skill": null,
+        "passive": "10",
+        "languages": "understands Celestial and Common but can't speak",
+        "cr": "25",
+        "vulnerable": null,
+        "resist": "necrotic, radiant",
+        "immune": "poison, psychic",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned, stunned, unconscious",
+        "senses": "truesight 300 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+8"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Immutable Form",
+            "text": "The colossus can't shape-shift."
+          },
+          {
+            "name": "Legendary Resistance (4/Day)",
+            "recharge": "4/DAY",
+            "text": "If the colossus fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The colossus has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Siege Monster",
+            "text": "The colossus deals double damage to objects and structures."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The colossus makes three attacks, using Slam or Radiant Ray in any combination."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +18, reach 20 ft. Hit: 32 (4d10 + 10) Bludgeoning damage, and the colossus pushes the target up to 20 feet straight away from itself.",
+            "attack": "Slam|+18|4d10+10"
+          },
+          {
+            "name": "Radiant Ray",
+            "text": "Ranged Attack Roll: +18, range 300 ft. Hit: 22 (4d10) Radiant damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Radiant Ray|+18|4d10"
+          },
+          {
+            "name": "Divine Beam (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 26, each creature in a 300-foot-long, 10-foot-wide Line. Failure: 65 (10d12) Radiant damage. Success: Half damage. Failure or Success: A creature reduced to 0 Hit Points by this beam disintegrates into dust, leaving behind any magic items it was wearing or carrying.",
+            "attack": "Divine Beam||10d12"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Colossus can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Colossus regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Smite",
+            "text": "The colossus makes one Radiant Ray attack."
+          },
+          {
+            "name": "Stomp",
+            "text": "The colossus moves up to half its Speed without provoking Opportunity Attacks, and it can make one Slam attack at any point during that move."
+          }
+        ],
+        "description": "Colossi are massive Constructs created by the devout to reflect the nature of a deity, which could be benevolent or wicked. Colossi thrum with incredible magic and work divine will on the land.\n\tDroves of faithful artisans craft a colossus in a shape to honor their deity, then call on that god to infuse the statue with life. This arduous process might take decades and involve hundreds of workers. If the god favors the creation, the mighty crystal at the construct's heart pulses with divine power, and the colossus rises to protect the faithful or enact the god's will.\n\tMost colossi were created in ages past and now lie dormant in secluded wilderness, awakening only when disturbed or called on to serve once more.\n\nSource:\tMonster Manual 2024 p. 76",
+        "environment": "any"
+      },
+      {
+        "name": "Commoner [2024]",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "10",
+        "hp": "4 (1d8)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "10",
+        "dex": "10",
+        "con": "10",
+        "int": "10",
+        "wis": "10",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Common",
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Club"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Training",
+            "text": "The commoner has proficiency in one skill of the DM's choice and has Advantage whenever it makes an ability check using that skill."
+          }
+        ],
+        "action": {
+          "name": "Club",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage.",
+          "attack": "Club|+2|1d4"
+        },
+        "description": "Commoners constitute the majority of people who don't pursue magical talents, extraordinary training, or a life of adventure. Some are generous, helpful sorts, while others are more cautious in sharing what they have. Use the following list of jobs and roles to introduce commoners in your adventures:\n\nArtist\nBaker\nBartender\nBlacksmith\nButcher\nCaptive\nCarpenter\nCastaway\nCobbler\nCook\nDyer\nFarmer\nFisher\nFletcher\nFlimflam artist\nGossip\nHermit\nHooligan\nHunter\nInnkeeper\nLaborer\nLamplighter\nMason\nMerchant\nMiner\nMud lark\nPatient\nPilgrim\nResurrectionist\nRioter\nScribe\nServant\nShepherd\nStudent\nTailor\nTanner\nTown crier\nWeaver\nYoungster\n\nSource:\tMonster Manual 2024 p. 77",
+        "environment": "any"
+      },
+      {
+        "name": "Constrictor Snake [2024]",
+        "sortname": "Constrictor Snake",
+        "ancestry": "Constrictor Snake",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "13 (2d10+2)",
+        "speed": "30 ft., swim 30 ft.",
+        "init": "2",
+        "str": "15",
+        "dex": "14",
+        "con": "12",
+        "int": "1",
+        "wis": "10",
+        "cha": "3",
+        "save": null,
+        "skill": "Stealth +4, Perception +2",
+        "passive": "12",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 10 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+            "attack": "Bite|+4|1d8+2"
+          },
+          {
+            "name": "Constrict",
+            "text": "Strength Saving Throw: DC 12, one Medium or smaller creature the snake can see within 5 feet. Failure: 7 (3d4) Bludgeoning damage, and the target has the Grappled condition (escape DC 12)."
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 351,\n\t\tPlayer's Handbook 2024 p. 348",
+        "environment": "desert, forest, swamp, underwater"
+      },
+      {
+        "name": "Copper Dragon Wyrmling [2024]",
+        "size": "M",
+        "type": "dragon (metallic)",
+        "alignment": "chaotic good",
+        "ac": "16",
+        "hp": "22 (4d8+4)",
+        "speed": "30 ft., climb 30 ft., fly 60 ft.",
+        "init": "3",
+        "str": "15",
+        "dex": "12",
+        "con": "13",
+        "int": "14",
+        "wis": "11",
+        "cha": "13",
+        "save": "Wis +2, Dex +3",
+        "skill": "Stealth +3, Perception +4",
+        "passive": "14",
+        "languages": "Draconic",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "acid",
+        "conditionImmune": null,
+        "senses": "blindsight 10 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage.",
+            "attack": "Rend|+4|1d10+2"
+          },
+          {
+            "name": "Acid Breath (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 11, each creature in a 20-foot-long, 5-foot-wide Line. Failure: 18 (4d8) Acid damage. Success: Half damage.",
+            "attack": "Acid Breath||4d8"
+          },
+          {
+            "name": "Slowing Breath",
+            "text": "Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: The target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn."
+          }
+        ],
+        "description": "Relentlessly friendly and curious, most copper dragons view the world as a place of endless wonder and possibility. These gregarious dragons are fonts of patience, hospitality, and humor, and they seek to improve the lives—or, at least, the mood—of those they interact with. If forced to fight to defend themselves or their friends, these dragons favor using their slowing breath and physical attacks to subdue antagonists. Only in cases of extreme peril or emotion do they use their deadly acid breath.\n\tCopper dragons typically live in caverns amid picturesque hills and rock formations—particularly those that are prominent landmarks. These dragons collect gifts, though they have little interest in treasure without meaning, no matter how valuable it is. To them, thoughtfully given presents and the feelings or memories they symbolize are more important than masterpieces or magical relics.\n\nCopper dragon wyrmlings venture into the world seeking to make friends and discover wonders. They sometimes get into trouble, but those who help them can become their friends for life.\n\nSource:\tMonster Manual 2024 p. 78",
+        "environment": "hill"
+      },
+      {
+        "name": "Couatl [2024]",
+        "size": "M",
+        "type": "celestial",
+        "alignment": "lawful good",
+        "ac": "19",
+        "hp": "60 (8d8+24)",
+        "speed": "30 ft., fly 90 ft.",
+        "init": "5",
+        "str": "16",
+        "dex": "20",
+        "con": "17",
+        "int": "18",
+        "wis": "20",
+        "cha": "18",
+        "save": "Wis +7, Con +5",
+        "skill": null,
+        "passive": "15",
+        "languages": "all; telepathy 120 ft.",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "psychic, radiant",
+        "conditionImmune": null,
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Shielded Mind",
+            "text": "The couatl's thoughts can't be read by any means, and other creatures can communicate with it telepathically only if it allows them."
+          }
+        ],
+        "action": [
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 11 (1d12 + 5) Piercing damage, and the target has the Poisoned condition until the end of the couatl's next turn.",
+            "attack": "Bite|+7|1d12+5"
+          },
+          {
+            "name": "Constrict",
+            "text": "Strength Saving Throw: DC 15, one Medium or smaller creature the couatl can see within 5 feet. Failure: 8 (1d6 + 5) Bludgeoning damage. The target has the Grappled condition (escape DC 13), and it has the Restrained condition until the grapple ends.",
+            "attack": "Constrict||1d6+5"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The couatl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save DC 15):\n\n\t• At will: Detect Evil and Good, Detect Magic, Detect Thoughts, Shapechange (Beast or Humanoid form only,  no Temporary Hit Points gained from the spell,  and no Concentration or Temporary Hit Points required to maintain the spell)\n\t• 1/Day each: Create Food and Water, Dream, Greater Restoration, Scrying, Sleep"
+          },
+          {
+            "name": "Divine Aid (2/Day) (Bonus Action)",
+            "recharge": "2/DAY",
+            "text": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Detect Evil and Good [2024], Detect Magic [2024], Detect Thoughts [2024], Shapechange [2024], Create Food and Water [2024], Dream [2024], Greater Restoration [2024], Scrying [2024], Sleep [2024], Bless [2024], Lesser Restoration [2024], Sanctuary [2024]",
+        "description": "Embodiments of prophecy and protectors of divine secrets, couatls ensure fate unfolds as it should. They resemble serpents with rainbow wings, and each is a manifestation of a divine edict, a truth or fate that a righteous god decrees must hold true for all time. Most couatls appear in places of ancient power, where they guard hidden magic or ensure foretold acts do or don't come to pass. Rarely, couatls watch over communities or travel lands in disguise, interpreting omens or manipulating factors to set fate on its proper course.\n\tMotivated by eternal mandates, couatls sometimes behave in inscrutable or antagonistic ways. They are inflexible and uncompromising, as their existences are fundamentally tied to their divine directives, but they harm other creatures only when absolutely necessary to achieve divine goals.\n\tEach couatl goes through a period of renewal at the end of an age. In a couatl's lifecycle, an age might correspond to a celestial calendar or some divine chronology. Near the age's end, the couatl lays a wondrous, rainbow-hued egg. When the age ends, the couatl dies. For a period—perhaps a single day, perhaps until an annual solar event—the couatl's work is unattended. Once this time passes, the same couatl that laid the egg hatches from it, fully grown and renewed to serve for another age.\n\nSource:\tMonster Manual 2024 p. 82",
+        "environment": "desert, forest, grassland, urban"
+      },
+      {
+        "name": "Crab [2024]",
+        "sortname": "Crab",
+        "ancestry": "Crab",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "3 (1d4+1)",
+        "speed": "20 ft., swim 20 ft.",
+        "init": "0",
+        "str": "6",
+        "dex": "11",
+        "con": "12",
+        "int": "1",
+        "wis": "8",
+        "cha": "2",
+        "save": null,
+        "skill": "Stealth +2",
+        "passive": "9",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Amphibious",
+            "text": "The crab can breathe air and water."
+          }
+        ],
+        "action": {
+          "name": "Claw",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Bludgeoning damage.",
+          "attack": "Claw|+2|"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 351,\n\t\tPlayer's Handbook 2024 p. 348",
+        "environment": "coastal, underwater"
+      },
+      {
+        "name": "Crawling Claw [2024]",
+        "sortname": "Crawling Claw",
+        "ancestry": "Crawling Claw",
+        "size": "T",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "12",
+        "hp": "2 (1d4)",
+        "speed": "20 ft., climb 20 ft.",
+        "init": "2",
+        "str": "13",
+        "dex": "14",
+        "con": "11",
+        "int": "5",
+        "wis": "10",
+        "cha": "4",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "understands Common but can't speak",
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "charmed, exhaustion, frightened, incapacitated, poisoned",
+        "senses": "blindsight 30 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Slam",
+          "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 2 Necrotic damage.",
+          "attack": "Slam|+3|2"
+        },
+        "description": "Crawling claws are severed hands that move and act of their own murderous accord. These deathless appendages can spring to life from the severed limbs of killers and villains, and sinister magic-users might animate crawling claws as foul servants. Crawling claws appear in a variety of forms, from decaying human hands to the fresh appendages of animals or monsters.\n\nLone crawling claws can continue killing sprees they perpetrated in life. Some recklessly attack the living, while others pursue specific victims. In rare cases, a crawling claw wreaks mayhem while the rest of its body still lives, with the original creature potentially unaware of its severed hand's crimes.\n\nSource:\tMonster Manual 2024 p. 83",
+        "environment": "any"
+      },
+      {
+        "name": "Crocodile [2024]",
+        "sortname": "Crocodile",
+        "ancestry": "Crocodile",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "13 (2d10+2)",
+        "speed": "20 ft., swim 30 ft.",
+        "init": "0",
+        "str": "15",
+        "dex": "10",
+        "con": "13",
+        "int": "2",
+        "wis": "10",
+        "cha": "5",
+        "save": "Con +3",
+        "skill": "Stealth +2",
+        "passive": "10",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Hold Breath",
+            "text": "The crocodile can hold its breath for 1 hour."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition.",
+          "attack": "Bite|+4|1d8+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 352,\n\t\tPlayer's Handbook 2024 p. 348",
+        "environment": "coastal, swamp, urban"
+      },
+      {
+        "name": "Cultist [2024]",
+        "sortname": "Cultist",
+        "ancestry": "Cultist",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "12",
+        "hp": "9 (2d8)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "11",
+        "dex": "12",
+        "con": "10",
+        "int": "10",
+        "wis": "11",
+        "cha": "10",
+        "save": "Wis +2",
+        "skill": "Deception +2, Religion +2",
+        "passive": "10",
+        "languages": "Common",
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Leather Armor, Sickle"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": {
+          "name": "Ritual Sickle",
+          "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage.",
+          "attack": [
+            "Ritual Sickle|+3|1d4+1",
+            "Necrotic Damage||1"
+          ]
+        },
+        "description": "Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.\n\nCultist Agendas:\n1d6 | The Cultist Strives To...\n1 | Bring about the end of a dominant order, an age, or the world.\n2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.\n3 | Expand their faith through mind control or supernatural coercion.\n4 | Make global changes, like sinking the land or awakening volcanoes.\n5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.\n6 | Summon their deity or its herald, weapon, or realm into their world.\n\nOccult Symbols:\nCults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.\n\nCult Symbols:\n1d10 | The Symbol Is... Depicted As...\n1 | An alchemical sign A calendar or map\n2 | An animal A crest or as heraldry\n3 | A celestial body An elaborate diagram\n4 | A deity's icon A metaphorical image\n5 | An element A mystical being\n6 | An eye Part of an equation\n7 | A geometric shape A repeating pattern\n8 | A letter or number A series of scratches\n9 | Part of a monster A simple pictogram\n10 | A skull A weapon or tool\n\nCult Members:\nCults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.\n\nCultists:\nCultists devote themselves to their faith's leaders and otherworldly masters. While this zeal grants cultists no magical powers, it gives them remarkable resolve in the face of threats. Cultists perform much of a cult's mundane work, which might include evangelism, criminal acts, or serving as sacrifices.\n\nSource:\tMonster Manual 2024 p. 84",
+        "environment": "any"
+      },
+      {
+        "name": "Cultist Fanatic [2024]",
+        "sortname": "Cultist, Fanatic",
+        "ancestry": "Cultist",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "44 (8d8+8)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "11",
+        "dex": "14",
+        "con": "12",
+        "int": "10",
+        "wis": "14",
+        "cha": "13",
+        "save": "Wis +4",
+        "skill": "Persuasion +3, Deception +3, Religion +2",
+        "passive": "12",
+        "languages": "Common",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Holy Symbol, Leather Armor"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Pact Blade",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage plus 7 (2d6) Necrotic damage.",
+            "attack": [
+              "Pact Blade|+4|1d8+2",
+              "Necrotic Damage||2d6"
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):\n\n\t• At will: Light, Thaumaturgy\n\t• 1/Day: Hold Person\n\t• 2/Day: Command"
+          },
+          {
+            "name": "Spiritual Weapon (2/Day) (Bonus Action)",
+            "recharge": "2/DAY",
+            "text": "The cultist casts the Spiritual Weapon spell, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Light [2024], Thaumaturgy [2024], Hold Person [2024], Command [2024], Spiritual Weapon [2024]",
+        "description": "Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.\n\nCultist Agendas:\n1d6 | The Cultist Strives To...\n1 | Bring about the end of a dominant order, an age, or the world.\n2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.\n3 | Expand their faith through mind control or supernatural coercion.\n4 | Make global changes, like sinking the land or awakening volcanoes.\n5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.\n6 | Summon their deity or its herald, weapon, or realm into their world.\n\nOccult Symbols:\nCults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.\n\nCult Symbols:\n1d10 | The Symbol Is... Depicted As...\n1 | An alchemical sign A calendar or map\n2 | An animal A crest or as heraldry\n3 | A celestial body An elaborate diagram\n4 | A deity's icon A metaphorical image\n5 | An element A mystical being\n6 | An eye Part of an equation\n7 | A geometric shape A repeating pattern\n8 | A letter or number A series of scratches\n9 | Part of a monster A simple pictogram\n10 | A skull A weapon or tool\n\nCult Members:\nCults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.\n\nCultist Fanatic:\nCultist fanatics lead small cults or cells within larger cults. They're privy to more of a cult's mysteries than lower-ranking cultists are, granting them access to magical powers from their patrons.\n\nSource:\tMonster Manual 2024 p. 85",
+        "environment": "any"
+      },
+      {
+        "name": "Cultist Hierophant [2024]",
+        "sortname": "Cultist, Hierophant",
+        "ancestry": "Cultist",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "16",
+        "hp": "144 (17d8+68)",
+        "speed": "30 ft.",
+        "init": "8",
+        "str": "14",
+        "dex": "18",
+        "con": "18",
+        "int": "13",
+        "wis": "16",
+        "cha": "20",
+        "save": "Wis +7, Cha +9",
+        "skill": "Persuasion +9, Perception +7, Religion +5",
+        "passive": "17",
+        "languages": "Celestial, Common",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Gear",
+            "text": "Breastplate, Holy Symbol"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cultist makes three attacks, using Pact Blade or Radiant Ray in any combination."
+          },
+          {
+            "name": "Pact Blade",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 18 (4d8) Radiant damage.",
+            "attack": [
+              "Pact Blade|+9|2d6+5",
+              "Radiant Damage||4d8"
+            ]
+          },
+          {
+            "name": "Radiant Ray",
+            "text": "Ranged Attack Roll: +9, range 120 ft. Hit: 31 (4d12 + 5) Radiant damage.",
+            "attack": "Radiant Ray|+9|4d12+5"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cultist casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 17):\n\n\t• At will: Thaumaturgy\n\t• 1/Day each: Jallarzi's Storm of Radiance (level 7 version), Mass Suggestion"
+          }
+        ],
+        "spells": "Mage Armor [2024], Thaumaturgy [2024], Jallarzi's Storm of Radiance [2024], Mass Suggestion [2024]",
+        "description": "Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.\n\nCultist Agendas:\n1d6 | The Cultist Strives To...\n1 | Bring about the end of a dominant order, an age, or the world.\n2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.\n3 | Expand their faith through mind control or supernatural coercion.\n4 | Make global changes, like sinking the land or awakening volcanoes.\n5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.\n6 | Summon their deity or its herald, weapon, or realm into their world.\n\nOccult Symbols:\nCults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.\n\nCult Symbols:\n1d10 | The Symbol Is... Depicted As...\n1 | An alchemical sign A calendar or map\n2 | An animal A crest or as heraldry\n3 | A celestial body An elaborate diagram\n4 | A deity's icon A metaphorical image\n5 | An element A mystical being\n6 | An eye Part of an equation\n7 | A geometric shape A repeating pattern\n8 | A letter or number A series of scratches\n9 | Part of a monster A simple pictogram\n10 | A skull A weapon or tool\n\nCult Members:\nCults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.\n\nCultist Hierophant:\nCultist hierophants are leaders who oversee the lives of their underlings, dictate the edicts of the cult, and interpret their patron's will. They possess supernatural powers gained from the cult's patron, supernatural sources, or the power of their own fanaticism. These leaders know their cult's deepest secrets and often control strange relics, mystical sites, and monstrous servants.\n\nSource:\tMonster Manual 2024 p. 85",
+        "environment": "any"
+      },
+      {
+        "name": "Cyclops Oracle [2024]",
+        "sortname": "Cyclops, Oracle",
+        "ancestry": "Cyclops",
+        "size": "H",
+        "type": "giant",
+        "alignment": "chaotic neutral",
+        "ac": "16",
+        "hp": "207 (18d12+90)",
+        "speed": "40 ft.",
+        "init": "8",
+        "str": "22",
+        "dex": "11",
+        "con": "20",
+        "int": "16",
+        "wis": "18",
+        "cha": "10",
+        "save": "Wis +8, Con +9",
+        "skill": "History +11, Perception +12",
+        "passive": "22",
+        "languages": "Giant",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "truesight 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cyclops makes three attacks, using Radiant Strike or Flash of Light in any combination."
+          },
+          {
+            "name": "Radiant Strike",
+            "text": "Melee Attack Roll: +10, reach 10 ft. Hit: 22 (3d10 + 6) Radiant damage.",
+            "attack": "Radiant Strike|+10|3d10+6"
+          },
+          {
+            "name": "Flash of Light",
+            "text": "Ranged Attack Roll: +10, range 120 ft. Hit: 17 (2d10 + 6) Radiant damage, and the target has Disadvantage on attack rolls until the end of the cyclops's next turn.",
+            "attack": "Flash of Light|+10|2d10+6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cyclops casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 16):\n\n\t• 1/Day: Legend Lore\n\t• 2/Day each: Arcane Eye, Detect Magic, Locate Object"
+          }
+        ],
+        "reaction": {
+          "name": "Portent (Recharge 4-6)",
+          "recharge": "D4",
+          "text": "Trigger: The cyclops or an ally it can see makes a D20 Test. Response: The cyclops rolls 1d20 and chooses whether to use that roll in place of the d20 rolled for the D20 Test.",
+          "attack": "Portent||1d20"
+        },
+        "spells": "Legend Lore, Arcane Eye, Detect Magic, Locate Object",
+        "description": "Cyclopes are gigantic, one-eyed descendants of the gods. Using their mystical vision, cyclopes can witness how future events are likely to occur.\n\nSource:\tMonster Manual 2024 p. 88",
+        "environment": "coastal, desert, grassland, hill, mountain, underdark"
+      },
+      {
+        "name": "Cyclops Sentry [2024]",
+        "sortname": "Cyclops, Sentry",
+        "ancestry": "Cyclops",
+        "size": "H",
+        "type": "giant",
+        "alignment": "chaotic neutral",
+        "ac": "14",
+        "hp": "138 (12d12+60)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "22",
+        "dex": "11",
+        "con": "20",
+        "int": "8",
+        "wis": "6",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "8",
+        "languages": "Giant",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cyclops makes two attacks, using Stone Club or Rock in any combination."
+          },
+          {
+            "name": "Stone Club",
+            "text": "Melee Attack Roll: +9, reach 10 ft. Hit: 16 (3d6 + 6) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+            "attack": "Stone Club|+9|3d6+6"
+          },
+          {
+            "name": "Rock",
+            "text": "Ranged Attack Roll: +9, range 30/120 ft. Hit: 22 (3d10 + 6) Bludgeoning damage.",
+            "attack": "Rock|+9|3d10+6"
+          }
+        ],
+        "reaction": {
+          "name": "Limited Foresight (Recharge 6)",
+          "text": "Trigger: A creature the cyclops can see makes an attack roll against it. Response: The cyclops imposes Disadvantage on the roll, and the cyclops gains Advantage on attack rolls against the target until the end of the cyclops's next turn.",
+          "recharge": "D6"
+        },
+        "description": "Cyclopes are gigantic, one-eyed descendants of the gods. Using their mystical vision, cyclopes can witness how future events are likely to occur.\n\nSource:\tMonster Manual 2024 p. 88",
+        "environment": "coastal, desert, grassland, hill, mountain, underdark"
+      }
+    ]
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Ochre Jelly [2024]",
+        "sortname": "Jelly, Ochre",
+        "ancestry": "Jelly",
+        "size": "L",
+        "type": "ooze",
+        "alignment": "unaligned",
+        "ac": "8",
+        "hp": "52 (7d10+14)",
+        "speed": "20 ft., climb 20 ft.",
+        "init": "-2",
+        "str": "15",
+        "dex": "6",
+        "con": "14",
+        "int": "2",
+        "wis": "6",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "8",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": "acid",
+        "immune": "lightning, slashing",
+        "conditionImmune": "charmed, deafened, exhaustion, frightened, grappled, prone, restrained",
+        "senses": "blindsight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Amorphous",
+            "text": "The jelly can move through a space as narrow as 1 inch without expending extra movement to do so."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The jelly can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          }
+        ],
+        "action": {
+          "name": "Pseudopod",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 12 (3d6 + 2) Acid damage.",
+          "attack": "Pseudopod|+4|3d6+2"
+        },
+        "reaction": {
+          "name": "Split",
+          "text": "Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly's Hit Points are divided evenly between the new jellies (round down)."
+        },
+        "description": "Ochre jellies are giant, yellow-brown amoebas that digest organic creatures. They tirelessly hunt any prey smaller than themselves, oozing over, under, and around obstacles in their path. Once they overwhelm their quarry, these acidic slimes dissolve the flesh, hair, and scales of their prey, leaving behind clothing, equipment, treated leather, and bone.\n\tIf damaged by lightning or a slashing weapon, an ochre jelly splits in two. These smaller jellies work together to consume foes, but afterward they move on to hunt independently. Both eventually grow into full-size jellies.\n\tWhat ochre jellies can't dissolve they leave behind. Roll on or choose a result from the Ochre Jelly Leftovers table to inspire such remains.\n\nOchre Jelly Leftovers:\n1d6 After a Meal, the Ochre Jelly Leaves Behind...\n1 A bone etched with a word or an eerie symbol.\n2 Broken dragonborn or tiefling horns.\n3 An ornate prosthetic limb.\n4 The skeleton of an explorer's pet (perhaps a small dog, monkey, or parrot).\n5 A skull with gold teeth worth 1d4 GP .\n6 A spotless suit of metal armor.\n\nSource:\tMonster Manual 2024 p. 230",
+        "environment": "underdark"
+      },
+      {
+        "name": "Octopus [2024]",
+        "size": "S",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "3 (1d6)",
+        "speed": "5 ft., swim 30 ft.",
+        "init": "2",
+        "str": "4",
+        "dex": "15",
+        "con": "11",
+        "int": "3",
+        "wis": "10",
+        "cha": "4",
+        "save": null,
+        "skill": "Stealth +6, Perception +2",
+        "passive": "12",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Compression",
+            "text": "The octopus can move through a space as narrow as 1 inch without expending extra movement to do so."
+          },
+          {
+            "name": "Water Breathing",
+            "text": "The octopus can breathe only underwater."
+          }
+        ],
+        "action": {
+          "name": "Tentacles",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Bludgeoning damage.",
+          "attack": "Tentacles|+4|1"
+        },
+        "reaction": {
+          "name": "Ink Cloud (1/Day)",
+          "recharge": "1/DAY",
+          "text": "Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink."
+        },
+        "description": "Source:\tMonster Manual 2024 p. 365,\n\t\tPlayer's Handbook 2024 p. 353",
+        "environment": "underwater"
+      },
+      {
+        "name": "Ogre [2024]",
+        "sortname": "Ogre",
+        "ancestry": "Ogre",
+        "size": "L",
+        "type": "giant",
+        "alignment": "chaotic evil",
+        "ac": "11",
+        "hp": "68 (8d10+24)",
+        "speed": "40 ft.",
+        "init": "-1",
+        "str": "19",
+        "dex": "8",
+        "con": "16",
+        "int": "5",
+        "wis": "7",
+        "cha": "7",
+        "save": null,
+        "skill": null,
+        "passive": "8",
+        "languages": "Common, Giant",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Greatclub, Javelins (3)"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Greatclub",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage.",
+            "attack": "Greatclub|+6|2d8+4"
+          },
+          {
+            "name": "Javelin",
+            "text": "Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 11 (2d6 + 4) Piercing damage.",
+            "attack": "Javelin|+6|2d6+4"
+          }
+        ],
+        "description": "Ogres are selfish raiders and hulking gluttons spawned of hateful supernatural forces. From dismal ruins and bleak hinterlands, they raid vulnerable communities and ambush travelers. Ogres covet food and treasure, and they spitefully destroy art, books, clockwork devices, and other delicate or lovingly made things. Occasionally they kidnap victims to eat later or, more rarely, performers who catch their interest.\n\tOgres trace their origins to wrathful deities such as Erythnul, Takhisis, and Vaprak. They magically emerge from the earth of lands corrupted by evil gods, sinister magic, or ancient curses. Some bear evidence of the places that spawned them, sporting rocky calluses, mossy growths, or frozen scars.\n\nOgre:\nOgres are 10-foot-tall brutes that overwhelm their foes and take what spoils they please. Ogre raiders ally with other evil forces in return for food, riches, and promises of battle.\n\nSource:\tMonster Manual 2024 p. 231",
+        "environment": "arctic, desert, forest, grassland, hill, mountain, swamp, underdark"
+      },
+      {
+        "name": "Ogre Zombie [2024]",
+        "sortname": "Zombie, Ogre",
+        "ancestry": "Zombie",
+        "size": "L",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "8",
+        "hp": "85 (9d10+36)",
+        "speed": "30 ft.",
+        "init": "-2",
+        "str": "19",
+        "dex": "6",
+        "con": "18",
+        "int": "3",
+        "wis": "6",
+        "cha": "5",
+        "save": "Wis +0",
+        "skill": null,
+        "passive": "8",
+        "languages": "understands Common and Giant but can't speak",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Undead Fortitude",
+            "text": "If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+          }
+        ],
+        "action": {
+          "name": "Slam",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage.",
+          "attack": "Slam|+6|2d8+4"
+        },
+        "description": "Zombies are unthinking, reanimated corpses, often gruesomely marred by decay and lethal traumas. They serve whatever supernatural force animates them—typically evil necromancers or fiendish spirits. Zombies are relentless, merciless, and resilient, and their dead flesh can carry on even after suffering grievous wounds. While they can follow simple orders, they rely on primal drives rather than thought. They fulfill commands by working tirelessly or battering through foes, but they are easily stymied by barriers or unexpected circumstances.\n\tZombies are usually created from Humanoid corpses, but the remains of other creatures can also become zombies. Such monstrous zombies might possess the strength they had in life or a measure of their supernatural abilities, but they employ such abilities haphazardly at best.\n\nOgre Zombie:\nOgre zombies serve as tireless labor and undying weapons of war. These massive zombies possess the size and strength to break through barriers that repel smaller zombies.\n\nSource:\tMonster Manual 2024 p. 346",
+        "environment": "planar (shadowfell), underdark, urban"
+      },
+      {
+        "name": "Ogrillon Ogre [2024]",
+        "size": "L",
+        "type": "giant",
+        "alignment": "chaotic evil",
+        "ac": "12",
+        "hp": "52 (7d10+14)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "17",
+        "dex": "10",
+        "con": "14",
+        "int": "7",
+        "wis": "9",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "Common, Giant",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Battleaxe, Javelins (3)"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Battleaxe",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.",
+            "attack": "Battleaxe|+5|1d8+3"
+          },
+          {
+            "name": "Javelin",
+            "text": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+            "attack": "Javelin|+5|1d6+3"
+          }
+        ],
+        "description": "Ogres are selfish raiders and hulking gluttons spawned of hateful supernatural forces. From dismal ruins and bleak hinterlands, they raid vulnerable communities and ambush travelers. Ogres covet food and treasure, and they spitefully destroy art, books, clockwork devices, and other delicate or lovingly made things. Occasionally they kidnap victims to eat later or, more rarely, performers who catch their interest.\n\tOgres trace their origins to wrathful deities such as Erythnul, Takhisis, and Vaprak. They magically emerge from the earth of lands corrupted by evil gods, sinister magic, or ancient curses. Some bear evidence of the places that spawned them, sporting rocky calluses, mossy growths, or frozen scars.\n\nOgrillon Ogre:\nOgrillons arise from Humanoids cursed by foul magic or the will of wrathful deities. They appear similar to whoever they once were, but they grow to over 8 feet tall and gain ogre-like features. Ogrillons constantly seethe with supernatural anger, which they might struggle to control or purposefully vent on other creatures.\n\nSource:\tMonster Manual 2024 p. 231",
+        "environment": "arctic, desert, forest, grassland, hill, mountain, swamp, underdark"
+      },
+      {
+        "name": "Oni [2024]",
+        "size": "L",
+        "type": "fiend",
+        "alignment": "lawful evil",
+        "ac": "17",
+        "hp": "119 (14d10+42)",
+        "speed": "30 ft., fly 30 ft.(hover)",
+        "init": "0",
+        "str": "19",
+        "dex": "11",
+        "con": "16",
+        "int": "14",
+        "wis": "12",
+        "cha": "15",
+        "save": "Wis +4, Con +6, Dex +3, Cha +5",
+        "skill": "Deception +8, Arcana +5, Perception +4",
+        "passive": "14",
+        "languages": "Common, Giant",
+        "cr": "7",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Regeneration",
+            "text": "The oni regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting."
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 10 (1d12 + 4) Slashing damage plus 9 (2d8) Necrotic damage.",
+            "attack": [
+              "Claw|+7|1d12+4",
+              "Necrotic Damage||2d8"
+            ]
+          },
+          {
+            "name": "Nightmare Ray",
+            "text": "Ranged Attack Roll: +5, range 60 ft. Hit: 9 (2d6 + 2) Psychic damage, and the target has the Frightened condition until the start of the oni's next turn.",
+            "attack": "Nightmare Ray|+5|2d6+2"
+          },
+          {
+            "name": "Shape-Shift",
+            "text": "The oni shape-shifts into a Small or Medium Humanoid or a Large Giant, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The oni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):\n\n\t• 1/Day each: Charm Person (level 2 version), Darkness, Gaseous Form, Sleep"
+          },
+          {
+            "name": "Invisibility (Bonus Action)",
+            "text": "The oni casts Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Invisibility [2024], Charm Person [2024], Darkness [2024], Gaseous Form [2024], Sleep [2024]",
+        "description": "Oni are elusive entities that inhabit dark forests and other wildernesses. By shape-shifting into the form of an innocent or moving invisibly, oni encroach on communities and lonely roads. They frequently harass people of faith, testing the limits of their piousness, or torment selfish people, punishing them for their wickedness. Wise communities often have guardian statues, annual rituals, or local superstitions meant to keep oni at bay. In rare cases, an oni might gradually befriend such communities and protect them from other threats for generations.\n\tOni torment villages that don't pay them or other supernatural forces respect. Roll on or choose a result from the Oni Troubles table to inspire how an oni menaces such communities.\n\nOni Troubles:\n1d4 | The Oni Torments People By...\n1 | Charming people to perform nasty tricks.\n2 | Claiming a bridge, gate, shrine, or trail and trying to eat anyone who comes near.\n3 | Luring other monsters to the settlement.\n4 | Playing drums that keep everyone awake.\n\nSource:\tMonster Manual 2024 p. 232",
+        "environment": "forest, urban"
+      },
+      {
+        "name": "Otyugh [2024]",
+        "size": "L",
+        "type": "aberration",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "104 (11d10+44)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "16",
+        "dex": "11",
+        "con": "19",
+        "int": "6",
+        "wis": "13",
+        "cha": "6",
+        "save": "Con +7",
+        "skill": null,
+        "passive": "11",
+        "languages": "Otyugh; telepathy 120 ft. (doesn't allow the receiving creature to respond telepathically)",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The otyugh makes one Bite attack and two Tentacle attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage, and the target has the Poisoned condition. Whenever the Poisoned target finishes a Long Rest, it is subjected to the following effect. Constitution Saving Throw: DC 15. Failure: The target's Hit Point maximum decreases by 5 (1d10) and doesn't return to normal until the Poisoned condition ends on the target. Success: The Poisoned condition ends.",
+            "attack": "Bite|+6|2d8+3"
+          },
+          {
+            "name": "Tentacle",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two tentacles.",
+            "attack": "Tentacle|+6|2d8+3"
+          },
+          {
+            "name": "Tentacle Slam",
+            "text": "Constitution Saving Throw: DC 14, each creature Grappled by the otyugh. Failure: 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh's next turn. Success: Half damage only.",
+            "attack": "Tentacle Slam||3d8+3"
+          }
+        ],
+        "description": "Otyughs live to eat—the more disgusting the meal, the better. They consider all non-otyughs that come within reach dishes in life's endless buffet. In dumps, sewers, polluted ruins, and similar murky depths, otyughs devour garbage, carcasses, and anything else their tentacles can cram in their expansive maws. Some creatures ply otyughs with trash to recruit them as watchful—if disgusting—guardians.\n\tOtyughs often bury themselves amid trash heaps and observe their surroundings with their eye-studded stalk. They use glittery trash and telepathic urgings to coax creatures close, then burst from hiding, attacking with their spiny tentacles and filthy maws. Roll on or choose a result from the Otyugh Lures table to inspire how an otyugh tempts prey close.\n\nOtyugh Lures:\n1d4 | To Attract Potential Meals, the Otyugh...\n1 | Disguises its tentacles with garbage puppets.\n2 | Sings an enticing song in Otyugh.\n3 | Telepathically transmits a message like \"Happy good stuff here!\" or \"Help now! I'm too delicious?\"\n4 | Telepathically transmits an image of a large gemstone, crooked weapon, or soggy pastry.\n\nSource:\tMonster Manual 2024 p. 233",
+        "environment": "underdark"
+      },
+      {
+        "name": "Owl [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "1 (1d4-1)",
+        "speed": "5 ft., fly 60 ft.",
+        "init": "1",
+        "str": "3",
+        "dex": "13",
+        "con": "8",
+        "int": "2",
+        "wis": "12",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +5, Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Flyby",
+            "text": "The owl doesn't provoke Opportunity Attacks when it flies out of an enemy's reach."
+          }
+        ],
+        "action": {
+          "name": "Talons",
+          "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 1 Slashing damage.",
+          "attack": "Talons|+3|1"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 366,\n\t\tPlayer's Handbook 2024 p. 354",
+        "environment": "arctic, forest, hill"
+      },
+      {
+        "name": "Owlbear [2024]",
+        "sortname": "Owlbear",
+        "ancestry": "Owlbear",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "59 (7d10+21)",
+        "speed": "40 ft., climb 40 ft.",
+        "init": "1",
+        "str": "20",
+        "dex": "12",
+        "con": "17",
+        "int": "3",
+        "wis": "12",
+        "cha": "7",
+        "save": null,
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The owlbear makes two Rend attacks."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage.",
+            "attack": "Rend|+7|2d8+5"
+          }
+        ],
+        "description": "Created long ago by misguided mages, owlbears combine keen avian eyes, thick feathers, and a tearing beak with a mighty bearlike frame. Despite their magical origins, owlbears have propagated and spread to wildernesses across the multiverse.\n\tOwlbears dwell in distinctive dens. Roll on or choose a result from the Owlbear Den Features table to inspire an owlbear den's noteworthy traits.\n\nOwlbear Den Features:\n1d4 | An Owlbear Den Contains...\n1 | Evidence of previous occupants, like bandits, wolves, or dragons.\n2 | Heaps of regurgitated pellets studded with coins or other treasure.\n3 | A nest with 1d6 owlbear eggs.\n4 | Passages through the earth or hollow trees.\n\nOwlbear:\nOwlbears are tenacious hunters that might track prey over miles and rarely give up their hunts.\n\nSource:\tMonster Manual 2024 p. 234",
+        "environment": "forest"
+      }
+    ]
+  }
+}

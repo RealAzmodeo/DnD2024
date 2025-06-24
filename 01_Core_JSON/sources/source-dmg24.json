@@ -1,0 +1,26 @@
+{
+  "source": {
+    "name": "Dungeon Master's Guide (2024)",
+    "abbreviation": "DMG24",
+    "url": "https://marketplace.dndbeyond.com/core-rules/3710000?pid=DB3710000",
+    "author": "Wizards of the Coast",
+    "publisher": "Wizards of the Coast",
+    "website": "https://www.dndbeyond.com/",
+    "category": "Core Rulebooks [2024]",
+    "pubdate": "2024-11-12",
+    "description": "Weave fantastic adventures with the 2024 Dungeon Master's Guide!\n\nCreate thrilling adventures with this revised and expanded Dungeon Master's Guide for fifth edition Dungeons & Dragons. Inside this essential guide is everything new and experienced Dungeon Masters need to weave epic tales, build fantastical worlds, and inspire memorable moments for your party. It includes:\n\n\t• Dungeon Master essentials for all experience levels\n\t• Greyhawk as a customizable, ready-to-use campaign setting\n\t• New Bastions system\n\t• 400+ Magic Items, 15 versatile maps, 50+ Lore Entries",
+    "collection": {
+      "doc": [
+        {
+          "@href": "backgrounds-dmg24.xml"
+        },
+        {
+          "@href": "bestiary-dmg24.xml"
+        },
+        {
+          "@href": "items-dmg24.xml"
+        }
+      ]
+    }
+  }
+}

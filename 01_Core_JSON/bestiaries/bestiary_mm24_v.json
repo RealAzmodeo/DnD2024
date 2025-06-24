@@ -1,0 +1,750 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Vampire [2024]",
+        "sortname": "Vampire",
+        "ancestry": "Vampire",
+        "size": "S",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "16",
+        "hp": "195 (23d8+92)",
+        "speed": "40 ft., climb 40 ft.",
+        "init": "14",
+        "str": "18",
+        "dex": "18",
+        "con": "18",
+        "int": "17",
+        "wis": "15",
+        "cha": "18",
+        "save": "Wis +7, Con +9, Dex +9, Cha +9",
+        "skill": "Stealth +9, Perception +7",
+        "passive": "17",
+        "languages": "Common plus two other languages",
+        "cr": "13",
+        "vulnerable": null,
+        "resist": "necrotic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the vampire fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Misty Escape",
+            "text": "If the vampire drops to 0 Hit Points outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can't use Shape-Shift, it is destroyed.\n\tWhile it has 0 Hit Points in mist form, it can't return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Paralyzed condition until it regains any Hit Points, and it regains 1 Hit Point after spending 1 hour there."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          },
+          {
+            "name": "Vampire Weakness",
+            "text": "The vampire has these weaknesses:\n\nForbiddance: The vampire can't enter a residence without an invitation from an occupant.\n\nRunning Water: The vampire takes 20 Acid damage if it ends its turn in running water.\n\nStake to the Heart: If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed.\n\nSunlight: The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack (Vampire Form Only)",
+            "text": "The vampire makes two Grave Strike attacks and uses Bite."
+          },
+          {
+            "name": "Grave Strike (Vampire Form Only)",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.",
+            "attack": [
+              "Grave Strike|+9|1d8+4",
+              "Necrotic Damage||2d6"
+            ]
+          },
+          {
+            "name": "Bite (Bat or Vampire Form Only)",
+            "text": "Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire's control.",
+            "attack": [
+              "Bite||1d4+4",
+              "Necrotic Damage||3d8"
+            ]
+          },
+          {
+            "name": "Shape-Shift (Bonus Action)",
+            "text": "If the vampire isn't in sunlight or running water, it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft.) or a Medium cloud of mist (Speed 5 ft., Fly Speed 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it.\n\tWhile in bat form, the vampire can't speak. Its game statistics, other than its size and Speed, are unchanged.\n\tWhile in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight."
+          },
+          {
+            "name": "Charm (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire's Bite, the damage of which doesn't end the spell. When the spell ends, the target is unaware it was Charmed by the vampire."
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Vampire can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Vampire regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Deathless Strike",
+            "text": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
+          },
+          {
+            "name": "Beguile",
+            "text": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can't take this action again until the start of its next turn."
+          },
+          {
+            "@category": "lair",
+            "name": "Vampire Lairs",
+            "text": "Vampires and vampire umbral lords create sanctuaries apart from the living, whether hidden in cosmopolitan cities or sequestered in ruins where they dwelled in life.\n\tThe region containing a vampire's lair is warped by its presence, creating the following effects:\n\nChildren of the Night: The vampire exerts influence over the animals in its domain. From dusk until dawn, Medium or smaller Beasts have the Charmed condition while within 1 mile of the lair.\n\nLooming Shadows: Shadows within 1 mile of the lair seem to move as if alive. Any creature (excluding the vampire and its allies) that finishes a Short Rest while within 1 mile of the lair must succeed on a DC 15 Wisdom saving throw or gain no benefit from that rest.\n\nMists: The area within 1 mile of the lair is Lightly Obscured by a persistent, creeping fog. The vampire and any creatures of its choice are unaffected by the fog.\n\nIf the vampire dies or moves its lair elsewhere, these effects end immediately."
+          }
+        ],
+        "description": "Vampires disguise their accursed, immortal natures, passing as mortals to feed on the blood of the living. While the youngest vampires might be little more than bloodthirsty servants of their creators, the eldest possess incredible cunning and control over supernatural forces of the night.\n\tUndead vampires lie dormant during the day, retreating to resting places hidden from foes and the sun's searing rays. Roll on or choose a result from the Vampire Resting Places table to inspire a vampire's grim sanctuary.\n\nVampire Resting Places:\n1d6 | The Vampire's Resting Place Is...\n1 | Among the roots of a dead tree.\n2 | At the bottom of a stagnant pool.\n3 | A coﬃn filled with grave dirt.\n4 | A large pot full of blood or vinegar.\n5 | A space accessible only by shape-shifting.\n6 | Within a statue or suit of armor.\n\nVampire:\nVampires are terrifying hunters and manipulators. They use their powers to shape-shift and bend other creatures' wills as they terrorize and feed on populations over generations.\n\nSource:\tMonster Manual 2024 p. 317",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Vampire Familiar [2024]",
+        "sortname": "Vampire, Familiar",
+        "ancestry": "Vampire",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral evil",
+        "ac": "15",
+        "hp": "65 (10d8+20)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "5",
+        "str": "17",
+        "dex": "16",
+        "con": "15",
+        "int": "10",
+        "wis": "10",
+        "cha": "14",
+        "save": "Wis +2, Dex +5",
+        "skill": "Persuasion +4, Stealth +7, Perception +4",
+        "passive": "14",
+        "languages": "Common plus one other language",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": "necrotic",
+        "immune": null,
+        "conditionImmune": "charmed (except from its vampire master)",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Daggers (10)"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Vampiric Connection",
+            "text": "While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar's senses."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The familiar makes two Umbral Dagger attacks."
+          },
+          {
+            "name": "Umbral Dagger",
+            "text": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage plus 7 (3d4) Necrotic damage. If the target is reduced to 0 Hit Points by this attack, the target becomes Stable but has the Poisoned condition for 1 hour. While it has the Poisoned condition, the target has the Paralyzed condition.",
+            "attack": [
+              "Umbral Dagger|+5|1d4+3",
+              "Necrotic Damage||3d4"
+            ]
+          },
+          {
+            "name": "Deathless Agility (Bonus Action)",
+            "text": "The familiar takes the Dash or Disengage action."
+          }
+        ],
+        "description": "Vampires disguise their accursed, immortal natures, passing as mortals to feed on the blood of the living. While the youngest vampires might be little more than bloodthirsty servants of their creators, the eldest possess incredible cunning and control over supernatural forces of the night.\n\tUndead vampires lie dormant during the day, retreating to resting places hidden from foes and the sun's searing rays. Roll on or choose a result from the Vampire Resting Places table to inspire a vampire's grim sanctuary.\n\nVampire Resting Places:\n1d6 | The Vampire's Resting Place Is...\n1 | Among the roots of a dead tree.\n2 | At the bottom of a stagnant pool.\n3 | A coﬃn filled with grave dirt.\n4 | A large pot full of blood or vinegar.\n5 | A space accessible only by shape-shifting.\n6 | Within a statue or suit of armor.\n\nVampire Familiar:\nVampire familiars are living people who serve vampires, either willingly or due to coercion by their deathless masters. They channel deathly energy through their weapons, incapacitating unsuspecting targets and leaving their victims as helpless prey for their vampire masters.\n\tMany vampire familiars aspire to eventually become vampires, while others are magically charmed or serve as part of some terrible bargain. In each case, these vampire servants show signs of their vampiric corruption, such as corpse-like complexions, uncanny reflexes, and evidence of their masters' repeated feedings. A vampire familiar loses its supernatural abilities and returns to its original Humanoid state if its vampire master is destroyed.\n\nSource:\tMonster Manual 2024 p. 314",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Vampire Nightbringer [2024]",
+        "sortname": "Vampire, Nightbringer",
+        "ancestry": "Vampire",
+        "size": "S",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "16",
+        "hp": "142 (19d8+57)",
+        "speed": "30 ft., fly 30 ft.(hover)",
+        "init": "4",
+        "str": "16",
+        "dex": "18",
+        "con": "16",
+        "int": "13",
+        "wis": "14",
+        "cha": "15",
+        "save": "Wis +5, Dex +7",
+        "skill": "Stealth +7, Perception +5",
+        "passive": "15",
+        "languages": "Common plus one other language",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "cold, necrotic",
+        "conditionImmune": "charmed, exhaustion, frightened",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Sunlight Hypersensitivity",
+            "text": "The vampire takes 10 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The vampire makes one Bite attack and one Shadow Strike attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 7 (1d6 + 4) Piercing damage plus 10 (3d6) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount.",
+            "attack": [
+              "Bite|+7|1d6+4",
+              "Necrotic Damage||3d6"
+            ]
+          },
+          {
+            "name": "Shadow Strike",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 7 (1d6 + 4) Slashing damage plus 14 (4d6) Cold damage.",
+            "attack": [
+              "Shadow Strike|+7|1d6+4",
+              "Cold Damage||4d6"
+            ]
+          },
+          {
+            "name": "Shadow Stealth (Bonus Action)",
+            "text": "While in Dim Light or Darkness, the vampire takes the Hide action."
+          }
+        ],
+        "description": "Vampires disguise their accursed, immortal natures, passing as mortals to feed on the blood of the living. While the youngest vampires might be little more than bloodthirsty servants of their creators, the eldest possess incredible cunning and control over supernatural forces of the night.\n\tUndead vampires lie dormant during the day, retreating to resting places hidden from foes and the sun's searing rays. Roll on or choose a result from the Vampire Resting Places table to inspire a vampire's grim sanctuary.\n\nVampire Resting Places:\n1d6 | The Vampire's Resting Place Is...\n1 | Among the roots of a dead tree.\n2 | At the bottom of a stagnant pool.\n3 | A coﬃn filled with grave dirt.\n4 | A large pot full of blood or vinegar.\n5 | A space accessible only by shape-shifting.\n6 | Within a statue or suit of armor.\n\nVampire Nightbringer:\nBorn of necromantic rituals and planes of existence suffused with negative energy, vampire nightbringers manipulate shadows and feed on the raw life force of living creatures.\n\nSource:\tMonster Manual 2024 p. 316",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Vampire Spawn [2024]",
+        "sortname": "Vampire, Spawn",
+        "ancestry": "Vampire",
+        "size": "S",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "16",
+        "hp": "90 (12d8+36)",
+        "speed": "30 ft.",
+        "init": "3",
+        "str": "16",
+        "dex": "16",
+        "con": "16",
+        "int": "11",
+        "wis": "10",
+        "cha": "12",
+        "save": "Wis +3, Dex +6",
+        "skill": "Stealth +6, Perception +3",
+        "passive": "13",
+        "languages": "Common plus one other language",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": "necrotic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          },
+          {
+            "name": "Vampire Weakness",
+            "text": "The vampire has these weaknesses:\n\nForbiddance: The vampire can't enter a residence without an invitation from an occupant.\n\nRunning Water: The vampire takes 20 Acid damage if it ends its turn in running water.\n\nStake to the Heart: The vampire is destroyed if a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition.\n\nSunlight: The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The vampire makes two Claw attacks and uses Bite."
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 8 (2d4 + 3) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two claws.",
+            "attack": "Claw|+6|2d4+3"
+          },
+          {
+            "name": "Bite",
+            "text": "Constitution Saving Throw: DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 5 (1d4 + 3) Piercing damage plus 10 (3d6) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount.",
+            "attack": [
+              "Bite||1d4+3",
+              "Necrotic Damage||3d6"
+            ]
+          },
+          {
+            "name": "Deathless Agility (Bonus Action)",
+            "text": "The vampire takes the Dash or Disengage action."
+          }
+        ],
+        "description": "Vampires disguise their accursed, immortal natures, passing as mortals to feed on the blood of the living. While the youngest vampires might be little more than bloodthirsty servants of their creators, the eldest possess incredible cunning and control over supernatural forces of the night.\n\tUndead vampires lie dormant during the day, retreating to resting places hidden from foes and the sun's searing rays. Roll on or choose a result from the Vampire Resting Places table to inspire a vampire's grim sanctuary.\n\nVampire Resting Places:\n1d6 | The Vampire's Resting Place Is...\n1 | Among the roots of a dead tree.\n2 | At the bottom of a stagnant pool.\n3 | A coﬃn filled with grave dirt.\n4 | A large pot full of blood or vinegar.\n5 | A space accessible only by shape-shifting.\n6 | Within a statue or suit of armor.\n\nVampire Spawn:\nVampire spawn are newly created vampires. They have yet to fully master their abilities, and many are consumed by their thirst for blood. Vampire spawn might serve more powerful vampires or pursue their own depraved agendas.\n\nSource:\tMonster Manual 2024 p. 315",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Vampire Umbral Lord [2024]",
+        "sortname": "Vampire, Umbral Lord",
+        "ancestry": "Vampire",
+        "size": "S",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "16",
+        "hp": "187 (22d8+88)",
+        "speed": "40 ft., climb 40 ft., fly 40 ft.(hover)",
+        "init": "14",
+        "str": "20",
+        "dex": "18",
+        "con": "18",
+        "int": "19",
+        "wis": "16",
+        "cha": "21",
+        "save": "Str +10, Wis +8, Dex +9, Cha +10",
+        "skill": "Stealth +9, Arcana +9, Perception +13",
+        "passive": "23",
+        "languages": "Common plus three other languages",
+        "cr": "15",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "cold, necrotic",
+        "conditionImmune": "charmed, exhaustion",
+        "senses": "blindsight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the vampire fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Shadow Escape",
+            "text": "If the vampire drops to 0 Hit Points outside its resting place, it teleports into its resting place unless it is in running water or sunlight. If it can't teleport, it is destroyed. Once inside its resting place, it has the Paralyzed condition for 1 hour, after which it regains 1 Hit Point."
+          },
+          {
+            "name": "Vampire Weakness",
+            "text": "The vampire has these weaknesses:\n\nForbiddance: The vampire can't enter a residence without an invitation from an occupant.\n\nRunning Water: The vampire takes 20 Acid damage if it ends its turn in running water.\n\nStake to the Heart: If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed.\n\nSunlight: The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The vampire makes two attacks, using Grave Strike or Sickening Ray in any combination."
+          },
+          {
+            "name": "Grave Strike",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 9 (1d8 + 5) Slashing damage plus 13 (3d8) Necrotic damage.",
+            "attack": [
+              "Grave Strike|+10|1d8+5",
+              "Necrotic Damage||3d8"
+            ]
+          },
+          {
+            "name": "Sickening Ray",
+            "text": "Ranged Attack Roll: +10, range 120 ft. Hit: 16 (2d10 + 5) Necrotic damage, and the target has the Poisoned condition until the start of the vampire's next turn.",
+            "attack": "Sickening Ray|+10|2d10+5"
+          },
+          {
+            "name": "Hunger of Hadar (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "The vampire casts Hunger of Hadar (level 5 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 18)."
+          },
+          {
+            "name": "Sanguine Drain (Bonus Action)",
+            "text": "Constitution Saving Throw: DC 18, one creature the vampire can see within 30 feet that isn't a Construct or an Undead. Failure: 14 (4d6) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the damage taken, and the vampire regains Hit Points equal to that amount.",
+            "attack": "Sanguine Drain||4d6"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Vampire Umbral Lord can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Vampire Umbral Lord regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Umbral Strike",
+            "text": "The vampire moves up to half its Speed, and it makes one Grave Strike or Sickening Ray attack."
+          },
+          {
+            "name": "Beguile",
+            "text": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 18). The vampire can't take this action again until the start of its next turn."
+          },
+          {
+            "@category": "lair",
+            "name": "Vampire Lairs",
+            "text": "Vampires and vampire umbral lords create sanctuaries apart from the living, whether hidden in cosmopolitan cities or sequestered in ruins where they dwelled in life.\n\tThe region containing a vampire's lair is warped by its presence, creating the following effects:\n\nChildren of the Night: The vampire exerts influence over the animals in its domain. From dusk until dawn, Medium or smaller Beasts have the Charmed condition while within 1 mile of the lair.\n\nLooming Shadows: Shadows within 1 mile of the lair seem to move as if alive. Any creature (excluding the vampire and its allies) that finishes a Short Rest while within 1 mile of the lair must succeed on a DC 15 Wisdom saving throw or gain no benefit from that rest.\n\nMists: The area within 1 mile of the lair is Lightly Obscured by a persistent, creeping fog. The vampire and any creatures of its choice are unaffected by the fog.\n\nIf the vampire dies or moves its lair elsewhere, these effects end immediately."
+          }
+        ],
+        "description": "Vampires disguise their accursed, immortal natures, passing as mortals to feed on the blood of the living. While the youngest vampires might be little more than bloodthirsty servants of their creators, the eldest possess incredible cunning and control over supernatural forces of the night.\n\tUndead vampires lie dormant during the day, retreating to resting places hidden from foes and the sun's searing rays. Roll on or choose a result from the Vampire Resting Places table to inspire a vampire's grim sanctuary.\n\nVampire Resting Places:\n1d6 | The Vampire's Resting Place Is...\n1 | Among the roots of a dead tree.\n2 | At the bottom of a stagnant pool.\n3 | A coﬃn filled with grave dirt.\n4 | A large pot full of blood or vinegar.\n5 | A space accessible only by shape-shifting.\n6 | Within a statue or suit of armor.\n\nVampire Umbral Lord:\nVampire umbral lords embrace their ties to the darkness, devoting themselves to sinister powers in exchange for access to forbidden magic.\n\nSource:\tMonster Manual 2024 p. 318",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Venomous Snake [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "5 (2d4)",
+        "speed": "30 ft., swim 30 ft.",
+        "init": "2",
+        "str": "2",
+        "dex": "15",
+        "con": "11",
+        "int": "1",
+        "wis": "10",
+        "cha": "3",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 10 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage plus 3 (1d6) Poison damage.",
+          "attack": [
+            "Bite|+4|1d4+2",
+            "Poison Damage||1d6"
+          ]
+        },
+        "description": "Source:\tMonster Manual 2024 p. 372,\n\t\tPlayer's Handbook 2024 p. 358",
+        "environment": "coastal, desert, forest, grassland, hill, swamp"
+      },
+      {
+        "name": "Vine Blight [2024]",
+        "sortname": "Blight, Vine",
+        "ancestry": "Blight",
+        "size": "M",
+        "type": "plant",
+        "alignment": "neutral evil",
+        "ac": "12",
+        "hp": "19 (3d8+6)",
+        "speed": "20 ft.",
+        "init": "-1",
+        "str": "15",
+        "dex": "8",
+        "con": "14",
+        "int": "5",
+        "wis": "10",
+        "cha": "3",
+        "save": null,
+        "skill": "Stealth +1",
+        "passive": "10",
+        "languages": "Common",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "deafened",
+        "senses": "blindsight 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Constricting Vine",
+            "text": "Melee Attack Roll: +4, reach 10 ft. Hit: 6 (1d8 + 2) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 12). Until the grapple ends, the target takes 4 (1d8) Bludgeoning damage at the start of each of its turns, and the blight can't make Constricting Vine attacks.",
+            "attack": [
+              "Constricting Vine|+4|1d8+2",
+              "Constriction||1d8"
+            ]
+          },
+          {
+            "name": "Entangling Plants (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "The blight casts the Entangle spell, using Constitution as the spellcasting ability (spell save DC 12)."
+          }
+        ],
+        "description": "Blights are malicious plants that sprout from deep-rooted evil. Their gnarled forms twist with fearsome features suggestive of human limbs and vicious maws. Blights lurk in ambush amid mundane vegetation and lash out at non-Plant creatures. While blights can act independently, they're usually motivated by whatever sinister forces spawned them or by wicked creatures with control over nature. The magic that creates blights often affects other vegetation as well, causing brambles, vines, and gnarled trees to overwhelm roads and fields, choke wells and streams, and force animals from their natural habitat. This might make blights the first sign of an oncoming wave of corruption.\n\nVine Blight:\nVine blights resemble humans wrapped in vines common to the areas in which they grow, from hairy ivy vines to flowering kudzu. They can cause plants to burst from the ground around themselves and entangle nearby foes.\n\tUnlike most other blights, vine blights can speak. They do so rarely, typically only to convey messages from their masters or to repeat the words of their victims in rasping voices.\n\nSource:\tMonster Manual 2024 p. 44",
+        "environment": "forest"
+      },
+      {
+        "name": "Violet Fungus [2024]",
+        "sortname": "Fungus, Violet",
+        "ancestry": "Fungus",
+        "size": "M",
+        "type": "plant",
+        "alignment": "unaligned",
+        "ac": "5",
+        "hp": "18 (4d8)",
+        "speed": "5 ft.",
+        "init": "-5",
+        "str": "3",
+        "dex": "1",
+        "con": "10",
+        "int": "1",
+        "wis": "3",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "6",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "blinded, charmed, deafened, frightened",
+        "senses": "blindsight 30 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The fungus makes two Rotting Touch attacks."
+          },
+          {
+            "name": "Rotting Touch",
+            "text": "Melee Attack Roll: +2, reach 10 ft. Hit: 4 (1d8) Necrotic damage.",
+            "attack": "Rotting Touch|+2|1d8"
+          }
+        ],
+        "description": "The dank, sunless Underdark is a fertile breeding ground for weird and dangerous fungi.\n\nViolet Fungus:\nSlow but mobile, violet fungi rot any flesh they touch with their lashing tendrils.\n\nSource:\tMonster Manual 2024 p. 126",
+        "environment": "underdark"
+      },
+      {
+        "name": "Violet Fungus Necrohulk [2024]",
+        "size": "L",
+        "type": "plant",
+        "alignment": "neutral evil",
+        "ac": "17",
+        "hp": "123 (13d10+52)",
+        "speed": "40 ft.",
+        "init": "4",
+        "str": "19",
+        "dex": "12",
+        "con": "18",
+        "int": "7",
+        "wis": "14",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "12",
+        "languages": null,
+        "cr": "7",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "blinded, charmed, deafened, frightened, poisoned",
+        "senses": "blindsight 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The necrohulk makes two Rotting Slam attacks."
+          },
+          {
+            "name": "Rotting Slam",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 9 (1d10 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage.",
+            "attack": [
+              "Rotting Slam|+7|1d10+4",
+              "Necrotic Damage||2d6"
+            ]
+          },
+          {
+            "name": "Spore Bomb (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 15, each creature in a 20-foot-radius Sphere centered on a point the necrohulk can see within 60 feet. Failure: 28 (8d6) Necrotic damage, and the target has the Poisoned condition until the start of the necrohulk's next turn. While Poisoned, the target can't regain Hit Points. Success: Half damage only.",
+            "attack": "Spore Bomb||8d6"
+          },
+          {
+            "name": "Absorb Body (Bonus Action)",
+            "text": "Strength Saving Throw: DC 15, one Medium or Small creature the necrohulk can see within 5 feet. Failure: The target is pulled into the necrohulk's space and becomes grafted to its body. The necrohulk can have only one target grafted at a time.\n\tWhile grafted, the target has the Restrained condition and Disadvantage on Constitution saving throws. When the necrohulk moves, the grafted target moves with it. If the target dies while grafted, its body is destroyed, and the necrohulk regains 10 Hit Points.\n\tThe grafted target or a creature within 5 feet of the necrohulk can take an action to make a DC 15 Strength (Athletics) check. On a successful check, the target is no longer grafted and moves to an unoccupied space within 5 feet of the necrohulk."
+          }
+        ],
+        "description": "The dank, sunless Underdark is a fertile breeding ground for weird and dangerous fungi.\n\nViolet Fungus Necrohulk:\nA violet fungus necrohulk forms when a violet fungus colony infests and animates an ample heap of decay. This necrohulk attacks prey and spreads fungal spores for the colony.\n\nSource:\tMonster Manual 2024 p. 126",
+        "environment": "underdark"
+      },
+      {
+        "name": "Vrock [2024]",
+        "size": "L",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "15",
+        "hp": "152 (16d10+64)",
+        "speed": "40 ft., fly 60 ft.",
+        "init": "2",
+        "str": "17",
+        "dex": "15",
+        "con": "18",
+        "int": "8",
+        "wis": "13",
+        "cha": "8",
+        "save": "Wis +4, Dex +5, Cha +2",
+        "skill": null,
+        "passive": "11",
+        "languages": "Abyssal; telepathy 120 ft.",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Demonic Restoration",
+            "text": "If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The vrock has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The vrock makes two Shred attacks."
+          },
+          {
+            "name": "Shred",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage plus 10 (3d6) Poison damage.",
+            "attack": [
+              "Shred|+6|2d6+3",
+              "Poison Damage||3d6"
+            ]
+          },
+          {
+            "name": "Spores (Recharge 6)",
+            "recharge": "D6",
+            "text": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While Poisoned, the target takes 5 (1d10) Poison damage at the start of each of its turns. Emptying a flask of Holy Water on the target ends the effect early.",
+            "attack": "Spores||1d10"
+          },
+          {
+            "name": "Stunning Screech (1/Day)",
+            "recharge": "1/DAY",
+            "text": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock's next turn.",
+            "attack": "Stunning Screech||3d6"
+          }
+        ],
+        "description": "Screeching, vulturelike demons, vrocks soar from the Abyss to spread ruin and slaughter. Their filthy feathers carry magical toxins from the Lower Planes, creating a noxious cloud capable of killing those who escape the vrocks' vicious beaks and claws. To further terrorize their foes, vrocks unleash an otherworldly screech so terrible it can halt creatures in their tracks.\n\nSource:\tMonster Manual 2024 p. 319",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Vulture [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "5 (1d8+1)",
+        "speed": "10 ft., fly 50 ft.",
+        "init": "0",
+        "str": "7",
+        "dex": "10",
+        "con": "13",
+        "int": "2",
+        "wis": "12",
+        "cha": "4",
+        "save": null,
+        "skill": "Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The vulture has Advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          }
+        ],
+        "action": {
+          "name": "Beak",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Piercing damage.",
+          "attack": "Beak|+2|1d4"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 372",
+        "environment": "desert, grassland, hill"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "background": {
+      "name": "Custom Background [2024]",
+      "source": {
+        "@page": "54",
+        "#text": "Dungeon Master's Guide 2024"
+      },
+      "description_text": "A character's background represents what the character did prior to becoming an adventurer. Creating a unique background or customizing an existing one from the Player's Handbook can reflect the particular theme of your campaign or elements of your world. You can also create a background to help a player craft the story they have in mind for their character.",
+      "trait": {
+        "name": "Choose Abilities",
+        "text": "Choose three abilities that seem appropriate for the background:\n\nStrength or Dexterity. These abilities are ideal for a background involving physical exertion.\n\nConstitution. This ability is ideal for a background that involves endurance or long hours of activity.\n\nIntelligence or Wisdom. One or both abilities are ideal for a background that focuses on cerebral or spiritual matters.\n\nCharisma. This ability is ideal for a background that involves performance or social interaction."
+      },
+      "granted_feat": {
+        "custom_choice_text": "Choose one feat from the Origin category. See the Player's Handbook for examples of Origin feats."
+      },
+      "skill_proficiencies": {
+        "custom_choice_text": {
+          "@count": "2",
+          "#text": "Choose two skills appropriate for the background. There needn't be a relationship between the skill proficiencies a background grants and the ability scores it increases."
+        }
+      },
+      "tool_proficiencies": {
+        "custom_choice_text": "Choose one tool used in the practice of the background or often associated with it."
+      },
+      "starting_equipment": {
+        "custom_choice_text": "Assemble a package of equipment worth 50 GP (including unspent gold). Don't include Martial weapons or armor, as characters get them from their class choices."
+      }
+    }
+  }
+}

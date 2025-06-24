@@ -247,7 +247,7 @@ Source:	Player's Handbook 2024 p. 166</text>
       </feature>
       <feature>
         <name>Level 1: Ritual Adept</name>
-        <text>You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn't have the spell prepared, but you must read from the book to cast a spell in this way.
+        <text>You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn&apos;t have the spell prepared, but you must read from the book to cast a spell in this way.
 
 Source:	Player's Handbook 2024 p. 166</text>
         <modifies_spell_casting_rules for_spell_type="Ritual">

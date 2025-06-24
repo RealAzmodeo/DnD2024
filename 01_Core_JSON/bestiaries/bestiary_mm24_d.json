@@ -1,0 +1,1656 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Dao [2024]",
+        "size": "L",
+        "type": "elemental (genie)",
+        "alignment": "neutral",
+        "ac": "18",
+        "hp": "200 (16d10+112)",
+        "speed": "30 ft., fly 30 ft.(hover), burrow 30 ft.",
+        "init": "1",
+        "str": "23",
+        "dex": "12",
+        "con": "24",
+        "int": "12",
+        "wis": "13",
+        "cha": "18",
+        "save": "Wis +5, Dex +5",
+        "skill": null,
+        "passive": "11",
+        "languages": "Primordial (Terran)",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "petrified",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Earth Glide",
+            "text": "The dao can burrow through nonmagical, unworked earth and stone. While doing so, the dao doesn't disturb the material it moves through."
+          },
+          {
+            "name": "Elemental Restoration",
+            "text": "If the dao dies outside the Elemental Plane of Earth, its body dissolves into dirt, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Earth.",
+            "attack": "Days||1d4"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The dao has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Wishes",
+            "text": "The dao has a 30 percent chance of knowing the Wish spell. If the dao knows it, the dao can cast it only on behalf of a non-genie creature who communicates a wish in a way the dao can understand. If the dao casts the spell for the creature, the dao suffers none of the spell's stress. Once the dao has cast it three times, the dao can't do so again for 365 days."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The dao makes three Earthen Maul attacks or two Earth Burst attacks."
+          },
+          {
+            "name": "Earthen Maul",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 20 (4d6 + 6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Earthen Maul|+10|4d6+6"
+          },
+          {
+            "name": "Earth Burst",
+            "text": "Ranged Attack Roll: +10, range 120 ft. Hit: 15 (2d8 + 6) Bludgeoning damage. Hit or Miss: Earth explodes from the target's space, creating the following effect. Dexterity Saving Throw: DC 16, each creature in a 10-foot Emanation originating from and including the target. Failure: 10 (3d6) Thunder damage.",
+            "attack": [
+              "Earth Burst|+10|2d8+6",
+              "Thunder Damage||3d6"
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The dao casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):\n\n\t• At will: Detect Evil and Good, Detect Magic, Stone Shape\n\t• 1/Day each: Gaseous Form, Invisibility, Move Earth, Passwall, Plane Shift, Tongues, Wall of Stone"
+          }
+        ],
+        "spells": "Detect Evil and Good [2024], Detect Magic [2024], Stone Shape [2024], Gaseous Form [2024], Invisibility [2024], Move Earth [2024], Passwall [2024], Plane Shift [2024], Tongues [2024], Wall of Stone [2024]",
+        "description": "Genies of minerals and gemstones, dao embody the resolve of rock. Using innate magic, they move through the earth unimpeded, exploring depths inaccessible to most. Dao delight in the treasures of the earth, whether raw gemstones, jewelry crafted from pure metals, or wondrous fossils. In exchange for such treasures, dao might reveal underground mysteries, such as paths through the Underdark, buried ruins, or whole subterranean realms.\n\tMany dao call the Elemental Plane of Earth home. There, they create cities that glitter with treasure. Among these realms is the labyrinthine expanse called the Great Dismal Delve or the Sevenfold Mazework, which protects the City of Jewels, the Iron Crucible, and the Strait of Magnets.\n\nSource:\tMonster Manual 2024 p. 89",
+        "environment": "planar (elemental plane of earth), underdark"
+      },
+      {
+        "name": "Darkmantle [2024]",
+        "size": "S",
+        "type": "aberration",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "22 (5d6+5)",
+        "speed": "10 ft., fly 30 ft.",
+        "init": "3",
+        "str": "16",
+        "dex": "12",
+        "con": "13",
+        "int": "2",
+        "wis": "10",
+        "cha": "5",
+        "save": null,
+        "skill": "Stealth +3",
+        "passive": "10",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Crush",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage, and the darkmantle attaches to the target. If the target is a Medium or smaller creature and the darkmantle had Advantage on the attack roll, it covers the target, which has the Blinded condition and is suffocating while the darkmantle is attached in this way.\n\tWhile attached to a target, the darkmantle can attack only the target but has Advantage on its attack rolls. Its Speed becomes 0, it can't benefit from any bonus to its Speed, and it moves with the target.\n\tA creature can take an action to try to detach the darkmantle from itself, doing so with a successful DC 13 Strength (Athletics) check. On its turn, the darkmantle can detach itself by using 5 feet of movement.",
+            "attack": "Crush|+5|1d6+3"
+          },
+          {
+            "name": "Darkness Aura (1/Day)",
+            "recharge": "1/DAY",
+            "text": "Magical Darkness fills a 15-foot Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can't penetrate this area, and no light can illuminate it."
+          }
+        ],
+        "description": "Unnatural subterranean hunters, darkmantles veil themselves in magical shadows and use their bizarre anatomies to disguise themselves as stalactites. When prey passes below, lurking darkmantles drop and unfurl their webbed tentacles, attempting to blind, suffocate, or crush their victims.\n\tDarkmantles share similarities with piercers and ropers and often hunt near those monsters. Scholars have attempted to establish a shared origin or life cycle between those creatures, but their efforts are thwarted by those monsters' supernatural physiologies and deadly natures.\n\nSource:\tMonster Manual 2024 p. 90",
+        "environment": "underdark"
+      },
+      {
+        "name": "Death Cultist [2024]",
+        "sortname": "Cultist, Death",
+        "ancestry": "Cultist",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral evil",
+        "ac": "17",
+        "hp": "127 (15d8+60)",
+        "speed": "30 ft.",
+        "init": "4",
+        "str": "19",
+        "dex": "12",
+        "con": "18",
+        "int": "12",
+        "wis": "16",
+        "cha": "14",
+        "save": "Wis +6, Con +7",
+        "skill": "Insight +6, Perception +6, Religion +4",
+        "passive": "16",
+        "languages": "Common",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Splint Armor"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cultist makes three attacks, using Dread Scythe or Deathly Ray in any combination."
+          },
+          {
+            "name": "Dread Scythe",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 9 (1d10 + 4) Slashing damage plus 11 (2d10) Necrotic damage, and the target can't regain Hit Points until the end of its next turn.",
+            "attack": [
+              "Dread Scythe|+7|1d10+4",
+              "Necrotic Damage||2d10"
+            ]
+          },
+          {
+            "name": "Deathly Ray",
+            "text": "Ranged Attack Roll: +6, range 120 ft. Hit: 22 (4d10) Necrotic damage.",
+            "attack": "Deathly Ray|+6|4d10"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 14):\n\n\t• At will: Speak with Dead, Thaumaturgy"
+          },
+          {
+            "name": "Spirit Wail (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "Wisdom Saving Throw: DC 14, each creature in a 20-foot Emanation originating from the cultist. Failure: 14 (4d6) Psychic damage, and the target has the Frightened condition until the end of its next turn. Success: Half damage only.",
+            "attack": "Spirit Wail||4d6"
+          }
+        ],
+        "spells": "Speak With Dead [2024], Thaumaturgy [2024]",
+        "description": "Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.\n\nCultist Agendas:\n1d6 | The Cultist Strives To...\n1 | Bring about the end of a dominant order, an age, or the world.\n2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.\n3 | Expand their faith through mind control or supernatural coercion.\n4 | Make global changes, like sinking the land or awakening volcanoes.\n5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.\n6 | Summon their deity or its herald, weapon, or realm into their world.\n\nOccult Symbols:\nCults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.\n\nCult Symbols:\n1d10 | The Symbol Is... Depicted As...\n1 | An alchemical sign A calendar or map\n2 | An animal A crest or as heraldry\n3 | A celestial body An elaborate diagram\n4 | A deity's icon A metaphorical image\n5 | An element A mystical being\n6 | An eye Part of an equation\n7 | A geometric shape A repeating pattern\n8 | A letter or number A series of scratches\n9 | Part of a monster A simple pictogram\n10 | A skull A weapon or tool\n\nCult Members:\nCults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.\n\nTypes of Cultists:\nCults can organize around any mystical tradition, but many serve supernatural beings. Cult members often have abilities tied to the forces they worship.\n\nDeath Cultist:\nDeath cultists revel in nihilistic forces, embracing them as paths to undeath, multiversal purity, or entropic inevitability. These cultists serve powerful undead beings, apocalyptic prophecies, or immortals with power over death, such as Acererak, Kyuss, Orcus, Vecna, or Wee Jas.\n\nSource:\tMonster Manual 2024 p. 86",
+        "environment": "any"
+      },
+      {
+        "name": "Death Dog [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral evil",
+        "ac": "12",
+        "hp": "39 (6d8+12)",
+        "speed": "40 ft.",
+        "init": "2",
+        "str": "15",
+        "dex": "14",
+        "con": "14",
+        "int": "3",
+        "wis": "13",
+        "cha": "6",
+        "save": null,
+        "skill": "Stealth +4, Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "blinded, charmed, deafened, frightened, stunned, unconscious",
+        "senses": "darkvision 120 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The death dog makes two Bite attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 12. First Failure: The target has the Poisoned condition. While Poisoned, the target's Hit Point maximum doesn't return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Poisoned target's Hit Point maximum decreases by 5 (1d10).",
+            "attack": [
+              "Bite|+4|1d4+2",
+              "HP decrease||1d10"
+            ]
+          }
+        ],
+        "description": "Death dogs are plagues on the arid lands they inhabit. These vicious, two-headed canines ambush creatures they perceive as weaker than themselves, favoring the wounded or infirm. They attack recklessly, infecting as many creatures as possible with their diseased jaws. If driven off, death dogs linger close to their victims, letting infection weaken their prey before they attack again.\n\tLegends tie death dogs to malicious death gods, the underworld, and cursed rulers. These stories are based on the malady death dogs spread. Roll on or choose a result from the Death Dog Malady Symptoms table to inspire symptoms spread by a death dog's bite. These symptoms are cosmetic and don't alter the effects of the death dog's Bite action. The symptoms vanish when a creature no longer has the Poisoned condition from a death dog's Bite.\n\nDeath Dog Malady Symptoms:\n1d6 | The Death Dog's Malady Causes...\n1 | Marks from canine jaws to appear on the victim's body, as if they were still being mauled.\n2 | The victim's body to wither, as if constantly exposed to desert heat.\n3 | The victim to be distracted by distant howling or vague whispers only they can hear.\n4 | The victim's flesh to rot like a corpse.\n5 | The victim to itch, as if they had fleas or sand beneath their skin.\n6 | Wicked symbols to gradually appear on and spread across the victim's body.\n\nSource:\tMonster Manual 2024 p. 91",
+        "environment": "desert"
+      },
+      {
+        "name": "Death Knight [2024]",
+        "sortname": "Death Knight",
+        "ancestry": "Death Knight",
+        "size": "S",
+        "type": "undead",
+        "alignment": "chaotic evil",
+        "ac": "20",
+        "hp": "199 (21d8+105)",
+        "speed": "30 ft.",
+        "init": "12",
+        "str": "20",
+        "dex": "11",
+        "con": "20",
+        "int": "12",
+        "wis": "16",
+        "cha": "18",
+        "save": "Wis +9, Dex +6",
+        "skill": null,
+        "passive": "13",
+        "languages": "Abyssal, Common",
+        "cr": "17",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "exhaustion, frightened, poisoned",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+6"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Legendary Resistance (3/Day)",
+            "recharge": "3/DAY",
+            "text": "If the death knight fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The death knight has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Marshal Undead",
+            "text": "Undead creatures of the death knight's choice (excluding itself) in a 60-foot Emanation originating from it have Advantage on attack rolls and saving throws. It can't use this trait if it has the Incapacitated condition."
+          },
+          {
+            "name": "Undead Restoration",
+            "text": "If the death knight is destroyed before it atones for its evil, it gains a new body in 1d10 days, reviving with all its Hit Points. The new body appears in a location significant to the death knight.",
+            "attack": "Undead Restoration||1d10"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The death knight makes three Dread Blade attacks."
+          },
+          {
+            "name": "Dread Blade",
+            "text": "Melee Attack Roll: +11, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 13 (3d8) Necrotic damage.",
+            "attack": [
+              "Dread Blade|+11|2d6+5",
+              "Necrotic Damage||3d8"
+            ]
+          },
+          {
+            "name": "Hellfire Orb (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 18, each creature in a 20-foot-radius Sphere centered on a point the death knight can see within 120 feet. Failure: 35 (10d6) Fire damage plus 35 (10d6) Necrotic damage. Success: Half damage.",
+            "attack": "Hellfire Orb||10d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The death knight casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):\n\n\t• At will: Command, Phantom Steed\n\t• 2/Day each: Destructive Wave (Necrotic), Dispel Magic"
+          }
+        ],
+        "reaction": {
+          "name": "Parry",
+          "text": "Trigger: The death knight is hit by a melee attack roll while holding a weapon. Response: The death knight adds 6 to its AC against that attack, possibly causing it to miss."
+        },
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Death Knight can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Death Knight regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Dread Authority",
+            "text": "The death knight uses Spellcasting to cast Command. The death knight can't take this action again until the start of its next turn."
+          },
+          {
+            "name": "Fell Word",
+            "text": "Constitution Saving Throw: DC 18, one creature the death knight can see within 120 feet. Failure: 17 (5d6) Necrotic damage, and the target's Hit Point maximum decreases by an amount equal to the damage taken. Failure or Success: The death knight can't take this action again until the start of its next turn.",
+            "attack": "Necrotic Damage||5d6"
+          },
+          {
+            "name": "Lunge",
+            "text": "The death knight moves up to half its Speed, and it makes one Dread Blade attack."
+          }
+        ],
+        "description": "Champions of evil, death knights are armor-clad, skeletal warlords. Combining devastating martial prowess and blasphemous magic, these undying tyrants lead unholy legions against the living or brood in cursed citadels. Every death knight is haunted by a legacy of tragedy and dishonor that drives it to commit greater evils.\n\nDeath Knight:\nDeath knights are deadly combatants and domineering commanders with grim histories. Some strive to end the curses that doom them to undeath, though their selfish souls eternally shackle them to their fates. Others, like the infamous death knight Lord Soth, brood in dismal ruins for centuries, rousing themselves to action only when something reignites their deathless evil.\n\nSource:\tMonster Manual 2024 p. 92",
+        "environment": "any"
+      },
+      {
+        "name": "Death Knight Aspirant [2024]",
+        "sortname": "Death Knight, Aspirant",
+        "ancestry": "Death Knight",
+        "size": "S",
+        "type": "undead",
+        "alignment": "chaotic evil",
+        "ac": "20",
+        "hp": "178 (21d8+84)",
+        "speed": "30 ft.",
+        "init": "4",
+        "str": "20",
+        "dex": "10",
+        "con": "18",
+        "int": "10",
+        "wis": "12",
+        "cha": "16",
+        "save": "Wis +5, Dex +4",
+        "skill": null,
+        "passive": "11",
+        "languages": "Abyssal, Common",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "exhaustion, frightened, poisoned",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The aspirant has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Marshal Undead",
+            "text": "Undead creatures of the aspirant's choice (excluding itself) in a 60-foot Emanation originating from it have Advantage on attack rolls and saving throws. It can't use this trait if it has the Incapacitated condition."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The aspirant makes three Dread Blade attacks."
+          },
+          {
+            "name": "Dread Blade",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage plus 10 (3d6) Necrotic damage.",
+            "attack": [
+              "Dread Blade|+9|2d8+5",
+              "Necrotic Damage||3d6"
+            ]
+          },
+          {
+            "name": "Hellfire Orb (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 15, each creature in a 20-foot-radius Sphere centered on a point the aspirant can see within 120 feet of itself. Failure: 21 (6d6) Fire damage plus 21 (6d6) Necrotic damage. Success: Half damage.",
+            "attack": "Hellfire Orb||6d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The aspirant casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15):\n\n\t• At will: Phantom Steed\n\t• 1/Day each: Destructive Wave (Necrotic), Dispel Magic"
+          }
+        ],
+        "reaction": {
+          "name": "Parry",
+          "text": "Trigger: The aspirant is hit by a melee attack roll while holding a weapon. Response: The aspirant adds 4 to its AC against that attack, possibly causing it to miss."
+        },
+        "spells": "Phantom Steed [2024], Destructive Wave [2024], Dispel Magic [2024]",
+        "description": "Champions of evil, death knights are armor-clad, skeletal warlords. Combining devastating martial prowess and blasphemous magic, these undying tyrants lead unholy legions against the living or brood in cursed citadels. Every death knight is haunted by a legacy of tragedy and dishonor that drives it to commit greater evils.\n\nDeath Knight Aspirant:\nWhen the leader of a villainous order rises as a death knight, their wicked devotees might join them in their cursed existence as death knight aspirants. These followers bear a measure of their leader's power and serve as they did in life, obediently following the death knight's decrees and heralding its terrible will.\n\nSource:\tMonster Manual 2024 p. 93",
+        "environment": "any"
+      },
+      {
+        "name": "Death Slaad [2024]",
+        "sortname": "Slaad, Death",
+        "ancestry": "Slaad",
+        "size": "M",
+        "type": "aberration",
+        "alignment": "chaotic evil",
+        "ac": "18",
+        "hp": "178 (21d8+84)",
+        "speed": "40 ft.",
+        "init": "10",
+        "str": "20",
+        "dex": "15",
+        "con": "19",
+        "int": "15",
+        "wis": "10",
+        "cha": "19",
+        "save": null,
+        "skill": "Arcana +6, Perception +8",
+        "passive": "18",
+        "languages": "Common, Slaad; telepathy 60 ft.",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": "acid, cold, fire, lightning, thunder",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 60 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The slaad has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Regeneration",
+            "text": "The slaad regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The slaad makes two Chaos Blade attacks."
+          },
+          {
+            "name": "Chaos Blade",
+            "text": "Melee Attack Roll: +9, reach 10 ft. Hit: 11 (1d12 + 5) Slashing damage plus 10 (3d6) Necrotic damage. Until the start of the slaad's next turn, the target has a condition determined by rolling 1d4: on a 1, Charmed; on a 2, Frightened; on a 3, Poisoned; or on a 4, Incapacitated.",
+            "attack": [
+              "Chaos Blade|+9|1d12+5",
+              "Necrotic Damage||3d6",
+              "Condition||1d4"
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The slaad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):\n\n\t• At will: Detect Magic, Detect Thoughts, Invisibility (self only), Mage Hand, Major Image\n\t• 1/Day each: Blight (level 8 version), Cloudkill (level 6 version), Fly, Plane Shift, Tongues"
+          },
+          {
+            "name": "Shape-Shift (Bonus Action)",
+            "text": "The slaad shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+          }
+        ],
+        "spells": "Detect Magic [2024], Detect Thoughts [2024], Invisibility [2024], Mage Hand [2024], Major Image [2024], Blight [2024], Cloudkill [2024], Fly [2024], Plane Shift [2024], Tongues [2024]",
+        "description": "Unpredictable slaadi devour and multiply across the Ever-Changing Chaos of Limbo. These toadlike, extraplanar beings embody the endless potentiality of their home plane of existence. While slaadi aren't inherently evil, their impulses are wild and often destructive. Many are driven to propagate through supernatural processes. Unfortunately, these processes typically are fatal for other creatures.\n\tSlaadi have no formal society. Rather, strong slaadi dominate weaker ones. Blue and red slaadi rampage across Limbo and spill into other worlds at the direction of green slaadi. More powerful slaadi have connections to the Spawning Stone, a source of chaotic magic from which the first slaadi originated. The Spawning Stone is hidden deep within Limbo, and legends tie its origins to the modron overlord Primus or the ruinous slaad lords, such as Ssendam, the golden amoeboid terror, and Ygorl, the winged skeleton. These slaad lords and others plot to spread slaadi across the multiverse.\n\nSalad Control Gems:\nA salad born from the Spawning Stone has a magical control gem embedded in its head. If a creature claims the gem, the salad has the Charmed condition and obeys the gem's bearer. The salad ceases to be Charmed if it is harmed by the gem's bearer or the bearer's allies or if the gem is returned to the salad. A Greater Restoration spell cast on a salad destroys the gem, and the salad ceases to be Charmed. One can obtain a salad's control gem using a Wish or Imprisonment spell. If the salad fails its saving throw against Imprisonment, the caster against the gem, and the salad isn't imprisoned. An Incapacitated salads control gem can be removed by spending 1 minute and succeeding on a DC 20 Wisdom (Medicine) check. Failing this check deals 22 (4d10) piercing damage to the salad.\n\nDeath Slaad:\nSlaad lords create death slaadi by infusing gray slaadi with a portion of their chaotic energy. When groups of slaadi act deliberately, death slaadi are often behind their designs.\n\nSource:\tMonster Manual 2024 p. 287",
+        "environment": "planar (limbo)"
+      },
+      {
+        "name": "Death Tyrant [2024]",
+        "sortname": "Beholder, Death Tyrant",
+        "ancestry": "Beholder",
+        "size": "L",
+        "type": "undead (beholder)",
+        "alignment": "lawful evil",
+        "ac": "19",
+        "hp": "195 (26d10+52)",
+        "speed": "5 ft., fly 40 ft.(hover)",
+        "init": "12",
+        "str": "18",
+        "dex": "14",
+        "con": "14",
+        "int": "19",
+        "wis": "15",
+        "cha": "19",
+        "save": "Wis +7, Con +7",
+        "skill": "Perception +12",
+        "passive": "22",
+        "languages": "Deep Speech, Undercommon",
+        "cr": "14",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "charmed, exhaustion, paralyzed, petrified, poisoned, prone",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the death tyrant fails a saving throw, it can choose to succeed instead."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The death tyrant uses Eye Rays three times."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +9, reach 5 feet. Hit: 13 (2d8 + 4) Piercing damage.",
+            "attack": "Bite|+9|2d8+4"
+          },
+          {
+            "name": "Eye Rays",
+            "text": "The death tyrant randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d10; reroll if the death tyrant has already used that ray during this turn):\n\nEye Rays:\nd10 | Effect\n1 | Charm Ray: Wisdom Saving Throw: DC 17. Failure: 13 (3d8) Psychic damage, and the target has the Charmed condition for 1 hour or until it takes damage. Success: Half damage only.\n2 | Paralyzing Ray: Constitution Saving Throw: DC 17. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\n3 | Fear Ray: Wisdom Saving Throw: DC 17. Failure: 10 (3d6) Psychic damage, and the target has the Frightened condition until the end of its next turn. Success: Half damage only.\n4 | Slowing Ray: Constitution Saving Throw: DC 17. Failure: 18 (4d8) Necrotic damage. Until the end of the target's next turn, the target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. Success: Half damage only.\n5 | Enervation Ray: Constitution Saving Throw: DC 17. Failure: 16 (3d10) Poison damage, and the target has the Poisoned condition until the end of its next turn. While Poisoned, the target can't regain Hit Points. Success: Half damage only.\n6 | Telekinetic Ray: Strength Saving Throw: DC 17 (the target succeeds automatically if it is Gargantuan). Failure: The death tyrant moves the target up to 30 feet in any direction. The target has the Restrained condition until the start of the death tyrant's next turn or until the death tyrant has the Incapacitated condition. The death tyrant can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container.\n7 | Sleep Ray: Wisdom Saving Throw: DC 17 (the target succeeds automatically if it is a Construct or an Undead). Failure: The target has the Unconscious condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it.\n8 | Petrification Ray: Constitution Saving Throw: DC 17. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.\n9 | Disintegration Ray: Dexterity Saving Throw: DC 17. Failure: 36 (8d8) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust. Success: Half damage. Failure or Success: If the target is a creature and this damage reduces it to 0 Hit Points, it disintegrates into dust.\n10 | Death Ray: Dexterity Saving Throw: DC 17. Failure: 55 (10d10) Necrotic damage. Success: Half damage. Failure or Success: The target dies if the ray reduces it to 0 Hit Points.",
+            "attack": [
+              "Eye Rays||1d10",
+              "Charm Ray||3d8",
+              "Fear Ray||3d6",
+              "Slowing Ray||4d8",
+              "Enervation Ray||3d10",
+              "Disintegration Ray||8d8",
+              "Death Ray||10d10"
+            ]
+          },
+          {
+            "name": "Negative Energy Cone (Bonus Action)",
+            "text": "The death tyrant's central eye emits an imperceptible, magical wave of negative energy in a 150-foot Cone. Creatures in that area can't regain Hit Points until the start of the death tyrant's next turn. An intact Humanoid corpse there instantly rises as a Zombie under the death tyrant's control and takes its turn immediately after the death tyrant on the same initiative count."
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Death Tyrant can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Death Tyrant regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Chomp",
+            "text": "The death tyrant makes two Bite attacks."
+          },
+          {
+            "name": "Glare",
+            "text": "The death tyrant uses Eye Rays."
+          },
+          {
+            "@category": "lair",
+            "name": "Death Tyrant Lairs",
+            "text": "Death tyrants often lurk deep in the Underdark, in the tunnel-mazes they occupied in life or in the lairs of enemy beholders they conquered. These lairs are devoid of life, as death tyrants change their servants into Undead horrors.\n\tThe region containing a death tyrant's lair is warped by its presence, creating the following effects:\n\nNegative Energy Suffusion: Whenever a creature within 1 mile of the lair regains Hit Points from a spell, it subtracts 1d10 from the number of Hit Points regained.\n\nScopophobia: Creatures within 1 mile of the lair feel as if they're being watched. Any creature (excluding the death tyrant and its allies) that finishes a Short Rest while within 1 mile of the lair must succeed on a DC 15 Wisdom saving throw or gain no benefit from that rest.\n\nIf the death tyrant dies or moves its lair elsewhere, these effects end immediately."
+          }
+        ],
+        "description": "Champions of evil, death knights are armor-clad, skeletal warlords. Combining devastating martial prowess and blasphemous magic, these undying tyrants lead unholy legions against the living or brood in cursed citadels. Every death knight is haunted by a legacy of tragedy and dishonor that drives it to commit greater evils.\n\nDeath Tyrant:\nA death tyrant is a beholder that pursues aberrant goals beyond its death. Ten magical singularities—all that remains of its magical eyes—orbit its floating, cyclopean skull, while the hateful gaze of its central eye socket stifles life and raises the dead.\n\tBeholders typically transform into death tyrants over years when their dreams fixate on death, morbid apotheoses, or journeys to realms inhospitable to life. Some death tyrants rise from the corpses of slain beholders or result from exposure to strange magic or Underdark radiation. Sometimes beholders purposefully pursue this undead state, just as depraved magic-users pursue lichdom, although it is rare, as most beholders already believe themselves to be perfect beings.\n\tNo matter how death tyrants come into being, bizarre impulses drive their deathless existences. Their motivations tend to be extreme or beyond the reason of living creatures.\n\nSource:\tMonster Manual 2024 p. 95",
+        "environment": "underdark"
+      },
+      {
+        "name": "Deer [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "4 (1d8)",
+        "speed": "50 ft.",
+        "init": "3",
+        "str": "11",
+        "dex": "16",
+        "con": "11",
+        "int": "2",
+        "wis": "14",
+        "cha": "5",
+        "save": null,
+        "skill": "Perception +4",
+        "passive": "14",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Agile",
+            "text": "The deer doesn't provoke an Opportunity Attack when it moves out of an enemy's reach."
+          }
+        ],
+        "action": {
+          "name": "Ram",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage.",
+          "attack": "Ram|+2|1d4"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 352",
+        "environment": "forest, grassland"
+      },
+      {
+        "name": "Demilich [2024]",
+        "size": "T",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "20",
+        "hp": "180 (72d4)",
+        "speed": "5 ft., fly 30 ft.(hover)",
+        "init": "17",
+        "str": "1",
+        "dex": "20",
+        "con": "10",
+        "int": "20",
+        "wis": "17",
+        "cha": "20",
+        "save": "Wis +9, Con +6, Int +11",
+        "skill": null,
+        "passive": "13",
+        "languages": null,
+        "cr": "18",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "necrotic, poison, psychic",
+        "conditionImmune": "charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+6"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the demilich fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Undead Restoration",
+            "text": "If the demilich is destroyed, it reforms and regains all its Hit Points in 1d10 days unless a Wish spell is cast on its remains.",
+            "attack": "Undead Restoration||1d10"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The demilich makes three Necrotic Burst attacks."
+          },
+          {
+            "name": "Necrotic Burst",
+            "text": "Melee or Ranged Attack Roll: +11, reach 5 ft. or range 120 ft. Hit: 24 (7d6) Necrotic damage.",
+            "attack": "Necrotic Burst|+11|7d6"
+          },
+          {
+            "name": "Howl (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 19, each creature in a 30-foot Emanation originating from the demilich. Failure: 70 (20d6) Psychic damage. Failure or Success: The target has the Frightened condition until the start of the demilich's next turn.",
+            "attack": "Howl||20d6"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Demilich can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Demilich regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Energy Drain",
+            "text": "Constitution Saving Throw: DC 19, one creature the demilich can see within 120 feet. Failure: The target's Hit Point maximum decreases by 14 (4d6). Failure or Success: The demilich can't take this action again until the start of its next turn.",
+            "attack": "Energy Drain||4d6"
+          },
+          {
+            "name": "Grave-Dust Flight",
+            "text": "The demilich flies up to its Fly Speed, shedding grave dust. Each creature within 5 feet of the demilich as it moves is targeted once by the following effect. Constitution Saving Throw: DC 19. Failure: The target has the Blinded condition until the end of the demilich's next turn. Failure or Success: The demilich can't take this action again until the start of its next turn."
+          },
+          {
+            "name": "Necrosis",
+            "text": "The demilich makes one Necrotic Burst attack."
+          },
+          {
+            "@category": "lair",
+            "name": "Demilich Lairs",
+            "text": "Demiliches jealously guard their deathtrap-laden sanctums. The most notorious of these is the Tomb of Horrors, lair of the infamous Acererak.\n\tThe region containing a demilich's lair is twisted by its presence, creating the following effects:\n\nEnervating Domain: Whenever a creature other than the demilich or one of its allies finishes a Long Rest within 1 mile of the lair, the creature must succeed on a DC 20 Constitution saving throw or have its Hit Point maximum reduced by 1d4. This reduction lasts until the creature finishes a Long Rest outside that area.\n\nTravel Ward: Creatures can't use teleportation or planar travel to enter or exit the lair.\n\nIf the demilich dies or moves its lair elsewhere, these effects end immediately.",
+            "attack": "Demilich Lairs||1d4"
+          }
+        ],
+        "description": "A demilich is a skull harboring the remnants of a lich's wicked essence. If the burden of immortality overwhelms a lich, its consciousness turns inward as its body rots away. But if its remains are disturbed, a demilich rises. Demiliches usually appear as skulls adorned with gems or arcane sigils.\n\nSource:\tMonster Manual 2024 p. 96",
+        "environment": "any"
+      },
+      {
+        "name": "Deva [2024]",
+        "size": "M",
+        "type": "celestial (angel)",
+        "alignment": "lawful good",
+        "ac": "17",
+        "hp": "229 (27d8+108)",
+        "speed": "30 ft., fly 90 ft.(hover)",
+        "init": "4",
+        "str": "18",
+        "dex": "18",
+        "con": "18",
+        "int": "17",
+        "wis": "20",
+        "cha": "20",
+        "save": "Wis +9, Cha +9",
+        "skill": "Insight +9, Perception +9",
+        "passive": "19",
+        "languages": "all; telepathy 120 ft.",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": "radiant",
+        "immune": null,
+        "conditionImmune": "charmed, exhaustion, frightened",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Exalted Restoration",
+            "text": "If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The deva has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The deva makes two Holy Mace attacks."
+          },
+          {
+            "name": "Holy Mace",
+            "text": "Melee Attack Roll: +8, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 18 (4d8) Radiant damage.",
+            "attack": [
+              "Holy Mace|+8|1d6+4",
+              "Radiant Damage||4d8"
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The deva casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):\n\n\t• At will: Detect Evil and Good, Shapechange (Beast or Humanoid form only,  no Temporary Hit Points gained from the spell,  and no Concentration or Temporary Hit Points required to maintain the spell)\n\t• 1/Day each: Commune, Raise Dead"
+          },
+          {
+            "name": "Divine Aid (2/Day) (Bonus Action)",
+            "recharge": "2/DAY",
+            "text": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Cure Wounds [2024], Lesser Restoration [2024], Remove Curse [2024], Detect Evil and Good [2024], Shapechange [2024], Commune [2024], Raise Dead [2024]",
+        "description": "Devas are emissaries of divine will. These immortal messengers adopt the shapes of mystical beasts or idealized, winged mortals. As with all angels, their true forms are known only to the gods they serve.\n\tRather than literal correspondence from a god, a deva conveys an allegory or quest to mortals, tasking them with delivering something to its rightful place. While the angel might be called on in times of need, it encourages mortal heroism. Should a deva's chosen champions carry out their charge, they experience a revelation or the world is changed in line with divine purpose. Roll on or choose a result from the Deva Messages table to inspire a deva's charge.\n\nDeva Messages:\n1d6 | The Deva Tasks a Mortal with Delivering...\n1 | The corpse of a hero in need of redemption.\n2 | The cure for a plague in a distant land.\n3 | A holy coffer that must not be opened.\n4 | A magic weapon usable only by a true hero.\n5 | A seedling that wilts if exposed to anger.\n6 | Someone from another world with a prophesied purpose but no memory.\n\nSource:\tMonster Manual 2024 p. 97",
+        "environment": "planar (upper)"
+      },
+      {
+        "name": "Dire Wolf [2024]",
+        "sortname": "Wolf, Dire",
+        "ancestry": "Wolf",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "14",
+        "hp": "22 (3d10+6)",
+        "speed": "50 ft.",
+        "init": "2",
+        "str": "17",
+        "dex": "15",
+        "con": "15",
+        "int": "3",
+        "wis": "12",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +4, Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The wolf has Advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition.",
+          "attack": "Bite|+5|1d10+3"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 352,\n\t\tPlayer's Handbook 2024 p. 348",
+        "environment": "forest, hill"
+      },
+      {
+        "name": "Dire Worg [2024]",
+        "sortname": "Worg, Dire",
+        "ancestry": "Worg",
+        "size": "H",
+        "type": "fey",
+        "alignment": "neutral evil",
+        "ac": "16",
+        "hp": "147 (14d12+56)",
+        "speed": "50 ft.",
+        "init": "2",
+        "str": "22",
+        "dex": "14",
+        "con": "18",
+        "int": "7",
+        "wis": "16",
+        "cha": "8",
+        "save": "Wis +7, Dex +6",
+        "skill": "Perception +11",
+        "passive": "21",
+        "languages": "Goblin, Sylvan, Worg",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The worg has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The worg makes three Bite attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage plus 7 (2d6) Poison damage, and the target has the Poisoned condition until the start of the worg's next turn. While Poisoned, the target can't regain Hit Points.",
+            "attack": [
+              "Bite|+10|2d8+6",
+              "Poison Damage||2d6"
+            ]
+          },
+          {
+            "name": "Dreadful Howl (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Wisdom Saving Throw: DC 16, each creature within 30 feet that isn't a worg. Failure: 36 (8d8) Psychic damage, and the target has the Frightened condition until the start of the worg's next turn. Success: Half damage only.",
+            "attack": "Dreadful Howl||8d8"
+          },
+          {
+            "name": "Warp Step (Bonus Action)",
+            "text": "The worg teleports, along with a willing creature of its choice within 5 feet of it, up to 30 feet to an unoccupied space it can see."
+          }
+        ],
+        "description": "Sometimes mistaken at first for giant wolves, worgs are vicious hunters. These sapient predators can speak and often taunt their prey, enjoying the taste of fear in their meals.\n\nDire Worg:\nDire worgs are larger than common worgs and possess a supernaturally terrifying howl. They frequently hunt alongside ettins, ogres, and trolls.\n\nSource:\tMonster Manual 2024 p. 335",
+        "environment": "forest, grassland, hill, planar (feywild)"
+      },
+      {
+        "name": "Displacer Beast [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "lawful evil",
+        "ac": "13",
+        "hp": "76 (9d10+27)",
+        "speed": "40 ft.",
+        "init": "4",
+        "str": "18",
+        "dex": "15",
+        "con": "16",
+        "int": "6",
+        "wis": "12",
+        "cha": "8",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": "understands Sylvan but can't speak",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Avoidance",
+            "text": "If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the save and half damage if it fails. It can't use this trait if it has the Incapacitated condition."
+          },
+          {
+            "name": "Displacement",
+            "text": "Attack rolls against the displacer beast have Disadvantage, since it projects an illusion that makes it appear to be near its actual location. This trait is suppressed while the displacer beast has the Incapacitated condition."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The displacer beast makes one Rend attack and one Tentacle attack."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +6, reach 5 feet. Hit: 9 (1d10 + 4) Slashing damage. If target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Rend|+6|1d10+4"
+          },
+          {
+            "name": "Tentacle",
+            "text": "Melee Attack Roll: +6, reach 10 feet. Hit: 11 (2d6 + 4) Piercing damage.",
+            "attack": "Tentacle|+6|2d6+4"
+          }
+        ],
+        "description": "A displacer beast resembles a gaunt, six-legged panther with a barbed tentacle sprouting from each of its shoulders. This predator uses innate magic to displace light so it appears to be several feet away from its actual location.\n\tDisplacer beasts hunt not just to feed but because they enjoy killing. Once displacer beasts begin stalking prey, they can't be deterred until either they or their quarry is slain. While displacer beasts commonly inhabit dense forests, they might pursue travelers across great distances and even into cities or dungeons. More cunning than mere animals, these predators might set ambushes or lie hidden for days to bring down their prey.\n\tDisplacer beasts sometimes pursue prey through portals to other planes of existence. As a result, these predators can be found across the multiverse, particularly on the worlds of the Material Plane, in the Shadowfell, and in the Feywild. These restless hunters can destroy a land's natural balance and drive other creatures to extinction. As a result, many druid circles and Fey view displacer beasts as deadly threats.\n\nSource:\tMonster Manual 2024 p. 98",
+        "environment": "forest"
+      },
+      {
+        "name": "Djinni [2024]",
+        "size": "L",
+        "type": "elemental (genie)",
+        "alignment": "chaotic good",
+        "ac": "17",
+        "hp": "218 (19d10+114)",
+        "speed": "30 ft., fly 90 ft.(hover)",
+        "init": "2",
+        "str": "21",
+        "dex": "15",
+        "con": "22",
+        "int": "15",
+        "wis": "16",
+        "cha": "20",
+        "save": "Wis +7, Dex +6",
+        "skill": null,
+        "passive": "13",
+        "languages": "Primordial (Auran)",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "lightning, thunder",
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Elemental Restoration",
+            "text": "If the djinni dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Air.",
+            "attack": "Elemental Restoration||1d4"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The djinni has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Wishes",
+            "text": "The djinni has a 30 percent chance of knowing the Wish spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who communicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell's stress. Once the djinni has cast it three times, the djinni can't do so again for 365 days."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination."
+          },
+          {
+            "name": "Storm Blade",
+            "text": "Melee Attack Roll: +9, reach 5 feet. Hit: 12 (2d6 + 5) Slashing damage plus 7 (2d6) Lightning damage.",
+            "attack": [
+              "Storm Blade|+9|2d6+5",
+              "Lightning Damage||2d6"
+            ]
+          },
+          {
+            "name": "Storm Bolt",
+            "text": "Ranged Attack Roll: +9, range 120 feet. Hit: 13 (3d8) Thunder damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Storm Bolt|+9|3d8"
+          },
+          {
+            "name": "Create Whirlwind",
+            "text": "The djinni conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a 20-foot-radius, 60-foot-high Cylinder centered on that point. The whirlwind lasts until the djinni's Concentration on it ends. The djinni can move the whirlwind up to 20 feet at the start of each of its turns.\n\tWhenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect. Strength Saving Throw: DC 17 (a creature makes this save only once per turn, and the djinni is unaffected). Failure: While in the whirlwind, the target has the Restrained condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes 21 (6d6) Thunder damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.",
+            "attack": "Create Whirlwind||6d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):\n\n\t• At will: Detect Evil and Good, Detect Magic\n\t• 2/Day each: Create Food and Water (can create wine instead of water), Tongues, Wind Walk\n\t• 1/Day each: Creation, Gaseous Form, Invisibility, Major Image, Plane Shift"
+          }
+        ],
+        "spells": "Detect Evil and Good, Detect Magic, Create Food and Water, Tongues, Wind Walk, Creation, Gaseous Form, Invisibility, Major Image, Plane Shift",
+        "description": "As genies of wind and skies, djinn personify freedom and might. They can control wind and travel as swiftly as a breeze. They might be as serene as drifting clouds or as tempestuous as storms, but most djinn relish their freedom and desire to discover the wonders of the multiverse. Djinn often know many stories, and they might share such lore with those who offer their own exciting stories in trade.\n\tWhile many djinn create airy palaces on stormy coasts or high in the clouds, untold numbers dwell on the Elemental Plane of Air. In floating cities, djinn collect tales and experiences from across the planes of existence, sharing them in fabulous forums, libraries, and theaters. The greatest of these cities is the Citadel of Ice and Steel, in which wind-sculpted towers contain a city-size trove of incredible knowledge and treasures that defy belief.\n\nSource:\tMonster Manual 2024 p. 99",
+        "environment": "coastal, planar (elemental plane of air)"
+      },
+      {
+        "name": "Doppelganger [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "52 (8d8+16)",
+        "speed": "30 ft.",
+        "init": "4",
+        "str": "11",
+        "dex": "18",
+        "con": "14",
+        "int": "11",
+        "wis": "12",
+        "cha": "14",
+        "save": null,
+        "skill": "Insight +3, Deception +6",
+        "passive": "11",
+        "languages": "Common plus three other languages",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The doppelganger makes two Slam attacks and uses Unsettling Visage if available."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +6 (with Advantage during the first round of each combat), reach 5 ft. Hit: 11 (2d6 + 4) Bludgeoning damage.",
+            "attack": "Slam|+6|2d6+4"
+          },
+          {
+            "name": "Unsettling Visage (Recharge 6)",
+            "text": "Wisdom Saving Throw: DC 12, each creature in a 15-foot Emanation originating from the doppelganger that can see the doppelganger. Failure: The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+            "recharge": "D6"
+          },
+          {
+            "name": "Read Thoughts",
+            "text": "The doppelganger casts Detect Thoughts, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 12).\n\nAt will: Detect Thoughts"
+          },
+          {
+            "name": "Shape-Shift (Bonus Action)",
+            "text": "The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+          }
+        ],
+        "description": "Doppelgangers are supernatural beings with the ability to shape-shift into any humanlike form. Their mind-reading abilities aid them in creating nearperfect disguises and plucking secrets from unguarded minds. Occasionally, doppelgangers use their shape-shifting ability in more overt ways, transforming into unsettling forms to frighten foes.\n\tA doppelganger's agenda might relate to its mysterious magical origins or to more mercenary goals. Roll on or choose a result from the Doppelganger Deceptions table to inspire a doppelganger's plot.\n\nDoppelganger Deceptions:\n1d6 | The Doppelganger Schemes To...\n1 | Cause chaos within the temple of a deity that cursed it to live without a true form.\n2 | Conceal evidence of a vast conspiracy.\n3 | Control a community through fear by posing as a legendary bogeyman.\n4 | Replace a noble to enjoy a decadent lifestyle.\n5 | Spy on wizards to learn how to complete its own botched magical creation.\n6 | Take an influential position, acting as a sleeper agent for a doppelganger invasion.\n\nSource:\tMonster Manual 2024 p. 100",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Dracolich [2024]",
+        "size": "H",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "20",
+        "hp": "225 (18d12+108)",
+        "speed": "40 ft., fly 80 ft., burrow 30 ft.",
+        "init": "12",
+        "str": "25",
+        "dex": "10",
+        "con": "23",
+        "int": "19",
+        "wis": "15",
+        "cha": "21",
+        "save": "Wis +8, Dex +6",
+        "skill": "Stealth +6, Perception +14",
+        "passive": "24",
+        "languages": "Common, Draconic",
+        "cr": "17",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned",
+        "senses": "blindsight 60 ft., darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+6"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Huge, Gargantuan"
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the dracolich fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Life Suppression",
+            "text": "Creatures within 60 feet of the dracolich can't regain Hit Points."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The dracolich has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Soul Gem",
+            "text": "The dracolich has a magical gem. If the dracolich is destroyed while the gem is on the same plane of existence as it, the dracolich gains a new body in 1d20 days, regaining all its Hit Points and appearing within 5 feet of the gem.\n\tThe gem is a Tiny object that has AC 20; HP 50; and Immunity to Necrotic, Poison, and Psychic damage. The gem regains all its Hit Points at the end of every turn, but it turns to dust if reduced to 0 Hit Points. If the gem is destroyed, the dracolich can create a new one by completing an 8-hour ritual using a gem worth 1,000+ GP and by expending 5,000 GP, which the ritual consumes.",
+            "attack": "Soul Gem||1d20"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The dracolich makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Ray of Sickness (level 2 version)."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +13, reach 10 ft. Hit: 18 (2d10 + 7) Slashing damage plus 4 (1d8) Necrotic damage.",
+            "attack": [
+              "Rend|+13|2d10+7",
+              "Necrotic Damage||1d8"
+            ]
+          },
+          {
+            "name": "Necrotic Breath (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 20, each creature in a 60-foot Cone. Failure: 52 (8d12) Necrotic damage. Success: Half damage.",
+            "attack": "Necrotic Breath||8d12"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The dracolich casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 19, +11 to hit with spell attacks):\n\n\t• At will: Detect Magic, Ray of Sickness (level 2 version)\n\t• 1/Day each: Create Undead (level 8 version), Finger of Death"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Dracolich can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Dracolich regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Pounce",
+            "text": "The dracolich moves up to half its Speed, and it makes one Rend attack."
+          },
+          {
+            "name": "Sickening Ray",
+            "text": "The dracolich uses Spellcasting to cast Ray of Sickness (level 2 version). The dracolich can't take this action again until the start of its next turn."
+          },
+          {
+            "name": "Terrifying Presence",
+            "text": "Wisdom Saving Throw: DC 19, each creature in a 30-foot Emanation originating from the dracolich. Failure: 11 (2d10) Psychic damage, and the target has the Frightened condition until the end of its next turn. Failure or Success: The dracolich can't take this action again until the start of its next turn.",
+            "attack": "Terrifying Presence||2d10"
+          },
+          {
+            "@category": "lair",
+            "name": "Dracolich Lairs",
+            "text": "A dracolich lurks in a corrupted version of the lair it had in life. The region containing a dracolich's lair is warped by its presence, creating the following effects:\n\nSapping Mist: The area within 1 mile of the lair is Lightly Obscured by pale fog. Whenever a creature other than the dracolich or one of its allies finishes a Long Rest in that area, it must succeed on a DC 15 Constitution saving throw or gain 1 Exhaustion level.\n\nSoul Drain: Creatures within 1 mile of the lair have Disadvantage on Death Saving Throws.\n\nIf the dracolich is destroyed or moves its lair elsewhere, these effects end immediately. The effects resume if the dracolich gains a new body (see its Soul Gem trait)."
+          }
+        ],
+        "spells": "Ray of Sickness [2024], Detect Magic [2024], Ray of Sickness [2024], Create Undead [2024], Finger of Death [2024]",
+        "description": "The vilest dragons seek to escape the grip of death, employing ageless secrets and blasphemous magic to become horrors called dracoliches. These deathless dragons bind their spirits to gems and magically animate their rotting corpses. Eventually becoming skeletal horrors, dracoliches continue the centuries-spanning plots they pursued in life, seek revenge on those that brought them low, and strive toward vicious goals they couldn't indulge in life.\n\tDracoliches combine the corrupt immortality of the undead with the legendary power of dragons. A dracolich retains a breath weapon, but it is a chilling necrotic blast. These terrors gradually sicken the land near their lairs and attract sinister followers—usually other undead or cultists seeking to revel in their terrible might. Living dragons of all types loathe and seek to destroy dracoliches, viewing them as distortions of draconic magic.\n\tThere are untold profane routes by which a dragon might become a dracolich. However one is created, a dracolich chooses a gem that becomes the anchor for its spirit and binds the deathless dragon to the world. So long as a dracolich is on the same plane of existence as its soul gem, the dracolich can survive the destruction of its physical body. Its spirit retreats into the gem if the dracolich's body is destroyed, and the monster might one day regain its terrifying form. Dracoliches often sequester their soul gems within meaningful treasure from their hoard or in unassuming baubles. Roll on or choose a result from the Dracolich Soul Gem Vessels table to inspire what holds a dracolich's soul gem.\n\nDracolich Soul Gem Vessels:\n1d10 | A Dracolich's Soul Gem Is Hidden In...\n1 | Another dragon's treasure hoard.\n2 | The body of a servant or an ancestor.\n3 | The core of a dracolich's melted hoard.\n4 | A corrupted dragon egg.\n5 | A dragon horn a hero took as a trophy.\n6 | A nation's royal or religious treasure.\n7 | A powerful magic item.\n8 | A source of magical wonders, such as a giant tree or mystical pool.\n9 | The vault of an archdevil, a wicked god, or another extraplanar villain.\n10 | The weapon that slew the dracolich.\n\nSource:\tMonster Manual 2024 p. 102",
+        "environment": "any"
+      },
+      {
+        "name": "Draft Horse [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "15 (2d10+4)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "18",
+        "dex": "10",
+        "con": "15",
+        "int": "2",
+        "wis": "11",
+        "cha": "7",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Hooves",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Bludgeoning damage.",
+          "attack": "Hooves|+6|1d4+4"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 352,\n\t\tPlayer's Handbook 2024 p. 349",
+        "environment": "urban"
+      },
+      {
+        "name": "Dragon Turtle [2024]",
+        "size": "G",
+        "type": "dragon",
+        "alignment": "neutral",
+        "ac": "20",
+        "hp": "356 (23d20+115)",
+        "speed": "20 ft., swim 50 ft.",
+        "init": "6",
+        "str": "25",
+        "dex": "10",
+        "con": "20",
+        "int": "10",
+        "wis": "12",
+        "cha": "12",
+        "save": "Wis +7, Con +11",
+        "skill": null,
+        "passive": "11",
+        "languages": "Draconic, Primordial (Aquan)",
+        "cr": "17",
+        "vulnerable": null,
+        "resist": "fire",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+6"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The dragon can breathe air and water."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The dragon makes three Bite attacks. It can replace one attack with a Tail attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +13, reach 15 ft. Hit: 23 (3d10 + 7) Piercing damage plus 7 (2d6) Fire damage. Being underwater doesn't grant Resistance to this Fire damage.",
+            "attack": [
+              "Bite|+13|3d10+7",
+              "Fire Damage||2d6"
+            ]
+          },
+          {
+            "name": "Tail",
+            "text": "Melee Attack Roll: +13, reach 15 ft. Hit: 18 (2d10 + 7) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+            "attack": "Tail|+13|2d10+7"
+          },
+          {
+            "name": "Steam Breath (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage. Failure or Success: Being underwater doesn't grant Resistance to this Fire damage.",
+            "attack": "Steam Breath||16d6"
+          }
+        ],
+        "description": "Dragon turtles are mighty creatures with shells large enough to be mistaken for islands and jaws capable of snapping ships like twigs. While some of these aquatic dragons contentedly slumber in the depths, others jealously guard vast territories with their scalding breath and lay claim to anything that sinks into the depths or sails on the waves. Occasionally these dragons agree to aid pirates, aquatic peoples, or oceanic religions in return for contributions to their sunken treasure hoards.\n\tMany dragon turtles live in secluded lairs or ruins deep underwater, and they might not be spotted by surface dwellers for generations. Like both their namesakes, dragon turtles can have exceptionally long lives. Some recall the wonders of ages past or remarkable individuals that passed through their realms long ago. Such dragon turtles might be convinced to share their tales or provide guidance through their territories in exchange for treasures they've never glimpsed on the ocean floor.\n\nSource:\tMonster Manual 2024 p. 103",
+        "environment": "coastal, underwater"
+      },
+      {
+        "name": "Dretch [2024]",
+        "sortname": "Dretch",
+        "ancestry": "Dretch",
+        "size": "S",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "11",
+        "hp": "18 (4d6+4)",
+        "speed": "20 ft.",
+        "init": "0",
+        "str": "12",
+        "dex": "11",
+        "con": "12",
+        "int": "5",
+        "wis": "8",
+        "cha": "3",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "Abyssal; telepathy 60 ft. (works only with creatures that understand Abyssal)",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+            "attack": "Rend|+3|1d6+1"
+          },
+          {
+            "name": "Fetid Cloud (1/Day)",
+            "recharge": "1/DAY",
+            "text": "Constitution Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the dretch. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions."
+          }
+        ],
+        "description": "The servants and victims of greater demons, dretches embody petty instincts, chaotic impulses, and violent urges. Dretches exist in unfathomable numbers in the depths of the Abyss, where their reeking throngs fill vast demonic hordes.\n\nDretch:\nLone dretches serve other demons or evil magic-users. They are erratic, filthy, and violent, and they demonstrate little sense of self-preservation.\n\nSource:\tMonster Manual 2024 p. 103",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Drider [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "19",
+        "hp": "123 (13d10+52)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "4",
+        "str": "16",
+        "dex": "19",
+        "con": "18",
+        "int": "13",
+        "wis": "16",
+        "cha": "12",
+        "save": null,
+        "skill": "Stealth +10, Perception +6",
+        "passive": "16",
+        "languages": "Elvish, Undercommon",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          },
+          {
+            "name": "Sunlight Sensitivity",
+            "text": "While in sunlight, the drider has Disadvantage on ability checks and attack rolls."
+          },
+          {
+            "name": "Web Walker",
+            "text": "The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the same web."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The drider makes three attacks, using Foreleg or Poison Burst in any combination."
+          },
+          {
+            "name": "Foreleg",
+            "text": "Melee Attack Roll: +7, reach 10 ft. Hit: 13 (2d8 + 4) Piercing damage.",
+            "attack": "Foreleg|+7|2d8+4"
+          },
+          {
+            "name": "Poison Burst",
+            "text": "Ranged Attack Roll: +6, range 120 ft. Hit: 13 (3d6 + 3) Poison damage.",
+            "attack": "Poison Burst|+6|3d6+3"
+          },
+          {
+            "name": "Magic of the Spider Queen (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14)."
+          }
+        ],
+        "spells": "Darkness [2024], Faerie Fire [2024], Web [2024]",
+        "description": "Driders combine the features of drow and giant spiders. The wicked god Lolth is fond of transforming her drow worshipers into driders, as either a blessing or a curse. These driders often become fanatical servants of their god, or they are overwhelmed by their transformation and live only to indulge their predatory arachnid instincts.\n\tDriders also appear when whole communities are transformed by a wicked god's wrath or other magical means, or driders might be part of a world's natural population. Most dwell underground or in dense forests where they can make the most of their spiderlike traits. Driders with non-drow features are uncommon but possible. Roll on or choose a result from the Drider Metamorphoses table to inspire how supernatural driders come into being.\n\nDrider Metamorphoses:\n1d6 | The Drider Gained Its Form As...\n1 | A blessing from a deity of assassins, dangerous wildernesses, or the Underdark.\n2 | A curse from a powerful hag, vengeful witch, or strange Artifact.\n3 | An experiment by an aboleth, a mind flayer, or another life-shaping magic-user.\n4 | A magical means of escaping disaster or some worse fate.\n5 | A mutation after exposure to chaotic planar energies or strange Underdark radiations.\n6 | A punishment from a spiteful god, like Lolth or the Queen of Air and Darkness.\n\nSource:\tMonster Manual 2024 p. 105",
+        "environment": "forest, underdark"
+      },
+      {
+        "name": "Druid [2024]",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "44 (8d8+8)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "10",
+        "dex": "12",
+        "con": "13",
+        "int": "12",
+        "wis": "16",
+        "cha": "11",
+        "save": null,
+        "skill": "Nature +3, Medicine +5, Perception +5",
+        "passive": "15",
+        "languages": "Common, Druidic, Sylvan",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Studded Leather Armor"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination."
+          },
+          {
+            "name": "Vine Staff",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 2 (1d4) Poison damage.",
+            "attack": [
+              "Vine Staff|+5|1d8+3",
+              "Poison Damage||1d4"
+            ]
+          },
+          {
+            "name": "Verdant Wisp",
+            "text": "Ranged Attack Roll: +5, range 90 ft. Hit: 10 (3d6) Radiant damage.",
+            "attack": "Verdant Wisp|+5|3d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):\n\n\t• At will: Druidcraft, Speak with Animals\n\t• 2/Day each: Entangle, Thunderwave\n\t• 1/Day each: Animal Messenger, Longstrider, Moonbeam"
+          }
+        ],
+        "spells": "Druidcraft [2024], Speak With Animals [2024], Entangle [2024], Thunderwave [2024], Animal Messenger [2024], Longstrider [2024], Moonbeam [2024]",
+        "description": "Druids use primal magic, traditional teachings, and bonds with animals and eldritch beings to guard the natural world and heal its ills. These magic-users might be recluses devoted to a particular land, or they might be part of a mystic organization. Roll on or choose a result from the Druidic Traditions table to inspire a druid's magical practices.\n\nDruid Traditions:\n1d6 | The Druid Is...\n1 | An avenger who strikes against destructive civilizations and those who abuse nature.\n2 | A guide who aids travelers in navigating the realms of Beasts, Fey, or Plants.\n3 | A hermit who works alone to protect the lands, seas, or skies they call home.\n4 | A mender who travels the world healing natural, magical, or manufactured disasters.\n5 | Part of a loose organization that adheres to timeless rituals and guards natural secrets.\n6 | A warden who minds the underpinnings of reality and protects against extraplanar threats.\n\nSource:\tMonster Manual 2024 p. 106",
+        "environment": "any"
+      },
+      {
+        "name": "Dryad [2024]",
+        "size": "M",
+        "type": "fey",
+        "alignment": "neutral",
+        "ac": "16",
+        "hp": "22 (5d8)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "10",
+        "dex": "12",
+        "con": "11",
+        "int": "14",
+        "wis": "15",
+        "cha": "18",
+        "save": null,
+        "skill": "Stealth +5, Perception +4",
+        "passive": "14",
+        "languages": "Elvish, Sylvan",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The dryad has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Speak with Beasts and Plants",
+            "text": "The dryad can communicate with Beasts and Plants as if they shared a language."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The dryad makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast Charm Monster."
+          },
+          {
+            "name": "Vine Lash",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d8 + 4) Slashing damage.",
+            "attack": "Vine Lash|+6|1d8+4"
+          },
+          {
+            "name": "Thorn Burst",
+            "text": "Ranged Attack Roll: +6, range 60 ft. Hit: 7 (1d6 + 4) Piercing damage.",
+            "attack": "Thorn Burst|+6|1d6+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The dryad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):\n\n\t• At will: Animal Friendship, Charm Monster (lasts 24 hours; ends early if the dryad casts the spell again), Druidcraft\n\t• 1/Day each: Entangle, Pass without Trace"
+          },
+          {
+            "name": "Tree Stride (Bonus Action)",
+            "text": "If within 5 feet of a Large or bigger tree, the dryad teleports to an unoccupied space within 5 feet of a second Large or bigger tree that is within 60 feet of the previous tree."
+          }
+        ],
+        "spells": "Animal Friendship [2024], Charm Monster [2024], Druidcraft [2024], Entangle [2024], Pass Without Trace [2024]",
+        "description": "Guardians of the woodlands, dryads magically flit from tree to tree and from root to bough, harrying trespassers with tangling vines and thorns. Most of these elusive beings have a special connection with one plant or a natural sanctuary that they protect. Some also share physical similarities with the plants they're most connected to. Dryads might sicken or die if their plant or sanctuary is destroyed, recovering only if it is healed or magically replaced. Roll on or choose an option from the Dryad Sanctuaries table to inspire a dryad's bond.\n\nDryad Sanctuaries:\n1d6 | The Dryad Dwells in and Protects...\n1 | An acres-large clonal colony—a stand of identical, interconnected trees.\n2 | A fortresslike tree, like a baobab or sequoia.\n3 | A living lock—a plant that seals evil below or blocks the path to a dungeon.\n4 | A lonely tree that stands atop a windswept mountain or amid a petrified forest.\n5 | A plant with magic fruit or remarkable seeds.\n6 | A shambling mound or treant that the dryad lives in or around as a Fey symbiote.\n\nSource:\tMonster Manual 2024 p. 107",
+        "environment": "forest"
+      },
+      {
+        "name": "Dust Mephit [2024]",
+        "sortname": "Mephit, Dust",
+        "ancestry": "Mephit",
+        "size": "S",
+        "type": "elemental",
+        "alignment": "neutral evil",
+        "ac": "12",
+        "hp": "17 (5d6)",
+        "speed": "30 ft., fly 30 ft.",
+        "init": "2",
+        "str": "5",
+        "dex": "14",
+        "con": "10",
+        "int": "9",
+        "wis": "11",
+        "cha": "10",
+        "save": null,
+        "skill": "Stealth +4, Perception +2",
+        "passive": "12",
+        "languages": "Primordial (Auran, Terran)",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Death Burst",
+            "text": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Bludgeoning damage. Success: Half damage.",
+            "attack": "Death Burst||2d4"
+          }
+        ],
+        "action": [
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.",
+            "attack": "Claw|+4|1d4+2"
+          },
+          {
+            "name": "Blinding Breath (Recharge 6)",
+            "text": "Dexterity Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: The target has the Blinded condition until the end of the mephit's next turn.",
+            "recharge": "D6"
+          },
+          {
+            "name": "Sleep (1/Day)",
+            "recharge": "1/DAY",
+            "text": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10).\n\n\t• 1/Day: Sleep"
+          }
+        ],
+        "spells": "Sleep [2024]",
+        "description": "Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.\n\tMephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.\n\nDust Mephit:\nDust mephits are composed of air and fine earth. They are drawn to forsaken places, and they think everything associated with death is hilarious.\n\nSource:\tMonster Manual 2024 p. 206",
+        "environment": "planar (elemental)"
+      }
+    ]
+  }
+}

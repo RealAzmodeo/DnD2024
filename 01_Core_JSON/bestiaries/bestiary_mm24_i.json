@@ -1,0 +1,461 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Ice Devil [2024]",
+        "size": "L",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil",
+        "ac": "18",
+        "hp": "228 (24d10+96)",
+        "speed": "40 ft.",
+        "init": "7",
+        "str": "21",
+        "dex": "14",
+        "con": "18",
+        "int": "18",
+        "wis": "15",
+        "cha": "18",
+        "save": "Wis +7, Con +9, Dex +7, Cha +9",
+        "skill": "Persuasion +9, Insight +7, Perception +7",
+        "passive": "17",
+        "languages": "Infernal; telepathy 120 ft.",
+        "cr": "14",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "cold, fire, poison",
+        "conditionImmune": "poisoned",
+        "senses": "blindsight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Diabolical Restoration",
+            "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The devil has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack."
+          },
+          {
+            "name": "Ice Spear",
+            "text": "Melee or Ranged Attack Roll: +10, reach 5 ft. or range 30/120 ft. Hit: 14 (2d8 + 5) Piercing damage plus 10 (3d6) Cold damage. Until the end of its next turn, the target can't take a Bonus Action or Reaction, its Speed decreases by 10 feet, and it can move or take one action on its turn, not both. Hit or Miss: The spear magically returns to the devil's hand immediately after a ranged attack.",
+            "attack": [
+              "Ice Spear|+10|2d8+5",
+              "Cold Damage||3d6"
+            ]
+          },
+          {
+            "name": "Tail",
+            "text": "Melee Attack Roll: +10, reach 10 ft. Hit: 15 (3d6 + 5) Bludgeoning damage plus 18 (4d8) Cold damage.",
+            "attack": [
+              "Tail|+10|3d6+5",
+              "Cold Damage||4d8"
+            ]
+          },
+          {
+            "name": "Ice Wall (Recharge 6)",
+            "recharge": "D6",
+            "text": "The devil casts Wall of Ice (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17)."
+          }
+        ],
+        "description": "Heartless strategists of the Nine Hells, ice devils—also known as gelugons—forsake emotion to indulge in their own malicious interpretations of logic. For them, the multiverse is a puzzle that must be solved to benefit them, their masters, and the Nine Hells.\n\tIce devils act maliciously, disguising their whims as reason and strategy. In the service of evil masters, these insectile devils patiently plot the movements of infernal armies and scheme ways to fulfill wicked goals. They might also serve as guardians, owing to their martial prowess and ability to reshape battlefields with walls of ice.\n\tWhen indulging their own schemes, ice devils tempt mortals to forsake empathy and social connections to embrace selfish, destructive visions of intellectualism. After isolating victims, these devils drain them of their secrets or send them forth to spread fractious dogmas cloaked as reason.\n\tIce devils usually lurk in frozen realms, particularly the frigid layer of Cania in the Nine Hells.\n\nSource:\tMonster Manual 2024 p. 176",
+        "environment": "planar (nine hells)"
+      },
+      {
+        "name": "Ice Mephit [2024]",
+        "sortname": "Mephit, Ice",
+        "ancestry": "Mephit",
+        "size": "S",
+        "type": "elemental",
+        "alignment": "neutral evil",
+        "ac": "11",
+        "hp": "21 (6d6)",
+        "speed": "30 ft., fly 30 ft.",
+        "init": "1",
+        "str": "7",
+        "dex": "13",
+        "con": "10",
+        "int": "9",
+        "wis": "11",
+        "cha": "12",
+        "save": null,
+        "skill": "Stealth +3, Perception +2",
+        "passive": "12",
+        "languages": "Primordial (Aquan, Auran)",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "cold, poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Death Burst",
+            "text": "The mephit explodes when it dies. Constitution Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Cold damage. Success: Half damage.",
+            "attack": "Death Burst||2d4"
+          }
+        ],
+        "action": [
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Slashing damage plus 2 (1d4) Cold damage.",
+            "attack": [
+              "Claw|+3|1d4+1",
+              "Cold Damage||1d4"
+            ]
+          },
+          {
+            "name": "Frost Breath (Recharge 6)",
+            "recharge": "D6",
+            "text": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 7 (3d4) Cold damage. Success: Half damage.",
+            "attack": "Frost Breath||3d4"
+          },
+          {
+            "name": "Fog Cloud (1/Day)",
+            "recharge": "1/DAY",
+            "text": "The mephit casts Fog Cloud, requiring no spell components and using Charisma as the spellcasting ability.\n\n\t• 1/Day: Fog Cloud"
+          }
+        ],
+        "spells": "Fog Cloud [2024]",
+        "description": "Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.\n\tMephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.\n\nIce Mephit:\nIce mephits have bodies made of frigid air and frozen water. They delight in freezing things and dropping ice into peoples' clothes.\n\nSource:\tMonster Manual 2024 p. 206",
+        "environment": "planar (elemental)"
+      },
+      {
+        "name": "Imp [2024]",
+        "size": "T",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil",
+        "ac": "13",
+        "hp": "21 (6d4+6)",
+        "speed": "20 ft., fly 40 ft.",
+        "init": "3",
+        "str": "6",
+        "dex": "17",
+        "con": "13",
+        "int": "11",
+        "wis": "12",
+        "cha": "14",
+        "save": null,
+        "skill": "Insight +3, Deception +4, Stealth +5",
+        "passive": "11",
+        "languages": "Common, Infernal",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": "fire, poison",
+        "conditionImmune": "poisoned",
+        "senses": "darkvision 120 ft. (unimpeded by magical darkness)",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The imp has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Sting",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.",
+            "attack": [
+              "Sting|+5|1d6+3",
+              "Poison Damage||2d6"
+            ]
+          },
+          {
+            "name": "Shape-Shift",
+            "text": "The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn't transformed."
+          },
+          {
+            "name": "Invisibility",
+            "text": "The imp casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.\n\n\t• At will: Invisibility"
+          }
+        ],
+        "spells": "Invisibility",
+        "description": "Known for their cowardice and toadying, imps serve devils and wicked magic-users. Their abilities to shape-shift and pass unseen make them skillful spies and adept at fleeing danger. Imps sent to surveil other creatures relate what they discover to their masters, but they frequently omit important details or cast events in the worst possible light to mislead their masters into following the imps' devilish council.\n\tImps without masters delight in manipulating other creatures and inflating their own egos. They might take over bands of weaker monsters, or they might pose as helpful spirits and trick influential individuals into pursuing nefarious ends.\n\nSource:\tMonster Manual 2024 p. 177,\n\t\tPlayer's Handbook 2024 p. 352",
+        "environment": "any"
+      },
+      {
+        "name": "Incubus [2024]",
+        "size": "M",
+        "type": "fiend",
+        "alignment": "neutral evil",
+        "ac": "15",
+        "hp": "66 (12d8+12)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "3",
+        "str": "8",
+        "dex": "17",
+        "con": "13",
+        "int": "15",
+        "wis": "12",
+        "cha": "20",
+        "save": null,
+        "skill": "Persuasion +9, Insight +5, Deception +9, Stealth +7, Perception +5",
+        "passive": "15",
+        "languages": "Abyssal, Common, Infernal; telepathy 60 ft.",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": "cold, fire, poison, psychic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Succubus Form",
+            "text": "When the incubus finishes a Long Rest, it can shape-shift into a Succubus, using that stat block instead of this one. Any equipment it's wearing or carrying isn't transformed."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The incubus makes two Restless Touch attacks."
+          },
+          {
+            "name": "Restless Touch",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 15 (3d6 + 5) Psychic damage, and the target is cursed for 24 hours or until the incubus dies. Until the curse ends, the target gains no benefit from finishing Short Rests.",
+            "attack": "Restless Touch|+7|3d6+5"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The incubus casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):\n\n\t• At will: Disguise Self, Etherealness\n\t• 1/Day each: Dream, Hypnotic Pattern"
+          },
+          {
+            "name": "Nightmare (Recharge 6) (Bonus Action)",
+            "recharge": "D6",
+            "text": "Wisdom Saving Throw: DC 15, one creature the incubus can see within 60 feet. Failure: If the target has 20 Hit Points or fewer, it has the Unconscious condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it. Otherwise, the target takes 18 (4d8) Psychic damage.",
+            "attack": "Nightmare||4d8"
+          }
+        ],
+        "spells": "Disguise Self [2024], Etherealness [2024], Dream [2024], Hypnotic Pattern [2024]",
+        "description": "Incubi exploit the vulnerability of mortal dreams. Slipping into the homes of sleepers, incubi feed off dreams and replace them with terrifying nightmares. Incubi visit victims nightly until their prey expires. The incubi then hunt for new victims, preferring the loved ones of past targets.\n\tIncubi can transform into succubi and vice versa, taking the forms they need to manipulate foes in dreams or in the flesh.\n\tThose visited by an incubus have recurring nightmares. Roll on or choose a result from the Incubus Nightmares table to inspire these night terrors.\n\nIncubus Nightmares:\n1d8 | The Incubus's Victim Has Dreams Of...\n1 | An angry family member or authority figure.\n2 | Being chased through the wilderness.\n3 | Being devoured by animals or monsters.\n4 | Falling, drowning, or suffocating.\n5 | A ruinous public embarrassment.\n6 | A shadowy intruder or monstrous silhouette.\n7 | A traumatic past event.\n8 | A visitor with an eerie or enigmatic message.\n\nSource:\tMonster Manual 2024 p. 178",
+        "environment": "planar (lower), urban"
+      },
+      {
+        "name": "Intellect Devourer [2024]",
+        "size": "T",
+        "type": "aberration",
+        "alignment": "lawful evil",
+        "ac": "12",
+        "hp": "28 (8d4+8)",
+        "speed": "40 ft.",
+        "init": "2",
+        "str": "6",
+        "dex": "14",
+        "con": "13",
+        "int": "14",
+        "wis": "11",
+        "cha": "10",
+        "save": null,
+        "skill": "Stealth +4, Perception +2",
+        "passive": "12",
+        "languages": "understands Deep Speech but can't speak; telepathy 60 ft.",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": "psychic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Detect Intelligence",
+            "text": "The intellect devourer magically senses the location of any creature within 300 feet of itself that has an Intelligence score of 3 or higher, regardless of interposing barriers."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The intellect devourer makes one Claw attack and uses Devour Intellect."
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.",
+            "attack": "Claw|+4|2d4+2"
+          },
+          {
+            "name": "Devour Intellect",
+            "text": "Intelligence Saving Throw: DC 12, one creature the intellect devourer can see within 5 feet. Failure: 11 (2d10) Psychic damage, and the target has the Stunned condition until the end of the intellect devourer's next turn.",
+            "attack": "Devour Intellect||2d10"
+          },
+          {
+            "name": "Steal Body",
+            "text": "Intelligence Saving Throw: DC 12, one Small or Medium creature within 5 feet that has the Incapacitated condition, is a Humanoid or Beast, and has 10 Hit Points or fewer. Failure: The intellect devourer possesses the target, consumes its brain, and teleports inside its skull. While there, the intellect devourer has Total Cover against attacks and other effects originating outside its host. The intellect devourer retains its Intelligence, Wisdom, and Charisma scores; its understanding of Deep Speech; its telepathy; and its Detect Intelligence trait. It otherwise adopts the target's game statistics. It knows everything the target knew, including spells and languages.\n\tIf the host body dies, the intellect devourer must leave it. The intellect devourer is also forced out if the target regains its devoured brain by means of a Wish spell. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies unless its brain is restored before the end of the intellect devourer's next turn."
+          }
+        ],
+        "description": "Intellect devourers serve their mind flayer creators by consuming other creatures' brains and puppetizing the mindless bodies. These quadrupedal brains seek to ambush sapient beings, then drain their thoughts until they're mindless. Then, if their victims are Humanoids, they enter the creatures' skulls. With access to the victims' knowledge and control of their bodies, intellect devourers use their perfect disguises to pass as the people they've replaced and further mind flayer plots.\n\nSource:\tMonster Manual 2024 p. 179",
+        "environment": "underdark"
+      },
+      {
+        "name": "Invisible Stalker [2024]",
+        "size": "L",
+        "type": "elemental",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "97 (13d10+26)",
+        "speed": "50 ft., fly 50 ft.(hover)",
+        "init": "7",
+        "str": "16",
+        "dex": "19",
+        "con": "14",
+        "int": "10",
+        "wis": "15",
+        "cha": "11",
+        "save": null,
+        "skill": "Stealth +10, Perception +8",
+        "passive": "18",
+        "languages": "Common, Primordial (Auran)",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "poison",
+        "conditionImmune": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Air Form",
+            "text": "The stalker can enter an enemy's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so."
+          },
+          {
+            "name": "Invisibility",
+            "text": "The stalker has the Invisible condition."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex."
+          },
+          {
+            "name": "Wind Swipe",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Force damage.",
+            "attack": "Wind Swipe|+7|2d6+4"
+          },
+          {
+            "name": "Vortex",
+            "text": "Constitution Saving Throw: DC 14, one Large or smaller creature in the stalker's space. Failure: 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can't cast spells with a Verbal component and takes 7 (2d6) Thunder damage at the start of each of the stalker's turns.",
+            "attack": [
+              "Vortex||1d8+3",
+              "Thunder Damage||2d6"
+            ]
+          }
+        ],
+        "description": "Magic and malice give form to invisible stalkers, bodiless spirits of the air. These elusive beings pass unseen with nothing more than a stirring of air. They control powerful winds capable of moving objects and battering foes. Magic-users conjure these creatures to serve as killers and thieves. Invisible stalkers relentlessly pursue their quarry, and they rarely leave evidence of their crimes.\n\tIn rare cases, an invisible stalker lingers in the world without a spellcaster controlling it. Roll on or choose a result from the Uncontrolled Invisible Stalkers table to inspire why one of these monsters lurks in an area without a direct command.\n\nUncontrolled Invisible Stalkers:\n1d6 | The Invisible Stalker Is...\n1 | The breath of an infamous god or monster.\n2 | A guardian of a hidden portal or magical site.\n3 | The lingering violent thoughts of someone killed in a great battle.\n4 | A manifestation of uncontrolled magic.\n5 | A servant of an evil elemental ruler such as Yan-C-Bin (the Elemental Prince of Evil Air).\n6 | Unable to complete its duty and tries to create circumstances allowing it to fulfill its task.\n\nSource:\tMonster Manual 2024 p. 180",
+        "environment": "urban"
+      },
+      {
+        "name": "Iron Golem [2024]",
+        "sortname": "Golem, Iron",
+        "ancestry": "Golem",
+        "size": "L",
+        "type": "construct",
+        "alignment": "unaligned",
+        "ac": "20",
+        "hp": "252 (24d10+120)",
+        "speed": "30 ft.",
+        "init": "10",
+        "str": "24",
+        "dex": "9",
+        "con": "20",
+        "int": "3",
+        "wis": "11",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "understands Common plus two other languages but can't speak",
+        "cr": "16",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "fire, poison, psychic",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Fire Absorption",
+            "text": "Whenever the golem is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt."
+          },
+          {
+            "name": "Immutable Form",
+            "text": "The golem can't shape-shift."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The golem has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The golem makes two attacks, using Bladed Arm or Fiery Bolt in any combination."
+          },
+          {
+            "name": "Bladed Arm",
+            "text": "Melee Attack Roll: +12, reach 10 ft. Hit: 20 (3d8 + 7) Slashing damage plus 10 (3d6) Fire damage.",
+            "attack": [
+              "Bladed Arm|+12|3d8+7",
+              "Fire Damage||3d6"
+            ]
+          },
+          {
+            "name": "Fiery Bolt",
+            "text": "Ranged Attack Roll: +10, range 120 ft. Hit: 36 (8d8) Fire damage.",
+            "attack": "Fiery Bolt|+10|8d8"
+          },
+          {
+            "name": "Poison Breath (Recharge 6)",
+            "recharge": "D6",
+            "text": "Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 55 (10d10) Poison damage. Success: Half damage.",
+            "attack": "Poison Breath||10d10"
+          }
+        ],
+        "description": "Their magical cores protected by mighty armor, iron golems defend important sites and objects. These golems are forged in bipedal forms, the details of which are decided by their creators. Many resemble armored guardians or legendary heroes. Iron golems confront their foes with a combination of overwhelming physical force and eruptions from their magical core. These magical blasts take the form of fiery bolts and poisonous emissions.\n\tIron golems preserve and protect their charges for generations. Roll on or choose a result from the Iron Golem Orders table to inspire what commands an iron golem follows.\n\nIron Golem Orders:\n1d4 | The Iron Golem Follows Orders To...\n1 | Block a door that has never been opened, moving only when a prophecy is fulfilled.\n2 | Exhale poison gas whenever it can, pausing only when someone speaks a passphrase.\n3 | Pose as a statue until a community's hour of greatest need.\n4 | Stand atop the resting place of a powerful magic item.\n\nSource:\tMonster Manual 2024 p. 181",
+        "environment": "any"
+      }
+    ]
+  }
+}

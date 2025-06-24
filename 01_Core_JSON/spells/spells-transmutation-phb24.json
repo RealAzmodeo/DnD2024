@@ -1,0 +1,3910 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "spell": [
+      {
+        "name": "Alter Self [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one.",
+            "Aquatic Adaptation: You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed.",
+            "Change Appearance: You alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can't appear as a creature of a different size, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. For the duration, you can take a Magic action to change your appearance in this way again.",
+            "Natural Weapons: You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024], Sorcerer [2024] (Draconic)",
+          "class_name": [
+            "Sorcerer",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Sorcerer",
+            "@name": "Draconic"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "239"
+        },
+        "roll": {
+          "@description": "Slashing, Piercing, or Bludgeoning Damage",
+          "@type": "damage",
+          "dice": "1d6",
+          "damage_type": "Piercing"
+        }
+      },
+      {
+        "name": "Animal Shapes [2024]",
+        "level": "8",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 24 hour",
+          "value": "24",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose any number of willing creatures that you can see within range. Each target shape-shifts into a Large or smaller Beast of your choice that has a Challenge Rating of 4 or lower. You can choose a different form for each target. On later turns, you can take a Magic action to transform the targets again.",
+            "A target's game statistics are replaced by the chosen Beast's statistics, but the target retains its creature type; Hit Points; Hit Point Dice; alignment; ability to communicate; and Intelligence, Wisdom, and Charisma scores. The target's actions are limited by the Beast form's anatomy, and it can't cast spells. The target's equipment melds into the new form, and the target can't use any of that equipment while in that form.",
+            "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target, until the target has no Temporary Hit Points, or until the target leaves the form as a Bonus Action."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024]",
+          "class_name": "Druid"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "240"
+        }
+      },
+      {
+        "name": "Animate Objects [2024]",
+        "level": "5",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.",
+            "Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.",
+            "Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "240"
+        },
+        "roll": [
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d4",
+            "damage_type": "Bludgeoning"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d6",
+            "damage_type": "Bludgeoning"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d12",
+            "damage_type": "Bludgeoning"
+          }
+        ],
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "The creature's Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5."
+          }
+        }
+      },
+      {
+        "name": "Awaken [2024]",
+        "level": "5",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "true",
+            "@cost_gp": "1000",
+            "@cost_text": "worth 1,000+ GP",
+            "#text": "an agate"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a Beast or Plant creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the Awakened Shrub or Awakened Tree in the XMM.",
+            "The awakened target has the Charmed condition for 30 days or until you or your allies deal damage to it. When that condition ends, the awakened creature chooses its attitude toward you."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024]",
+          "class_name": [
+            "Bard",
+            "Druid"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "245"
+        }
+      },
+      {
+        "name": "Barkskin [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a handful of oak bark"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "245"
+        }
+      },
+      {
+        "name": "Blindness/Deafness [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": "One creature that you can see within range must succeed on a Constitution saving throw, or it has the Blinded or Deafened condition (your choice) for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Cleric [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "248"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Blink [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "Roll 1d6 at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plane, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane.",
+            "You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024], Warlock [2024] (Archfey)",
+          "class_name": [
+            "Sorcerer",
+            "Wizard",
+            "Warlock"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Warlock",
+            "@name": "Archfey"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "248"
+        },
+        "roll": {
+          "@description": "Blink",
+          "@type": "damage",
+          "dice": "1d6"
+        }
+      },
+      {
+        "name": "Control Water [2024]",
+        "level": "4",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "300 feet",
+          "value": "300",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a mixture of water and dust"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Until the spell ends, you control any water inside an area you choose that is a Cube up to 100 feet on a side, using one of the following effects. As a Magic action on your later turns, you can repeat the same effect or choose a different one.",
+            "Flood: You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 chance of capsizing.",
+            "The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.",
+            "Part Water: You part water in the area and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.",
+            "Redirect Flow: You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain. The water continues to move in the direction you chose until the spell ends or you choose a different effect.",
+            "Whirlpool: You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Wizard [2024], Druid [2024] (Sea)",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Druid",
+            "@name": "Sea"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "256"
+        },
+        "roll": {
+          "@description": "Bludgeoning Damage",
+          "@type": "damage",
+          "dice": "2d8",
+          "damage_type": "Bludgeoning"
+        }
+      },
+      {
+        "name": "Control Weather [2024]",
+        "level": "8",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "5 Miles",
+          "value": "5",
+          "unit": "mile"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "burning incense"
+        },
+        "duration": {
+          "@description": "Concentration, up to 8 hour",
+          "value": "8",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell, and it ends early if you go indoors.",
+            "When you cast the spell, you change the current weather conditions, which are determined by the DM. You can change precipitation, temperature, and wind. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
+            "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
+            "Precipitation:\nStage | Condition\n1 | Clear\n2 | Light clouds\n3 | Overcast or ground fog\n4 | Rain, hail, or snow\n5 | Torrential rain, driving hail, or blizzard",
+            "Temperature:\nStage | Condition\n1 | Heat wave\n2 | Hot\n3 | Warm\n4 | Cool\n5 | Cold\n6 | Freezing",
+            "Wind:\nStage | Condition\n1 | Calm\n2 | Moderate wind\n3 | Strong wind\n4 | Gale\n5 | Storm"
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Wizard [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "257"
+        },
+        "roll": {
+          "@description": "Minutes",
+          "@type": "damage",
+          "dice": "1d4x10"
+        }
+      },
+      {
+        "name": "Cordon of Arrows [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "four or more arrows or bolts"
+        },
+        "duration": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can't be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 2d4 Piercing damage. The piece of ammunition is then destroyed. The spell ends when none of the ammunition remains planted in the ground.",
+            "When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Ranger [2024]",
+          "class_name": "Ranger"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "258"
+        },
+        "roll": {
+          "@description": "Piercing Damage",
+          "@type": "damage",
+          "dice": "2d4",
+          "damage_type": "Piercing"
+        },
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "The amount of ammunition that can be affected increases by two for each spell slot level above 2."
+          }
+        }
+      },
+      {
+        "name": "Create or Destroy Water [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a mix of water and sand"
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You do one of the following:",
+            "Create Water: You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.",
+            "Destroy Water: You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024]",
+          "class_name": "Cleric"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "258"
+        },
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1."
+          }
+        }
+      },
+      {
+        "name": "Darkvision [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a dried carrot"
+        },
+        "duration": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "For the duration, a willing creature you touch has Darkvision with a range of 150 feet."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "260"
+        }
+      },
+      {
+        "name": "Disintegrate [2024]",
+        "level": "6",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a lodestone and dust"
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You launch a green ray at a target you can see within range. The target can be a creature, a nonmagical object, or a creation of magical force, such as the wall created by Wall of Force.",
+            "A creature targeted by this spell makes a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 Force damage. If this damage reduces it to 0 Hit Points, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a True Resurrection or a Wish spell.",
+            "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If such a target is Huge or larger, this spell disintegrates a 10-foot-Cube portion of it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "263"
+        },
+        "roll": [
+          {
+            "@description": "Force Damage",
+            "@type": "damage",
+            "dice": "10d6+40",
+            "damage_type": "Force"
+          },
+          {
+            "@description": "Force Damage",
+            "@type": "damage",
+            "dice": "13d6+40",
+            "damage_type": "Force"
+          },
+          {
+            "@description": "Force Damage",
+            "@type": "damage",
+            "dice": "16d6+40",
+            "damage_type": "Force"
+          },
+          {
+            "@description": "Force Damage",
+            "@type": "damage",
+            "dice": "19d6+40",
+            "damage_type": "Force"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "6",
+            "effect": {
+              "@description": "The damage increases by 3d6",
+              "roll_increase": {
+                "@increase_dice": "3d6"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Divine Favor [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Paladin [2024]",
+          "class_name": "Paladin"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "265"
+        },
+        "roll": {
+          "@description": "Radiant Damage",
+          "@type": "damage",
+          "dice": "1d4",
+          "damage_type": "Radiant"
+        }
+      },
+      {
+        "name": "Divine Smite [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action, Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+          "value": "1",
+          "unit": "bonus_action",
+          "condition": {
+            "text": "you take immediately after hitting a target with a Melee weapon or an Unarmed Strike"
+          }
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Paladin [2024]",
+          "class_name": "Paladin"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "265"
+        },
+        "roll": [
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "2d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "3d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "4d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "5d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "6d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "7d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "8d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "9d8",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "10d8",
+            "damage_type": "Radiant"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "1",
+            "effect": {
+              "@description": "The damage increases by 1d8",
+              "roll_increase": {
+                "@increase_dice": "1d8"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Dragon's Breath [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a hot pepper"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024], Sorcerer [2024] (Draconic)",
+          "class_name": [
+            "Sorcerer",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Sorcerer",
+            "@name": "Draconic"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "266"
+        },
+        "roll": [
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "3d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "4d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "5d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "6d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "7d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "8d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "9d6"
+          },
+          {
+            "@description": "Draconic Damage",
+            "@type": "damage",
+            "dice": "10d6"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "The damage increases by 1d6",
+              "roll_increase": {
+                "@increase_dice": "1d6"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Druidcraft [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "Whispering to the spirits of nature, you create one of the following effects within range.",
+            "Weather Sensor: You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
+            "Bloom: You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
+            "Sensory Effect: You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube.",
+            "Fire Play: You light or snuff out a candle, a torch, or a campfire."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024]",
+          "class_name": "Druid"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "266"
+        }
+      },
+      {
+        "name": "Earthquake [2024]",
+        "level": "8",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "500 feet",
+          "value": "500",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a fractured rock"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point. The ground there is Difficult Terrain.",
+            "When you cast this spell and at the end of each of your turns for the duration, each creature on the ground in the area makes a Dexterity saving throw. On a failed save, a creature has the Prone condition, and its Concentration is broken.",
+            "You can also cause the effects below.",
+            "Fissures: A total of 1d6 fissures open in the spell's area at the end of the turn you cast it. You choose the fissures' locations, which can't be under structures. Each fissure is 1d10 x 10 feet deep and 10 feet wide, and it extends from one edge of the spell's area to another edge. A creature in the same space as a fissure must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.",
+            "Structures: The tremor deals 50 Bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the end of each of your turns until the spell ends. If a structure drops to 0 Hit Points, it collapses.",
+            "A creature within a distance from a collapsing structure equal to half the structure's height makes a Dexterity saving throw. On a failed save, the creature takes 12d6 Bludgeoning damage, has the Prone condition, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. On a successful save, the creature takes half as much damage only."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Sorcerer [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "267"
+        },
+        "roll": [
+          {
+            "@description": "Fissures",
+            "@type": "damage",
+            "dice": "1d6"
+          },
+          {
+            "@description": "Feet",
+            "@type": "damage",
+            "dice": "1d10x10"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "12d6",
+            "damage_type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Elemental Weapon [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024], Paladin [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "268"
+        },
+        "roll": [
+          {
+            "@description": "Elemental Damage",
+            "@type": "damage",
+            "dice": "1d4",
+            "damage_type": "Elemental (Choose)"
+          },
+          {
+            "@description": "Elemental Damage",
+            "@type": "damage",
+            "dice": "2d4",
+            "damage_type": "Elemental (Choose)"
+          },
+          {
+            "@description": "Elemental Damage",
+            "@type": "damage",
+            "dice": "3d4",
+            "damage_type": "Elemental (Choose)"
+          }
+        ],
+        "at_higher_levels": {
+          "specific_slot": [
+            {
+              "@level": "5-6",
+              "effect": {
+                "@description": "the bonus to attack rolls increases to +2, and the extra damage increases to 2d4"
+              }
+            },
+            {
+              "@level": "7",
+              "effect": {
+                "@description": "the bonus increases to +3, and the extra damage increases to 3d4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Elementalism [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You exert control over the elements, creating one of the following effects within range.",
+            "Beckon Air: You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.",
+            "Beckon Earth: You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.",
+            "Beckon Fire: You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.",
+            "Beckon Water: You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.",
+            "Sculpt Element: You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "267"
+        }
+      },
+      {
+        "name": "Enhance Ability [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "fur or a feather"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You touch a creature and choose Strength, Dexterity, Intelligence, Wisdom, or Charisma. For the duration, the target has Advantage on ability checks using the chosen ability."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Cleric [2024], Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024], Paladin [2024] (Glory)",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard",
+            "Paladin"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Paladin",
+            "@name": "Glory"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "268"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          },
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "You can choose a different ability for each target."
+          }
+        }
+      },
+      {
+        "name": "Enlarge/Reduce [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a pinch of powdered iron"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "For the duration, the spell enlarges or reduces a creature or an object you can see within range (see the chosen effect below). A targeted object must be neither worn nor carried. If the target is an unwilling creature, it can make a Constitution saving throw. On a successful save, the spell has no effect.",
+            "Everything that a targeted creature is wearing and carrying changes size with it. Any item it drops returns to normal size at once. A thrown weapon or piece of ammunition returns to normal size immediately after it hits or misses a target.",
+            "Enlarge: The target's size increases by one category—from Medium to Large, for example. The target also has Advantage on Strength checks and Strength saving throws. The target's attacks with its enlarged weapons or Unarmed Strikes deal an extra 1d4 damage on a hit.",
+            "Reduce: The target's size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target's attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can't reduce the damage below 1)."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "268"
+        },
+        "roll": [
+          {
+            "@description": "Extra Damage",
+            "@type": "damage",
+            "dice": "1d4"
+          },
+          {
+            "@description": "Less Damage",
+            "@type": "damage",
+            "dice": "1d4"
+          }
+        ]
+      },
+      {
+        "name": "Expeditious Retreat [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "270"
+        }
+      },
+      {
+        "name": "Fabricate [2024]",
+        "level": "4",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, or clothes from flax or wool.",
+            "Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot Cube or eight connected 5-foot Cubes) given a sufficient quantity of material. If you're working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a 5-foot Cube). The quality of any fabricated objects is based on the quality of the raw materials.",
+            "Creatures and magic items can't be created by this spell. You also can't use it to create items that require a high degree of skill—such as weapons and armor—unless you have proficiency with the type of Artisan's Tools used to craft such objects."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Wizard [2024]",
+          "class_name": "Wizard"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "271"
+        }
+      },
+      {
+        "name": "Feather Fall [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "1 reaction, which you take when you or a creature you can see within 60 feet of you falls",
+          "value": "1",
+          "unit": "reaction",
+          "condition": {
+            "text": "you take when you or a creature you can see within 60 feet of you falls"
+          }
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "material": "a small feather or piece of down"
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "271"
+        }
+      },
+      {
+        "name": "Flesh to Stone [2024]",
+        "level": "6",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a cockatrice feather"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You attempt to turn one creature that you can see within range into stone. The target makes a Constitution saving throw. On a failed save, it has the Restrained condition for the duration. On a successful save, its Speed is 0 until the start of your next turn. Constructs automatically succeed on the save.",
+            "A Restrained target makes another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and has the Petrified condition for the duration. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
+            "If you maintain your Concentration on this spell for the entire possible duration, the target is Petrified until the condition is ended by Greater Restoration or similar magic."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "275"
+        }
+      },
+      {
+        "name": "Fly [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a feather"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You touch a willing creature. For the duration, the target gains a Fly Speed of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Warlock [2024], Wizard [2024], Sorcerer [2024] (Draconic)",
+          "class_name": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Sorcerer",
+            "@name": "Draconic"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "276"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "3",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Gaseous Form [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a bit of gauze"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "A willing creature you touch shape-shifts, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends on the target if it drops to 0 Hit Points or if it takes a Magic action to end the spell on itself.",
+            "While in this form, the target's only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the Prone condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.",
+            "The target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. Finally, the target can't attack or cast spells."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "277"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "3",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Glibness [2024]",
+        "level": "8",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Warlock [2024]",
+          "class_name": [
+            "Bard",
+            "Warlock"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "279"
+        }
+      },
+      {
+        "name": "Haste [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a shaving of licorice root"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose a willing creature that you can see within range. Until the spell ends, the target's Speed is doubled, it gains a +2 bonus to Armor Class, it has Advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.",
+            "When the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024], Paladin [2024] (Glory), Paladin [2024] (Vengeance)",
+          "class_name": [
+            "Sorcerer",
+            "Wizard",
+            "Paladin"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Paladin",
+              "@name": "Glory"
+            },
+            {
+              "@for_class": "Paladin",
+              "@name": "Vengeance"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "284"
+        }
+      },
+      {
+        "name": "Heat Metal [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a piece of iron and a flame"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose a manufactured metal object, such as a metal weapon or a suit of Heavy or Medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 Fire damage when you cast the spell. Until the spell ends, you can take a Bonus Action on each of your later turns to deal this damage again if the object is within range.",
+            "If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has Disadvantage on attack rolls and ability checks until the start of your next turn."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024]",
+          "class_name": [
+            "Bard",
+            "Druid"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "284"
+        },
+        "roll": [
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "2d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "3d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "4d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "5d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "6d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "7d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "8d8",
+            "damage_type": "Fire"
+          },
+          {
+            "@description": "Fire Damage",
+            "@type": "damage",
+            "dice": "9d8",
+            "damage_type": "Fire"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "The damage increases by 1d8",
+              "roll_increase": {
+                "@increase_dice": "1d8"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Jump [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a grasshopper's hind leg"
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "290"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "1",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Knock [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access.",
+            "A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
+            "If the target is held shut by Arcane Lock, that spell is suppressed for 10 minutes, during which time the target can be opened and closed.",
+            "When you cast the spell, a loud knock, audible up to 300 feet away, emanates from the target."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "290"
+        }
+      },
+      {
+        "name": "Levitate [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a metal spring"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "One creature or loose object of your choice that you can see within range rises vertically up to 20 feet and remains suspended there for the duration. The spell can levitate an object that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.",
+            "The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can take a Magic action to move the target, which must remain within the spell's range.",
+            "When the spell ends, the target floats gently to the ground if it is still aloft."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "291"
+        }
+      },
+      {
+        "name": "Lightning Arrow [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action, which you take immediately after hitting or missing a target with a ranged attack using a weapon",
+          "value": "1",
+          "unit": "bonus_action",
+          "condition": {
+            "text": "you take immediately after hitting or missing a target with a ranged attack using a weapon"
+          }
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "As your attack hits or misses the target, the weapon or ammunition you're using transforms into a lightning bolt. Instead of taking any damage or other effects from the attack, the target takes 4d8 Lightning damage on a hit or half as much damage on a miss. Each creature within 10 feet of the target then makes a Dexterity saving throw, taking 2d8 Lightning damage on a failed save or half as much damage on a successful one.",
+            "The weapon or ammunition then returns to its normal form."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Ranger [2024]",
+          "class_name": "Ranger"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "292"
+        },
+        "roll": [
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "4d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "5d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "6d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "7d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "8d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "9d8",
+            "damage_type": "Lightning"
+          },
+          {
+            "@description": "Lightning Damage",
+            "@type": "damage",
+            "dice": "10d8",
+            "damage_type": "Lightning"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "3",
+            "effect": {
+              "@description": "The damage for both effects of the spell increases by 1d8",
+              "roll_increase": {
+                "@increase_dice": "1d8"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Longstrider [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a pinch of dirt"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "You touch a creature. The target's Speed increases by 10 feet until the spell ends."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Ranger [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Ranger",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "293"
+        },
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "1",
+            "effect": {
+              "@description": "You can target one additional creature",
+              "additional_targets": {
+                "@count": "1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Magic Weapon [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Ranger [2024], Sorcerer [2024], Wizard [2024], Paladin [2024], Cleric [2024] (War), Paladin [2024] (Glory)",
+          "class_name": [
+            "Ranger",
+            "Sorcerer",
+            "Wizard",
+            "Paladin",
+            "Cleric"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Cleric",
+              "@name": "War"
+            },
+            {
+              "@for_class": "Paladin",
+              "@name": "Glory"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "295"
+        },
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "The bonus increases to +2 with a level 3-5 spell slot. The bonus increases to +3 with a level 6+ spell slot."
+          }
+        }
+      },
+      {
+        "name": "Meld Into Stone [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You step into a stone object or surface large enough to fully contain your body, merging yourself and your equipment with the stone for the duration. You must touch the stone to do so. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.",
+            "While merged with the stone, you can't see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with Disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use 5 feet of movement to leave the stone where you entered it, which ends the spell. You otherwise can't move.",
+            "Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 Force damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 Force damage to you. If expelled, you move into an unoccupied space closest to where you first entered and have the Prone condition."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "296"
+        },
+        "roll": {
+          "@description": "Force Damage",
+          "@type": "damage",
+          "dice": "6d6",
+          "damage_type": "Force"
+        }
+      },
+      {
+        "name": "Mending [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "two lodestones"
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.",
+            "This spell can physically repair a magic item, but it can't restore magic to such an object."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Cleric [2024], Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "297"
+        }
+      },
+      {
+        "name": "Message [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "somatic": null,
+          "material": "a copper wire"
+        },
+        "duration": {
+          "@description": "1 round",
+          "value": "1",
+          "unit": "round"
+        },
+        "description": {
+          "p": [
+            "You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.",
+            "You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal, or wood; or a thin sheet of lead blocks the spell."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "298"
+        }
+      },
+      {
+        "name": "Move Earth [2024]",
+        "level": "6",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a miniature shovel"
+        },
+        "duration": {
+          "@description": "Concentration, up to 2 hour",
+          "value": "2",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square's elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. Because the terrain's transformation occurs slowly, creatures in the area can't usually be trapped or injured by the ground's movement.",
+            "At the end of every 10 minutes you spend Concentration on the spell, you can choose a new area of terrain to affect within range.",
+            "This spell can't manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse.",
+            "Similarly, this spell doesn't directly affect plant growth. The moved earth carries any plants along with it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "302"
+        }
+      },
+      {
+        "name": "Passwall [2024]",
+        "level": "5",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a pinch of sesame seeds"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "A passage appears at a point that you can see on a wooden, plaster, or stone surface (such as a wall, ceiling, or floor) within range and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it.",
+            "When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Wizard [2024]",
+          "class_name": "Wizard"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "303"
+        }
+      },
+      {
+        "name": "Plant Growth [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "150 feet",
+          "value": "150",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below.",
+            "Overgrowth: Choose a point within range. All normal plants in a 100-foot-radius Sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected.",
+            "Enrichment: All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Ranger [2024], Paladin [2024] (Ancient), Warlock [2024] (Archfey)",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Ranger",
+            "Paladin",
+            "Warlock"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Paladin",
+              "@name": "Ancient"
+            },
+            {
+              "@for_class": "Warlock",
+              "@name": "Archfey"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "305"
+        }
+      },
+      {
+        "name": "Polymorph [2024]",
+        "level": "4",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a caterpillar cocoon"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You attempt to transform a creature that you can see within range into a Beast. The target must succeed on a Wisdom saving throw or shape-shift into Beast form for the duration. That form can be any Beast you choose that has a Challenge Rating equal to or less than the target's (or the target's level if it doesn't have a Challenge Rating). The target's game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, Hit Points, and Hit Point Dice.",
+            "The target gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. The spell ends early on the target if it has no Temporary Hit Points left. These Temporary Hit Points vanish if any remain when the spell ends.",
+            "The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+            "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Tropical Land)",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Druid",
+            "@name": "Tropical Land"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "306"
+        }
+      },
+      {
+        "name": "Prestidigitation [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "10 feet",
+          "value": "10",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.",
+            "Sensory Effect: You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
+            "Fire Play: You instantaneously light or snuff out a candle, a torch, or a small campfire.",
+            "Clean or Soil: You instantaneously clean or soil an object no larger than 1 cubic foot.",
+            "Minor Sensation: You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
+            "Magic Mark: You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
+            "Minor Creation: You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "307"
+        }
+      },
+      {
+        "name": "Purify Food and Drink [2024]",
+        "level": "1",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "10 feet",
+          "value": "10",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Paladin [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "310"
+        }
+      },
+      {
+        "name": "Regenerate [2024]",
+        "level": "7",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a prayer wheel"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "A creature you touch regains 4d8 + 15 Hit Points. For the duration, the target regains 1 Hit Point at the start of each of its turns, and any severed body parts regrow after 2 minutes."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Cleric [2024], Druid [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "311"
+        },
+        "roll": {
+          "@description": "Heal",
+          "@type": "healing",
+          "dice": "4d8+15"
+        }
+      },
+      {
+        "name": "Reverse Gravity [2024]",
+        "level": "7",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "100 feet",
+          "value": "100",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a lodestone and iron filings"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "This spell reverses gravity in a 50-foot-radius, 100-foot high Cylinder centered on a point within range. All creatures and objects in that area that aren't anchored to the ground fall upward and reach the top of the Cylinder. A creature can make a Dexterity saving throw to grab a fixed object it can reach, thus avoiding the fall upward.",
+            "If a ceiling or an anchored object is encountered in this upward fall, creatures and objects strike it just as they would during a downward fall. If an affected creature or object reaches the Cylinder's top without striking anything, it hovers there for the duration. When the spell ends, affected objects and creatures fall downward."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "312"
+        }
+      },
+      {
+        "name": "Rope Trick [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a segment of rope"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope's upper end, an Invisible 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.",
+            "The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can't pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Wizard [2024], Ranger [2024] (Gloomstalker)",
+          "class_name": [
+            "Wizard",
+            "Ranger"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Ranger",
+            "@name": "Gloomstalker"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "312"
+        }
+      },
+      {
+        "name": "Sequester [2024]",
+        "level": "7",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "true",
+            "@cost_gp": "5000",
+            "@cost_text": "worth 5,000+ GP",
+            "#text": "gem dust"
+          }
+        },
+        "duration": {
+          "@description": "",
+          "value": "special"
+        },
+        "description": {
+          "p": [
+            "With a touch, you magically sequester an object or a willing creature. For the duration, the target has the Invisible condition and can't be targeted by Divination spells, detected by magic, or viewed remotely with magic.",
+            "If the target is a creature, it enters a state of suspended animation; it has the Unconscious condition, doesn't age, and doesn't need food, water, or air.",
+            "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include \"after 1,000 years\" or \"when the tarrasque awakens.\" This spell also ends if the target takes any damage.",
+            "Invisible:",
+            "• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
+            "• Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Wizard [2024]",
+          "class_name": "Wizard"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "315"
+        }
+      },
+      {
+        "name": "Shapechange [2024]",
+        "level": "9",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@cost_gp": "1500",
+            "@cost_text": "worth 1,500+ GP",
+            "#text": "a jade circlet"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You shape-shift into another creature for the duration or until you take a Magic action to shape-shift into a different eligible form. The new form must be of a creature that has a Challenge Rating no higher than your level or Challenge Rating. You must have seen the sort of creature before, and it can't be a Construct or an Undead.",
+            "When you cast the spell, you gain a number of Temporary Hit Points equal to the Hit Points of the first form into which you shape-shift. These Temporary Hit Points vanish if any remain when the spell ends.",
+            "Your game statistics are replaced by the stat block of the chosen form, but you retain your creature type; alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit Points; Hit Point Dice; proficiencies; and ability to communicate. If you have the Spellcasting feature, you retain it too.",
+            "Upon shape-shifting, you determine whether your equipment drops to the ground or changes in size and shape to fit the new form while you're in it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Wizard [2024]",
+          "class_name": [
+            "Druid",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "315"
+        }
+      },
+      {
+        "name": "Shillelagh [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "mistletoe"
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).",
+            "The spell ends early if you cast it again or if you let go of the weapon."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024]",
+          "class_name": "Druid"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "316"
+        },
+        "roll": [
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d8",
+            "damage_type": "Bludgeoning"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d10",
+            "damage_type": "Bludgeoning"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "1d12",
+            "damage_type": "Bludgeoning"
+          },
+          {
+            "@description": "Bludgeoning Damage",
+            "@type": "damage",
+            "dice": "2d6",
+            "damage_type": "Bludgeoning"
+          }
+        ],
+        "at_higher_levels": {
+          "scaling": [
+            {
+              "@level": "5",
+              "effect": {
+                "@description": "d10"
+              }
+            },
+            {
+              "@level": "11",
+              "effect": {
+                "@description": "d12"
+              }
+            },
+            {
+              "@level": "17",
+              "effect": {
+                "@description": "2d6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shining Smite [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+          "value": "1",
+          "unit": "bonus_action",
+          "condition": {
+            "text": "you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike"
+          }
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Paladin [2024]",
+          "class_name": "Paladin"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "316"
+        },
+        "roll": [
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "2d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "3d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "4d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "5d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "6d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "7d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "8d6",
+            "damage_type": "Radiant"
+          },
+          {
+            "@description": "Radiant Damage",
+            "@type": "damage",
+            "dice": "9d6",
+            "damage_type": "Radiant"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "The damage increases by 1d6",
+              "roll_increase": {
+                "@increase_dice": "1d6"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Slow [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a drop of molasses"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You alter time around up to six creatures of your choice in a 40-foot Cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.",
+            "An affected target's Speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a 25 chance the spell fails as a result of the target making the spell's gestures too slowly.",
+            "An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "318"
+        }
+      },
+      {
+        "name": "Speak with Plants [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "You imbue plants in an immobile 30-foot Emanation with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.",
+            "You can also turn Difficult Terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into Difficult Terrain that lasts for the duration.",
+            "The spell doesn't enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you.",
+            "If a Plant creature is in the area, you can communicate with it as if you shared a common language."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "318"
+        }
+      },
+      {
+        "name": "Spider Climb [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a drop of bitumen and a spider"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and along ceilings, while leaving its hands free. The target also gains a Climb Speed equal to its Speed."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "318"
+        },
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "You can target one additional creature for each spell slot level about 2."
+          }
+        }
+      },
+      {
+        "name": "Spike Growth [2024]",
+        "level": "2",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "150 feet",
+          "value": "150",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "seven thorns"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "The ground in a 20-foot-radius Sphere centered on a point within range sprouts hard spikes and thorns. The area becomes Difficult Terrain for the duration. When a creature moves into or within the area, it takes 2d4 Piercing damage for every 5 feet it travels.",
+            "The transformation of the ground is camouflaged to look natural. Any creature that can't see the area when the spell is cast must take a Search action and succeed on a Wisdom (Perception or Survival) check against your spell save DC to recognize the terrain as hazardous before entering it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "318"
+        },
+        "roll": {
+          "@description": "Piercing Damage",
+          "@type": "damage",
+          "dice": "2d4",
+          "damage_type": "Piercing"
+        }
+      },
+      {
+        "name": "Stone Shape [2024]",
+        "level": "4",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "soft clay"
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape you like. For example, you could shape a large rock into a weapon, statue, or coffer, or you could make a small passage through a wall that is 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Wizard [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "320"
+        }
+      },
+      {
+        "name": "Stoneskin [2024]",
+        "level": "4",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "true",
+            "@cost_gp": "100",
+            "@cost_text": "worth 100+ GP",
+            "#text": "diamond dust"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024], Paladin [2024] (Ancient)",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard",
+            "Paladin"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Paladin",
+            "@name": "Ancient"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "320"
+        }
+      },
+      {
+        "name": "Swift Quiver [2024]",
+        "level": "5",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@cost_gp": "1",
+            "@cost_text": "worth 1+ GP",
+            "#text": "a Quiver"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "When you cast the spell and as a Bonus Action until it ends, you can make two attacks with a weapon that fires Arrows or Bolts, such as a Longbow or a Light Crossbow. The spell magically creates the ammunition needed for each attack. Each Arrow or Bolt created by the spell deals damage like a nonmagical piece of ammunition of its kind and disintegrates immediately after it hits or misses."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Ranger [2024]",
+          "class_name": "Ranger"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "329"
+        }
+      },
+      {
+        "name": "Telekinesis [2024]",
+        "level": "5",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "60 feet",
+          "value": "60",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell and as a Magic action on your later turns before the spell ends, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+            "Creature: You can try to move a Huge or smaller creature. The target must succeed on a Strength saving throw, or you move it up to 30 feet in any direction within the spell's range. Until the end of your next turn, the creature has the Restrained condition, and if you lift it into the air, it is suspended there. It falls at the end of your next turn unless you use this option on it again and it fails the save.",
+            "Object: You can try to move a Huge or smaller object. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction within the spell's range.",
+            "If the object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or you pull the object away and move it up to 30 feet in any direction within the spell's range.",
+            "You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024], Sorcerer [2024] (Aberrant), Warlock [2024] (Great Old One)",
+          "class_name": [
+            "Sorcerer",
+            "Wizard",
+            "Warlock"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Sorcerer",
+              "@name": "Aberrant"
+            },
+            {
+              "@for_class": "Warlock",
+              "@name": "Great Old One"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "331"
+        }
+      },
+      {
+        "name": "Thaumaturgy [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.",
+            "Altered Eyes: You alter the appearance of your eyes for 1 minute.",
+            "Booming Voice: Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma (Intimidation) checks.",
+            "Fire Play: You cause flames to flicker, brighten, dim, or change color for 1 minute.",
+            "Invisible Hand: You instantaneously cause an unlocked door or window to fly open or slam shut.",
+            "Phantom Sound: You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+            "Tremors: You cause harmless tremors in the ground for 1 minute."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024]",
+          "class_name": "Cleric"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "333"
+        }
+      },
+      {
+        "name": "Thorn Whip [2024]",
+        "level": "0",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "the stem of a plant with thorns"
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "You create a vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Piercing damage, and if it is Large or smaller, you can pull it up to 10 feet closer to you."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024]",
+          "class_name": "Druid"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "333"
+        },
+        "roll": [
+          {
+            "@description": "Piercing Damage",
+            "@type": "damage",
+            "dice": "1d6",
+            "damage_type": "Piercing"
+          },
+          {
+            "@description": "Piercing Damage",
+            "@type": "damage",
+            "dice": "2d6",
+            "damage_type": "Piercing"
+          },
+          {
+            "@description": "Piercing Damage",
+            "@type": "damage",
+            "dice": "3d6",
+            "damage_type": "Piercing"
+          },
+          {
+            "@description": "Piercing Damage",
+            "@type": "damage",
+            "dice": "4d6",
+            "damage_type": "Piercing"
+          }
+        ],
+        "at_higher_levels": {
+          "scaling": [
+            {
+              "@level": "5",
+              "effect": {
+                "@description": "2d6"
+              }
+            },
+            {
+              "@level": "11",
+              "effect": {
+                "@description": "3d6"
+              }
+            },
+            {
+              "@level": "17",
+              "effect": {
+                "@description": "4d6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Time Stop [2024]",
+        "level": "9",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.",
+            "This spell ends if one of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Sorcerer [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "334"
+        },
+        "roll": {
+          "@description": "Turns",
+          "@type": "damage",
+          "dice": "1d4+1"
+        }
+      },
+      {
+        "name": "True Polymorph [2024]",
+        "level": "9",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a drop of mercury, a dollop of gum arabic, and a wisp of smoke"
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Choose one creature or nonmagical object that you can see within range. The creature shape-shifts into a different creature or a nonmagical object, or the object shape-shifts into a creature (the object must be neither worn nor carried). The transformation lasts for the duration or until the target dies or is destroyed, but if you maintain Concentration on this spell for the full duration, the spell lasts until dispelled.",
+            "An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn't affected by this spell.",
+            "Creature into Creature: If you turn a creature into another kind of creature, the new form can be any kind you choose that has a Challenge Rating equal to or less than the target's Challenge Rating or level. The target's game statistics are replaced by the stat block of the new form, but it retains its Hit Points, Hit Point Dice, alignment, and personality.",
+            "The target gains a number of Temporary Hit Points equal to the Hit Points of the new form. These Temporary Hit Points vanish if any remain when the spell ends.",
+            "The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+            "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment.",
+            "Object into Creature: You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature has a Challenge Rating of 9 or lower. The creature is Friendly to you and your allies. In combat, it takes its turns immediately after yours, and it obeys your commands.",
+            "If the spell lasts more than an hour, you no longer control the creature. It might remain Friendly to you, depending on how you have treated it.",
+            "Creature into Object: If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form after the spell ends and it returns to normal."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Bard [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "335"
+        }
+      },
+      {
+        "name": "Water Breathing [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a short reed"
+        },
+        "duration": {
+          "@description": "24 hour",
+          "value": "24",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration."
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024], Ranger [2024], Sorcerer [2024], Wizard [2024], Druid [2024] (Sea)",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Druid",
+            "@name": "Sea"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "340"
+        }
+      },
+      {
+        "name": "Water Walk [2024]",
+        "level": "3",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a piece of cork"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "This spell grants the ability to move across any liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures of your choice within range gain this ability for the duration.",
+            "An affected target must take a Bonus Action to pass from the liquid's surface into the liquid itself and vice versa, but if the target falls into the liquid, the target passes through the surface into the liquid below."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Cleric [2024], Druid [2024], Ranger [2024], Sorcerer [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Sorcerer"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "340"
+        }
+      },
+      {
+        "name": "Wind Walk [2024]",
+        "level": "6",
+        "school": {
+          "@code": "T",
+          "#text": "Transmutation"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a candle"
+        },
+        "duration": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You and up to ten willing creatures of your choice within range assume gaseous forms for the duration, appearing as wisps of cloud. While in this cloud form, a target has a Fly Speed of 300 feet and can hover; it has Immunity to the Prone condition; and it has Resistance to Bludgeoning, Piercing, and Slashing damage. The only actions a target can take in this form are the Dash action or a Magic action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the Stunned condition. Until the spell ends, the target can revert to cloud form, which also requires a Magic action followed by a 1-minute transformation.",
+            "If a target is in cloud form and flying when the effect ends, the target descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, it falls the remaining distance."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Transmutation, Druid [2024]",
+          "class_name": "Druid"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "341"
+        }
+      }
+    ]
+  }
+}

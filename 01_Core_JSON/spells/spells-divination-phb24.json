@@ -1,0 +1,1846 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "spell": [
+      {
+        "name": "Arcane Eye [2024]",
+        "level": "4",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a bit of bat fur"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet.",
+            "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Wizard [2024], Cleric [2024] (Light), Sorcerer [2024] (Draconic)",
+          "class_name": [
+            "Wizard",
+            "Cleric",
+            "Sorcerer"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Cleric",
+              "@name": "Light"
+            },
+            {
+              "@for_class": "Sorcerer",
+              "@name": "Draconic"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "242"
+        }
+      },
+      {
+        "name": "Augury [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_gp": "25",
+            "@cost_text": "worth at least 25 GP",
+            "#text": "specially marked sticks, bones, cards, or other divinatory tokens"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You receive an omen from an otherworldly entity about the results of a course of action that you plan to take within the next 30 minutes. The DM chooses the omen from the Omens table.",
+            "Omens:\nOmen | For Results That Will Be...\nWeal | Good\nWoe | Bad\nWeal and woe | Good and bad\nIndifference | Neither good nor bad"
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Druid [2024], Wizard [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "244"
+        }
+      },
+      {
+        "name": "Beast Sense [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You touch a willing Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "245"
+        }
+      },
+      {
+        "name": "Clairvoyance [2024]",
+        "level": "3",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "1 Miles",
+          "value": "1",
+          "unit": "mile"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_gp": "100",
+            "@cost_text": "worth at least 100 GP (focus)",
+            "#text": "a jeweled horn for hearing or a glass eye for seeing"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You create an Invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The intangible, invulnerable sensor remains in place for the duration.",
+            "When you cast the spell, choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As a Bonus Action, you can switch between seeing and hearing.",
+            "A creature that sees the sensor (such as a creature benefiting from See Invisibility or Truesight) sees a luminous orb about the size of your fist."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Sorcerer [2024], Wizard [2024], Warlock [2024] (Great Old One)",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Wizard",
+            "Warlock"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Warlock",
+            "@name": "Great Old One"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "250"
+        }
+      },
+      {
+        "name": "Commune [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "incense"
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "You contact a deity or a divine proxy and ask up to three questions that can be answered with yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.",
+            "Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.",
+            "If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 chance for each casting after the first that you get no answer."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Paladin [2024] (Devotion), Paladin [2024] (Ancient)",
+          "class_name": [
+            "Cleric",
+            "Paladin"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Paladin",
+              "@name": "Devotion"
+            },
+            {
+              "@for_class": "Paladin",
+              "@name": "Ancient"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "252"
+        }
+      },
+      {
+        "name": "Commune with Nature [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements.",
+            "Choose three of the following facts; you learn those facts as they pertain to the spell's area:",
+            "• Locations of settlements",
+            "• Locations of portals to other planes of existence",
+            "• Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead",
+            "• The most prevalent kind of plant, mineral, or Beast (you choose which to learn)",
+            "• Locations of bodies of water",
+            "For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Druid [2024], Ranger [2024], Paladin [2024] (Ancient)",
+          "class_name": [
+            "Druid",
+            "Ranger",
+            "Paladin"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Paladin",
+            "@name": "Ancient"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "252"
+        }
+      },
+      {
+        "name": "Comprehend Languages [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a pinch of soot and salt"
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "252"
+        }
+      },
+      {
+        "name": "Contact Other Plane [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "You mentally contact a demigod, the spirit of a long-dead sage, or some other knowledgeable entity from another plane. Contacting this otherworldly intelligence can break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer.",
+            "On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A Greater Restoration spell cast on you ends this effect."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "255"
+        },
+        "roll": {
+          "@description": "Psychic Damage",
+          "@type": "damage",
+          "dice": "6d6",
+          "damage_type": "Psychic"
+        }
+      },
+      {
+        "name": "Detect Evil and Good [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "For the duration, you sense the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the Hallow spell is active there and, if so, where.",
+            "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Paladin [2024]",
+          "class_name": [
+            "Cleric",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "261"
+        }
+      },
+      {
+        "name": "Detect Magic [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's the Player's Handbook 2024.",
+            "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Druid [2024], Ranger [2024], Sorcerer [2024], Warlock [2024], Wizard [2024], Paladin [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Warlock",
+            "Wizard",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "262"
+        }
+      },
+      {
+        "name": "Detect Poison and Disease [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a yew leaf"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You sense the kind of poison, creature, or contagion in each case.",
+            "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Druid [2024], Ranger [2024], Paladin [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "262"
+        }
+      },
+      {
+        "name": "Detect Thoughts [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_text": "1 Copper Piece",
+            "#text": "a copper piece"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You activate one of the effects below. Until the spell ends, you can activate either effect as a Magic action on your later turns.",
+            "Sense Thoughts: You sense the presence of thoughts within 30 feet of yourself that belong to creatures that know languages or are telepathic. You don't read the thoughts, but you know that a thinking creature is present.",
+            "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
+            "Read Thoughts: Target one creature you can see within 30 feet of yourself or one creature within 30 feet of yourself that you detected with the Sense Thoughts option. You learn what is most on the target's mind right now. If the target doesn't know any languages and isn't telepathic, you learn nothing.",
+            "As a Magic action on your next turn, you can try to probe deeper into the target's mind. If you probe deeper, the target makes a Wisdom saving throw. On a failed save, you discern the target's reasoning, emotions, and something that looms large in its mind (such as a worry, love, or hate). On a successful save, the spell ends. Either way, the target knows that you are probing into its mind, and until you shift your attention away from the target's mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Sorcerer [2024], Wizard [2024], Sorcerer [2024] (Aberrant), Warlock [2024] (Great Old One)",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard",
+            "Warlock"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Sorcerer",
+              "@name": "Aberrant"
+            },
+            {
+              "@for_class": "Warlock",
+              "@name": "Great Old One"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "262"
+        }
+      },
+      {
+        "name": "Divination [2024]",
+        "level": "4",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "true",
+            "@cost_gp": "25",
+            "@cost_text": "worth 25+ GP",
+            "#text": "incense"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "This spell puts you in contact with a god or a god's servants. You ask one question about a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply, which might be a short phrase or cryptic rhyme. The spell doesn't account for circumstances that might change the answer, such as the casting of other spells.",
+            "If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 chance for each casting after the first that you get no answer."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Druid [2024], Wizard [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "264"
+        }
+      },
+      {
+        "name": "Find the Path [2024]",
+        "level": "6",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_gp": "100",
+            "@cost_text": "worth at least 100 GP",
+            "#text": "a set of divination tools (such as cards or runes)"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 day",
+          "value": "1",
+          "unit": "day",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You magically sense the most direct physical route to a location you name. You must be familiar with the location, and the spell fails if you name a destination on another plane of existence, a moving destination (such as a mobile fortress), or an unspecific destination (such as \"a green dragon's lair\").",
+            "For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you face a choice of paths along the way there, you know which path is the most direct."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Druid [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "273"
+        }
+      },
+      {
+        "name": "Find Traps [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You sense any trap within range that is within line of sight. A trap, for the purpose of this spell, includes any object or mechanism that was created to cause damage or other danger. Thus, the spell would sense the Alarm or Glyph of Warding spell or a mechanical pit trap, but it wouldn't reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+            "This spell reveals that a trap is present but not its location. You do learn the general nature of the danger posed by a trap you sense."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "273"
+        }
+      },
+      {
+        "name": "Foresight [2024]",
+        "level": "9",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a hummingbird feather"
+          }
+        },
+        "duration": {
+          "@description": "8 hour",
+          "value": "8",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target has Advantage on D20 Tests, and other creatures have Disadvantage on attack rolls against it. The spell ends early if you cast it again."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Druid [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "276"
+        }
+      },
+      {
+        "name": "Guidance [2024]",
+        "level": "0",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 minute",
+          "value": "1",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Cleric [2024], Druid [2024]",
+          "class_name": [
+            "Cleric",
+            "Druid"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "282"
+        },
+        "roll": {
+          "@description": "Add to Roll",
+          "@type": "effect",
+          "dice": "1d4"
+        }
+      },
+      {
+        "name": "Hunter's Mark [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Bonus Action",
+          "value": "1",
+          "unit": "bonus_action"
+        },
+        "range": {
+          "@description": "90 feet",
+          "value": "90",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any Wisdom (Perception or Survival) check you make to find it.",
+            "If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Ranger [2024], Paladin [2024] (Vengeance)",
+          "class_name": [
+            "Ranger",
+            "Paladin"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Paladin",
+            "@name": "Vengeance"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "287"
+        },
+        "roll": {
+          "@description": "Force Damage",
+          "@type": "damage",
+          "dice": "1d6",
+          "damage_type": "Force"
+        },
+        "at_higher_levels": {
+          "text_block": {
+            "@title": "General Higher Level Effects",
+            "#text": "Your Concentration can last longer with a spell slot of level 3-4 (up to 8 hours) or 5+ (up to 24 hours)."
+          }
+        }
+      },
+      {
+        "name": "Identify [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "1 minute",
+          "value": "1",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_gp": "100",
+            "@cost_text": "worth at least 100 GP (pearl)",
+            "#text": "a pearl and an owl feather"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.",
+            "If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "287"
+        }
+      },
+      {
+        "name": "Legend Lore [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": [
+            {
+              "@consumed": "true",
+              "@cost_gp": "250",
+              "@cost_text": "worth at least 250 GP",
+              "#text": "incense"
+            },
+            {
+              "@consumed": "false",
+              "@cost_gp": "200",
+              "@cost_text": "four strips, worth at least 50 GP each",
+              "#text": "four ivory strips"
+            }
+          ]
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "Name or describe a famous person, place, or object. The spell brings to your mind a brief summary of the significant lore about that famous thing, as described by the DM.",
+            "The lore might consist of important details, amusing revelations, or even secret lore that has never been widely known. The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry, as determined by the DM.",
+            "If the famous thing you chose isn't actually famous, you hear sad musical notes played on a trombone, and the spell fails."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Wizard [2024], Paladin [2024] (Glory), Sorcerer [2024] (Draconic)",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Wizard",
+            "Paladin",
+            "Sorcerer"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Paladin",
+              "@name": "Glory"
+            },
+            {
+              "@for_class": "Sorcerer",
+              "@name": "Draconic"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "290"
+        }
+      },
+      {
+        "name": "Locate Animals or Plants [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "fur from a bloodhound"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "Describe or name a specific kind of Beast, Plant creature, or nonmagical plant. You learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Druid [2024], Ranger [2024]",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Ranger"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "292"
+        }
+      },
+      {
+        "name": "Locate Creature [2024]",
+        "level": "4",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "fur from a bloodhound"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Describe or name a creature that is familiar to you. You sense the direction to the creature's location if that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
+            "The spell can locate a specific creature known to you or the nearest creature of a specific kind (such as a human or a unicorn) if you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as under the effects of a Flesh to Stone or Polymorph spell, this spell doesn't locate the creature.",
+            "This spell can't locate a creature if any thickness of lead blocks a direct path between you and the creature."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Druid [2024], Ranger [2024], Wizard [2024], Paladin [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Wizard",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "292"
+        }
+      },
+      {
+        "name": "Locate Object [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": "a forked twig"
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "Describe or name an object that is familiar to you. You sense the direction to the object's location if that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.",
+            "The spell can locate a specific object known to you if you have seen it up close—within 30 feet—at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.",
+            "This spell can't locate an object if any thickness of lead blocks a direct path between you and the object."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Druid [2024], Ranger [2024], Wizard [2024], Paladin [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Wizard",
+            "Paladin"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "293"
+        }
+      },
+      {
+        "name": "Mind Spike [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "120 feet",
+          "value": "120",
+          "unit": "feet"
+        },
+        "components": {
+          "somatic": null
+        },
+        "duration": {
+          "@description": "Concentration, up to 1 hour",
+          "value": "1",
+          "unit": "hour",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": "You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking 3d8 Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it has the Invisible condition, it gains no benefit from that condition against you."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "298"
+        },
+        "roll": [
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "3d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "4d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "5d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "6d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "7d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "8d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "9d8",
+            "damage_type": "Psychic"
+          },
+          {
+            "@description": "Psychic Damage",
+            "@type": "damage",
+            "dice": "10d8",
+            "damage_type": "Psychic"
+          }
+        ],
+        "at_higher_levels": {
+          "per_slot_above": {
+            "@base_level": "2",
+            "effect": {
+              "@description": "The damage increases by 1d8",
+              "roll_increase": {
+                "@increase_dice": "1d8"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Rary's Telepathic Bond [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "30 feet",
+          "value": "30",
+          "unit": "feet"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "two eggs"
+          }
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures that can't communicate in any languages aren't affected by this spell.",
+            "Until the spell ends, the targets can communicate telepathically through the bond whether or not they share a language. The communication is possible over any distance, though it can't extend to other planes of existence."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Wizard [2024], Sorcerer [2024] (Aberrant)",
+          "class_name": [
+            "Bard",
+            "Wizard",
+            "Sorcerer"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Sorcerer",
+            "@name": "Aberrant"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "311"
+        }
+      },
+      {
+        "name": "Scrying [2024]",
+        "level": "5",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_gp": "1000",
+            "@cost_text": "worth at least 1,000 GP (focus)",
+            "#text": "a crystal ball, mirror, or water-filled font"
+          }
+        },
+        "duration": {
+          "@description": "Concentration, up to 10 minute",
+          "value": "10",
+          "unit": "minute",
+          "concentration": {
+            "@available": "true",
+            "@up_to": "true"
+          }
+        },
+        "description": {
+          "p": [
+            "You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.",
+            "Your Knowledge of the Target Is... | Save Modifier\nSecondhand (heard of the target) | +5\nFirsthand (met the target) | +0\nExtensive (know the target well) | -5",
+            "You Have the Target's... | Save Modifier\nPicture or other likeness | -2\nGarment or other possession | -4\nBody part, lock of hair, or bit of nail | -10"
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Druid [2024], Warlock [2024], Wizard [2024], Cleric [2024] (Light), Paladin [2024] (Vengeance)",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Warlock",
+            "Wizard",
+            "Paladin"
+          ],
+          "subclass_restriction": [
+            {
+              "@for_class": "Cleric",
+              "@name": "Light"
+            },
+            {
+              "@for_class": "Paladin",
+              "@name": "Vengeance"
+            }
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "314"
+        }
+      },
+      {
+        "name": "See Invisibility [2024]",
+        "level": "2",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a pinch of talc"
+          }
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "For the duration, you see creatures and objects that have the Invisible condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Sorcerer [2024], Wizard [2024], Cleric [2024] (Light)",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Wizard",
+            "Cleric"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Cleric",
+            "@name": "Light"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "314"
+        }
+      },
+      {
+        "name": "Sending [2024]",
+        "level": "3",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Unlimited",
+          "value": "unlimited"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a copper wire"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": [
+            "You send a short message of 25 words or fewer to a creature you have met or a creature described to you by someone who has met it. The target hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables targets to understand the meaning of your message.",
+            "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 chance that the message doesn't arrive. You know if the delivery fails.",
+            "Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Wizard [2024], Sorcerer [2024] (Aberrant)",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Wizard",
+            "Sorcerer"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Sorcerer",
+            "@name": "Aberrant"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "314"
+        }
+      },
+      {
+        "name": "Speak with Animals [2024]",
+        "level": "1",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "ritual": {
+          "@available": "true"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null
+        },
+        "duration": {
+          "@description": "10 minute",
+          "value": "10",
+          "unit": "minute"
+        },
+        "description": {
+          "p": [
+            "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.",
+            "Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Druid [2024], Ranger [2024], Warlock [2024], Paladin [2024] (Ancient)",
+          "class_name": [
+            "Bard",
+            "Druid",
+            "Ranger",
+            "Warlock",
+            "Paladin"
+          ],
+          "subclass_restriction": {
+            "@for_class": "Paladin",
+            "@name": "Ancient"
+          }
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "318"
+        }
+      },
+      {
+        "name": "Telepathy [2024]",
+        "level": "8",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Unlimited",
+          "value": "unlimited"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a pair of linked silver rings"
+          }
+        },
+        "duration": {
+          "@description": "24 hour",
+          "value": "24",
+          "unit": "hour"
+        },
+        "description": {
+          "p": [
+            "You create a telepathic link between yourself and a willing creature with which you are familiar. The creature can be anywhere on the same plane of existence as you. The spell ends if you or the target are no longer on the same plane.",
+            "Until the spell ends, you and the target can instantly share words, images, sounds, and other sensory messages with each other through the link, and the target recognizes you as the creature it is communicating with. The spell enables a creature to understand the meaning of your words and any sensory messages you send to it."
+          ]
+        },
+        "classes": {
+          "@text_original": "School: Divination, Wizard [2024]",
+          "class_name": "Wizard"
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "331"
+        }
+      },
+      {
+        "name": "Tongues [2024]",
+        "level": "3",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "material": {
+            "@consumed": "false",
+            "#text": "a miniature ziggurat"
+          }
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "334"
+        }
+      },
+      {
+        "name": "True Seeing [2024]",
+        "level": "6",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Touch",
+          "value": "touch"
+        },
+        "components": {
+          "verbal": null,
+          "somatic": null,
+          "material": {
+            "@consumed": "true",
+            "@cost_gp": "25",
+            "@cost_text": "worth 25+ GP",
+            "#text": "mushroom powder"
+          }
+        },
+        "duration": {
+          "@description": "1 hour",
+          "value": "1",
+          "unit": "hour"
+        },
+        "description": {
+          "p": "For the duration, the willing creature you touch has Truesight with a range of 120 feet."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Cleric [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "336"
+        }
+      },
+      {
+        "name": "True Strike [2024]",
+        "level": "0",
+        "school": {
+          "@code": "D",
+          "#text": "Divination"
+        },
+        "casting_time": {
+          "@description": "Action",
+          "value": "1",
+          "unit": "action"
+        },
+        "range": {
+          "@description": "Self",
+          "value": "self"
+        },
+        "components": {
+          "somatic": null,
+          "material": {
+            "@consumed": "false",
+            "@cost_text": "worth at least 1 CP",
+            "#text": "a weapon with which you have proficiency"
+          }
+        },
+        "duration": {
+          "@description": "Instantaneous",
+          "value": "instantaneous"
+        },
+        "description": {
+          "p": "Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice)."
+        },
+        "classes": {
+          "@text_original": "School: Divination, Bard [2024], Sorcerer [2024], Warlock [2024], Wizard [2024]",
+          "class_name": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+          ]
+        },
+        "source": {
+          "@name": "Player's Handbook 2024",
+          "@page": "336"
+        },
+        "at_higher_levels": {
+          "scaling": [
+            {
+              "@level": "5",
+              "effect": {
+                "@description": "1d6"
+              }
+            },
+            {
+              "@level": "11",
+              "effect": {
+                "@description": "2d6"
+              }
+            },
+            {
+              "@level": "17",
+              "effect": {
+                "@description": "3d6"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source": {
+    "name": "Monster Manual (2024)",
+    "abbreviation": "MM24",
+    "url": "https://marketplace.dndbeyond.com/category/3711000?pid=D3711000&Digital%2FPhysical=Physical",
+    "author": "Jeremy Crawford, Mike Mearls",
+    "artist": "Kate Irwin, Emi Tanji",
+    "publisher": "Wizards of the Coast",
+    "website": "https://www.dndbeyond.com/",
+    "category": "Core Rulebooks [2024]",
+    "pubdate": "2025-02-18",
+    "description": "In this new and improved 2024 Monster Manual, meet a monstrous menagerie of creatures for fifth edition!\n\nEncounter iconic D&D favorites like dragons and mind flayers, confront a host of new monsters, and take on higher level play with terrifying creatures like the arch-hag and the blob of annihilation.\n\nWe've filled this book with breathtaking creature art of almost every monster, including the legendary D&D dragons, and carefully redesigned each monster stat block to be easier to run and reference.\n\nPopulate your worlds and adventures with the hundreds of monsters provided, and let their stories, illustrations, and streamlined stat blocks fuel your D&D adventures for years to come.",
+    "collection": {
+      "doc": [
+        {
+          "@href": "bestiary_mm24_a.xml"
+        },
+        {
+          "@href": "bestiary_mm24_b.xml"
+        },
+        {
+          "@href": "bestiary_mm24_c.xml"
+        },
+        {
+          "@href": "bestiary_mm24_d.xml"
+        },
+        {
+          "@href": "bestiary_mm24_e.xml"
+        },
+        {
+          "@href": "bestiary_mm24_f.xml"
+        },
+        {
+          "@href": "bestiary_mm24_g.xml"
+        },
+        {
+          "@href": "bestiary_mm24_h.xml"
+        },
+        {
+          "@href": "bestiary_mm24_i.xml"
+        },
+        {
+          "@href": "bestiary_mm24_j.xml"
+        },
+        {
+          "@href": "bestiary_mm24_k.xml"
+        },
+        {
+          "@href": "bestiary_mm24_l.xml"
+        },
+        {
+          "@href": "bestiary_mm24_m.xml"
+        },
+        {
+          "@href": "bestiary_mm24_n.xml"
+        },
+        {
+          "@href": "bestiary_mm24_o.xml"
+        },
+        {
+          "@href": "bestiary_mm24_p.xml"
+        },
+        {
+          "@href": "bestiary_mm24_q.xml"
+        },
+        {
+          "@href": "bestiary_mm24_r.xml"
+        },
+        {
+          "@href": "bestiary_mm24_s.xml"
+        },
+        {
+          "@href": "bestiary_mm24_t.xml"
+        },
+        {
+          "@href": "bestiary_mm24_u.xml"
+        },
+        {
+          "@href": "bestiary_mm24_v.xml"
+        },
+        {
+          "@href": "bestiary_mm24_w.xml"
+        },
+        {
+          "@href": "bestiary_mm24_x.xml"
+        },
+        {
+          "@href": "bestiary_mm24_y.xml"
+        },
+        {
+          "@href": "bestiary_mm24_z.xml"
+        }
+      ]
+    }
+  }
+}

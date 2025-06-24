@@ -1,0 +1,716 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Rakshasa [2024]",
+        "size": "M",
+        "type": "fiend",
+        "alignment": "lawful evil",
+        "ac": "17",
+        "hp": "221 (26d8+104)",
+        "speed": "40 ft.",
+        "init": "8",
+        "str": "14",
+        "dex": "17",
+        "con": "18",
+        "int": "13",
+        "wis": "16",
+        "cha": "20",
+        "save": null,
+        "skill": "Insight +8, Deception +10, Perception +8",
+        "passive": "18",
+        "languages": "Common, Infernal",
+        "cr": "13",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed, frightened",
+        "senses": "truesight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Greater Magic Resistance",
+            "text": "The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment."
+          },
+          {
+            "name": "Fiendish Restoration",
+            "text": "If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The rakshasa makes three Cursed Touch attacks."
+          },
+          {
+            "name": "Cursed Touch",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 19 (3d12) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target gains no benefit from finishing a Short or Long Rest.",
+            "attack": [
+              "Cursed Touch|+10|2d6+5",
+              "Necrotic Damage||3d12"
+            ]
+          },
+          {
+            "name": "Baleful Command (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Wisdom Saving Throw: DC 18, each enemy in a 30-foot Emanation originating from the rakshasa. Failure: 28 (8d6) Psychic damage, and the target has the Frightened and Incapacitated conditions until the start of the rakshasa's next turn.",
+            "attack": "Baleful Command||8d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):\n\n\t• At will: Detect Magic, Detect Thoughts, Disguise Self, Mage Hand, Minor Illusion\n\t• 1/Day each: Fly, Invisibility, Major Image, Plane Shift"
+          }
+        ],
+        "spells": "Detect Magic [2024], Detect Thoughts [2024], Disguise Self [2024], Mage Hand [2024], Minor Illusion [2024], Fly [2024], Invisibility [2024], Major Image [2024], Plane Shift [2024]",
+        "description": "Masters of manipulation, rakshasas infiltrate communities to claim positions of power. While disguising their true natures, they kidnap victims and indulge their insatiable hunger for flesh.\n\tRakshasas can withstand some degree of magic, but legends tell of blessed warriors felling them with crossbow bolts, arrows, or similar weapons.\n\tRakshasas' appearances combine humanlike bodies with the features of animals and monsters. All rakshasas have a physical oddity that remains when they adopt magical disguises, such as palms where the backs of the hands would be on humans.\n\nSource:\tMonster Manual 2024 p. 253",
+        "environment": "planar (nine hells), urban"
+      },
+      {
+        "name": "Rat [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "1 (1d4-1)",
+        "speed": "20 ft., climb 20 ft.",
+        "init": "0",
+        "str": "2",
+        "dex": "11",
+        "con": "9",
+        "int": "2",
+        "wis": "10",
+        "cha": "4",
+        "save": null,
+        "skill": "Perception +2",
+        "passive": "12",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Agile",
+            "text": "The rat doesn't provoke Opportunity Attacks when it moves out of an enemy's reach."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.",
+          "attack": "Bite|+2|"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 367,\n\t\tPlayer's Handbook 2024 p. 355",
+        "environment": "forest, swamp, underdark, urban"
+      },
+      {
+        "name": "Raven [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "2 (1d4)",
+        "speed": "10 ft., fly 50 ft.",
+        "init": "2",
+        "str": "2",
+        "dex": "14",
+        "con": "10",
+        "int": "5",
+        "wis": "13",
+        "cha": "6",
+        "save": null,
+        "skill": "Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Mimicry",
+            "text": "The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (Insight) check."
+          }
+        ],
+        "action": {
+          "name": "Beak",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage.",
+          "attack": "Beak|+4|"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 368,\n\t\tPlayer's Handbook 2024 p. 355",
+        "environment": "hill, swamp, urban"
+      },
+      {
+        "name": "Red Dragon Wyrmling [2024]",
+        "sortname": "Red Dragon, Wyrmling",
+        "ancestry": "Red Dragon",
+        "size": "M",
+        "type": "dragon (chromatic)",
+        "alignment": "chaotic evil",
+        "ac": "17",
+        "hp": "75 (10d8+30)",
+        "speed": "30 ft., climb 30 ft., fly 60 ft.",
+        "init": "2",
+        "str": "19",
+        "dex": "10",
+        "con": "17",
+        "int": "12",
+        "wis": "11",
+        "cha": "15",
+        "save": "Wis +2, Dex +2",
+        "skill": "Stealth +2, Perception +4",
+        "passive": "14",
+        "languages": "Draconic",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "fire",
+        "conditionImmune": null,
+        "senses": "blindsight 10 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The dragon makes two Rend attacks."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (1d10 + 4) Slashing damage plus 3 (1d6) Fire damage.",
+            "attack": [
+              "Rend|+6|1d10+4",
+              "Fire Damage||1d6"
+            ]
+          },
+          {
+            "name": "Fire Breath (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Dexterity Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 24 (7d6) Fire damage. Success: Half damage.",
+            "attack": "Fire Breath||7d6"
+          }
+        ],
+        "description": "Red dragons take whatever they desire and burn to ash anything that stands in their way. These chromatic dragons endlessly desire more—more magic, territory, treasure, or whatever else inflames their cruel ambitions.\n\tRed dragons make their lairs amid perilous cliffs and volcanoes. Within, they amass and fiercely protect hoards of treasure, and many have perfect recall of the hoards' contents and the locations of all they've collected. Should anything go missing, red dragons fly into rages. They don't rest until their treasures are returned and the thieves have burned.\n\tRed dragons believe themselves to be the greatest of all dragons and, by extension, the greatest of all creatures. To them, pillaging and conquering are their right—treasures can find no more honored place than in their hoards, and other creatures are privileged to serve them.\n\nRed Dragon Wyrmling:\nRed dragon wyrmlings are born destroyers. From a young age, they delight in igniting objects and creatures alike. They sometimes restrain themselves from scorching creatures to instead bully others into following their orders and bringing them gifts.\n\nSource:\tMonster Manual 2024 p. 254",
+        "environment": "hill, mountain"
+      },
+      {
+        "name": "Red Slaad [2024]",
+        "sortname": "Slaad, Red",
+        "ancestry": "Slaad",
+        "size": "L",
+        "type": "aberration",
+        "alignment": "chaotic neutral",
+        "ac": "14",
+        "hp": "93 (11d10+33)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "16",
+        "dex": "12",
+        "con": "16",
+        "int": "6",
+        "wis": "6",
+        "cha": "7",
+        "save": null,
+        "skill": "Perception +1",
+        "passive": "11",
+        "languages": "Slaad; telepathy 60 ft.",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": "acid, cold, fire, lightning, thunder",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The slaad has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Regeneration",
+            "text": "The slaad regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The slaad makes three Injecting Claw attacks."
+          },
+          {
+            "name": "Injecting Claw",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 10 (2d6 + 3) Piercing damage. If the target is a Humanoid not cursed by a slaad, it is subjected to the following effect. Constitution Saving Throw: DC 14. Failure: The target is cursed unawares, and a minuscule slaad egg is implanted in it. Removing the curse destroys the egg.\n\tOver 2d4 × 10 days, the egg gestates. In the final 24 hours, the cursed target feels unwell; its Speed is halved, and it has Disadvantage on D20 Tests. At the end of this time, the egg turns into a Slaad Tadpole, which chews out of the host and kills it.",
+            "attack": "Injecting Claw|+6|2d6+3"
+          }
+        ],
+        "description": "Unpredictable slaadi devour and multiply across the Ever-Changing Chaos of Limbo. These toadlike, extraplanar beings embody the endless potentiality of their home plane of existence. While slaadi aren't inherently evil, their impulses are wild and often destructive. Many are driven to propagate through supernatural processes. Unfortunately, these processes typically are fatal for other creatures.\n\tSlaadi have no formal society. Rather, strong slaadi dominate weaker ones. Blue and red slaadi rampage across Limbo and spill into other worlds at the direction of green slaadi. More powerful slaadi have connections to the Spawning Stone, a source of chaotic magic from which the first slaadi originated. The Spawning Stone is hidden deep within Limbo, and legends tie its origins to the modron overlord Primus or the ruinous slaad lords, such as Ssendam, the golden amoeboid terror, and Ygorl, the winged skeleton. These slaad lords and others plot to spread slaadi across the multiverse.\n\nSalad Control Gems:\nA salad born from the Spawning Stone has a magical control gem embedded in its head. If a creature claims the gem, the salad has the Charmed condition and obeys the gem's bearer. The salad ceases to be Charmed if it is harmed by the gem's bearer or the bearer's allies or if the gem is returned to the salad. A Greater Restoration spell cast on a salad destroys the gem, and the salad ceases to be Charmed. One can obtain a salad's control gem using a Wish or Imprisonment spell. If the salad fails its saving throw against Imprisonment, the caster against the gem, and the salad isn't imprisoned. An Incapacitated salads control gem can be removed by spending 1 minute and succeeding on a DC 20 Wisdom (Medicine) check. Failing this check deals 22 (4d10) piercing damage to the salad.\n\nRed Slaad:\nRed slaadi amass in vast throngs in Limbo. There they wrestle and croak-sing as they endlessly dismantle and rebuild islands of drifting planar matter. When they encounter non-slaadi, red slaadi seek to play with, telepathically converse with, or devour the other creatures. These whims change from moment to moment. Red slaadi instinctively avoid harming those bearing slaadi eggs, which red slaadi implant using their claws, or other slaad curses.\n\nSource:\tMonster Manual 2024 p. 285",
+        "environment": "planar (limbo)"
+      },
+      {
+        "name": "Reef Shark [2024]",
+        "sortname": "Shark, Reef",
+        "ancestry": "Shark",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "22 (4d8+4)",
+        "speed": "5 ft., swim 30 ft.",
+        "init": "2",
+        "str": "14",
+        "dex": "15",
+        "con": "13",
+        "int": "1",
+        "wis": "10",
+        "cha": "4",
+        "save": null,
+        "skill": "Perception +2",
+        "passive": "12",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "The shark has Advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+          },
+          {
+            "name": "Water Breathing",
+            "text": "The shark can breathe only underwater."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage.",
+          "attack": "Bite|+4|2d4+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 368,\n\t\tPlayer's Handbook 2024 p. 356",
+        "environment": "underwater"
+      },
+      {
+        "name": "Remorhaz [2024]",
+        "sortname": "Remorhaz",
+        "ancestry": "Remorhaz",
+        "size": "H",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "17",
+        "hp": "195 (17d12+85)",
+        "speed": "40 ft., burrow 30 ft.",
+        "init": "5",
+        "str": "24",
+        "dex": "13",
+        "con": "21",
+        "int": "4",
+        "wis": "10",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "cold, fire",
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft., tremorsense 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Heat Aura",
+            "text": "At the end of each of the remorhaz's turns, each creature in a 5-foot Emanation originating from the remorhaz takes 16 (3d10) Fire damage.",
+            "attack": "Heat Aura||3d10"
+          }
+        ],
+        "action": [
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +11, reach 10 ft. Hit: 18 (2d10 + 7) Piercing damage plus 14 (4d6) Fire damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17), and it has the Restrained condition until the grapple ends.",
+            "attack": [
+              "Bite|+11|2d10+7",
+              "Fire Damage||4d6"
+            ]
+          },
+          {
+            "name": "Swallow (Bonus Action)",
+            "text": "Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the remorhaz (it can have up to two creatures swallowed at a time). Failure: The target is swallowed by the remorhaz, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 10 (3d6) Acid damage plus 10 (3d6) Fire damage at the start of each of the remorhaz's turns.\n\tIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the Prone condition. If the remorhaz dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse by using 15 feet of movement, exiting Prone.",
+            "attack": [
+              "Acid Damage||3d6",
+              "Fire Damage||3d6"
+            ]
+          }
+        ],
+        "description": "Remorhazes are centipede-like terrors that burrow through snow and ice to ambush smaller creatures that trespass in their frozen territories.\n\nRemorhaz:\nFull-grown remorhazes are single-minded ambush predators. They attempt to bite prey and trap it against their searing bodies, then swallow their meal whole. Remorhazes eat as much as they can, since they might go months without feeding.\n\nSource:\tMonster Manual 2024 p. 258",
+        "environment": "arctic"
+      },
+      {
+        "name": "Revenant [2024]",
+        "sortname": "Revenant",
+        "ancestry": "Revenant",
+        "size": "M",
+        "type": "undead",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "127 (15d8+60)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "14",
+        "con": "18",
+        "int": "13",
+        "wis": "16",
+        "cha": "18",
+        "save": "Str +7, Wis +6, Con +7, Cha +7",
+        "skill": null,
+        "passive": "13",
+        "languages": "Common plus one other language",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": "necrotic, psychic",
+        "immune": "poison",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, stunned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Regeneration",
+            "text": "The revenant regains 10 Hit Points at the start of each of its turns. If the revenant takes Fire or Radiant damage, this trait doesn't function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 Hit Points and doesn't regenerate."
+          },
+          {
+            "name": "Undead Restoration",
+            "text": "If the revenant dies, it revives 24 hours later in a different body unless Dispel Evil and Good is cast on its corpse. If it revives, it animates a Humanoid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Hit Points."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The revenant uses Vengeful Glare and makes two Slam attacks."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Necrotic damage.",
+            "attack": "Slam|+7|2d6+4"
+          },
+          {
+            "name": "Vengeful Glare",
+            "text": "Wisdom Saving Throw: DC 15, one creature the revenant can see within 30 feet. Failure: The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. If the Frightened target is cursed by the revenant (see Vow of Revenge), the target also has the Paralyzed condition for the duration."
+          },
+          {
+            "name": "Vow of Revenge (1/Day) (Bonus Action)",
+            "recharge": "1/DAY",
+            "text": "The revenant curses one creature it can see within 30 feet of itself. The revenant knows the distance to and direction of the cursed target, even if it is on a different plane of existence. The curse ends on the target if the revenant uses this Bonus Action on a different creature."
+          }
+        ],
+        "description": "Wrathful spirits bent on revenge, revenants possess corpses and other materials, using them to seek justice or vent their rage on those who wronged them. Revenants refuse to rest until those they seek to punish are no more. If their bodies are destroyed, revenants claim new forms and continue their ruthless quests\n\nRevenant:\nRevenants possess the bodies they had in life, using them to hunt down their killers. If their bodies are destroyed, they take control of new bodies that gradually change to resemble the revenants' original forms.\n\nSource:\tMonster Manual 2024 p. 259",
+        "environment": "forest, swamp, urban"
+      },
+      {
+        "name": "Rhinoceros [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "45 (6d10+12)",
+        "speed": "40 ft.",
+        "init": "-1",
+        "str": "21",
+        "dex": "8",
+        "con": "15",
+        "int": "2",
+        "wis": "12",
+        "cha": "6",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Gore",
+          "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Piercing damage. If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.",
+          "attack": "Gore|+7|2d8+5+2d8"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 368",
+        "environment": "grassland"
+      },
+      {
+        "name": "Riding Horse [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "13 (2d10+2)",
+        "speed": "60 ft.",
+        "init": "1",
+        "str": "16",
+        "dex": "13",
+        "con": "12",
+        "int": "2",
+        "wis": "11",
+        "cha": "7",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Hooves",
+          "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage.",
+          "attack": "Hooves|+5|1d8+3"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 368,\n\t\tPlayer's Handbook 2024 p. 356",
+        "environment": "grassland, urban"
+      },
+      {
+        "name": "Roc [2024]",
+        "size": "G",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "15",
+        "hp": "248 (16d20+80)",
+        "speed": "20 ft., fly 120 ft.",
+        "init": "8",
+        "str": "28",
+        "dex": "10",
+        "con": "20",
+        "int": "3",
+        "wis": "10",
+        "cha": "9",
+        "save": "Wis +4, Dex +4",
+        "skill": "Perception +8",
+        "passive": "18",
+        "languages": null,
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The roc makes two Beak attacks. It can replace one attack with a Talons attack."
+          },
+          {
+            "name": "Beak",
+            "text": "Melee Attack Roll: +13, reach 10 ft. Hit: 28 (3d12 + 9) Piercing damage.",
+            "attack": "Beak|+13|3d12+9"
+          },
+          {
+            "name": "Talons",
+            "text": "Melee Attack Roll: +13, reach 5 ft. Hit: 23 (4d6 + 9) Slashing damage. If the target is a Huge or smaller creature, it has the Grappled condition (escape DC 19) from both talons, and it has the Restrained condition until the grapple ends.",
+            "attack": "Talons|+13|4d6+9"
+          },
+          {
+            "name": "Swoop (Recharge 5-6) (Bonus Action)",
+            "text": "If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature.",
+            "recharge": "D5"
+          }
+        ],
+        "description": "Birds of prey of fantastic scale, rocs hunt over vast territories and can snatch whole elephants, whales, or wagons in their talons. They then carry their prey\nback to their remote nests, journeys that can take days and cover hundreds of miles.\nRocs nest amid remote heights. Their nests are typically littered with treasure and uneaten prey. Roll on or choose an option from the Roc Nest Remnants\ntable to inspire what's in a roc's nest.\n\nRoc Nest Remnants:\n1d6 | The Roc's Nest Holds...\n1 | The burial litter of a lost hero.\n2 | A caravan wagon full of trade goods.\n3 | A live elephant.\n4 | 1d4 eggs larger than adult humans.\n5 | Someone marooned in the nest.\n6 | A statue of a knight riding a rearing steed.\n\nSource:\tMonster Manual 2024 p. 261",
+        "environment": "arctic, coastal, desert, hill, mountain"
+      },
+      {
+        "name": "Roper [2024]",
+        "size": "L",
+        "type": "aberration",
+        "alignment": "neutral evil",
+        "ac": "20",
+        "hp": "93 (11d10+33)",
+        "speed": "10 ft., climb 20 ft.",
+        "init": "5",
+        "str": "18",
+        "dex": "8",
+        "con": "17",
+        "int": "7",
+        "wis": "16",
+        "cha": "6",
+        "save": null,
+        "skill": "Stealth +5, Perception +6",
+        "passive": "16",
+        "languages": null,
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The roper can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 17 (3d8 + 4) Piercing damage.",
+            "attack": "Bite|+7|3d8+4"
+          },
+          {
+            "name": "Tentacle",
+            "text": "Melee Attack Roll: +7, reach 60 ft. Hit: The target has the Grappled condition (escape DC 14) from one of six tentacles, and the target has the Poisoned condition until the grapple ends.\n\tThe tentacle can be damaged, freeing a creature it has Grappled when destroyed (AC 20, HP 10, Immunity to Poison and Psychic damage). Damaging the tentacle deals no damage to the roper, and a destroyed tentacle regrows at the start of the roper's next turn.",
+            "attack": "Tentacle|+7|"
+          },
+          {
+            "name": "Reel",
+            "text": "The roper pulls each creature Grappled by it up to 30 feet straight toward it."
+          }
+        ],
+        "description": "Camouflaged as rock formations, ropers are aberrant ambushers that lurk in wait for smaller creatures. These bizarre subterranean hunters extend their rubbery tentacles to explore and prod their surroundings, often reaching beyond their fields of vision. Should they encounter prey, these limbs ensnare victims and drag them close to ropers' toothy maws. If these tentacles are severed, ropers rapidly grow replacements.\n\nRopers can move, albeit slowly. Crawling on the sticky cilia that cover their undersides, ropers can climb walls and suspend themselves from ceilings. These hunters often position themselves in unexpected or treacherous locations, using their surroundings to weaken their prey. Roll on or choose a result from the Roper Hazards table to inspire what dangers ropers employ when ambushing prey.\n\nRoper Hazards:\n1d8 | The Roper Drags Prey Through...\n1 | Areas that trigger traps.\n2 | Caverns filled with smoke or gas.\n3 | Dead magic* or wild magic* zones.\n4 | The lair of a creature it is trying to bait out.\n5 | A nest of rats, insects, or other vermin.\n6 | Patches of brown mold* or green slime*.\n7 | Pools of magma or boiling water.\n8 | Razorvine* or similar dangerous plants.\n\nSource:\tMonster Manual 2024 p. 262",
+        "environment": "underdark"
+      },
+      {
+        "name": "Rust Monster [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "14",
+        "hp": "33 (6d8+6)",
+        "speed": "40 ft.",
+        "init": "1",
+        "str": "13",
+        "dex": "12",
+        "con": "13",
+        "int": "2",
+        "wis": "13",
+        "cha": "6",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Iron Scent",
+            "text": "The rust monster can pinpoint the location of ferrous metal within 30 feet of itself."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The rust monster makes one Bite attack and uses Antennae twice."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+            "attack": "Bite|+3|1d8+1"
+          },
+          {
+            "name": "Antennae",
+            "text": "The rust monster targets one nonmagical metal object—armor or a weapon—worn or carried by a creature within 5 feet of itself. Dexterity Saving Throw: DC 11, the creature with the object. Failure: The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the Mending spell on the armor or weapon."
+          },
+          {
+            "name": "Destroy Metal",
+            "text": "The rust monster touches a nonmagical metal object within 5 feet of itself that isn't being worn or carried. The touch destroys a 1-foot Cube of the object."
+          }
+        ],
+        "reaction": {
+          "name": "Reflexive Antennae",
+          "text": "Trigger: An attack roll hits the rust monster. Response: The rust monster uses Antennae."
+        },
+        "description": "Rust monsters roam the Underdark searching for ferrous metal. When they find this material—whether natural veins, subterranean structures, or creatures' equipment—these beetle-like scavengers rush to feed. Using their feathery antennae, rust monsters dissolve metals such as iron and steel into rusted scrap. They easily gnaw through this corroded metal using their mandibles. Rust monsters usually ignore creatures without metal equipment, but they defend themselves if attacked.\n\nSource:\tMonster Manual 2024 p. 263",
+        "environment": "underdark"
+      }
+    ]
+  }
+}

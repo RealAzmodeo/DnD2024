@@ -1,0 +1,1634 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Panther [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "13 (3d8)",
+        "speed": "50 ft., climb 40 ft.",
+        "init": "3",
+        "str": "14",
+        "dex": "16",
+        "con": "10",
+        "int": "3",
+        "wis": "14",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +6, Perception +4",
+        "passive": "14",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
+            "attack": "Rend|+5|1d6+3"
+          },
+          {
+            "name": "Nimble Escape (Bonus Action)",
+            "text": "The panther takes the Disengage or Hide action."
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 366,\n\t\tPlayer's Handbook 2024 p. 354",
+        "environment": "forest, grassland, hill"
+      },
+      {
+        "name": "Pegasus [2024]",
+        "size": "L",
+        "type": "celestial",
+        "alignment": "chaotic good",
+        "ac": "12",
+        "hp": "59 (7d10+21)",
+        "speed": "60 ft., fly 90 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "15",
+        "con": "16",
+        "int": "10",
+        "wis": "15",
+        "cha": "13",
+        "save": "Wis +4, Con +5, Dex +4, Cha +3",
+        "skill": "Perception +6",
+        "passive": "16",
+        "languages": "understands Celestial, Common, Elvish, and Sylvan but can't speak",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Hooves",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage.",
+          "attack": [
+            "Hooves|+6|1d6+4",
+            "Radiant Damage||2d4"
+          ]
+        },
+        "description": "Winged, sapient horses of noble bearing, pegasi are as majestic as they are elusive. Most avoid the affairs of other creatures, preferring to dwell amid idyllic pastures or floating islands, or on other planes of existence. Others serve deities of the Feywild and Upper Planes, aiding heroes in need. In rare cases, pegasi might befriend virtuous people and serve as their companions and steeds.\n\tPegasi are hunted by servants of evil, leading many of these winged steeds to flee strangers on sight. Roll on or choose a result from the Pegasus Offerings table to inspire how one might show their good intentions to a wary pegasus.\n\nPegasus Offerings:\n1d4 | A Pegasus Won't Flee Someone...\n1 | Bearing the gear of a hero the pegasus aided.\n2 | Offering magical fruit or holy spring water.\n3 | Singing a song in Celestial, Druidic, or Sylvan.\n4 | Wearing the garb of an ancient heroic order.\n\nSource:\tMonster Manual 2024 p. 235",
+        "environment": "forest, grassland, hill, planar (upper)"
+      },
+      {
+        "name": "Performer [2024]",
+        "sortname": "Performer",
+        "ancestry": "Performer",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "27 (5d8+5)",
+        "speed": "30 ft.",
+        "init": "3",
+        "str": "12",
+        "dex": "16",
+        "con": "12",
+        "int": "13",
+        "wis": "14",
+        "cha": "16",
+        "save": "Dex +5, Cha +5",
+        "skill": "Performance +7, Athletics +3, Acrobatics +5",
+        "passive": "12",
+        "languages": "Common plus one other language",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Shortsword"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": {
+          "name": "Shortsword",
+          "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+          "attack": "Shortsword|+5|1d6+3"
+        },
+        "reaction": {
+          "name": "Uncanny Dodge",
+          "text": "Trigger: The performer is hit by an attack roll. Response: The performer halves the damage (round down) it takes from that attack."
+        },
+        "description": "From royal courts to village squares, skilled entertainers hone their talents and delight audiences. Some travel far, sharing tales and demonstrating mysterious arts. Others serve in the courts and theaters of great nations, cultivating celebrity and navigating the whims of patrons. Many hone professional secrets and magical flourishes, striving to make their performances truly unforgettable.\n\nUse the following list of entertainers and roles to inspire the performers in your adventures:\n\nAcrobat\nActor\nAerialist\nAnimal trainer\nAthlete\nBurlesque artist\nBusker\nCircus performer\nComedian\nContortionist\nDancer\nDaredevil\nJester\nJuggler\nMagician\nMentalist\nMime\nMinstrel\nMourner\nOral historian\nPoet\nPuppeteer\nRitualist\nStage fighter\nStoryteller\nThroat singer\nTown crier\nTrick rider\nVocalist\nWrestler\n\nPerformer:\nCommon performers include traveling storytellers, tavern musicians, local entertainers, and chorus members performing with veteran artists. These performers might be self-taught or in the early years of formal training. Most have a modest level of celebrity and two or three instruments or talents at which they excel.\n\nSource:\tMonster Manual 2024 p. 236",
+        "environment": "any"
+      },
+      {
+        "name": "Performer Legend [2024]",
+        "sortname": "Performer, Legend",
+        "ancestry": "Performer",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "20",
+        "hp": "162 (25d8+50)",
+        "speed": "30 ft.",
+        "init": "9",
+        "str": "12",
+        "dex": "20",
+        "con": "14",
+        "int": "15",
+        "wis": "16",
+        "cha": "20",
+        "save": "Wis +7, Dex +9, Cha +9, Int +6",
+        "skill": "Performance +13, Stealth +9, Athletics +5, Acrobatics +13, Perception +7",
+        "passive": "17",
+        "languages": "Common plus two other languages",
+        "cr": "10",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The performer makes three Bejeweled Baton attacks."
+          },
+          {
+            "name": "Bejeweled Baton",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 10 (2d4 + 5) Bludgeoning damage plus 10 (3d6) Psychic damage.",
+            "attack": [
+              "Bejeweled Baton|+9|2d4+5",
+              "Psychic Damage||3d6"
+            ]
+          },
+          {
+            "name": "Majestic Song",
+            "text": "Wisdom Saving Throw: DC 17, each creature in a 20-foot-radius Sphere centered on a point within 120 feet. Failure: 22 (4d8 + 4) Psychic damage, and the target has the Charmed or Frightened condition (performer's choice) until the end of the performer's next turn. Success: Half damage only.",
+            "attack": "Majestic Song||4d8+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The performer casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):\n\n\t• At will: Mage Hand, Minor Illusion, Prestidigitation\n\t• 1/Day each: Major Image, Project Image"
+          }
+        ],
+        "reaction": {
+          "name": "Warding Charm",
+          "text": "Trigger: A creature hits the performer with an attack roll. Response: Wisdom Saving Throw: DC 17, the triggering creature. Failure: The attack roll misses the performer, and the target has the Charmed condition until the end of the performer's next turn."
+        },
+        "spells": "Mage Hand [2024], Minor Illusion [2024], Prestidigitation [2024], Major Image [2024], Project Image [2024]",
+        "description": "From royal courts to village squares, skilled entertainers hone their talents and delight audiences. Some travel far, sharing tales and demonstrating mysterious arts. Others serve in the courts and theaters of great nations, cultivating celebrity and navigating the whims of patrons. Many hone professional secrets and magical flourishes, striving to make their performances truly unforgettable.\n\nUse the following list of entertainers and roles to inspire the performers in your adventures:\n\nAcrobat\nActor\nAerialist\nAnimal trainer\nAthlete\nBurlesque artist\nBusker\nCircus performer\nComedian\nContortionist\nDancer\nDaredevil\nJester\nJuggler\nMagician\nMentalist\nMime\nMinstrel\nMourner\nOral historian\nPoet\nPuppeteer\nRitualist\nStage fighter\nStoryteller\nThroat singer\nTown crier\nTrick rider\nVocalist\nWrestler\n\nPerformer Legend:\nPerformer legends are celebrities known across nations, continents, or worlds. Their prestige might grant them access to the heights of society, or they might use their performances to manipulate audiences. Performer legends usually have signature traits or talents that set them apart from other entertainers, such as a distinct voice, incredible athleticism, or a unique manner of dress. They often travel with a retinue of other performers, guards, or noble patrons.\n\nSource:\tMonster Manual 2024 p. 237",
+        "environment": "any"
+      },
+      {
+        "name": "Performer Maestro [2024]",
+        "sortname": "Performer, Maestro",
+        "ancestry": "Performer",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "18",
+        "hp": "110 (17d8+34)",
+        "speed": "30 ft.",
+        "init": "7",
+        "str": "12",
+        "dex": "18",
+        "con": "14",
+        "int": "13",
+        "wis": "14",
+        "cha": "19",
+        "save": "Dex +7, Cha +7",
+        "skill": "Performance +10, Stealth +7, Athletics +4, Acrobatics +10, Perception +5",
+        "passive": "15",
+        "languages": "Common plus one other language",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Rapier"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The performer makes three Rapier attacks."
+          },
+          {
+            "name": "Rapier",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 8 (1d8 + 4) Piercing damage plus 7 (2d6) Psychic damage.",
+            "attack": [
+              "Rapier|+7|1d8+4",
+              "Psychic Damage||2d6"
+            ]
+          },
+          {
+            "name": "Beguiling Song",
+            "text": "Wisdom Saving Throw: DC 15, each creature in a 20-foot-radius Sphere centered on a point within 120 feet. Failure: 20 (3d10 + 4) Psychic damage, and the target has the Charmed condition until the end of the performer's next turn. Success: Half damage only.",
+            "attack": "Beguiling Song||3d10+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The performer casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):\n\n\t• At will: Minor Illusion, Prestidigitation\n\t• 1/Day: Tasha's Hideous Laughter (level 3 version)"
+          }
+        ],
+        "spells": "Minor Illusion [2024], Prestidigitation [2024], Tasha's Hideous Laughter [2024]",
+        "description": "From royal courts to village squares, skilled entertainers hone their talents and delight audiences. Some travel far, sharing tales and demonstrating mysterious arts. Others serve in the courts and theaters of great nations, cultivating celebrity and navigating the whims of patrons. Many hone professional secrets and magical flourishes, striving to make their performances truly unforgettable.\n\nUse the following list of entertainers and roles to inspire the performers in your adventures:\n\nAcrobat\nActor\nAerialist\nAnimal trainer\nAthlete\nBurlesque artist\nBusker\nCircus performer\nComedian\nContortionist\nDancer\nDaredevil\nJester\nJuggler\nMagician\nMentalist\nMime\nMinstrel\nMourner\nOral historian\nPoet\nPuppeteer\nRitualist\nStage fighter\nStoryteller\nThroat singer\nTown crier\nTrick rider\nVocalist\nWrestler\n\nPerformer Maestro:\nMaestros are headlining performers who enjoy considerable renown. They might be theaters' marquee actors, astonishing daredevils, or jesters experienced at entertaining fickle royals. Some share their techniques with apprentices, while others jealously guard their secrets.\n\nSource:\tMonster Manual 2024 p. 237",
+        "environment": "any"
+      },
+      {
+        "name": "Peryton [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "13",
+        "hp": "33 (6d8+6)",
+        "speed": "20 ft., fly 60 ft.",
+        "init": "3",
+        "str": "16",
+        "dex": "12",
+        "con": "13",
+        "int": "9",
+        "wis": "12",
+        "cha": "10",
+        "save": null,
+        "skill": "Stealth +3, Perception +5",
+        "passive": "15",
+        "languages": "understands Common and Elvish but can't speak",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Flyby",
+            "text": "The peryton doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The peryton makes one Gore attack and one Talons attack."
+          },
+          {
+            "name": "Gore",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage. If the peryton moved 30+ feet straight toward the target immediately before the hit, the target takes an extra 9 (2d8) Piercing damage.",
+            "attack": [
+              "Gore|+5|1d8+3",
+              "Extra Piercing Damage||2d8"
+            ]
+          },
+          {
+            "name": "Talons",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage. If the attack reduces a Humanoid target to 0 Hit Points, the peryton kills the target by removing its heart.",
+            "attack": "Talons|+5|2d4+3"
+          }
+        ],
+        "description": "Perytons are monstrous predators that hunt people—particularly humans and elves—in favor of all other prey. With the bodies of mighty avian scavengers and fanged, stag-like heads, perytons use ambush tactics to dive-bomb travelers. Strangely, the shadows they cast resemble humanoid silhouettes. This supernatural oddity lends credence to stories that perytons are cursed humans or elves, or that they arise from carrion birds that feed on the corpses of villains.\n\tPerytons tear out the hearts of those they slay, carrying the organs back to grisly lairs. This gives rise to numerous superstitions surrounding perytons. Roll on or choose a result from the Peryton Superstitions table to inspire why a peryton steals hearts.\n\nPeryton Superstitions:\n1d4 | If a Peryton Collects Enough Hearts...\n1 | The hearts grant an evil wish.\n2 | It reverts to its original form.\n3 | A new peryton hatches from each heart.\n4 | A portal opens to the Lower Planes.\n\nSource:\tMonster Manual 2024 p. 238",
+        "environment": "hill, mountain"
+      },
+      {
+        "name": "Phase Spider [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "14",
+        "hp": "45 (7d10+7)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "3",
+        "str": "15",
+        "dex": "16",
+        "con": "12",
+        "int": "6",
+        "wis": "10",
+        "cha": "6",
+        "save": null,
+        "skill": "Stealth +7",
+        "passive": "10",
+        "languages": null,
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Ethereal Sight",
+            "text": "The spider can see 60 feet into the Ethereal Plane while on the Material Plane and vice versa."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          },
+          {
+            "name": "Web Walker",
+            "text": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The spider makes two Bite attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage plus 9 (2d8) Poison damage. If this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the Poisoned condition for 1 hour. While Poisoned, the target also has the Paralyzed condition.",
+            "attack": [
+              "Bite|+5|1d10+3",
+              "Poison Damage||2d8"
+            ]
+          },
+          {
+            "name": "Ethereal Jaunt (Bonus Action)",
+            "text": "The spider teleports from the Material Plane to the Ethereal Plane or vice versa."
+          }
+        ],
+        "description": "Phase spiders appear out of nowhere to attack, then vanish just as swiftly. These horse-size, magical arachnids are endemic to the Ethereal Plane. From vaporous lairs, they peer through the Border Ethereal into the Material Plane. When they detect prey, phase spiders draw close and then shift or \"phase\" to the Material Plane to attack. They shift between planes of existence and attack from unexpected directions until they overcome their prey or are forced to retreat.\n\tPhase spiders are more intelligent than mundane spiders, but most are cowards. They usually flee if they're outnumbered by creatures capable of seeing them on the Ethereal Plane or pursuing them there. They make exceptions for ghosts and similar spirits, which phase spiders gain sustenance from and pursue as favored prey.\n\nSource:\tMonster Manual 2024 p. 239",
+        "environment": "desert, forest, grassland, hill, planar (ethereal), underdark, urban"
+      },
+      {
+        "name": "Piercer [2024]",
+        "size": "M",
+        "type": "aberration",
+        "alignment": "unaligned",
+        "ac": "15",
+        "hp": "22 (3d8+9)",
+        "speed": "5 ft., climb 15 ft.",
+        "init": "3",
+        "str": "13",
+        "dex": "13",
+        "con": "16",
+        "int": "1",
+        "wis": "7",
+        "cha": "3",
+        "save": null,
+        "skill": "Stealth +5",
+        "passive": "8",
+        "languages": null,
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 30 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The piercer can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          }
+        ],
+        "action": [
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+            "attack": "Bite|+3|1d8+1"
+          },
+          {
+            "name": "Drop",
+            "text": "The piercer falls. Dexterity Saving Throw: DC 11, one creature directly underneath the piercer. Failure: 10 (3d6) Piercing damage. Failure or Success: The piercer reduces any damage it takes from the fall by 20.",
+            "attack": "Drop||3d6"
+          }
+        ],
+        "description": "Piercers resemble stalactites, but each has a toothy maw and a single eye. They hang from cavern ceilings along routes frequented by denizens of the Underdark. Piercers might lurk for months at a time, waiting for any creature of their approximate size to pass underneath. When potential meals move below, piercers release their grip and plummet, intent on impaling prey in a single strike. If they're successful, piercers consume their meals and then slowly climb to a new ambush position. If they miss or fail to slay their targets, piercers attempt to squirm away, but they're easily dispatched by creatures aware of their presence.\n\tPiercers are the larval form of ropers. Young piercers seek to move as far from ropers as they can to avoid ropers' undiscerning hunger. Many piercers migrate vast distances through the Underdark, often to caverns or buried ruins near the surface.\n\nSource:\tMonster Manual 2024 p. 240",
+        "environment": "underdark"
+      },
+      {
+        "name": "Piranha [2024]",
+        "size": "T",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "1 (1d4-1)",
+        "speed": "5 ft., swim 40 ft.",
+        "init": "3",
+        "str": "2",
+        "dex": "16",
+        "con": "9",
+        "int": "1",
+        "wis": "7",
+        "cha": "2",
+        "save": null,
+        "skill": null,
+        "passive": "8",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Water Breathing",
+            "text": "The piranha can breathe only underwater."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +5 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 1 Piercing damage.",
+          "attack": "Bite|+5|1"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 366",
+        "environment": "underwater"
+      },
+      {
+        "name": "Pirate [2024]",
+        "sortname": "Pirate",
+        "ancestry": "Pirate",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "33 (6d8+6)",
+        "speed": "30 ft.",
+        "init": "5",
+        "str": "10",
+        "dex": "16",
+        "con": "12",
+        "int": "8",
+        "wis": "12",
+        "cha": "14",
+        "save": "Dex +5, Cha +4",
+        "skill": null,
+        "passive": "11",
+        "languages": "Common plus one other language",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Daggers (6), Leather Armor"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pirate makes two Dagger attacks. It can replace one attack with a use of Enthralling Panache."
+          },
+          {
+            "name": "Dagger",
+            "text": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage.",
+            "attack": "Dagger|+5|1d4+3"
+          },
+          {
+            "name": "Enthralling Panache",
+            "text": "Wisdom Saving Throw: DC 12, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate's next turn."
+          }
+        ],
+        "description": "The term \"pirate\" encompasses a broad range of seafarers, including vicious sea rovers, dogged privateers, cursed treasure hunters, and others who seek riches and fame on the seas.\n\tPirates might be allies, foes, wild cards, or some combination thereof. While they are the bane of merchants and coastal communities, they know secrets of the sea and how to avoid aquatic threats. More unusual pirates set their sights beyond the waves, using airships, spelljamming vessels, plane-shifting craft, or stranger vehicles to explore and raid incredible realms.\n\nPirate Flags:\nTo terrify opponents and spread their reputations, pirate crews fly distinctive flags. Roll twice on or choose results from the Pirate Flags table to inspire what flag a pirate crew sails under.\n\nPirate Flags Shows:\n1d8 | The Flag Shows A...\n1 | Buccaneer\n2 | Dragon\n3 | Fiend\n4 | Goat\n5 | Kraken\n6 | Merfolk\n7 | Skull\n8 | Whale\n\nPirate Flags With:\n1d8 | With...\n1 | A captain's hat\n2 | Crossbones\n3 | Crossed blades\n4 | An eye patch\n5 | Lightning bolts\n6 | A mug of ale\n7 | A tattoo\n8 | A treasure chest\n\nPirate:\nAlong with being competent warriors, pirates are accomplished seafarers who know how to sail and maintain a ship. While some loyally follow their captains' orders, others place greed, superstition, or self-preservation over duty.\n\nSource:\tMonster Manual 2024 p. 241",
+        "environment": "any"
+      },
+      {
+        "name": "Pirate Admiral [2024]",
+        "sortname": "Pirate, Admiral",
+        "ancestry": "Pirate",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "20",
+        "hp": "182 (28d8+56)",
+        "speed": "30 ft.",
+        "init": "10",
+        "str": "14",
+        "dex": "22",
+        "con": "14",
+        "int": "12",
+        "wis": "14",
+        "cha": "19",
+        "save": "Str +6, Wis +6, Dex +10, Cha +8",
+        "skill": "Athletics +6, Acrobatics +10, Perception +6",
+        "passive": "16",
+        "languages": "Common plus one other language",
+        "cr": "12",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Gear",
+            "text": "Pistol, Scimitar"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pirate makes three attacks, using Scimitar or Pistol in any combination."
+          },
+          {
+            "name": "Scimitar",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 16 (3d6 + 6) Slashing damage plus 7 (2d6) Poison damage, and the target suffers one of the following effects of the pirate's choice:\n\nAwestruck: The target has the Charmed condition until the start of the pirate's next turn.\n\nPoison: The target has the Poisoned condition until the start of the pirate's next turn.",
+            "attack": [
+              "Scimitar|+10|3d6+6",
+              "Poison Damage||2d6"
+            ]
+          },
+          {
+            "name": "Pistol",
+            "text": "Ranged Attack Roll: +10, range 30/90 ft. Hit: 28 (4d10 + 6) Piercing damage.",
+            "attack": "Pistol|+10|4d10+6"
+          },
+          {
+            "name": "Rally (1/Day) (Bonus Action)",
+            "recharge": "1/DAY",
+            "text": "The pirate chooses up to three other creatures it can see within 30 feet. Until the start of the pirate's next turn, the targets have Advantage on attack rolls and saving throws."
+          }
+        ],
+        "reaction": {
+          "name": "Defensive Stance",
+          "text": "Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 4 to its AC against melee attack rolls (including the triggering attack) until the start of its next turn, possibly causing the attacks to miss."
+        },
+        "description": "The term \"pirate\" encompasses a broad range of seafarers, including vicious sea rovers, dogged privateers, cursed treasure hunters, and others who seek riches and fame on the seas.\n\tPirates might be allies, foes, wild cards, or some combination thereof. While they are the bane of merchants and coastal communities, they know secrets of the sea and how to avoid aquatic threats. More unusual pirates set their sights beyond the waves, using airships, spelljamming vessels, plane-shifting craft, or stranger vehicles to explore and raid incredible realms.\n\nPirate Flags:\nTo terrify opponents and spread their reputations, pirate crews fly distinctive flags. Roll twice on or choose results from the Pirate Flags table to inspire what flag a pirate crew sails under.\n\nPirate Flags Shows:\n1d8 | The Flag Shows A...\n1 | Buccaneer\n2 | Dragon\n3 | Fiend\n4 | Goat\n5 | Kraken\n6 | Merfolk\n7 | Skull\n8 | Whale\n\nPirate Flags With:\n1d8 | With...\n1 | A captain's hat\n2 | Crossbones\n3 | Crossed blades\n4 | An eye patch\n5 | Lightning bolts\n6 | A mug of ale\n7 | A tattoo\n8 | A treasure chest\n\nPirate Admiral:\nPirate admirals command whole pirate fleets. They undertake audacious ventures, such as challenging the navies of coastal nations, hunting legendary sea creatures, or carving out their own pirate kingdoms. Pirate admirals might launch their fleets from hidden fortresses where they hoard their treasure—or keep maps to where they've hidden their riches. Some pirate admirals ally with the followers of oceanic deities, underwater dwellers, and sea monsters, as well as their fellow scalawags.\n\nSource:\tMonster Manual 2024 p. 242",
+        "environment": "any"
+      },
+      {
+        "name": "Pirate Captain [2024]",
+        "sortname": "Pirate, Captain",
+        "ancestry": "Pirate",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "17",
+        "hp": "84 (13d8+26)",
+        "speed": "30 ft.",
+        "init": "7",
+        "str": "10",
+        "dex": "18",
+        "con": "14",
+        "int": "10",
+        "wis": "14",
+        "cha": "17",
+        "save": "Str +3, Wis +5, Dex +7, Cha +6",
+        "skill": "Acrobatics +7, Perception +5",
+        "passive": "15",
+        "languages": "Common plus one other language",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Pistol, Rapier"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pirate makes three attacks, using Rapier or Pistol in any combination."
+          },
+          {
+            "name": "Rapier",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Piercing damage, and the pirate has Advantage on the next attack roll it makes before the end of this turn.",
+            "attack": "Rapier|+7|2d8+4"
+          },
+          {
+            "name": "Pistol",
+            "text": "Ranged Attack Roll: +7, range 30/90 ft. Hit: 15 (2d10 + 4) Piercing damage.",
+            "attack": "Pistol|+7|2d10+4"
+          },
+          {
+            "name": "Captain's Charm (Bonus Action)",
+            "text": "Wisdom Saving Throw: DC 14, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate's next turn."
+          }
+        ],
+        "reaction": {
+          "name": "Riposte",
+          "text": "Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range."
+        },
+        "description": "The term \"pirate\" encompasses a broad range of seafarers, including vicious sea rovers, dogged privateers, cursed treasure hunters, and others who seek riches and fame on the seas.\n\tPirates might be allies, foes, wild cards, or some combination thereof. While they are the bane of merchants and coastal communities, they know secrets of the sea and how to avoid aquatic threats. More unusual pirates set their sights beyond the waves, using airships, spelljamming vessels, plane-shifting craft, or stranger vehicles to explore and raid incredible realms.\n\nPirate Flags:\nTo terrify opponents and spread their reputations, pirate crews fly distinctive flags. Roll twice on or choose results from the Pirate Flags table to inspire what flag a pirate crew sails under.\n\nPirate Flags Shows:\n1d8 | The Flag Shows A...\n1 | Buccaneer\n2 | Dragon\n3 | Fiend\n4 | Goat\n5 | Kraken\n6 | Merfolk\n7 | Skull\n8 | Whale\n\nPirate Flags With:\n1d8 | With...\n1 | A captain's hat\n2 | Crossbones\n3 | Crossed blades\n4 | An eye patch\n5 | Lightning bolts\n6 | A mug of ale\n7 | A tattoo\n8 | A treasure chest\n\nPirate Captain:\nPirate captains command crews of pirates, dictating their destinations and targets. Captains cultivate fearsome and theatrical reputations, painting themselves as larger-than-life characters to terrorize their foes, ensure the obedience of their crews, and attract followers to their banner. Many have colorful nicknames inspired by signature traits and deeds.\n\nSource:\tMonster Manual 2024 p. 242",
+        "environment": "any"
+      },
+      {
+        "name": "Pit Fiend [2024]",
+        "size": "L",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil",
+        "ac": "21",
+        "hp": "337 (27d10+189)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "14",
+        "str": "26",
+        "dex": "14",
+        "con": "24",
+        "int": "22",
+        "wis": "18",
+        "cha": "24",
+        "save": "Wis +10, Dex +8",
+        "skill": "Persuasion +19, Perception +10",
+        "passive": "20",
+        "languages": "Infernal; telepathy 120 ft.",
+        "cr": "20",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": "fire, poison",
+        "conditionImmune": "poisoned",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+6"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Diabolical Restoration",
+            "text": "If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+          },
+          {
+            "name": "Fear Aura",
+            "text": "The pit fiend emanates an aura in a 20-foot Emanation while it doesn't have the Incapacitated condition. Wisdom Saving Throw: DC 21, any enemy that starts its turn in the aura. Failure: The target has the Frightened condition until the start of its next turn. Success: The target is immune to this pit fiend's aura for 24 hours."
+          },
+          {
+            "name": "Legendary Resistance (4/Day)",
+            "recharge": "4/DAY",
+            "text": "If the pit fiend fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The pit fiend has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +14, reach 10 ft. Hit: 18 (3d6 + 8) Piercing damage. If the target is a creature, it must make the following saving throw. Constitution Saving Throw: DC 21. Failure: The target has the Poisoned condition. While Poisoned, the target can't regain Hit Points and takes 21 (6d6) Poison damage at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+            "attack": [
+              "Bite|+14|3d6+8",
+              "Poison Damage||6d6"
+            ]
+          },
+          {
+            "name": "Devilish Claw",
+            "text": "Melee Attack Roll: +14, reach 10 ft. Hit: 26 (4d8 + 8) Necrotic damage.",
+            "attack": "Devilish Claw|+14|4d8+8"
+          },
+          {
+            "name": "Fiery Mace",
+            "text": "Melee Attack Roll: +14, reach 10 ft. Hit: 22 (4d6 + 8) Force damage plus 21 (6d6) Fire damage.",
+            "attack": [
+              "Fiery Mace|+14|4d6+8",
+              "Fire Damage||6d6"
+            ]
+          },
+          {
+            "name": "Hellfire Spellcasting (Recharge 4-6)",
+            "recharge": "D4",
+            "text": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire."
+          }
+        ],
+        "description": "Masterminds of the Nine Hells and generals of infernal legions, pit fiends seek conquests across the planes of existence. More than warmongers, these diabolical tyrants concoct intricate plots that play out among fiendish battlefields, infernal politics, and mortal conspiracies.\n\tPit fiends are the nobility of the Nine Hells, and many rule Lower Planar fiefdoms, doomed mortal worlds, and other infernal redoubts. Most serve archdevils of the Nine Hells as they pursue their own ambitions. Ranks of lesser devils obey pit fiends, but these cunning tyrants remain on guard against betrayal from their servants.\n\tSmoldering with the evil of the Nine Hells, pit fiends strike fear in creatures with their mere presence. Despite their size and incredible physical and magical might, pit fiends are as likely to try to corrupt foes as they are to destroy them outright. Pit fiends' arrogance can lead them to underestimate mortal foes—a failing that can lead to their downfall.\n\nSource:\tMonster Manual 2024 p. 243",
+        "environment": "planar (nine hells)"
+      },
+      {
+        "name": "Pixie [2024]",
+        "sortname": "Pixie",
+        "ancestry": "Pixie",
+        "size": "T",
+        "type": "fey",
+        "alignment": "neutral good",
+        "ac": "15",
+        "hp": "9 (6d4-6)",
+        "speed": "10 ft., fly 30 ft.",
+        "init": "5",
+        "str": "2",
+        "dex": "20",
+        "con": "8",
+        "int": "10",
+        "wis": "14",
+        "cha": "15",
+        "save": null,
+        "skill": "Stealth +7, Perception +4",
+        "passive": "14",
+        "languages": "Sylvan",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The pixie has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Faerie Dust",
+            "text": "Melee or Ranged Attack Roll: +4, reach 5 ft. or range 60 ft. Hit: 1 Radiant damage, and the target has the Charmed or Poisoned condition (pixie's choice) until the start of the pixie's next turn.",
+            "attack": "Faerie Dust|+4|1"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The pixie casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 12):\n\n\t• At will: Dancing Lights, Druidcraft, Invisibility (self only)\n\t• 1/Day each: Detect Thoughts, Fly, Sleep"
+          }
+        ],
+        "spells": "Dancing Lights [2024], Druidcraft [2024], Invisibility [2024], Detect Thoughts [2024], Fly [2024], Sleep [2024]",
+        "description": "Barely a foot tall, pixies resemble diminutive elves with gossamer wings. They invisibly observe those who enter their wooded homes, revealing themselves to those with friendly intentions. Those who are unfriendly become the targets of pixies' pranks.\n\nPixie:\nPixies spend their days frolicking and exploring and avoid direct conflict when they can.\n\nSource:\tMonster Manual 2024 p. 244",
+        "environment": "forest, planar (feywild)"
+      },
+      {
+        "name": "Pixie Wonderbringer [2024]",
+        "sortname": "Pixie, Wonderbringer",
+        "ancestry": "Pixie",
+        "size": "T",
+        "type": "fey",
+        "alignment": "neutral good",
+        "ac": "15",
+        "hp": "60 (24d4)",
+        "speed": "10 ft., fly 30 ft.",
+        "init": "5",
+        "str": "2",
+        "dex": "20",
+        "con": "10",
+        "int": "11",
+        "wis": "14",
+        "cha": "18",
+        "save": null,
+        "skill": "Stealth +8, Arcana +3, Perception +5",
+        "passive": "15",
+        "languages": "Common, Elvish, Sylvan",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The pixie has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pixie makes two Faerie Dust attacks."
+          },
+          {
+            "name": "Faerie Dust",
+            "text": "Melee or Ranged Attack Roll: +7, reach 5 ft. or range 60 ft. Hit: 15 (2d10 + 4) Radiant damage, and the target has the Charmed or Poisoned condition (pixie's choice) until the start of the pixie's next turn.",
+            "attack": "Faerie Dust|+7|2d10+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The pixie casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):\n\n\t• At will: Dancing Lights, Druidcraft, Invisibility (self only)\n\t• 1/Day each: Detect Thoughts, Fly, Major Image"
+          },
+          {
+            "name": "Burst of Wonder (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The pixie casts Entangle, Polymorph, or Tasha's Hideous Laughter, requiring no Material components and using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Dancing Lights [2024], Druidcraft [2024], Invisibility [2024], Detect Thoughts [2024], Fly [2024], Major Image [2024], Entangle [2024], Polymorph [2024], Tasha's Hideous Laughter [2024]",
+        "description": "Barely a foot tall, pixies resemble diminutive elves with gossamer wings. They invisibly observe those who enter their wooded homes, revealing themselves to those with friendly intentions. Those who are unfriendly become the targets of pixies' pranks.\n\nPixie Wonderbringer:\nEnergetic entertainers, wonderbringers use their magic in defense of the wilderness when they must.\n\nSource:\tMonster Manual 2024 p. 244",
+        "environment": "forest, planar (feywild)"
+      },
+      {
+        "name": "Planetar [2024]",
+        "size": "L",
+        "type": "celestial (angel)",
+        "alignment": "lawful good",
+        "ac": "19",
+        "hp": "262 (21d10+147)",
+        "speed": "40 ft., fly 120 ft.(hover)",
+        "init": "10",
+        "str": "24",
+        "dex": "20",
+        "con": "24",
+        "int": "19",
+        "wis": "22",
+        "cha": "25",
+        "save": "Str +12, Wis +11, Con +12, Cha +12",
+        "skill": "Perception +11",
+        "passive": "21",
+        "languages": "all; telepathy 120 ft.",
+        "cr": "16",
+        "vulnerable": null,
+        "resist": "radiant",
+        "immune": null,
+        "conditionImmune": "charmed, exhaustion, frightened",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Divine Awareness",
+            "text": "The planetar knows if it hears a lie."
+          },
+          {
+            "name": "Exalted Restoration",
+            "text": "If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The planetar has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The planetar makes three Radiant Sword attacks or uses Holy Burst twice."
+          },
+          {
+            "name": "Radiant Sword",
+            "text": "Melee Attack Roll: +12, reach 10 ft. Hit: 14 (2d6 + 7) Slashing damage plus 18 (4d8) Radiant damage.",
+            "attack": [
+              "Radiant Sword|+12|2d6+7",
+              "Radiant Damage||4d8"
+            ]
+          },
+          {
+            "name": "Holy Burst",
+            "text": "Dexterity Saving Throw: DC 20, each enemy in a 20-foot-radius Sphere centered on a point the planetar can see within 120 feet. Failure: 24 (7d6) Radiant damage. Success: Half damage.",
+            "attack": "Holy Burst||7d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The planetar casts one of the following spells, requiring no Material components and using Charisma as spellcasting ability (spell save DC 20):\n\n\t• At will: Detect Evil and Good\n\t• 1/Day each: Commune, Control Weather, Dispel Evil and Good, Raise Dead"
+          },
+          {
+            "name": "Divine Aid (2/Day) (Bonus Action)",
+            "recharge": "2/DAY",
+            "text": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Cure Wounds [2024], Invisibility [2024], Lesser Restoration [2024], Remove Curse [2024], Detect Evil and Good [2024], Commune [2024], Control Weather [2024], Dispel Evil and Good [2024], Raise Dead [2024]",
+        "description": "Planetars deliver the punishment of righteous gods. These angels innately know truth from lies, and they use magic and blessed weapons to protect the just and root out wickedness across the Multiverse.\n\tThese angels act where they can against overwhelming evil, but to avoid the attention of the Lower Planes, they prefer to let mortals attend to affairs on the Material Plane. Planetars often choose mortal champions to oppose threats they're loath to face directly, involving themselves only if necessary. Roll on or choose a result from the Planetar Quests table to inspire what evil a planetar might recruit heroes to thwart.\n\nPlanetar Quests:\n1d6 | The Planetar Entreats a Mortal Hero To...\n1 | Convince a villain to meet with the angel.\n2 | Find a loved one a villain believes is dead.\n3 | Heal the loved one of an evil ruler.\n4 | Inspire the defenders of a besieged holy site.\n5 | Recover and destroy an evil Artifact.\n6 | Reveal the true name of a devil to banish it.\n\nSource:\tMonster Manual 2024 p. 245",
+        "environment": "planar (upper)"
+      },
+      {
+        "name": "Plesiosaurus [2024]",
+        "size": "L",
+        "type": "beast (dinosaur)",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "68 (8d10+24)",
+        "speed": "20 ft., swim 40 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "15",
+        "con": "16",
+        "int": "2",
+        "wis": "12",
+        "cha": "5",
+        "save": null,
+        "skill": "Stealth +4, Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Hold Breath",
+            "text": "The plesiosaurus can hold its breath for 1 hour."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 11 (2d6 + 4) Piercing damage.",
+          "attack": "Bite|+6|2d6+4"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 366",
+        "environment": "arctic, underwater"
+      },
+      {
+        "name": "Polar Bear [2024]",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "42 (5d10+15)",
+        "speed": "40 ft., swim 40 ft.",
+        "init": "2",
+        "str": "20",
+        "dex": "14",
+        "con": "16",
+        "int": "2",
+        "wis": "13",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +4, Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The bear makes two Rend attacks."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 9 (1d8 + 5) Slashing damage.",
+            "attack": "Rend|+7|1d8+5"
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 367",
+        "environment": "arctic"
+      },
+      {
+        "name": "Poltergeist [2024]",
+        "size": "S",
+        "type": "undead",
+        "alignment": "chaotic neutral",
+        "ac": "12",
+        "hp": "22 (5d8)",
+        "speed": "5 ft., fly 50 ft.(hover)",
+        "init": "2",
+        "str": "1",
+        "dex": "14",
+        "con": "11",
+        "int": "10",
+        "wis": "10",
+        "cha": "14",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Common plus one other language",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": "acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
+        "immune": "necrotic, poison",
+        "conditionImmune": "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Incorporeal Movement",
+            "text": "The poltergeist can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.",
+            "attack": "Incorporeal Movement||1d10"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The poltergeist makes one Object Slam attack and uses Telekinetic Thrust."
+          },
+          {
+            "name": "Object Slam",
+            "text": "Melee or Ranged Attack Roll: +4, reach 5 ft. or range 30 ft. Hit: 7 (2d4 + 2) Bludgeoning damage.",
+            "attack": "Object Slam|+4|2d4+2"
+          },
+          {
+            "name": "Telekinetic Thrust",
+            "text": "Strength Saving Throw: DC 12, one creature the poltergeist can see within 30 feet. Failure: 9 (2d6 + 2) Force damage, and the target is pushed up to 30 feet straight away from the poltergeist.",
+            "attack": "Telekinetic Thrust||2d6+2"
+          },
+          {
+            "name": "Vanish (Bonus Action)",
+            "text": "The poltergeist gives itself the Invisible condition or ends that condition on itself."
+          }
+        ],
+        "description": "Poltergeists are spirits that confuse and torment the living. While typically not visible, they sometimes appear as faded images of whoever they were in life. Some poltergeists don't realize they're dead and go through the motions of their past lives. Others are malicious beings or embodiments of fractured psyches that sow discord where they haunt.\n\tPoltergeists telekinetically move objects in the places they lurk. Roll on or choose a result from the Poltergeist Activities table to inspire how a poltergeist menaces the living.\n\nPoltergeist Activities:\n1d8 | To Torment the Living, the Poltergeist...\n1 | Keeps returning a discarded item.\n2 | Leaves footprints on vertical surfaces.\n3 | Makes noises like someone trapped in a wall.\n4 | Organizes a pack's contents across the floor.\n5 | Playfully puppets a corpse or doll.\n6 | Removes bedding while someone sleeps.\n7 | Sticks knives or weapons in the ceiling.\n8 | Uncannily stacks books, furniture, or utensils.\n\nSource:\tMonster Manual 2024 p. 246",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Pony [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "11 (2d8+2)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "15",
+        "dex": "10",
+        "con": "13",
+        "int": "2",
+        "wis": "11",
+        "cha": "7",
+        "save": "Str +4",
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Hooves",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.",
+          "attack": "Hooves|+4|1d4+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 367,\n\t\tPlayer's Handbook 2024 p. 354",
+        "environment": "grassland, urban"
+      },
+      {
+        "name": "Priest [2024]",
+        "sortname": "Priest",
+        "ancestry": "Priest",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "38 (7d8+7)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "16",
+        "dex": "10",
+        "con": "12",
+        "int": "13",
+        "wis": "16",
+        "cha": "13",
+        "save": null,
+        "skill": "Medicine +7, Perception +5, Religion +5",
+        "passive": "15",
+        "languages": "Common plus one other language",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Chain Shirt, Holy Symbol, Mace"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The priest makes two attacks, using Mace or Radiant Flame in any combination."
+          },
+          {
+            "name": "Mace",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage plus 5 (2d4) Radiant damage.",
+            "attack": [
+              "Mace|+5|1d6+3",
+              "Radiant Damage||2d4"
+            ]
+          },
+          {
+            "name": "Radiant Flame",
+            "text": "Ranged Attack Roll: +5, range 60 ft. Hit: 11 (2d10) Radiant damage.",
+            "attack": "Radiant Flame|+5|2d10"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The priest casts one of the following spells, using Wisdom as the spellcasting ability:\n\n\t• At will: Light, Thaumaturgy\n\t• 1/Day: Spirit Guardians"
+          },
+          {
+            "name": "Divine Aid (3/Day) (Bonus Action)",
+            "recharge": "3/DAY",
+            "text": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Bless [2024], Dispel Magic [2024], Healing Word [2024], Lesser Restoration [2024], Light [2024], Thaumaturgy [2024], Spirit Guardians [2024]",
+        "description": "Priests harness the power of faith to work miracles. These religious adherents are as diverse as the faiths they follow. Some obey gods and their servants, while others live by age-old creeds. Belief guides priests' actions and their magic, which they use to shape the world in line with their ideologies.\n\tRoll on or choose a result from the Priest Roles table to inspire different sorts of priests.\n\nPriest Roles:\n1d10 | The Priest Is...\n1 | An ascetic who keeps wicked spirits at bay.\n2 | An elder who speaks for the dead.\n3 | An exorcist who hunts wicked spirits.\n4 | A follower of a god no one has heard of.\n5 | A mediator and teacher of traditional ways.\n6 | A philosopher devoted to a concept, multiversal view, or plane of existence.\n7 | The reincarnation of an ancient faith leader.\n8 | A ritualist who uses tinctures and performances to access the divine.\n9 | A shaman whose medicines ease many ills.\n10 | A zealot who wages war for a divine cause.\n\nPriest:\nPriests draw on their beliefs to heal the needful and smite their foes. They can channel their faith as spells and empower their weapons with divine might.\n\nSource:\tMonster Manual 2024 p. 248",
+        "environment": "any"
+      },
+      {
+        "name": "Priest Acolyte [2024]",
+        "sortname": "Priest, Acolyte",
+        "ancestry": "Priest",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "11 (2d8+2)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "14",
+        "dex": "10",
+        "con": "12",
+        "int": "10",
+        "wis": "14",
+        "cha": "11",
+        "save": null,
+        "skill": "Medicine +4, Religion +2",
+        "passive": "12",
+        "languages": "Common",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Chain Shirt, Holy Symbol, Mace"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Mace",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage plus 2 (1d4) Radiant damage.",
+            "attack": "Mace|+4|1d6+2+1d4"
+          },
+          {
+            "name": "Radiant Flame",
+            "text": "Ranged Attack Roll: +4, range 60 ft. Hit: 7 (2d6) Radiant damage.",
+            "attack": "Radiant Flame|+4|2d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The priest casts one of the following spells, using Wisdom as the spellcasting ability:\n\n\t• At will: Light, Thaumaturgy"
+          },
+          {
+            "name": "Divine Aid (1/Day) (Bonus Action)",
+            "recharge": "1/DAY",
+            "text": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Bless [2024], Healing Word [2024], Sanctuary [2024], Light [2024], Thaumaturgy [2024]",
+        "description": "Priests harness the power of faith to work miracles. These religious adherents are as diverse as the faiths they follow. Some obey gods and their servants, while others live by age-old creeds. Belief guides priests' actions and their magic, which they use to shape the world in line with their ideologies.\n\tRoll on or choose a result from the Priest Roles table to inspire different sorts of priests.\n\nPriest Roles:\n1d10 | The Priest Is...\n1 | An ascetic who keeps wicked spirits at bay.\n2 | An elder who speaks for the dead.\n3 | An exorcist who hunts wicked spirits.\n4 | A follower of a god no one has heard of.\n5 | A mediator and teacher of traditional ways.\n6 | A philosopher devoted to a concept, multiversal view, or plane of existence.\n7 | The reincarnation of an ancient faith leader.\n8 | A ritualist who uses tinctures and performances to access the divine.\n9 | A shaman whose medicines ease many ills.\n10 | A zealot who wages war for a divine cause.\n\nPriest Acolyte:\nPriest acolytes have great faith but modest magical skill. Some might be trainees in religious organizations or soldiers in zealous armies, while others are faith leaders in small communities or wanderers on pilgrimages.\n\nSource:\tMonster Manual 2024 p. 247",
+        "environment": "any"
+      },
+      {
+        "name": "Primeval Owlbear [2024]",
+        "sortname": "Owlbear, Primeval",
+        "ancestry": "Owlbear",
+        "size": "H",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "16",
+        "hp": "126 (12d12+48)",
+        "speed": "40 ft., climb 40 ft., fly 5 ft.",
+        "init": "5",
+        "str": "22",
+        "dex": "14",
+        "con": "19",
+        "int": "8",
+        "wis": "15",
+        "cha": "7",
+        "save": "Wis +5, Con +7",
+        "skill": "Perception +8",
+        "passive": "18",
+        "languages": null,
+        "cr": "7",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The owlbear has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The owlbear makes two Ravage attacks."
+          },
+          {
+            "name": "Ravage",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 15 (2d8 + 6) Slashing damage. If the target is a Huge or smaller creature and the owlbear moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Slashing damage and has the Prone condition.",
+            "attack": [
+              "Ravage|+9|2d8+6",
+              "Extra Slashing Damage||2d8"
+            ]
+          },
+          {
+            "name": "Screech (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Constitution Saving Throw: DC 15, each creature in a 30-foot Emanation originating from the owlbear. Failure: 27 (6d8) Thunder damage, and the target has the Incapacitated condition until the end of its next turn. Success: Half damage only.",
+            "attack": "Screech||6d8"
+          }
+        ],
+        "description": "Created long ago by misguided mages, owlbears combine keen avian eyes, thick feathers, and a tearing beak with a mighty bearlike frame. Despite their magical origins, owlbears have propagated and spread to wildernesses across the multiverse.\n\tOwlbears dwell in distinctive dens. Roll on or choose a result from the Owlbear Den Features table to inspire an owlbear den's noteworthy traits.\n\nOwlbear Den Features:\n1d4 | An Owlbear Den Contains...\n1 | Evidence of previous occupants, like bandits, wolves, or dragons.\n2 | Heaps of regurgitated pellets studded with coins or other treasure.\n3 | A nest with 1d6 owlbear eggs.\n4 | Passages through the earth or hollow trees.\n\nPrimeval Owlbear:\nAncient forests and Feywild demesnes steeped in magic can give rise to particularly large and vicious owlbears. These primeval specimens can fly—albeit poorly—and emit thunderous screeches that can rattle foes and even tear them asunder.\n\nSource:\tMonster Manual 2024 p. 234",
+        "environment": "forest"
+      },
+      {
+        "name": "Pseudodragon [2024]",
+        "size": "T",
+        "type": "dragon",
+        "alignment": "neutral good",
+        "ac": "14",
+        "hp": "10 (3d4+3)",
+        "speed": "15 ft., fly 60 ft.",
+        "init": "2",
+        "str": "6",
+        "dex": "15",
+        "con": "13",
+        "int": "10",
+        "wis": "12",
+        "cha": "10",
+        "save": null,
+        "skill": "Stealth +4, Perception +5",
+        "passive": "15",
+        "languages": "understands Common and Draconic but can't speak",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 10 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The pseudodragon has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The pseudodragon makes two Bite attacks."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage.",
+            "attack": "Bite|+4|1d4+2"
+          },
+          {
+            "name": "Sting",
+            "text": "Constitution Saving Throw: DC 12, one creature the pseudodragon can see within 5 feet. Failure: 5 (2d4) Poison damage, and the target has the Poisoned condition for 1 hour. Failure by 5 or More: While Poisoned, the target also has the Unconscious condition, which ends early if the target takes damage or a creature within 5 feet of it takes an action to wake it.",
+            "attack": "Sting||2d4"
+          }
+        ],
+        "description": "Pseudodragons dwell in scenic wildernesses, preferably where life is easy and prey is small and slow. There they behave like contented wyrms, creating tiny lairs amid ancient trees and rugged cliffs. They fill these lairs with shiny rocks, colorful shells, and unattended treasures that catch their attention, and they guard these hoards fiercely. Pseudodragons grow to the size of large house cats, and most have red-brown scales. Some have scales with other hues or patterns—markings distinct from those of their larger draconic cousins.\n\tMany magic-users attempt to befriend pseudodragons, hoping to enlist them as familiars. The creatures' intellect and resistance to magic make them excellent companions, and they're considered status symbols in some spellcasting circles.\n\tMany pseudodragons prefer the finer things in life. These diminutive dragons might be inclined to aid those who ply them with treats. Contrariwise, mages who don't properly pamper their pseudodragon familiars might be abandoned without warning. Roll on or choose an option from the Pseudodragon Treats table to inspire a pseudodragon's taste in gifts.\n\nPseudodragon Treats:\n1d10 | The Pseudodragon Wants...\n1 | Flamboyant accessories it can wear.\n2 | Mementos from a lost friend or master.\n3 | Outlandish delicacies—like axe beak-egg omelets or mammoth-milk cheese.\n4 | The possessions of a sibling, rival, or master.\n5 | Shiny gifts, from gems to abalone shells.\n6 | Soft bedding and stuffed toys.\n7 | A specific cook's signature dessert.\n8 | Time-consuming beauty treatments.\n9 | To hear a bedtime story or favorite song.\n10 | Trophies and important-sounding titles.\n\nSource:\tMonster Manual 2024 p. 249,\n\t\tPlayer's Handbook 2024 p. 354",
+        "environment": "coastal, desert, forest, hill, mountain, urban"
+      },
+      {
+        "name": "Psychic Gray Ooze [2024]",
+        "sortname": "Gray Ooze, Psychic",
+        "ancestry": "Ooze",
+        "size": "M",
+        "type": "ooze",
+        "alignment": "unaligned",
+        "ac": "9",
+        "hp": "37 (5d8+15)",
+        "speed": "10 ft., climb 10 ft.",
+        "init": "-1",
+        "str": "12",
+        "dex": "8",
+        "con": "16",
+        "int": "10",
+        "wis": "6",
+        "cha": "2",
+        "save": null,
+        "skill": "Stealth +3",
+        "passive": "8",
+        "languages": null,
+        "cr": "1",
+        "vulnerable": null,
+        "resist": "acid, cold, fire, psychic",
+        "immune": null,
+        "conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, grappled, prone, restrained",
+        "senses": "blindsight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Amorphous",
+            "text": "The ooze can move through a space as narrow as 1 inch without expending extra movement to do so."
+          }
+        ],
+        "action": [
+          {
+            "name": "Pseudopod",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 11 (3d6 + 1) Acid damage, and the target has Disadvantage on Intelligence saving throws until the end of the ooze's next turn.",
+            "attack": "Pseudopod|+3|3d6+1"
+          },
+          {
+            "name": "Psychic Crush",
+            "text": "Intelligence Saving Throw: DC 10, one creature the ooze can see within 60 feet. Failure: 13 (3d8) Psychic damage.",
+            "attack": "Psychic Crush||3d8"
+          }
+        ],
+        "reaction": {
+          "name": "Mind Corrosion",
+          "text": "Trigger: The ooze fails a saving throw against a spell or another magical effect created by a creature. Response: The triggering creature takes 3 (1d6) Psychic damage."
+        },
+        "description": "Source:\tMonster Manual 2024 p. 151",
+        "environment": "underdark"
+      },
+      {
+        "name": "Pteranodon [2024]",
+        "size": "M",
+        "type": "beast (dinosaur)",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "13 (3d8)",
+        "speed": "10 ft., fly 60 ft.",
+        "init": "2",
+        "str": "12",
+        "dex": "15",
+        "con": "10",
+        "int": "2",
+        "wis": "9",
+        "cha": "5",
+        "save": null,
+        "skill": "Perception +1",
+        "passive": "11",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Flyby",
+            "text": "The pteranodon doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+          }
+        ],
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+          "attack": "Bite|+4|1d8+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 367",
+        "environment": "coastal, grassland, mountain"
+      },
+      {
+        "name": "Purple Worm [2024]",
+        "sortname": "Worm, Purple",
+        "ancestry": "Worm",
+        "size": "G",
+        "type": "monstrosity",
+        "alignment": "unaligned",
+        "ac": "18",
+        "hp": "247 (15d20+90)",
+        "speed": "50 ft., burrow 50 ft.",
+        "init": "4",
+        "str": "28",
+        "dex": "7",
+        "con": "22",
+        "int": "1",
+        "wis": "8",
+        "cha": "4",
+        "save": "Wis +4, Con +11",
+        "skill": null,
+        "passive": "9",
+        "languages": null,
+        "cr": "15",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 30 ft., tremorsense 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Tunneler",
+            "text": "The worm can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The worm makes one Bite attack and one Tail Stinger attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +14, reach 10 ft. Hit: 22 (3d8 + 9) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 19), and it has the Restrained condition until the grapple ends.",
+            "attack": "Bite|+14|3d8+9"
+          },
+          {
+            "name": "Tail Stinger",
+            "text": "Melee Attack Roll: +14, reach 10 ft. Hit: 16 (2d6 + 9) Piercing damage plus 35 (10d6) Poison damage.",
+            "attack": [
+              "Tail Stinger|+14|2d6+9",
+              "Poison Damage||10d6"
+            ]
+          },
+          {
+            "name": "Swallow (Bonus Action)",
+            "text": "Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the worm (it can have up to three creatures swallowed at a time). Failure: The target is swallowed by the worm, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm's turns.\n\tIf the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the worm and has the Prone condition. If the worm dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone.",
+            "attack": "Acid Damage||5d6"
+          }
+        ],
+        "description": "Titanic purple worms burrow through the earth and sand. Ever ravenous, they devour smaller creatures and ravage entire communities in their aimless burrowing.\n\nSource:\tMonster Manual 2024 p. 250",
+        "environment": "desert, underdark"
+      }
+    ]
+  }
+}

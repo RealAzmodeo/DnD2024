@@ -1,0 +1,2054 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Mage [2024]",
+        "sortname": "Mage",
+        "ancestry": "Mage",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "15",
+        "hp": "81 (18d8)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "9",
+        "dex": "14",
+        "con": "11",
+        "int": "17",
+        "wis": "12",
+        "cha": "11",
+        "save": "Wis +4, Int +6",
+        "skill": "Arcana +6, History +6, Perception +4",
+        "passive": "14",
+        "languages": "Common and any three languages",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Wand"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mage makes three Arcane Burst attacks."
+          },
+          {
+            "name": "Arcane Burst",
+            "text": "Melee or Ranged Attack Roll: +6, reach 5 ft. or range 120 ft. Hit: 16 (3d8 + 3) Force damage.",
+            "attack": "Arcane Burst|+6|3d8+3"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):\n\n\t• At will: Detect Magic, Light, Mage Armor (included in AC), Mage Hand, Prestidigitation\n\t• 2/Day each: Fireball (level 4 version), Invisibility\n\t• 1/Day each: Cone of Cold, Fly"
+          },
+          {
+            "name": "Misty Step (3/Day) (Bonus Action)",
+            "recharge": "3/DAY",
+            "text": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "reaction": {
+          "name": "Protective Magic (3/Day)",
+          "recharge": "3/DAY",
+          "text": "The mage casts Counterspell or Shield in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+        },
+        "spells": "Detect Magic [2024], Light [2024], Mage Armor [2024], Mage Hand [2024], Prestidigitation [2024], Fireball [2024], Invisibility [2024], Cone of Cold [2024], Fly [2024], Misty Step [2024]",
+        "description": "Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.\n\nRoll on or choose a result from the Mage Roles table to inspire different sorts of mages.\n\nMage Roles:\n1d10 | The Mage Is...\n1 | An astronomer who draws magic from stars.\n2 | An author who writes about the occult.\n3 | A magical engineer who creates wonders.\n4 | An oracle who interprets omens.\n5 | A prodigy with a remarkable magical heritage.\n6 | A psion whose powers manifest as spells.\n7 | A scholar investigating ancient lore.\n8 | A soothsayer who advises rulers.\n9 | A war mage who aids soldiers in battle.\n10 | A witch who shares secret wisdom.\n\nMage:\nMages are accomplished spellcasters whose lives have been shaped by magic. They can use their powers to defend or dominate other creatures, or they could focus on magical research and unlocking mystical secrets.\n\nSource:\tMonster Manual 2024 p. 199",
+        "environment": "any"
+      },
+      {
+        "name": "Mage Apprentice [2024]",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "neutral",
+        "ac": "15",
+        "hp": "49 (9d8+9)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "8",
+        "dex": "14",
+        "con": "12",
+        "int": "16",
+        "wis": "13",
+        "cha": "10",
+        "save": "Wis +3, Int +5",
+        "skill": "Arcana +5, Perception +3",
+        "passive": "13",
+        "languages": "Common plus one other language",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Component Pouch"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.\nIndividual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Arcane Burst",
+            "text": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 120 ft. Hit: 14 (2d10 + 3) Force damage.",
+            "attack": "Arcane Burst|+5|2d10+3"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 13, +5 to hit with spell attacks):\n\nAt will: Mage Hand, Prestidigitation\n\n1/Day each: Disguise Self, Ice Knife, Mage Armor (included in AC), Thunderwave"
+          }
+        ],
+        "description": "Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.\n\nRoll on or choose a result from the Mage Roles table to inspire different sorts of mages.\n\nMage Roles:\n1d10 | The Mage Is...\n1 | An astronomer who draws magic from stars.\n2 | An author who writes about the occult.\n3 | A magical engineer who creates wonders.\n4 | An oracle who interprets omens.\n5 | A prodigy with a remarkable magical heritage.\n6 | A psion whose powers manifest as spells.\n7 | A scholar investigating ancient lore.\n8 | A soothsayer who advises rulers.\n9 | A war mage who aids soldiers in battle.\n10 | A witch who shares secret wisdom.\n\nMage Apprentice:\nMage apprentices are spellcasters of humble skill. Some are students of accomplished mages, while others have innate powers.\n\nSource:\tMonster Manual 2024 p. 198",
+        "environment": "any"
+      },
+      {
+        "name": "Magma Mephit [2024]",
+        "sortname": "Mephit, Magma",
+        "ancestry": "Mephit",
+        "size": "S",
+        "type": "elemental",
+        "alignment": "neutral evil",
+        "ac": "11",
+        "hp": "18 (4d6+4)",
+        "speed": "30 ft., fly 30 ft.",
+        "init": "1",
+        "str": "8",
+        "dex": "12",
+        "con": "12",
+        "int": "7",
+        "wis": "10",
+        "cha": "10",
+        "save": null,
+        "skill": "Stealth +3",
+        "passive": "10",
+        "languages": "Primordial (Ignan, Terran)",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "fire, poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Death Burst",
+            "text": "The mephit explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 5-foot Emanation originating from the mephit. Failure: 7 (2d6) Fire damage. Success: Half damage.",
+            "attack": "Death Burst||2d6"
+          }
+        ],
+        "action": [
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Slashing damage plus 3 (1d6) Fire damage.",
+            "attack": [
+              "Claw|+3|1d4+1",
+              "Fire Damage||1d6"
+            ]
+          },
+          {
+            "name": "Fire Breath (Recharge 6)",
+            "recharge": "D6",
+            "text": "Dexterity Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 7 (2d6) Fire damage. Success: Half damage.",
+            "attack": "Fire Breath||2d6"
+          }
+        ],
+        "description": "Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.\n\tMephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.\n\nMagma Mephit:\nThese mephits embody the merging of earth and fire as glowing magma. They love melting things, but they loathe magmins and attack them on sight.\n\nSource:\tMonster Manual 2024 p. 207",
+        "environment": "planar (elemental)"
+      },
+      {
+        "name": "Magmin [2024]",
+        "size": "S",
+        "type": "elemental",
+        "alignment": "chaotic neutral",
+        "ac": "14",
+        "hp": "13 (3d6+3)",
+        "speed": "30 ft.",
+        "init": "2",
+        "str": "7",
+        "dex": "15",
+        "con": "12",
+        "int": "8",
+        "wis": "11",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Primordial (Ignan)",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "fire",
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Death Burst",
+            "text": "The magmin explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the magmin. Failure: 7 (2d6) Fire damage. Success: Half damage.",
+            "attack": "Death Burst||2d6"
+          }
+        ],
+        "action": [
+          {
+            "name": "Touch",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Fire damage. If the target is a creature or a flammable object that isn't being worn or carried, it starts burning.",
+            "attack": "Touch|+4|2d4+2"
+          },
+          {
+            "name": "Ignited Illumination (Bonus Action)",
+            "text": "The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet."
+          }
+        ],
+        "description": "Magmins divide all things into two categories: things that are on fire and things that should be on fire. With bodies of flame and magmatic rock, these halfling-size creatures delight in setting fires. They do so not out of malice but out of enthusiasm for primal fire. They don't consider that objects have value beyond kindling or that creatures can be harmed by flames. If such concepts are explained to them, they find the ideas diﬃcult to grasp and don't remember them for long. Rather, they relish every opportunity to set flammable things alight, delighting in igniting paper, wooden structures, and explosives. Magmins are dangerous even in death, since they explode when they're destroyed, their flames igniting combustible materials nearby.\n\tMagmins might be conjured by magic-users to harry foes or might escape the Elemental Plane of Fire through portals or rifts that lead to other realms. They're attracted to places of intense heat, such as volcanoes and rivers of magma. If they can't find such favored conditions, magmins eagerly burn structures or start wildfires to entertain themselves.\n\nSource:\tMonster Manual 2024 p. 200",
+        "environment": "planar (elemental plane of fire)"
+      },
+      {
+        "name": "Mammoth [2024]",
+        "size": "H",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "126 (11d12+55)",
+        "speed": "50 ft.",
+        "init": "3",
+        "str": "24",
+        "dex": "9",
+        "con": "21",
+        "int": "3",
+        "wis": "11",
+        "cha": "6",
+        "save": "Str +10, Con +8",
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mammoth makes two Gore attacks."
+          },
+          {
+            "name": "Gore",
+            "text": "Melee Attack Roll: +10, reach 10 ft. Hit: 18 (2d10 + 7) Piercing damage. If the target is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.",
+            "attack": "Gore|+10|2d10+7"
+          },
+          {
+            "name": "Trample (Bonus Action)",
+            "text": "Dexterity Saving Throw: DC 18, one creature within 5 feet that has the Prone condition. Failure: 29 (4d10 + 7) Bludgeoning damage. Success: Half damage.",
+            "attack": "Trample||4d10+7"
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 365",
+        "environment": "arctic"
+      },
+      {
+        "name": "Manes [2024]",
+        "sortname": "Manes",
+        "ancestry": "Manes",
+        "size": "S",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "9",
+        "hp": "9 (2d6+2)",
+        "speed": "20 ft.",
+        "init": "0",
+        "str": "10",
+        "dex": "9",
+        "con": "13",
+        "int": "3",
+        "wis": "8",
+        "cha": "4",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "understands Abyssal but can't speak",
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "charmed, frightened, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Claw",
+          "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 5 (2d4) Slashing damage.",
+          "attack": "Claw|+2|2d4"
+        },
+        "description": "The lowest form of demons, manes appear when truly loathsome souls are condemned to the Abyss. These misshapen demons have distorted features and bodies that crawl with Abyssal parasites. Overwhelmed by demonic urges and constant terror, manes know only shock and frenzied outbursts.\n\nManes:\nManes lash out at creatures that appear weaker than themselves—or that react to them with fear—and strive to avoid more powerful demons. When manes escape from the Abyss, they go on reckless rampages and inflict as much harm as possible.\n\nSource:\tMonster Manual 2024 p. 201",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Manes Vaporspawn [2024]",
+        "sortname": "Manes, Vaporspawn",
+        "ancestry": "Manes",
+        "size": "M",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "13",
+        "hp": "19 (3d8+6)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "14",
+        "dex": "12",
+        "con": "15",
+        "int": "5",
+        "wis": "8",
+        "cha": "3",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "understands Abyssal but can't speak",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "charmed, exhaustion, frightened, grappled, poisoned, restrained",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Contortionist",
+            "text": "The manes can move through a space as narrow as 1 inch without expending extra movement to do so."
+          },
+          {
+            "name": "Sickening Vapors",
+            "text": "Constitution Saving Throw: DC 12, each creature in a 5-foot Emanation originating from the manes at the end of the manes's turn. Failure: The target has the Incapacitated condition until the end of its next turn. Success: The target is immune to this manes's Sickening Vapors for 24 hours."
+          }
+        ],
+        "action": [
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage plus 5 (2d4) Necrotic damage.",
+            "attack": [
+              "Claw|+4|1d6+2",
+              "Necrotic Damage||2d4"
+            ]
+          },
+          {
+            "name": "Shadow Stealth (Bonus Action)",
+            "text": "While in Dim Light or Darkness, the manes takes the Hide action."
+          }
+        ],
+        "description": "The lowest form of demons, manes appear when truly loathsome souls are condemned to the Abyss. These misshapen demons have distorted features and bodies that crawl with Abyssal parasites. Overwhelmed by demonic urges and constant terror, manes know only shock and frenzied outbursts.\n\nManes Vaporspawn:\nVaporspawn arise from evil souls shattered by unspeakable torments or the depredations of more powerful demons. These distorted manes undergo endless, painful contortions, and they share their torment with whatever creatures they encounter.\n\nSource:\tMonster Manual 2024 p. 201",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Manticore [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "lawful evil",
+        "ac": "14",
+        "hp": "68 (8d10+24)",
+        "speed": "30 ft., fly 50 ft.",
+        "init": "3",
+        "str": "17",
+        "dex": "16",
+        "con": "17",
+        "int": "7",
+        "wis": "12",
+        "cha": "8",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": "Common",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The manticore makes three attacks, using Rend or Tail Spike in any combination."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.",
+            "attack": "Rend|+5|1d8+3"
+          },
+          {
+            "name": "Tail Spike",
+            "text": "Ranged Attack Roll: +5, range 100/200 ft. Hit: 7 (1d8 + 3) Piercing damage.",
+            "attack": "Tail Spike|+5|1d8+3"
+          }
+        ],
+        "description": "With lionlike claws, leathery wings, and broad jaws filled with rows of sharp teeth, manticores ambush travelers from above and devour them. Manticores crave the taste of humans, but lacking their favored prey, they eagerly consume other peoples and livestock.\n\tManticores have tails bristling with detachable spikes. These monsters launch their tail spikes at their prey, skewering those on the ground or knocking flying creatures from the air.\n\tDespite their ravenous tendencies, manticores enjoy speaking with those they're about to devour. Sometimes they make agreements with their prey. Roll on or choose a result from the Manticore Negotiations table to inspire what a manticore might offer in exchange for a more tempting meal.\n\nManticore Negotiations:\n1d8 | The Manticore Agrees To...\n1 | Attack a particular foe.\n2 | Create a distraction.\n3 | Give up a captive or corpse.\n4 | Let a group navigate its territory unharmed.\n5 | Let someone pretend to slay it in battle.\n6 | Scare or threaten someone.\n7 | Serve a creature as a steed until the sun sets.\n8 | Try to locate something from its vantage point in the sky.\n\nSource:\tMonster Manual 2024 p. 202",
+        "environment": "arctic, coastal, grassland, hill, mountain"
+      },
+      {
+        "name": "Marid [2024]",
+        "size": "L",
+        "type": "elemental (genie)",
+        "alignment": "chaotic neutral",
+        "ac": "17",
+        "hp": "229 (17d10+136)",
+        "speed": "30 ft., fly 60 ft., swim 90 ft.",
+        "init": "5",
+        "str": "22",
+        "dex": "12",
+        "con": "26",
+        "int": "18",
+        "wis": "17",
+        "cha": "18",
+        "save": "Dex +5, Cha +8",
+        "skill": null,
+        "passive": "13",
+        "languages": "Primordial (Aquan)",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": "acid, cold, lightning",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "blindsight 30 ft., darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The marid can breathe air and water."
+          },
+          {
+            "name": "Elemental Restoration",
+            "text": "If the marid dies outside the Elemental Plane of Water, its body dissolves into brine, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Water."
+          },
+          {
+            "name": "Wishes",
+            "text": "The marid has a 30 percent chance of knowing the Wish spell. If the marid knows it, the marid can cast it only on behalf of a non-genie creature who communicates a wish in a way the marid can understand. If the marid casts the spell for the creature, the marid suffers none of the spell's stress. Once the marid has cast it three times, the marid can't do so again for 365 days."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The marid makes three Aquatic Lash attacks."
+          },
+          {
+            "name": "Aquatic Lash",
+            "text": "Melee Attack Roll: +10, reach 15 ft. Hit: 15 (2d8 + 6) Slashing damage plus 9 (2d8) Cold damage.",
+            "attack": "Aquatic Lash|+10|2d8+6+2d8"
+          },
+          {
+            "name": "Water Jet",
+            "text": "Dexterity Saving Throw: DC 18, each creature in a 60-foot-long, 10-foot-wide Line. Failure: 31 (9d6) Cold damage. If the target is a Huge or smaller creature, it is pushed up to 20 feet straight away from the marid and has the Prone condition. Success: Half damage only."
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The marid casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):\n\n\t• At will: Create or Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink\n\t• 1/Day each: Control Water, Gaseous Form, Invisibility, Plane Shift, Tongues"
+          },
+          {
+            "name": "Misty Veil (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "The marid casts Fog Cloud, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Create or Destroy Water [2024], Detect Evil and Good [2024], Detect Magic [2024], Purify Food and Drink [2024], Control Water [2024], Gaseous Form [2024], Invisibility [2024], Plane Shift [2024], Tongues [2024]",
+        "description": "Marids surge with the power of the seas, using it to manipulate the waves or create water. These genies typically dwell in or near bodies of water. While gentle marids make homes amid springs, oases, and serene pools, tempestuous marids inhabit sea stacks, whirlpools, and treacherous coasts. Marids vary in appearance, their bodies reflecting the colors of the waves while distinctive fins and scales accent their features. Marids lend their powers and knowledge of the seas to those who defend the marids' watery realms or who offer them pleasing gifts. Marids appreciate rare aquatic treasures, such as colorful pearls, shell instruments, or delicacies from distant seas.\n\tMarids hail from the Elemental Plane of Water, where they live in wondrous homes drifting amid the endless ocean. Among these is the Citadel of Ten Thousand Pearls—a coral sphere studded with dozens of domed theaters and libraries—and the air-filled, cosmopolitan City of Glass.\n\nSource:\tMonster Manual 2024 p. 203",
+        "environment": "coastal, planar (elemental plane of water), underwater"
+      },
+      {
+        "name": "Marilith [2024]",
+        "size": "L",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil",
+        "ac": "16",
+        "hp": "220 (21d10+105)",
+        "speed": "40 ft., climb 40 ft.",
+        "init": "10",
+        "str": "18",
+        "dex": "20",
+        "con": "20",
+        "int": "18",
+        "wis": "16",
+        "cha": "20",
+        "save": "Str +9, Wis +8, Con +10, Cha +10",
+        "skill": "Perception +8",
+        "passive": "18",
+        "languages": "Abyssal; telepathy 120 ft.",
+        "cr": "16",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "poison",
+        "conditionImmune": "poisoned",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Demonic Restoration",
+            "text": "If the marilith dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The marilith has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Reactive",
+            "text": "The marilith can take one Reaction on every turn of combat."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The marilith makes six Pact Blade attacks and uses Constrict."
+          },
+          {
+            "name": "Pact Blade",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 10 (1d10 + 5) Slashing damage plus 7 (2d6) Necrotic damage.",
+            "attack": [
+              "Pact Blade|+10|1d10+5",
+              "Necrotic Damage||2d6"
+            ]
+          },
+          {
+            "name": "Constrict",
+            "text": "Strength Saving Throw: DC 17, one Medium or smaller creature the marilith can see within 5 feet. Failure: 15 (2d10 + 4) Bludgeoning damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends.",
+            "attack": "Constrict||2d10+4"
+          },
+          {
+            "name": "Teleport (Recharge 5-6) (Bonus Action)",
+            "text": "The marilith teleports up to 120 feet to an unoccupied space it can see.",
+            "recharge": "D5"
+          }
+        ],
+        "reaction": {
+          "name": "Parry",
+          "text": "Trigger: The marilith is hit by a melee attack roll while holding a weapon. Response: The marilith adds 5 to its AC against that attack, possibly causing it to miss."
+        },
+        "description": "Mariliths are six-armed, serpentlike demons that wield lethal, Abyss-forged blades. With these cursed weapons and experience from countless battles, they lead other demons to slaughter virtuous souls. They often command droves of weaker demons.\n\nSource:\tMonster Manual 2024 p. 204",
+        "environment": "planar (abyss)"
+      },
+      {
+        "name": "Mastiff [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "5 (1d8+1)",
+        "speed": "40 ft.",
+        "init": "2",
+        "str": "13",
+        "dex": "14",
+        "con": "12",
+        "int": "3",
+        "wis": "12",
+        "cha": "7",
+        "save": null,
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": null,
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition.",
+          "attack": "Bite|+3|1d6+1"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 365,\n\t\tPlayer's Handbook 2024 p. 353",
+        "environment": "forest, hill, urban"
+      },
+      {
+        "name": "Medusa [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "lawful evil",
+        "ac": "15",
+        "hp": "127 (17d8+51)",
+        "speed": "30 ft.",
+        "init": "6",
+        "str": "10",
+        "dex": "17",
+        "con": "16",
+        "int": "12",
+        "wis": "13",
+        "cha": "15",
+        "save": "Wis +4",
+        "skill": "Deception +5, Stealth +6, Perception +4",
+        "passive": "14",
+        "languages": "Common plus one other language",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 150 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The medusa makes two Claw attacks and one Snake Hair attack, or it makes three Poison Ray attacks."
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+            "attack": "Claw|+6|2d6+3"
+          },
+          {
+            "name": "Snake Hair",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage plus 14 (4d6) Poison damage.",
+            "attack": [
+              "Snake Hair|+6|1d4+3",
+              "Poison Damage||4d6"
+            ]
+          },
+          {
+            "name": "Poison Ray",
+            "text": "Ranged Attack Roll: +5, range 150 ft. Hit: 11 (2d8 + 2) Poison damage.",
+            "attack": "Poison Ray|+5|2d8+2"
+          },
+          {
+            "name": "Petrifying Gaze (Recharge 5-6) (Bonus Action)",
+            "text": "Constitution Saving Throw: DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
+            "recharge": "D5"
+          }
+        ],
+        "description": "With their hair of living snakes and their infamous petrifying gazes, medusas are hubristic creatures that inhabit sites of fallen glory. They often dwell beyond the fringes of civilization or travel in disguise, leaving trails of petrified victims. Some medusas dominate groups of monsters or criminals, controlling them with threats of petrified doom, while others recruit servants that are immune to being petrified, such as gargoyles and gorgons.\n\tMedusas are born or created through preternatural circumstances. Roll on or choose a result from the Medusa Fates table to inspire what led to a medusa's creation.\n\nMedusa Fates:\n1d6 The Medusa Was...\n1 | Born a medusa and lives unaware of whatever curse or circumstances aﬄicted its ancestor.\n2 | Created by a god and tasked with guarding a treasure or secret.\n3 | A cultist who made a fiendish bargain and enjoyed rewards that have since faded.\n4 | An explorer transformed and compelled to defend a cursed ruin.\n5 | A vain noble whose magical attempt to gain eternal beauty backfired.\n6 | The victim of a bite from a magical serpent or reptilian god in disguise.\n\nSource:\tMonster Manual 2024 p. 205",
+        "environment": "desert"
+      },
+      {
+        "name": "Merfolk Skirmisher [2024]",
+        "sortname": "Merfolk, Skirmisher",
+        "ancestry": "Merfolk",
+        "size": "M",
+        "type": "elemental",
+        "alignment": "neutral",
+        "ac": "11",
+        "hp": "11 (2d8+2)",
+        "speed": "10 ft., swim 40 ft.",
+        "init": "1",
+        "str": "10",
+        "dex": "13",
+        "con": "12",
+        "int": "11",
+        "wis": "14",
+        "cha": "12",
+        "save": null,
+        "skill": null,
+        "passive": "12",
+        "languages": "Common, Primordial (Aquan)",
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The merfolk can breathe air and water."
+          }
+        ],
+        "action": {
+          "name": "Ocean Spear",
+          "text": "Melee or Ranged Attack Roll: +2, reach 5 ft. or range 20/60 ft. Hit: 3 (1d6) Piercing damage plus 2 (1d4) Cold damage. If the target is a creature, its Speed decreases by 10 feet until the end of its next turn. Hit or Miss: The spear magically returns to the merfolk's hand immediately after a ranged attack.",
+          "attack": [
+            "Ocean Spear|+2|1d6",
+            "Cold Damage||1d4"
+          ]
+        },
+        "description": "Beneath the waves dwell merfolk, mysterious creatures that merge the features of humans and sea creatures. Some are curious about land dwellers, while others view them with suspicion.\n\nMerfolk Skirmisher:\nMerfolk skirmishers defend their homes from aquatic monsters and invaders from the surface.\n\nSource:\tMonster Manual 2024 p. 209",
+        "environment": "coastal, underwater"
+      },
+      {
+        "name": "Merfolk Wavebender [2024]",
+        "sortname": "Merfolk, Wavebender",
+        "ancestry": "Merfolk",
+        "size": "M",
+        "type": "elemental",
+        "alignment": "neutral",
+        "ac": "14",
+        "hp": "97 (15d8+30)",
+        "speed": "10 ft., swim 40 ft.",
+        "init": "4",
+        "str": "10",
+        "dex": "18",
+        "con": "14",
+        "int": "13",
+        "wis": "19",
+        "cha": "15",
+        "save": "Wis +7, Con +5, Dex +7, Cha +5",
+        "skill": "Perception +7",
+        "passive": "17",
+        "languages": "Common, Primordial (Aquan)",
+        "cr": "6",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The merfolk can breathe air and water."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The merfolk makes two Aquatic Burst attacks."
+          },
+          {
+            "name": "Aquatic Burst",
+            "text": "Melee or Ranged Attack Roll: +7, reach 5 ft. or range 60 ft. Hit: 20 (3d10 + 4) Cold damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Aquatic Burst|+7|3d10+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The merfolk casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 15):\n\n\t• At will: Elementalism, Light\n\t• 1/Day each: Control Water, Create or Destroy Water"
+          }
+        ],
+        "reaction": {
+          "name": "Watery Rebuke",
+          "text": "Trigger: An enemy the merfolk can see enters a space within 5 feet of the merfolk. Response: dStrength Saving Throw: DC 15, the triggering enemy. Failure: 14 (4d6) Cold damage. If the target is Large or smaller, it is pushed up to 30 feet straight away from the merfolk by conjured water.",
+          "attack": "Watery Rebuke||4d6"
+        },
+        "spells": "Elementalism [2024], Light [2024], Control Water [2024], Create or Destroy Water [2024]",
+        "description": "Beneath the waves dwell merfolk, mysterious creatures that merge the features of humans and sea creatures. Some are curious about land dwellers, while others view them with suspicion.\n\nMerfolk Wavebender:\nThese merfolk mages use magic to manipulate water, storms, and sea creatures to aid them.\n\nSource:\tMonster Manual 2024 p. 209",
+        "environment": "coastal, underwater"
+      },
+      {
+        "name": "Merrow [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "13",
+        "hp": "45 (6d10+12)",
+        "speed": "10 ft., swim 40 ft.",
+        "init": "2",
+        "str": "18",
+        "dex": "15",
+        "con": "15",
+        "int": "8",
+        "wis": "10",
+        "cha": "9",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Abyssal, Primordial (Aquan)",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Amphibious",
+            "text": "The merrow can breathe air and water."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The merrow makes two attacks, using Bite, Claw, or Harpoon in any combination."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Piercing damage, and the target has the Poisoned condition until the end of the merrow's next turn.",
+            "attack": "Bite|+6|1d4+4"
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage.",
+            "attack": "Claw|+6|2d4+4"
+          },
+          {
+            "name": "Harpoon",
+            "text": "Melee or Ranged Attack Roll: +6, reach 5 ft. or range 20/60 ft. Hit: 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature, the merrow pulls the target up to 15 feet straight toward itself.",
+            "attack": "Harpoon|+6|2d6+4"
+          }
+        ],
+        "description": "Vicious aquatic hunters, merrow combine the features of ogres with those of primeval, predatory fish. They lurk in coastal waters, hoping to snare unsuspecting prey by bursting from the water and grabbing their quarry or by skewering victims with deadly harpoons. These hunters then drag land dwellers back to dismal undersea lairs. Merrow often keep prisoners in their larders as future meals.\n\tMerrow raid coastal settlements and merfolk communities to steal weapons and treasure. This leads to conflicts between merfolk and merrow, but it also provokes misunderstandings with surface dwellers who blame merfolk for merrow attacks.\n\nSource:\tMonster Manual 2024 p. 210",
+        "environment": "coastal, underwater"
+      },
+      {
+        "name": "Mezzoloth [2024]",
+        "size": "M",
+        "type": "fiend (yugoloth)",
+        "alignment": "neutral evil",
+        "ac": "18",
+        "hp": "75 (10d8+30)",
+        "speed": "40 ft.",
+        "init": "3",
+        "str": "18",
+        "dex": "11",
+        "con": "16",
+        "int": "7",
+        "wis": "14",
+        "cha": "10",
+        "save": null,
+        "skill": "Perception +5",
+        "passive": "15",
+        "languages": "Abyssal, Infernal; telepathy 60 ft.",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "acid, poison",
+        "conditionImmune": "poisoned",
+        "senses": "blindsight 60 ft., darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Fiendish Restoration",
+            "text": "If the mezzoloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in Gehenna."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The mezzoloth has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mezzoloth makes two attacks, using Claws or Mercurial Trident in any combination."
+          },
+          {
+            "name": "Claws",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from two of four claws, and it has the Restrained condition until the grapple ends.",
+            "attack": "Claws|+7|2d4+4"
+          },
+          {
+            "name": "Mercurial Trident",
+            "text": "Melee or Ranged Attack Roll: +7, reach 5 ft. or range 20/60 ft. Hit: 8 (1d8 + 4) Piercing damage plus 10 (3d6) Force damage. Hit or Miss: The trident magically returns to the mezzoloth's claw immediately after a ranged attack.",
+            "attack": [
+              "Mercurial Trident|+7|1d8+4",
+              "Force Damage||3d6"
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mezzoloth casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 13):\n\n\t• 1/Day each: Cloudkill, Darkness, Dispel Magic"
+          },
+          {
+            "name": "Teleport (Recharge 5-6) (Bonus Action)",
+            "text": "The mezzoloth teleports up to 60 feet to an unoccupied space it can see. It can teleport one creature it is grappling to an unoccupied space within 5 feet of its destination space.",
+            "recharge": "D5"
+          }
+        ],
+        "spells": "Cloudkill [2024], Darkness [2024], Dispel Magic [2024]",
+        "description": "Mezzoloths are insectile yugoloths that seek power and souls in the service of fiendish lords. These greedy, violent yugoloths are more direct than most of their scheming brethren, but what they lack in guile they make up for in persistence and numbers.\n\tMezzoloths typically form mercenary bands with others of their kind. These forces serve more powerful yugoloths, other fiends, sinister mages, or anyone who provides them with tempting rewards. Mezzoloths obediently adhere to the bargains they strike, potentially serving their patrons for centuries, but once those terms expire, yesterday's client could become today's target. Roll on or choose a result from the Mezzoloth Payments table to inspire a mezzoloth's price for its services.\n\nMezzoloth Payments:\n1d6 | The Mezzoloth Agrees to Serve For...\n1 | Access to a planar portal.\n2 | Information valued by its true master.\n3 | A lair where it can bring others of its kind.\n4 | Magic weapons or armor.\n5 | The right to loot holy sites in places it conquers.\n6 | Souls, whether as larvae or captured spirits.\n\nSource:\tMonster Manual 2024 p. 211",
+        "environment": "planar (gehenna)"
+      },
+      {
+        "name": "Mimic [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral",
+        "ac": "12",
+        "hp": "58 (9d8+18)",
+        "speed": "20 ft.",
+        "init": "3",
+        "str": "17",
+        "dex": "12",
+        "con": "15",
+        "int": "5",
+        "wis": "13",
+        "cha": "8",
+        "save": null,
+        "skill": "Stealth +5",
+        "passive": "11",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "acid",
+        "conditionImmune": "prone",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Adhesive (Object Form Only)",
+            "text": "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic has the Grappled condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage."
+          }
+        ],
+        "action": [
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +5 (with Advantage if the target is Grappled by the mimic), reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage—or 12 (2d8 + 3) Piercing damage if the target is Grappled by the mimic—plus 4 (1d8) Acid damage.",
+            "attack": [
+              "Bite|+5|1d8+3",
+              "Acid Damage||1d8",
+              "Piercing While Grappled||2d8+3"
+            ]
+          },
+          {
+            "name": "Pseudopod",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 4 (1d8) Acid damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage.",
+            "attack": [
+              "Pseudopod|+5|1d8+3",
+              "Acid Damage||1d8"
+            ]
+          },
+          {
+            "name": "Shape-Shift (Bonus Action)",
+            "text": "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
+          }
+        ],
+        "description": "In their natural forms, mimics are little more than roaming stomachs, their blobby bodies covered with alien eyes and teeth. They can alter their color, texture, and dimensions to duplicate inanimate objects of their approximate size. Mimics use their disguises as both camouflage and bait. Once victims draw close, mimics strike, lashing out with their sticky pseudopods and toothy mouths. After consuming victims, mimics usually relocate, change form, and await their next meal.\n\tUse the following list to inspire mimics' shapes:\n\nAltar\nBell\nBoulder\nCauldron\nChair\nChandelier\nChest\nCot\nDoor\nFloor mat\nGiant gemstone\nGravestone\nHeap of leaves\nKeg\nLadder\nLectern\nMannequin\nMirror\nObelisk\nOversize cake\nPanel of levers\nPile of bones\nPotted plant\nRow of books\nSarcophagus\nSculpture\nShip's wheel\nSign\nStalagmite\nStump\nTable\nTapestry\nTaxidermy\nThrone\nTopiary\nWeapon rack\n\nSource:\tMonster Manual 2024 p. 212",
+        "environment": "underdark, urban"
+      },
+      {
+        "name": "Mind Flayer [2024]",
+        "sortname": "Mind Flayer",
+        "ancestry": "Mind Flayer",
+        "size": "M",
+        "type": "aberration",
+        "alignment": "lawful evil",
+        "ac": "15",
+        "hp": "99 (18d8+18)",
+        "speed": "30 ft., fly 15 ft.(hover)",
+        "init": "4",
+        "str": "11",
+        "dex": "12",
+        "con": "12",
+        "int": "19",
+        "wis": "17",
+        "cha": "17",
+        "save": "Wis +6, Dex +4, Cha +6, Int +7",
+        "skill": "Insight +6, Stealth +4, Arcana +7, Perception +6",
+        "passive": "16",
+        "languages": "Deep Speech, Undercommon; telepathy 120 ft.",
+        "cr": "7",
+        "vulnerable": null,
+        "resist": "psychic",
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Breastplate"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The mind flayer has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Tentacles",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 22 (4d8 + 4) Psychic damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from all the mind flayer's tentacles, and the target has the Stunned condition until the grapple ends.",
+            "attack": "Tentacles|+7|4d8+4"
+          },
+          {
+            "name": "Extract Brain",
+            "text": "Constitution Saving Throw: DC 15, one creature that is Grappled by the mind flayer's Tentacles. Failure: 55 (10d10) Piercing damage. Success: Half damage. Failure or Success: If this damage reduces the target to 0 Hit Points, the mind flayer kills it and devours its brain.",
+            "attack": "Extract Brain||10d10"
+          },
+          {
+            "name": "Mind Blast (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Intelligence Saving Throw: DC 15, each creature in a 60-foot Cone. Failure: 31 (6d8 + 4) Psychic damage, and the target has the Stunned condition until the end of the mind flayer's next turn. Success: Half damage only.",
+            "attack": "Mind Blast||6d8+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 15):\n\n\t• At will: Detect Thoughts\n\t• 1/Day each: Dominate Monster, Plane Shift (self only)"
+          }
+        ],
+        "spells": "Detect Thoughts [2024], Dominate Monster [2024], Plane Shift [2024]",
+        "description": "Scattered survivors of a world-ruining, multiversal empire, mind flayers lurk in secret conclaves hidden deep within Material Plane worlds. Within their alien sanctuaries, these wicked masterminds—also known as illithids—reshape the Underdark and its inhabitants to serve their unfathomable whims. Mind flayers are feared for their psionic powers, which allow them to stun and control other creatures, and for their horrific method of feeding: using their four slimy tentacles to extract the brains of their victims.\n\tMind flayers are infamous plotters and manipulators, concocting plans that reach beyond their subterranean realms. Aside from using their psionic powers to control others, mind flayers often experiment with their own bizarre life cycles, implanting other creatures with illithid young to create unnatural servants. Creatures such as grimlocks and intellect devourers result from mind flayers' biological tampering, while other Underdark-dwelling monsters—including kuo-toa, quaggoths, and troglodytes—often serve illithid masters. Githyanki and githzerai have a long adversarial history with mind flayers and bear the scars of illithid manipulation.\n\nMind Flayer Colonies:\nMind flayers work as lone schemers, in mysterious cabals, or as part of worlds-spanning illithid conspiracies. In groups, mind flayers work toward bizarre agendas organized by an elder brain—a massive, brain-like being with incredible psionic powers. Without such a leader, groups of mind flayers fall to selfdestructive squabbling. Roll on or choose a result from the Mind Flayer Machinations table to inspire an illithid conclave's plots.\n\nMind Flayer Machinations:\n1d6 | The Mind Flayer Colony Seeks To...\n1 | Blot out the sun so their Underdark-dwelling servants can invade the surface.\n2 | Create a new monstrous fusion between mind flayers and a legendary monster.\n3 Forge a psionic network uniting illithid colonies.\n4 | Replace world leaders with intellect devourers.\n5 | Restore a vessel to travel through Wildspace.\n6 | Sacrifice the mental energy of a planet's populace to take control of a githyanki bastion.\n\nMind Flayer:\nA mind flayer's hunger for brains is outmeasured only by its thirst for dominance, and it embraces any plot that allows it to indulge both.\n\nSource:\tMonster Manual 2024 p. 214",
+        "environment": "underdark"
+      },
+      {
+        "name": "Mind Flayer Arcanist [2024]",
+        "sortname": "Mind Flayer, Arcanist",
+        "ancestry": "Mind Flayer",
+        "size": "M",
+        "type": "aberration",
+        "alignment": "lawful evil",
+        "ac": "16",
+        "hp": "143 (26d8+26)",
+        "speed": "30 ft., fly 30 ft.(hover)",
+        "init": "6",
+        "str": "11",
+        "dex": "14",
+        "con": "13",
+        "int": "20",
+        "wis": "17",
+        "cha": "17",
+        "save": "Wis +7, Dex +6, Cha +7, Int +9",
+        "skill": "Insight +7, Stealth +6, Arcana +13, Perception +7",
+        "passive": "17",
+        "languages": "Deep Speech, Undercommon; telepathy 120 ft.",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "psychic",
+        "conditionImmune": "charmed, frightened",
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Gear",
+            "text": "Breastplate"
+          },
+          {
+            "name": "Treasure",
+            "text": "Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The mind flayer has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mind flayer makes three Arcane Tentacles attacks."
+          },
+          {
+            "name": "Arcane Tentacles",
+            "text": "Melee or Ranged Attack Roll: +9, reach 5 ft. or range 120 ft. Hit: 27 (4d10 + 5) Psychic damage, and the mind flayer can teleport the target up to 30 feet to an unoccupied space the mind flayer can see on a surface or liquid large enough to support the target. If this damage reduces the target to 0 Hit Points, the mind flayer kills it and magically devours its brain.",
+            "attack": "Arcane Tentacles|+9|4d10+5"
+          },
+          {
+            "name": "Mind Burst (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Intelligence Saving Throw: DC 17, each creature in a 40-foot Emanation originating from the mind flayer. Failure: 41 (8d8 + 5) Psychic damage, and the target has the Stunned condition until the end of the mind flayer's next turn. Success: Half damage only.",
+            "attack": "Mind Burst||8d8+5"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):\n\n\t• At will: Detect Magic, Detect Thoughts, Disguise Self, Mage Hand (the hand is Invisible)\n\t• 1/Day each: Clairvoyance, Dimension Door, Fireball (level 5 version), Lightning Bolt (level 5 version), Plane Shift (self only), Sending"
+          }
+        ],
+        "reaction": {
+          "name": "Shield (2/Day)",
+          "recharge": "2/DAY",
+          "text": "The mind flayer casts Shield in response to that spell's trigger, using the same spellcasting ability as Spellcasting."
+        },
+        "spells": "Detect Magic [2024], Detect Thoughts [2024], Disguise Self [2024], Mage Hand [2024], Clairvoyance [2024], Dimension Door [2024], Fireball [2024], Lightning Bolt [2024], Plane Shift [2024], Sending [2024]",
+        "description": "Scattered survivors of a world-ruining, multiversal empire, mind flayers lurk in secret conclaves hidden deep within Material Plane worlds. Within their alien sanctuaries, these wicked masterminds—also known as illithids—reshape the Underdark and its inhabitants to serve their unfathomable whims. Mind flayers are feared for their psionic powers, which allow them to stun and control other creatures, and for their horrific method of feeding: using their four slimy tentacles to extract the brains of their victims.\n\tMind flayers are infamous plotters and manipulators, concocting plans that reach beyond their subterranean realms. Aside from using their psionic powers to control others, mind flayers often experiment with their own bizarre life cycles, implanting other creatures with illithid young to create unnatural servants. Creatures such as grimlocks and intellect devourers result from mind flayers' biological tampering, while other Underdark-dwelling monsters—including kuo-toa, quaggoths, and troglodytes—often serve illithid masters. Githyanki and githzerai have a long adversarial history with mind flayers and bear the scars of illithid manipulation.\n\nMind Flayer Colonies:\nMind flayers work as lone schemers, in mysterious cabals, or as part of worlds-spanning illithid conspiracies. In groups, mind flayers work toward bizarre agendas organized by an elder brain—a massive, brain-like being with incredible psionic powers. Without such a leader, groups of mind flayers fall to selfdestructive squabbling. Roll on or choose a result from the Mind Flayer Machinations table to inspire an illithid conclave's plots.\n\nMind Flayer Machinations:\n1d6 | The Mind Flayer Colony Seeks To...\n1 | Blot out the sun so their Underdark-dwelling servants can invade the surface.\n2 | Create a new monstrous fusion between mind flayers and a legendary monster.\n3 Forge a psionic network uniting illithid colonies.\n4 | Replace world leaders with intellect devourers.\n5 | Restore a vessel to travel through Wildspace.\n6 | Sacrifice the mental energy of a planet's populace to take control of a githyanki bastion.\n\nMind Flayer Arcanist:\nMind flayer arcanists enhance their psionic abilities with magic. Other mind flayers view those that undertake such experiments with disgust and fear.\n\nSource:\tMonster Manual 2024 p. 214",
+        "environment": "underdark"
+      },
+      {
+        "name": "Minotaur of Baphomet [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "14",
+        "hp": "85 (10d10+30)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "18",
+        "dex": "11",
+        "con": "16",
+        "int": "6",
+        "wis": "16",
+        "cha": "9",
+        "save": null,
+        "skill": "Survival +7, Perception +7",
+        "passive": "17",
+        "languages": "Abyssal",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          }
+        ],
+        "action": [
+          {
+            "name": "Abyssal Glaive",
+            "text": "Melee Attack Roll: +6, reach 10 ft. Hit: 10 (1d12 + 4) Slashing damage plus 10 (3d6) Necrotic damage.",
+            "attack": "Abyssal Glaive|+6|1d12+4+3d6"
+          },
+          {
+            "name": "Gore (Recharge 5-6)",
+            "recharge": "D5",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition.",
+            "attack": [
+              "Gore|+6|4d6+4",
+              "Extra Piercing Damage||3d6"
+            ]
+          }
+        ],
+        "description": "Baphomet, Demon Lord of Beasts, claims to have created minotaurs and demands their worship. While most minotaurs live free of the demon lord's bonds, those that serve him become minotaurs of Baphomet. These brutes resemble the hulking, horned demon lord more than others of their kind, and they wreak havoc in that foul immortal's name. Rarely, non-minotaurs cursed by magic-users or spiteful deities might transform into these monsters.\n\tMinotaurs of Baphomet often dwell in mazes, leading their allies to hidden destinations and stalking trespassers. Roll on or choose a result from the Minotaur Mazes table to inspire the shape of a minotaur's dwelling.\n\nMinotaur Mazes:\n1d4 | The Minotaur of Baphomet Lurks In...\n1 | A multilevel mine or sewer.\n2 | Multiple mazes connected by magic portals.\n3 | A poisonous swamp with labyrinthine paths.\n4 | The ruins of a buried palace or temple.\n\nSource:\tMonster Manual 2024 p. 215",
+        "environment": "underdark"
+      },
+      {
+        "name": "Minotaur Skeleton [2024]",
+        "sortname": "Skeleton, Minotaur",
+        "ancestry": "Skeleton",
+        "size": "L",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "12",
+        "hp": "45 (6d10+12)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "18",
+        "dex": "11",
+        "con": "15",
+        "int": "6",
+        "wis": "8",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "9",
+        "languages": "understands Abyssal but can't speak",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Gore",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.",
+            "attack": "Gore|+6|2d6+4+2d8"
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 15 (2d10 + 4) Bludgeoning damage.",
+            "attack": "Slam|+6|2d10+4"
+          }
+        ],
+        "description": "Skeletons rise at the summons of necromancers and foul spirits. Whether they're the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers. In rare cases, skeletons are reanimated but given no particular direction. Roll on or choose a result from the Skeleton Pantomimes table to inspire how undirected skeletons behave.\n\nSkeleton Pantomimes:\n1d6 | Left to Its Own Devices, the Skeleton...\n1 | Delivers meal salvers or ages-old correspondence to the crypt of its dead master.\n2 | Endlessly trains in battle with other skeletons, despite being hacked to animate splinters.\n3 | Mimics ways it entertained itself in life, such as acting, dancing, or reading.\n4 | Performs a familiar task, such as cleaning, cooking, mining, or praying.\n5 | Repeats its final moments of life.\n6 | Stands guard at the post it protected in life.\n\nMinotaur Skeleton:\nMinotaur skeletons are the reanimated remains of minotaurs or the skeletons of multiple creatures merged into a minotaur-like shape. These hulking skeletons have greater speed and might than smaller skeletons. They menace the living with their horns and mighty greataxes.\n\nSource:\tMonster Manual 2024 p. 283",
+        "environment": "planar (shadowfell), underdark, urban"
+      },
+      {
+        "name": "Modron Duodrone [2024]",
+        "sortname": "Modron, Duodrone",
+        "ancestry": "Modron",
+        "size": "M",
+        "type": "construct",
+        "alignment": "lawful neutral",
+        "ac": "15",
+        "hp": "11 (2d8+2)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "11",
+        "dex": "13",
+        "con": "12",
+        "int": "6",
+        "wis": "10",
+        "cha": "7",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Modron",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Disintegration",
+            "text": "If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The modron makes two Clockwork Blade attacks."
+          },
+          {
+            "name": "Clockwork Blade",
+            "text": "Melee or Ranged Attack Roll: +3, reach 5 ft. or range 30 ft. Hit: 4 (1d6 + 1) Force damage. Hit or Miss: The blade magically returns to the modron's hand immediately after a ranged attack.",
+            "attack": "Clockwork Blade|+3|1d6+1"
+          }
+        ],
+        "description": "Beings of magic and machinery, modrons embody absolute law. These inhabitants of the clockwork plane of Mechanus tend to the incredible mechanisms of their orderly home and oppose chaotic forces across the multiverse.\n\tModrons are parts of a vast hierarchy, spanning from quirky monodrones to the leader of their kind, the godlike Primus. Every modron carries out tasks assigned to it by higher-ranking modrons, doing so without question. Generally, modrons communicate only with other modrons of their own rank or the ranks immediately above and below them. Those more than one rank away tend to be either too advanced or too simple for them to understand.\n\tModrons excel at tasks that require patience and precision, but they have little understanding of nonliteral concepts such as art or humor. They have no egos; they have only their work and the certainty that multiversal law depends on their eﬃcacy.\n\tIn rare cases, a modron goes rogue and develops its own will. In these cases, other modrons are sent to recover or destroy their malfunctioning kin.\n\nModron Marches:\nWhether in service to lawful deities or as part of the Great Modron March, modrons travel from Mechanus to spread their vision of law to other planes of existence. Roll on or choose a result from the Modron Operations table to inspire what effort leads a group of modrons to other realms.\n\nModron Operations:\n1d8 | The Modrons Work To...\n1 | Create a clockwork outpost to monitor the balance of obscure planar forces.\n2 | Ensure neither side gains the upper hand in a conflict between good and evil.\n3 | Excavate a portal to another plane.\n4 | Find a lost contingent of modrons.\n5 | Reactivate a titanic but lost modron device.\n6 | Remove a forest, mountain, or city before the arrival of a modron procession.\n7 | Seal off a planar rift or wild magic zone.\n8 | Wage war with demons, slaadi, or chaotic Fey.\n\nModron Duodrone:\nDuodrones can perform two tasks at once and often oversee monodrone work groups. They are slightly more skeptical of strangers than monodrones are.\n\nSource:\tMonster Manual 2024 p. 217",
+        "environment": "planar (mechanus)"
+      },
+      {
+        "name": "Modron Monodrone [2024]",
+        "sortname": "Modron, Monodrone",
+        "ancestry": "Modron",
+        "size": "M",
+        "type": "construct",
+        "alignment": "lawful neutral",
+        "ac": "15",
+        "hp": "5 (1d8+1)",
+        "speed": "30 ft., fly 30 ft.",
+        "init": "2",
+        "str": "10",
+        "dex": "14",
+        "con": "12",
+        "int": "4",
+        "wis": "10",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Modron",
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Disintegration",
+            "text": "If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying."
+          }
+        ],
+        "action": [
+          {
+            "name": "Gear",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Force damage.",
+            "attack": "Gear|+4|1d8+2"
+          },
+          {
+            "name": "Gear Flinger",
+            "text": "Ranged Attack Roll: +4, range 120 ft. Hit: 6 (1d8 + 2) Force damage.",
+            "attack": "Gear Flinger|+4|1d8+2"
+          }
+        ],
+        "description": "Beings of magic and machinery, modrons embody absolute law. These inhabitants of the clockwork plane of Mechanus tend to the incredible mechanisms of their orderly home and oppose chaotic forces across the multiverse.\n\tModrons are parts of a vast hierarchy, spanning from quirky monodrones to the leader of their kind, the godlike Primus. Every modron carries out tasks assigned to it by higher-ranking modrons, doing so without question. Generally, modrons communicate only with other modrons of their own rank or the ranks immediately above and below them. Those more than one rank away tend to be either too advanced or too simple for them to understand.\n\tModrons excel at tasks that require patience and precision, but they have little understanding of nonliteral concepts such as art or humor. They have no egos; they have only their work and the certainty that multiversal law depends on their eﬃcacy.\n\tIn rare cases, a modron goes rogue and develops its own will. In these cases, other modrons are sent to recover or destroy their malfunctioning kin.\n\nModron Marches:\nWhether in service to lawful deities or as part of the Great Modron March, modrons travel from Mechanus to spread their vision of law to other planes of existence. Roll on or choose a result from the Modron Operations table to inspire what effort leads a group of modrons to other realms.\n\nModron Operations:\n1d8 | The Modrons Work To...\n1 | Create a clockwork outpost to monitor the balance of obscure planar forces.\n2 | Ensure neither side gains the upper hand in a conflict between good and evil.\n3 | Excavate a portal to another plane.\n4 | Find a lost contingent of modrons.\n5 | Reactivate a titanic but lost modron device.\n6 | Remove a forest, mountain, or city before the arrival of a modron procession.\n7 | Seal off a planar rift or wild magic zone.\n8 | Wage war with demons, slaadi, or chaotic Fey.\n\nModron Monodrone:\nThe most numerous modrons, monodrones can perform one simple task at a time. They believe anything they're told that isn't logically or mathematically false. When faced with unexpected situations, they're quick to seek duodrones for help.\n\nSource:\tMonster Manual 2024 p. 216",
+        "environment": "planar (mechanus)"
+      },
+      {
+        "name": "Modron Pentadrone [2024]",
+        "sortname": "Modron, Pentadrone",
+        "ancestry": "Modron",
+        "size": "L",
+        "type": "construct",
+        "alignment": "lawful neutral",
+        "ac": "16",
+        "hp": "32 (5d10+5)",
+        "speed": "40 ft.",
+        "init": "2",
+        "str": "15",
+        "dex": "14",
+        "con": "12",
+        "int": "10",
+        "wis": "10",
+        "cha": "13",
+        "save": null,
+        "skill": "Perception +4",
+        "passive": "14",
+        "languages": "Modron",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Disintegration",
+            "text": "If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The modron makes five Slam attacks or five Electrical Discharge attacks."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Force damage.",
+            "attack": "Slam|+4|1d6+2"
+          },
+          {
+            "name": "Electrical Discharge",
+            "text": "Ranged Attack Roll: +4, range 120 ft. Hit: 5 (1d6 + 2) Lightning damage.",
+            "attack": "Electrical Discharge|+4|1d6+2"
+          },
+          {
+            "name": "Paralysis Gas (Recharge 5-6)",
+            "text": "Constitution Saving Throws: DC 11, each creature in a 30-foot Cone. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+            "recharge": "D5"
+          }
+        ],
+        "description": "Beings of magic and machinery, modrons embody absolute law. These inhabitants of the clockwork plane of Mechanus tend to the incredible mechanisms of their orderly home and oppose chaotic forces across the multiverse.\n\tModrons are parts of a vast hierarchy, spanning from quirky monodrones to the leader of their kind, the godlike Primus. Every modron carries out tasks assigned to it by higher-ranking modrons, doing so without question. Generally, modrons communicate only with other modrons of their own rank or the ranks immediately above and below them. Those more than one rank away tend to be either too advanced or too simple for them to understand.\n\tModrons excel at tasks that require patience and precision, but they have little understanding of nonliteral concepts such as art or humor. They have no egos; they have only their work and the certainty that multiversal law depends on their eﬃcacy.\n\tIn rare cases, a modron goes rogue and develops its own will. In these cases, other modrons are sent to recover or destroy their malfunctioning kin.\n\nModron Marches:\nWhether in service to lawful deities or as part of the Great Modron March, modrons travel from Mechanus to spread their vision of law to other planes of existence. Roll on or choose a result from the Modron Operations table to inspire what effort leads a group of modrons to other realms.\n\nModron Operations:\n1d8 | The Modrons Work To...\n1 | Create a clockwork outpost to monitor the balance of obscure planar forces.\n2 | Ensure neither side gains the upper hand in a conflict between good and evil.\n3 | Excavate a portal to another plane.\n4 | Find a lost contingent of modrons.\n5 | Reactivate a titanic but lost modron device.\n6 | Remove a forest, mountain, or city before the arrival of a modron procession.\n7 | Seal off a planar rift or wild magic zone.\n8 | Wage war with demons, slaadi, or chaotic Fey.\n\nModron Pentadrone:\nPentadrones oversee and protect contingents of lesser modrons. They're quick to call lengthy meetings with other modrons when making decisions.\n\nSource:\tMonster Manual 2024 p. 218",
+        "environment": "planar (mechanus)"
+      },
+      {
+        "name": "Modron Quadrone [2024]",
+        "sortname": "Modron, Quadrone",
+        "ancestry": "Modron",
+        "size": "M",
+        "type": "construct",
+        "alignment": "lawful neutral",
+        "ac": "16",
+        "hp": "22 (4d8+4)",
+        "speed": "30 ft., fly 30 ft.",
+        "init": "2",
+        "str": "12",
+        "dex": "14",
+        "con": "12",
+        "int": "10",
+        "wis": "10",
+        "cha": "11",
+        "save": null,
+        "skill": "Perception +2",
+        "passive": "12",
+        "languages": "Modron",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Disintegration",
+            "text": "If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The modron makes four Slam attacks or four Gears Launcher attacks."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Force damage.",
+            "attack": "Slam|+4|1d4+2"
+          },
+          {
+            "name": "Gears Launcher",
+            "text": "Ranged Attack Roll: +4, range 320 ft. Hit: 4 (1d4 + 2) Force damage.",
+            "attack": "Gears Launcher|+4|1d4+2"
+          }
+        ],
+        "description": "Beings of magic and machinery, modrons embody absolute law. These inhabitants of the clockwork plane of Mechanus tend to the incredible mechanisms of their orderly home and oppose chaotic forces across the multiverse.\n\tModrons are parts of a vast hierarchy, spanning from quirky monodrones to the leader of their kind, the godlike Primus. Every modron carries out tasks assigned to it by higher-ranking modrons, doing so without question. Generally, modrons communicate only with other modrons of their own rank or the ranks immediately above and below them. Those more than one rank away tend to be either too advanced or too simple for them to understand.\n\tModrons excel at tasks that require patience and precision, but they have little understanding of nonliteral concepts such as art or humor. They have no egos; they have only their work and the certainty that multiversal law depends on their eﬃcacy.\n\tIn rare cases, a modron goes rogue and develops its own will. In these cases, other modrons are sent to recover or destroy their malfunctioning kin.\n\nModron Marches:\nWhether in service to lawful deities or as part of the Great Modron March, modrons travel from Mechanus to spread their vision of law to other planes of existence. Roll on or choose a result from the Modron Operations table to inspire what effort leads a group of modrons to other realms.\n\nModron Operations:\n1d8 | The Modrons Work To...\n1 | Create a clockwork outpost to monitor the balance of obscure planar forces.\n2 | Ensure neither side gains the upper hand in a conflict between good and evil.\n3 | Excavate a portal to another plane.\n4 | Find a lost contingent of modrons.\n5 | Reactivate a titanic but lost modron device.\n6 | Remove a forest, mountain, or city before the arrival of a modron procession.\n7 | Seal off a planar rift or wild magic zone.\n8 | Wage war with demons, slaadi, or chaotic Fey.\n\nModron Quadrone:\nQuadrones are among the most relatable modrons—and those most likely to go rogue.\n\nSource:\tMonster Manual 2024 p. 218",
+        "environment": "planar (mechanus)"
+      },
+      {
+        "name": "Modron Tridrone [2024]",
+        "sortname": "Modron, Tridrone",
+        "ancestry": "Modron",
+        "size": "M",
+        "type": "construct",
+        "alignment": "lawful neutral",
+        "ac": "15",
+        "hp": "16 (3d8+3)",
+        "speed": "30 ft.",
+        "init": "1",
+        "str": "12",
+        "dex": "13",
+        "con": "12",
+        "int": "9",
+        "wis": "10",
+        "cha": "9",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Modron",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "charmed",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Disintegration",
+            "text": "If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The modron makes three Clockwork Spear attacks."
+          },
+          {
+            "name": "Clockwork Spear",
+            "text": "Melee or Ranged Attack Roll: +3, reach 5 ft. or range 120 ft. Hit: 4 (1d6 + 1) Force damage. Hit or Miss: The spear magically returns to the modron's hand immediately after a ranged attack.",
+            "attack": "Clockwork Spear|+3|1d6+1"
+          }
+        ],
+        "description": "Beings of magic and machinery, modrons embody absolute law. These inhabitants of the clockwork plane of Mechanus tend to the incredible mechanisms of their orderly home and oppose chaotic forces across the multiverse.\n\tModrons are parts of a vast hierarchy, spanning from quirky monodrones to the leader of their kind, the godlike Primus. Every modron carries out tasks assigned to it by higher-ranking modrons, doing so without question. Generally, modrons communicate only with other modrons of their own rank or the ranks immediately above and below them. Those more than one rank away tend to be either too advanced or too simple for them to understand.\n\tModrons excel at tasks that require patience and precision, but they have little understanding of nonliteral concepts such as art or humor. They have no egos; they have only their work and the certainty that multiversal law depends on their eﬃcacy.\n\tIn rare cases, a modron goes rogue and develops its own will. In these cases, other modrons are sent to recover or destroy their malfunctioning kin.\n\nModron Marches:\nWhether in service to lawful deities or as part of the Great Modron March, modrons travel from Mechanus to spread their vision of law to other planes of existence. Roll on or choose a result from the Modron Operations table to inspire what effort leads a group of modrons to other realms.\n\nModron Operations:\n1d8 | The Modrons Work To...\n1 | Create a clockwork outpost to monitor the balance of obscure planar forces.\n2 | Ensure neither side gains the upper hand in a conflict between good and evil.\n3 | Excavate a portal to another plane.\n4 | Find a lost contingent of modrons.\n5 | Reactivate a titanic but lost modron device.\n6 | Remove a forest, mountain, or city before the arrival of a modron procession.\n7 | Seal off a planar rift or wild magic zone.\n8 | Wage war with demons, slaadi, or chaotic Fey.\n\nModron Tridrone:\nTridrones oversee lesser modrons and lead them in battle. They're suspicious of any data provided by non-modrons.\n\nSource:\tMonster Manual 2024 p. 217",
+        "environment": "planar (mechanus)"
+      },
+      {
+        "name": "Mud Mephit [2024]",
+        "sortname": "Mephit, Mud",
+        "ancestry": "Mephit",
+        "size": "S",
+        "type": "elemental",
+        "alignment": "neutral evil",
+        "ac": "11",
+        "hp": "13 (3d6+3)",
+        "speed": "20 ft., fly 20 ft., swim 20 ft.",
+        "init": "1",
+        "str": "8",
+        "dex": "12",
+        "con": "12",
+        "int": "9",
+        "wis": "11",
+        "cha": "7",
+        "save": null,
+        "skill": "Stealth +3",
+        "passive": "10",
+        "languages": "Primordial (Aquan, Terran)",
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "exhaustion, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Death Burst",
+            "text": "The mephit explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 5-foot Emanation originating from the mephit. Failure: The target has the Restrained condition until the end of its next turn."
+          }
+        ],
+        "action": [
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage.",
+            "attack": "Slam|+3|1d6+1"
+          },
+          {
+            "name": "Mud Breath (Recharge 6)",
+            "text": "Dexterity Saving Throw: DC 11, one creature the mephit can see within 15 feet. Failure: The target has the Restrained condition until the end of the mephit's next turn.",
+            "recharge": "D6"
+          }
+        ],
+        "description": "Mephits are mean-spirited tricksters that dwell on the Elemental Planes. The six most prominent types of mephits resemble halfling-size gargoyles with wings, exaggerated features, and bodies composed of two elements. Most live self-interested existences, indulging their warped senses of humor or overblown egos on their home planes of existence. Some serve as messengers or spies for genies or magic-users.\n\tMephits resent leaving the elemental extremes where they make their homes. If loosed on the Material Plane or other realms, they lash out with nasty pranks or by tormenting weaker creatures. When destroyed, mephits explode in a burst of elemental magic.\n\nMud Mephit:\nA combination of earth and water, mud mephits are crude, disgusting creatures. They take every opportunity to ruin objects and pollute food with muck.\n\nSource:\tMonster Manual 2024 p. 207",
+        "environment": "planar (elemental)"
+      },
+      {
+        "name": "Mule [2024]",
+        "size": "M",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "11 (2d8+2)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "14",
+        "dex": "10",
+        "con": "13",
+        "int": "2",
+        "wis": "10",
+        "cha": "5",
+        "save": "Str +4",
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "1/8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Beast of Burden",
+            "text": "The mule counts as one size larger for the purpose of determining its carrying capacity."
+          }
+        ],
+        "action": {
+          "name": "Hooves",
+          "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.",
+          "attack": "Hooves|+4|1d4+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 365,\n\t\tPlayer's Handbook 2024 p. 353",
+        "environment": "desert, hill, urban"
+      },
+      {
+        "name": "Mummy [2024]",
+        "sortname": "Mummy",
+        "ancestry": "Mummy",
+        "size": "S",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "11",
+        "hp": "58 (9d8+18)",
+        "speed": "20 ft.",
+        "init": "-1",
+        "str": "16",
+        "dex": "8",
+        "con": "15",
+        "int": "6",
+        "wis": "12",
+        "cha": "12",
+        "save": "Wis +3",
+        "skill": null,
+        "passive": "11",
+        "languages": "Common plus two other languages",
+        "cr": "3",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mummy makes two Rotting Fist attacks and uses Dreadful Glare."
+          },
+          {
+            "name": "Rotting Fist",
+            "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Bludgeoning damage plus 10 (3d6) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target can't regain Hit Points, its Hit Point maximum doesn't return to normal when finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.",
+            "attack": [
+              "Rotting Fist|+5|1d10+3",
+              "Necrotic Damage||3d6",
+              "HP Max Decrease||3d6"
+            ]
+          },
+          {
+            "name": "Dreadful Glare",
+            "text": "Wisdom Saving Throw: DC 11, one creature the mummy can see within 60 feet. Failure: The target has the Frightened condition until the end of the mummy's next turn. Success: The target is immune to this mummy's Dreadful Glare for 24 hours."
+          }
+        ],
+        "description": "Mysterious rites and mighty faith can tie spirits to their corpses, binding them to their remains for all time. Should their resting places be violated, these beings, known as mummies, reanimate their deteriorating bodies to restore the sanctity of their tombs and punish those who disturbed their rest.\n\tMummies pursue those who offend them, typically mortals who desecrate their resting places, steal their burial treasures, or defile sites tied to their faith. With undying rage, these ancient corpses go to extreme lengths to avenge themselves and restore what they need to find peace.\n\tA mummy might look frail, but its body possesses supernatural strength, and its gaze can strike fear in the bravest hearts. Those who escape a mummy's grasp might find themselves subject to a terrible curse. Victims of a mummy's curse gradually wither, their bodies rotting away until they're reduced to dust. This curse can be healed only by the Remo v e Curse spell or similar magic.\n\nMummy:\nCommon mummies are the remains of priests, nobles, or champions of faith that underwent magical burial rites. Some are preserved through processes using linen wrappings or clay, but others are preserved by peat bogs, ice, magic, or other means.\n\tRoll on or choose a result from the Mummy Resurrections table to determine why a mummy has returned from the dead.\n\nMummy Resurrections:\n1d8 | The Mummy Reanimates To...\n1 | Defend a holy site it was created to protect.\n2 | Obey the summons of a mummy lord.\n3 | Oppose an enemy who has returned to life.\n4 | Protect its descendants from an ancient threat.\n5 | Punish the progeny of those who cursed it.\n6 | Reclaim treasures robbed from its crypt.\n7 | Serve whoever speaks the prayer on its tomb.\n8 | Slay anyone who sets eyes on it.\n\nSource:\tMonster Manual 2024 p. 219",
+        "environment": "desert, swamp"
+      },
+      {
+        "name": "Mummy Lord [2024]",
+        "size": "S",
+        "type": "undead",
+        "alignment": "lawful evil",
+        "ac": "17",
+        "hp": "187 (25d8+75)",
+        "speed": "30 ft.",
+        "init": "10",
+        "str": "18",
+        "dex": "10",
+        "con": "17",
+        "int": "11",
+        "wis": "19",
+        "cha": "16",
+        "save": "Wis +9, Int +5",
+        "skill": "History +5, Perception +9, Religion +5",
+        "passive": "19",
+        "languages": "Common plus three other languages",
+        "cr": "15",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "necrotic, poison",
+        "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned",
+        "senses": "truesight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "recharge": "4/DAY",
+            "text": "If the mummy fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The mummy has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Undead Restoration",
+            "text": "If destroyed, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Hit Points. The new body appears in an unoccupied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all damage except Fire."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare."
+          },
+          {
+            "name": "Rotting Fist",
+            "text": "Melee Attack Roll: +9, reach 5 ft. Hit: 15 (2d10 + 4) Bludgeoning damage plus 10 (3d6) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target can't regain Hit Points, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.",
+            "attack": [
+              "Rotting Fist|+9|2d10+4",
+              "Necrotic Damage||3d6"
+            ]
+          },
+          {
+            "name": "Channel Negative Energy",
+            "text": "Ranged Attack Roll: +9, range 60 ft. Hit: 25 (6d6 + 4) Necrotic damage.",
+            "attack": "Channel Negative Energy|+9|6d6+4"
+          },
+          {
+            "name": "Dreadful Glare",
+            "text": "Wisdom Saving Throw: DC 17, one creature the mummy can see within 60 feet. Failure: 25 (6d6 + 4) Psychic damage, and the target has the Paralyzed condition until the end of the mummy's next turn.",
+            "attack": "Dreadful Glare||6d6+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The mummy casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):\n\n\t• At will: Dispel Magic, Thaumaturgy\n\t• 1/Day each: Animate Dead, Harm, Insect Plague (level 7 version)"
+          }
+        ],
+        "reaction": {
+          "name": "Whirlwind of Sand",
+          "text": "Trigger: The mummy is hit by an attack roll. Response: The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 60 feet to an unoccupied space it can see. Each creature of its choice that it can see within 5 feet of its destination space has the Blinded condition until the end of the mummy's next turn."
+        },
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Mummy Lord can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Mummy Lord regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Glare",
+            "text": "The mummy uses Dreadful Glare. The mummy can't take this action again until the start of its next turn."
+          },
+          {
+            "name": "Necrotic Strike",
+            "text": "The mummy makes one Rotting Fist or Channel Negative Energy attack."
+          },
+          {
+            "name": "Dread Command",
+            "text": "The mummy casts Command (level 2 version), using the same spellcasting ability as Spellcasting. The mummy can't take this action again until the start of its next turn."
+          },
+          {
+            "@category": "lair",
+            "name": "Mummy Lord Lairs",
+            "text": "Mummy lords typically lurk in the ruins of places they dwelled in life. Such sites have forbidding reputations, or they might be lost and forgotten.\n\tThe region containing a mummy lord's lair is warped by its presence, creating the following effects:\n\nCursed Fate: Whenever a creature other than the mummy or one of its allies casts a Divination spell while within 1 mile of the lair, the creature makes a DC 15 Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast the spell is wasted, but any resources used to cast it aren't expended.\n\nSoul Drain: Creatures within 1 mile of the lair have Disadvantage on Death Saving Throws.\n\nIf the mummy lord is destroyed or moves its lair elsewhere, these effects end immediately. The effects resume if the mummy lord gains a new body (see its Undead Restoration trait)."
+          }
+        ],
+        "spells": "Command [2024], Dispel Magic [2024], Thaumaturgy [2024], Animate Dead [2024], Harm [2024], Insect Plague [2024]",
+        "description": "Mysterious rites and mighty faith can tie spirits to their corpses, binding them to their remains for all time. Should their resting places be violated, these beings, known as mummies, reanimate their deteriorating bodies to restore the sanctity of their tombs and punish those who disturbed their rest.\n\tMummies pursue those who offend them, typically mortals who desecrate their resting places, steal their burial treasures, or defile sites tied to their faith. With undying rage, these ancient corpses go to extreme lengths to avenge themselves and restore what they need to find peace.\n\tA mummy might look frail, but its body possesses supernatural strength, and its gaze can strike fear in the bravest hearts. Those who escape a mummy's grasp might find themselves subject to a terrible curse. Victims of a mummy's curse gradually wither, their bodies rotting away until they're reduced to dust. This curse can be healed only by the Remo v e Curse spell or similar magic.\n\nMummy Lord:\nThose desperate to escape death sometimes make terrible bargains with wicked deities. Devoting their hearts to evil forces, these villains gain power over death and a cursed immortality that binds their minds and spirits within a desiccated corpse. Freed from mortal concerns, these mummy lords pursue their obsessions across ages.\n\tMost mummy lords linger amid the ruins of ancient palaces or temples where they once held sway. Their age-old faith and ties to deathly forces grant them fearful magic, which they use to sow ruin and animate undead servants.\n\tA mummy lord's heart embodies the pact that grants it immortality. Rather than bearing its heart within its corpse, a mummy lord removes and hides this accursed organ. As long as its heart isn't destroyed by fire, a mummy lord can return to unlife no matter what doom it meets.\n\tMummy lords are usually consumed by ageless plots. Roll on or choose a result from the Mummy Lord Plots table to determine a mummy lord's ancient agenda.\n\nMummy Lord Plots:\n1d8 | The Mummy Lord Seeks To...\n1 | Open a portal to the past, when its power was at its height.\n2 | Perform a ritual that can be attempted only once every eight hundred years.\n3 | Reclaim and resurrect a loved one's corpse.\n4 | Reconquer the lands that once composed its empire.\n5 | Recover the pieces of its lost heart.\n6 | Replace its descendant as the ruler of a realm.\n7 | Sacrifice a thousand souls to its god in return for true life.\n8 | Transform the people of an entire nation into Undead servants.\n\nSource:\tMonster Manual 2024 p. 221",
+        "environment": "desert, swamp"
+      },
+      {
+        "name": "Myconid Adult [2024]",
+        "sortname": "Myconid, Adult",
+        "ancestry": "Myconid",
+        "size": "M",
+        "type": "plant",
+        "alignment": "lawful neutral",
+        "ac": "12",
+        "hp": "16 (3d8+3)",
+        "speed": "20 ft.",
+        "init": "0",
+        "str": "10",
+        "dex": "10",
+        "con": "12",
+        "int": "10",
+        "wis": "13",
+        "cha": "7",
+        "save": null,
+        "skill": null,
+        "passive": "11",
+        "languages": "telepathy 240 ft.",
+        "cr": "1/2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Sun Sickness",
+            "text": "While in sunlight, the myconid has Disadvantage on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight."
+          }
+        ],
+        "action": [
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +2, reach 5 ft. Hit: 4 (1d8) Bludgeoning damage plus 3 (1d6) Poison damage.",
+            "attack": [
+              "Slam|+2|1d8",
+              "Poison Damage||1d6"
+            ]
+          },
+          {
+            "name": "Pacifying Spores (1/Day)",
+            "recharge": "1/DAY",
+            "text": "Constitution Saving Throw: DC 11, one creature the myconid can see within 10 feet. Failure: The target has the Stunned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+          },
+          {
+            "name": "Rapport Spores",
+            "text": "The myconid expels spores in a 30-foot Emanation originating from itself. Creatures in that area with an Intelligence score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepathy with a range of 30 feet for 1 hour."
+          }
+        ],
+        "description": "Myconids dwell in remote Underdark reaches overgrown with molds and mushrooms. These ambulatory fungal creatures tend to their sanctuaries and avoid becoming embroiled in the conflicts of other creatures. They use specialized spores to communicate, to alert one another to danger, and to defend themselves. When myconids encounter others beings, they use mind-linking spores to allow nearby creatures to telepathically share thoughts. Nevertheless, myconids' goals remain mysterious to most non-fungal creatures.\n\nMyconid Adult:\nMyconid adults defend their territories and other myconids from invaders.\n\nSource:\tMonster Manual 2024 p. 223",
+        "environment": "underdark"
+      },
+      {
+        "name": "Myconid Sovereign [2024]",
+        "sortname": "Myconid, Sovereign",
+        "ancestry": "Myconid",
+        "size": "L",
+        "type": "plant",
+        "alignment": "lawful neutral",
+        "ac": "13",
+        "hp": "45 (6d10+12)",
+        "speed": "30 ft.",
+        "init": "0",
+        "str": "12",
+        "dex": "10",
+        "con": "14",
+        "int": "13",
+        "wis": "15",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "12",
+        "languages": "telepathy 240 ft.",
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Sun Sickness",
+            "text": "While in sunlight, the myconid has Disadvantage on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The myconid makes one Slam attack and uses Pacifying Spores."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Bludgeoning damage plus 5 (2d4) Poison damage.",
+            "attack": [
+              "Slam|+3|2d4+1",
+              "Poison Damage||2d4"
+            ]
+          },
+          {
+            "name": "Animating Spores (3/Day)",
+            "recharge": "3/DAY",
+            "text": "The myconid releases spores at a Medium or Small corpse within 5 feet of it that wasn't a Construct or an Undead. In 24 hours, the corpse rises as a Myconid Spore Servant. The corpse stays animate for 1d4 + 1 weeks or until destroyed, and it can't be animated again in this way.",
+            "attack": "Weeks||1d4+1"
+          },
+          {
+            "name": "Pacifying Spores",
+            "text": "Constitution Saving Throw: DC 12, one creature the myconid can see within 10 feet. Failure: The target has the Stunned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+          },
+          {
+            "name": "Rapport Spores",
+            "text": "The myconid expels spores in a 30-foot Emanation originating from itself. Creatures in that area with an Intelligence score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepathy with a range of 30 feet for 1 hour."
+          }
+        ],
+        "description": "Myconids dwell in remote Underdark reaches overgrown with molds and mushrooms. These ambulatory fungal creatures tend to their sanctuaries and avoid becoming embroiled in the conflicts of other creatures. They use specialized spores to communicate, to alert one another to danger, and to defend themselves. When myconids encounter others beings, they use mind-linking spores to allow nearby creatures to telepathically share thoughts. Nevertheless, myconids' goals remain mysterious to most non-fungal creatures.\n\nMyconid Sovereign:\nMyconid sovereigns resemble towering myconid adults with elaborate fungal growths. They direct their lesser kin and see to the health and growth of vast fungal blooms.\n\nSource:\tMonster Manual 2024 p. 223",
+        "environment": "underdark"
+      },
+      {
+        "name": "Myconid Spore Servant [2024]",
+        "sortname": "Myconid, Spore Servant",
+        "ancestry": "Myconid",
+        "size": "S",
+        "type": "plant",
+        "alignment": "unaligned",
+        "ac": "13",
+        "hp": "37 (5d8+15)",
+        "speed": "20 ft.",
+        "init": "1",
+        "str": "16",
+        "dex": "12",
+        "con": "16",
+        "int": "2",
+        "wis": "6",
+        "cha": "1",
+        "save": null,
+        "skill": null,
+        "passive": "8",
+        "languages": "telepathy 30 ft.",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "blinded, charmed, frightened, paralyzed, poisoned",
+        "senses": "blindsight 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": {
+          "name": "Slam",
+          "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage plus 2 (1d4) Poison damage.",
+          "attack": [
+            "Slam|+5|1d6+3",
+            "Poison Damage||1d4"
+          ]
+        },
+        "description": "Myconids dwell in remote Underdark reaches overgrown with molds and mushrooms. These ambulatory fungal creatures tend to their sanctuaries and avoid becoming embroiled in the conflicts of other creatures. They use specialized spores to communicate, to alert one another to danger, and to defend themselves. When myconids encounter others beings, they use mind-linking spores to allow nearby creatures to telepathically share thoughts. Nevertheless, myconids' goals remain mysterious to most non-fungal creatures.\n\nMyconid Spore Servant:\nSpore servants are corpses that have been overgrown and reanimated by a myconid sovereign's spores. These fungus-infested bodies are extensions of a myconid sovereign and obey its will.\n\nSource:\tMonster Manual 2024 p. 223",
+        "environment": "underdark"
+      },
+      {
+        "name": "Myconid Sprout [2024]",
+        "sortname": "Myconid, Sprout",
+        "ancestry": "Myconid",
+        "size": "S",
+        "type": "plant",
+        "alignment": "lawful neutral",
+        "ac": "10",
+        "hp": "3 (1d6)",
+        "speed": "10 ft.",
+        "init": "0",
+        "str": "8",
+        "dex": "10",
+        "con": "10",
+        "int": "8",
+        "wis": "11",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "telepathy 240 ft.",
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Sun Sickness",
+            "text": "While in sunlight, the myconid has Disadvantage on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight."
+          }
+        ],
+        "action": [
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +1, reach 5 ft. Hit: 1 (1d4 - 1) Bludgeoning damage plus 2 (1d4) Poison damage.",
+            "attack": [
+              "Slam|+1|1d4-1",
+              "Poison Damage||1d4"
+            ]
+          },
+          {
+            "name": "Rapport Spores",
+            "text": "The myconid expels spores in a 30-foot Emanation originating from itself. Creatures in that area with an Intelligence score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepathy with a range of 30 feet for 1 hour."
+          }
+        ],
+        "description": "Myconids dwell in remote Underdark reaches overgrown with molds and mushrooms. These ambulatory fungal creatures tend to their sanctuaries and avoid becoming embroiled in the conflicts of other creatures. They use specialized spores to communicate, to alert one another to danger, and to defend themselves. When myconids encounter others beings, they use mind-linking spores to allow nearby creatures to telepathically share thoughts. Nevertheless, myconids' goals remain mysterious to most non-fungal creatures.\n\nMyconid Sprout:\nMyconid sprouts tend to their fungal homes and watch for trespassers.\n\nSource:\tMonster Manual 2024 p. 222",
+        "environment": "underdark"
+      }
+    ]
+  }
+}

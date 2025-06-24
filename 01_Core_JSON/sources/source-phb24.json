@@ -1,0 +1,95 @@
+{
+  "source": {
+    "name": "Player's Handbook (2024)",
+    "abbreviation": "PHB24",
+    "url": "https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000",
+    "author": "Wizards of the Coast",
+    "publisher": "Wizards of the Coast",
+    "website": "https://www.dndbeyond.com/",
+    "category": "Core Rulebooks [2024]",
+    "pubdate": "2024-09-17",
+    "description": "Embark on an epic adventure 10 years in the making.\n\nIntroducing the 2024 Player's Handbook, the new and improved guide for fifth edition DUNGEONS & DRAGONS. We've loved hearing from you and built this book to deliver what you want—and more!\n\nCreate compelling characters with optimized rules, updated spells and equipment, and expanded player options. With an improved layout and organization, you have all the information you need right at your fingertips. Your adventure begins now!\n\nThe new and improved Player's Handbook 2024 is the ultimate guide for fifth edition D&D players. Create fantastic heroes from an expanded selection of character origins, classes, and subclasses.\n\nThe biggest Player's Handbook in Dungeons & Dragons history!\n\n\t* New and revised player options including 12 classes, 48 subclasses, 16 Backgrounds, 10 Species, and 75 Feats\n\t* New Weapon Mastery system provides greater versatility in combat\n\t* New Tools & Crafting systems\n\t* Full compatibility with all previous fifth edition content",
+    "collection": {
+      "doc": [
+        {
+          "@href": "backgrounds-phb24.xml"
+        },
+        {
+          "@href": "bestiary-phb24.xml"
+        },
+        {
+          "@href": "class-barbarian-phb24.xml"
+        },
+        {
+          "@href": "class-bard-phb24.xml"
+        },
+        {
+          "@href": "class-cleric-phb24.xml"
+        },
+        {
+          "@href": "class-druid-phb24.xml"
+        },
+        {
+          "@href": "class-fighter-phb24.xml"
+        },
+        {
+          "@href": "class-monk-phb24.xml"
+        },
+        {
+          "@href": "class-paladin-phb24.xml"
+        },
+        {
+          "@href": "class-ranger-phb24.xml"
+        },
+        {
+          "@href": "class-rogue-phb24.xml"
+        },
+        {
+          "@href": "class-sorcerer-phb24.xml"
+        },
+        {
+          "@href": "class-warlock-phb24.xml"
+        },
+        {
+          "@href": "class-wizard-phb24.xml"
+        },
+        {
+          "@href": "feats-phb24.xml"
+        },
+        {
+          "@href": "items-phb24.xml"
+        },
+        {
+          "@href": "optionalfeatures-phb24.xml"
+        },
+        {
+          "@href": "races-phb24.xml"
+        },
+        {
+          "@href": "spells-abjuration-phb24.xml"
+        },
+        {
+          "@href": "spells-conjuration-phb24.xml"
+        },
+        {
+          "@href": "spells-divination-phb24.xml"
+        },
+        {
+          "@href": "spells-enchantment-phb24.xml"
+        },
+        {
+          "@href": "spells-evocation-phb24.xml"
+        },
+        {
+          "@href": "spells-illusion-phb24.xml"
+        },
+        {
+          "@href": "spells-necromancy-phb24.xml"
+        },
+        {
+          "@href": "spells-transmutation-phb24.xml"
+        }
+      ]
+    }
+  }
+}
