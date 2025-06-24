@@ -1,0 +1,800 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Eagle [2024]",
+        "sortname": "Eagle",
+        "ancestry": "Eagle",
+        "size": "S",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "4 (1d6+1)",
+        "speed": "10 ft., fly 60 ft.",
+        "init": "2",
+        "str": "6",
+        "dex": "15",
+        "con": "12",
+        "int": "2",
+        "wis": "14",
+        "cha": "7",
+        "save": null,
+        "skill": "Perception +6",
+        "passive": "16",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Talons",
+          "text": "Melee Attack Roll: +4, reach 5 feet. Hit: 4 (1d4 + 2) Slashing damage.",
+          "attack": "Talons|+4|1d4+2"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 353",
+        "environment": "coastal, grassland, hill, mountain"
+      },
+      {
+        "name": "Earth Elemental [2024]",
+        "sortname": "Elemental, Earth",
+        "ancestry": "Elemental",
+        "size": "L",
+        "type": "elemental",
+        "alignment": "neutral",
+        "ac": "17",
+        "hp": "147 (14d10+70)",
+        "speed": "30 ft., burrow 30 ft.",
+        "init": "-1",
+        "str": "20",
+        "dex": "8",
+        "con": "20",
+        "int": "5",
+        "wis": "10",
+        "cha": "5",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Primordial (Terran)",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+        "senses": "darkvision 60 ft., tremorsense 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Earth Glide",
+            "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+          },
+          {
+            "name": "Siege Monster",
+            "text": "The elemental deals double damage to objects and structures."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The elemental makes two attacks, using Slam or Rock Launch in any combination."
+          },
+          {
+            "name": "Slam",
+            "text": "Melee Attack Roll: +8, reach 10 ft. Hit: 14 (2d8 + 5) Bludgeoning damage.",
+            "attack": "Slam|+8|2d8+5"
+          },
+          {
+            "name": "Rock Launch",
+            "text": "Ranged Attack Roll: +8, range 60 ft. Hit: 8 (1d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Rock Launch|+8|1d6+5"
+          }
+        ],
+        "description": "Primal spirits from the Elemental Plane of Earth merge with rocks and minerals to form earth elementals. These beings possess powerful limbs and coarse features, sometimes studded with ore, gems, crystals, colorful striations, or living plants. On the Material Plane, earth elementals often serve those who conjure them, or they appear in regions influenced by their home plane, such as crystalline nodes, energetic fault lines, or veins of magical ore. Earth elementals effortlessly move through stone and can bring ruin to whole structures with their mighty fists.\n\tEarth elementals are typically made of more than dirt. While an elemental's composition doesn't change its statistics or have monetary value, it makes each elemental distinct. Roll on or choose a result from the Earth Elemental Compositions table to inspire an earth elemental's features.\n\nEarth Elemental Compositions:\n1d8 | The Earth Elemental's Body Features...\n1 | Colorful mineral formations.\n2 | Cooled magma in melted heaps.\n3 | Grass, moss, or plant roots.\n4 | Heaps of peat or decaying matter.\n5 | Mounds of sand studded with shells.\n6 | Rubble or pieces of a ruined structure.\n7 | Striking striations or bands of color.\n8 | Veins of iron or other ore.\n\nSource:\tMonster Manual 2024 p. 108",
+        "environment": "mountain, planar (elemental plane of earth), underdark"
+      },
+      {
+        "name": "Efreeti [2024]",
+        "size": "L",
+        "type": "elemental (genie)",
+        "alignment": "neutral",
+        "ac": "17",
+        "hp": "212 (17d10+119)",
+        "speed": "40 ft., fly 60 ft.(hover)",
+        "init": "1",
+        "str": "22",
+        "dex": "12",
+        "con": "24",
+        "int": "16",
+        "wis": "15",
+        "cha": "19",
+        "save": "Wis +6, Cha +8",
+        "skill": null,
+        "passive": "12",
+        "languages": "Primordial (Ignan)",
+        "cr": "11",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "fire",
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Elemental Restoration",
+            "text": "If the efreeti dies outside the Elemental Plane of Fire, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Fire.",
+            "attack": "Elemental Restoration||1d4"
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The efreeti has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Wishes",
+            "text": "The efreeti has a 30 percent chance of knowing the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communicates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell's stress. Once the efreeti has cast it three times, the efreeti can't do so again for 365 days."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination."
+          },
+          {
+            "name": "Heated Blade",
+            "text": "Melee Attack Roll: +10, reach 5 ft. Hit: 13 (2d6 + 6) Slashing damage plus 13 (2d12) Fire damage.",
+            "attack": [
+              "Heated Blade|+10|2d6+6",
+              "Fire Damage||2d12"
+            ]
+          },
+          {
+            "name": "Hurl Flame",
+            "text": "Ranged Attack Roll: +8, range 120 ft. Hit: 24 (7d6) Fire damage.",
+            "attack": "Hurl Flame|+8|7d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The efreeti casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):\n\n\t• At will: Detect Magic, Elementalism\n\t• 1/Day each: Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fire (level 7 version)"
+          }
+        ],
+        "spells": "Detect Magic [2024], Elementalism [2024], Gaseous Form [2024], Invisibility [2024], Major Image [2024], Plane Shift [2024], Tongues [2024], Wall of Fire [2024]",
+        "description": "Efreet burn with the energy and unpredictability of fire. Their innate magic allows them to conjure flames from nothing and shape treasures within magical infernos. Many efreet have wicked reputations, as their fickle natures and love for dramatic conflagrations can be destructive. Other efreet delight in fire's beauty, be it the delicacy of a candle flame or the shared wonder of fireworks. These genies might aid mortals in exchange for treasures or the liberation of captive Elementals.\n\tOn many worlds, efreet dwell in sweltering deserts and volcanic regions. Those that make their homes on the Elemental Plane of Fire create incredible cities among seas of flame and molten minerals. Eclipsing all of these is the storied City of Brass, a gleaming metropolis that is one of the most wondrous cities in the multiverse. Here, magic tempers the plane's extreme heat, making the City of Brass a hub of trade between planes of existence.\n\nSource:\tMonster Manual 2024 p. 109",
+        "environment": "desert, planar (elemental plane of fire)"
+      },
+      {
+        "name": "Elemental Cataclysm [2024]",
+        "size": "G",
+        "type": "elemental (titan)",
+        "alignment": "chaotic neutral",
+        "ac": "20",
+        "hp": "370 (20d20+160)",
+        "speed": "60 ft., fly 80 ft.(hover), burrow 60 ft., swim 80 ft.",
+        "init": "18",
+        "str": "26",
+        "dex": "19",
+        "con": "27",
+        "int": "9",
+        "wis": "14",
+        "cha": "9",
+        "save": "Wis +9, Con +15, Dex +11, Cha +6",
+        "skill": null,
+        "passive": "12",
+        "languages": "Primordial",
+        "cr": "22",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "acid, cold, fire, lightning, poison, thunder",
+        "conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
+        "senses": "truesight 150 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+7"
+          },
+          {
+            "name": "Earth Glide",
+            "text": "The cataclysm can burrow through nonmagical, unworked earth and stone. While doing so, the cataclysm doesn't disturb the material it moves through."
+          },
+          {
+            "name": "Legendary Resistance (4/Day)",
+            "recharge": "4/DAY",
+            "text": "If the cataclysm fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Siege Monster",
+            "text": "The cataclysm deals double damage to objects and structures."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cataclysm makes two Elemental Burst attacks."
+          },
+          {
+            "name": "Elemental Burst",
+            "text": "Melee or Ranged Attack Roll: +15, reach 30 ft. or range 150 ft. Hit: 25 (5d6 + 8) damage of a type chosen by the cataclysm: Acid, Cold, Fire, Lightning, or Thunder.",
+            "attack": "Elemental Burst|+15|5d6+8"
+          },
+          {
+            "name": "Cataclysmic Event (Recharge 4-6)",
+            "recharge": "D4",
+            "text": "The cataclysm creates one of the following effects at random (roll 1d4):\n\nCataclysm:\nd4 | Effect\n1 | Clinging Flames: Dexterity Saving Throw: DC 23, each creature in a 60-foot-radius Sphere centered on a point the cataclysm can see within 150 feet. Failure: 45 (13d6) Fire damage. Success: Half damage. Failure or Success: The target starts burning.\n2 | Freezing Waves. Strength Saving Throw: DC 23, each creature in a 90-foot Cone. Failure: 22 (5d8) Bludgeoning damage plus 22 (5d8) Cold damage, and the target has the Prone condition. Success: Half damage only. Failure or Success: The target's Speed is reduced to 0 until the end of its next turn.\n3 | Raging Storm: A storm cloud fills a 60-foot-radius Sphere centered on a point the cataclysm can see within 150 feet. The cloud lasts for 1 minute or until the cataclysm uses Cataclysmic Event again. Creatures entirely in the cloud have the Blinded and Deafened conditions and can't cast spells with a Verbal component. Dexterity Saving Throw: DC 23, each creature that enters the cloud for the first time on a turn or starts its turn there. Failure: 18 (4d8) Lightning damage plus 18 (4d8) Thunder damage. Success: Half damage.\n4 | Swallowing Earth: Strength Saving Throw: DC 23, each creature in a 90-foot Cube originating from a point on the ground within 150 feet. Failure: 18 (4d8) Bludgeoning damage plus 18 (4d8) Acid damage, and the target has the Prone condition and is buried under rubble. A buried target has the Restrained condition, has Total Cover, and is suffocating. As an action, a buried creature or another creature within 5 feet of it can make a DC 18 Strength (Athletics) check. On a successful check, the creature is no longer buried. Success: Half damage only.",
+            "attack": [
+              "Cataclysmic Event||1d4",
+              "Clinging Flames||13d6",
+              "Freezing Waves||5d8",
+              "Raging Storm||4d8",
+              "Swallowing Earth||4d8"
+            ]
+          },
+          {
+            "name": "Control Weather",
+            "text": "The cataclysm casts the Control Weather spell, requiring no spell components and using Constitution as the spellcasting ability.\n\n\t• At will: Control Weather"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Elemental Cataclysm can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Elemental Cataclysm regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Eruption",
+            "text": "The cataclysm makes one Elemental Burst attack."
+          },
+          {
+            "name": "Rumbling Movement",
+            "text": "The cataclysm moves up to its Speed, Fly Speed, or Swim Speed without provoking Opportunity Attacks. Each creature within 5 feet of the cataclysm as it moves is targeted once by the following effect. Constitution Saving Throw: DC 23. Failure: The target has the Prone condition. Failure or Success: The cataclysm can't take this action again until the start of its next turn."
+          }
+        ],
+        "spells": "Control Weather",
+        "description": "Source:\tMonster Manual 2024 p. 111",
+        "environment": "planar (elemental chaos)"
+      },
+      {
+        "name": "Elemental Cultist [2024]",
+        "sortname": "Cultist, Elemental",
+        "ancestry": "Cultist",
+        "size": "S",
+        "type": "humanoid",
+        "alignment": "chaotic evil",
+        "ac": "16",
+        "hp": "135 (18d8+54)",
+        "speed": "30 ft.",
+        "init": "4",
+        "str": "18",
+        "dex": "12",
+        "con": "16",
+        "int": "14",
+        "wis": "18",
+        "cha": "12",
+        "save": "Wis +7, Con +6",
+        "skill": "Arcana +5, Perception +7, Religion +5",
+        "passive": "17",
+        "languages": "Common, Primordial",
+        "cr": "8",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Gear",
+            "text": "Chain Mail"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure.\nRelics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Size",
+            "text": "Small, Medium"
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The cultist makes three attacks, using Elemental Flail or Elemental Claw in any combination."
+          },
+          {
+            "name": "Elemental Flail",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 25 (6d6 + 4) damage of a type chosen by the cultist: Acid, Cold, Fire, Lightning, or Thunder.",
+            "attack": "Elemental Flail|+7|6d6+4"
+          },
+          {
+            "name": "Elemental Claw",
+            "text": "Ranged Attack Roll: +7, range 120 ft. Hit: 22 (4d10) damage of a type chosen by the cultist: Acid, Cold, Fire, Lightning, or Thunder. If the target is a Medium or smaller creature, the cultist moves the target up to 10 feet straight toward or away from itself.",
+            "attack": "Elemental Claw|+7|4d10"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15):\n\nAt will: Elementalism, Mage Hand"
+          }
+        ],
+        "reaction": {
+          "name": "Elemental Absorption (1/Day)",
+          "recharge": "1/DAY",
+          "text": "Trigger: The cultist takes Acid, Cold, Fire, Lightning, or Thunder damage. Response: The cultist gives itself Resistance to that instance of damage and gains 10 Temporary Hit Points."
+        },
+        "description": "Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.\n\nCultist Agendas:\n1d6 | The Cultist Strives To...\n1 | Bring about the end of a dominant order, an age, or the world.\n2 | Burn away the comfortable lies of reality, revealing forgotten or terrible truths.\n3 | Expand their faith through mind control or supernatural coercion.\n4 | Make global changes, like sinking the land or awakening volcanoes.\n5 | Remake life on a mass scale, altering other creatures' bodies or spiritual beings.\n6 | Summon their deity or its herald, weapon, or realm into their world.\n\nOccult Symbols:\nCults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.\n\nCult Symbols:\n1d10 | The Symbol Is... Depicted As...\n1 | An alchemical sign A calendar or map\n2 | An animal A crest or as heraldry\n3 | A celestial body An elaborate diagram\n4 | A deity's icon A metaphorical image\n5 | An element A mystical being\n6 | An eye Part of an equation\n7 | A geometric shape A repeating pattern\n8 | A letter or number A series of scratches\n9 | Part of a monster A simple pictogram\n10 | A skull A weapon or tool\n\nCult Members:\nCults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. Any cult might have the following sorts of members.\n\nTypes of Cultists:\nCults can organize around any mystical tradition, but many serve supernatural beings. Cult members often have abilities tied to the forces they worship.\n\nElemental Cultist:\nElemental cultists harness destructive natural forces to cleanse the world of civilization or prove the dominance of one element over all others. Such cultists are aligned with Elemental monsters or wicked immortals such as the Princes of Elemental Evil or the Elder Elemental Eye.\n\nSource:\tMonster Manual 2024 p. 87",
+        "environment": "any"
+      },
+      {
+        "name": "Elephant [2024]",
+        "size": "H",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "12",
+        "hp": "76 (8d12+24)",
+        "speed": "40 ft.",
+        "init": "0",
+        "str": "22",
+        "dex": "9",
+        "con": "17",
+        "int": "3",
+        "wis": "11",
+        "cha": "6",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": null,
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The elephant makes two Gore attacks."
+          },
+          {
+            "name": "Gore",
+            "text": "Melee Attack Roll: +8, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.",
+            "attack": "Gore|+8|2d8+6"
+          },
+          {
+            "name": "Trample (Bonus Action)",
+            "text": "Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 17 (2d10 + 6) Bludgeoning damage. Success: Half damage."
+          }
+        ],
+        "description": "Source:\tMonster Manual 2024 p. 353,\n\t\tPlayer's Handbook 2024 p. 349",
+        "environment": "grassland"
+      },
+      {
+        "name": "Elk [2024]",
+        "sortname": "Elk",
+        "ancestry": "Elk",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "10",
+        "hp": "11 (2d10)",
+        "speed": "50 ft.",
+        "init": "0",
+        "str": "16",
+        "dex": "10",
+        "con": "11",
+        "int": "2",
+        "wis": "10",
+        "cha": "6",
+        "save": null,
+        "skill": "Perception +2",
+        "passive": "12",
+        "languages": null,
+        "cr": "1/4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": {
+          "name": "Proficiency Bonus",
+          "text": "+2"
+        },
+        "action": {
+          "name": "Ram",
+          "text": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the target is a Large or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and has the Prone condition.",
+          "attack": "Ram|+5|1d6+3+1d6"
+        },
+        "description": "Source:\tMonster Manual 2024 p. 353,\n\t\tPlayer's Handbook 2024 p. 349",
+        "environment": "forest, grassland, hill"
+      },
+      {
+        "name": "Empyrean [2024]",
+        "sortname": "Empyrean",
+        "ancestry": "Empyrean",
+        "size": "H",
+        "type": "varies (titan)",
+        "alignment": "neutral",
+        "ac": "22",
+        "hp": "346 (21d12+210)",
+        "speed": "50 ft., fly 50 ft.(hover), swim 50 ft.",
+        "init": "19",
+        "str": "30",
+        "dex": "21",
+        "con": "30",
+        "int": "21",
+        "wis": "22",
+        "cha": "27",
+        "save": "Str +17, Wis +13",
+        "skill": "Insight +13, Perception +13",
+        "passive": "23",
+        "languages": "all",
+        "cr": "23",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": "necrotic, radiant",
+        "conditionImmune": null,
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+7"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Type",
+            "text": "Choose: celestial, fiend,"
+          },
+          {
+            "name": "Legendary Resistance (4/Day)",
+            "recharge": "4/DAY",
+            "text": "If the empyrean fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The empyrean has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The empyrean makes two attacks, using Sacred Weapon or Divine Ray in any combination."
+          },
+          {
+            "name": "Sacred Weapon",
+            "text": "Melee Attack Roll: +17, reach 10 ft. Hit: 31 (6d6 + 10) Force damage, and the target has the Stunned condition until the start of the empyrean's next turn. The target can choose not to be Stunned, in which case it takes an extra 21 Force damage that bypasses Resistance or Immunity.",
+            "attack": "Sacred Weapon|+17|6d6+10"
+          },
+          {
+            "name": "Divine Ray",
+            "text": "Ranged Attack Roll: +15, range 600 ft. Hit: 35 (6d8 + 8) Necrotic or Radiant damage (empyrean's choice).",
+            "attack": "Divine Ray|+15|6d8+8"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The empyrean casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 23):\n\n\t• At will: Calm Emotions, Greater Restoration, Pass without Trace, Water Breathing\n\t• 1/Day each: Commune, Dispel Evil and Good, Plane Shift"
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Empyrean can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Empyrean regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Bolster",
+            "text": "The empyrean gains 10 Temporary Hit Points, and the empyrean and each ally within 30 feet of it gain Advantage on D20 Tests until the end of the empyrean's next turn. The empyrean can't take this action again until the start of its next turn.",
+            "attack": "Bolster||1d20"
+          },
+          {
+            "name": "Shockwave of Glory",
+            "text": "Constitution Saving Throw: DC 23, each creature in a 30-foot Emanation originating from the empyrean. Failure: 27 (6d8) Force damage, and the target has the Prone condition. Success: Half damage only. Failure or Success: The empyrean can't take this action again until the start of its next turn.",
+            "attack": "Shockwave of Glory||6d8"
+          },
+          {
+            "name": "Smite",
+            "text": "The empyrean makes one Divine Ray attack."
+          }
+        ],
+        "spells": "Calm Emotions [2024], Greater Restoration [2024], Pass Without Trace [2024], Water Breathing [2024], Commune [2024], Dispel Evil and Good [2024], Plane Shift [2024]",
+        "description": "Empyreans are the spawn of deities. While not gods themselves, they possess divine influence and powers related to their divine parents. Some empyreans are near-demigods with fantastic might and the power to reshape mortal lives. Others are little more than divine thoughts or moments of immortal attention made manifest. Whether empyreans are idealized beings or vestiges of divinity, their appearances are influenced by their creators. Roll on or choose a result from the Empyrean Influences table to inspire what aspects of an empyrean's heritage manifest in its physical form.\n\nEmpyrean Influences:\n1d6 | The Empyrean Has Features That Are...\n1 | Balanced, naturalistic, or suggestive of watching eyes.\n2 | Colorful, shadowy, or fluid or that vary depending on the viewer.\n3 | Comforting and gentle or that remind viewers of pleasant memories.\n4 | Disconnected parts, visible thoughts, or errant shapes.\n5 | Machinelike, stoic, symmetrical, or suggestive of judgment.\n6 | Morbid, menacing, or monstrous or that embody the viewer's fears.\n\nEmpyrean:\nInheritors of divine might, empyreans are idealized, human-shaped beings of godly power. These beings might have relationships with their creators akin to those of parents and their children, royalty and their servants, inventors and their creations, or other bonds. Empyreans' existences are fundamentally influenced by their patrons and their connection to the heavenly deities of the Upper Planes or the fiendish deities of the Lower Planes. Nevertheless, empyreans have free will.\n\tCelestial empyreans are typically noble beings who quest to prove themselves worthy of their divine pedigree. Many work in the service of their parents or support those gods' causes and champions.\n\tFiendish empyreans are usually dreadful, self-serving villains who seek to claim their parents' power. Some forge unholy armies or rule over hidden realms in mockery of true gods, while others might seek to escape their accursed families.\n\nSource:\tMonster Manual 2024 p. 113",
+        "environment": "any"
+      },
+      {
+        "name": "Empyrean Iota [2024]",
+        "sortname": "Empyrean, Iota",
+        "ancestry": "Empyrean",
+        "size": "M",
+        "type": "varies (titan)",
+        "alignment": "neutral",
+        "ac": "13",
+        "hp": "22 (5d8)",
+        "speed": "5 ft., fly 30 ft.(hover)",
+        "init": "2",
+        "str": "1",
+        "dex": "14",
+        "con": "10",
+        "int": "15",
+        "wis": "16",
+        "cha": "16",
+        "save": null,
+        "skill": "Insight +5, History +4, Perception +5",
+        "passive": "15",
+        "languages": "all",
+        "cr": "1",
+        "vulnerable": null,
+        "resist": "bludgeoning, piercing, slashing",
+        "immune": null,
+        "conditionImmune": "prone",
+        "senses": "truesight 30 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Relics: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Type",
+            "text": "Choose: celestial, fiend,"
+          },
+          {
+            "name": "Incorporeal Movement",
+            "text": "The empyrean can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The empyrean has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Otherworldly Strike",
+            "text": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 30 ft. Hit: 7 (1d8 + 3) Necrotic or Radiant damage (empyrean's choice).",
+            "attack": "Otherworldly Strike|+5|1d8+3"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The empyrean casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability:\n\n\t• 1/Day each: Bless, Lesser Restoration (as an action)"
+          },
+          {
+            "name": "Healing Word (1/Day) (Bonus Action)",
+            "recharge": "1/DAY",
+            "text": "The empyrean casts Healing Word, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Bless [2024], Lesser Restoration [2024], Healing Word [2024]",
+        "description": "Empyreans are the spawn of deities. While not gods themselves, they possess divine influence and powers related to their divine parents. Some empyreans are near-demigods with fantastic might and the power to reshape mortal lives. Others are little more than divine thoughts or moments of immortal attention made manifest. Whether empyreans are idealized beings or vestiges of divinity, their appearances are influenced by their creators. Roll on or choose a result from the Empyrean Influences table to inspire what aspects of an empyrean's heritage manifest in its physical form.\n\nEmpyrean Influences:\n1d6 | The Empyrean Has Features That Are...\n1 | Balanced, naturalistic, or suggestive of watching eyes.\n2 | Colorful, shadowy, or fluid or that vary depending on the viewer.\n3 | Comforting and gentle or that remind viewers of pleasant memories.\n4 | Disconnected parts, visible thoughts, or errant shapes.\n5 | Machinelike, stoic, symmetrical, or suggestive of judgment.\n6 | Morbid, menacing, or monstrous or that embody the viewer's fears.\n\nEmpyrean Iota:\nEmpyrean iotas are the thoughts, memories, or indirect attentions of deities personified and given a measure of autonomy. Resembling floating glyphs, motes of color, icons of divinity, or stranger shapes, these beings are messengers of the gods and aides to those gods' servants. Iotas have their own knowledge and personalities, though they might know little more than the realms and wishes of their creators.\n\nSource:\tMonster Manual 2024 p. 112",
+        "environment": "any"
+      },
+      {
+        "name": "Erinyes [2024]",
+        "size": "M",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil",
+        "ac": "18",
+        "hp": "178 (21d8+84)",
+        "speed": "30 ft., fly 60 ft.",
+        "init": "7",
+        "str": "18",
+        "dex": "16",
+        "con": "18",
+        "int": "14",
+        "wis": "14",
+        "cha": "18",
+        "save": "Con +8, Dex +7, Cha +8",
+        "skill": "Persuasion +8, Perception +6",
+        "passive": "16",
+        "languages": "Infernal; telepathy 120 ft.",
+        "cr": "12",
+        "vulnerable": null,
+        "resist": "cold",
+        "immune": "fire, poison",
+        "conditionImmune": "poisoned",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+4"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Diabolical Restoration",
+            "text": "If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The erinyes has Advantage on saving throws against spells and other magical effects."
+          },
+          {
+            "name": "Magic Rope",
+            "text": "The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a Short or Long Rest."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The erinyes makes three Withering Sword attacks and can use Entangling Rope."
+          },
+          {
+            "name": "Withering Sword",
+            "text": "Melee Attack Roll: +8, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage plus 11 (2d10) Necrotic damage.",
+            "attack": [
+              "Withering Sword|+8|2d8+4",
+              "Necrotic Damage||2d10"
+            ]
+          },
+          {
+            "name": "Entangling Rope (Requires Magic Rope)",
+            "text": "Strength Saving Throw: DC 16, one creature the erinyes can see within 120 feet. Failure: 14 (4d6) Force damage, and the target has the Restrained condition until the rope is destroyed, the erinyes uses a Bonus Action to release the target, or the erinyes uses Entangling Rope again.",
+            "attack": "Entangling Rope||4d6"
+          }
+        ],
+        "reaction": {
+          "name": "Parry",
+          "text": "Trigger: The erinyes is hit by a melee attack roll while holding a weapon. Response: The erinyes adds 4 to its AC against that attack, possibly causing it to miss."
+        },
+        "description": "Erinyes, also known as furies, are winged devils clad in fiendish armor. These fallen angels exact a merciless form of divine justice, hunting down oath breakers and dragging the rightfully damned to the Nine Hells in the grip of their magical ropes. Few ever glimpse what lies within these devils' armored exteriors, and erinyes ensure that those who do can never speak of what they've seen.\n\nErinyes often serve archdevils and guard the order of the Nine Hells against trespassers and escapees. Although they're prone to wrathful outbursts, erinyes cooperate well with other devils. They sometimes hunt in trios with other erinyes, forging infamous reputations for themselves.\n\nWhen not in the service of a diabolical master, erinyes hunt wicked souls. They pursue quarries relentlessly, across the multiverse and for ages if need be. While they might be summoned to serve evil magic-users, erinyes also listen for oaths and curses sworn in their names. In rare cases, wronged mortals who call out with just rage might be heard by an erinyes who appears to take vengeance on their behalf. Once erinyes are so summoned, they won't leave without claiming the soul of either their quarry or the mortal who summoned them.\n\nSource:\tMonster Manual 2024 p. 114",
+        "environment": "planar (nine hells)"
+      },
+      {
+        "name": "Ettercap [2024]",
+        "size": "M",
+        "type": "monstrosity",
+        "alignment": "neutral evil",
+        "ac": "13",
+        "hp": "44 (8d8+8)",
+        "speed": "30 ft., climb 30 ft.",
+        "init": "2",
+        "str": "14",
+        "dex": "15",
+        "con": "13",
+        "int": "7",
+        "wis": "12",
+        "cha": "8",
+        "save": null,
+        "skill": "Survival +3, Stealth +4, Perception +3",
+        "passive": "13",
+        "languages": null,
+        "cr": "2",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Treasure",
+            "text": "Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Spider Climb",
+            "text": "The ettercap can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          },
+          {
+            "name": "Web Walker",
+            "text": "The ettercap ignores movement restrictions caused by webs, and the ettercap knows the location of any other creature in contact with the same web."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The ettercap makes one Bite attack and one Claw attack."
+          },
+          {
+            "name": "Bite",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 2 (1d4) Poison damage, and the target has the Poisoned condition until the start of the ettercap's next turn.",
+            "attack": [
+              "Bite|+4|1d6+2",
+              "Poison Damage||1d4"
+            ]
+          },
+          {
+            "name": "Claw",
+            "text": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.",
+            "attack": "Claw|+4|2d4+2"
+          },
+          {
+            "name": "Web Strand (Recharge 5-6)",
+            "text": "Dexterity Saving Throw: DC 12, one Large or smaller creature the ettercap can see within 30 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage).",
+            "recharge": "D5"
+          },
+          {
+            "name": "Reel (Bonus Action)",
+            "text": "The ettercap pulls one creature within 30 feet of itself that is Restrained by its Web Strand up to 25 feet straight toward itself."
+          }
+        ],
+        "description": "Spiderlike hunters, ettercaps lurk in forested depths and seek prey to drag into their web-choked lairs. These vicious predators have arachnid features and hunched, bipedal frames, and they're notorious for their venomous bites and ability to shoot out webs to entrap their victims. Ettercaps often hunt in small groups alongside giant spiders and mundane spider swarms.\n\nEttercaps frequently overhunt their environment. Left unchecked, ettercaps might fill whole woodlands with their webs and the cocooned remains of past meals, which puts ettercaps in conflict with Fey. Spiteful ettercaps go out of their way to torment and feed on Fey; they prefer to menace those smaller than themselves, like pixies and sprites. They rarely devour other sapient creatures swiftly, preferring to cocoon their captives and terrorize them for days.\n\nEttercaps avoid fire, which can quickly burn through their webs and the dead trees where they make their homes.\n\nSource:\tMonster Manual 2024 p. 115",
+        "environment": "forest"
+      },
+      {
+        "name": "Ettin [2024]",
+        "size": "L",
+        "type": "giant",
+        "alignment": "chaotic evil",
+        "ac": "12",
+        "hp": "85 (10d10+30)",
+        "speed": "40 ft.",
+        "init": "-1",
+        "str": "21",
+        "dex": "8",
+        "con": "17",
+        "int": "6",
+        "wis": "10",
+        "cha": "8",
+        "save": null,
+        "skill": "Perception +4",
+        "passive": "14",
+        "languages": "Giant",
+        "cr": "4",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": "blinded, charmed, deafened, frightened, stunned, unconscious",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+2"
+          },
+          {
+            "name": "Gear",
+            "text": "Battleaxe, Morningstar"
+          },
+          {
+            "name": "Treasure",
+            "text": "Individual: The monster doesn't have a treasure hoard, but it might keep monetary treasure."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The ettin makes one Battleaxe attack and one Morningstar attack."
+          },
+          {
+            "name": "Battleaxe",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.",
+            "attack": "Battleaxe|+7|2d8+5"
+          },
+          {
+            "name": "Morningstar",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Piercing damage, and the target has Disadvantage on the next attack roll it makes before the end of its next turn.",
+            "attack": "Morningstar|+7|2d8+5"
+          }
+        ],
+        "description": "Ettins are physically powerful Giants with two heads. While many ettins have features similar to hill giants, others have more bestial or unusual traits, such as tusks, short horns, or a single eye on each head.\n\tEttins frequently ally with other Giants or groups that value their strength, such as hill giants, bandits, or ogres. Some ettins possess mystical ties to the lands they inhabit, and they might know or guard secrets valued by druids or Fey.\n\tEach ettin head has a distinct personality. While this makes some ettins quarrelsome with themselves and others, many function as a team. An ettin head might have its own name, or both heads might refer to themselves as a single being—either with one name or a portmanteau of two.\n\tRoll on or choose a result from the Ettin Interactions table to inspire how an ettin's heads are interacting when the creature is encountered.\n\nEttin Interactions:\n1d8 | The Ettin's Heads Are...\n1 | Amping up one another in preparation for a conflict or challenge.\n2 | Arguing over plans for battle, dinner, or how to spend the day.\n3 | Criticizing one another as they perform separate tasks.\n4 | Engaged in a staring contest.\n5 | Making polite small talk as if they were meeting for the first time.\n6 | Performatively ignoring one another.\n7 | Talking over an increasingly convoluted plot.\n8 | Trying to keep one another awake.\n\nSource:\tMonster Manual 2024 p. 116",
+        "environment": "hill, mountain, underdark"
+      }
+    ]
+  }
+}

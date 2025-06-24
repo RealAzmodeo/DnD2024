@@ -1,0 +1,72 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": {
+      "name": "Xorn [2024]",
+      "size": "M",
+      "type": "elemental",
+      "alignment": "neutral",
+      "ac": "19",
+      "hp": "84 (8d8+48)",
+      "speed": "20 ft., burrow 20 ft.",
+      "init": "0",
+      "str": "17",
+      "dex": "10",
+      "con": "22",
+      "int": "11",
+      "wis": "10",
+      "cha": "11",
+      "save": null,
+      "skill": "Stealth +6, Perception +6",
+      "passive": "16",
+      "languages": "Primordial (Terran)",
+      "cr": "5",
+      "vulnerable": null,
+      "resist": null,
+      "immune": "poison",
+      "conditionImmune": "paralyzed, petrified, poisoned",
+      "senses": "darkvision 60 ft., tremorsense 60 ft.",
+      "trait": [
+        {
+          "name": "Proficiency Bonus",
+          "text": "+3"
+        },
+        {
+          "name": "Treasure",
+          "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+        },
+        {
+          "name": "Earth Glide",
+          "text": "The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through."
+        },
+        {
+          "name": "Treasure Sense",
+          "text": "The xorn can pinpoint the location of precious metals and stones within 60 feet of itself."
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "text": "The xorn makes one Bite attack and three Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 17 (4d6 + 3) Piercing damage.",
+          "attack": "Bite|+6|4d6+3"
+        },
+        {
+          "name": "Claw",
+          "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage.",
+          "attack": "Claw|+6|1d10+3"
+        },
+        {
+          "name": "Charge (Bonus Action)",
+          "text": "The xorn moves up to its Speed or Burrow Speed straight toward an enemy it can sense."
+        }
+      ],
+      "description": "On the Elemental Plane of Earth, xorn roam in search of meals they consider delicacies: gems, crystals, and veins of precious metals. For xorn, the Elemental Plane of Earth presents an endless buffet. Those that find their way to the Material Plane discover that most worlds are culinary wastelands. These xorn scour subterranean depths, consuming whatever sparse gems and ores they find. This might bring them into conflict with miners or others who hide their treasures underground.\n\tXorn have three eyes, three arms, and three legs arranged around their trilaterally symmetrical frames. At the top of their bodies is a toothy maw that's equally capable of crushing minerals and dangerous creatures. Xorn move through the earth magically, leaving no tunnel or sign of their passage.\n\tRapt gourmands, xorn focus on their next meals. They care little for living creatures and avoid harming them when possible. They know others also covet the earth's treasures, and they're not above bargaining for their meals. Xorn might share their knowledge of the Underdark in exchange for snacks of gems, coins, or magical metals. If starving or angered, xorn might try to forcibly take their meals.\n\tRoll on or choose a result from the Xorn Delicacies table to inspire a xorn's favorite fare.\n\nXorn Delicacies:\n1d8 | The Xorn Craves...\n1 | Adamantine or mithral.\n2 | Coins minted by a long-dead empire.\n3 | Fossils or petrified wood.\n4 | A gem that's part of a magic item.\n5 | The keystone of a great arch or bridge.\n6 | Parts of a galeb duhr or stone golem.\n7 | A piece of a meteor or moon.\n8 | The stone crowning a mountain peak.\n\nSource:\tMonster Manual 2024 p. 338",
+      "environment": "planar (elemental plane of earth), underdark"
+    }
+  }
+}

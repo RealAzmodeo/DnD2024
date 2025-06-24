@@ -1,0 +1,229 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Ultroloth [2024]",
+        "size": "M",
+        "type": "fiend (yugoloth)",
+        "alignment": "neutral evil",
+        "ac": "19",
+        "hp": "221 (26d8+104)",
+        "speed": "30 ft., fly 60 ft.(hover)",
+        "init": "8",
+        "str": "19",
+        "dex": "16",
+        "con": "18",
+        "int": "19",
+        "wis": "15",
+        "cha": "18",
+        "save": null,
+        "skill": "Deception +9, Stealth +8, Perception +7",
+        "passive": "17",
+        "languages": "Abyssal, Infernal; telepathy 120 ft.",
+        "cr": "13",
+        "vulnerable": null,
+        "resist": "cold, fire, lightning",
+        "immune": "acid, poison",
+        "conditionImmune": "charmed, frightened, poisoned",
+        "senses": "truesight 120 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+5"
+          },
+          {
+            "name": "Treasure",
+            "text": "Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme."
+          },
+          {
+            "name": "Fiendish Restoration",
+            "text": "If the ultroloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in Gehenna."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The ultroloth has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The ultroloth uses Hypnotic Gaze and makes two Mercurial Whip attacks."
+          },
+          {
+            "name": "Mercurial Whip",
+            "text": "Melee Attack Roll: +9, reach 15 ft. Hit: 25 (6d6 + 4) Force damage, and the ultroloth can teleport the target up to 10 feet to an unoccupied space the ultroloth can see that isn't in the air.",
+            "attack": "Mercurial Whip|+9|6d6+4"
+          },
+          {
+            "name": "Hypnotic Gaze",
+            "text": "Wisdom Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 10 (3d6) Psychic damage, and the target has the Stunned condition until the start of the ultroloth's next turn. Success: The target is immune to this ultroloth's Hypnotic Gaze for 24 hours.",
+            "attack": "Hypnotic Gaze||3d6"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The ultroloth casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 17):\n\n\t• At will: Alter Self, Clairvoyance, Detect Magic\n\t• 1/Day each: Dimension Door, Fireball (level 5 version), Wall of Fire"
+          },
+          {
+            "name": "Fiendish Guile (Recharge 4-6) (Bonus Action)",
+            "recharge": "D4",
+            "text": "The ultroloth casts Dispel Magic, Invisibility (self only), Misty Step, or Suggestion, requiring no Material components and using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "spells": "Dispel Magic [2024], Invisibility [2024], Misty Step [2024], Suggestion [2024], Alter Self [2024], Clairvoyance [2024], Detect Magic [2024], Dimension Door [2024], Fireball [2024], Wall of Fire [2024]",
+        "description": "With uncanny patience and fiendish cunning, ultroloths manipulate mortals and their fellow yugoloths alike, seeking to hoard power and spread suffering. These sinister masterminds often work with other yugoloths, but they might compel nearly any creature into their service. If coercion doesn't work, ultroloths use their eerie eyes and innate magic to hypnotize or charm targets.\n\nUltroloths strive to achieve planes-spanning plots. Roll on or choose a result from the Ultroloth Conspiracies table to inspire such villainy.\n\nUltroloth Conspiracies:\n1d6 | The Ultroloth Schemes To...\n1 | Convince cultists their god has forsaken them.\n2 | Destabilize a nation and rule the chaos.\n3 | Incite a calamity and hold a world hostage.\n4 | Provoke hostilities between immortal armies and sell magic weapons to both sides.\n5 | Steal an invention and slay all who know of it.\n6 | Unleash fiendish hordes on a foe's homeland.\n\nSource:\tMonster Manual 2024 p. 311",
+        "environment": "planar (lower)"
+      },
+      {
+        "name": "Umber Hulk [2024]",
+        "size": "L",
+        "type": "monstrosity",
+        "alignment": "chaotic evil",
+        "ac": "18",
+        "hp": "93 (11d10+33)",
+        "speed": "30 ft., burrow 20 ft.",
+        "init": "4",
+        "str": "20",
+        "dex": "13",
+        "con": "16",
+        "int": "9",
+        "wis": "10",
+        "cha": "10",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": "Umber Hulk",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "darkvision 120 ft., tremorsense 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Tunneler",
+            "text": "The umber hulk can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The umber hulk makes three Rend attacks."
+          },
+          {
+            "name": "Rend",
+            "text": "Melee Attack Roll: +8, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage.",
+            "attack": "Rend|+8|2d6+5"
+          },
+          {
+            "name": "Confusing Gaze (Recharge 5-6) (Bonus Action)",
+            "recharge": "D5",
+            "text": "Wisdom Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target can't take Reactions until the start of the umber hulk's next turn, and the target rolls 1d8 to determine what it does on its next turn:\n\nConfusing Gaze:\n1d8 | Effect\n1-4 | The target does nothing.\n5-6 | The target takes no action or Bonus Action and uses all its movement to move in a random direction.\n7-8 | The target makes a melee attack against a random creature within its reach or does nothing if it can't make such an attack.",
+            "attack": "Confusing Gaze||1d8"
+          }
+        ],
+        "description": "Lumbering, carapace-armored bipeds, umber hulks burrow through the Underdark, feeding on anything they can crush in their mighty mandibles. These tenacious hunters sense movement through the surrounding earth, then burst through cavern walls to surprise their prey. Those ambushed by umber hulks risk meeting the gaze of the monsters' eerie, multifaceted eyes, which can cause others to act irrationally and even lash out at their allies.\n\tUmber hulks typically lurk in tunnels they've burrowed alongside other passages. When they detect creatures moving, they burst through the rock walls between the passages to attack. While these monsters can communicate with one other, they usually hunt alone and avoid each other's territories. Umber hulks focus on finding food and crushing intruders. They have little interest in allying with other creatures, but manipulative inhabitants of the Underdark, such as beholders and mind flayers, sometimes compel umber hulks to serve them.\n\nSource:\tMonster Manual 2024 p. 312",
+        "environment": "underdark"
+      },
+      {
+        "name": "Unicorn [2024]",
+        "size": "L",
+        "type": "celestial",
+        "alignment": "lawful good",
+        "ac": "12",
+        "hp": "97 (13d10+26)",
+        "speed": "50 ft.",
+        "init": "8",
+        "str": "18",
+        "dex": "14",
+        "con": "15",
+        "int": "11",
+        "wis": "17",
+        "cha": "16",
+        "save": null,
+        "skill": null,
+        "passive": "13",
+        "languages": "Celestial, Elvish, Sylvan; telepathy 120 ft.",
+        "cr": "5",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "poison",
+        "conditionImmune": "charmed, paralyzed, poisoned",
+        "senses": "darkvision 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "+3"
+          },
+          {
+            "name": "Treasure",
+            "text": "Any: The monster's treasure hoard can include monetary treasure and any kinds of magic items."
+          },
+          {
+            "name": "Legendary Resistance (3/Day)",
+            "recharge": "3/DAY",
+            "text": "If the unicorn fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Magic Resistance",
+            "text": "The unicorn has Advantage on saving throws against spells and other magical effects."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The unicorn makes one Hooves attack and one Radiant Horn attack."
+          },
+          {
+            "name": "Hooves",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Bludgeoning damage.",
+            "attack": "Hooves|+7|2d6+4"
+          },
+          {
+            "name": "Radiant Horn",
+            "text": "Melee Attack Roll: +7, reach 5 ft. Hit: 9 (1d10 + 4) Radiant damage.",
+            "attack": "Radiant Horn|+7|1d10+4"
+          },
+          {
+            "name": "Spellcasting",
+            "text": "The unicorn casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 14):\n\n\t• At will: Detect Evil and Good, Druidcraft\n\t• 1/Day each: Calm Emotions, Dispel Evil and Good, Entangle, Pass without Trace, Word of Recall"
+          },
+          {
+            "name": "Unicorn's Blessing (3/Day) (Bonus Action)",
+            "recharge": "3/DAY",
+            "text": "The unicorn touches another creature with its horn and casts Cure Wounds or Lesser Restoration on that creature, using the same spellcasting ability as Spellcasting."
+          }
+        ],
+        "legendary": [
+          {
+            "name": "Legendary Actions (3/Turn)",
+            "recharge": "3/TURN",
+            "text": "The Unicorn can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The Unicorn regains spent legendary actions at the start of its turn."
+          },
+          {
+            "name": "Charging Horn",
+            "text": "The unicorn moves up to half its Speed without provoking Opportunity Attacks, and it makes one Radiant Horn attack."
+          },
+          {
+            "name": "Shimmering Shield",
+            "text": "The unicorn targets itself or one creature it can see within 60 feet of itself. The target gains 10 (3d6) Temporary Hit Points, and its AC increases by 2 until the end of the unicorn's next turn. The unicorn can't take this action again until the start of its next turn.",
+            "attack": "Shimmering Shield||3d6"
+          },
+          {
+            "@category": "lair",
+            "name": "Unicorn Lairs",
+            "text": "Unicorns dwell in unspoiled forests, particularly where benevolent Fey creatures live.\n\tThe region containing a unicorn's lair is changed by its presence, creating the following effects:\n\nObscuring Foliage: The unicorn and its allies have Advantage on Dexterity (Stealth) checks while within 1 mile of the lair.\n\nPositive Energy: Whenever a creature within 1 mile of the lair regains Hit Points from a spell, it regains the maximum number of Hit Points possible.\n\nAdditionally, the effects of curses are suppressed within 1 mile of the lair.\n\tIf the unicorn dies or moves its lair elsewhere, these effects end immediately."
+          }
+        ],
+        "spells": "Detect Evil and Good [2024], Druidcraft [2024], Calm Emotions [2024], Dispel Evil and Good [2024], Entangle [2024], Pass Without Trace [2024], Word of Recall [2024]",
+        "description": "Unicorns are majestic defenders of forests. They are revered by many Fey and other forest dwellers, and they do whatever they can to ensure the peace and health of those who shelter in their wooded realms.\n\nSource:\tMonster Manual 2024 p. 312",
+        "environment": "forest, planar (feywild)"
+      }
+    ]
+  }
+}

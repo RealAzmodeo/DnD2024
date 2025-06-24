@@ -1,0 +1,88 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "monster": [
+      {
+        "name": "Avatar of Death [2024]",
+        "size": "M",
+        "type": "undead",
+        "alignment": "neutral evil",
+        "ac": "20",
+        "hp": "20",
+        "speed": "60 ft., Fly 60 ft. (hover)",
+        "str": "16",
+        "dex": "16",
+        "con": "16",
+        "int": "16",
+        "wis": "16",
+        "cha": "16",
+        "save": null,
+        "skill": null,
+        "passive": "13",
+        "languages": "All languages known to its summoner",
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": "Necrotic, Poison",
+        "conditionImmune": "Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Unconscious",
+        "senses": "Truesight 60 ft.",
+        "trait": [
+          {
+            "name": "Proficiency Bonus",
+            "text": "Equals its summoner's"
+          },
+          {
+            "name": "HP",
+            "text": "Half the HP maximum of its summoner"
+          },
+          {
+            "name": "Incorporeal Movement",
+            "text": "The avatar can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "text": "The avatar makes a number of Reaping Scythe attacks equal to half the summoner's Proficiency Bonus (rounded up)."
+          },
+          {
+            "name": "Reaping Scythe",
+            "text": "Melee Attack Roll: Automatic hit, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage plus 4 (1d8) Necrotic damage."
+          }
+        ],
+        "description": "Source:\tDungeon Master's Guide 2024 p. 252",
+        "environment": null
+      },
+      {
+        "name": "Giant Fly [2024]",
+        "sortname": "Insect, Giant Fly",
+        "ancestry": "Insect",
+        "size": "L",
+        "type": "beast",
+        "alignment": "unaligned",
+        "ac": "11",
+        "hp": "19 (3d10+3)",
+        "speed": "30 ft., Fly 60 ft.",
+        "str": "14",
+        "dex": "13",
+        "con": "13",
+        "int": "2",
+        "wis": "10",
+        "cha": "3",
+        "save": null,
+        "skill": null,
+        "passive": "10",
+        "languages": null,
+        "cr": "0",
+        "vulnerable": null,
+        "resist": null,
+        "immune": null,
+        "conditionImmune": null,
+        "senses": "Darkvision 60 ft.",
+        "description": "Source:\tDungeon Master's Guide 2024 p. 261",
+        "environment": null
+      }
+    ]
+  }
+}

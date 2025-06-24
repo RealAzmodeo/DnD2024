@@ -63,7 +63,7 @@
     <source page="201">Player's Handbook 2024</source>
     <benefit name="Luck Points Resource">
       <resource_pool name="Luck Point" value_formula="ProficiencyBonus" recharge_on="LongRest">
-        <description>You have a number of Luck Points equal to your Proficiency Bonus. You regain your expended Luck Points when you finish a Long Rest. These points can be spent on the 'Advantage on D20 Test' and 'Impose Disadvantage on Attack Against You' benefits.</description>
+        <description>You have a number of Luck Points equal to your Proficiency Bonus. You regain your expended Luck Points when you finish a Long Rest. These points can be spent on the &apos;Advantage on D20 Test&apos; and &apos;Impose Disadvantage on Attack Against You&apos; benefits.</description>
       </resource_pool>
     </benefit>
     <benefit name="Advantage on D20 Test (Costs Luck Point)">

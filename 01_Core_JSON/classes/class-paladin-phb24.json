@@ -1,0 +1,1582 @@
+{
+  "compendium": {
+    "@version": "5",
+    "@auto_indent": "NO",
+    "class": {
+      "name": "Paladin [2024]",
+      "hd": "10",
+      "proficiency": "Wisdom, Charisma, Athletics, Insight, Intimidation, Medicine, Persuasion, Religion",
+      "numSkills": "2",
+      "armor": "light armor, medium armor, heavy armor, shields",
+      "weapons": "simple weapons, martial weapons",
+      "tools": "none",
+      "spellAbility": "Charisma",
+      "slotsReset": "L",
+      "autolevel": [
+        {
+          "@level": "1",
+          "slots": "0,2"
+        },
+        {
+          "@level": "2",
+          "slots": "0,2"
+        },
+        {
+          "@level": "3",
+          "slots": "0,3"
+        },
+        {
+          "@level": "4",
+          "slots": "0,3"
+        },
+        {
+          "@level": "5",
+          "slots": "0,4,2"
+        },
+        {
+          "@level": "6",
+          "slots": "0,4,2"
+        },
+        {
+          "@level": "7",
+          "slots": "0,4,3"
+        },
+        {
+          "@level": "8",
+          "slots": "0,4,3"
+        },
+        {
+          "@level": "9",
+          "slots": "0,4,3,2"
+        },
+        {
+          "@level": "10",
+          "slots": "0,4,3,2"
+        },
+        {
+          "@level": "11",
+          "slots": "0,4,3,3"
+        },
+        {
+          "@level": "12",
+          "slots": "0,4,3,3"
+        },
+        {
+          "@level": "13",
+          "slots": "0,4,3,3,1"
+        },
+        {
+          "@level": "14",
+          "slots": "0,4,3,3,1"
+        },
+        {
+          "@level": "15",
+          "slots": "0,4,3,3,2"
+        },
+        {
+          "@level": "16",
+          "slots": "0,4,3,3,2"
+        },
+        {
+          "@level": "17",
+          "slots": "0,4,3,3,3,1"
+        },
+        {
+          "@level": "18",
+          "slots": "0,4,3,3,3,1"
+        },
+        {
+          "@level": "19",
+          "slots": "0,4,3,3,3,2"
+        },
+        {
+          "@level": "20",
+          "slots": "0,4,3,3,3,2"
+        },
+        {
+          "@level": "1",
+          "feature": [
+            {
+              "@optional": "YES",
+              "name": "Becoming A Paladin As A Level 1 Character",
+              "text": "As a 1st-level Paladin, you begin play with 10 + your Constitution modifier hit points.\n\nCore Paladin Traits\nPrimary Ability: Strength and Charisma\nHit Point Die: D10 per Paladin level\nSaving Throw Proficiencies: Wisdom and Charisma\nSkill Proficiencies: Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, Religion\nWeapon Proficiencies: Simple and Martial weapons\nArmor Training: Light, Medium, and Heavy armor and Shields\nStarting Equipment: Choose A or B: (A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack, and 9 GP; or (B) 150 GP\n\nSource:\tPlayer's Handbook 2024 p. 109"
+            },
+            {
+              "@optional": "YES",
+              "name": "Becoming A Paladin As A Multiclass Character",
+              "text": "Core Paladin Traits\nPrimary Ability: Strength and Charisma\nHit Point Die: D10 per Paladin level\nWeapon Proficiencies: Martial weapons\nArmor Training: Light and Medium armor and Shields\n\nSource:\tPlayer's Handbook 2024 p. 109"
+            },
+            {
+              "name": "Level 1: Lay On Hands",
+              "text": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.\n\tAs a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.\n\tYou can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.\n\nSource:\tPlayer's Handbook 2024 p. 109",
+              "resource": {
+                "@name": "LayOnHandsPool",
+                "@value_formula": "5*PaladinLevel",
+                "recharge": {
+                  "@type": "LR"
+                }
+              },
+              "action": {
+                "@type": "BonusAction",
+                "target": {
+                  "@description": "a_creature_you_touch_can_be_self"
+                },
+                "effect": {
+                  "@type": "Heal",
+                  "@value_variable": "draw_power_from_pool_up_to_max_remaining"
+                }
+              },
+              "additional_use_of_pool": {
+                "cost": {
+                  "@resource": "LayOnHandsPool",
+                  "@value": "5"
+                },
+                "effect": {
+                  "@description": "remove_Poisoned_condition_from_creature_points_dont_also_restore_HP"
+                }
+              }
+            },
+            {
+              "name": "Level 1: Spellcasting",
+              "text": "You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Paladin spells, which appear in the Paladin spell list later in the class's description.\n\nSpell Slots. The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start. choose two level 1 Paladin spells. Heroism and Searing Smite are recommended.\n\tThe number of spells on your list increases as you gain Paladin levels. as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional Paladin spells until the number of spells on your list matches the number in the Paladin Features table. The chosen spells must be of a level for which you have spell slots. For example, if you·re a level 5 Paladin, your list of prepared spells can include six Paladin spells of level 1 or 2 in any combination.\n\tIf another Paladin feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you.\n\nChanging Your Prepared Spells. Whenever you finish a Long Rest, you can replace one spell on your list with another Paladin spell for which you have spell slots.\n\nSpellcasting Ability. Charisma is your spellcasting ability for your Paladin spells.\n\nSpellcasting Focus. You can use a Holy Symbol as a Spellcasting Focus for your Paladin spells.\n\nSpells Prepared:\nLevel | Spells Prepared\n1 | 2\n2 | 3\n3 | 4\n4 | 5\n5 | 6\n7 | 7\n9 | 9\n11 | 10\n13 | 11\n15 | 12\n17 | 14\n19 | 15\n\nSource:\tPlayer's Handbook 2024 p. 109"
+            },
+            {
+              "name": "Level 1: Weapon Mastery",
+              "text": "Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longswords and Javelins.\n\tWhenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Halberds and Flails.\n\nSource:\tPlayer's Handbook 2024 p. 110",
+              "uses": {
+                "@fixed": "2",
+                "@description": "kinds_of_weapons_for_mastery_properties"
+              },
+              "recharge": {
+                "@type": "LR",
+                "@description": "can_change_the_kinds_of_weapons_you_chose"
+              }
+            }
+          ],
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "5",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "2",
+          "feature": [
+            {
+              "name": "Level 2: Fighting Style",
+              "text": "You gain a Fighting Style feat of your choice (see chapter 5 for feats, added as feats). Instead of choosing one of those feats, you can choose the option below.\n\nBlessed Warrior. You learn two Cleric cantrips of your choice (see the Cleric class's section for a list of Cleric spells). Guidance and Sacred Flame are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip.\n\nSource:\tPlayer's Handbook 2024 p. 110",
+              "choice": {
+                "@name": "Fighting Style Option",
+                "@count": "1",
+                "option": [
+                  {
+                    "@type": "Feat",
+                    "@description": "Fighting_Style_feat_of_your_choice"
+                  },
+                  {
+                    "@name": "Blessed Warrior",
+                    "grants_spell_learning": {
+                      "@type": "Cantrip",
+                      "@spell_list": "Cleric",
+                      "@count": "2",
+                      "@spellcasting_ability_override": "CHA"
+                    },
+                    "effect": {
+                      "@description": "chosen_cantrips_count_as_Paladin_spells_for_you"
+                    },
+                    "modifies_spell_choice": {
+                      "@trigger": "whenever_you_gain_a_Paladin_level",
+                      "effect": {
+                        "@description": "can_replace_one_of_these_cantrips_with_another_Cleric_cantrip"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level 2: Paladin's Smite",
+              "text": "You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.\n\nSource:\tPlayer's Handbook 2024 p. 110",
+              "grants_always_prepared_spell": {
+                "@name": "Divine Smite"
+              },
+              "uses": {
+                "@fixed": "1",
+                "@for_casting_spell": "Divine Smite",
+                "@without_slot": "true",
+                "recharge": {
+                  "@type": "LR"
+                }
+              }
+            }
+          ],
+          "counter": [
+            {
+              "name": "Lay on Hands",
+              "value": "10",
+              "reset": "L"
+            },
+            {
+              "name": "Paladin's Smite",
+              "value": "1",
+              "reset": "L"
+            }
+          ]
+        },
+        {
+          "@level": "3",
+          "feature": [
+            {
+              "name": "Level 3: Channel Divinity",
+              "text": "You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.\n\tYou can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.\n\tIf a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.\n\nSource:\tPlayer's Handbook 2024 p. 110",
+              "uses": {
+                "@fixed": "2",
+                "scaling": {
+                  "@level": "11",
+                  "@uses": "3"
+                }
+              },
+              "recharge": {
+                "@type": "1_per_SR_all_per_LR"
+              },
+              "options_include": {
+                "option": {
+                  "@ref_feature_name": "Level 3: Channel Divinity: Divine Sense"
+                }
+              },
+              "note": {
+                "@text": "If_a_Channel_Divinity_effect_requires_a_saving_throw_the_DC_equals_the_spell_save_DC_from_this_classs_Spellcasting_feature"
+              }
+            },
+            {
+              "name": "Level 3: Channel Divinity: Divine Sense",
+              "text": "As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.\n\nSource:\tPlayer's Handbook 2024 p. 110",
+              "channel_divinity_option": null,
+              "action": {
+                "@type": "BonusAction"
+              },
+              "effect": {
+                "@type": "Detection",
+                "@duration": "10_minutes_or_until_Incapacitated",
+                "detects": [
+                  {
+                    "@type": "LocationAndCreatureType",
+                    "@targets": "Celestials_Fiends_Undead",
+                    "@range": "60_feet"
+                  },
+                  {
+                    "@type": "Presence",
+                    "@targets": "place_or_object_consecrated_or_desecrated_as_with_Hallow_spell",
+                    "@range": "60_feet"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level 3: Paladin Subclass",
+              "text": "You gain a Paladin subclass of your choice. The Oath of Devotion, Oath of Glory, Oath of the Ancients, and Oath of Vengeance subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Paladin levels. For the rest of your career, you gain each of your subclass's features that are of your Paladin level or lower.\n\nSource:\tPlayer's Handbook 2024 p. 111"
+            }
+          ],
+          "counter": [
+            {
+              "name": "Channel Divinity",
+              "value": "2",
+              "reset": "S"
+            },
+            {
+              "name": "Lay on Hands",
+              "value": "15",
+              "reset": "L"
+            }
+          ]
+        },
+        {
+          "@level": "4",
+          "@scoreImprovement": "YES",
+          "feature": {
+            "name": "Level 4: Ability Score Improvement",
+            "text": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "asi_options": {
+              "option": [
+                {
+                  "@description": "Ability Score Improvement feat (see chapter 5)"
+                },
+                {
+                  "@description": "Another feat of your choice for which you qualify"
+                }
+              ]
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "20",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "5",
+          "feature": [
+            {
+              "name": "Level 5: Extra Attack",
+              "text": "You can attack twice instead of once whenever you take the Attack action on your turn.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+              "modifies_action": {
+                "@action_name": "Attack",
+                "@new_attacks_allowed": "2"
+              }
+            },
+            {
+              "name": "Level 5: Faithful Steed",
+              "text": "You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared.\n\tYou can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+              "grants_always_prepared_spell": {
+                "@name": "Find Steed"
+              },
+              "uses": {
+                "@fixed": "1",
+                "@for_casting_spell": "Find Steed",
+                "@without_slot": "true",
+                "recharge": {
+                  "@type": "LR"
+                }
+              }
+            }
+          ],
+          "counter": [
+            {
+              "name": "Lay on Hands",
+              "value": "25",
+              "reset": "L"
+            },
+            {
+              "name": "Faithful Steed",
+              "value": "1",
+              "reset": "L"
+            }
+          ]
+        },
+        {
+          "@level": "6",
+          "feature": {
+            "name": "Level 6: Aura of Protection",
+            "text": "You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.\n\tYou and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).\n\tIf another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "effect": {
+              "@type": "Aura",
+              "@name": "AuraOfProtection",
+              "@shape": "Emanation",
+              "@radius": "10_feet",
+              "@condition_inactive": "while_Incapacitated",
+              "benefit": {
+                "@target": "you_and_your_allies_in_aura",
+                "effect": {
+                  "@type": "Bonus",
+                  "@on": "saving_throws",
+                  "@value_formula": "CHA_modifier",
+                  "@min_value": "1"
+                }
+              }
+            },
+            "restriction": {
+              "@text": "if_another_Paladin_is_present_a_creature_can_benefit_from_only_one_Aura_of_Protection_at_a_time_creature_chooses_which_aura"
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "30",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "7",
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "35",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "8",
+          "@scoreImprovement": "YES",
+          "feature": {
+            "name": "Level 8: Ability Score Improvement",
+            "text": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "asi_options": {
+              "option": [
+                {
+                  "@description": "Ability Score Improvement feat (see chapter 5)"
+                },
+                {
+                  "@description": "Another feat of your choice for which you qualify"
+                }
+              ]
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "40",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "9",
+          "feature": {
+            "name": "Level 9: Abjure Foes",
+            "text": "As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "channel_divinity_option": null,
+            "action": {
+              "@type": "MagicAction"
+            },
+            "cost": {
+              "@resource": "ChannelDivinityUse",
+              "@value": "1"
+            },
+            "target": {
+              "@description": "a_number_of_creatures_equal_to_your_CHA_modifier_min_1_that_you_can_see_within_60_feet"
+            },
+            "effect": {
+              "@description": "each_target_must_succeed_on_a_Wisdom_saving_throw",
+              "@save_dc": "spell_save_DC",
+              "on_failed_save": {
+                "@type": "Condition",
+                "@name": "Frightened",
+                "@duration": "1_minute_or_until_it_takes_any_damage",
+                "restriction": {
+                  "@text": "while_Frightened_in_this_way_a_target_can_do_only_one_of_the_following_on_its_turns_move_take_an_action_or_take_a_Bonus_Action"
+                }
+              }
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "45",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "10",
+          "feature": {
+            "name": "Level 10: Aura of Courage",
+            "text": "You and your allies have Immunity to the Frightened condition while in your Aura of Protection. If a Frightened ally enters the aura, that condition has no effect on that ally while there.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "enhances_feature": {
+              "@feature_name": "Level 6: Aura of Protection",
+              "benefit_in_aura": {
+                "@target": "you_and_your_allies",
+                "effect": {
+                  "@type": "Immunity",
+                  "@condition_names": "Frightened"
+                }
+              },
+              "effect": {
+                "@description": "if_a_Frightened_ally_enters_the_aura_that_condition_has_no_effect_on_that_ally_while_there"
+              }
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "50",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "11",
+          "feature": {
+            "name": "Level 11: Radiant Strikes",
+            "text": "Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "trigger": {
+              "@text": "when_you_hit_a_target_with_an_attack_roll_using_a_Melee_weapon_or_an_Unarmed_Strike"
+            },
+            "effect": {
+              "@type": "ExtraDamage",
+              "@value": "1d8",
+              "@damage_type": "Radiant"
+            },
+            "roll": {
+              "@description": "Radiant Damage",
+              "#text": "1d8"
+            }
+          },
+          "counter": [
+            {
+              "name": "Channel Divinity",
+              "value": "3",
+              "reset": "S"
+            },
+            {
+              "name": "Lay on Hands",
+              "value": "55",
+              "reset": "L"
+            }
+          ]
+        },
+        {
+          "@level": "12",
+          "@scoreImprovement": "YES",
+          "feature": {
+            "name": "Level 12: Ability Score Improvement",
+            "text": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "asi_options": {
+              "option": [
+                {
+                  "@description": "Ability Score Improvement feat (see chapter 5)"
+                },
+                {
+                  "@description": "Another feat of your choice for which you qualify"
+                }
+              ]
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "60",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "13",
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "65",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "14",
+          "feature": {
+            "name": "Level 14: Restoring Touch",
+            "text": "When you use Lay On Hands on a creature. you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "enhances_feature": {
+              "@feature_name": "Level 1: Lay On Hands",
+              "trigger": {
+                "@text": "when_you_use_Lay_On_Hands_on_a_creature"
+              },
+              "effect": {
+                "@description": "can_also_remove_one_or_more_of_Blinded_Charmed_Deafened_Frightened_Paralyzed_or_Stunned_conditions"
+              },
+              "cost_for_condition_removal": {
+                "@resource": "LayOnHandsPool",
+                "@value": "5",
+                "@per_condition": "true",
+                "@note": "points_dont_also_restore_HP"
+              }
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "70",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "15",
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "75",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "16",
+          "@scoreImprovement": "YES",
+          "feature": {
+            "name": "Level 16: Ability Score Improvement",
+            "text": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "asi_options": {
+              "option": [
+                {
+                  "@description": "Ability Score Improvement feat (see chapter 5)"
+                },
+                {
+                  "@description": "Another feat of your choice for which you qualify"
+                }
+              ]
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "80",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "17",
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "85",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "18",
+          "feature": {
+            "name": "Level 18: Aura Expansion",
+            "text": "Your Aura of Protection is now a 30-foot Emanation.\n\nSource:\tPlayer's Handbook 2024 p. 111",
+            "enhances_feature": {
+              "@feature_name": "Level 6: Aura of Protection",
+              "modifies_aura_property": {
+                "@property": "radius",
+                "@new_value": "30_feet"
+              }
+            }
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "90",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "19",
+          "feature": {
+            "name": "Level 19: Epic Boon",
+            "text": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Truesight is recommended.\n\nSource:\tPlayer's Handbook 2024 p. 111"
+          },
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "95",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "20",
+          "counter": {
+            "name": "Lay on Hands",
+            "value": "100",
+            "reset": "L"
+          }
+        },
+        {
+          "@level": "3",
+          "feature": [
+            {
+              "@optional": "YES",
+              "name": "Paladin Subclass: Oath of Devotion",
+              "text": "Uphold the Ideals of justice and Order\n\nThe Oath of Devotion binds Paladins to the ideals of justice and order. These Paladins meet the archetype of the knight in shining armor. They hold themselves to the highest standards of conduct, and some-for better or worse-hold the rest of the world to the same standards.\n\tMany who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of personal devotion. Others hold angels as their ideals and incorporate images of angelic wings into their helmets or coats of arms.\n\tThese paladins share the following tenets:\n\n\t• Let your word be your promise.\n\t• Protect the weak and never fear to act.\n\t• Let your honorable deeds be an example.\n\nSource:\tPlayer's Handbook 2024 p. 113",
+              "subclass": "Oath of Devotion"
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Oath of Devotion Spells (Oath of Devotion)",
+              "text": "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Devotion Spells table, you thereafter always have the listed spells prepared.\n\nOath of Devotion Spells:\nPaladin Level | Spells\n3 | Protection from Evil and Good, Shield of Faith\n5 | Aid, Zone of Truth\n9 | Beacon of Hope, Dispel Magic\n13 | Freedom of Movement, Guardian of Faith\n17 | Commune, Flame Strike\n\nSource:\tPlayer's Handbook 2024 p. 113",
+              "subclass": "Oath of Devotion",
+              "inline_table": {
+                "@name": "Oath of Devotion Spells",
+                "header": {
+                  "col": [
+                    {
+                      "@label": "Paladin Level"
+                    },
+                    {
+                      "@label": "Spells"
+                    }
+                  ]
+                },
+                "row": [
+                  {
+                    "cell": [
+                      {
+                        "@value": "3"
+                      },
+                      {
+                        "@value": "Protection from Evil and Good, Shield of Faith"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "5"
+                      },
+                      {
+                        "@value": "Aid, Zone of Truth"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "9"
+                      },
+                      {
+                        "@value": "Beacon of Hope, Dispel Magic"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "13"
+                      },
+                      {
+                        "@value": "Freedom of Movement, Guardian of Faith"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "17"
+                      },
+                      {
+                        "@value": "Commune, Flame Strike"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Sacred Weapon (Oath of Devotion)",
+              "text": "When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +l), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.\n\tThe weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.\n\tYou can end this effect early (no action required). This effect also ends if you aren't carrying the weapon.\n\nSource:\tPlayer's Handbook 2024 p. 113",
+              "subclass": "Oath of Devotion",
+              "channel_divinity_option": null,
+              "trigger": {
+                "@text": "when_you_take_the_Attack_action"
+              },
+              "cost": {
+                "@resource": "ChannelDivinityUse",
+                "@value": "1"
+              },
+              "effect": {
+                "@description": "imbue_one_Melee_weapon_you_are_holding_with_positive_energy",
+                "@duration": "10_minutes_or_until_use_this_feature_again_or_not_carrying_weapon_or_ended_early_no_action",
+                "benefit": [
+                  {
+                    "@description": "add_CHA_modifier_min_+1_to_attack_rolls_with_that_weapon"
+                  },
+                  {
+                    "@description": "each_time_you_hit_with_it_cause_it_to_deal_its_normal_damage_type_or_Radiant_damage"
+                  }
+                ],
+                "light_emitted": [
+                  {
+                    "@type": "Bright",
+                    "@radius": "20_feet"
+                  },
+                  {
+                    "@type": "Dim",
+                    "@radius_additional": "20_feet"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@level": "7",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 7: Aura of Devotion (Oath of Devotion)",
+            "text": "You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.\n\nSource:\tPlayer's Handbook 2024 p. 114",
+            "subclass": "Oath of Devotion",
+            "enhances_feature": {
+              "@feature_name": "Level 6: Aura of Protection",
+              "benefit_in_aura": {
+                "@target": "you_and_your_allies",
+                "effect": {
+                  "@type": "Immunity",
+                  "@condition_names": "Charmed"
+                }
+              },
+              "effect": {
+                "@description": "if_a_Charmed_ally_enters_the_aura_that_condition_has_no_effect_on_that_ally_while_there"
+              }
+            }
+          }
+        },
+        {
+          "@level": "15",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 15: Smite of Protection (Oath of Devotion)",
+            "text": "Your magical smite now radiates protective energy. Whenever you cast Divine Smite, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.\n\nSource:\tPlayer's Handbook 2024 p. 114",
+            "subclass": "Oath of Devotion",
+            "trigger": {
+              "@text": "whenever_you_cast_Divine_Smite"
+            },
+            "effect": {
+              "@type": "Cover",
+              "@cover_type": "Half",
+              "@target": "you_and_your_allies_in_your_Aura_of_Protection",
+              "@duration": "until_start_of_your_next_turn"
+            }
+          }
+        },
+        {
+          "@level": "20",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 20: Holy Nimbus (Oath of Devotion)",
+            "text": "As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).\n\nHoly Ward. You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.\n\nRadiant Damage. Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.\n\nSunlight. The aura is filled with Bright Light that is sunlight.\n\nSource:\tPlayer's Handbook 2024 p. 114",
+            "subclass": "Oath of Devotion",
+            "action": {
+              "@type": "BonusAction"
+            },
+            "effect": {
+              "@type": "Buff",
+              "@name": "HolyNimbusAura",
+              "@duration": "10_minutes_or_until_ended_no_action",
+              "enhances_feature": {
+                "@feature_name": "Level 6: Aura of Protection",
+                "benefits": {
+                  "benefit": [
+                    {
+                      "@name": "Holy Ward",
+                      "effect": {
+                        "@type": "Advantage",
+                        "@on": "any_saving_throw_you_are_forced_to_make_by_a_Fiend_or_an_Undead"
+                      }
+                    },
+                    {
+                      "@name": "Radiant Damage",
+                      "trigger": {
+                        "@text": "whenever_an_enemy_starts_its_turn_in_the_aura"
+                      },
+                      "effect": {
+                        "@type": "Damage",
+                        "@damage_type": "Radiant",
+                        "@value_formula": "CHA_modifier+PROF"
+                      }
+                    },
+                    {
+                      "@name": "Sunlight",
+                      "effect": {
+                        "@description": "aura_is_filled_with_Bright_Light_that_is_sunlight"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "uses": {
+              "@fixed": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            },
+            "can_reuse_by_expending": {
+              "@resource": "SpellSlot",
+              "@level": "5",
+              "@value": "1",
+              "@action_type": "NoAction"
+            }
+          }
+        },
+        {
+          "@level": "3",
+          "feature": [
+            {
+              "@optional": "YES",
+              "name": "Paladin Subclass: Oath of Glory",
+              "text": "Strive for the Heights of Heroism\n\nPaladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions, so they're all ready when destiny calls.\n\tThese paladins share the following tenets:\n\n\t• Endeavor to be known by your deeds.\n\t• Face hardships with courage.\n\t• Inspire others to strive for glory.\n\nSource:\tPlayer's Handbook 2024 p. 114",
+              "subclass": "Oath of Glory"
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Inspiring Smite (Oath of Glory)",
+              "text": "Immediately after you cast Divine Smite, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 plus your Paladin level, divided among the chosen creatures however you like.\n\nSource:\tPlayer's Handbook 2024 p. 115114",
+              "subclass": "Oath of Glory",
+              "channel_divinity_option": null,
+              "trigger": {
+                "@text": "immediately_after_you_cast_Divine_Smite"
+              },
+              "cost": {
+                "@resource": "ChannelDivinityUse",
+                "@value": "1"
+              },
+              "effect": {
+                "@type": "GainTemporaryHitPoints",
+                "@value_formula": "2d8+PaladinLevel",
+                "@target_description": "creatures_of_your_choice_within_30_feet_of_yourself_can_include_you_divided_among_chosen_creatures_however_you_like"
+              }
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Oath of Glory Spells (Oath of Glory)",
+              "text": "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Glory Spells table, you thereafter always have the listed spells prepared.\n\nOath of Glory Spells:\nPaladin Level | Spells\n3 | Guiding Bolt, Heroism\n5 | Enhance Ability, Magic Weapon\n9 | Haste, Protection from Energy\n13 | Compulsion, Freedom of Movement\n17 | Legend Lore, Yolande's Regal Presence\n\nSource:\tPlayer's Handbook 2024 p. 115",
+              "subclass": "Oath of Glory",
+              "inline_table": {
+                "@name": "Oath of Glory Spells",
+                "header": {
+                  "col": [
+                    {
+                      "@label": "Paladin Level"
+                    },
+                    {
+                      "@label": "Spells"
+                    }
+                  ]
+                },
+                "row": [
+                  {
+                    "cell": [
+                      {
+                        "@value": "3"
+                      },
+                      {
+                        "@value": "Guiding Bolt, Heroism"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "5"
+                      },
+                      {
+                        "@value": "Enhance Ability, Magic Weapon"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "9"
+                      },
+                      {
+                        "@value": "Haste, Protection from Energy"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "13"
+                      },
+                      {
+                        "@value": "Compulsion, Freedom of Movement"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "17"
+                      },
+                      {
+                        "@value": "Legend Lore, Yolande's Regal Presence"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Peerless Athlete (Oath of Glory)",
+              "text": "As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks, and the distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal).\n\nSource:\tPlayer's Handbook 2024 p. 115",
+              "subclass": "Oath of Glory",
+              "channel_divinity_option": null,
+              "action": {
+                "@type": "BonusAction"
+              },
+              "cost": {
+                "@resource": "ChannelDivinityUse",
+                "@value": "1"
+              },
+              "effect": {
+                "@type": "Buff",
+                "@name": "PeerlessAthleteBuff",
+                "@duration": "1_hour",
+                "benefit": [
+                  {
+                    "@type": "Advantage",
+                    "@on": "Strength_Athletics_checks"
+                  },
+                  {
+                    "@type": "Advantage",
+                    "@on": "Dexterity_Acrobatics_checks"
+                  },
+                  {
+                    "@description": "distance_of_your_Long_and_High_Jumps_increases_by_10_feet_extra_distance_costs_movement_as_normal"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@level": "7",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 7: Aura of Alacrity (Oath of Glory)",
+            "text": "Your Speed increases by 10 feet.\n\tIn addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn t here, the ally's Speed increases by 10 feet until the end of their next turn.\n\nSource:\tPlayer's Handbook 2024 p. 115",
+            "subclass": "Oath of Glory",
+            "effect": {
+              "@type": "SpeedIncrease",
+              "@value": "10",
+              "@target": "self"
+            },
+            "modifier": {
+              "@category": "bonus",
+              "#text": "speed +10"
+            },
+            "enhances_feature": {
+              "@feature_name": "Level 6: Aura of Protection",
+              "trigger": {
+                "@text": "whenever_an_ally_enters_your_Aura_of_Protection_for_the_first_time_on_a_turn_or_starts_their_turn_there"
+              },
+              "effect": {
+                "@type": "SpeedIncrease",
+                "@value": "10",
+                "@target": "ally",
+                "@duration": "until_end_of_their_next_turn"
+              }
+            }
+          }
+        },
+        {
+          "@level": "15",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 15: Glorious Defense (Oath of Glory)",
+            "text": "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can take a Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one attack with a weapon against the attacker as part of this Reaction if the attacker is within your weapon's range.\n\tYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nSource:\tPlayer's Handbook 2024 p. 115",
+            "subclass": "Oath of Glory",
+            "action": {
+              "@type": "Reaction"
+            },
+            "trigger": {
+              "@text": "when_you_or_another_creature_you_can_see_within_10_feet_of_you_is_hit_by_an_attack_roll"
+            },
+            "effect": {
+              "@type": "ACBonus",
+              "@target": "target_hit",
+              "@value_formula": "CHA_modifier",
+              "@min_value": "1",
+              "@against_triggering_attack": "true"
+            },
+            "on_condition": {
+              "@condition": "if_the_attack_misses",
+              "effect": {
+                "@description": "make_one_attack_with_a_weapon_against_the_attacker_as_part_of_this_Reaction_if_attacker_is_within_your_weapons_range"
+              }
+            },
+            "uses": {
+              "@attribute": "CHA",
+              "@min": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            }
+          }
+        },
+        {
+          "@level": "20",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 20: Living Legend (Oath of Glory)",
+            "text": "You can empower yourself with the legends whether true or exaggerated-of your great deeds. As a Bonus Action, you gain the benefits below for 10 minutes. Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).\n\nCharismatic. You are blessed with an otherworldly presence and have Advantage on all Charisma checks.\n\nSaving Throw Reroll. If you fail a saving throw, you can take a Reaction to reroll it. You must use this new roll.\n\nUnerring Strike. Once on each of your turns when you make an attack roll with a weapon and miss. you can cause that attack to hit instead.\n\nSource:\tPlayer's Handbook 2024 p. 115",
+            "subclass": "Oath of Glory",
+            "action": {
+              "@type": "BonusAction"
+            },
+            "effect": {
+              "@type": "Buff",
+              "@name": "LivingLegendBuff",
+              "@duration": "10_minutes",
+              "benefits": {
+                "benefit": [
+                  {
+                    "@name": "Charismatic",
+                    "effect": {
+                      "@type": "Advantage",
+                      "@on": "all_Charisma_checks"
+                    }
+                  },
+                  {
+                    "@name": "Saving Throw Reroll",
+                    "action": {
+                      "@type": "Reaction"
+                    },
+                    "trigger": {
+                      "@text": "if_you_fail_a_saving_throw"
+                    },
+                    "effect": {
+                      "@description": "reroll_it_You_must_use_this_new_roll"
+                    }
+                  },
+                  {
+                    "@name": "Unerring Strike",
+                    "uses": {
+                      "@fixed": "1",
+                      "@per_turn": "true"
+                    },
+                    "trigger": {
+                      "@text": "when_you_make_an_attack_roll_with_a_weapon_and_miss"
+                    },
+                    "effect": {
+                      "@description": "can_cause_that_attack_to_hit_instead"
+                    }
+                  }
+                ]
+              }
+            },
+            "uses": {
+              "@fixed": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            },
+            "can_reuse_by_expending": {
+              "@resource": "SpellSlot",
+              "@level": "5",
+              "@value": "1",
+              "@action_type": "NoAction"
+            }
+          }
+        },
+        {
+          "@level": "3",
+          "feature": [
+            {
+              "@optional": "YES",
+              "name": "Paladin Subclass: Oath of the Ancients",
+              "text": "Preserve Life and Light in the World\n\nThe Oath of the Ancients is as old as the first elves. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They often adorn their armor and clothing with images of growing things-leaves. antlers. or flowers-to reflect their commitment to preserving life and light.\n\tThese paladins share the following tenets:\n\n\t• Kindle the light of hope.\n\t• Shelter life.\n\t• Delight in art and laughter.\n\nSource:\tPlayer's Handbook 2024 p. 115",
+              "subclass": "Oath of the Ancients"
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Nature's Wrath (Oath of the Ancients)",
+              "text": "As a Magic action, you can expend one use of your Channel Divinity to conjure spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.\n\nSource:\tPlayer's Handbook 2024 p. 115",
+              "subclass": "Oath of the Ancients",
+              "channel_divinity_option": null,
+              "action": {
+                "@type": "MagicAction"
+              },
+              "cost": {
+                "@resource": "ChannelDivinityUse",
+                "@value": "1"
+              },
+              "target": {
+                "@description": "each_creature_of_your_choice_that_you_can_see_within_15_feet"
+              },
+              "effect": {
+                "@description": "must_succeed_on_a_Strength_saving_throw",
+                "@save_dc": "spell_save_DC",
+                "on_failed_save": {
+                  "@type": "Condition",
+                  "@name": "Restrained",
+                  "@duration": "1_minute",
+                  "@save_type": "STR",
+                  "@save_timing": "end_of_creatures_turn",
+                  "@save_ends_effect": "true"
+                }
+              }
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Oath of the Ancients Spells (Oath of the Ancients)",
+              "text": "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ancients Spells table, you thereafter always have the listed spells prepared.\n\nOath of the Ancients Spells:\nPaladin Level | Spells\n3 | Ensnaring Strike, Speak with Animals\n5 | Misty Step, Moonbeam\n9 | Plant Growth, Protection from Energy\n13 | Ice Storm, Stoneskin\n17 | Commune with Nature, Tree Stride\n\nSource:\tPlayer's Handbook 2024 p. 115",
+              "subclass": "Oath of the Ancients",
+              "inline_table": {
+                "@name": "Oath of the Ancients Spells",
+                "header": {
+                  "col": [
+                    {
+                      "@label": "Paladin Level"
+                    },
+                    {
+                      "@label": "Spells"
+                    }
+                  ]
+                },
+                "row": [
+                  {
+                    "cell": [
+                      {
+                        "@value": "3"
+                      },
+                      {
+                        "@value": "Ensnaring Strike, Speak with Animals"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "5"
+                      },
+                      {
+                        "@value": "Misty Step, Moonbeam"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "9"
+                      },
+                      {
+                        "@value": "Plant Growth, Protection from Energy"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "13"
+                      },
+                      {
+                        "@value": "Ice Storm, Stoneskin"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "17"
+                      },
+                      {
+                        "@value": "Commune with Nature, Tree Stride"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@level": "7",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 7: Aura of Warding (Oath of the Ancients)",
+            "text": "Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.\n\nSource:\tPlayer's Handbook 2024 p. 116",
+            "subclass": "Oath of the Ancients",
+            "enhances_feature": {
+              "@feature_name": "Level 6: Aura of Protection",
+              "benefit_in_aura": {
+                "@target": "you_and_your_allies",
+                "effect": {
+                  "@type": "Resistance",
+                  "@damage_types": "Necrotic,Psychic,Radiant"
+                }
+              }
+            }
+          }
+        },
+        {
+          "@level": "15",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 15: Undying Sentinel (Oath of the Ancients)",
+            "text": "When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.\n\tAdditionally, you can't be aged magically, and you cease visibly aging.\n\nSource:\tPlayer's Handbook 2024 p. 116",
+            "subclass": "Oath of the Ancients",
+            "trigger": {
+              "@text": "when_you_are_reduced_to_0_Hit_Points_and_not_killed_outright"
+            },
+            "effect": [
+              {
+                "@description": "drop_to_1_Hit_Point_instead_AND_regain_HP_equal_to_3*PaladinLevel"
+              },
+              {
+                "@type": "Immunity",
+                "@to": "magical_aging"
+              },
+              {
+                "@description": "cease_visibly_aging"
+              }
+            ],
+            "uses": {
+              "@fixed": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            }
+          }
+        },
+        {
+          "@level": "20",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 20: Elder Champion (Oath of the Ancients)",
+            "text": "As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).\n\nDiminish Defiance. Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.\n\nRegeneration. At the start of each of your turns, you regain 10 Hit Points.\n\nSwift Spells. Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead.\n\nSource:\tPlayer's Handbook 2024 p. 116",
+            "subclass": "Oath of the Ancients",
+            "action": {
+              "@type": "BonusAction"
+            },
+            "effect": {
+              "@type": "Buff",
+              "@name": "ElderChampionAura",
+              "@duration": "1_minute_or_until_ended_no_action",
+              "enhances_feature": {
+                "@feature_name": "Level 6: Aura of Protection",
+                "benefits": {
+                  "benefit": [
+                    {
+                      "@name": "Diminish Defiance",
+                      "effect": {
+                        "@type": "Disadvantage",
+                        "@target": "enemies_in_aura",
+                        "@on": "saving_throws_against_your_spells_and_Channel_Divinity_options"
+                      }
+                    },
+                    {
+                      "@name": "Regeneration",
+                      "trigger": {
+                        "@text": "at_the_start_of_each_of_your_turns"
+                      },
+                      "effect": {
+                        "@type": "Heal",
+                        "@value": "10"
+                      }
+                    },
+                    {
+                      "@name": "Swift Spells",
+                      "modifies_spell_casting_time": {
+                        "@condition": "spell_has_casting_time_of_an_action",
+                        "@new_casting_time": "BonusAction"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "uses": {
+              "@fixed": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            },
+            "can_reuse_by_expending": {
+              "@resource": "SpellSlot",
+              "@level": "5",
+              "@value": "1",
+              "@action_type": "NoAction"
+            }
+          }
+        },
+        {
+          "@level": "3",
+          "feature": [
+            {
+              "@optional": "YES",
+              "name": "Paladin Subclass: Oath of Vengeance",
+              "text": "Punish Evildoers at Any Cost\n\nThe Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent, when a dragon rampages through the countryside- at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.\n\tThese paladins share the following tenets:\n\n\t• Show the wicked no mercy.\n\t• Fight injustice and its causes.\n\t• Aid those harmed by injustice.\n\nSource:\tPlayer's Handbook 2024 p. 116",
+              "subclass": "Oath of Vengeance"
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Oath of Vengeance Spells (Oath of Vengeance)",
+              "text": "The magic of your oath ensures you always h ave certain spells ready; when you reach a Paladin level specified in the Oath of Vengeance Spells table, you thereafter always have the listed spells prepared.\n\nOath of Vengeance Spells:\nPaladin Level | Spells\n3 | Bane, Hunter's Mark\n5 | Hold Person, Misty Step\n9 | Haste, Protection from Energy\n13 | Banishment, Dimension Door\n17 | Hold Monster, Scrying\n\nSource:\tPlayer's Handbook 2024 p. 116",
+              "subclass": "Oath of Vengeance",
+              "inline_table": {
+                "@name": "Oath of Vengeance Spells",
+                "header": {
+                  "col": [
+                    {
+                      "@label": "Paladin Level"
+                    },
+                    {
+                      "@label": "Spells"
+                    }
+                  ]
+                },
+                "row": [
+                  {
+                    "cell": [
+                      {
+                        "@value": "3"
+                      },
+                      {
+                        "@value": "Bane, Hunter's Mark"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "5"
+                      },
+                      {
+                        "@value": "Hold Person, Misty Step"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "9"
+                      },
+                      {
+                        "@value": "Haste, Protection from Energy"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "13"
+                      },
+                      {
+                        "@value": "Banishment, Dimension Door"
+                      }
+                    ]
+                  },
+                  {
+                    "cell": [
+                      {
+                        "@value": "17"
+                      },
+                      {
+                        "@value": "Hold Monster, Scrying"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "@optional": "YES",
+              "name": "Level 3: Vow of Enmity (Oath of Vengeance)",
+              "text": "When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again.\n\tIf the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).\n\nSource:\tPlayer's Handbook 2024 p. 117",
+              "subclass": "Oath of Vengeance",
+              "channel_divinity_option": null,
+              "trigger": {
+                "@text": "when_you_take_the_Attack_action"
+              },
+              "cost": {
+                "@resource": "ChannelDivinityUse",
+                "@value": "1"
+              },
+              "target": {
+                "@description": "a_creature_you_can_see_within_30_feet"
+              },
+              "effect": {
+                "@type": "Advantage",
+                "@on": "attack_rolls_against_the_creature",
+                "@duration": "1_minute_or_until_use_this_feature_again"
+              },
+              "on_condition": {
+                "@condition": "if_the_creature_drops_to_0_HP_before_vow_ends",
+                "effect": {
+                  "@description": "can_transfer_vow_to_a_different_creature_within_30_feet_no_action_required"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "@level": "7",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 7: Relentless Avenger (Oath of Vengeance)",
+            "text": "Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.\n\nSource:\tPlayer's Handbook 2024 p. 117",
+            "subclass": "Oath of Vengeance",
+            "trigger": {
+              "@text": "when_you_hit_a_creature_with_an_Opportunity_Attack"
+            },
+            "effect": [
+              {
+                "@type": "SpeedReduction",
+                "@target": "creature_hit",
+                "@value": "to_0",
+                "@duration": "until_end_of_current_turn"
+              },
+              {
+                "@type": "Movement",
+                "@target": "self",
+                "@value": "up_to_half_your_Speed",
+                "@as_part_of_same_reaction": "true",
+                "@does_not_provoke_opportunity_attacks": "true"
+              }
+            ]
+          }
+        },
+        {
+          "@level": "15",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 15: Soul of Vengeance (Oath of Vengeance)",
+            "text": "Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack roll, you can take a Reaction to make a melee at tack against that creature if it's within range.\n\nSource:\tPlayer's Handbook 2024 p. 117",
+            "subclass": "Oath of Vengeance",
+            "action": {
+              "@type": "Reaction"
+            },
+            "trigger": {
+              "@text": "immediately_after_a_creature_under_the_effect_of_your_Vow_of_Enmity_hits_or_misses_with_an_attack_roll"
+            },
+            "effect": {
+              "@description": "make_a_melee_attack_against_that_creature_if_its_within_range"
+            }
+          }
+        },
+        {
+          "@level": "20",
+          "feature": {
+            "@optional": "YES",
+            "name": "Level 20: Avenging Angel (Oath of Vengeance)",
+            "text": "As a Bonus Action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).\n\nFlight. You sprout spectral wings on your back, have a Fly Speed of 60 feet, and can hover.\n\nFrightful Aura. Whenever an enemy starts its turn in your Aura of Protect ion, that creature must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.\n\nSource:\tPlayer's Handbook 2024 p. 117",
+            "subclass": "Oath of Vengeance",
+            "action": {
+              "@type": "BonusAction"
+            },
+            "effect": {
+              "@type": "Transformation",
+              "@name": "AvengingAngelForm",
+              "@duration": "10_minutes_or_until_ended_no_action",
+              "benefits": {
+                "benefit": [
+                  {
+                    "@name": "Flight",
+                    "effect": [
+                      {
+                        "@description": "sprout_spectral_wings_on_your_back"
+                      },
+                      {
+                        "@type": "Speed",
+                        "@speed_type": "Fly",
+                        "@value": "60_feet"
+                      },
+                      {
+                        "@description": "can_hover"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Frightful Aura",
+                    "enhances_feature": {
+                      "@feature_name": "Level 6: Aura of Protection",
+                      "trigger": {
+                        "@text": "whenever_an_enemy_starts_its_turn_in_your_Aura_of_Protection"
+                      },
+                      "effect": [
+                        {
+                          "@description": "that_creature_must_succeed_on_a_Wisdom_saving_throw",
+                          "@save_dc": "spell_save_DC",
+                          "on_failed_save": {
+                            "@type": "Condition",
+                            "@name": "Frightened",
+                            "@duration": "1_minute_or_until_it_takes_any_damage"
+                          }
+                        },
+                        {
+                          "@type": "Advantage",
+                          "@on": "attack_rolls_against_the_Frightened_creature"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "uses": {
+              "@fixed": "1"
+            },
+            "recharge": {
+              "@type": "LR"
+            },
+            "can_reuse_by_expending": {
+              "@resource": "SpellSlot",
+              "@level": "5",
+              "@value": "1",
+              "@action_type": "NoAction"
+            }
+          }
+        }
+      ],
+      "trait": {
+        "name": "Paladin",
+        "text": "Paladins are united by their oaths to stand against the forces of annihilation and corruption. Whether sworn before a god's altar, in a sacred glade before nature spirits, or in a moment of desperation and grief with the dead as the only witnesses, a Paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.\n\tPaladins train to learn the skills of combat, mastering a variety of weapons and armor. Even so, their martial skills are secondary to the magical power they wield: power to heal the injured, smite their foes, and protect the helpless and those who fight at their side.\n\tAlmost by definition, the life of a Paladin is an adventuring life, for every Paladin lives on the front lines of the cosmic struggle against annihilation. Fighters are rare enough among the ranks of a world's armies, but even fewer people can claim the calling of a Paladin. When they do receive the call, these blessed folk turn from their former occupations and take up arms and magic.\n\nSource:\tPlayer's Handbook 2024 p. 109"
+      }
+    }
+  }
+}
